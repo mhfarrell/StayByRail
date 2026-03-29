@@ -50,6 +50,9 @@ function SearchForm({ cities, onSearch, loading }) {
 
   const citiesInCountry = countries[country] || [];
 
+  const fmt = (d) => d.toISOString().split("T")[0];
+  const today = fmt(new Date());
+
   useEffect(() => {
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
@@ -75,8 +78,6 @@ function SearchForm({ cities, onSearch, loading }) {
       }
     }
   }, [city, cities]);
-
-  const fmt = (d) => d.toISOString().split("T")[0];
 
   const numNights =
     checkIn && checkOut
@@ -117,7 +118,7 @@ function SearchForm({ cities, onSearch, loading }) {
   const cityLines = cities[city]?.lines || {};
 
   return (
-    <form className="search-form" onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
+    <form className="search-form" noValidate onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
       <div className="form-row">
         <div className="field">
           <label>Country</label>
@@ -157,6 +158,7 @@ function SearchForm({ cities, onSearch, loading }) {
           <input
             type="date"
             value={checkIn}
+            min={today}
             onChange={(e) => {
               const val = e.target.value;
               setCheckIn(val);
@@ -166,7 +168,6 @@ function SearchForm({ cities, onSearch, loading }) {
                 setCheckOut(fmt(lastDay));
               }
             }}
-            required
           />
         </div>
 
@@ -175,8 +176,8 @@ function SearchForm({ cities, onSearch, loading }) {
           <input
             type="date"
             value={checkOut}
+            min={checkIn || today}
             onChange={(e) => setCheckOut(e.target.value)}
-            required
           />
         </div>
       </div>
@@ -262,7 +263,16 @@ function SearchForm({ cities, onSearch, loading }) {
         )}
       </div>
 
-      <button type="submit" disabled={loading || !checkIn || !checkOut}>
+      <button
+        type="submit"
+        disabled={loading || !checkIn || !checkOut}
+        onClick={(e) => {
+          if (!loading && checkIn && checkOut) {
+            e.preventDefault();
+            handleSubmit();
+          }
+        }}
+      >
         {loading ? "Searching..." : "Search Hotels"}
       </button>
     </form>

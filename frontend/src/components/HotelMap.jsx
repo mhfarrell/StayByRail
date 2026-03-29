@@ -1,4 +1,5 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { useEffect } from "react";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 
 // Fix default marker icons (leaflet + bundler issue)
@@ -19,6 +20,14 @@ const stationIcon = new L.Icon({
   iconAnchor: [12, 41],
   className: "station-marker",
 });
+
+function RecenterMap({ lat, lon }) {
+  const map = useMap();
+  useEffect(() => {
+    map.setView([lat, lon], 14);
+  }, [lat, lon, map]);
+  return null;
+}
 
 function HotelMap({ stationGroups, priceMode, onHotelClick }) {
   // Collect all markers with valid GPS
@@ -53,6 +62,7 @@ function HotelMap({ stationGroups, priceMode, onHotelClick }) {
         zoom={14}
         style={{ height: "450px", width: "100%", borderRadius: "10px" }}
       >
+        <RecenterMap lat={avgLat} lon={avgLon} />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"

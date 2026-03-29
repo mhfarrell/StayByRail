@@ -6,6 +6,9 @@ const AD_CLIENT = import.meta.env.VITE_ADSENSE_CLIENT || "";
 let adsenseLoaded = false;
 function loadAdsense() {
   if (adsenseLoaded || !AD_CLIENT) return;
+  // Check if script already exists in the document (e.g. from index.html)
+  const existing = document.querySelector(`script[src*="adsbygoogle.js"]`);
+  if (existing) { adsenseLoaded = true; return; }
   adsenseLoaded = true;
   const script = document.createElement("script");
   script.async = true;
