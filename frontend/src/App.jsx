@@ -79,15 +79,26 @@ function App() {
       if (userKey) {
         headers["X-SerpAPI-Key"] = userKey;
       }
-      const resp = await fetch(`${API}/search?${qs}`, { headers });
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 120000);
+      const resp = await fetch(`${API}/search?${qs}`, {
+        headers,
+        signal: controller.signal,
+      });
+      clearTimeout(timeout);
       if (!resp.ok) {
-        const err = await resp.json();
-        throw new Error(err.detail || "Search failed");
+        let msg = "Search failed";
+        try { msg = (await resp.json()).detail || msg; } catch {}
+        throw new Error(msg);
       }
       const data = await resp.json();
       setResults(data);
     } catch (e) {
-      setError(e.message);
+      if (e.name === "AbortError") {
+        setError("Search timed out. The server may be starting up — please try again.");
+      } else {
+        setError(e.message || "Connection failed. Please try again.");
+      }
     } finally {
       setLoading(false);
     }

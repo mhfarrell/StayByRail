@@ -1,6 +1,6 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, lazy, Suspense } from "react";
 import HotelCard from "./HotelCard";
-import HotelMap from "./HotelMap";
+const HotelMap = lazy(() => import("./HotelMap"));
 
 // Check if a hotel's amenities match a wishlist item
 function matchesWishlistItem(amenities, item) {
@@ -183,7 +183,9 @@ function Results({ data, wishlist }) {
       </div>
 
       {/* Map */}
-      <HotelMap stationGroups={stationGroups} priceMode={priceMode} />
+      <Suspense fallback={<div className="loading"><div className="spinner" /></div>}>
+        <HotelMap stationGroups={stationGroups} priceMode={priceMode} />
+      </Suspense>
 
       {/* Flat sorted hotel list */}
       {allHotels.length === 0 ? (
