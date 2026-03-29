@@ -47,12 +47,38 @@ def update_settings(payload: SettingsPayload):
     return {"ok": True, "serpapi_key_set": bool(os.environ.get("SERPAPI_KEY"))}
 
 
+CITY_COUNTRIES = {
+    # Japan
+    "tokyo": "Japan", "osaka": "Japan", "kyoto": "Japan", "hiroshima": "Japan",
+    "fukuoka": "Japan", "sapporo": "Japan", "nagoya": "Japan", "yokohama": "Japan",
+    "kobe": "Japan", "nara": "Japan", "kanazawa": "Japan", "sendai": "Japan",
+    # UK
+    "london": "United Kingdom", "manchester": "United Kingdom", "birmingham": "United Kingdom",
+    "newcastle": "United Kingdom", "liverpool": "United Kingdom", "glasgow": "United Kingdom",
+    "edinburgh": "United Kingdom", "nottingham": "United Kingdom", "sheffield": "United Kingdom",
+    "leeds": "United Kingdom", "cardiff": "United Kingdom", "bristol": "United Kingdom",
+    "brighton": "United Kingdom",
+    # France
+    "paris": "France", "lyon": "France", "marseille": "France", "nice": "France",
+    "toulouse": "France", "bordeaux": "France", "strasbourg": "France",
+    # Germany
+    "berlin": "Germany", "munich": "Germany", "hamburg": "Germany", "frankfurt": "Germany",
+    "cologne": "Germany", "dusseldorf": "Germany", "stuttgart": "Germany", "nuremberg": "Germany",
+    # Spain
+    "madrid": "Spain", "barcelona": "Spain", "valencia": "Spain", "seville": "Spain",
+    "bilbao": "Spain", "malaga": "Spain", "palma_de_mallorca": "Spain",
+}
+
+
 @app.get("/api/cities")
 def list_cities():
     result = {}
     for city in get_cities():
         lines = get_lines(city)
-        result[city] = {"lines": lines}
+        result[city] = {
+            "lines": lines,
+            "country": CITY_COUNTRIES.get(city, "Other"),
+        }
     return result
 
 

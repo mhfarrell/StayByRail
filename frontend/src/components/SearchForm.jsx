@@ -24,8 +24,9 @@ const AMENITY_OPTIONS = [
 ];
 
 function SearchForm({ cities, onSearch, loading }) {
-  const [city, setCity] = useState("tokyo");
-  const [line, setLine] = useState("yamanote");
+  const [country, setCountry] = useState("United Kingdom");
+  const [city, setCity] = useState("london");
+  const [line, setLine] = useState("");
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [maxPrice, setMaxPrice] = useState(100);
@@ -33,6 +34,21 @@ function SearchForm({ cities, onSearch, loading }) {
   const [popularOnly, setPopularOnly] = useState(true);
   const [wishlist, setWishlist] = useState([]);
   const [showAmenities, setShowAmenities] = useState(false);
+
+  // Build country -> cities map
+  const countries = {};
+  for (const [c, data] of Object.entries(cities)) {
+    const ctry = data.country || "Other";
+    if (!countries[ctry]) countries[ctry] = [];
+    countries[ctry].push(c);
+  }
+  // Sort countries, sort cities within each
+  const sortedCountries = Object.keys(countries).sort();
+  for (const ctry of sortedCountries) {
+    countries[ctry].sort();
+  }
+
+  const citiesInCountry = countries[country] || [];
 
   useEffect(() => {
     const tomorrow = new Date();
@@ -43,6 +59,14 @@ function SearchForm({ cities, onSearch, loading }) {
     setCheckOut(fmt(checkout));
   }, []);
 
+  // When country changes, pick the first city in that country
+  useEffect(() => {
+    if (citiesInCountry.length > 0 && !citiesInCountry.includes(city)) {
+      setCity(citiesInCountry[0]);
+    }
+  }, [country, cities]);
+
+  // When city changes, pick the first line
   useEffect(() => {
     if (cities[city]) {
       const lines = Object.keys(cities[city].lines);
@@ -96,11 +120,22 @@ function SearchForm({ cities, onSearch, loading }) {
     <form className="search-form" onSubmit={handleSubmit}>
       <div className="form-row">
         <div className="field">
+          <label>Country</label>
+          <select value={country} onChange={(e) => setCountry(e.target.value)}>
+            {sortedCountries.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="field">
           <label>City</label>
           <select value={city} onChange={(e) => setCity(e.target.value)}>
-            {Object.keys(cities).map((c) => (
+            {citiesInCountry.map((c) => (
               <option key={c} value={c}>
-                {c.charAt(0).toUpperCase() + c.slice(1)}
+                {c.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase())}
               </option>
             ))}
           </select>
