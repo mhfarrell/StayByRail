@@ -25,7 +25,9 @@ const KNOWN_CHAINS = [
   "Best Western", "citizenM", "YOTEL", "Leonardo Hotel", "Motel One",
   "Park Plaza", "NH Hotel", "Melia",
   "APA Hotel", "Via Inn", "Super Hotel", "Candeo Hotels",
-  "Comfort Hotel", "Cross Hotel",
+  "Comfort Hotel", "Cross Hotel", "Livemax", "Mystays", "Tokyu Stay",
+  "Vessel Inn", "Hotel Sunroute", "Nishitetsu Hotel", "Richmond Hotel",
+  "Henn na Hotel", "Smile Hotel", "Hotel Hokke Club",
 ];
 
 function getChain(hotelName) {
