@@ -10,3 +10,7 @@ backend/.cache/
 *.log
 .DS_Store
 Thumbs.db
+frontend/src/assets/hero.png
+frontend/src/assets/react.svg
+frontend/src/assets/vite.svg
+frontend/public/icons.svg

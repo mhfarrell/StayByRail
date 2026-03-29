@@ -6,7 +6,7 @@ import Settings from "./components/Settings";
 import AdUnit from "./components/AdUnit";
 import "./App.css";
 
-const API = "http://localhost:4850/api";
+const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 
 function useTheme() {
   const [theme, setTheme] = useState(() => {
