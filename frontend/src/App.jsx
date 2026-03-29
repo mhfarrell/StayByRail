@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import SearchForm from "./components/SearchForm";
 import Results from "./components/Results";
 import SourcesBanner from "./components/SourcesBanner";
@@ -72,18 +72,11 @@ function App() {
       .catch(() => {});
   }, []);
 
-  const loadingRef = React.useRef(null);
-
   const handleSearch = async (params, selectedWishlist) => {
     setLoading(true);
     setError(null);
     setResults(null);
     setWishlist(selectedWishlist || []);
-
-    // Scroll to loading indicator on mobile
-    setTimeout(() => {
-      loadingRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-    }, 100);
 
     try {
       const qs = new URLSearchParams(params).toString();
@@ -92,13 +85,7 @@ function App() {
       if (userKey) {
         headers["X-SerpAPI-Key"] = userKey;
       }
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 120000);
-      const resp = await fetch(`${API}/search?${qs}`, {
-        headers,
-        signal: controller.signal,
-      });
-      clearTimeout(timeout);
+      const resp = await fetch(`${API}/search?${qs}`, { headers });
       if (!resp.ok) {
         let msg = "Search failed";
         try { msg = (await resp.json()).detail || msg; } catch {}
@@ -107,11 +94,7 @@ function App() {
       const data = await resp.json();
       setResults(data);
     } catch (e) {
-      if (e.name === "AbortError") {
-        setError("Search timed out. The server may be starting up — please try again.");
-      } else {
-        setError(e.message || "Connection failed. Please try again.");
-      }
+      setError(e.message || "Search failed. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -169,7 +152,7 @@ function App() {
         {error && <div className="error-banner">{error}</div>}
 
         {loading && (
-          <div className="loading" ref={loadingRef}>
+          <div className="loading">
             <div className="spinner" />
             <p>Searching hotels near train stations...</p>
             <p className="loading-hint">This can take up to 30 seconds on first search</p>

@@ -117,7 +117,7 @@ function SearchForm({ cities, onSearch, loading }) {
   const cityLines = cities[city]?.lines || {};
 
   return (
-    <form className="search-form" onSubmit={handleSubmit}>
+    <form className="search-form" onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
       <div className="form-row">
         <div className="field">
           <label>Country</label>
@@ -262,31 +262,9 @@ function SearchForm({ cities, onSearch, loading }) {
         )}
       </div>
 
-      <button
-        type="button"
-        onClick={handleSubmit}
-        disabled={loading || !checkIn || !checkOut || !line || !Object.keys(cities).length}
-        className={loading ? "btn-loading" : ""}
-      >
-        {!Object.keys(cities).length ? (
-          <>
-            <span className="btn-spinner" />
-            Connecting...
-          </>
-        ) : loading ? (
-          <>
-            <span className="btn-spinner" />
-            Searching...
-          </>
-        ) : (
-          "Search Hotels"
-        )}
+      <button type="submit" disabled={loading || !checkIn || !checkOut}>
+        {loading ? "Searching..." : "Search Hotels"}
       </button>
-      {loading && (
-        <div className="form-loading-hint">
-          This can take up to 30 seconds on first search
-        </div>
-      )}
     </form>
   );
 }
