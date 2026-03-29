@@ -232,7 +232,7 @@ body {
 }
 
 .header-region::before {
-  content: "\1F1EF\1F1F5  ";
+  content: "";
 }
 
 /* Search Form */

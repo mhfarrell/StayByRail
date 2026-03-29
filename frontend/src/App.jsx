@@ -123,7 +123,7 @@ function App() {
               </div>
             </div>
             <div className="header-actions">
-              <span className="header-region">Japan</span>
+              <span className="header-region">47 cities</span>
             </div>
           </div>
         </header>

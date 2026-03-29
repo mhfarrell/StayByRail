@@ -4,830 +4,11981 @@ LINES = {
             "name": "JR Yamanote Line",
             "popularity": 1,
             "stations": [
-                {"name": "Shinjuku", "lat": 35.6896, "lon": 139.7006, "popular": True},
-                {"name": "Shibuya", "lat": 35.6580, "lon": 139.7016, "popular": True},
-                {"name": "Ikebukuro", "lat": 35.7295, "lon": 139.7109, "popular": True},
-                {"name": "Tokyo", "lat": 35.6812, "lon": 139.7671, "popular": True},
-                {"name": "Ueno", "lat": 35.7141, "lon": 139.7774, "popular": True},
-                {"name": "Akihabara", "lat": 35.6984, "lon": 139.7731, "popular": True},
-                {"name": "Shinagawa", "lat": 35.6285, "lon": 139.7387, "popular": True},
-                {"name": "Ebisu", "lat": 35.6467, "lon": 139.7100, "popular": True},
-                {"name": "Harajuku", "lat": 35.6702, "lon": 139.7027, "popular": True},
-                {"name": "Gotanda", "lat": 35.6264, "lon": 139.7234, "popular": False},
-                {"name": "Meguro", "lat": 35.6340, "lon": 139.7158, "popular": False},
-                {"name": "Osaki", "lat": 35.6197, "lon": 139.7284, "popular": False},
-                {"name": "Tamachi", "lat": 35.6456, "lon": 139.7475, "popular": False},
-                {"name": "Hamamatsucho", "lat": 35.6554, "lon": 139.7571, "popular": False},
-                {"name": "Shimbashi", "lat": 35.6661, "lon": 139.7583, "popular": False},
-                {"name": "Yurakucho", "lat": 35.6748, "lon": 139.7630, "popular": False},
-                {"name": "Kanda", "lat": 35.6918, "lon": 139.7709, "popular": False},
-                {"name": "Okachimachi", "lat": 35.7074, "lon": 139.7745, "popular": False},
-                {"name": "Nippori", "lat": 35.7280, "lon": 139.7708, "popular": False},
-                {"name": "Nishi-Nippori", "lat": 35.7319, "lon": 139.7668, "popular": False},
-                {"name": "Tabata", "lat": 35.7381, "lon": 139.7609, "popular": False},
-                {"name": "Komagome", "lat": 35.7365, "lon": 139.7470, "popular": False},
-                {"name": "Sugamo", "lat": 35.7334, "lon": 139.7394, "popular": False},
-                {"name": "Otsuka", "lat": 35.7317, "lon": 139.7286, "popular": False},
-                {"name": "Mejiro", "lat": 35.7212, "lon": 139.7068, "popular": False},
-                {"name": "Takadanobaba", "lat": 35.7126, "lon": 139.7038, "popular": False},
-                {"name": "Shin-Okubo", "lat": 35.7010, "lon": 139.7001, "popular": False},
-                {"name": "Yoyogi", "lat": 35.6833, "lon": 139.7020, "popular": False},
-                {"name": "Takanawa Gateway", "lat": 35.6368, "lon": 139.7408, "popular": False},
-                {"name": "Uguisudani", "lat": 35.7206, "lon": 139.7783, "popular": False},
-            ],
+                {
+                    "name": "Shinjuku",
+                    "lat": 35.6896,
+                    "lon": 139.7006,
+                    "popular": True
+                },
+                {
+                    "name": "Shibuya",
+                    "lat": 35.658,
+                    "lon": 139.7016,
+                    "popular": True
+                },
+                {
+                    "name": "Ikebukuro",
+                    "lat": 35.7295,
+                    "lon": 139.7109,
+                    "popular": True
+                },
+                {
+                    "name": "Tokyo",
+                    "lat": 35.6812,
+                    "lon": 139.7671,
+                    "popular": True
+                },
+                {
+                    "name": "Ueno",
+                    "lat": 35.7141,
+                    "lon": 139.7774,
+                    "popular": True
+                },
+                {
+                    "name": "Akihabara",
+                    "lat": 35.6984,
+                    "lon": 139.7731,
+                    "popular": True
+                },
+                {
+                    "name": "Shinagawa",
+                    "lat": 35.6285,
+                    "lon": 139.7387,
+                    "popular": True
+                },
+                {
+                    "name": "Ebisu",
+                    "lat": 35.6467,
+                    "lon": 139.71,
+                    "popular": True
+                },
+                {
+                    "name": "Harajuku",
+                    "lat": 35.6702,
+                    "lon": 139.7027,
+                    "popular": True
+                },
+                {
+                    "name": "Gotanda",
+                    "lat": 35.6264,
+                    "lon": 139.7234,
+                    "popular": False
+                },
+                {
+                    "name": "Meguro",
+                    "lat": 35.634,
+                    "lon": 139.7158,
+                    "popular": False
+                },
+                {
+                    "name": "Osaki",
+                    "lat": 35.6197,
+                    "lon": 139.7284,
+                    "popular": False
+                },
+                {
+                    "name": "Tamachi",
+                    "lat": 35.6456,
+                    "lon": 139.7475,
+                    "popular": False
+                },
+                {
+                    "name": "Hamamatsucho",
+                    "lat": 35.6554,
+                    "lon": 139.7571,
+                    "popular": False
+                },
+                {
+                    "name": "Shimbashi",
+                    "lat": 35.6661,
+                    "lon": 139.7583,
+                    "popular": False
+                },
+                {
+                    "name": "Yurakucho",
+                    "lat": 35.6748,
+                    "lon": 139.763,
+                    "popular": False
+                },
+                {
+                    "name": "Kanda",
+                    "lat": 35.6918,
+                    "lon": 139.7709,
+                    "popular": False
+                },
+                {
+                    "name": "Okachimachi",
+                    "lat": 35.7074,
+                    "lon": 139.7745,
+                    "popular": False
+                },
+                {
+                    "name": "Nippori",
+                    "lat": 35.728,
+                    "lon": 139.7708,
+                    "popular": False
+                },
+                {
+                    "name": "Nishi-Nippori",
+                    "lat": 35.7319,
+                    "lon": 139.7668,
+                    "popular": False
+                },
+                {
+                    "name": "Tabata",
+                    "lat": 35.7381,
+                    "lon": 139.7609,
+                    "popular": False
+                },
+                {
+                    "name": "Komagome",
+                    "lat": 35.7365,
+                    "lon": 139.747,
+                    "popular": False
+                },
+                {
+                    "name": "Sugamo",
+                    "lat": 35.7334,
+                    "lon": 139.7394,
+                    "popular": False
+                },
+                {
+                    "name": "Otsuka",
+                    "lat": 35.7317,
+                    "lon": 139.7286,
+                    "popular": False
+                },
+                {
+                    "name": "Mejiro",
+                    "lat": 35.7212,
+                    "lon": 139.7068,
+                    "popular": False
+                },
+                {
+                    "name": "Takadanobaba",
+                    "lat": 35.7126,
+                    "lon": 139.7038,
+                    "popular": False
+                },
+                {
+                    "name": "Shin-Okubo",
+                    "lat": 35.701,
+                    "lon": 139.7001,
+                    "popular": False
+                },
+                {
+                    "name": "Yoyogi",
+                    "lat": 35.6833,
+                    "lon": 139.702,
+                    "popular": False
+                },
+                {
+                    "name": "Takanawa Gateway",
+                    "lat": 35.6368,
+                    "lon": 139.7408,
+                    "popular": False
+                },
+                {
+                    "name": "Uguisudani",
+                    "lat": 35.7206,
+                    "lon": 139.7783,
+                    "popular": False
+                }
+            ]
         },
         "ginza": {
             "name": "Tokyo Metro Ginza Line",
             "popularity": 2,
             "stations": [
-                {"name": "Ginza", "lat": 35.6717, "lon": 139.7637, "popular": True},
-                {"name": "Asakusa", "lat": 35.7114, "lon": 139.7981, "popular": True},
-                {"name": "Ueno", "lat": 35.7116, "lon": 139.7750, "popular": True},
-                {"name": "Shibuya", "lat": 35.6590, "lon": 139.7013, "popular": True},
-                {"name": "Akasaka-mitsuke", "lat": 35.6770, "lon": 139.7370, "popular": False},
-                {"name": "Omotesando", "lat": 35.6654, "lon": 139.7122, "popular": True},
-                {"name": "Nihombashi", "lat": 35.6828, "lon": 139.7742, "popular": False},
-                {"name": "Shimbashi", "lat": 35.6664, "lon": 139.7585, "popular": False},
-                {"name": "Toranomon", "lat": 35.6694, "lon": 139.7497, "popular": False},
-                {"name": "Tameike-Sanno", "lat": 35.6737, "lon": 139.7413, "popular": False},
-            ],
+                {
+                    "name": "Ginza",
+                    "lat": 35.6717,
+                    "lon": 139.7637,
+                    "popular": True
+                },
+                {
+                    "name": "Asakusa",
+                    "lat": 35.7114,
+                    "lon": 139.7981,
+                    "popular": True
+                },
+                {
+                    "name": "Ueno",
+                    "lat": 35.7116,
+                    "lon": 139.775,
+                    "popular": True
+                },
+                {
+                    "name": "Shibuya",
+                    "lat": 35.659,
+                    "lon": 139.7013,
+                    "popular": True
+                },
+                {
+                    "name": "Akasaka-mitsuke",
+                    "lat": 35.677,
+                    "lon": 139.737,
+                    "popular": False
+                },
+                {
+                    "name": "Omotesando",
+                    "lat": 35.6654,
+                    "lon": 139.7122,
+                    "popular": True
+                },
+                {
+                    "name": "Nihombashi",
+                    "lat": 35.6828,
+                    "lon": 139.7742,
+                    "popular": False
+                },
+                {
+                    "name": "Shimbashi",
+                    "lat": 35.6664,
+                    "lon": 139.7585,
+                    "popular": False
+                },
+                {
+                    "name": "Toranomon",
+                    "lat": 35.6694,
+                    "lon": 139.7497,
+                    "popular": False
+                },
+                {
+                    "name": "Tameike-Sanno",
+                    "lat": 35.6737,
+                    "lon": 139.7413,
+                    "popular": False
+                }
+            ]
         },
         "marunouchi": {
             "name": "Tokyo Metro Marunouchi Line",
             "popularity": 2,
             "stations": [
-                {"name": "Tokyo", "lat": 35.6815, "lon": 139.7668, "popular": True},
-                {"name": "Shinjuku", "lat": 35.6910, "lon": 139.6998, "popular": True},
-                {"name": "Ikebukuro", "lat": 35.7289, "lon": 139.7101, "popular": True},
-                {"name": "Ginza", "lat": 35.6717, "lon": 139.7637, "popular": True},
-                {"name": "Kasumigaseki", "lat": 35.6736, "lon": 139.7508, "popular": False},
-                {"name": "Otemachi", "lat": 35.6867, "lon": 139.7630, "popular": False},
-                {"name": "Myogadani", "lat": 35.7179, "lon": 139.7357, "popular": False},
-                {"name": "Korakuen", "lat": 35.7080, "lon": 139.7515, "popular": False},
-                {"name": "Yotsuya", "lat": 35.6861, "lon": 139.7302, "popular": False},
-                {"name": "Shinjuku-sanchome", "lat": 35.6885, "lon": 139.7038, "popular": False},
-                {"name": "Nakano-sakaue", "lat": 35.6969, "lon": 139.6806, "popular": False},
-                {"name": "Ogikubo", "lat": 35.7044, "lon": 139.6197, "popular": False},
-            ],
+                {
+                    "name": "Tokyo",
+                    "lat": 35.6815,
+                    "lon": 139.7668,
+                    "popular": True
+                },
+                {
+                    "name": "Shinjuku",
+                    "lat": 35.691,
+                    "lon": 139.6998,
+                    "popular": True
+                },
+                {
+                    "name": "Ikebukuro",
+                    "lat": 35.7289,
+                    "lon": 139.7101,
+                    "popular": True
+                },
+                {
+                    "name": "Ginza",
+                    "lat": 35.6717,
+                    "lon": 139.7637,
+                    "popular": True
+                },
+                {
+                    "name": "Kasumigaseki",
+                    "lat": 35.6736,
+                    "lon": 139.7508,
+                    "popular": False
+                },
+                {
+                    "name": "Otemachi",
+                    "lat": 35.6867,
+                    "lon": 139.763,
+                    "popular": False
+                },
+                {
+                    "name": "Myogadani",
+                    "lat": 35.7179,
+                    "lon": 139.7357,
+                    "popular": False
+                },
+                {
+                    "name": "Korakuen",
+                    "lat": 35.708,
+                    "lon": 139.7515,
+                    "popular": False
+                },
+                {
+                    "name": "Yotsuya",
+                    "lat": 35.6861,
+                    "lon": 139.7302,
+                    "popular": False
+                },
+                {
+                    "name": "Shinjuku-sanchome",
+                    "lat": 35.6885,
+                    "lon": 139.7038,
+                    "popular": False
+                },
+                {
+                    "name": "Nakano-sakaue",
+                    "lat": 35.6969,
+                    "lon": 139.6806,
+                    "popular": False
+                },
+                {
+                    "name": "Ogikubo",
+                    "lat": 35.7044,
+                    "lon": 139.6197,
+                    "popular": False
+                }
+            ]
         },
         "chuo_rapid": {
             "name": "JR Chuo Line (Rapid)",
             "popularity": 2,
             "stations": [
-                {"name": "Tokyo", "lat": 35.6812, "lon": 139.7671, "popular": True},
-                {"name": "Shinjuku", "lat": 35.6896, "lon": 139.7006, "popular": True},
-                {"name": "Kichijoji", "lat": 35.7031, "lon": 139.5795, "popular": True},
-                {"name": "Nakano", "lat": 35.7054, "lon": 139.6657, "popular": True},
-                {"name": "Koenji", "lat": 35.7054, "lon": 139.6494, "popular": False},
-                {"name": "Asagaya", "lat": 35.7041, "lon": 139.6359, "popular": False},
-                {"name": "Ogikubo", "lat": 35.7036, "lon": 139.6200, "popular": False},
-                {"name": "Nishi-Ogikubo", "lat": 35.7030, "lon": 139.5990, "popular": False},
-                {"name": "Mitaka", "lat": 35.7025, "lon": 139.5607, "popular": False},
-                {"name": "Tachikawa", "lat": 35.6979, "lon": 139.4137, "popular": False},
-            ],
+                {
+                    "name": "Tokyo",
+                    "lat": 35.6812,
+                    "lon": 139.7671,
+                    "popular": True
+                },
+                {
+                    "name": "Shinjuku",
+                    "lat": 35.6896,
+                    "lon": 139.7006,
+                    "popular": True
+                },
+                {
+                    "name": "Kichijoji",
+                    "lat": 35.7031,
+                    "lon": 139.5795,
+                    "popular": True
+                },
+                {
+                    "name": "Nakano",
+                    "lat": 35.7054,
+                    "lon": 139.6657,
+                    "popular": True
+                },
+                {
+                    "name": "Koenji",
+                    "lat": 35.7054,
+                    "lon": 139.6494,
+                    "popular": False
+                },
+                {
+                    "name": "Asagaya",
+                    "lat": 35.7041,
+                    "lon": 139.6359,
+                    "popular": False
+                },
+                {
+                    "name": "Ogikubo",
+                    "lat": 35.7036,
+                    "lon": 139.62,
+                    "popular": False
+                },
+                {
+                    "name": "Nishi-Ogikubo",
+                    "lat": 35.703,
+                    "lon": 139.599,
+                    "popular": False
+                },
+                {
+                    "name": "Mitaka",
+                    "lat": 35.7025,
+                    "lon": 139.5607,
+                    "popular": False
+                },
+                {
+                    "name": "Tachikawa",
+                    "lat": 35.6979,
+                    "lon": 139.4137,
+                    "popular": False
+                }
+            ]
         },
         "hibiya": {
             "name": "Tokyo Metro Hibiya Line",
             "popularity": 3,
             "stations": [
-                {"name": "Roppongi", "lat": 35.6632, "lon": 139.7312, "popular": True},
-                {"name": "Ginza", "lat": 35.6717, "lon": 139.7637, "popular": True},
-                {"name": "Ueno", "lat": 35.7137, "lon": 139.7770, "popular": True},
-                {"name": "Akihabara", "lat": 35.6984, "lon": 139.7731, "popular": True},
-                {"name": "Tsukiji", "lat": 35.6676, "lon": 139.7707, "popular": True},
-                {"name": "Ebisu", "lat": 35.6470, "lon": 139.7107, "popular": False},
-                {"name": "Naka-Meguro", "lat": 35.6440, "lon": 139.6988, "popular": False},
-                {"name": "Kasumigaseki", "lat": 35.6738, "lon": 139.7510, "popular": False},
-                {"name": "Kayabacho", "lat": 35.6792, "lon": 139.7810, "popular": False},
-                {"name": "Minami-Senju", "lat": 35.7349, "lon": 139.8009, "popular": False},
-                {"name": "Kita-Senju", "lat": 35.7497, "lon": 139.8051, "popular": False},
-            ],
+                {
+                    "name": "Roppongi",
+                    "lat": 35.6632,
+                    "lon": 139.7312,
+                    "popular": True
+                },
+                {
+                    "name": "Ginza",
+                    "lat": 35.6717,
+                    "lon": 139.7637,
+                    "popular": True
+                },
+                {
+                    "name": "Ueno",
+                    "lat": 35.7137,
+                    "lon": 139.777,
+                    "popular": True
+                },
+                {
+                    "name": "Akihabara",
+                    "lat": 35.6984,
+                    "lon": 139.7731,
+                    "popular": True
+                },
+                {
+                    "name": "Tsukiji",
+                    "lat": 35.6676,
+                    "lon": 139.7707,
+                    "popular": True
+                },
+                {
+                    "name": "Ebisu",
+                    "lat": 35.647,
+                    "lon": 139.7107,
+                    "popular": False
+                },
+                {
+                    "name": "Naka-Meguro",
+                    "lat": 35.644,
+                    "lon": 139.6988,
+                    "popular": False
+                },
+                {
+                    "name": "Kasumigaseki",
+                    "lat": 35.6738,
+                    "lon": 139.751,
+                    "popular": False
+                },
+                {
+                    "name": "Kayabacho",
+                    "lat": 35.6792,
+                    "lon": 139.781,
+                    "popular": False
+                },
+                {
+                    "name": "Minami-Senju",
+                    "lat": 35.7349,
+                    "lon": 139.8009,
+                    "popular": False
+                },
+                {
+                    "name": "Kita-Senju",
+                    "lat": 35.7497,
+                    "lon": 139.8051,
+                    "popular": False
+                }
+            ]
         },
         "oedo": {
             "name": "Toei Oedo Line",
             "popularity": 3,
             "stations": [
-                {"name": "Shinjuku-Nishiguchi", "lat": 35.6936, "lon": 139.6975, "popular": True},
-                {"name": "Roppongi", "lat": 35.6628, "lon": 139.7316, "popular": True},
-                {"name": "Tsukiji-Shijo", "lat": 35.6657, "lon": 139.7690, "popular": True},
-                {"name": "Ryogoku", "lat": 35.6968, "lon": 139.7930, "popular": True},
-                {"name": "Daimon", "lat": 35.6557, "lon": 139.7562, "popular": False},
-                {"name": "Aoyama-Itchome", "lat": 35.6727, "lon": 139.7244, "popular": False},
-                {"name": "Tochomae", "lat": 35.6918, "lon": 139.6919, "popular": False},
-                {"name": "Ueno-Okachimachi", "lat": 35.7072, "lon": 139.7740, "popular": False},
-                {"name": "Iidabashi", "lat": 35.7019, "lon": 139.7445, "popular": False},
-                {"name": "Azabu-Juban", "lat": 35.6543, "lon": 139.7371, "popular": False},
-            ],
+                {
+                    "name": "Shinjuku-Nishiguchi",
+                    "lat": 35.6936,
+                    "lon": 139.6975,
+                    "popular": True
+                },
+                {
+                    "name": "Roppongi",
+                    "lat": 35.6628,
+                    "lon": 139.7316,
+                    "popular": True
+                },
+                {
+                    "name": "Tsukiji-Shijo",
+                    "lat": 35.6657,
+                    "lon": 139.769,
+                    "popular": True
+                },
+                {
+                    "name": "Ryogoku",
+                    "lat": 35.6968,
+                    "lon": 139.793,
+                    "popular": True
+                },
+                {
+                    "name": "Daimon",
+                    "lat": 35.6557,
+                    "lon": 139.7562,
+                    "popular": False
+                },
+                {
+                    "name": "Aoyama-Itchome",
+                    "lat": 35.6727,
+                    "lon": 139.7244,
+                    "popular": False
+                },
+                {
+                    "name": "Tochomae",
+                    "lat": 35.6918,
+                    "lon": 139.6919,
+                    "popular": False
+                },
+                {
+                    "name": "Ueno-Okachimachi",
+                    "lat": 35.7072,
+                    "lon": 139.774,
+                    "popular": False
+                },
+                {
+                    "name": "Iidabashi",
+                    "lat": 35.7019,
+                    "lon": 139.7445,
+                    "popular": False
+                },
+                {
+                    "name": "Azabu-Juban",
+                    "lat": 35.6543,
+                    "lon": 139.7371,
+                    "popular": False
+                }
+            ]
         },
         "asakusa": {
             "name": "Toei Asakusa Line",
             "popularity": 3,
             "stations": [
-                {"name": "Asakusa", "lat": 35.7114, "lon": 139.7981, "popular": True},
-                {"name": "Nihombashi", "lat": 35.6822, "lon": 139.7743, "popular": True},
-                {"name": "Shimbashi", "lat": 35.6660, "lon": 139.7584, "popular": True},
-                {"name": "Daimon", "lat": 35.6555, "lon": 139.7560, "popular": False},
-                {"name": "Mita", "lat": 35.6483, "lon": 139.7467, "popular": False},
-                {"name": "Gotanda", "lat": 35.6262, "lon": 139.7235, "popular": False},
-                {"name": "Takaracho", "lat": 35.6803, "lon": 139.7777, "popular": False},
-                {"name": "Kuramae", "lat": 35.7007, "lon": 139.7893, "popular": False},
-                {"name": "Oshiage", "lat": 35.7109, "lon": 139.8128, "popular": True},
-            ],
+                {
+                    "name": "Asakusa",
+                    "lat": 35.7114,
+                    "lon": 139.7981,
+                    "popular": True
+                },
+                {
+                    "name": "Nihombashi",
+                    "lat": 35.6822,
+                    "lon": 139.7743,
+                    "popular": True
+                },
+                {
+                    "name": "Shimbashi",
+                    "lat": 35.666,
+                    "lon": 139.7584,
+                    "popular": True
+                },
+                {
+                    "name": "Daimon",
+                    "lat": 35.6555,
+                    "lon": 139.756,
+                    "popular": False
+                },
+                {
+                    "name": "Mita",
+                    "lat": 35.6483,
+                    "lon": 139.7467,
+                    "popular": False
+                },
+                {
+                    "name": "Gotanda",
+                    "lat": 35.6262,
+                    "lon": 139.7235,
+                    "popular": False
+                },
+                {
+                    "name": "Takaracho",
+                    "lat": 35.6803,
+                    "lon": 139.7777,
+                    "popular": False
+                },
+                {
+                    "name": "Kuramae",
+                    "lat": 35.7007,
+                    "lon": 139.7893,
+                    "popular": False
+                },
+                {
+                    "name": "Oshiage",
+                    "lat": 35.7109,
+                    "lon": 139.8128,
+                    "popular": True
+                }
+            ]
         },
         "tozai": {
             "name": "Tokyo Metro Tozai Line",
             "popularity": 3,
             "stations": [
-                {"name": "Nihombashi", "lat": 35.6828, "lon": 139.7742, "popular": True},
-                {"name": "Otemachi", "lat": 35.6867, "lon": 139.7630, "popular": True},
-                {"name": "Iidabashi", "lat": 35.7020, "lon": 139.7446, "popular": False},
-                {"name": "Kudanshita", "lat": 35.6956, "lon": 139.7512, "popular": False},
-                {"name": "Takebashi", "lat": 35.6918, "lon": 139.7576, "popular": False},
-                {"name": "Kayabacho", "lat": 35.6792, "lon": 139.7810, "popular": False},
-                {"name": "Monzen-Nakacho", "lat": 35.6732, "lon": 139.7959, "popular": False},
-                {"name": "Toyocho", "lat": 35.6694, "lon": 139.8142, "popular": False},
-                {"name": "Nishi-Kasai", "lat": 35.6622, "lon": 139.8545, "popular": False},
-            ],
+                {
+                    "name": "Nihombashi",
+                    "lat": 35.6828,
+                    "lon": 139.7742,
+                    "popular": True
+                },
+                {
+                    "name": "Otemachi",
+                    "lat": 35.6867,
+                    "lon": 139.763,
+                    "popular": True
+                },
+                {
+                    "name": "Iidabashi",
+                    "lat": 35.702,
+                    "lon": 139.7446,
+                    "popular": False
+                },
+                {
+                    "name": "Kudanshita",
+                    "lat": 35.6956,
+                    "lon": 139.7512,
+                    "popular": False
+                },
+                {
+                    "name": "Takebashi",
+                    "lat": 35.6918,
+                    "lon": 139.7576,
+                    "popular": False
+                },
+                {
+                    "name": "Kayabacho",
+                    "lat": 35.6792,
+                    "lon": 139.781,
+                    "popular": False
+                },
+                {
+                    "name": "Monzen-Nakacho",
+                    "lat": 35.6732,
+                    "lon": 139.7959,
+                    "popular": False
+                },
+                {
+                    "name": "Toyocho",
+                    "lat": 35.6694,
+                    "lon": 139.8142,
+                    "popular": False
+                },
+                {
+                    "name": "Nishi-Kasai",
+                    "lat": 35.6622,
+                    "lon": 139.8545,
+                    "popular": False
+                }
+            ]
         },
         "chiyoda": {
             "name": "Tokyo Metro Chiyoda Line",
             "popularity": 3,
             "stations": [
-                {"name": "Omotesando", "lat": 35.6654, "lon": 139.7122, "popular": True},
-                {"name": "Meiji-Jingumae", "lat": 35.6698, "lon": 139.7048, "popular": True},
-                {"name": "Otemachi", "lat": 35.6867, "lon": 139.7630, "popular": True},
-                {"name": "Kasumigaseki", "lat": 35.6736, "lon": 139.7508, "popular": False},
-                {"name": "Hibiya", "lat": 35.6752, "lon": 139.7604, "popular": False},
-                {"name": "Sendagi", "lat": 35.7263, "lon": 139.7621, "popular": False},
-                {"name": "Nezu", "lat": 35.7202, "lon": 139.7634, "popular": False},
-                {"name": "Yoyogi-Uehara", "lat": 35.6691, "lon": 139.6781, "popular": False},
-                {"name": "Kita-Senju", "lat": 35.7497, "lon": 139.8051, "popular": False},
-            ],
+                {
+                    "name": "Omotesando",
+                    "lat": 35.6654,
+                    "lon": 139.7122,
+                    "popular": True
+                },
+                {
+                    "name": "Meiji-Jingumae",
+                    "lat": 35.6698,
+                    "lon": 139.7048,
+                    "popular": True
+                },
+                {
+                    "name": "Otemachi",
+                    "lat": 35.6867,
+                    "lon": 139.763,
+                    "popular": True
+                },
+                {
+                    "name": "Kasumigaseki",
+                    "lat": 35.6736,
+                    "lon": 139.7508,
+                    "popular": False
+                },
+                {
+                    "name": "Hibiya",
+                    "lat": 35.6752,
+                    "lon": 139.7604,
+                    "popular": False
+                },
+                {
+                    "name": "Sendagi",
+                    "lat": 35.7263,
+                    "lon": 139.7621,
+                    "popular": False
+                },
+                {
+                    "name": "Nezu",
+                    "lat": 35.7202,
+                    "lon": 139.7634,
+                    "popular": False
+                },
+                {
+                    "name": "Yoyogi-Uehara",
+                    "lat": 35.6691,
+                    "lon": 139.6781,
+                    "popular": False
+                },
+                {
+                    "name": "Kita-Senju",
+                    "lat": 35.7497,
+                    "lon": 139.8051,
+                    "popular": False
+                }
+            ]
         },
         "hanzomon": {
             "name": "Tokyo Metro Hanzomon Line",
             "popularity": 3,
             "stations": [
-                {"name": "Shibuya", "lat": 35.6590, "lon": 139.7013, "popular": True},
-                {"name": "Omotesando", "lat": 35.6654, "lon": 139.7122, "popular": True},
-                {"name": "Otemachi", "lat": 35.6867, "lon": 139.7630, "popular": True},
-                {"name": "Oshiage", "lat": 35.7109, "lon": 139.8128, "popular": True},
-                {"name": "Aoyama-Itchome", "lat": 35.6727, "lon": 139.7244, "popular": False},
-                {"name": "Nagatacho", "lat": 35.6781, "lon": 139.7397, "popular": False},
-                {"name": "Kudanshita", "lat": 35.6956, "lon": 139.7512, "popular": False},
-                {"name": "Jimbocho", "lat": 35.6959, "lon": 139.7578, "popular": False},
-                {"name": "Suitengumae", "lat": 35.6836, "lon": 139.7848, "popular": False},
-                {"name": "Kiyosumi-Shirakawa", "lat": 35.6810, "lon": 139.8002, "popular": False},
-            ],
+                {
+                    "name": "Shibuya",
+                    "lat": 35.659,
+                    "lon": 139.7013,
+                    "popular": True
+                },
+                {
+                    "name": "Omotesando",
+                    "lat": 35.6654,
+                    "lon": 139.7122,
+                    "popular": True
+                },
+                {
+                    "name": "Otemachi",
+                    "lat": 35.6867,
+                    "lon": 139.763,
+                    "popular": True
+                },
+                {
+                    "name": "Oshiage",
+                    "lat": 35.7109,
+                    "lon": 139.8128,
+                    "popular": True
+                },
+                {
+                    "name": "Aoyama-Itchome",
+                    "lat": 35.6727,
+                    "lon": 139.7244,
+                    "popular": False
+                },
+                {
+                    "name": "Nagatacho",
+                    "lat": 35.6781,
+                    "lon": 139.7397,
+                    "popular": False
+                },
+                {
+                    "name": "Kudanshita",
+                    "lat": 35.6956,
+                    "lon": 139.7512,
+                    "popular": False
+                },
+                {
+                    "name": "Jimbocho",
+                    "lat": 35.6959,
+                    "lon": 139.7578,
+                    "popular": False
+                },
+                {
+                    "name": "Suitengumae",
+                    "lat": 35.6836,
+                    "lon": 139.7848,
+                    "popular": False
+                },
+                {
+                    "name": "Kiyosumi-Shirakawa",
+                    "lat": 35.681,
+                    "lon": 139.8002,
+                    "popular": False
+                }
+            ]
         },
         "fukutoshin": {
             "name": "Tokyo Metro Fukutoshin Line",
             "popularity": 4,
             "stations": [
-                {"name": "Shibuya", "lat": 35.6590, "lon": 139.7013, "popular": True},
-                {"name": "Shinjuku-Sanchome", "lat": 35.6885, "lon": 139.7038, "popular": True},
-                {"name": "Ikebukuro", "lat": 35.7289, "lon": 139.7101, "popular": True},
-                {"name": "Meiji-Jingumae", "lat": 35.6698, "lon": 139.7048, "popular": False},
-                {"name": "Kitasando", "lat": 35.6791, "lon": 139.7020, "popular": False},
-                {"name": "Zoshigaya", "lat": 35.7191, "lon": 139.7147, "popular": False},
-                {"name": "Nishi-Waseda", "lat": 35.7128, "lon": 139.7086, "popular": False},
-            ],
+                {
+                    "name": "Shibuya",
+                    "lat": 35.659,
+                    "lon": 139.7013,
+                    "popular": True
+                },
+                {
+                    "name": "Shinjuku-Sanchome",
+                    "lat": 35.6885,
+                    "lon": 139.7038,
+                    "popular": True
+                },
+                {
+                    "name": "Ikebukuro",
+                    "lat": 35.7289,
+                    "lon": 139.7101,
+                    "popular": True
+                },
+                {
+                    "name": "Meiji-Jingumae",
+                    "lat": 35.6698,
+                    "lon": 139.7048,
+                    "popular": False
+                },
+                {
+                    "name": "Kitasando",
+                    "lat": 35.6791,
+                    "lon": 139.702,
+                    "popular": False
+                },
+                {
+                    "name": "Zoshigaya",
+                    "lat": 35.7191,
+                    "lon": 139.7147,
+                    "popular": False
+                },
+                {
+                    "name": "Nishi-Waseda",
+                    "lat": 35.7128,
+                    "lon": 139.7086,
+                    "popular": False
+                }
+            ]
         },
         "yurakucho": {
             "name": "Tokyo Metro Yurakucho Line",
             "popularity": 4,
             "stations": [
-                {"name": "Ikebukuro", "lat": 35.7289, "lon": 139.7101, "popular": True},
-                {"name": "Yurakucho", "lat": 35.6752, "lon": 139.7629, "popular": True},
-                {"name": "Tsukishima", "lat": 35.6631, "lon": 139.7830, "popular": False},
-                {"name": "Toyosu", "lat": 35.6533, "lon": 139.7964, "popular": True},
-                {"name": "Iidabashi", "lat": 35.7020, "lon": 139.7446, "popular": False},
-                {"name": "Nagatacho", "lat": 35.6781, "lon": 139.7397, "popular": False},
-                {"name": "Sakuradamon", "lat": 35.6766, "lon": 139.7533, "popular": False},
-                {"name": "Shin-Kiba", "lat": 35.6479, "lon": 139.8267, "popular": False},
-            ],
+                {
+                    "name": "Ikebukuro",
+                    "lat": 35.7289,
+                    "lon": 139.7101,
+                    "popular": True
+                },
+                {
+                    "name": "Yurakucho",
+                    "lat": 35.6752,
+                    "lon": 139.7629,
+                    "popular": True
+                },
+                {
+                    "name": "Tsukishima",
+                    "lat": 35.6631,
+                    "lon": 139.783,
+                    "popular": False
+                },
+                {
+                    "name": "Toyosu",
+                    "lat": 35.6533,
+                    "lon": 139.7964,
+                    "popular": True
+                },
+                {
+                    "name": "Iidabashi",
+                    "lat": 35.702,
+                    "lon": 139.7446,
+                    "popular": False
+                },
+                {
+                    "name": "Nagatacho",
+                    "lat": 35.6781,
+                    "lon": 139.7397,
+                    "popular": False
+                },
+                {
+                    "name": "Sakuradamon",
+                    "lat": 35.6766,
+                    "lon": 139.7533,
+                    "popular": False
+                },
+                {
+                    "name": "Shin-Kiba",
+                    "lat": 35.6479,
+                    "lon": 139.8267,
+                    "popular": False
+                }
+            ]
         },
         "namboku": {
             "name": "Tokyo Metro Namboku Line",
             "popularity": 4,
             "stations": [
-                {"name": "Meguro", "lat": 35.6340, "lon": 139.7158, "popular": True},
-                {"name": "Azabu-Juban", "lat": 35.6543, "lon": 139.7371, "popular": True},
-                {"name": "Akabane-Iwabuchi", "lat": 35.7806, "lon": 139.7179, "popular": False},
-                {"name": "Oji", "lat": 35.7528, "lon": 139.7382, "popular": False},
-                {"name": "Komagome", "lat": 35.7365, "lon": 139.7470, "popular": False},
-                {"name": "Todaimae", "lat": 35.7262, "lon": 139.7589, "popular": False},
-                {"name": "Iidabashi", "lat": 35.7020, "lon": 139.7446, "popular": False},
-                {"name": "Tameike-Sanno", "lat": 35.6737, "lon": 139.7413, "popular": False},
-                {"name": "Shirokanedai", "lat": 35.6437, "lon": 139.7269, "popular": False},
-            ],
+                {
+                    "name": "Meguro",
+                    "lat": 35.634,
+                    "lon": 139.7158,
+                    "popular": True
+                },
+                {
+                    "name": "Azabu-Juban",
+                    "lat": 35.6543,
+                    "lon": 139.7371,
+                    "popular": True
+                },
+                {
+                    "name": "Akabane-Iwabuchi",
+                    "lat": 35.7806,
+                    "lon": 139.7179,
+                    "popular": False
+                },
+                {
+                    "name": "Oji",
+                    "lat": 35.7528,
+                    "lon": 139.7382,
+                    "popular": False
+                },
+                {
+                    "name": "Komagome",
+                    "lat": 35.7365,
+                    "lon": 139.747,
+                    "popular": False
+                },
+                {
+                    "name": "Todaimae",
+                    "lat": 35.7262,
+                    "lon": 139.7589,
+                    "popular": False
+                },
+                {
+                    "name": "Iidabashi",
+                    "lat": 35.702,
+                    "lon": 139.7446,
+                    "popular": False
+                },
+                {
+                    "name": "Tameike-Sanno",
+                    "lat": 35.6737,
+                    "lon": 139.7413,
+                    "popular": False
+                },
+                {
+                    "name": "Shirokanedai",
+                    "lat": 35.6437,
+                    "lon": 139.7269,
+                    "popular": False
+                }
+            ]
         },
         "rinkai": {
             "name": "Rinkai Line",
             "popularity": 4,
             "stations": [
-                {"name": "Odaiba-Kaihinkoen", "lat": 35.6278, "lon": 139.7754, "popular": True},
-                {"name": "Tokyo Teleport", "lat": 35.6266, "lon": 139.7774, "popular": True},
-                {"name": "Osaki", "lat": 35.6197, "lon": 139.7284, "popular": False},
-                {"name": "Tennoz Isle", "lat": 35.6228, "lon": 139.7482, "popular": False},
-                {"name": "Shin-Kiba", "lat": 35.6479, "lon": 139.8267, "popular": False},
-                {"name": "Kokusai-Tenjijo", "lat": 35.6319, "lon": 139.7914, "popular": False},
-            ],
+                {
+                    "name": "Odaiba-Kaihinkoen",
+                    "lat": 35.6278,
+                    "lon": 139.7754,
+                    "popular": True
+                },
+                {
+                    "name": "Tokyo Teleport",
+                    "lat": 35.6266,
+                    "lon": 139.7774,
+                    "popular": True
+                },
+                {
+                    "name": "Osaki",
+                    "lat": 35.6197,
+                    "lon": 139.7284,
+                    "popular": False
+                },
+                {
+                    "name": "Tennoz Isle",
+                    "lat": 35.6228,
+                    "lon": 139.7482,
+                    "popular": False
+                },
+                {
+                    "name": "Shin-Kiba",
+                    "lat": 35.6479,
+                    "lon": 139.8267,
+                    "popular": False
+                },
+                {
+                    "name": "Kokusai-Tenjijo",
+                    "lat": 35.6319,
+                    "lon": 139.7914,
+                    "popular": False
+                }
+            ]
         },
         "keikyu": {
             "name": "Keikyu Main Line",
             "popularity": 4,
             "stations": [
-                {"name": "Shinagawa", "lat": 35.6285, "lon": 139.7387, "popular": True},
-                {"name": "Haneda Airport T3", "lat": 35.5494, "lon": 139.7798, "popular": True},
-                {"name": "Haneda Airport T1/T2", "lat": 35.5437, "lon": 139.7675, "popular": True},
-                {"name": "Sengakuji", "lat": 35.6385, "lon": 139.7407, "popular": False},
-                {"name": "Keikyu-Kamata", "lat": 35.5612, "lon": 139.7241, "popular": False},
-                {"name": "Yokohama", "lat": 35.4659, "lon": 139.6226, "popular": False},
-            ],
-        },
+                {
+                    "name": "Shinagawa",
+                    "lat": 35.6285,
+                    "lon": 139.7387,
+                    "popular": True
+                },
+                {
+                    "name": "Haneda Airport T3",
+                    "lat": 35.5494,
+                    "lon": 139.7798,
+                    "popular": True
+                },
+                {
+                    "name": "Haneda Airport T1/T2",
+                    "lat": 35.5437,
+                    "lon": 139.7675,
+                    "popular": True
+                },
+                {
+                    "name": "Sengakuji",
+                    "lat": 35.6385,
+                    "lon": 139.7407,
+                    "popular": False
+                },
+                {
+                    "name": "Keikyu-Kamata",
+                    "lat": 35.5612,
+                    "lon": 139.7241,
+                    "popular": False
+                },
+                {
+                    "name": "Yokohama",
+                    "lat": 35.4659,
+                    "lon": 139.6226,
+                    "popular": False
+                }
+            ]
+        }
     },
     "osaka": {
         "midosuji": {
             "name": "Osaka Metro Midosuji Line",
             "popularity": 1,
             "stations": [
-                {"name": "Umeda", "lat": 34.7046, "lon": 135.4992, "popular": True},
-                {"name": "Namba", "lat": 34.6658, "lon": 135.5013, "popular": True},
-                {"name": "Shinsaibashi", "lat": 34.6750, "lon": 135.5007, "popular": True},
-                {"name": "Tennoji", "lat": 34.6464, "lon": 135.5148, "popular": True},
-                {"name": "Shin-Osaka", "lat": 34.7336, "lon": 135.5002, "popular": True},
-                {"name": "Honmachi", "lat": 34.6838, "lon": 135.5002, "popular": False},
-                {"name": "Yodoyabashi", "lat": 34.6930, "lon": 135.5022, "popular": False},
-                {"name": "Daikokucho", "lat": 34.6552, "lon": 135.5011, "popular": False},
-                {"name": "Nakatsu", "lat": 34.7130, "lon": 135.4995, "popular": False},
-                {"name": "Nishinakajima-Minamigata", "lat": 34.7213, "lon": 135.4998, "popular": False},
-            ],
+                {
+                    "name": "Umeda",
+                    "lat": 34.7046,
+                    "lon": 135.4992,
+                    "popular": True
+                },
+                {
+                    "name": "Namba",
+                    "lat": 34.6658,
+                    "lon": 135.5013,
+                    "popular": True
+                },
+                {
+                    "name": "Shinsaibashi",
+                    "lat": 34.675,
+                    "lon": 135.5007,
+                    "popular": True
+                },
+                {
+                    "name": "Tennoji",
+                    "lat": 34.6464,
+                    "lon": 135.5148,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Osaka",
+                    "lat": 34.7336,
+                    "lon": 135.5002,
+                    "popular": True
+                },
+                {
+                    "name": "Honmachi",
+                    "lat": 34.6838,
+                    "lon": 135.5002,
+                    "popular": False
+                },
+                {
+                    "name": "Yodoyabashi",
+                    "lat": 34.693,
+                    "lon": 135.5022,
+                    "popular": False
+                },
+                {
+                    "name": "Daikokucho",
+                    "lat": 34.6552,
+                    "lon": 135.5011,
+                    "popular": False
+                },
+                {
+                    "name": "Nakatsu",
+                    "lat": 34.713,
+                    "lon": 135.4995,
+                    "popular": False
+                }
+            ]
         },
         "osaka_loop": {
             "name": "JR Osaka Loop Line",
             "popularity": 1,
             "stations": [
-                {"name": "Osaka", "lat": 34.7024, "lon": 135.4959, "popular": True},
-                {"name": "Tennoji", "lat": 34.6464, "lon": 135.5148, "popular": True},
-                {"name": "Namba (JR)", "lat": 34.6653, "lon": 135.4964, "popular": True},
-                {"name": "Shin-Imamiya", "lat": 34.6522, "lon": 135.5012, "popular": True},
-                {"name": "Tsuruhashi", "lat": 34.6679, "lon": 135.5303, "popular": False},
-                {"name": "Kyobashi", "lat": 34.6947, "lon": 135.5361, "popular": False},
-                {"name": "Nishi-Kujo", "lat": 34.6827, "lon": 135.4691, "popular": False},
-                {"name": "Bentencho", "lat": 34.6733, "lon": 135.4651, "popular": False},
-                {"name": "Taisho", "lat": 34.6650, "lon": 135.4662, "popular": False},
-                {"name": "Fukushima", "lat": 34.6966, "lon": 135.4859, "popular": False},
-            ],
+                {
+                    "name": "Osaka",
+                    "lat": 34.7024,
+                    "lon": 135.4959,
+                    "popular": True
+                },
+                {
+                    "name": "Tennoji",
+                    "lat": 34.6464,
+                    "lon": 135.5148,
+                    "popular": True
+                },
+                {
+                    "name": "Namba (JR)",
+                    "lat": 34.6653,
+                    "lon": 135.4964,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Imamiya",
+                    "lat": 34.6522,
+                    "lon": 135.5012,
+                    "popular": True
+                },
+                {
+                    "name": "Tsuruhashi",
+                    "lat": 34.6679,
+                    "lon": 135.5303,
+                    "popular": False
+                },
+                {
+                    "name": "Kyobashi",
+                    "lat": 34.6947,
+                    "lon": 135.5361,
+                    "popular": False
+                },
+                {
+                    "name": "Nishi-Kujo",
+                    "lat": 34.6827,
+                    "lon": 135.4691,
+                    "popular": False
+                },
+                {
+                    "name": "Bentencho",
+                    "lat": 34.6733,
+                    "lon": 135.4651,
+                    "popular": False
+                },
+                {
+                    "name": "Fukushima",
+                    "lat": 34.6966,
+                    "lon": 135.4859,
+                    "popular": False
+                }
+            ]
         },
         "tanimachi": {
             "name": "Osaka Metro Tanimachi Line",
             "popularity": 2,
             "stations": [
-                {"name": "Tennoji", "lat": 34.6464, "lon": 135.5148, "popular": True},
-                {"name": "Tanimachi Yonchome", "lat": 34.6816, "lon": 135.5166, "popular": True},
-                {"name": "Tenmabashi", "lat": 34.6924, "lon": 135.5180, "popular": True},
-                {"name": "Higashi-Umeda", "lat": 34.7042, "lon": 135.5037, "popular": True},
-                {"name": "Tanimachi Rokuchome", "lat": 34.6730, "lon": 135.5158, "popular": False},
-                {"name": "Tanimachi Kyuchome", "lat": 34.6664, "lon": 135.5167, "popular": False},
-                {"name": "Miyakojima", "lat": 34.7057, "lon": 135.5274, "popular": False},
-                {"name": "Dainichi", "lat": 34.7481, "lon": 135.5594, "popular": False},
-            ],
+                {
+                    "name": "Tennoji",
+                    "lat": 34.6464,
+                    "lon": 135.5148,
+                    "popular": True
+                },
+                {
+                    "name": "Tanimachi Yonchome",
+                    "lat": 34.6816,
+                    "lon": 135.5166,
+                    "popular": True
+                },
+                {
+                    "name": "Tenmabashi",
+                    "lat": 34.6924,
+                    "lon": 135.518,
+                    "popular": True
+                },
+                {
+                    "name": "Higashi-Umeda",
+                    "lat": 34.7042,
+                    "lon": 135.5037,
+                    "popular": True
+                },
+                {
+                    "name": "Tanimachi Rokuchome",
+                    "lat": 34.673,
+                    "lon": 135.5158,
+                    "popular": False
+                },
+                {
+                    "name": "Tanimachi Kyuchome",
+                    "lat": 34.6664,
+                    "lon": 135.5167,
+                    "popular": False
+                }
+            ]
         },
         "chuo_osaka": {
             "name": "Osaka Metro Chuo Line",
             "popularity": 2,
             "stations": [
-                {"name": "Honmachi", "lat": 34.6838, "lon": 135.5002, "popular": True},
-                {"name": "Osaka-ko", "lat": 34.6696, "lon": 135.4329, "popular": True},
-                {"name": "Cosmosquare", "lat": 34.6520, "lon": 135.4178, "popular": False},
-                {"name": "Bentencho", "lat": 34.6733, "lon": 135.4651, "popular": False},
-                {"name": "Sakaisuji-Honmachi", "lat": 34.6814, "lon": 135.5087, "popular": False},
-                {"name": "Morinomiya", "lat": 34.6784, "lon": 135.5293, "popular": False},
-                {"name": "Nagata", "lat": 34.6788, "lon": 135.5564, "popular": False},
-            ],
+                {
+                    "name": "Honmachi",
+                    "lat": 34.6838,
+                    "lon": 135.5002,
+                    "popular": True
+                },
+                {
+                    "name": "Osaka-ko",
+                    "lat": 34.6696,
+                    "lon": 135.4329,
+                    "popular": True
+                },
+                {
+                    "name": "Cosmosquare",
+                    "lat": 34.652,
+                    "lon": 135.4178,
+                    "popular": False
+                },
+                {
+                    "name": "Bentencho",
+                    "lat": 34.6733,
+                    "lon": 135.4651,
+                    "popular": False
+                },
+                {
+                    "name": "Sakaisuji-Honmachi",
+                    "lat": 34.6814,
+                    "lon": 135.5087,
+                    "popular": False
+                },
+                {
+                    "name": "Morinomiya",
+                    "lat": 34.6784,
+                    "lon": 135.5293,
+                    "popular": False
+                }
+            ]
         },
         "yotsubashi": {
             "name": "Osaka Metro Yotsubashi Line",
             "popularity": 3,
             "stations": [
-                {"name": "Namba", "lat": 34.6658, "lon": 135.5013, "popular": True},
-                {"name": "Shinsaibashi", "lat": 34.6750, "lon": 135.5007, "popular": True},
-                {"name": "Honmachi", "lat": 34.6838, "lon": 135.5002, "popular": True},
-                {"name": "Nishi-Umeda", "lat": 34.6988, "lon": 135.4929, "popular": False},
-                {"name": "Yotsubashi", "lat": 34.6780, "lon": 135.4949, "popular": False},
-                {"name": "Daikokucho", "lat": 34.6552, "lon": 135.5011, "popular": False},
-                {"name": "Kitakagaya", "lat": 34.6370, "lon": 135.4948, "popular": False},
-            ],
-        },
-        "hankyu_kobe": {
-            "name": "Hankyu Kobe Line",
-            "popularity": 3,
-            "stations": [
-                {"name": "Osaka-Umeda", "lat": 34.7050, "lon": 135.4990, "popular": True},
-                {"name": "Juso", "lat": 34.7208, "lon": 135.4878, "popular": False},
-                {"name": "Tsukaguchi", "lat": 34.7443, "lon": 135.4202, "popular": False},
-                {"name": "Nishinomiya-Kitaguchi", "lat": 34.7535, "lon": 135.3669, "popular": False},
-                {"name": "Kobe-Sannomiya", "lat": 34.6933, "lon": 135.1956, "popular": True},
-            ],
-        },
-        "hankyu_kyoto": {
-            "name": "Hankyu Kyoto Line",
-            "popularity": 3,
-            "stations": [
-                {"name": "Osaka-Umeda", "lat": 34.7050, "lon": 135.4990, "popular": True},
-                {"name": "Juso", "lat": 34.7208, "lon": 135.4878, "popular": False},
-                {"name": "Awaji", "lat": 34.7347, "lon": 135.5271, "popular": False},
-                {"name": "Ibaraki-shi", "lat": 34.8104, "lon": 135.5623, "popular": False},
-                {"name": "Takatsuki-shi", "lat": 34.8470, "lon": 135.6170, "popular": False},
-                {"name": "Kyoto-Kawaramachi", "lat": 35.0038, "lon": 135.7693, "popular": True},
-            ],
+                {
+                    "name": "Namba",
+                    "lat": 34.6658,
+                    "lon": 135.5013,
+                    "popular": True
+                },
+                {
+                    "name": "Shinsaibashi",
+                    "lat": 34.675,
+                    "lon": 135.5007,
+                    "popular": True
+                },
+                {
+                    "name": "Honmachi",
+                    "lat": 34.6838,
+                    "lon": 135.5002,
+                    "popular": True
+                },
+                {
+                    "name": "Nishi-Umeda",
+                    "lat": 34.6988,
+                    "lon": 135.4929,
+                    "popular": False
+                },
+                {
+                    "name": "Yotsubashi",
+                    "lat": 34.678,
+                    "lon": 135.4949,
+                    "popular": False
+                }
+            ]
         },
         "nankai": {
             "name": "Nankai Main Line",
             "popularity": 3,
             "stations": [
-                {"name": "Namba", "lat": 34.6646, "lon": 135.5017, "popular": True},
-                {"name": "Shin-Imamiya", "lat": 34.6522, "lon": 135.5012, "popular": True},
-                {"name": "Sakai", "lat": 34.5764, "lon": 135.4845, "popular": False},
-                {"name": "Kishiwada", "lat": 34.4605, "lon": 135.3722, "popular": False},
-                {"name": "Kansai Airport", "lat": 34.4346, "lon": 135.2440, "popular": True},
-            ],
-        },
+                {
+                    "name": "Namba",
+                    "lat": 34.6646,
+                    "lon": 135.5017,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Imamiya",
+                    "lat": 34.6522,
+                    "lon": 135.5012,
+                    "popular": True
+                },
+                {
+                    "name": "Sakai",
+                    "lat": 34.5764,
+                    "lon": 135.4845,
+                    "popular": False
+                },
+                {
+                    "name": "Kansai Airport",
+                    "lat": 34.4346,
+                    "lon": 135.244,
+                    "popular": True
+                }
+            ]
+        }
     },
     "kyoto": {
         "karasuma": {
             "name": "Karasuma Subway Line",
             "popularity": 1,
             "stations": [
-                {"name": "Kyoto", "lat": 34.9858, "lon": 135.7588, "popular": True},
-                {"name": "Shijo", "lat": 35.0031, "lon": 135.7590, "popular": True},
-                {"name": "Karasuma Oike", "lat": 35.0098, "lon": 135.7592, "popular": True},
-                {"name": "Gojo", "lat": 34.9964, "lon": 135.7589, "popular": False},
-                {"name": "Kuramaguchi", "lat": 35.0283, "lon": 135.7583, "popular": False},
-                {"name": "Imadegawa", "lat": 35.0300, "lon": 135.7590, "popular": True},
-                {"name": "Kitaoji", "lat": 35.0448, "lon": 135.7566, "popular": False},
-                {"name": "Kitayama", "lat": 35.0525, "lon": 135.7580, "popular": False},
-                {"name": "Kokusaikaikan", "lat": 35.0594, "lon": 135.7783, "popular": False},
-                {"name": "Jujo", "lat": 34.9808, "lon": 135.7588, "popular": False},
-                {"name": "Takeda", "lat": 34.9628, "lon": 135.7600, "popular": False},
-            ],
+                {
+                    "name": "Kyoto",
+                    "lat": 34.9858,
+                    "lon": 135.7588,
+                    "popular": True
+                },
+                {
+                    "name": "Shijo",
+                    "lat": 35.0031,
+                    "lon": 135.759,
+                    "popular": True
+                },
+                {
+                    "name": "Karasuma Oike",
+                    "lat": 35.0098,
+                    "lon": 135.7592,
+                    "popular": True
+                },
+                {
+                    "name": "Gojo",
+                    "lat": 34.9964,
+                    "lon": 135.7589,
+                    "popular": False
+                },
+                {
+                    "name": "Kuramaguchi",
+                    "lat": 35.0283,
+                    "lon": 135.7583,
+                    "popular": False
+                },
+                {
+                    "name": "Imadegawa",
+                    "lat": 35.03,
+                    "lon": 135.759,
+                    "popular": True
+                },
+                {
+                    "name": "Kitaoji",
+                    "lat": 35.0448,
+                    "lon": 135.7566,
+                    "popular": False
+                },
+                {
+                    "name": "Kitayama",
+                    "lat": 35.0525,
+                    "lon": 135.758,
+                    "popular": False
+                },
+                {
+                    "name": "Kokusaikaikan",
+                    "lat": 35.0594,
+                    "lon": 135.7783,
+                    "popular": False
+                },
+                {
+                    "name": "Jujo",
+                    "lat": 34.9808,
+                    "lon": 135.7588,
+                    "popular": False
+                },
+                {
+                    "name": "Takeda",
+                    "lat": 34.9628,
+                    "lon": 135.76,
+                    "popular": False
+                }
+            ]
         },
         "tozai_kyoto": {
             "name": "Tozai Subway Line",
             "popularity": 2,
             "stations": [
-                {"name": "Sanjo Keihan", "lat": 35.0090, "lon": 135.7714, "popular": True},
-                {"name": "Nijo", "lat": 35.0101, "lon": 135.7432, "popular": True},
-                {"name": "Higashiyama", "lat": 35.0090, "lon": 135.7800, "popular": True},
-                {"name": "Karasuma Oike", "lat": 35.0098, "lon": 135.7592, "popular": True},
-                {"name": "Kyoto Shiyakusho-mae", "lat": 35.0110, "lon": 135.7680, "popular": False},
-                {"name": "Keage", "lat": 35.0095, "lon": 135.7890, "popular": False},
-                {"name": "Misasagi", "lat": 35.0056, "lon": 135.7990, "popular": False},
-                {"name": "Nijo-jo mae", "lat": 35.0130, "lon": 135.7480, "popular": False},
-                {"name": "Uzumasa Tenjingawa", "lat": 35.0130, "lon": 135.7190, "popular": False},
-            ],
+                {
+                    "name": "Sanjo Keihan",
+                    "lat": 35.009,
+                    "lon": 135.7714,
+                    "popular": True
+                },
+                {
+                    "name": "Nijo",
+                    "lat": 35.0101,
+                    "lon": 135.7432,
+                    "popular": True
+                },
+                {
+                    "name": "Higashiyama",
+                    "lat": 35.009,
+                    "lon": 135.78,
+                    "popular": True
+                },
+                {
+                    "name": "Karasuma Oike",
+                    "lat": 35.0098,
+                    "lon": 135.7592,
+                    "popular": True
+                },
+                {
+                    "name": "Kyoto Shiyakusho-mae",
+                    "lat": 35.011,
+                    "lon": 135.768,
+                    "popular": False
+                },
+                {
+                    "name": "Keage",
+                    "lat": 35.0095,
+                    "lon": 135.789,
+                    "popular": False
+                },
+                {
+                    "name": "Misasagi",
+                    "lat": 35.0056,
+                    "lon": 135.799,
+                    "popular": False
+                },
+                {
+                    "name": "Nijo-jo mae",
+                    "lat": 35.013,
+                    "lon": 135.748,
+                    "popular": False
+                },
+                {
+                    "name": "Uzumasa Tenjingawa",
+                    "lat": 35.013,
+                    "lon": 135.719,
+                    "popular": False
+                }
+            ]
         },
         "keihan_kyoto": {
             "name": "Keihan Main Line",
             "popularity": 2,
             "stations": [
-                {"name": "Gion-Shijo", "lat": 35.0036, "lon": 135.7713, "popular": True},
-                {"name": "Sanjo", "lat": 35.0090, "lon": 135.7714, "popular": True},
-                {"name": "Fushimi-Inari", "lat": 34.9671, "lon": 135.7727, "popular": True},
-                {"name": "Kiyomizu-Gojo", "lat": 34.9963, "lon": 135.7710, "popular": False},
-                {"name": "Demachiyanagi", "lat": 35.0300, "lon": 135.7718, "popular": True},
-                {"name": "Tofukuji", "lat": 34.9790, "lon": 135.7720, "popular": False},
-                {"name": "Jingu-Marutamachi", "lat": 35.0161, "lon": 135.7715, "popular": False},
-                {"name": "Tambabashi", "lat": 34.9450, "lon": 135.7640, "popular": False},
-            ],
+                {
+                    "name": "Gion-Shijo",
+                    "lat": 35.0036,
+                    "lon": 135.7713,
+                    "popular": True
+                },
+                {
+                    "name": "Sanjo",
+                    "lat": 35.009,
+                    "lon": 135.7714,
+                    "popular": True
+                },
+                {
+                    "name": "Fushimi-Inari",
+                    "lat": 34.9671,
+                    "lon": 135.7727,
+                    "popular": True
+                },
+                {
+                    "name": "Kiyomizu-Gojo",
+                    "lat": 34.9963,
+                    "lon": 135.771,
+                    "popular": False
+                },
+                {
+                    "name": "Demachiyanagi",
+                    "lat": 35.03,
+                    "lon": 135.7718,
+                    "popular": True
+                },
+                {
+                    "name": "Tofukuji",
+                    "lat": 34.979,
+                    "lon": 135.772,
+                    "popular": False
+                },
+                {
+                    "name": "Jingu-Marutamachi",
+                    "lat": 35.0161,
+                    "lon": 135.7715,
+                    "popular": False
+                },
+                {
+                    "name": "Tambabashi",
+                    "lat": 34.945,
+                    "lon": 135.764,
+                    "popular": False
+                }
+            ]
         },
         "sagano": {
             "name": "JR Sagano/San-in Line",
             "popularity": 2,
             "stations": [
-                {"name": "Kyoto", "lat": 34.9858, "lon": 135.7588, "popular": True},
-                {"name": "Nijo", "lat": 35.0101, "lon": 135.7432, "popular": True},
-                {"name": "Saga-Arashiyama", "lat": 35.0194, "lon": 135.6815, "popular": True},
-                {"name": "Emmachi", "lat": 35.0152, "lon": 135.7284, "popular": False},
-                {"name": "Uzumasa", "lat": 35.0136, "lon": 135.7116, "popular": False},
-                {"name": "Hanazono", "lat": 35.0148, "lon": 135.7022, "popular": False},
-            ],
+                {
+                    "name": "Kyoto",
+                    "lat": 34.9858,
+                    "lon": 135.7588,
+                    "popular": True
+                },
+                {
+                    "name": "Nijo",
+                    "lat": 35.0101,
+                    "lon": 135.7432,
+                    "popular": True
+                },
+                {
+                    "name": "Saga-Arashiyama",
+                    "lat": 35.0194,
+                    "lon": 135.6815,
+                    "popular": True
+                },
+                {
+                    "name": "Emmachi",
+                    "lat": 35.0152,
+                    "lon": 135.7284,
+                    "popular": False
+                },
+                {
+                    "name": "Uzumasa",
+                    "lat": 35.0136,
+                    "lon": 135.7116,
+                    "popular": False
+                },
+                {
+                    "name": "Hanazono",
+                    "lat": 35.0148,
+                    "lon": 135.7022,
+                    "popular": False
+                }
+            ]
         },
         "hankyu_kyoto_line": {
             "name": "Hankyu Kyoto Line",
             "popularity": 3,
             "stations": [
-                {"name": "Kyoto-Kawaramachi", "lat": 35.0038, "lon": 135.7693, "popular": True},
-                {"name": "Karasuma", "lat": 35.0031, "lon": 135.7590, "popular": True},
-                {"name": "Omiya", "lat": 35.0030, "lon": 135.7478, "popular": False},
-                {"name": "Saiin", "lat": 35.0024, "lon": 135.7283, "popular": False},
-                {"name": "Katsura", "lat": 34.9834, "lon": 135.7067, "popular": False},
-            ],
-        },
-    },
-    "osaka": {
-        "midosuji": {
-            "name": "Osaka Metro Midosuji Line",
-            "popularity": 1,
-            "stations": [
-                {"name": "Umeda", "lat": 34.7046, "lon": 135.4992, "popular": True},
-                {"name": "Namba", "lat": 34.6658, "lon": 135.5013, "popular": True},
-                {"name": "Shinsaibashi", "lat": 34.6750, "lon": 135.5007, "popular": True},
-                {"name": "Tennoji", "lat": 34.6464, "lon": 135.5148, "popular": True},
-                {"name": "Shin-Osaka", "lat": 34.7336, "lon": 135.5002, "popular": True},
-                {"name": "Honmachi", "lat": 34.6838, "lon": 135.5002, "popular": False},
-                {"name": "Yodoyabashi", "lat": 34.6930, "lon": 135.5022, "popular": False},
-                {"name": "Daikokucho", "lat": 34.6552, "lon": 135.5011, "popular": False},
-                {"name": "Nakatsu", "lat": 34.7130, "lon": 135.4995, "popular": False},
-            ],
-        },
-        "osaka_loop": {
-            "name": "JR Osaka Loop Line",
-            "popularity": 1,
-            "stations": [
-                {"name": "Osaka", "lat": 34.7024, "lon": 135.4959, "popular": True},
-                {"name": "Tennoji", "lat": 34.6464, "lon": 135.5148, "popular": True},
-                {"name": "Namba (JR)", "lat": 34.6653, "lon": 135.4964, "popular": True},
-                {"name": "Shin-Imamiya", "lat": 34.6522, "lon": 135.5012, "popular": True},
-                {"name": "Tsuruhashi", "lat": 34.6679, "lon": 135.5303, "popular": False},
-                {"name": "Kyobashi", "lat": 34.6947, "lon": 135.5361, "popular": False},
-                {"name": "Nishi-Kujo", "lat": 34.6827, "lon": 135.4691, "popular": False},
-                {"name": "Bentencho", "lat": 34.6733, "lon": 135.4651, "popular": False},
-                {"name": "Fukushima", "lat": 34.6966, "lon": 135.4859, "popular": False},
-            ],
-        },
-        "tanimachi": {
-            "name": "Osaka Metro Tanimachi Line",
-            "popularity": 2,
-            "stations": [
-                {"name": "Tennoji", "lat": 34.6464, "lon": 135.5148, "popular": True},
-                {"name": "Tanimachi Yonchome", "lat": 34.6816, "lon": 135.5166, "popular": True},
-                {"name": "Tenmabashi", "lat": 34.6924, "lon": 135.5180, "popular": True},
-                {"name": "Higashi-Umeda", "lat": 34.7042, "lon": 135.5037, "popular": True},
-                {"name": "Tanimachi Rokuchome", "lat": 34.6730, "lon": 135.5158, "popular": False},
-                {"name": "Tanimachi Kyuchome", "lat": 34.6664, "lon": 135.5167, "popular": False},
-            ],
-        },
-        "chuo_osaka": {
-            "name": "Osaka Metro Chuo Line",
-            "popularity": 2,
-            "stations": [
-                {"name": "Honmachi", "lat": 34.6838, "lon": 135.5002, "popular": True},
-                {"name": "Osaka-ko", "lat": 34.6696, "lon": 135.4329, "popular": True},
-                {"name": "Cosmosquare", "lat": 34.6520, "lon": 135.4178, "popular": False},
-                {"name": "Bentencho", "lat": 34.6733, "lon": 135.4651, "popular": False},
-                {"name": "Sakaisuji-Honmachi", "lat": 34.6814, "lon": 135.5087, "popular": False},
-                {"name": "Morinomiya", "lat": 34.6784, "lon": 135.5293, "popular": False},
-            ],
-        },
-        "yotsubashi": {
-            "name": "Osaka Metro Yotsubashi Line",
-            "popularity": 3,
-            "stations": [
-                {"name": "Namba", "lat": 34.6658, "lon": 135.5013, "popular": True},
-                {"name": "Shinsaibashi", "lat": 34.6750, "lon": 135.5007, "popular": True},
-                {"name": "Honmachi", "lat": 34.6838, "lon": 135.5002, "popular": True},
-                {"name": "Nishi-Umeda", "lat": 34.6988, "lon": 135.4929, "popular": False},
-                {"name": "Yotsubashi", "lat": 34.6780, "lon": 135.4949, "popular": False},
-            ],
-        },
-        "nankai": {
-            "name": "Nankai Main Line",
-            "popularity": 3,
-            "stations": [
-                {"name": "Namba", "lat": 34.6646, "lon": 135.5017, "popular": True},
-                {"name": "Shin-Imamiya", "lat": 34.6522, "lon": 135.5012, "popular": True},
-                {"name": "Sakai", "lat": 34.5764, "lon": 135.4845, "popular": False},
-                {"name": "Kansai Airport", "lat": 34.4346, "lon": 135.2440, "popular": True},
-            ],
-        },
+                {
+                    "name": "Kyoto-Kawaramachi",
+                    "lat": 35.0038,
+                    "lon": 135.7693,
+                    "popular": True
+                },
+                {
+                    "name": "Karasuma",
+                    "lat": 35.0031,
+                    "lon": 135.759,
+                    "popular": True
+                },
+                {
+                    "name": "Omiya",
+                    "lat": 35.003,
+                    "lon": 135.7478,
+                    "popular": False
+                },
+                {
+                    "name": "Saiin",
+                    "lat": 35.0024,
+                    "lon": 135.7283,
+                    "popular": False
+                },
+                {
+                    "name": "Katsura",
+                    "lat": 34.9834,
+                    "lon": 135.7067,
+                    "popular": False
+                }
+            ]
+        }
     },
     "hiroshima": {
         "hiroden_1": {
             "name": "Hiroden Line 1 (Ujina)",
             "popularity": 1,
             "stations": [
-                {"name": "Hiroshima Station", "lat": 34.3977, "lon": 132.4752, "popular": True},
-                {"name": "Hatchobori", "lat": 34.3932, "lon": 132.4633, "popular": True},
-                {"name": "Kamiyacho", "lat": 34.3928, "lon": 132.4567, "popular": True},
-                {"name": "Genbaku Dome-mae", "lat": 34.3957, "lon": 132.4531, "popular": True},
-                {"name": "Chuden-mae", "lat": 34.3907, "lon": 132.4563, "popular": False},
-                {"name": "Kanayamacho", "lat": 34.3897, "lon": 132.4627, "popular": False},
-                {"name": "Ujina", "lat": 34.3604, "lon": 132.4656, "popular": False},
-            ],
+                {
+                    "name": "Hiroshima Station",
+                    "lat": 34.3977,
+                    "lon": 132.4752,
+                    "popular": True
+                },
+                {
+                    "name": "Hatchobori",
+                    "lat": 34.3932,
+                    "lon": 132.4633,
+                    "popular": True
+                },
+                {
+                    "name": "Kamiyacho",
+                    "lat": 34.3928,
+                    "lon": 132.4567,
+                    "popular": True
+                },
+                {
+                    "name": "Genbaku Dome-mae",
+                    "lat": 34.3957,
+                    "lon": 132.4531,
+                    "popular": True
+                },
+                {
+                    "name": "Chuden-mae",
+                    "lat": 34.3907,
+                    "lon": 132.4563,
+                    "popular": False
+                },
+                {
+                    "name": "Kanayamacho",
+                    "lat": 34.3897,
+                    "lon": 132.4627,
+                    "popular": False
+                },
+                {
+                    "name": "Ujina",
+                    "lat": 34.3604,
+                    "lon": 132.4656,
+                    "popular": False
+                }
+            ]
         },
         "hiroden_2": {
             "name": "Hiroden Line 2 (Miyajima)",
             "popularity": 1,
             "stations": [
-                {"name": "Hiroshima Station", "lat": 34.3977, "lon": 132.4752, "popular": True},
-                {"name": "Hatchobori", "lat": 34.3932, "lon": 132.4633, "popular": True},
-                {"name": "Genbaku Dome-mae", "lat": 34.3957, "lon": 132.4531, "popular": True},
-                {"name": "Nishi-Hiroshima", "lat": 34.3978, "lon": 132.4152, "popular": False},
-                {"name": "Hiroden-Miyajimaguchi", "lat": 34.3530, "lon": 132.3161, "popular": True},
-            ],
+                {
+                    "name": "Hiroshima Station",
+                    "lat": 34.3977,
+                    "lon": 132.4752,
+                    "popular": True
+                },
+                {
+                    "name": "Hatchobori",
+                    "lat": 34.3932,
+                    "lon": 132.4633,
+                    "popular": True
+                },
+                {
+                    "name": "Genbaku Dome-mae",
+                    "lat": 34.3957,
+                    "lon": 132.4531,
+                    "popular": True
+                },
+                {
+                    "name": "Nishi-Hiroshima",
+                    "lat": 34.3978,
+                    "lon": 132.4152,
+                    "popular": False
+                },
+                {
+                    "name": "Hiroden-Miyajimaguchi",
+                    "lat": 34.353,
+                    "lon": 132.3161,
+                    "popular": True
+                }
+            ]
         },
         "sanyo_hiroshima": {
             "name": "JR Sanyo Main Line",
             "popularity": 2,
             "stations": [
-                {"name": "Hiroshima", "lat": 34.3977, "lon": 132.4752, "popular": True},
-                {"name": "Yokogawa", "lat": 34.4006, "lon": 132.4447, "popular": False},
-                {"name": "Nishi-Hiroshima", "lat": 34.3978, "lon": 132.4152, "popular": False},
-                {"name": "Miyajimaguchi", "lat": 34.3530, "lon": 132.3161, "popular": True},
-                {"name": "Kure", "lat": 34.2413, "lon": 132.5658, "popular": False},
-            ],
-        },
+                {
+                    "name": "Hiroshima",
+                    "lat": 34.3977,
+                    "lon": 132.4752,
+                    "popular": True
+                },
+                {
+                    "name": "Yokogawa",
+                    "lat": 34.4006,
+                    "lon": 132.4447,
+                    "popular": False
+                },
+                {
+                    "name": "Nishi-Hiroshima",
+                    "lat": 34.3978,
+                    "lon": 132.4152,
+                    "popular": False
+                },
+                {
+                    "name": "Miyajimaguchi",
+                    "lat": 34.353,
+                    "lon": 132.3161,
+                    "popular": True
+                },
+                {
+                    "name": "Kure",
+                    "lat": 34.2413,
+                    "lon": 132.5658,
+                    "popular": False
+                }
+            ]
+        }
     },
     "fukuoka": {
         "kuko": {
             "name": "Fukuoka Subway Kuko Line",
             "popularity": 1,
             "stations": [
-                {"name": "Hakata", "lat": 33.5902, "lon": 130.4206, "popular": True},
-                {"name": "Tenjin", "lat": 33.5919, "lon": 130.3988, "popular": True},
-                {"name": "Nakasu-Kawabata", "lat": 33.5925, "lon": 130.4073, "popular": True},
-                {"name": "Fukuoka Airport", "lat": 33.5901, "lon": 130.4517, "popular": True},
-                {"name": "Gion", "lat": 33.5921, "lon": 130.4140, "popular": False},
-                {"name": "Akasaka", "lat": 33.5894, "lon": 130.3918, "popular": False},
-                {"name": "Ohori-Koen", "lat": 33.5864, "lon": 130.3802, "popular": False},
-                {"name": "Meinohama", "lat": 33.5848, "lon": 130.3341, "popular": False},
-            ],
+                {
+                    "name": "Hakata",
+                    "lat": 33.5902,
+                    "lon": 130.4206,
+                    "popular": True
+                },
+                {
+                    "name": "Tenjin",
+                    "lat": 33.5919,
+                    "lon": 130.3988,
+                    "popular": True
+                },
+                {
+                    "name": "Nakasu-Kawabata",
+                    "lat": 33.5925,
+                    "lon": 130.4073,
+                    "popular": True
+                },
+                {
+                    "name": "Fukuoka Airport",
+                    "lat": 33.5901,
+                    "lon": 130.4517,
+                    "popular": True
+                },
+                {
+                    "name": "Gion",
+                    "lat": 33.5921,
+                    "lon": 130.414,
+                    "popular": False
+                },
+                {
+                    "name": "Akasaka",
+                    "lat": 33.5894,
+                    "lon": 130.3918,
+                    "popular": False
+                },
+                {
+                    "name": "Ohori-Koen",
+                    "lat": 33.5864,
+                    "lon": 130.3802,
+                    "popular": False
+                },
+                {
+                    "name": "Meinohama",
+                    "lat": 33.5848,
+                    "lon": 130.3341,
+                    "popular": False
+                }
+            ]
         },
         "hakozaki": {
             "name": "Fukuoka Subway Hakozaki Line",
             "popularity": 2,
             "stations": [
-                {"name": "Nakasu-Kawabata", "lat": 33.5925, "lon": 130.4073, "popular": True},
-                {"name": "Gofukumachi", "lat": 33.5946, "lon": 130.4078, "popular": False},
-                {"name": "Chiyo-Kenchoguchi", "lat": 33.5978, "lon": 130.4119, "popular": False},
-                {"name": "Hakozaki-Miyamae", "lat": 33.6043, "lon": 130.4236, "popular": False},
-                {"name": "Kaizuka", "lat": 33.6122, "lon": 130.4362, "popular": False},
-            ],
+                {
+                    "name": "Nakasu-Kawabata",
+                    "lat": 33.5925,
+                    "lon": 130.4073,
+                    "popular": True
+                },
+                {
+                    "name": "Gofukumachi",
+                    "lat": 33.5946,
+                    "lon": 130.4078,
+                    "popular": False
+                },
+                {
+                    "name": "Chiyo-Kenchoguchi",
+                    "lat": 33.5978,
+                    "lon": 130.4119,
+                    "popular": False
+                },
+                {
+                    "name": "Hakozaki-Miyamae",
+                    "lat": 33.6043,
+                    "lon": 130.4236,
+                    "popular": False
+                },
+                {
+                    "name": "Kaizuka",
+                    "lat": 33.6122,
+                    "lon": 130.4362,
+                    "popular": False
+                }
+            ]
         },
         "nishitetsu": {
             "name": "Nishitetsu Tenjin-Omuta Line",
             "popularity": 3,
             "stations": [
-                {"name": "Nishitetsu-Fukuoka (Tenjin)", "lat": 33.5902, "lon": 130.3990, "popular": True},
-                {"name": "Yakuin", "lat": 33.5796, "lon": 130.3978, "popular": False},
-                {"name": "Ohashi", "lat": 33.5639, "lon": 130.4041, "popular": False},
-                {"name": "Futsukaichi", "lat": 33.5136, "lon": 130.5054, "popular": False},
-                {"name": "Dazaifu", "lat": 33.5120, "lon": 130.5243, "popular": True},
-            ],
-        },
+                {
+                    "name": "Nishitetsu-Fukuoka (Tenjin)",
+                    "lat": 33.5902,
+                    "lon": 130.399,
+                    "popular": True
+                },
+                {
+                    "name": "Yakuin",
+                    "lat": 33.5796,
+                    "lon": 130.3978,
+                    "popular": False
+                },
+                {
+                    "name": "Ohashi",
+                    "lat": 33.5639,
+                    "lon": 130.4041,
+                    "popular": False
+                },
+                {
+                    "name": "Futsukaichi",
+                    "lat": 33.5136,
+                    "lon": 130.5054,
+                    "popular": False
+                },
+                {
+                    "name": "Dazaifu",
+                    "lat": 33.512,
+                    "lon": 130.5243,
+                    "popular": True
+                }
+            ]
+        }
     },
     "sapporo": {
         "namboku_sapporo": {
             "name": "Sapporo Subway Namboku Line",
             "popularity": 1,
             "stations": [
-                {"name": "Sapporo", "lat": 43.0687, "lon": 141.3509, "popular": True},
-                {"name": "Odori", "lat": 43.0602, "lon": 141.3546, "popular": True},
-                {"name": "Susukino", "lat": 43.0546, "lon": 141.3536, "popular": True},
-                {"name": "Nakajima-Koen", "lat": 43.0473, "lon": 141.3532, "popular": False},
-                {"name": "Kita-24-jo", "lat": 43.0862, "lon": 141.3422, "popular": False},
-                {"name": "Kita-18-jo", "lat": 43.0801, "lon": 141.3443, "popular": False},
-                {"name": "Kita-12-jo", "lat": 43.0737, "lon": 141.3460, "popular": False},
-                {"name": "Asabu", "lat": 43.0277, "lon": 141.3531, "popular": False},
-            ],
+                {
+                    "name": "Sapporo",
+                    "lat": 43.0687,
+                    "lon": 141.3509,
+                    "popular": True
+                },
+                {
+                    "name": "Odori",
+                    "lat": 43.0602,
+                    "lon": 141.3546,
+                    "popular": True
+                },
+                {
+                    "name": "Susukino",
+                    "lat": 43.0546,
+                    "lon": 141.3536,
+                    "popular": True
+                },
+                {
+                    "name": "Nakajima-Koen",
+                    "lat": 43.0473,
+                    "lon": 141.3532,
+                    "popular": False
+                },
+                {
+                    "name": "Kita-24-jo",
+                    "lat": 43.0862,
+                    "lon": 141.3422,
+                    "popular": False
+                },
+                {
+                    "name": "Kita-18-jo",
+                    "lat": 43.0801,
+                    "lon": 141.3443,
+                    "popular": False
+                },
+                {
+                    "name": "Kita-12-jo",
+                    "lat": 43.0737,
+                    "lon": 141.346,
+                    "popular": False
+                },
+                {
+                    "name": "Asabu",
+                    "lat": 43.0277,
+                    "lon": 141.3531,
+                    "popular": False
+                }
+            ]
         },
         "tozai_sapporo": {
             "name": "Sapporo Subway Tozai Line",
             "popularity": 2,
             "stations": [
-                {"name": "Odori", "lat": 43.0602, "lon": 141.3546, "popular": True},
-                {"name": "Bus Center-mae", "lat": 43.0588, "lon": 141.3624, "popular": False},
-                {"name": "Nishi-11-Chome", "lat": 43.0585, "lon": 141.3352, "popular": False},
-                {"name": "Maruyama-Koen", "lat": 43.0553, "lon": 141.3221, "popular": True},
-                {"name": "Shin-Sapporo", "lat": 43.0325, "lon": 141.4731, "popular": False},
-                {"name": "Hiragishi", "lat": 43.0424, "lon": 141.3804, "popular": False},
-                {"name": "Shiroishi", "lat": 43.0499, "lon": 141.3966, "popular": False},
-            ],
+                {
+                    "name": "Odori",
+                    "lat": 43.0602,
+                    "lon": 141.3546,
+                    "popular": True
+                },
+                {
+                    "name": "Bus Center-mae",
+                    "lat": 43.0588,
+                    "lon": 141.3624,
+                    "popular": False
+                },
+                {
+                    "name": "Nishi-11-Chome",
+                    "lat": 43.0585,
+                    "lon": 141.3352,
+                    "popular": False
+                },
+                {
+                    "name": "Maruyama-Koen",
+                    "lat": 43.0553,
+                    "lon": 141.3221,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Sapporo",
+                    "lat": 43.0325,
+                    "lon": 141.4731,
+                    "popular": False
+                },
+                {
+                    "name": "Hiragishi",
+                    "lat": 43.0424,
+                    "lon": 141.3804,
+                    "popular": False
+                },
+                {
+                    "name": "Shiroishi",
+                    "lat": 43.0499,
+                    "lon": 141.3966,
+                    "popular": False
+                }
+            ]
         },
         "toho": {
             "name": "Sapporo Subway Toho Line",
             "popularity": 3,
             "stations": [
-                {"name": "Sapporo", "lat": 43.0687, "lon": 141.3509, "popular": True},
-                {"name": "Odori", "lat": 43.0602, "lon": 141.3546, "popular": True},
-                {"name": "Hosui-Susukino", "lat": 43.0519, "lon": 141.3584, "popular": True},
-                {"name": "Gakuen-mae", "lat": 43.0440, "lon": 141.3598, "popular": False},
-                {"name": "Tsukisamu-Chuo", "lat": 43.0350, "lon": 141.3620, "popular": False},
-                {"name": "Fukuzumi", "lat": 43.0271, "lon": 141.3637, "popular": False},
-                {"name": "Sakaemachi", "lat": 43.0762, "lon": 141.3497, "popular": False},
-            ],
-        },
+                {
+                    "name": "Sapporo",
+                    "lat": 43.0687,
+                    "lon": 141.3509,
+                    "popular": True
+                },
+                {
+                    "name": "Odori",
+                    "lat": 43.0602,
+                    "lon": 141.3546,
+                    "popular": True
+                },
+                {
+                    "name": "Hosui-Susukino",
+                    "lat": 43.0519,
+                    "lon": 141.3584,
+                    "popular": True
+                },
+                {
+                    "name": "Gakuen-mae",
+                    "lat": 43.044,
+                    "lon": 141.3598,
+                    "popular": False
+                },
+                {
+                    "name": "Tsukisamu-Chuo",
+                    "lat": 43.035,
+                    "lon": 141.362,
+                    "popular": False
+                },
+                {
+                    "name": "Fukuzumi",
+                    "lat": 43.0271,
+                    "lon": 141.3637,
+                    "popular": False
+                },
+                {
+                    "name": "Sakaemachi",
+                    "lat": 43.0762,
+                    "lon": 141.3497,
+                    "popular": False
+                }
+            ]
+        }
     },
     "nagoya": {
         "higashiyama": {
             "name": "Nagoya Subway Higashiyama Line",
             "popularity": 1,
             "stations": [
-                {"name": "Nagoya", "lat": 35.1709, "lon": 136.8815, "popular": True},
-                {"name": "Sakae", "lat": 35.1681, "lon": 136.9064, "popular": True},
-                {"name": "Fushimi", "lat": 35.1688, "lon": 136.8972, "popular": True},
-                {"name": "Fujigaoka", "lat": 35.1796, "lon": 137.0134, "popular": False},
-                {"name": "Motoyama", "lat": 35.1645, "lon": 136.9577, "popular": False},
-                {"name": "Hoshigaoka", "lat": 35.1632, "lon": 136.9694, "popular": False},
-                {"name": "Imaike", "lat": 35.1652, "lon": 136.9376, "popular": False},
-                {"name": "Ikeshita", "lat": 35.1654, "lon": 136.9265, "popular": False},
-                {"name": "Takabata", "lat": 35.1337, "lon": 136.8640, "popular": False},
-            ],
+                {
+                    "name": "Nagoya",
+                    "lat": 35.1709,
+                    "lon": 136.8815,
+                    "popular": True
+                },
+                {
+                    "name": "Sakae",
+                    "lat": 35.1681,
+                    "lon": 136.9064,
+                    "popular": True
+                },
+                {
+                    "name": "Fushimi",
+                    "lat": 35.1688,
+                    "lon": 136.8972,
+                    "popular": True
+                },
+                {
+                    "name": "Fujigaoka",
+                    "lat": 35.1796,
+                    "lon": 137.0134,
+                    "popular": False
+                },
+                {
+                    "name": "Motoyama",
+                    "lat": 35.1645,
+                    "lon": 136.9577,
+                    "popular": False
+                },
+                {
+                    "name": "Hoshigaoka",
+                    "lat": 35.1632,
+                    "lon": 136.9694,
+                    "popular": False
+                },
+                {
+                    "name": "Imaike",
+                    "lat": 35.1652,
+                    "lon": 136.9376,
+                    "popular": False
+                },
+                {
+                    "name": "Ikeshita",
+                    "lat": 35.1654,
+                    "lon": 136.9265,
+                    "popular": False
+                },
+                {
+                    "name": "Takabata",
+                    "lat": 35.1337,
+                    "lon": 136.864,
+                    "popular": False
+                }
+            ]
         },
         "meijo": {
             "name": "Nagoya Subway Meijo Line",
             "popularity": 2,
             "stations": [
-                {"name": "Sakae", "lat": 35.1681, "lon": 136.9064, "popular": True},
-                {"name": "Kanayama", "lat": 35.1449, "lon": 136.9000, "popular": True},
-                {"name": "Nagoya Dome-mae Yada", "lat": 35.1865, "lon": 136.9445, "popular": True},
-                {"name": "Ozone", "lat": 35.1913, "lon": 136.9300, "popular": False},
-                {"name": "Kamimaezu", "lat": 35.1595, "lon": 136.9066, "popular": False},
-                {"name": "Yagoto", "lat": 35.1390, "lon": 136.9601, "popular": False},
-                {"name": "Shiyakusho", "lat": 35.1751, "lon": 136.9065, "popular": False},
-                {"name": "Nagoya-ko", "lat": 35.1023, "lon": 136.8851, "popular": True},
-            ],
+                {
+                    "name": "Sakae",
+                    "lat": 35.1681,
+                    "lon": 136.9064,
+                    "popular": True
+                },
+                {
+                    "name": "Kanayama",
+                    "lat": 35.1449,
+                    "lon": 136.9,
+                    "popular": True
+                },
+                {
+                    "name": "Nagoya Dome-mae Yada",
+                    "lat": 35.1865,
+                    "lon": 136.9445,
+                    "popular": True
+                },
+                {
+                    "name": "Ozone",
+                    "lat": 35.1913,
+                    "lon": 136.93,
+                    "popular": False
+                },
+                {
+                    "name": "Kamimaezu",
+                    "lat": 35.1595,
+                    "lon": 136.9066,
+                    "popular": False
+                },
+                {
+                    "name": "Yagoto",
+                    "lat": 35.139,
+                    "lon": 136.9601,
+                    "popular": False
+                },
+                {
+                    "name": "Shiyakusho",
+                    "lat": 35.1751,
+                    "lon": 136.9065,
+                    "popular": False
+                },
+                {
+                    "name": "Nagoya-ko",
+                    "lat": 35.1023,
+                    "lon": 136.8851,
+                    "popular": True
+                }
+            ]
         },
         "sakuradori": {
             "name": "Nagoya Subway Sakura-dori Line",
             "popularity": 3,
             "stations": [
-                {"name": "Nagoya", "lat": 35.1709, "lon": 136.8815, "popular": True},
-                {"name": "Marunouchi", "lat": 35.1747, "lon": 136.8953, "popular": False},
-                {"name": "Fushimi", "lat": 35.1688, "lon": 136.8972, "popular": False},
-                {"name": "Imaike", "lat": 35.1652, "lon": 136.9376, "popular": False},
-                {"name": "Aratamabashi", "lat": 35.1341, "lon": 136.8987, "popular": False},
-                {"name": "Tokushige", "lat": 35.1119, "lon": 136.9450, "popular": False},
-            ],
+                {
+                    "name": "Nagoya",
+                    "lat": 35.1709,
+                    "lon": 136.8815,
+                    "popular": True
+                },
+                {
+                    "name": "Marunouchi",
+                    "lat": 35.1747,
+                    "lon": 136.8953,
+                    "popular": False
+                },
+                {
+                    "name": "Fushimi",
+                    "lat": 35.1688,
+                    "lon": 136.8972,
+                    "popular": False
+                },
+                {
+                    "name": "Imaike",
+                    "lat": 35.1652,
+                    "lon": 136.9376,
+                    "popular": False
+                },
+                {
+                    "name": "Aratamabashi",
+                    "lat": 35.1341,
+                    "lon": 136.8987,
+                    "popular": False
+                },
+                {
+                    "name": "Tokushige",
+                    "lat": 35.1119,
+                    "lon": 136.945,
+                    "popular": False
+                }
+            ]
         },
         "chuo_nagoya": {
             "name": "JR Chuo Line (Nagoya)",
             "popularity": 2,
             "stations": [
-                {"name": "Nagoya", "lat": 35.1709, "lon": 136.8815, "popular": True},
-                {"name": "Kanayama", "lat": 35.1449, "lon": 136.9000, "popular": True},
-                {"name": "Tsurumi", "lat": 35.1513, "lon": 136.9072, "popular": False},
-                {"name": "Ozone", "lat": 35.1913, "lon": 136.9300, "popular": False},
-                {"name": "Tajimi", "lat": 35.3339, "lon": 137.1326, "popular": False},
-            ],
-        },
+                {
+                    "name": "Nagoya",
+                    "lat": 35.1709,
+                    "lon": 136.8815,
+                    "popular": True
+                },
+                {
+                    "name": "Kanayama",
+                    "lat": 35.1449,
+                    "lon": 136.9,
+                    "popular": True
+                },
+                {
+                    "name": "Tsurumi",
+                    "lat": 35.1513,
+                    "lon": 136.9072,
+                    "popular": False
+                },
+                {
+                    "name": "Ozone",
+                    "lat": 35.1913,
+                    "lon": 136.93,
+                    "popular": False
+                },
+                {
+                    "name": "Tajimi",
+                    "lat": 35.3339,
+                    "lon": 137.1326,
+                    "popular": False
+                }
+            ]
+        }
     },
     "yokohama": {
         "blue_line": {
             "name": "Yokohama Subway Blue Line",
             "popularity": 1,
             "stations": [
-                {"name": "Yokohama", "lat": 35.4659, "lon": 139.6226, "popular": True},
-                {"name": "Shin-Yokohama", "lat": 35.5065, "lon": 139.6177, "popular": True},
-                {"name": "Kannai", "lat": 35.4435, "lon": 139.6369, "popular": True},
-                {"name": "Sakuragicho", "lat": 35.4510, "lon": 139.6310, "popular": True},
-                {"name": "Totsuka", "lat": 35.3991, "lon": 139.5336, "popular": False},
-                {"name": "Kami-Ooka", "lat": 35.4139, "lon": 139.5959, "popular": False},
-                {"name": "Azamino", "lat": 35.5562, "lon": 139.5532, "popular": False},
-                {"name": "Sengen-cho", "lat": 35.4384, "lon": 139.6351, "popular": False},
-            ],
+                {
+                    "name": "Yokohama",
+                    "lat": 35.4659,
+                    "lon": 139.6226,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Yokohama",
+                    "lat": 35.5065,
+                    "lon": 139.6177,
+                    "popular": True
+                },
+                {
+                    "name": "Kannai",
+                    "lat": 35.4435,
+                    "lon": 139.6369,
+                    "popular": True
+                },
+                {
+                    "name": "Sakuragicho",
+                    "lat": 35.451,
+                    "lon": 139.631,
+                    "popular": True
+                },
+                {
+                    "name": "Totsuka",
+                    "lat": 35.3991,
+                    "lon": 139.5336,
+                    "popular": False
+                },
+                {
+                    "name": "Kami-Ooka",
+                    "lat": 35.4139,
+                    "lon": 139.5959,
+                    "popular": False
+                },
+                {
+                    "name": "Azamino",
+                    "lat": 35.5562,
+                    "lon": 139.5532,
+                    "popular": False
+                },
+                {
+                    "name": "Sengen-cho",
+                    "lat": 35.4384,
+                    "lon": 139.6351,
+                    "popular": False
+                }
+            ]
         },
         "toyoko": {
             "name": "Tokyu Toyoko Line",
             "popularity": 2,
             "stations": [
-                {"name": "Yokohama", "lat": 35.4659, "lon": 139.6226, "popular": True},
-                {"name": "Kikuna", "lat": 35.5058, "lon": 139.6328, "popular": False},
-                {"name": "Tsunashima", "lat": 35.5348, "lon": 139.6373, "popular": False},
-                {"name": "Musashi-Kosugi", "lat": 35.5769, "lon": 139.6591, "popular": True},
-                {"name": "Jiyugaoka", "lat": 35.6073, "lon": 139.6698, "popular": False},
-                {"name": "Nakameguro", "lat": 35.6440, "lon": 139.6988, "popular": False},
-                {"name": "Shibuya", "lat": 35.6580, "lon": 139.7016, "popular": True},
-            ],
+                {
+                    "name": "Yokohama",
+                    "lat": 35.4659,
+                    "lon": 139.6226,
+                    "popular": True
+                },
+                {
+                    "name": "Kikuna",
+                    "lat": 35.5058,
+                    "lon": 139.6328,
+                    "popular": False
+                },
+                {
+                    "name": "Tsunashima",
+                    "lat": 35.5348,
+                    "lon": 139.6373,
+                    "popular": False
+                },
+                {
+                    "name": "Musashi-Kosugi",
+                    "lat": 35.5769,
+                    "lon": 139.6591,
+                    "popular": True
+                },
+                {
+                    "name": "Jiyugaoka",
+                    "lat": 35.6073,
+                    "lon": 139.6698,
+                    "popular": False
+                },
+                {
+                    "name": "Nakameguro",
+                    "lat": 35.644,
+                    "lon": 139.6988,
+                    "popular": False
+                },
+                {
+                    "name": "Shibuya",
+                    "lat": 35.658,
+                    "lon": 139.7016,
+                    "popular": True
+                }
+            ]
         },
         "minatomirai": {
             "name": "Minatomirai Line",
             "popularity": 2,
             "stations": [
-                {"name": "Yokohama", "lat": 35.4659, "lon": 139.6226, "popular": True},
-                {"name": "Minatomirai", "lat": 35.4577, "lon": 139.6326, "popular": True},
-                {"name": "Bashamichi", "lat": 35.4496, "lon": 139.6367, "popular": True},
-                {"name": "Nihon-Odori", "lat": 35.4459, "lon": 139.6424, "popular": False},
-                {"name": "Motomachi-Chukagai", "lat": 35.4425, "lon": 139.6503, "popular": True},
-                {"name": "Shin-Takashima", "lat": 35.4618, "lon": 139.6260, "popular": False},
-            ],
-        },
+                {
+                    "name": "Yokohama",
+                    "lat": 35.4659,
+                    "lon": 139.6226,
+                    "popular": True
+                },
+                {
+                    "name": "Minatomirai",
+                    "lat": 35.4577,
+                    "lon": 139.6326,
+                    "popular": True
+                },
+                {
+                    "name": "Bashamichi",
+                    "lat": 35.4496,
+                    "lon": 139.6367,
+                    "popular": True
+                },
+                {
+                    "name": "Nihon-Odori",
+                    "lat": 35.4459,
+                    "lon": 139.6424,
+                    "popular": False
+                },
+                {
+                    "name": "Motomachi-Chukagai",
+                    "lat": 35.4425,
+                    "lon": 139.6503,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Takashima",
+                    "lat": 35.4618,
+                    "lon": 139.626,
+                    "popular": False
+                }
+            ]
+        }
     },
     "kobe": {
         "seishin_yamate": {
             "name": "Kobe Subway Seishin-Yamate Line",
             "popularity": 1,
             "stations": [
-                {"name": "Sannomiya", "lat": 34.6950, "lon": 135.1970, "popular": True},
-                {"name": "Shin-Kobe", "lat": 34.7040, "lon": 135.1978, "popular": True},
-                {"name": "Shin-Nagata", "lat": 34.6571, "lon": 135.1534, "popular": True},
-                {"name": "Myodani", "lat": 34.6863, "lon": 135.1188, "popular": False},
-                {"name": "Itayado", "lat": 34.6626, "lon": 135.1549, "popular": False},
-                {"name": "Tanigami", "lat": 34.7257, "lon": 135.1684, "popular": False},
-                {"name": "Seishin-Chuo", "lat": 34.6911, "lon": 135.0244, "popular": False},
-            ],
+                {
+                    "name": "Sannomiya",
+                    "lat": 34.695,
+                    "lon": 135.197,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Kobe",
+                    "lat": 34.704,
+                    "lon": 135.1978,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Nagata",
+                    "lat": 34.6571,
+                    "lon": 135.1534,
+                    "popular": True
+                },
+                {
+                    "name": "Myodani",
+                    "lat": 34.6863,
+                    "lon": 135.1188,
+                    "popular": False
+                },
+                {
+                    "name": "Itayado",
+                    "lat": 34.6626,
+                    "lon": 135.1549,
+                    "popular": False
+                },
+                {
+                    "name": "Tanigami",
+                    "lat": 34.7257,
+                    "lon": 135.1684,
+                    "popular": False
+                },
+                {
+                    "name": "Seishin-Chuo",
+                    "lat": 34.6911,
+                    "lon": 135.0244,
+                    "popular": False
+                }
+            ]
         },
         "tokaido_kobe": {
             "name": "JR Tokaido-Sanyo Line (Kobe)",
             "popularity": 2,
             "stations": [
-                {"name": "Sannomiya", "lat": 34.6933, "lon": 135.1956, "popular": True},
-                {"name": "Kobe", "lat": 34.6804, "lon": 135.1784, "popular": True},
-                {"name": "Shin-Kobe", "lat": 34.7040, "lon": 135.1978, "popular": True},
-                {"name": "Motomachi", "lat": 34.6891, "lon": 135.1877, "popular": True},
-                {"name": "Hyogo", "lat": 34.6716, "lon": 135.1647, "popular": False},
-                {"name": "Suma", "lat": 34.6405, "lon": 135.1295, "popular": False},
-                {"name": "Maiko", "lat": 34.6348, "lon": 135.0448, "popular": False},
-            ],
+                {
+                    "name": "Sannomiya",
+                    "lat": 34.6933,
+                    "lon": 135.1956,
+                    "popular": True
+                },
+                {
+                    "name": "Kobe",
+                    "lat": 34.6804,
+                    "lon": 135.1784,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Kobe",
+                    "lat": 34.704,
+                    "lon": 135.1978,
+                    "popular": True
+                },
+                {
+                    "name": "Motomachi",
+                    "lat": 34.6891,
+                    "lon": 135.1877,
+                    "popular": True
+                },
+                {
+                    "name": "Hyogo",
+                    "lat": 34.6716,
+                    "lon": 135.1647,
+                    "popular": False
+                },
+                {
+                    "name": "Suma",
+                    "lat": 34.6405,
+                    "lon": 135.1295,
+                    "popular": False
+                },
+                {
+                    "name": "Maiko",
+                    "lat": 34.6348,
+                    "lon": 135.0448,
+                    "popular": False
+                }
+            ]
         },
         "port_liner": {
             "name": "Port Liner",
             "popularity": 3,
             "stations": [
-                {"name": "Sannomiya", "lat": 34.6950, "lon": 135.1970, "popular": True},
-                {"name": "Kobe Airport", "lat": 34.6327, "lon": 135.2237, "popular": True},
-                {"name": "IKEA-mae", "lat": 34.6567, "lon": 135.2156, "popular": False},
-                {"name": "Minatojima", "lat": 34.6680, "lon": 135.2100, "popular": False},
-                {"name": "Nakafuto", "lat": 34.6629, "lon": 135.2127, "popular": False},
-            ],
-        },
+                {
+                    "name": "Sannomiya",
+                    "lat": 34.695,
+                    "lon": 135.197,
+                    "popular": True
+                },
+                {
+                    "name": "Kobe Airport",
+                    "lat": 34.6327,
+                    "lon": 135.2237,
+                    "popular": True
+                },
+                {
+                    "name": "IKEA-mae",
+                    "lat": 34.6567,
+                    "lon": 135.2156,
+                    "popular": False
+                },
+                {
+                    "name": "Minatojima",
+                    "lat": 34.668,
+                    "lon": 135.21,
+                    "popular": False
+                },
+                {
+                    "name": "Nakafuto",
+                    "lat": 34.6629,
+                    "lon": 135.2127,
+                    "popular": False
+                }
+            ]
+        }
     },
     "nara": {
         "kintetsu_nara": {
             "name": "Kintetsu Nara Line",
             "popularity": 1,
             "stations": [
-                {"name": "Kintetsu-Nara", "lat": 34.6817, "lon": 135.8265, "popular": True},
-                {"name": "Shin-Omiya", "lat": 34.6809, "lon": 135.8082, "popular": False},
-                {"name": "Ikoma", "lat": 34.6905, "lon": 135.7006, "popular": False},
-                {"name": "Gakuenmae", "lat": 34.6889, "lon": 135.7440, "popular": False},
-                {"name": "Saidaiji", "lat": 34.6928, "lon": 135.7826, "popular": True},
-                {"name": "Osaka-Namba", "lat": 34.6658, "lon": 135.5013, "popular": True},
-            ],
+                {
+                    "name": "Kintetsu-Nara",
+                    "lat": 34.6817,
+                    "lon": 135.8265,
+                    "popular": True
+                },
+                {
+                    "name": "Shin-Omiya",
+                    "lat": 34.6809,
+                    "lon": 135.8082,
+                    "popular": False
+                },
+                {
+                    "name": "Ikoma",
+                    "lat": 34.6905,
+                    "lon": 135.7006,
+                    "popular": False
+                },
+                {
+                    "name": "Gakuenmae",
+                    "lat": 34.6889,
+                    "lon": 135.744,
+                    "popular": False
+                },
+                {
+                    "name": "Saidaiji",
+                    "lat": 34.6928,
+                    "lon": 135.7826,
+                    "popular": True
+                },
+                {
+                    "name": "Osaka-Namba",
+                    "lat": 34.6658,
+                    "lon": 135.5013,
+                    "popular": True
+                }
+            ]
         },
         "jr_nara": {
             "name": "JR Nara Line",
             "popularity": 2,
             "stations": [
-                {"name": "Nara", "lat": 34.6806, "lon": 135.8197, "popular": True},
-                {"name": "Inari", "lat": 34.9670, "lon": 135.7728, "popular": True},
-                {"name": "Tofukuji", "lat": 34.9790, "lon": 135.7720, "popular": False},
-                {"name": "Uji", "lat": 34.8931, "lon": 135.8069, "popular": True},
-                {"name": "Kyoto", "lat": 34.9858, "lon": 135.7588, "popular": True},
-            ],
-        },
+                {
+                    "name": "Nara",
+                    "lat": 34.6806,
+                    "lon": 135.8197,
+                    "popular": True
+                },
+                {
+                    "name": "Inari",
+                    "lat": 34.967,
+                    "lon": 135.7728,
+                    "popular": True
+                },
+                {
+                    "name": "Tofukuji",
+                    "lat": 34.979,
+                    "lon": 135.772,
+                    "popular": False
+                },
+                {
+                    "name": "Uji",
+                    "lat": 34.8931,
+                    "lon": 135.8069,
+                    "popular": True
+                },
+                {
+                    "name": "Kyoto",
+                    "lat": 34.9858,
+                    "lon": 135.7588,
+                    "popular": True
+                }
+            ]
+        }
     },
     "kanazawa": {
         "ishikawa": {
             "name": "Hokuriku Railroad Ishikawa Line",
             "popularity": 1,
             "stations": [
-                {"name": "Kanazawa", "lat": 36.5780, "lon": 136.6484, "popular": True},
-                {"name": "Nishi-Kanazawa", "lat": 36.5646, "lon": 136.6268, "popular": False},
-                {"name": "Shin-Nishi-Kanazawa", "lat": 36.5627, "lon": 136.6199, "popular": False},
-                {"name": "Nonoichi-Kohdaimae", "lat": 36.5427, "lon": 136.5887, "popular": False},
-                {"name": "Tsurugi", "lat": 36.4537, "lon": 136.5194, "popular": False},
-            ],
+                {
+                    "name": "Kanazawa",
+                    "lat": 36.578,
+                    "lon": 136.6484,
+                    "popular": True
+                },
+                {
+                    "name": "Nishi-Kanazawa",
+                    "lat": 36.5646,
+                    "lon": 136.6268,
+                    "popular": False
+                },
+                {
+                    "name": "Shin-Nishi-Kanazawa",
+                    "lat": 36.5627,
+                    "lon": 136.6199,
+                    "popular": False
+                },
+                {
+                    "name": "Nonoichi-Kohdaimae",
+                    "lat": 36.5427,
+                    "lon": 136.5887,
+                    "popular": False
+                },
+                {
+                    "name": "Tsurugi",
+                    "lat": 36.4537,
+                    "lon": 136.5194,
+                    "popular": False
+                }
+            ]
         },
         "hokuriku": {
             "name": "JR Hokuriku Main Line",
             "popularity": 2,
             "stations": [
-                {"name": "Kanazawa", "lat": 36.5780, "lon": 136.6484, "popular": True},
-                {"name": "Komatsu", "lat": 36.4029, "lon": 136.4476, "popular": False},
-                {"name": "Kagaonsen", "lat": 36.3141, "lon": 136.3635, "popular": True},
-                {"name": "Fukui", "lat": 36.0624, "lon": 136.2227, "popular": True},
-            ],
-        },
+                {
+                    "name": "Kanazawa",
+                    "lat": 36.578,
+                    "lon": 136.6484,
+                    "popular": True
+                },
+                {
+                    "name": "Komatsu",
+                    "lat": 36.4029,
+                    "lon": 136.4476,
+                    "popular": False
+                },
+                {
+                    "name": "Kagaonsen",
+                    "lat": 36.3141,
+                    "lon": 136.3635,
+                    "popular": True
+                },
+                {
+                    "name": "Fukui",
+                    "lat": 36.0624,
+                    "lon": 136.2227,
+                    "popular": True
+                }
+            ]
+        }
     },
     "sendai": {
         "namboku_sendai": {
             "name": "Sendai Subway Namboku Line",
             "popularity": 1,
             "stations": [
-                {"name": "Sendai", "lat": 38.2607, "lon": 140.8822, "popular": True},
-                {"name": "Hirose-dori", "lat": 38.2618, "lon": 140.8697, "popular": True},
-                {"name": "Kotodai-Koen", "lat": 38.2658, "lon": 140.8609, "popular": False},
-                {"name": "Kita-Sendai", "lat": 38.2731, "lon": 140.8601, "popular": False},
-                {"name": "Nagamachi", "lat": 38.2338, "lon": 140.8831, "popular": False},
-                {"name": "Izumi-Chuo", "lat": 38.3255, "lon": 140.8708, "popular": False},
-                {"name": "Asahigaoka", "lat": 38.2867, "lon": 140.8577, "popular": False},
-            ],
+                {
+                    "name": "Sendai",
+                    "lat": 38.2607,
+                    "lon": 140.8822,
+                    "popular": True
+                },
+                {
+                    "name": "Hirose-dori",
+                    "lat": 38.2618,
+                    "lon": 140.8697,
+                    "popular": True
+                },
+                {
+                    "name": "Kotodai-Koen",
+                    "lat": 38.2658,
+                    "lon": 140.8609,
+                    "popular": False
+                },
+                {
+                    "name": "Kita-Sendai",
+                    "lat": 38.2731,
+                    "lon": 140.8601,
+                    "popular": False
+                },
+                {
+                    "name": "Nagamachi",
+                    "lat": 38.2338,
+                    "lon": 140.8831,
+                    "popular": False
+                },
+                {
+                    "name": "Izumi-Chuo",
+                    "lat": 38.3255,
+                    "lon": 140.8708,
+                    "popular": False
+                },
+                {
+                    "name": "Asahigaoka",
+                    "lat": 38.2867,
+                    "lon": 140.8577,
+                    "popular": False
+                }
+            ]
         },
         "tozai_sendai": {
             "name": "Sendai Subway Tozai Line",
             "popularity": 2,
             "stations": [
-                {"name": "Sendai", "lat": 38.2607, "lon": 140.8822, "popular": True},
-                {"name": "Aoba-dori", "lat": 38.2617, "lon": 140.8744, "popular": True},
-                {"name": "Itsutsubashi", "lat": 38.2612, "lon": 140.8653, "popular": False},
-                {"name": "Yagiyama Zoological Park", "lat": 38.2482, "lon": 140.8380, "popular": False},
-                {"name": "Arai", "lat": 38.2583, "lon": 140.9117, "popular": False},
-            ],
-        },
+                {
+                    "name": "Sendai",
+                    "lat": 38.2607,
+                    "lon": 140.8822,
+                    "popular": True
+                },
+                {
+                    "name": "Aoba-dori",
+                    "lat": 38.2617,
+                    "lon": 140.8744,
+                    "popular": True
+                },
+                {
+                    "name": "Itsutsubashi",
+                    "lat": 38.2612,
+                    "lon": 140.8653,
+                    "popular": False
+                },
+                {
+                    "name": "Yagiyama Zoological Park",
+                    "lat": 38.2482,
+                    "lon": 140.838,
+                    "popular": False
+                },
+                {
+                    "name": "Arai",
+                    "lat": 38.2583,
+                    "lon": 140.9117,
+                    "popular": False
+                }
+            ]
+        }
     },
+    "london": {
+        "london_central": {
+            "name": "Central Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Oxford Circus",
+                    "lat": 51.5152,
+                    "lon": -0.1418,
+                    "popular": True
+                },
+                {
+                    "name": "Liverpool Street",
+                    "lat": 51.5178,
+                    "lon": -0.0823,
+                    "popular": True
+                },
+                {
+                    "name": "Bank",
+                    "lat": 51.5133,
+                    "lon": -0.0886,
+                    "popular": True
+                },
+                {
+                    "name": "Stratford",
+                    "lat": 51.5416,
+                    "lon": -0.0033,
+                    "popular": True
+                },
+                {
+                    "name": "Notting Hill Gate",
+                    "lat": 51.5094,
+                    "lon": -0.1967,
+                    "popular": True
+                },
+                {
+                    "name": "Tottenham Court Road",
+                    "lat": 51.5165,
+                    "lon": -0.131,
+                    "popular": True
+                },
+                {
+                    "name": "Holborn",
+                    "lat": 51.5174,
+                    "lon": -0.1201,
+                    "popular": True
+                },
+                {
+                    "name": "St Paul's",
+                    "lat": 51.5154,
+                    "lon": -0.0984,
+                    "popular": False
+                },
+                {
+                    "name": "Chancery Lane",
+                    "lat": 51.5185,
+                    "lon": -0.1115,
+                    "popular": False
+                },
+                {
+                    "name": "Mile End",
+                    "lat": 51.5252,
+                    "lon": -0.0332,
+                    "popular": False
+                },
+                {
+                    "name": "Shepherd's Bush",
+                    "lat": 51.5046,
+                    "lon": -0.2187,
+                    "popular": False
+                },
+                {
+                    "name": "Marble Arch",
+                    "lat": 51.5136,
+                    "lon": -0.1586,
+                    "popular": False
+                },
+                {
+                    "name": "Bond Street",
+                    "lat": 51.5142,
+                    "lon": -0.1494,
+                    "popular": False
+                },
+                {
+                    "name": "Lancaster Gate",
+                    "lat": 51.5119,
+                    "lon": -0.1756,
+                    "popular": False
+                },
+                {
+                    "name": "Queensway",
+                    "lat": 51.5107,
+                    "lon": -0.1871,
+                    "popular": False
+                }
+            ]
+        },
+        "london_victoria": {
+            "name": "Victoria Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Brixton",
+                    "lat": 51.4627,
+                    "lon": -0.1145,
+                    "popular": True
+                },
+                {
+                    "name": "Victoria",
+                    "lat": 51.4965,
+                    "lon": -0.1447,
+                    "popular": True
+                },
+                {
+                    "name": "King's Cross St Pancras",
+                    "lat": 51.5308,
+                    "lon": -0.1238,
+                    "popular": True
+                },
+                {
+                    "name": "Oxford Circus",
+                    "lat": 51.5152,
+                    "lon": -0.1418,
+                    "popular": True
+                },
+                {
+                    "name": "Green Park",
+                    "lat": 51.5067,
+                    "lon": -0.1428,
+                    "popular": True
+                },
+                {
+                    "name": "Warren Street",
+                    "lat": 51.5247,
+                    "lon": -0.1384,
+                    "popular": False
+                },
+                {
+                    "name": "Euston",
+                    "lat": 51.5282,
+                    "lon": -0.1337,
+                    "popular": True
+                },
+                {
+                    "name": "Pimlico",
+                    "lat": 51.4893,
+                    "lon": -0.1334,
+                    "popular": False
+                },
+                {
+                    "name": "Vauxhall",
+                    "lat": 51.4861,
+                    "lon": -0.1253,
+                    "popular": False
+                },
+                {
+                    "name": "Stockwell",
+                    "lat": 51.4723,
+                    "lon": -0.1228,
+                    "popular": False
+                },
+                {
+                    "name": "Highbury & Islington",
+                    "lat": 51.546,
+                    "lon": -0.104,
+                    "popular": False
+                },
+                {
+                    "name": "Finsbury Park",
+                    "lat": 51.5642,
+                    "lon": -0.1065,
+                    "popular": False
+                },
+                {
+                    "name": "Tottenham Hale",
+                    "lat": 51.5882,
+                    "lon": -0.0602,
+                    "popular": False
+                },
+                {
+                    "name": "Walthamstow Central",
+                    "lat": 51.583,
+                    "lon": -0.0199,
+                    "popular": False
+                }
+            ]
+        },
+        "london_piccadilly": {
+            "name": "Piccadilly Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Heathrow Terminals 2 & 3",
+                    "lat": 51.4713,
+                    "lon": -0.4524,
+                    "popular": True
+                },
+                {
+                    "name": "Heathrow Terminal 4",
+                    "lat": 51.459,
+                    "lon": -0.4478,
+                    "popular": True
+                },
+                {
+                    "name": "Heathrow Terminal 5",
+                    "lat": 51.4723,
+                    "lon": -0.4876,
+                    "popular": True
+                },
+                {
+                    "name": "Piccadilly Circus",
+                    "lat": 51.51,
+                    "lon": -0.1337,
+                    "popular": True
+                },
+                {
+                    "name": "King's Cross St Pancras",
+                    "lat": 51.5308,
+                    "lon": -0.1238,
+                    "popular": True
+                },
+                {
+                    "name": "Leicester Square",
+                    "lat": 51.5113,
+                    "lon": -0.1281,
+                    "popular": True
+                },
+                {
+                    "name": "Covent Garden",
+                    "lat": 51.5129,
+                    "lon": -0.1243,
+                    "popular": True
+                },
+                {
+                    "name": "Green Park",
+                    "lat": 51.5067,
+                    "lon": -0.1428,
+                    "popular": True
+                },
+                {
+                    "name": "South Kensington",
+                    "lat": 51.4941,
+                    "lon": -0.1738,
+                    "popular": True
+                },
+                {
+                    "name": "Earl's Court",
+                    "lat": 51.4914,
+                    "lon": -0.1934,
+                    "popular": False
+                },
+                {
+                    "name": "Hammersmith",
+                    "lat": 51.4932,
+                    "lon": -0.2249,
+                    "popular": False
+                },
+                {
+                    "name": "Knightsbridge",
+                    "lat": 51.5015,
+                    "lon": -0.1607,
+                    "popular": False
+                },
+                {
+                    "name": "Hyde Park Corner",
+                    "lat": 51.5027,
+                    "lon": -0.1527,
+                    "popular": False
+                },
+                {
+                    "name": "Holborn",
+                    "lat": 51.5174,
+                    "lon": -0.1201,
+                    "popular": False
+                },
+                {
+                    "name": "Russell Square",
+                    "lat": 51.523,
+                    "lon": -0.1244,
+                    "popular": False
+                }
+            ]
+        },
+        "london_northern": {
+            "name": "Northern Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Camden Town",
+                    "lat": 51.5392,
+                    "lon": -0.1426,
+                    "popular": True
+                },
+                {
+                    "name": "Angel",
+                    "lat": 51.5322,
+                    "lon": -0.1058,
+                    "popular": True
+                },
+                {
+                    "name": "Bank",
+                    "lat": 51.5133,
+                    "lon": -0.0886,
+                    "popular": True
+                },
+                {
+                    "name": "London Bridge",
+                    "lat": 51.5052,
+                    "lon": -0.0864,
+                    "popular": True
+                },
+                {
+                    "name": "King's Cross St Pancras",
+                    "lat": 51.5308,
+                    "lon": -0.1238,
+                    "popular": True
+                },
+                {
+                    "name": "Leicester Square",
+                    "lat": 51.5113,
+                    "lon": -0.1281,
+                    "popular": True
+                },
+                {
+                    "name": "Waterloo",
+                    "lat": 51.5036,
+                    "lon": -0.1143,
+                    "popular": True
+                },
+                {
+                    "name": "Embankment",
+                    "lat": 51.5074,
+                    "lon": -0.1223,
+                    "popular": False
+                },
+                {
+                    "name": "Tottenham Court Road",
+                    "lat": 51.5165,
+                    "lon": -0.131,
+                    "popular": False
+                },
+                {
+                    "name": "Moorgate",
+                    "lat": 51.5186,
+                    "lon": -0.0886,
+                    "popular": False
+                },
+                {
+                    "name": "Old Street",
+                    "lat": 51.5263,
+                    "lon": -0.0877,
+                    "popular": False
+                },
+                {
+                    "name": "Kennington",
+                    "lat": 51.4884,
+                    "lon": -0.1053,
+                    "popular": False
+                },
+                {
+                    "name": "Chalk Farm",
+                    "lat": 51.5441,
+                    "lon": -0.1538,
+                    "popular": False
+                },
+                {
+                    "name": "Elephant & Castle",
+                    "lat": 51.4944,
+                    "lon": -0.1005,
+                    "popular": False
+                }
+            ]
+        },
+        "london_jubilee": {
+            "name": "Jubilee Line",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Westminster",
+                    "lat": 51.501,
+                    "lon": -0.1254,
+                    "popular": True
+                },
+                {
+                    "name": "Canary Wharf",
+                    "lat": 51.5032,
+                    "lon": -0.0181,
+                    "popular": True
+                },
+                {
+                    "name": "London Bridge",
+                    "lat": 51.5052,
+                    "lon": -0.0864,
+                    "popular": True
+                },
+                {
+                    "name": "Baker Street",
+                    "lat": 51.5226,
+                    "lon": -0.1571,
+                    "popular": True
+                },
+                {
+                    "name": "Bond Street",
+                    "lat": 51.5142,
+                    "lon": -0.1494,
+                    "popular": True
+                },
+                {
+                    "name": "Green Park",
+                    "lat": 51.5067,
+                    "lon": -0.1428,
+                    "popular": True
+                },
+                {
+                    "name": "Waterloo",
+                    "lat": 51.5036,
+                    "lon": -0.1143,
+                    "popular": True
+                },
+                {
+                    "name": "Stratford",
+                    "lat": 51.5416,
+                    "lon": -0.0033,
+                    "popular": True
+                },
+                {
+                    "name": "Southwark",
+                    "lat": 51.504,
+                    "lon": -0.105,
+                    "popular": False
+                },
+                {
+                    "name": "Bermondsey",
+                    "lat": 51.4979,
+                    "lon": -0.0637,
+                    "popular": False
+                },
+                {
+                    "name": "Canada Water",
+                    "lat": 51.4982,
+                    "lon": -0.0502,
+                    "popular": False
+                },
+                {
+                    "name": "North Greenwich",
+                    "lat": 51.5005,
+                    "lon": 0.0039,
+                    "popular": False
+                },
+                {
+                    "name": "West Ham",
+                    "lat": 51.5287,
+                    "lon": 0.0056,
+                    "popular": False
+                },
+                {
+                    "name": "St John's Wood",
+                    "lat": 51.5347,
+                    "lon": -0.1738,
+                    "popular": False
+                },
+                {
+                    "name": "Swiss Cottage",
+                    "lat": 51.5436,
+                    "lon": -0.1744,
+                    "popular": False
+                }
+            ]
+        },
+        "london_elizabeth": {
+            "name": "Elizabeth Line",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Paddington",
+                    "lat": 51.5154,
+                    "lon": -0.1755,
+                    "popular": True
+                },
+                {
+                    "name": "Liverpool Street",
+                    "lat": 51.5178,
+                    "lon": -0.0823,
+                    "popular": True
+                },
+                {
+                    "name": "Canary Wharf",
+                    "lat": 51.5032,
+                    "lon": -0.0181,
+                    "popular": True
+                },
+                {
+                    "name": "Heathrow Terminals 2 & 3",
+                    "lat": 51.4713,
+                    "lon": -0.4524,
+                    "popular": True
+                },
+                {
+                    "name": "Heathrow Terminal 4",
+                    "lat": 51.459,
+                    "lon": -0.4478,
+                    "popular": True
+                },
+                {
+                    "name": "Tottenham Court Road",
+                    "lat": 51.5165,
+                    "lon": -0.131,
+                    "popular": True
+                },
+                {
+                    "name": "Bond Street",
+                    "lat": 51.5142,
+                    "lon": -0.1494,
+                    "popular": True
+                },
+                {
+                    "name": "Whitechapel",
+                    "lat": 51.5194,
+                    "lon": -0.0599,
+                    "popular": False
+                },
+                {
+                    "name": "Stratford",
+                    "lat": 51.5416,
+                    "lon": -0.0033,
+                    "popular": True
+                },
+                {
+                    "name": "Abbey Wood",
+                    "lat": 51.4907,
+                    "lon": 0.1204,
+                    "popular": False
+                },
+                {
+                    "name": "Custom House",
+                    "lat": 51.5095,
+                    "lon": 0.0262,
+                    "popular": False
+                },
+                {
+                    "name": "Woolwich",
+                    "lat": 51.4917,
+                    "lon": 0.0714,
+                    "popular": False
+                },
+                {
+                    "name": "Farringdon",
+                    "lat": 51.5203,
+                    "lon": -0.1053,
+                    "popular": False
+                },
+                {
+                    "name": "Ealing Broadway",
+                    "lat": 51.515,
+                    "lon": -0.3019,
+                    "popular": False
+                },
+                {
+                    "name": "Shenfield",
+                    "lat": 51.6308,
+                    "lon": 0.3294,
+                    "popular": False
+                }
+            ]
+        },
+        "london_bakerloo": {
+            "name": "Bakerloo Line",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Paddington",
+                    "lat": 51.5154,
+                    "lon": -0.1755,
+                    "popular": True
+                },
+                {
+                    "name": "Oxford Circus",
+                    "lat": 51.5152,
+                    "lon": -0.1418,
+                    "popular": True
+                },
+                {
+                    "name": "Waterloo",
+                    "lat": 51.5036,
+                    "lon": -0.1143,
+                    "popular": True
+                },
+                {
+                    "name": "Baker Street",
+                    "lat": 51.5226,
+                    "lon": -0.1571,
+                    "popular": True
+                },
+                {
+                    "name": "Piccadilly Circus",
+                    "lat": 51.51,
+                    "lon": -0.1337,
+                    "popular": True
+                },
+                {
+                    "name": "Embankment",
+                    "lat": 51.5074,
+                    "lon": -0.1223,
+                    "popular": False
+                },
+                {
+                    "name": "Marylebone",
+                    "lat": 51.5225,
+                    "lon": -0.1631,
+                    "popular": False
+                },
+                {
+                    "name": "Regent's Park",
+                    "lat": 51.5234,
+                    "lon": -0.1466,
+                    "popular": False
+                },
+                {
+                    "name": "Lambeth North",
+                    "lat": 51.4991,
+                    "lon": -0.1115,
+                    "popular": False
+                },
+                {
+                    "name": "Elephant & Castle",
+                    "lat": 51.4944,
+                    "lon": -0.1005,
+                    "popular": False
+                },
+                {
+                    "name": "Charing Cross",
+                    "lat": 51.5074,
+                    "lon": -0.1246,
+                    "popular": False
+                },
+                {
+                    "name": "Edgware Road",
+                    "lat": 51.5199,
+                    "lon": -0.1679,
+                    "popular": False
+                }
+            ]
+        },
+        "london_district": {
+            "name": "District Line",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Earl's Court",
+                    "lat": 51.4914,
+                    "lon": -0.1934,
+                    "popular": True
+                },
+                {
+                    "name": "Westminster",
+                    "lat": 51.501,
+                    "lon": -0.1254,
+                    "popular": True
+                },
+                {
+                    "name": "Tower Hill",
+                    "lat": 51.51,
+                    "lon": -0.0765,
+                    "popular": True
+                },
+                {
+                    "name": "Victoria",
+                    "lat": 51.4965,
+                    "lon": -0.1447,
+                    "popular": True
+                },
+                {
+                    "name": "South Kensington",
+                    "lat": 51.4941,
+                    "lon": -0.1738,
+                    "popular": True
+                },
+                {
+                    "name": "Embankment",
+                    "lat": 51.5074,
+                    "lon": -0.1223,
+                    "popular": True
+                },
+                {
+                    "name": "Hammersmith",
+                    "lat": 51.4932,
+                    "lon": -0.2249,
+                    "popular": False
+                },
+                {
+                    "name": "Richmond",
+                    "lat": 51.4632,
+                    "lon": -0.3013,
+                    "popular": False
+                },
+                {
+                    "name": "Wimbledon",
+                    "lat": 51.4214,
+                    "lon": -0.2064,
+                    "popular": False
+                },
+                {
+                    "name": "Kew Gardens",
+                    "lat": 51.4772,
+                    "lon": -0.285,
+                    "popular": False
+                },
+                {
+                    "name": "Putney Bridge",
+                    "lat": 51.4682,
+                    "lon": -0.2089,
+                    "popular": False
+                },
+                {
+                    "name": "Sloane Square",
+                    "lat": 51.4924,
+                    "lon": -0.1565,
+                    "popular": False
+                },
+                {
+                    "name": "Blackfriars",
+                    "lat": 51.5121,
+                    "lon": -0.104,
+                    "popular": False
+                },
+                {
+                    "name": "Temple",
+                    "lat": 51.5113,
+                    "lon": -0.1141,
+                    "popular": False
+                }
+            ]
+        },
+        "london_metropolitan": {
+            "name": "Metropolitan Line",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Baker Street",
+                    "lat": 51.5226,
+                    "lon": -0.1571,
+                    "popular": True
+                },
+                {
+                    "name": "King's Cross St Pancras",
+                    "lat": 51.5308,
+                    "lon": -0.1238,
+                    "popular": True
+                },
+                {
+                    "name": "Liverpool Street",
+                    "lat": 51.5178,
+                    "lon": -0.0823,
+                    "popular": True
+                },
+                {
+                    "name": "Aldgate",
+                    "lat": 51.5143,
+                    "lon": -0.0755,
+                    "popular": False
+                },
+                {
+                    "name": "Finchley Road",
+                    "lat": 51.5472,
+                    "lon": -0.1803,
+                    "popular": False
+                },
+                {
+                    "name": "Wembley Park",
+                    "lat": 51.5635,
+                    "lon": -0.2795,
+                    "popular": False
+                },
+                {
+                    "name": "Harrow-on-the-Hill",
+                    "lat": 51.5793,
+                    "lon": -0.3372,
+                    "popular": False
+                },
+                {
+                    "name": "Uxbridge",
+                    "lat": 51.5467,
+                    "lon": -0.4782,
+                    "popular": False
+                },
+                {
+                    "name": "Amersham",
+                    "lat": 51.6741,
+                    "lon": -0.6073,
+                    "popular": False
+                },
+                {
+                    "name": "Chesham",
+                    "lat": 51.7052,
+                    "lon": -0.611,
+                    "popular": False
+                }
+            ]
+        },
+        "london_hammersmith": {
+            "name": "Hammersmith & City Line",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Hammersmith",
+                    "lat": 51.4932,
+                    "lon": -0.2249,
+                    "popular": True
+                },
+                {
+                    "name": "Liverpool Street",
+                    "lat": 51.5178,
+                    "lon": -0.0823,
+                    "popular": True
+                },
+                {
+                    "name": "King's Cross St Pancras",
+                    "lat": 51.5308,
+                    "lon": -0.1238,
+                    "popular": True
+                },
+                {
+                    "name": "Baker Street",
+                    "lat": 51.5226,
+                    "lon": -0.1571,
+                    "popular": True
+                },
+                {
+                    "name": "Paddington",
+                    "lat": 51.5154,
+                    "lon": -0.1755,
+                    "popular": True
+                },
+                {
+                    "name": "Barking",
+                    "lat": 51.5396,
+                    "lon": 0.0808,
+                    "popular": False
+                },
+                {
+                    "name": "Whitechapel",
+                    "lat": 51.5194,
+                    "lon": -0.0599,
+                    "popular": False
+                },
+                {
+                    "name": "Aldgate East",
+                    "lat": 51.5154,
+                    "lon": -0.0726,
+                    "popular": False
+                },
+                {
+                    "name": "Moorgate",
+                    "lat": 51.5186,
+                    "lon": -0.0886,
+                    "popular": False
+                },
+                {
+                    "name": "Edgware Road",
+                    "lat": 51.5199,
+                    "lon": -0.1679,
+                    "popular": False
+                },
+                {
+                    "name": "Ladbroke Grove",
+                    "lat": 51.5172,
+                    "lon": -0.2107,
+                    "popular": False
+                }
+            ]
+        },
+        "london_circle": {
+            "name": "Circle Line",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "King's Cross St Pancras",
+                    "lat": 51.5308,
+                    "lon": -0.1238,
+                    "popular": True
+                },
+                {
+                    "name": "Baker Street",
+                    "lat": 51.5226,
+                    "lon": -0.1571,
+                    "popular": True
+                },
+                {
+                    "name": "Paddington",
+                    "lat": 51.5154,
+                    "lon": -0.1755,
+                    "popular": True
+                },
+                {
+                    "name": "Victoria",
+                    "lat": 51.4965,
+                    "lon": -0.1447,
+                    "popular": True
+                },
+                {
+                    "name": "Westminster",
+                    "lat": 51.501,
+                    "lon": -0.1254,
+                    "popular": True
+                },
+                {
+                    "name": "Tower Hill",
+                    "lat": 51.51,
+                    "lon": -0.0765,
+                    "popular": True
+                },
+                {
+                    "name": "Liverpool Street",
+                    "lat": 51.5178,
+                    "lon": -0.0823,
+                    "popular": True
+                },
+                {
+                    "name": "Farringdon",
+                    "lat": 51.5203,
+                    "lon": -0.1053,
+                    "popular": False
+                },
+                {
+                    "name": "Barbican",
+                    "lat": 51.5204,
+                    "lon": -0.0979,
+                    "popular": False
+                },
+                {
+                    "name": "Moorgate",
+                    "lat": 51.5186,
+                    "lon": -0.0886,
+                    "popular": False
+                },
+                {
+                    "name": "Aldgate",
+                    "lat": 51.5143,
+                    "lon": -0.0755,
+                    "popular": False
+                },
+                {
+                    "name": "Monument",
+                    "lat": 51.5107,
+                    "lon": -0.0859,
+                    "popular": False
+                },
+                {
+                    "name": "Blackfriars",
+                    "lat": 51.5121,
+                    "lon": -0.104,
+                    "popular": False
+                },
+                {
+                    "name": "South Kensington",
+                    "lat": 51.4941,
+                    "lon": -0.1738,
+                    "popular": False
+                },
+                {
+                    "name": "Sloane Square",
+                    "lat": 51.4924,
+                    "lon": -0.1565,
+                    "popular": False
+                }
+            ]
+        },
+        "london_dlr": {
+            "name": "DLR",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Greenwich",
+                    "lat": 51.4781,
+                    "lon": -0.0149,
+                    "popular": True
+                },
+                {
+                    "name": "Canary Wharf",
+                    "lat": 51.5039,
+                    "lon": -0.0187,
+                    "popular": True
+                },
+                {
+                    "name": "London City Airport",
+                    "lat": 51.5033,
+                    "lon": 0.0489,
+                    "popular": True
+                },
+                {
+                    "name": "Bank",
+                    "lat": 51.5133,
+                    "lon": -0.0886,
+                    "popular": True
+                },
+                {
+                    "name": "Tower Gateway",
+                    "lat": 51.5106,
+                    "lon": -0.0743,
+                    "popular": True
+                },
+                {
+                    "name": "Cutty Sark",
+                    "lat": 51.4827,
+                    "lon": -0.0101,
+                    "popular": True
+                },
+                {
+                    "name": "Lewisham",
+                    "lat": 51.4657,
+                    "lon": -0.0139,
+                    "popular": False
+                },
+                {
+                    "name": "Woolwich Arsenal",
+                    "lat": 51.4905,
+                    "lon": 0.069,
+                    "popular": False
+                },
+                {
+                    "name": "Beckton",
+                    "lat": 51.5148,
+                    "lon": 0.0613,
+                    "popular": False
+                },
+                {
+                    "name": "Stratford",
+                    "lat": 51.5416,
+                    "lon": -0.0033,
+                    "popular": False
+                },
+                {
+                    "name": "Poplar",
+                    "lat": 51.5076,
+                    "lon": -0.0174,
+                    "popular": False
+                },
+                {
+                    "name": "West India Quay",
+                    "lat": 51.507,
+                    "lon": -0.0218,
+                    "popular": False
+                },
+                {
+                    "name": "Limehouse",
+                    "lat": 51.5123,
+                    "lon": -0.0396,
+                    "popular": False
+                },
+                {
+                    "name": "ExCeL",
+                    "lat": 51.5087,
+                    "lon": 0.0299,
+                    "popular": False
+                }
+            ]
+        },
+        "london_overground": {
+            "name": "London Overground",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Shoreditch High Street",
+                    "lat": 51.5234,
+                    "lon": -0.0755,
+                    "popular": True
+                },
+                {
+                    "name": "Clapham Junction",
+                    "lat": 51.4642,
+                    "lon": -0.1704,
+                    "popular": True
+                },
+                {
+                    "name": "Highbury & Islington",
+                    "lat": 51.546,
+                    "lon": -0.104,
+                    "popular": True
+                },
+                {
+                    "name": "Dalston Junction",
+                    "lat": 51.5462,
+                    "lon": -0.0753,
+                    "popular": False
+                },
+                {
+                    "name": "Hackney Central",
+                    "lat": 51.5468,
+                    "lon": -0.056,
+                    "popular": False
+                },
+                {
+                    "name": "Stratford",
+                    "lat": 51.5416,
+                    "lon": -0.0033,
+                    "popular": True
+                },
+                {
+                    "name": "Canada Water",
+                    "lat": 51.4982,
+                    "lon": -0.0502,
+                    "popular": False
+                },
+                {
+                    "name": "New Cross Gate",
+                    "lat": 51.4754,
+                    "lon": -0.04,
+                    "popular": False
+                },
+                {
+                    "name": "Crystal Palace",
+                    "lat": 51.4181,
+                    "lon": -0.0726,
+                    "popular": False
+                },
+                {
+                    "name": "Richmond",
+                    "lat": 51.4632,
+                    "lon": -0.3013,
+                    "popular": False
+                },
+                {
+                    "name": "Shepherd's Bush",
+                    "lat": 51.5046,
+                    "lon": -0.2187,
+                    "popular": False
+                },
+                {
+                    "name": "Willesden Junction",
+                    "lat": 51.5326,
+                    "lon": -0.2441,
+                    "popular": False
+                },
+                {
+                    "name": "Gospel Oak",
+                    "lat": 51.5554,
+                    "lon": -0.1511,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "manchester": {
+        "metrolink_bury": {
+            "name": "Metrolink Bury Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Victoria",
+                    "lat": 53.4878,
+                    "lon": -2.2415,
+                    "popular": True
+                },
+                {
+                    "name": "Bury",
+                    "lat": 53.5906,
+                    "lon": -2.2978,
+                    "popular": True
+                },
+                {
+                    "name": "Shudehill",
+                    "lat": 53.4856,
+                    "lon": -2.2393,
+                    "popular": True
+                },
+                {
+                    "name": "Market Street",
+                    "lat": 53.4821,
+                    "lon": -2.2392,
+                    "popular": True
+                },
+                {
+                    "name": "Piccadilly Gardens",
+                    "lat": 53.4804,
+                    "lon": -2.2374,
+                    "popular": True
+                },
+                {
+                    "name": "Radcliffe",
+                    "lat": 53.5599,
+                    "lon": -2.326,
+                    "popular": False
+                },
+                {
+                    "name": "Whitefield",
+                    "lat": 53.5505,
+                    "lon": -2.313,
+                    "popular": False
+                },
+                {
+                    "name": "Prestwich",
+                    "lat": 53.5318,
+                    "lon": -2.285,
+                    "popular": False
+                },
+                {
+                    "name": "Heaton Park",
+                    "lat": 53.5239,
+                    "lon": -2.2666,
+                    "popular": False
+                },
+                {
+                    "name": "Queens Road",
+                    "lat": 53.4968,
+                    "lon": -2.2515,
+                    "popular": False
+                }
+            ]
+        },
+        "metrolink_altrincham": {
+            "name": "Metrolink Altrincham Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "St Peter's Square",
+                    "lat": 53.4783,
+                    "lon": -2.2431,
+                    "popular": True
+                },
+                {
+                    "name": "Altrincham",
+                    "lat": 53.3874,
+                    "lon": -2.3473,
+                    "popular": True
+                },
+                {
+                    "name": "Piccadilly Gardens",
+                    "lat": 53.4804,
+                    "lon": -2.2374,
+                    "popular": True
+                },
+                {
+                    "name": "Deansgate-Castlefield",
+                    "lat": 53.474,
+                    "lon": -2.2509,
+                    "popular": True
+                },
+                {
+                    "name": "Cornbrook",
+                    "lat": 53.47,
+                    "lon": -2.2607,
+                    "popular": False
+                },
+                {
+                    "name": "Old Trafford",
+                    "lat": 53.4561,
+                    "lon": -2.2845,
+                    "popular": True
+                },
+                {
+                    "name": "Sale",
+                    "lat": 53.4246,
+                    "lon": -2.3218,
+                    "popular": False
+                },
+                {
+                    "name": "Stretford",
+                    "lat": 53.4432,
+                    "lon": -2.3084,
+                    "popular": False
+                },
+                {
+                    "name": "Navigation Road",
+                    "lat": 53.3951,
+                    "lon": -2.3418,
+                    "popular": False
+                },
+                {
+                    "name": "Timperley",
+                    "lat": 53.4044,
+                    "lon": -2.3322,
+                    "popular": False
+                }
+            ]
+        },
+        "metrolink_airport": {
+            "name": "Metrolink Airport Line",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Manchester Airport",
+                    "lat": 53.3654,
+                    "lon": -2.2726,
+                    "popular": True
+                },
+                {
+                    "name": "St Peter's Square",
+                    "lat": 53.4783,
+                    "lon": -2.2431,
+                    "popular": True
+                },
+                {
+                    "name": "Piccadilly",
+                    "lat": 53.4774,
+                    "lon": -2.2309,
+                    "popular": True
+                },
+                {
+                    "name": "Wythenshawe Town Centre",
+                    "lat": 53.3894,
+                    "lon": -2.2637,
+                    "popular": False
+                },
+                {
+                    "name": "Cornbrook",
+                    "lat": 53.47,
+                    "lon": -2.2607,
+                    "popular": False
+                },
+                {
+                    "name": "Firswood",
+                    "lat": 53.4539,
+                    "lon": -2.2823,
+                    "popular": False
+                },
+                {
+                    "name": "Chorlton",
+                    "lat": 53.4411,
+                    "lon": -2.2734,
+                    "popular": False
+                },
+                {
+                    "name": "Barlow Moor Road",
+                    "lat": 53.4333,
+                    "lon": -2.2734,
+                    "popular": False
+                },
+                {
+                    "name": "Roundthorn",
+                    "lat": 53.4042,
+                    "lon": -2.2792,
+                    "popular": False
+                },
+                {
+                    "name": "Shadowmoss",
+                    "lat": 53.3774,
+                    "lon": -2.2684,
+                    "popular": False
+                }
+            ]
+        },
+        "metrolink_ashton": {
+            "name": "Metrolink Ashton Line",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Ashton-under-Lyne",
+                    "lat": 53.4905,
+                    "lon": -2.0985,
+                    "popular": True
+                },
+                {
+                    "name": "Piccadilly",
+                    "lat": 53.4774,
+                    "lon": -2.2309,
+                    "popular": True
+                },
+                {
+                    "name": "New Islington",
+                    "lat": 53.4785,
+                    "lon": -2.2215,
+                    "popular": False
+                },
+                {
+                    "name": "Holt Town",
+                    "lat": 53.4803,
+                    "lon": -2.2073,
+                    "popular": False
+                },
+                {
+                    "name": "Droylsden",
+                    "lat": 53.4828,
+                    "lon": -2.1528,
+                    "popular": False
+                },
+                {
+                    "name": "Audenshaw",
+                    "lat": 53.4808,
+                    "lon": -2.1305,
+                    "popular": False
+                },
+                {
+                    "name": "Ashton West",
+                    "lat": 53.488,
+                    "lon": -2.1075,
+                    "popular": False
+                },
+                {
+                    "name": "Etihad Campus",
+                    "lat": 53.4829,
+                    "lon": -2.197,
+                    "popular": False
+                },
+                {
+                    "name": "Velopark",
+                    "lat": 53.482,
+                    "lon": -2.1863,
+                    "popular": False
+                }
+            ]
+        },
+        "metrolink_eccles": {
+            "name": "Metrolink Eccles Line",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Eccles",
+                    "lat": 53.4844,
+                    "lon": -2.3344,
+                    "popular": True
+                },
+                {
+                    "name": "MediaCityUK",
+                    "lat": 53.472,
+                    "lon": -2.2975,
+                    "popular": True
+                },
+                {
+                    "name": "Piccadilly Gardens",
+                    "lat": 53.4804,
+                    "lon": -2.2374,
+                    "popular": True
+                },
+                {
+                    "name": "Exchange Quay",
+                    "lat": 53.4672,
+                    "lon": -2.2805,
+                    "popular": False
+                },
+                {
+                    "name": "Salford Quays",
+                    "lat": 53.4706,
+                    "lon": -2.2862,
+                    "popular": False
+                },
+                {
+                    "name": "Langworthy",
+                    "lat": 53.482,
+                    "lon": -2.3077,
+                    "popular": False
+                },
+                {
+                    "name": "Weaste",
+                    "lat": 53.4835,
+                    "lon": -2.3133,
+                    "popular": False
+                },
+                {
+                    "name": "Broadway",
+                    "lat": 53.4752,
+                    "lon": -2.2934,
+                    "popular": False
+                },
+                {
+                    "name": "Harbour City",
+                    "lat": 53.4738,
+                    "lon": -2.2943,
+                    "popular": False
+                },
+                {
+                    "name": "Anchorage",
+                    "lat": 53.4735,
+                    "lon": -2.2904,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "birmingham": {
+        "wm_metro": {
+            "name": "West Midlands Metro",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Bull Street",
+                    "lat": 52.483,
+                    "lon": -1.895,
+                    "popular": True
+                },
+                {
+                    "name": "Grand Central",
+                    "lat": 52.4787,
+                    "lon": -1.8983,
+                    "popular": True
+                },
+                {
+                    "name": "St Chad's",
+                    "lat": 52.4848,
+                    "lon": -1.8988,
+                    "popular": False
+                },
+                {
+                    "name": "Snow Hill",
+                    "lat": 52.4835,
+                    "lon": -1.8999,
+                    "popular": True
+                },
+                {
+                    "name": "Corporation Street",
+                    "lat": 52.4819,
+                    "lon": -1.892,
+                    "popular": False
+                },
+                {
+                    "name": "Wolverhampton St George's",
+                    "lat": 52.5876,
+                    "lon": -2.1248,
+                    "popular": True
+                },
+                {
+                    "name": "West Bromwich Central",
+                    "lat": 52.5183,
+                    "lon": -1.9898,
+                    "popular": False
+                },
+                {
+                    "name": "The Hawthorns",
+                    "lat": 52.5088,
+                    "lon": -1.9641,
+                    "popular": False
+                },
+                {
+                    "name": "Jewellery Quarter",
+                    "lat": 52.4891,
+                    "lon": -1.9128,
+                    "popular": True
+                },
+                {
+                    "name": "Bilston Central",
+                    "lat": 52.5651,
+                    "lon": -2.0758,
+                    "popular": False
+                },
+                {
+                    "name": "Edgbaston Village",
+                    "lat": 52.4721,
+                    "lon": -1.9145,
+                    "popular": False
+                },
+                {
+                    "name": "Five Ways",
+                    "lat": 52.4729,
+                    "lon": -1.912,
+                    "popular": False
+                }
+            ]
+        },
+        "cross_city": {
+            "name": "Cross-City Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Birmingham New Street",
+                    "lat": 52.4778,
+                    "lon": -1.8998,
+                    "popular": True
+                },
+                {
+                    "name": "Five Ways",
+                    "lat": 52.472,
+                    "lon": -1.9137,
+                    "popular": True
+                },
+                {
+                    "name": "University",
+                    "lat": 52.4512,
+                    "lon": -1.9381,
+                    "popular": True
+                },
+                {
+                    "name": "Selly Oak",
+                    "lat": 52.4415,
+                    "lon": -1.9384,
+                    "popular": False
+                },
+                {
+                    "name": "Bournville",
+                    "lat": 52.4277,
+                    "lon": -1.9358,
+                    "popular": False
+                },
+                {
+                    "name": "Longbridge",
+                    "lat": 52.396,
+                    "lon": -1.9802,
+                    "popular": False
+                },
+                {
+                    "name": "Redditch",
+                    "lat": 52.307,
+                    "lon": -1.9456,
+                    "popular": False
+                },
+                {
+                    "name": "Lichfield Trent Valley",
+                    "lat": 52.6857,
+                    "lon": -1.8115,
+                    "popular": False
+                },
+                {
+                    "name": "Sutton Coldfield",
+                    "lat": 52.5624,
+                    "lon": -1.8247,
+                    "popular": False
+                },
+                {
+                    "name": "Erdington",
+                    "lat": 52.524,
+                    "lon": -1.8395,
+                    "popular": False
+                },
+                {
+                    "name": "Aston",
+                    "lat": 52.5016,
+                    "lon": -1.8726,
+                    "popular": False
+                },
+                {
+                    "name": "Gravelly Hill",
+                    "lat": 52.5106,
+                    "lon": -1.858,
+                    "popular": False
+                }
+            ]
+        },
+        "bham_mainline": {
+            "name": "Birmingham Mainline Stations",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Birmingham New Street",
+                    "lat": 52.4778,
+                    "lon": -1.8998,
+                    "popular": True
+                },
+                {
+                    "name": "Birmingham Moor Street",
+                    "lat": 52.479,
+                    "lon": -1.8926,
+                    "popular": True
+                },
+                {
+                    "name": "Birmingham Snow Hill",
+                    "lat": 52.4835,
+                    "lon": -1.8999,
+                    "popular": True
+                },
+                {
+                    "name": "Birmingham International",
+                    "lat": 52.4508,
+                    "lon": -1.726,
+                    "popular": True
+                },
+                {
+                    "name": "Solihull",
+                    "lat": 52.4131,
+                    "lon": -1.787,
+                    "popular": False
+                },
+                {
+                    "name": "Coventry",
+                    "lat": 52.4007,
+                    "lon": -1.5133,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "newcastle": {
+        "tyne_wear_green": {
+            "name": "Tyne & Wear Metro Green Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Monument",
+                    "lat": 54.969,
+                    "lon": -1.6132,
+                    "popular": True
+                },
+                {
+                    "name": "Central Station",
+                    "lat": 54.9688,
+                    "lon": -1.617,
+                    "popular": True
+                },
+                {
+                    "name": "Haymarket",
+                    "lat": 54.9749,
+                    "lon": -1.6168,
+                    "popular": True
+                },
+                {
+                    "name": "Newcastle Airport",
+                    "lat": 55.0372,
+                    "lon": -1.7115,
+                    "popular": True
+                },
+                {
+                    "name": "St James",
+                    "lat": 54.9748,
+                    "lon": -1.6214,
+                    "popular": False
+                },
+                {
+                    "name": "South Gosforth",
+                    "lat": 55.0001,
+                    "lon": -1.6192,
+                    "popular": False
+                },
+                {
+                    "name": "Whitley Bay",
+                    "lat": 55.037,
+                    "lon": -1.4446,
+                    "popular": False
+                },
+                {
+                    "name": "Tynemouth",
+                    "lat": 55.0178,
+                    "lon": -1.4255,
+                    "popular": True
+                },
+                {
+                    "name": "Gateshead",
+                    "lat": 54.9616,
+                    "lon": -1.6036,
+                    "popular": False
+                },
+                {
+                    "name": "Felling",
+                    "lat": 54.951,
+                    "lon": -1.5675,
+                    "popular": False
+                },
+                {
+                    "name": "Heworth",
+                    "lat": 54.9515,
+                    "lon": -1.5565,
+                    "popular": False
+                },
+                {
+                    "name": "South Shields",
+                    "lat": 54.9989,
+                    "lon": -1.4327,
+                    "popular": True
+                }
+            ]
+        },
+        "tyne_wear_yellow": {
+            "name": "Tyne & Wear Metro Yellow Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Monument",
+                    "lat": 54.969,
+                    "lon": -1.6132,
+                    "popular": True
+                },
+                {
+                    "name": "Central Station",
+                    "lat": 54.9688,
+                    "lon": -1.617,
+                    "popular": True
+                },
+                {
+                    "name": "Haymarket",
+                    "lat": 54.9749,
+                    "lon": -1.6168,
+                    "popular": True
+                },
+                {
+                    "name": "Jesmond",
+                    "lat": 54.9818,
+                    "lon": -1.6065,
+                    "popular": False
+                },
+                {
+                    "name": "West Monkseaton",
+                    "lat": 55.043,
+                    "lon": -1.4759,
+                    "popular": False
+                },
+                {
+                    "name": "Manors",
+                    "lat": 54.9727,
+                    "lon": -1.6056,
+                    "popular": False
+                },
+                {
+                    "name": "Byker",
+                    "lat": 54.974,
+                    "lon": -1.5849,
+                    "popular": False
+                },
+                {
+                    "name": "Wallsend",
+                    "lat": 54.9912,
+                    "lon": -1.5335,
+                    "popular": False
+                },
+                {
+                    "name": "Sunderland",
+                    "lat": 54.9055,
+                    "lon": -1.3819,
+                    "popular": True
+                },
+                {
+                    "name": "South Hylton",
+                    "lat": 54.8984,
+                    "lon": -1.4194,
+                    "popular": False
+                },
+                {
+                    "name": "Park Lane",
+                    "lat": 54.9027,
+                    "lon": -1.3831,
+                    "popular": False
+                },
+                {
+                    "name": "St Peter's",
+                    "lat": 54.9079,
+                    "lon": -1.3733,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "liverpool": {
+        "merseyrail_northern": {
+            "name": "Merseyrail Northern Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Liverpool Central",
+                    "lat": 53.4044,
+                    "lon": -2.9789,
+                    "popular": True
+                },
+                {
+                    "name": "Moorfields",
+                    "lat": 53.409,
+                    "lon": -2.9884,
+                    "popular": True
+                },
+                {
+                    "name": "Lime Street",
+                    "lat": 53.4075,
+                    "lon": -2.9779,
+                    "popular": True
+                },
+                {
+                    "name": "Sandhills",
+                    "lat": 53.423,
+                    "lon": -2.9965,
+                    "popular": False
+                },
+                {
+                    "name": "Ormskirk",
+                    "lat": 53.5701,
+                    "lon": -2.8842,
+                    "popular": False
+                },
+                {
+                    "name": "Hunts Cross",
+                    "lat": 53.3588,
+                    "lon": -2.8567,
+                    "popular": False
+                },
+                {
+                    "name": "Southport",
+                    "lat": 53.6472,
+                    "lon": -3.0041,
+                    "popular": True
+                },
+                {
+                    "name": "Bootle New Strand",
+                    "lat": 53.4458,
+                    "lon": -3.0083,
+                    "popular": False
+                },
+                {
+                    "name": "Old Roan",
+                    "lat": 53.4774,
+                    "lon": -2.961,
+                    "popular": False
+                },
+                {
+                    "name": "Aigburth",
+                    "lat": 53.3676,
+                    "lon": -2.9162,
+                    "popular": False
+                },
+                {
+                    "name": "Brunswick",
+                    "lat": 53.3792,
+                    "lon": -2.9548,
+                    "popular": False
+                }
+            ]
+        },
+        "merseyrail_wirral": {
+            "name": "Merseyrail Wirral Line",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Liverpool Central",
+                    "lat": 53.4044,
+                    "lon": -2.9789,
+                    "popular": True
+                },
+                {
+                    "name": "James Street",
+                    "lat": 53.4055,
+                    "lon": -2.9901,
+                    "popular": True
+                },
+                {
+                    "name": "Hamilton Square",
+                    "lat": 53.3948,
+                    "lon": -3.0221,
+                    "popular": True
+                },
+                {
+                    "name": "Birkenhead Central",
+                    "lat": 53.3892,
+                    "lon": -3.0185,
+                    "popular": False
+                },
+                {
+                    "name": "Chester",
+                    "lat": 53.1964,
+                    "lon": -2.8794,
+                    "popular": True
+                },
+                {
+                    "name": "New Brighton",
+                    "lat": 53.435,
+                    "lon": -3.0499,
+                    "popular": False
+                },
+                {
+                    "name": "West Kirby",
+                    "lat": 53.3724,
+                    "lon": -3.1838,
+                    "popular": False
+                },
+                {
+                    "name": "Hooton",
+                    "lat": 53.2963,
+                    "lon": -2.9868,
+                    "popular": False
+                },
+                {
+                    "name": "Rock Ferry",
+                    "lat": 53.3727,
+                    "lon": -3.0109,
+                    "popular": False
+                },
+                {
+                    "name": "Green Lane",
+                    "lat": 53.3829,
+                    "lon": -3.022,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "glasgow": {
+        "glasgow_subway": {
+            "name": "Glasgow Subway",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Buchanan Street",
+                    "lat": 55.8634,
+                    "lon": -4.2518,
+                    "popular": True
+                },
+                {
+                    "name": "St Enoch",
+                    "lat": 55.8567,
+                    "lon": -4.2539,
+                    "popular": True
+                },
+                {
+                    "name": "Hillhead",
+                    "lat": 55.8731,
+                    "lon": -4.294,
+                    "popular": True
+                },
+                {
+                    "name": "Kelvinbridge",
+                    "lat": 55.8722,
+                    "lon": -4.2827,
+                    "popular": True
+                },
+                {
+                    "name": "Partick",
+                    "lat": 55.8698,
+                    "lon": -4.3088,
+                    "popular": True
+                },
+                {
+                    "name": "Govan",
+                    "lat": 55.86,
+                    "lon": -4.31,
+                    "popular": False
+                },
+                {
+                    "name": "Ibrox",
+                    "lat": 55.8541,
+                    "lon": -4.3091,
+                    "popular": False
+                },
+                {
+                    "name": "Cessnock",
+                    "lat": 55.854,
+                    "lon": -4.2831,
+                    "popular": False
+                },
+                {
+                    "name": "Cowcaddens",
+                    "lat": 55.8668,
+                    "lon": -4.2592,
+                    "popular": False
+                },
+                {
+                    "name": "St George's Cross",
+                    "lat": 55.8681,
+                    "lon": -4.2692,
+                    "popular": False
+                },
+                {
+                    "name": "Kinning Park",
+                    "lat": 55.854,
+                    "lon": -4.2724,
+                    "popular": False
+                },
+                {
+                    "name": "Bridge Street",
+                    "lat": 55.8548,
+                    "lon": -4.2584,
+                    "popular": False
+                },
+                {
+                    "name": "Shields Road",
+                    "lat": 55.8502,
+                    "lon": -4.2691,
+                    "popular": False
+                },
+                {
+                    "name": "West Street",
+                    "lat": 55.8538,
+                    "lon": -4.2619,
+                    "popular": False
+                },
+                {
+                    "name": "Kelvinhall",
+                    "lat": 55.8687,
+                    "lon": -4.3061,
+                    "popular": False
+                }
+            ]
+        },
+        "scotrail_glasgow": {
+            "name": "ScotRail Glasgow Commuter",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Glasgow Central",
+                    "lat": 55.8594,
+                    "lon": -4.2584,
+                    "popular": True
+                },
+                {
+                    "name": "Glasgow Queen Street",
+                    "lat": 55.8622,
+                    "lon": -4.2511,
+                    "popular": True
+                },
+                {
+                    "name": "Partick",
+                    "lat": 55.8698,
+                    "lon": -4.3088,
+                    "popular": True
+                },
+                {
+                    "name": "Hyndland",
+                    "lat": 55.8781,
+                    "lon": -4.319,
+                    "popular": False
+                },
+                {
+                    "name": "Anderston",
+                    "lat": 55.8603,
+                    "lon": -4.2706,
+                    "popular": False
+                },
+                {
+                    "name": "Exhibition Centre",
+                    "lat": 55.8609,
+                    "lon": -4.2825,
+                    "popular": False
+                },
+                {
+                    "name": "Charing Cross",
+                    "lat": 55.8642,
+                    "lon": -4.2718,
+                    "popular": False
+                },
+                {
+                    "name": "Argyle Street",
+                    "lat": 55.8576,
+                    "lon": -4.2538,
+                    "popular": False
+                },
+                {
+                    "name": "High Street",
+                    "lat": 55.8602,
+                    "lon": -4.2382,
+                    "popular": False
+                },
+                {
+                    "name": "Anniesland",
+                    "lat": 55.8851,
+                    "lon": -4.3336,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "edinburgh": {
+        "edinburgh_tram": {
+            "name": "Edinburgh Tram",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Edinburgh Airport",
+                    "lat": 55.95,
+                    "lon": -3.3625,
+                    "popular": True
+                },
+                {
+                    "name": "Edinburgh Park",
+                    "lat": 55.9277,
+                    "lon": -3.3077,
+                    "popular": True
+                },
+                {
+                    "name": "Haymarket",
+                    "lat": 55.9457,
+                    "lon": -3.2185,
+                    "popular": True
+                },
+                {
+                    "name": "Princes Street",
+                    "lat": 55.9521,
+                    "lon": -3.199,
+                    "popular": True
+                },
+                {
+                    "name": "St Andrew Square",
+                    "lat": 55.9538,
+                    "lon": -3.1929,
+                    "popular": True
+                },
+                {
+                    "name": "York Place",
+                    "lat": 55.9558,
+                    "lon": -3.188,
+                    "popular": True
+                },
+                {
+                    "name": "Picardy Place",
+                    "lat": 55.957,
+                    "lon": -3.1854,
+                    "popular": False
+                },
+                {
+                    "name": "Newhaven",
+                    "lat": 55.9777,
+                    "lon": -3.1944,
+                    "popular": True
+                },
+                {
+                    "name": "Ocean Terminal",
+                    "lat": 55.981,
+                    "lon": -3.1768,
+                    "popular": False
+                },
+                {
+                    "name": "Murrayfield Stadium",
+                    "lat": 55.9431,
+                    "lon": -3.2418,
+                    "popular": False
+                },
+                {
+                    "name": "Balgreen",
+                    "lat": 55.9371,
+                    "lon": -3.2578,
+                    "popular": False
+                },
+                {
+                    "name": "Gogarburn",
+                    "lat": 55.9354,
+                    "lon": -3.3,
+                    "popular": False
+                },
+                {
+                    "name": "Ingliston Park & Ride",
+                    "lat": 55.943,
+                    "lon": -3.352,
+                    "popular": False
+                },
+                {
+                    "name": "Constitution Street",
+                    "lat": 55.9723,
+                    "lon": -3.1721,
+                    "popular": False
+                },
+                {
+                    "name": "Foot of the Walk",
+                    "lat": 55.9699,
+                    "lon": -3.1714,
+                    "popular": False
+                }
+            ]
+        },
+        "scotrail_edinburgh": {
+            "name": "ScotRail Edinburgh Commuter",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Edinburgh Waverley",
+                    "lat": 55.9521,
+                    "lon": -3.1903,
+                    "popular": True
+                },
+                {
+                    "name": "Haymarket",
+                    "lat": 55.9457,
+                    "lon": -3.2185,
+                    "popular": True
+                },
+                {
+                    "name": "Edinburgh Park",
+                    "lat": 55.9277,
+                    "lon": -3.3077,
+                    "popular": True
+                },
+                {
+                    "name": "South Gyle",
+                    "lat": 55.9337,
+                    "lon": -3.3107,
+                    "popular": False
+                },
+                {
+                    "name": "Brunstane",
+                    "lat": 55.9442,
+                    "lon": -3.1019,
+                    "popular": False
+                },
+                {
+                    "name": "Musselburgh",
+                    "lat": 55.939,
+                    "lon": -3.0612,
+                    "popular": False
+                },
+                {
+                    "name": "Dalmeny",
+                    "lat": 55.9844,
+                    "lon": -3.3982,
+                    "popular": False
+                },
+                {
+                    "name": "Curriehill",
+                    "lat": 55.9065,
+                    "lon": -3.3193,
+                    "popular": False
+                },
+                {
+                    "name": "Wester Hailes",
+                    "lat": 55.91,
+                    "lon": -3.2872,
+                    "popular": False
+                },
+                {
+                    "name": "Slateford",
+                    "lat": 55.9236,
+                    "lon": -3.2467,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "nottingham": {
+        "net_tram": {
+            "name": "NET Tram",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Nottingham Station",
+                    "lat": 52.9474,
+                    "lon": -1.1464,
+                    "popular": True
+                },
+                {
+                    "name": "Old Market Square",
+                    "lat": 52.9536,
+                    "lon": -1.1484,
+                    "popular": True
+                },
+                {
+                    "name": "Lace Market",
+                    "lat": 52.9519,
+                    "lon": -1.1385,
+                    "popular": True
+                },
+                {
+                    "name": "Hucknall",
+                    "lat": 53.0384,
+                    "lon": -1.1955,
+                    "popular": False
+                },
+                {
+                    "name": "Toton Lane",
+                    "lat": 52.9094,
+                    "lon": -1.244,
+                    "popular": False
+                },
+                {
+                    "name": "Clifton South",
+                    "lat": 52.9004,
+                    "lon": -1.1782,
+                    "popular": False
+                },
+                {
+                    "name": "Royal Centre",
+                    "lat": 52.955,
+                    "lon": -1.152,
+                    "popular": True
+                },
+                {
+                    "name": "Beeston Centre",
+                    "lat": 52.927,
+                    "lon": -1.2125,
+                    "popular": False
+                },
+                {
+                    "name": "University Boulevard",
+                    "lat": 52.9339,
+                    "lon": -1.1983,
+                    "popular": False
+                },
+                {
+                    "name": "Hyson Green Market",
+                    "lat": 52.9646,
+                    "lon": -1.1637,
+                    "popular": False
+                },
+                {
+                    "name": "Bulwell",
+                    "lat": 52.9986,
+                    "lon": -1.1961,
+                    "popular": False
+                },
+                {
+                    "name": "Phoenix Park",
+                    "lat": 53.0054,
+                    "lon": -1.2002,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "sheffield": {
+        "supertram": {
+            "name": "Sheffield Supertram",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Sheffield Station/Sheffield Hallam University",
+                    "lat": 53.3789,
+                    "lon": -1.4622,
+                    "popular": True
+                },
+                {
+                    "name": "Cathedral",
+                    "lat": 53.3838,
+                    "lon": -1.47,
+                    "popular": True
+                },
+                {
+                    "name": "Meadowhall",
+                    "lat": 53.4147,
+                    "lon": -1.4118,
+                    "popular": True
+                },
+                {
+                    "name": "Hillsborough",
+                    "lat": 53.4048,
+                    "lon": -1.5004,
+                    "popular": False
+                },
+                {
+                    "name": "Middlewood",
+                    "lat": 53.4165,
+                    "lon": -1.5148,
+                    "popular": False
+                },
+                {
+                    "name": "Malin Bridge",
+                    "lat": 53.4091,
+                    "lon": -1.5244,
+                    "popular": False
+                },
+                {
+                    "name": "City Hall",
+                    "lat": 53.3798,
+                    "lon": -1.4741,
+                    "popular": True
+                },
+                {
+                    "name": "West Street",
+                    "lat": 53.3803,
+                    "lon": -1.4788,
+                    "popular": False
+                },
+                {
+                    "name": "University of Sheffield",
+                    "lat": 53.3814,
+                    "lon": -1.4849,
+                    "popular": False
+                },
+                {
+                    "name": "Halfway",
+                    "lat": 53.3428,
+                    "lon": -1.3512,
+                    "popular": False
+                },
+                {
+                    "name": "Herdings Park",
+                    "lat": 53.3416,
+                    "lon": -1.4514,
+                    "popular": False
+                },
+                {
+                    "name": "Manor Top",
+                    "lat": 53.3649,
+                    "lon": -1.4308,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "leeds": {
+        "leeds_rail": {
+            "name": "Leeds Key Rail Stations",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Leeds",
+                    "lat": 53.7955,
+                    "lon": -1.5476,
+                    "popular": True
+                },
+                {
+                    "name": "Headingley",
+                    "lat": 53.8193,
+                    "lon": -1.5831,
+                    "popular": True
+                },
+                {
+                    "name": "Horsforth",
+                    "lat": 53.8399,
+                    "lon": -1.6339,
+                    "popular": False
+                },
+                {
+                    "name": "Burley Park",
+                    "lat": 53.8116,
+                    "lon": -1.576,
+                    "popular": False
+                },
+                {
+                    "name": "Cross Gates",
+                    "lat": 53.8081,
+                    "lon": -1.453,
+                    "popular": False
+                },
+                {
+                    "name": "Guiseley",
+                    "lat": 53.8752,
+                    "lon": -1.7073,
+                    "popular": False
+                },
+                {
+                    "name": "New Pudsey",
+                    "lat": 53.812,
+                    "lon": -1.6722,
+                    "popular": False
+                },
+                {
+                    "name": "Kirkstall Forge",
+                    "lat": 53.8238,
+                    "lon": -1.6113,
+                    "popular": False
+                },
+                {
+                    "name": "Garforth",
+                    "lat": 53.7893,
+                    "lon": -1.3822,
+                    "popular": False
+                },
+                {
+                    "name": "Bramley",
+                    "lat": 53.8096,
+                    "lon": -1.6382,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "cardiff": {
+        "cardiff_rail": {
+            "name": "Cardiff Key Rail Stations",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Cardiff Central",
+                    "lat": 51.4755,
+                    "lon": -3.1783,
+                    "popular": True
+                },
+                {
+                    "name": "Cardiff Queen Street",
+                    "lat": 51.4823,
+                    "lon": -3.1706,
+                    "popular": True
+                },
+                {
+                    "name": "Cardiff Bay",
+                    "lat": 51.4653,
+                    "lon": -3.1656,
+                    "popular": True
+                },
+                {
+                    "name": "Cathays",
+                    "lat": 51.488,
+                    "lon": -3.1777,
+                    "popular": False
+                },
+                {
+                    "name": "Ninian Park",
+                    "lat": 51.4742,
+                    "lon": -3.2012,
+                    "popular": False
+                },
+                {
+                    "name": "Grangetown",
+                    "lat": 51.4683,
+                    "lon": -3.1895,
+                    "popular": False
+                },
+                {
+                    "name": "Radyr",
+                    "lat": 51.5192,
+                    "lon": -3.25,
+                    "popular": False
+                },
+                {
+                    "name": "Llandaff",
+                    "lat": 51.5035,
+                    "lon": -3.2237,
+                    "popular": False
+                },
+                {
+                    "name": "Heath Low Level",
+                    "lat": 51.5064,
+                    "lon": -3.1703,
+                    "popular": False
+                },
+                {
+                    "name": "Penarth",
+                    "lat": 51.4339,
+                    "lon": -3.174,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "bristol": {
+        "bristol_rail": {
+            "name": "Bristol Key Rail Stations",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Bristol Temple Meads",
+                    "lat": 51.449,
+                    "lon": -2.5813,
+                    "popular": True
+                },
+                {
+                    "name": "Bristol Parkway",
+                    "lat": 51.5137,
+                    "lon": -2.5429,
+                    "popular": True
+                },
+                {
+                    "name": "Clifton Down",
+                    "lat": 51.4646,
+                    "lon": -2.614,
+                    "popular": True
+                },
+                {
+                    "name": "Redland",
+                    "lat": 51.4691,
+                    "lon": -2.6019,
+                    "popular": False
+                },
+                {
+                    "name": "Montpelier",
+                    "lat": 51.4684,
+                    "lon": -2.5889,
+                    "popular": False
+                },
+                {
+                    "name": "Stapleton Road",
+                    "lat": 51.465,
+                    "lon": -2.5712,
+                    "popular": False
+                },
+                {
+                    "name": "Lawrence Hill",
+                    "lat": 51.4575,
+                    "lon": -2.568,
+                    "popular": False
+                },
+                {
+                    "name": "Bedminster",
+                    "lat": 51.4398,
+                    "lon": -2.5913,
+                    "popular": False
+                },
+                {
+                    "name": "Parson Street",
+                    "lat": 51.4287,
+                    "lon": -2.5985,
+                    "popular": False
+                },
+                {
+                    "name": "Sea Mills",
+                    "lat": 51.4733,
+                    "lon": -2.6414,
+                    "popular": False
+                },
+                {
+                    "name": "Shirehampton",
+                    "lat": 51.4841,
+                    "lon": -2.6774,
+                    "popular": False
+                },
+                {
+                    "name": "Avonmouth",
+                    "lat": 51.4959,
+                    "lon": -2.7005,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "brighton": {
+        "brighton_rail": {
+            "name": "Brighton Key Rail Stations",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Brighton",
+                    "lat": 50.8291,
+                    "lon": -0.1413,
+                    "popular": True
+                },
+                {
+                    "name": "Hove",
+                    "lat": 50.8354,
+                    "lon": -0.171,
+                    "popular": True
+                },
+                {
+                    "name": "Portslade",
+                    "lat": 50.8394,
+                    "lon": -0.207,
+                    "popular": True
+                },
+                {
+                    "name": "Preston Park",
+                    "lat": 50.8461,
+                    "lon": -0.1522,
+                    "popular": False
+                },
+                {
+                    "name": "Aldrington",
+                    "lat": 50.8377,
+                    "lon": -0.1891,
+                    "popular": False
+                },
+                {
+                    "name": "London Road (Brighton)",
+                    "lat": 50.8397,
+                    "lon": -0.1362,
+                    "popular": False
+                },
+                {
+                    "name": "Falmer",
+                    "lat": 50.8617,
+                    "lon": -0.0872,
+                    "popular": False
+                },
+                {
+                    "name": "Moulsecoomb",
+                    "lat": 50.8514,
+                    "lon": -0.117,
+                    "popular": False
+                },
+                {
+                    "name": "Shoreham-by-Sea",
+                    "lat": 50.8339,
+                    "lon": -0.2716,
+                    "popular": False
+                },
+                {
+                    "name": "Hassocks",
+                    "lat": 50.9244,
+                    "lon": -0.147,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "paris": {
+        "metro_1": {
+            "name": "Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "La Defense",
+                    "lat": 48.892,
+                    "lon": 2.2381,
+                    "popular": True
+                },
+                {
+                    "name": "Les Sablons",
+                    "lat": 48.8815,
+                    "lon": 2.2722,
+                    "popular": False
+                },
+                {
+                    "name": "Pont de Neuilly",
+                    "lat": 48.8849,
+                    "lon": 2.259,
+                    "popular": False
+                },
+                {
+                    "name": "Charles de Gaulle - Etoile",
+                    "lat": 48.8738,
+                    "lon": 2.295,
+                    "popular": True
+                },
+                {
+                    "name": "George V",
+                    "lat": 48.872,
+                    "lon": 2.3008,
+                    "popular": False
+                },
+                {
+                    "name": "Franklin D. Roosevelt",
+                    "lat": 48.8689,
+                    "lon": 2.3097,
+                    "popular": True
+                },
+                {
+                    "name": "Champs-Elysees - Clemenceau",
+                    "lat": 48.8676,
+                    "lon": 2.314,
+                    "popular": True
+                },
+                {
+                    "name": "Concorde",
+                    "lat": 48.8656,
+                    "lon": 2.3211,
+                    "popular": True
+                },
+                {
+                    "name": "Tuileries",
+                    "lat": 48.8641,
+                    "lon": 2.3328,
+                    "popular": False
+                },
+                {
+                    "name": "Palais Royal - Musee du Louvre",
+                    "lat": 48.8622,
+                    "lon": 2.3365,
+                    "popular": True
+                },
+                {
+                    "name": "Louvre - Rivoli",
+                    "lat": 48.8607,
+                    "lon": 2.341,
+                    "popular": True
+                },
+                {
+                    "name": "Chatelet",
+                    "lat": 48.8584,
+                    "lon": 2.3474,
+                    "popular": True
+                },
+                {
+                    "name": "Hotel de Ville",
+                    "lat": 48.8574,
+                    "lon": 2.3514,
+                    "popular": True
+                },
+                {
+                    "name": "Bastille",
+                    "lat": 48.8531,
+                    "lon": 2.369,
+                    "popular": True
+                },
+                {
+                    "name": "Gare de Lyon",
+                    "lat": 48.8448,
+                    "lon": 2.3735,
+                    "popular": True
+                },
+                {
+                    "name": "Nation",
+                    "lat": 48.8483,
+                    "lon": 2.3959,
+                    "popular": True
+                }
+            ]
+        },
+        "metro_4": {
+            "name": "Metro Line 4",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Porte de Clignancourt",
+                    "lat": 48.8975,
+                    "lon": 2.3444,
+                    "popular": False
+                },
+                {
+                    "name": "Marcadet - Poissonniers",
+                    "lat": 48.8916,
+                    "lon": 2.3498,
+                    "popular": False
+                },
+                {
+                    "name": "Barbes - Rochechouart",
+                    "lat": 48.8839,
+                    "lon": 2.3494,
+                    "popular": False
+                },
+                {
+                    "name": "Gare du Nord",
+                    "lat": 48.88,
+                    "lon": 2.3553,
+                    "popular": True
+                },
+                {
+                    "name": "Gare de l'Est",
+                    "lat": 48.8763,
+                    "lon": 2.3579,
+                    "popular": True
+                },
+                {
+                    "name": "Strasbourg - Saint-Denis",
+                    "lat": 48.8693,
+                    "lon": 2.3545,
+                    "popular": False
+                },
+                {
+                    "name": "Reaumur - Sebastopol",
+                    "lat": 48.8662,
+                    "lon": 2.3528,
+                    "popular": False
+                },
+                {
+                    "name": "Les Halles",
+                    "lat": 48.8622,
+                    "lon": 2.346,
+                    "popular": True
+                },
+                {
+                    "name": "Chatelet",
+                    "lat": 48.8584,
+                    "lon": 2.3474,
+                    "popular": True
+                },
+                {
+                    "name": "Cite",
+                    "lat": 48.8554,
+                    "lon": 2.3465,
+                    "popular": True
+                },
+                {
+                    "name": "Saint-Michel",
+                    "lat": 48.8537,
+                    "lon": 2.344,
+                    "popular": True
+                },
+                {
+                    "name": "Saint-Germain-des-Pres",
+                    "lat": 48.8534,
+                    "lon": 2.3335,
+                    "popular": True
+                },
+                {
+                    "name": "Saint-Sulpice",
+                    "lat": 48.851,
+                    "lon": 2.3316,
+                    "popular": False
+                },
+                {
+                    "name": "Montparnasse - Bienvenue",
+                    "lat": 48.8433,
+                    "lon": 2.3241,
+                    "popular": True
+                },
+                {
+                    "name": "Mairie de Montrouge",
+                    "lat": 48.8186,
+                    "lon": 2.3198,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_6": {
+            "name": "Metro Line 6",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Charles de Gaulle - Etoile",
+                    "lat": 48.8738,
+                    "lon": 2.295,
+                    "popular": True
+                },
+                {
+                    "name": "Kleber",
+                    "lat": 48.8713,
+                    "lon": 2.2935,
+                    "popular": False
+                },
+                {
+                    "name": "Boissiere",
+                    "lat": 48.8668,
+                    "lon": 2.29,
+                    "popular": False
+                },
+                {
+                    "name": "Trocadero",
+                    "lat": 48.863,
+                    "lon": 2.2868,
+                    "popular": True
+                },
+                {
+                    "name": "Passy",
+                    "lat": 48.8578,
+                    "lon": 2.2857,
+                    "popular": False
+                },
+                {
+                    "name": "Bir-Hakeim",
+                    "lat": 48.854,
+                    "lon": 2.2895,
+                    "popular": True
+                },
+                {
+                    "name": "Cambronne",
+                    "lat": 48.8476,
+                    "lon": 2.3022,
+                    "popular": False
+                },
+                {
+                    "name": "Pasteur",
+                    "lat": 48.8427,
+                    "lon": 2.3127,
+                    "popular": False
+                },
+                {
+                    "name": "Montparnasse - Bienvenue",
+                    "lat": 48.8433,
+                    "lon": 2.3241,
+                    "popular": True
+                },
+                {
+                    "name": "Edgar Quinet",
+                    "lat": 48.8409,
+                    "lon": 2.326,
+                    "popular": False
+                },
+                {
+                    "name": "Denfert-Rochereau",
+                    "lat": 48.8338,
+                    "lon": 2.3326,
+                    "popular": True
+                },
+                {
+                    "name": "Place d'Italie",
+                    "lat": 48.8311,
+                    "lon": 2.3558,
+                    "popular": True
+                },
+                {
+                    "name": "Bercy",
+                    "lat": 48.8402,
+                    "lon": 2.3797,
+                    "popular": True
+                },
+                {
+                    "name": "Nation",
+                    "lat": 48.8483,
+                    "lon": 2.3959,
+                    "popular": True
+                }
+            ]
+        },
+        "metro_2": {
+            "name": "Metro Line 2",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Porte Dauphine",
+                    "lat": 48.8718,
+                    "lon": 2.277,
+                    "popular": False
+                },
+                {
+                    "name": "Victor Hugo",
+                    "lat": 48.8698,
+                    "lon": 2.2856,
+                    "popular": False
+                },
+                {
+                    "name": "Charles de Gaulle - Etoile",
+                    "lat": 48.8738,
+                    "lon": 2.295,
+                    "popular": True
+                },
+                {
+                    "name": "Courcelles",
+                    "lat": 48.8789,
+                    "lon": 2.303,
+                    "popular": False
+                },
+                {
+                    "name": "Villiers",
+                    "lat": 48.881,
+                    "lon": 2.3156,
+                    "popular": False
+                },
+                {
+                    "name": "Place de Clichy",
+                    "lat": 48.8835,
+                    "lon": 2.3277,
+                    "popular": False
+                },
+                {
+                    "name": "Blanche",
+                    "lat": 48.8839,
+                    "lon": 2.3328,
+                    "popular": True
+                },
+                {
+                    "name": "Pigalle",
+                    "lat": 48.8822,
+                    "lon": 2.3374,
+                    "popular": True
+                },
+                {
+                    "name": "Anvers",
+                    "lat": 48.8828,
+                    "lon": 2.344,
+                    "popular": True
+                },
+                {
+                    "name": "Barbes - Rochechouart",
+                    "lat": 48.8839,
+                    "lon": 2.3494,
+                    "popular": False
+                },
+                {
+                    "name": "La Chapelle",
+                    "lat": 48.8846,
+                    "lon": 2.3601,
+                    "popular": False
+                },
+                {
+                    "name": "Stalingrad",
+                    "lat": 48.8842,
+                    "lon": 2.3681,
+                    "popular": False
+                },
+                {
+                    "name": "Colonel Fabien",
+                    "lat": 48.8784,
+                    "lon": 2.3703,
+                    "popular": False
+                },
+                {
+                    "name": "Belleville",
+                    "lat": 48.872,
+                    "lon": 2.3766,
+                    "popular": True
+                },
+                {
+                    "name": "Pere Lachaise",
+                    "lat": 48.8627,
+                    "lon": 2.3867,
+                    "popular": True
+                },
+                {
+                    "name": "Nation",
+                    "lat": 48.8483,
+                    "lon": 2.3959,
+                    "popular": True
+                }
+            ]
+        },
+        "metro_7": {
+            "name": "Metro Line 7",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "La Courneuve - 8 Mai 1945",
+                    "lat": 48.9207,
+                    "lon": 2.4106,
+                    "popular": False
+                },
+                {
+                    "name": "Gare de l'Est",
+                    "lat": 48.8763,
+                    "lon": 2.3579,
+                    "popular": True
+                },
+                {
+                    "name": "Poissonniere",
+                    "lat": 48.8772,
+                    "lon": 2.3487,
+                    "popular": False
+                },
+                {
+                    "name": "Cadet",
+                    "lat": 48.8758,
+                    "lon": 2.3435,
+                    "popular": False
+                },
+                {
+                    "name": "Le Peletier",
+                    "lat": 48.8749,
+                    "lon": 2.3404,
+                    "popular": False
+                },
+                {
+                    "name": "Opera",
+                    "lat": 48.8713,
+                    "lon": 2.3317,
+                    "popular": True
+                },
+                {
+                    "name": "Pyramides",
+                    "lat": 48.8664,
+                    "lon": 2.3342,
+                    "popular": False
+                },
+                {
+                    "name": "Palais Royal - Musee du Louvre",
+                    "lat": 48.8622,
+                    "lon": 2.3365,
+                    "popular": True
+                },
+                {
+                    "name": "Pont Neuf",
+                    "lat": 48.8586,
+                    "lon": 2.3425,
+                    "popular": False
+                },
+                {
+                    "name": "Chatelet",
+                    "lat": 48.8584,
+                    "lon": 2.3474,
+                    "popular": True
+                },
+                {
+                    "name": "Pont Marie",
+                    "lat": 48.8537,
+                    "lon": 2.3571,
+                    "popular": False
+                },
+                {
+                    "name": "Jussieu",
+                    "lat": 48.8459,
+                    "lon": 2.3545,
+                    "popular": False
+                },
+                {
+                    "name": "Place d'Italie",
+                    "lat": 48.8311,
+                    "lon": 2.3558,
+                    "popular": True
+                },
+                {
+                    "name": "Villejuif - Louis Aragon",
+                    "lat": 48.7874,
+                    "lon": 2.3676,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_9": {
+            "name": "Metro Line 9",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Pont de Sevres",
+                    "lat": 48.8297,
+                    "lon": 2.231,
+                    "popular": False
+                },
+                {
+                    "name": "Billancourt",
+                    "lat": 48.8319,
+                    "lon": 2.2383,
+                    "popular": False
+                },
+                {
+                    "name": "Marcel Sembat",
+                    "lat": 48.8337,
+                    "lon": 2.2437,
+                    "popular": False
+                },
+                {
+                    "name": "Trocadero",
+                    "lat": 48.863,
+                    "lon": 2.2868,
+                    "popular": True
+                },
+                {
+                    "name": "Iena",
+                    "lat": 48.8646,
+                    "lon": 2.2935,
+                    "popular": False
+                },
+                {
+                    "name": "Alma - Marceau",
+                    "lat": 48.8648,
+                    "lon": 2.301,
+                    "popular": False
+                },
+                {
+                    "name": "Franklin D. Roosevelt",
+                    "lat": 48.8689,
+                    "lon": 2.3097,
+                    "popular": True
+                },
+                {
+                    "name": "Saint-Philippe du Roule",
+                    "lat": 48.872,
+                    "lon": 2.31,
+                    "popular": False
+                },
+                {
+                    "name": "Havre - Caumartin",
+                    "lat": 48.8736,
+                    "lon": 2.3284,
+                    "popular": True
+                },
+                {
+                    "name": "Grands Boulevards",
+                    "lat": 48.8713,
+                    "lon": 2.3428,
+                    "popular": False
+                },
+                {
+                    "name": "Republique",
+                    "lat": 48.8674,
+                    "lon": 2.3635,
+                    "popular": True
+                },
+                {
+                    "name": "Oberkampf",
+                    "lat": 48.8645,
+                    "lon": 2.3687,
+                    "popular": False
+                },
+                {
+                    "name": "Nation",
+                    "lat": 48.8483,
+                    "lon": 2.3959,
+                    "popular": True
+                },
+                {
+                    "name": "Mairie de Montreuil",
+                    "lat": 48.8622,
+                    "lon": 2.4428,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_11": {
+            "name": "Metro Line 11",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Chatelet",
+                    "lat": 48.8584,
+                    "lon": 2.3474,
+                    "popular": True
+                },
+                {
+                    "name": "Hotel de Ville",
+                    "lat": 48.8574,
+                    "lon": 2.3514,
+                    "popular": True
+                },
+                {
+                    "name": "Rambuteau",
+                    "lat": 48.8612,
+                    "lon": 2.353,
+                    "popular": False
+                },
+                {
+                    "name": "Arts et Metiers",
+                    "lat": 48.8653,
+                    "lon": 2.3561,
+                    "popular": False
+                },
+                {
+                    "name": "Republique",
+                    "lat": 48.8674,
+                    "lon": 2.3635,
+                    "popular": True
+                },
+                {
+                    "name": "Goncourt",
+                    "lat": 48.8699,
+                    "lon": 2.3717,
+                    "popular": False
+                },
+                {
+                    "name": "Belleville",
+                    "lat": 48.872,
+                    "lon": 2.3766,
+                    "popular": True
+                },
+                {
+                    "name": "Jourdain",
+                    "lat": 48.8753,
+                    "lon": 2.3893,
+                    "popular": False
+                },
+                {
+                    "name": "Place des Fetes",
+                    "lat": 48.8767,
+                    "lon": 2.3929,
+                    "popular": False
+                },
+                {
+                    "name": "Telegraphe",
+                    "lat": 48.8755,
+                    "lon": 2.3984,
+                    "popular": False
+                },
+                {
+                    "name": "Mairie des Lilas",
+                    "lat": 48.8799,
+                    "lon": 2.4166,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_14": {
+            "name": "Metro Line 14",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Saint-Lazare",
+                    "lat": 48.8759,
+                    "lon": 2.3251,
+                    "popular": True
+                },
+                {
+                    "name": "Madeleine",
+                    "lat": 48.8699,
+                    "lon": 2.3253,
+                    "popular": True
+                },
+                {
+                    "name": "Pyramides",
+                    "lat": 48.8664,
+                    "lon": 2.3342,
+                    "popular": False
+                },
+                {
+                    "name": "Chatelet",
+                    "lat": 48.8584,
+                    "lon": 2.3474,
+                    "popular": True
+                },
+                {
+                    "name": "Gare de Lyon",
+                    "lat": 48.8448,
+                    "lon": 2.3735,
+                    "popular": True
+                },
+                {
+                    "name": "Bercy",
+                    "lat": 48.8402,
+                    "lon": 2.3797,
+                    "popular": True
+                },
+                {
+                    "name": "Cour Saint-Emilion",
+                    "lat": 48.8336,
+                    "lon": 2.3864,
+                    "popular": False
+                },
+                {
+                    "name": "Bibliotheque Francois Mitterrand",
+                    "lat": 48.8296,
+                    "lon": 2.376,
+                    "popular": True
+                },
+                {
+                    "name": "Villejuif - Institut Gustave Roussy",
+                    "lat": 48.7976,
+                    "lon": 2.3487,
+                    "popular": False
+                },
+                {
+                    "name": "Aeroport d'Orly",
+                    "lat": 48.7262,
+                    "lon": 2.3652,
+                    "popular": True
+                }
+            ]
+        },
+        "rer_a": {
+            "name": "RER A",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "La Defense - Grande Arche",
+                    "lat": 48.892,
+                    "lon": 2.2381,
+                    "popular": True
+                },
+                {
+                    "name": "Charles de Gaulle - Etoile",
+                    "lat": 48.8738,
+                    "lon": 2.295,
+                    "popular": True
+                },
+                {
+                    "name": "Auber",
+                    "lat": 48.8727,
+                    "lon": 2.3299,
+                    "popular": True
+                },
+                {
+                    "name": "Chatelet - Les Halles",
+                    "lat": 48.8616,
+                    "lon": 2.3467,
+                    "popular": True
+                },
+                {
+                    "name": "Gare de Lyon",
+                    "lat": 48.8448,
+                    "lon": 2.3735,
+                    "popular": True
+                },
+                {
+                    "name": "Nation",
+                    "lat": 48.8483,
+                    "lon": 2.3959,
+                    "popular": True
+                },
+                {
+                    "name": "Val de Fontenay",
+                    "lat": 48.8544,
+                    "lon": 2.482,
+                    "popular": False
+                },
+                {
+                    "name": "Noisy-le-Grand - Mont d'Est",
+                    "lat": 48.843,
+                    "lon": 2.5536,
+                    "popular": False
+                },
+                {
+                    "name": "Val d'Europe",
+                    "lat": 48.8544,
+                    "lon": 2.7769,
+                    "popular": False
+                },
+                {
+                    "name": "Marne-la-Vallee - Chessy (Disneyland)",
+                    "lat": 48.8674,
+                    "lon": 2.7828,
+                    "popular": True
+                },
+                {
+                    "name": "Vincennes",
+                    "lat": 48.8474,
+                    "lon": 2.4333,
+                    "popular": False
+                },
+                {
+                    "name": "Nanterre - Prefecture",
+                    "lat": 48.8928,
+                    "lon": 2.2128,
+                    "popular": False
+                },
+                {
+                    "name": "Saint-Germain-en-Laye",
+                    "lat": 48.8975,
+                    "lon": 2.0913,
+                    "popular": False
+                }
+            ]
+        },
+        "rer_b": {
+            "name": "RER B",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Aeroport Charles de Gaulle 2 TGV",
+                    "lat": 49.0047,
+                    "lon": 2.5714,
+                    "popular": True
+                },
+                {
+                    "name": "Aeroport Charles de Gaulle 1",
+                    "lat": 49.0098,
+                    "lon": 2.5614,
+                    "popular": True
+                },
+                {
+                    "name": "Gare du Nord",
+                    "lat": 48.8809,
+                    "lon": 2.3553,
+                    "popular": True
+                },
+                {
+                    "name": "Chatelet - Les Halles",
+                    "lat": 48.8616,
+                    "lon": 2.3467,
+                    "popular": True
+                },
+                {
+                    "name": "Saint-Michel - Notre-Dame",
+                    "lat": 48.853,
+                    "lon": 2.3444,
+                    "popular": True
+                },
+                {
+                    "name": "Luxembourg",
+                    "lat": 48.8462,
+                    "lon": 2.3399,
+                    "popular": True
+                },
+                {
+                    "name": "Port-Royal",
+                    "lat": 48.8397,
+                    "lon": 2.3367,
+                    "popular": False
+                },
+                {
+                    "name": "Denfert-Rochereau",
+                    "lat": 48.8338,
+                    "lon": 2.3326,
+                    "popular": True
+                },
+                {
+                    "name": "Cite Universitaire",
+                    "lat": 48.8204,
+                    "lon": 2.3387,
+                    "popular": False
+                },
+                {
+                    "name": "Bourg-la-Reine",
+                    "lat": 48.7798,
+                    "lon": 2.315,
+                    "popular": False
+                },
+                {
+                    "name": "Antony",
+                    "lat": 48.7536,
+                    "lon": 2.298,
+                    "popular": False
+                },
+                {
+                    "name": "Massy - Palaiseau",
+                    "lat": 48.7254,
+                    "lon": 2.2598,
+                    "popular": False
+                },
+                {
+                    "name": "Robinson",
+                    "lat": 48.7797,
+                    "lon": 2.2812,
+                    "popular": False
+                }
+            ]
+        },
+        "rer_c": {
+            "name": "RER C",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Versailles - Chateau Rive Gauche",
+                    "lat": 48.799,
+                    "lon": 2.129,
+                    "popular": True
+                },
+                {
+                    "name": "Saint-Quentin-en-Yvelines",
+                    "lat": 48.787,
+                    "lon": 2.043,
+                    "popular": False
+                },
+                {
+                    "name": "Issy",
+                    "lat": 48.8241,
+                    "lon": 2.2607,
+                    "popular": False
+                },
+                {
+                    "name": "Pont de l'Alma",
+                    "lat": 48.8617,
+                    "lon": 2.3007,
+                    "popular": False
+                },
+                {
+                    "name": "Invalides",
+                    "lat": 48.8611,
+                    "lon": 2.3133,
+                    "popular": True
+                },
+                {
+                    "name": "Musee d'Orsay",
+                    "lat": 48.8605,
+                    "lon": 2.3256,
+                    "popular": True
+                },
+                {
+                    "name": "Saint-Michel - Notre-Dame",
+                    "lat": 48.853,
+                    "lon": 2.3444,
+                    "popular": True
+                },
+                {
+                    "name": "Gare d'Austerlitz",
+                    "lat": 48.8424,
+                    "lon": 2.3649,
+                    "popular": True
+                },
+                {
+                    "name": "Bibliotheque Francois Mitterrand",
+                    "lat": 48.8296,
+                    "lon": 2.376,
+                    "popular": True
+                },
+                {
+                    "name": "Ivry-sur-Seine",
+                    "lat": 48.8133,
+                    "lon": 2.3877,
+                    "popular": False
+                },
+                {
+                    "name": "Choisy-le-Roi",
+                    "lat": 48.7647,
+                    "lon": 2.4108,
+                    "popular": False
+                },
+                {
+                    "name": "Javel",
+                    "lat": 48.8464,
+                    "lon": 2.2769,
+                    "popular": False
+                },
+                {
+                    "name": "Champ de Mars - Tour Eiffel",
+                    "lat": 48.8567,
+                    "lon": 2.2897,
+                    "popular": True
+                }
+            ]
+        }
+    },
+    "lyon": {
+        "lyon_a": {
+            "name": "Metro Line A",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Perrache",
+                    "lat": 45.7491,
+                    "lon": 4.8265,
+                    "popular": True
+                },
+                {
+                    "name": "Ampere - Victor Hugo",
+                    "lat": 45.751,
+                    "lon": 4.8318,
+                    "popular": False
+                },
+                {
+                    "name": "Bellecour",
+                    "lat": 45.7578,
+                    "lon": 4.8323,
+                    "popular": True
+                },
+                {
+                    "name": "Cordeliers",
+                    "lat": 45.7637,
+                    "lon": 4.8354,
+                    "popular": True
+                },
+                {
+                    "name": "Hotel de Ville - Louis Pradel",
+                    "lat": 45.7677,
+                    "lon": 4.8343,
+                    "popular": True
+                },
+                {
+                    "name": "Foch",
+                    "lat": 45.7699,
+                    "lon": 4.8469,
+                    "popular": False
+                },
+                {
+                    "name": "Massena",
+                    "lat": 45.7703,
+                    "lon": 4.8539,
+                    "popular": False
+                },
+                {
+                    "name": "Republique - Villeurbanne",
+                    "lat": 45.7682,
+                    "lon": 4.8616,
+                    "popular": False
+                },
+                {
+                    "name": "Gratte-Ciel",
+                    "lat": 45.7674,
+                    "lon": 4.8808,
+                    "popular": True
+                },
+                {
+                    "name": "Cusset",
+                    "lat": 45.7655,
+                    "lon": 4.8919,
+                    "popular": False
+                },
+                {
+                    "name": "Laurent Bonnevay",
+                    "lat": 45.7647,
+                    "lon": 4.9066,
+                    "popular": False
+                },
+                {
+                    "name": "Vaulx-en-Velin - La Soie",
+                    "lat": 45.7605,
+                    "lon": 4.9204,
+                    "popular": True
+                }
+            ]
+        },
+        "lyon_b": {
+            "name": "Metro Line B",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Charpennes",
+                    "lat": 45.7702,
+                    "lon": 4.8628,
+                    "popular": True
+                },
+                {
+                    "name": "Part-Dieu",
+                    "lat": 45.7608,
+                    "lon": 4.8596,
+                    "popular": True
+                },
+                {
+                    "name": "Place Guichard - Bourse du Travail",
+                    "lat": 45.7593,
+                    "lon": 4.8486,
+                    "popular": False
+                },
+                {
+                    "name": "Saxe - Gambetta",
+                    "lat": 45.7531,
+                    "lon": 4.8457,
+                    "popular": False
+                },
+                {
+                    "name": "Jean Mace",
+                    "lat": 45.7456,
+                    "lon": 4.8425,
+                    "popular": True
+                },
+                {
+                    "name": "Place Jean Jaures",
+                    "lat": 45.7397,
+                    "lon": 4.842,
+                    "popular": False
+                },
+                {
+                    "name": "Debourg",
+                    "lat": 45.733,
+                    "lon": 4.838,
+                    "popular": False
+                },
+                {
+                    "name": "Stade de Gerland",
+                    "lat": 45.7261,
+                    "lon": 4.8327,
+                    "popular": False
+                },
+                {
+                    "name": "Oullins Gare",
+                    "lat": 45.7148,
+                    "lon": 4.8133,
+                    "popular": False
+                },
+                {
+                    "name": "Gare d'Oullins",
+                    "lat": 45.7148,
+                    "lon": 4.8133,
+                    "popular": False
+                },
+                {
+                    "name": "Saint-Genis-Laval - Hopitaux Sud",
+                    "lat": 45.696,
+                    "lon": 4.7975,
+                    "popular": False
+                }
+            ]
+        },
+        "lyon_c": {
+            "name": "Metro Line C",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Hotel de Ville - Louis Pradel",
+                    "lat": 45.7677,
+                    "lon": 4.8343,
+                    "popular": True
+                },
+                {
+                    "name": "Croix-Paquet",
+                    "lat": 45.7704,
+                    "lon": 4.8341,
+                    "popular": False
+                },
+                {
+                    "name": "Croix-Rousse",
+                    "lat": 45.7746,
+                    "lon": 4.8319,
+                    "popular": True
+                },
+                {
+                    "name": "Henon",
+                    "lat": 45.7803,
+                    "lon": 4.8273,
+                    "popular": False
+                },
+                {
+                    "name": "Cuire",
+                    "lat": 45.7873,
+                    "lon": 4.8316,
+                    "popular": False
+                }
+            ]
+        },
+        "lyon_d": {
+            "name": "Metro Line D",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Gare de Vaise",
+                    "lat": 45.7806,
+                    "lon": 4.8046,
+                    "popular": True
+                },
+                {
+                    "name": "Valmy",
+                    "lat": 45.7742,
+                    "lon": 4.8084,
+                    "popular": False
+                },
+                {
+                    "name": "Gorge de Loup",
+                    "lat": 45.7668,
+                    "lon": 4.8059,
+                    "popular": True
+                },
+                {
+                    "name": "Vieux Lyon - Cathedrale Saint-Jean",
+                    "lat": 45.7622,
+                    "lon": 4.8264,
+                    "popular": True
+                },
+                {
+                    "name": "Bellecour",
+                    "lat": 45.7578,
+                    "lon": 4.8323,
+                    "popular": True
+                },
+                {
+                    "name": "Guillotiere",
+                    "lat": 45.7547,
+                    "lon": 4.8427,
+                    "popular": False
+                },
+                {
+                    "name": "Saxe - Gambetta",
+                    "lat": 45.7531,
+                    "lon": 4.8457,
+                    "popular": False
+                },
+                {
+                    "name": "Garibaldi",
+                    "lat": 45.7487,
+                    "lon": 4.8536,
+                    "popular": False
+                },
+                {
+                    "name": "Sans-Souci",
+                    "lat": 45.7417,
+                    "lon": 4.8579,
+                    "popular": False
+                },
+                {
+                    "name": "Monplaisir - Lumiere",
+                    "lat": 45.737,
+                    "lon": 4.8635,
+                    "popular": False
+                },
+                {
+                    "name": "Grange Blanche",
+                    "lat": 45.7358,
+                    "lon": 4.8784,
+                    "popular": True
+                },
+                {
+                    "name": "Mermoz - Pinel",
+                    "lat": 45.7353,
+                    "lon": 4.8906,
+                    "popular": False
+                }
+            ]
+        },
+        "lyon_tram_t1": {
+            "name": "Tram T1",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "IUT - Feyssine",
+                    "lat": 45.7818,
+                    "lon": 4.8686,
+                    "popular": False
+                },
+                {
+                    "name": "Universite Lyon 1",
+                    "lat": 45.7806,
+                    "lon": 4.8713,
+                    "popular": False
+                },
+                {
+                    "name": "Charpennes",
+                    "lat": 45.7702,
+                    "lon": 4.8628,
+                    "popular": True
+                },
+                {
+                    "name": "Part-Dieu - Servient",
+                    "lat": 45.759,
+                    "lon": 4.8567,
+                    "popular": True
+                },
+                {
+                    "name": "Guillotiere",
+                    "lat": 45.7547,
+                    "lon": 4.8427,
+                    "popular": False
+                },
+                {
+                    "name": "Perrache",
+                    "lat": 45.7491,
+                    "lon": 4.8265,
+                    "popular": True
+                },
+                {
+                    "name": "Musee des Confluences",
+                    "lat": 45.7327,
+                    "lon": 4.8179,
+                    "popular": True
+                },
+                {
+                    "name": "Halle Tony Garnier",
+                    "lat": 45.7308,
+                    "lon": 4.8259,
+                    "popular": False
+                },
+                {
+                    "name": "Debourg",
+                    "lat": 45.733,
+                    "lon": 4.838,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "marseille": {
+        "marseille_m1": {
+            "name": "Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "La Fourragere",
+                    "lat": 43.3031,
+                    "lon": 5.4194,
+                    "popular": False
+                },
+                {
+                    "name": "La Blancarde",
+                    "lat": 43.2993,
+                    "lon": 5.4031,
+                    "popular": False
+                },
+                {
+                    "name": "La Timone",
+                    "lat": 43.2928,
+                    "lon": 5.396,
+                    "popular": True
+                },
+                {
+                    "name": "Baille",
+                    "lat": 43.2888,
+                    "lon": 5.3916,
+                    "popular": False
+                },
+                {
+                    "name": "Castellane",
+                    "lat": 43.2853,
+                    "lon": 5.3843,
+                    "popular": True
+                },
+                {
+                    "name": "Estrangin - Prefecture",
+                    "lat": 43.2884,
+                    "lon": 5.3765,
+                    "popular": False
+                },
+                {
+                    "name": "Vieux-Port",
+                    "lat": 43.2963,
+                    "lon": 5.3756,
+                    "popular": True
+                },
+                {
+                    "name": "Colbert - Hotel de Region",
+                    "lat": 43.2979,
+                    "lon": 5.3762,
+                    "popular": False
+                },
+                {
+                    "name": "Reformes - Canebiere",
+                    "lat": 43.3002,
+                    "lon": 5.3848,
+                    "popular": True
+                },
+                {
+                    "name": "Cinq Avenues - Longchamp",
+                    "lat": 43.3042,
+                    "lon": 5.3891,
+                    "popular": True
+                },
+                {
+                    "name": "Chartreux",
+                    "lat": 43.3089,
+                    "lon": 5.3934,
+                    "popular": False
+                },
+                {
+                    "name": "Saint-Just - Hotel de Region",
+                    "lat": 43.3133,
+                    "lon": 5.3957,
+                    "popular": False
+                }
+            ]
+        },
+        "marseille_m2": {
+            "name": "Metro Line 2",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Bougainville",
+                    "lat": 43.3277,
+                    "lon": 5.3674,
+                    "popular": False
+                },
+                {
+                    "name": "National",
+                    "lat": 43.3197,
+                    "lon": 5.3646,
+                    "popular": False
+                },
+                {
+                    "name": "Desiree Clary",
+                    "lat": 43.3108,
+                    "lon": 5.3646,
+                    "popular": False
+                },
+                {
+                    "name": "Joliette",
+                    "lat": 43.3044,
+                    "lon": 5.3669,
+                    "popular": True
+                },
+                {
+                    "name": "Jules Guesde",
+                    "lat": 43.3003,
+                    "lon": 5.3591,
+                    "popular": False
+                },
+                {
+                    "name": "Gare Saint-Charles",
+                    "lat": 43.3031,
+                    "lon": 5.3806,
+                    "popular": True
+                },
+                {
+                    "name": "Noailles",
+                    "lat": 43.2961,
+                    "lon": 5.3808,
+                    "popular": False
+                },
+                {
+                    "name": "Notre-Dame du Mont - Cours Julien",
+                    "lat": 43.2929,
+                    "lon": 5.3846,
+                    "popular": True
+                },
+                {
+                    "name": "Castellane",
+                    "lat": 43.2853,
+                    "lon": 5.3843,
+                    "popular": True
+                },
+                {
+                    "name": "Perier",
+                    "lat": 43.2795,
+                    "lon": 5.3849,
+                    "popular": False
+                },
+                {
+                    "name": "Rond-Point du Prado",
+                    "lat": 43.2731,
+                    "lon": 5.3876,
+                    "popular": True
+                },
+                {
+                    "name": "Sainte-Marguerite - Dromel",
+                    "lat": 43.2664,
+                    "lon": 5.3898,
+                    "popular": False
+                }
+            ]
+        },
+        "marseille_tram": {
+            "name": "Tram Network",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Arenc - Le Silo",
+                    "lat": 43.3094,
+                    "lon": 5.3623,
+                    "popular": False
+                },
+                {
+                    "name": "Joliette",
+                    "lat": 43.3044,
+                    "lon": 5.3669,
+                    "popular": True
+                },
+                {
+                    "name": "Republique - Dames",
+                    "lat": 43.3005,
+                    "lon": 5.3711,
+                    "popular": False
+                },
+                {
+                    "name": "Canebiere - Garibaldi",
+                    "lat": 43.2968,
+                    "lon": 5.379,
+                    "popular": True
+                },
+                {
+                    "name": "Noailles",
+                    "lat": 43.2961,
+                    "lon": 5.3808,
+                    "popular": False
+                },
+                {
+                    "name": "Reformes - Canebiere",
+                    "lat": 43.3002,
+                    "lon": 5.3848,
+                    "popular": True
+                },
+                {
+                    "name": "Longchamp",
+                    "lat": 43.3042,
+                    "lon": 5.3891,
+                    "popular": True
+                },
+                {
+                    "name": "Blancarde",
+                    "lat": 43.2993,
+                    "lon": 5.4031,
+                    "popular": False
+                },
+                {
+                    "name": "Castellane",
+                    "lat": 43.2853,
+                    "lon": 5.3843,
+                    "popular": True
+                },
+                {
+                    "name": "Les Caillols",
+                    "lat": 43.3061,
+                    "lon": 5.443,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "nice": {
+        "nice_tram_1": {
+            "name": "Tram Line 1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Henri Sappia",
+                    "lat": 43.7135,
+                    "lon": 7.283,
+                    "popular": False
+                },
+                {
+                    "name": "Hopital Pasteur",
+                    "lat": 43.7108,
+                    "lon": 7.2818,
+                    "popular": False
+                },
+                {
+                    "name": "Liberation",
+                    "lat": 43.707,
+                    "lon": 7.2746,
+                    "popular": True
+                },
+                {
+                    "name": "Garibaldi",
+                    "lat": 43.7036,
+                    "lon": 7.2758,
+                    "popular": True
+                },
+                {
+                    "name": "Cathedrale - Vieille Ville",
+                    "lat": 43.6984,
+                    "lon": 7.2755,
+                    "popular": True
+                },
+                {
+                    "name": "Opera - Vieille Ville",
+                    "lat": 43.696,
+                    "lon": 7.2722,
+                    "popular": False
+                },
+                {
+                    "name": "Massena",
+                    "lat": 43.6972,
+                    "lon": 7.27,
+                    "popular": True
+                },
+                {
+                    "name": "Jean Medecin",
+                    "lat": 43.7009,
+                    "lon": 7.2668,
+                    "popular": True
+                },
+                {
+                    "name": "Gare Thiers",
+                    "lat": 43.7053,
+                    "lon": 7.262,
+                    "popular": True
+                },
+                {
+                    "name": "Alsace-Lorraine",
+                    "lat": 43.7068,
+                    "lon": 7.2598,
+                    "popular": False
+                },
+                {
+                    "name": "Valrose - Universite",
+                    "lat": 43.7164,
+                    "lon": 7.2618,
+                    "popular": False
+                },
+                {
+                    "name": "Las Planas",
+                    "lat": 43.7339,
+                    "lon": 7.2416,
+                    "popular": False
+                }
+            ]
+        },
+        "nice_tram_2": {
+            "name": "Tram Line 2",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Aeroport Terminal 2",
+                    "lat": 43.6596,
+                    "lon": 7.202,
+                    "popular": True
+                },
+                {
+                    "name": "Aeroport Terminal 1",
+                    "lat": 43.6619,
+                    "lon": 7.2077,
+                    "popular": True
+                },
+                {
+                    "name": "Grand Arénas",
+                    "lat": 43.6656,
+                    "lon": 7.2148,
+                    "popular": False
+                },
+                {
+                    "name": "Parc Phoenix",
+                    "lat": 43.6659,
+                    "lon": 7.22,
+                    "popular": False
+                },
+                {
+                    "name": "Magnan",
+                    "lat": 43.6846,
+                    "lon": 7.2401,
+                    "popular": False
+                },
+                {
+                    "name": "Grosso",
+                    "lat": 43.6916,
+                    "lon": 7.248,
+                    "popular": False
+                },
+                {
+                    "name": "Jean Medecin",
+                    "lat": 43.7009,
+                    "lon": 7.2668,
+                    "popular": True
+                },
+                {
+                    "name": "Durandy",
+                    "lat": 43.7,
+                    "lon": 7.262,
+                    "popular": False
+                },
+                {
+                    "name": "Port Lympia",
+                    "lat": 43.6959,
+                    "lon": 7.2842,
+                    "popular": True
+                },
+                {
+                    "name": "CADAM",
+                    "lat": 43.6719,
+                    "lon": 7.21,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "toulouse": {
+        "toulouse_a": {
+            "name": "Metro Line A",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Basso Cambo",
+                    "lat": 43.5697,
+                    "lon": 1.3924,
+                    "popular": False
+                },
+                {
+                    "name": "Mirail - Universite",
+                    "lat": 43.5757,
+                    "lon": 1.3986,
+                    "popular": False
+                },
+                {
+                    "name": "Bagatelle",
+                    "lat": 43.5806,
+                    "lon": 1.4055,
+                    "popular": False
+                },
+                {
+                    "name": "Mermoz",
+                    "lat": 43.5859,
+                    "lon": 1.4104,
+                    "popular": False
+                },
+                {
+                    "name": "Fontaine-Lestang",
+                    "lat": 43.5877,
+                    "lon": 1.418,
+                    "popular": False
+                },
+                {
+                    "name": "Arenes",
+                    "lat": 43.5887,
+                    "lon": 1.4258,
+                    "popular": True
+                },
+                {
+                    "name": "Patte d'Oie",
+                    "lat": 43.592,
+                    "lon": 1.4274,
+                    "popular": False
+                },
+                {
+                    "name": "Saint-Cyprien - Republique",
+                    "lat": 43.5973,
+                    "lon": 1.431,
+                    "popular": False
+                },
+                {
+                    "name": "Esquirol",
+                    "lat": 43.6005,
+                    "lon": 1.4425,
+                    "popular": True
+                },
+                {
+                    "name": "Capitole",
+                    "lat": 43.6045,
+                    "lon": 1.4437,
+                    "popular": True
+                },
+                {
+                    "name": "Jean Jaures",
+                    "lat": 43.6065,
+                    "lon": 1.45,
+                    "popular": True
+                },
+                {
+                    "name": "Marengo - SNCF",
+                    "lat": 43.611,
+                    "lon": 1.4544,
+                    "popular": True
+                },
+                {
+                    "name": "Jolimont",
+                    "lat": 43.6109,
+                    "lon": 1.4622,
+                    "popular": False
+                },
+                {
+                    "name": "Roseraie",
+                    "lat": 43.6121,
+                    "lon": 1.4703,
+                    "popular": False
+                },
+                {
+                    "name": "Balma - Gramont",
+                    "lat": 43.6131,
+                    "lon": 1.4822,
+                    "popular": False
+                }
+            ]
+        },
+        "toulouse_b": {
+            "name": "Metro Line B",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Borderouge",
+                    "lat": 43.641,
+                    "lon": 1.4502,
+                    "popular": False
+                },
+                {
+                    "name": "Trois Cocus",
+                    "lat": 43.6376,
+                    "lon": 1.449,
+                    "popular": False
+                },
+                {
+                    "name": "La Vache",
+                    "lat": 43.632,
+                    "lon": 1.4478,
+                    "popular": False
+                },
+                {
+                    "name": "Minimes - Claude Nougaro",
+                    "lat": 43.6265,
+                    "lon": 1.4466,
+                    "popular": False
+                },
+                {
+                    "name": "Canal du Midi",
+                    "lat": 43.6179,
+                    "lon": 1.4429,
+                    "popular": False
+                },
+                {
+                    "name": "Compans-Caffarelli",
+                    "lat": 43.6114,
+                    "lon": 1.4362,
+                    "popular": False
+                },
+                {
+                    "name": "Jeanne d'Arc",
+                    "lat": 43.6095,
+                    "lon": 1.4413,
+                    "popular": False
+                },
+                {
+                    "name": "Jean Jaures",
+                    "lat": 43.6065,
+                    "lon": 1.45,
+                    "popular": True
+                },
+                {
+                    "name": "Palais de Justice",
+                    "lat": 43.6006,
+                    "lon": 1.441,
+                    "popular": True
+                },
+                {
+                    "name": "Carmes",
+                    "lat": 43.5979,
+                    "lon": 1.4453,
+                    "popular": True
+                },
+                {
+                    "name": "Francois Verdier",
+                    "lat": 43.5951,
+                    "lon": 1.4511,
+                    "popular": False
+                },
+                {
+                    "name": "Saint-Agne - SNCF",
+                    "lat": 43.58,
+                    "lon": 1.449,
+                    "popular": False
+                },
+                {
+                    "name": "Ramonville",
+                    "lat": 43.558,
+                    "lon": 1.4738,
+                    "popular": True
+                }
+            ]
+        }
+    },
+    "bordeaux": {
+        "bordeaux_tram_a": {
+            "name": "Tram Line A",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Meriadeck",
+                    "lat": 44.8376,
+                    "lon": -0.5812,
+                    "popular": False
+                },
+                {
+                    "name": "Hotel de Ville",
+                    "lat": 44.8381,
+                    "lon": -0.5763,
+                    "popular": True
+                },
+                {
+                    "name": "Palais de Justice",
+                    "lat": 44.8368,
+                    "lon": -0.5696,
+                    "popular": False
+                },
+                {
+                    "name": "Sainte-Catherine",
+                    "lat": 44.8345,
+                    "lon": -0.5728,
+                    "popular": True
+                },
+                {
+                    "name": "Porte de Bourgogne",
+                    "lat": 44.8371,
+                    "lon": -0.5639,
+                    "popular": False
+                },
+                {
+                    "name": "Quinconces",
+                    "lat": 44.8438,
+                    "lon": -0.5735,
+                    "popular": True
+                },
+                {
+                    "name": "Place du Palais",
+                    "lat": 44.8391,
+                    "lon": -0.5668,
+                    "popular": True
+                },
+                {
+                    "name": "La Gardette - Bassens - Carbon Blanc",
+                    "lat": 44.8677,
+                    "lon": -0.5081,
+                    "popular": False
+                },
+                {
+                    "name": "Cenon Gare",
+                    "lat": 44.8555,
+                    "lon": -0.5312,
+                    "popular": False
+                },
+                {
+                    "name": "Buttiniere",
+                    "lat": 44.8468,
+                    "lon": -0.5437,
+                    "popular": False
+                },
+                {
+                    "name": "Floirac Dravemont",
+                    "lat": 44.8405,
+                    "lon": -0.5214,
+                    "popular": False
+                }
+            ]
+        },
+        "bordeaux_tram_b": {
+            "name": "Tram Line B",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Berges de la Garonne",
+                    "lat": 44.8201,
+                    "lon": -0.556,
+                    "popular": False
+                },
+                {
+                    "name": "Gare Saint-Jean",
+                    "lat": 44.8256,
+                    "lon": -0.5563,
+                    "popular": True
+                },
+                {
+                    "name": "Sainte-Croix",
+                    "lat": 44.831,
+                    "lon": -0.5615,
+                    "popular": False
+                },
+                {
+                    "name": "Victoire",
+                    "lat": 44.8324,
+                    "lon": -0.5715,
+                    "popular": True
+                },
+                {
+                    "name": "Musee d'Aquitaine",
+                    "lat": 44.8348,
+                    "lon": -0.5743,
+                    "popular": True
+                },
+                {
+                    "name": "Hotel de Ville",
+                    "lat": 44.8381,
+                    "lon": -0.5763,
+                    "popular": True
+                },
+                {
+                    "name": "Quinconces",
+                    "lat": 44.8438,
+                    "lon": -0.5735,
+                    "popular": True
+                },
+                {
+                    "name": "Chartrons",
+                    "lat": 44.851,
+                    "lon": -0.57,
+                    "popular": True
+                },
+                {
+                    "name": "Cours du Medoc",
+                    "lat": 44.8558,
+                    "lon": -0.5714,
+                    "popular": False
+                },
+                {
+                    "name": "Ravezies",
+                    "lat": 44.8601,
+                    "lon": -0.5703,
+                    "popular": False
+                },
+                {
+                    "name": "Berges du Lac",
+                    "lat": 44.8732,
+                    "lon": -0.566,
+                    "popular": False
+                }
+            ]
+        },
+        "bordeaux_tram_c": {
+            "name": "Tram Line C",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Gare Saint-Jean",
+                    "lat": 44.8256,
+                    "lon": -0.5563,
+                    "popular": True
+                },
+                {
+                    "name": "Tauzia",
+                    "lat": 44.8313,
+                    "lon": -0.5563,
+                    "popular": False
+                },
+                {
+                    "name": "Jardin Botanique",
+                    "lat": 44.8584,
+                    "lon": -0.5481,
+                    "popular": False
+                },
+                {
+                    "name": "Quinconces",
+                    "lat": 44.8438,
+                    "lon": -0.5735,
+                    "popular": True
+                },
+                {
+                    "name": "Place de la Bourse",
+                    "lat": 44.8415,
+                    "lon": -0.5685,
+                    "popular": True
+                },
+                {
+                    "name": "Grand Parc",
+                    "lat": 44.8586,
+                    "lon": -0.5774,
+                    "popular": False
+                },
+                {
+                    "name": "Les Aubiers",
+                    "lat": 44.8655,
+                    "lon": -0.5827,
+                    "popular": False
+                },
+                {
+                    "name": "Stade Matmut-Atlantique",
+                    "lat": 44.8979,
+                    "lon": -0.5615,
+                    "popular": True
+                },
+                {
+                    "name": "Parc des Expositions",
+                    "lat": 44.892,
+                    "lon": -0.5629,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "strasbourg": {
+        "strasbourg_tram_a": {
+            "name": "Tram Line A",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Parc des Sports",
+                    "lat": 48.6056,
+                    "lon": 7.7878,
+                    "popular": False
+                },
+                {
+                    "name": "Rotonde",
+                    "lat": 48.5928,
+                    "lon": 7.77,
+                    "popular": False
+                },
+                {
+                    "name": "Ancienne Synagogue - Les Halles",
+                    "lat": 48.5867,
+                    "lon": 7.752,
+                    "popular": True
+                },
+                {
+                    "name": "Homme de Fer",
+                    "lat": 48.584,
+                    "lon": 7.7467,
+                    "popular": True
+                },
+                {
+                    "name": "Langstross - Grand'Rue",
+                    "lat": 48.5808,
+                    "lon": 7.7467,
+                    "popular": True
+                },
+                {
+                    "name": "Porte de l'Hopital",
+                    "lat": 48.5773,
+                    "lon": 7.7464,
+                    "popular": False
+                },
+                {
+                    "name": "Etoile Bourse",
+                    "lat": 48.5735,
+                    "lon": 7.7453,
+                    "popular": False
+                },
+                {
+                    "name": "Gare Centrale",
+                    "lat": 48.5854,
+                    "lon": 7.7349,
+                    "popular": True
+                },
+                {
+                    "name": "Faubourg National",
+                    "lat": 48.5873,
+                    "lon": 7.7413,
+                    "popular": False
+                },
+                {
+                    "name": "Illkirch Lixenbuhl",
+                    "lat": 48.5275,
+                    "lon": 7.722,
+                    "popular": False
+                },
+                {
+                    "name": "Illkirch Graffenstaden",
+                    "lat": 48.5297,
+                    "lon": 7.7184,
+                    "popular": False
+                },
+                {
+                    "name": "Hautepierre - Maillon",
+                    "lat": 48.5929,
+                    "lon": 7.7066,
+                    "popular": False
+                }
+            ]
+        },
+        "strasbourg_tram_d": {
+            "name": "Tram Line D",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Poteries",
+                    "lat": 48.5993,
+                    "lon": 7.7141,
+                    "popular": False
+                },
+                {
+                    "name": "Hautepierre - Maillon",
+                    "lat": 48.5929,
+                    "lon": 7.7066,
+                    "popular": False
+                },
+                {
+                    "name": "Rotonde",
+                    "lat": 48.5928,
+                    "lon": 7.77,
+                    "popular": False
+                },
+                {
+                    "name": "Etoile Polygone",
+                    "lat": 48.5831,
+                    "lon": 7.7665,
+                    "popular": False
+                },
+                {
+                    "name": "Homme de Fer",
+                    "lat": 48.584,
+                    "lon": 7.7467,
+                    "popular": True
+                },
+                {
+                    "name": "Republique",
+                    "lat": 48.5887,
+                    "lon": 7.7502,
+                    "popular": True
+                },
+                {
+                    "name": "Universite",
+                    "lat": 48.5823,
+                    "lon": 7.763,
+                    "popular": False
+                },
+                {
+                    "name": "Observatoire",
+                    "lat": 48.5804,
+                    "lon": 7.767,
+                    "popular": False
+                },
+                {
+                    "name": "Aristide Briand",
+                    "lat": 48.5672,
+                    "lon": 7.7608,
+                    "popular": False
+                },
+                {
+                    "name": "Kehl Bahnhof",
+                    "lat": 48.5724,
+                    "lon": 7.8022,
+                    "popular": True
+                },
+                {
+                    "name": "Port du Rhin",
+                    "lat": 48.5733,
+                    "lon": 7.7899,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "berlin": {
+        "ubahn_u1": {
+            "name": "U-Bahn U1",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Warschauer Str.",
+                    "lat": 52.5057,
+                    "lon": 13.449,
+                    "popular": True
+                },
+                {
+                    "name": "Schlesisches Tor",
+                    "lat": 52.5009,
+                    "lon": 13.444,
+                    "popular": False
+                },
+                {
+                    "name": "Goerlitzer Bahnhof",
+                    "lat": 52.4985,
+                    "lon": 13.4375,
+                    "popular": False
+                },
+                {
+                    "name": "Kottbusser Tor",
+                    "lat": 52.499,
+                    "lon": 13.4182,
+                    "popular": True
+                },
+                {
+                    "name": "Prinzenstr.",
+                    "lat": 52.4989,
+                    "lon": 13.4044,
+                    "popular": False
+                },
+                {
+                    "name": "Hallesches Tor",
+                    "lat": 52.4978,
+                    "lon": 13.3915,
+                    "popular": True
+                },
+                {
+                    "name": "Moeckernbruecke",
+                    "lat": 52.4989,
+                    "lon": 13.3828,
+                    "popular": False
+                },
+                {
+                    "name": "Gleisdreieck",
+                    "lat": 52.499,
+                    "lon": 13.3744,
+                    "popular": False
+                },
+                {
+                    "name": "Kurfuerstenstr.",
+                    "lat": 52.4988,
+                    "lon": 13.362,
+                    "popular": False
+                },
+                {
+                    "name": "Nollendorfplatz",
+                    "lat": 52.4995,
+                    "lon": 13.3536,
+                    "popular": True
+                },
+                {
+                    "name": "Wittenbergplatz",
+                    "lat": 52.5018,
+                    "lon": 13.3426,
+                    "popular": True
+                },
+                {
+                    "name": "Kurfuerstendamm",
+                    "lat": 52.5041,
+                    "lon": 13.3322,
+                    "popular": True
+                },
+                {
+                    "name": "Uhlandstr.",
+                    "lat": 52.5024,
+                    "lon": 13.3274,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u2": {
+            "name": "U-Bahn U2",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Pankow",
+                    "lat": 52.5672,
+                    "lon": 13.4109,
+                    "popular": False
+                },
+                {
+                    "name": "Senefelderplatz",
+                    "lat": 52.5323,
+                    "lon": 13.4129,
+                    "popular": False
+                },
+                {
+                    "name": "Rosa-Luxemburg-Platz",
+                    "lat": 52.5264,
+                    "lon": 13.412,
+                    "popular": False
+                },
+                {
+                    "name": "Alexanderplatz",
+                    "lat": 52.5219,
+                    "lon": 13.4132,
+                    "popular": True
+                },
+                {
+                    "name": "Klosterstr.",
+                    "lat": 52.5167,
+                    "lon": 13.412,
+                    "popular": False
+                },
+                {
+                    "name": "Maerkisches Museum",
+                    "lat": 52.5122,
+                    "lon": 13.4073,
+                    "popular": False
+                },
+                {
+                    "name": "Spittelmarkt",
+                    "lat": 52.5117,
+                    "lon": 13.3981,
+                    "popular": False
+                },
+                {
+                    "name": "Hausvogteiplatz",
+                    "lat": 52.5134,
+                    "lon": 13.3924,
+                    "popular": False
+                },
+                {
+                    "name": "Stadtmitte",
+                    "lat": 52.5117,
+                    "lon": 13.3881,
+                    "popular": False
+                },
+                {
+                    "name": "Potsdamer Platz",
+                    "lat": 52.5096,
+                    "lon": 13.3762,
+                    "popular": True
+                },
+                {
+                    "name": "Gleisdreieck",
+                    "lat": 52.499,
+                    "lon": 13.3744,
+                    "popular": False
+                },
+                {
+                    "name": "Wittenbergplatz",
+                    "lat": 52.5018,
+                    "lon": 13.3426,
+                    "popular": True
+                },
+                {
+                    "name": "Zoologischer Garten",
+                    "lat": 52.5069,
+                    "lon": 13.3325,
+                    "popular": True
+                },
+                {
+                    "name": "Ernst-Reuter-Platz",
+                    "lat": 52.5119,
+                    "lon": 13.3223,
+                    "popular": False
+                },
+                {
+                    "name": "Ruhleben",
+                    "lat": 52.5254,
+                    "lon": 13.2414,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u5": {
+            "name": "U-Bahn U5",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 52.5261,
+                    "lon": 13.3694,
+                    "popular": True
+                },
+                {
+                    "name": "Bundestag",
+                    "lat": 52.5185,
+                    "lon": 13.375,
+                    "popular": False
+                },
+                {
+                    "name": "Brandenburger Tor",
+                    "lat": 52.5163,
+                    "lon": 13.3814,
+                    "popular": True
+                },
+                {
+                    "name": "Unter den Linden",
+                    "lat": 52.517,
+                    "lon": 13.3887,
+                    "popular": True
+                },
+                {
+                    "name": "Museumsinsel",
+                    "lat": 52.5198,
+                    "lon": 13.3967,
+                    "popular": True
+                },
+                {
+                    "name": "Rotes Rathaus",
+                    "lat": 52.5192,
+                    "lon": 13.409,
+                    "popular": False
+                },
+                {
+                    "name": "Alexanderplatz",
+                    "lat": 52.5219,
+                    "lon": 13.4132,
+                    "popular": True
+                },
+                {
+                    "name": "Schillingstr.",
+                    "lat": 52.5203,
+                    "lon": 13.4221,
+                    "popular": False
+                },
+                {
+                    "name": "Strausberger Platz",
+                    "lat": 52.5218,
+                    "lon": 13.431,
+                    "popular": False
+                },
+                {
+                    "name": "Frankfurter Tor",
+                    "lat": 52.5163,
+                    "lon": 13.4538,
+                    "popular": True
+                },
+                {
+                    "name": "Samariterstr.",
+                    "lat": 52.5136,
+                    "lon": 13.4637,
+                    "popular": False
+                },
+                {
+                    "name": "Frankfurter Allee",
+                    "lat": 52.5134,
+                    "lon": 13.4745,
+                    "popular": True
+                },
+                {
+                    "name": "Lichtenberg",
+                    "lat": 52.5114,
+                    "lon": 13.4985,
+                    "popular": True
+                },
+                {
+                    "name": "Kaulsdorf-Nord",
+                    "lat": 52.5261,
+                    "lon": 13.5756,
+                    "popular": False
+                },
+                {
+                    "name": "Hoenow",
+                    "lat": 52.537,
+                    "lon": 13.628,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u6": {
+            "name": "U-Bahn U6",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Alt-Tegel",
+                    "lat": 52.5893,
+                    "lon": 13.283,
+                    "popular": False
+                },
+                {
+                    "name": "Borsigwerke",
+                    "lat": 52.5816,
+                    "lon": 13.2873,
+                    "popular": False
+                },
+                {
+                    "name": "Kurt-Schumacher-Platz",
+                    "lat": 52.564,
+                    "lon": 13.3272,
+                    "popular": False
+                },
+                {
+                    "name": "Wedding",
+                    "lat": 52.5425,
+                    "lon": 13.3662,
+                    "popular": False
+                },
+                {
+                    "name": "Reinickendorfer Str.",
+                    "lat": 52.546,
+                    "lon": 13.3654,
+                    "popular": False
+                },
+                {
+                    "name": "Friedrichstr.",
+                    "lat": 52.5204,
+                    "lon": 13.3879,
+                    "popular": True
+                },
+                {
+                    "name": "Franzoesische Str.",
+                    "lat": 52.5167,
+                    "lon": 13.3888,
+                    "popular": False
+                },
+                {
+                    "name": "Stadtmitte",
+                    "lat": 52.5117,
+                    "lon": 13.3881,
+                    "popular": False
+                },
+                {
+                    "name": "Kochstr./Checkpoint Charlie",
+                    "lat": 52.5068,
+                    "lon": 13.3907,
+                    "popular": True
+                },
+                {
+                    "name": "Hallesches Tor",
+                    "lat": 52.4978,
+                    "lon": 13.3915,
+                    "popular": False
+                },
+                {
+                    "name": "Mehringdamm",
+                    "lat": 52.4938,
+                    "lon": 13.3886,
+                    "popular": True
+                },
+                {
+                    "name": "Platz der Luftbruecke",
+                    "lat": 52.4869,
+                    "lon": 13.3817,
+                    "popular": False
+                },
+                {
+                    "name": "Tempelhof",
+                    "lat": 52.4706,
+                    "lon": 13.3854,
+                    "popular": True
+                },
+                {
+                    "name": "Alt-Mariendorf",
+                    "lat": 52.4416,
+                    "lon": 13.3855,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u7": {
+            "name": "U-Bahn U7",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Rathaus Spandau",
+                    "lat": 52.5353,
+                    "lon": 13.1997,
+                    "popular": False
+                },
+                {
+                    "name": "Altstadt Spandau",
+                    "lat": 52.5366,
+                    "lon": 13.2073,
+                    "popular": False
+                },
+                {
+                    "name": "Jungfernheide",
+                    "lat": 52.5305,
+                    "lon": 13.2995,
+                    "popular": False
+                },
+                {
+                    "name": "Mierendorffplatz",
+                    "lat": 52.5264,
+                    "lon": 13.3139,
+                    "popular": False
+                },
+                {
+                    "name": "Bismarckstr.",
+                    "lat": 52.5125,
+                    "lon": 13.3193,
+                    "popular": False
+                },
+                {
+                    "name": "Wilmersdorfer Str.",
+                    "lat": 52.5072,
+                    "lon": 13.3073,
+                    "popular": False
+                },
+                {
+                    "name": "Berliner Str.",
+                    "lat": 52.4965,
+                    "lon": 13.3313,
+                    "popular": False
+                },
+                {
+                    "name": "Bayerischer Platz",
+                    "lat": 52.4883,
+                    "lon": 13.3399,
+                    "popular": False
+                },
+                {
+                    "name": "Yorckstr.",
+                    "lat": 52.4925,
+                    "lon": 13.3676,
+                    "popular": False
+                },
+                {
+                    "name": "Mehringdamm",
+                    "lat": 52.4938,
+                    "lon": 13.3886,
+                    "popular": True
+                },
+                {
+                    "name": "Gneisenaustr.",
+                    "lat": 52.4899,
+                    "lon": 13.3961,
+                    "popular": False
+                },
+                {
+                    "name": "Suedstern",
+                    "lat": 52.4876,
+                    "lon": 13.4011,
+                    "popular": False
+                },
+                {
+                    "name": "Hermannplatz",
+                    "lat": 52.4871,
+                    "lon": 13.4247,
+                    "popular": True
+                },
+                {
+                    "name": "Neukoelln",
+                    "lat": 52.4812,
+                    "lon": 13.4352,
+                    "popular": True
+                },
+                {
+                    "name": "Rudow",
+                    "lat": 52.4261,
+                    "lon": 13.4933,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u8": {
+            "name": "U-Bahn U8",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Wittenau",
+                    "lat": 52.5936,
+                    "lon": 13.3262,
+                    "popular": False
+                },
+                {
+                    "name": "Osloer Str.",
+                    "lat": 52.5573,
+                    "lon": 13.373,
+                    "popular": False
+                },
+                {
+                    "name": "Gesundbrunnen",
+                    "lat": 52.5487,
+                    "lon": 13.3888,
+                    "popular": True
+                },
+                {
+                    "name": "Voltastr.",
+                    "lat": 52.5415,
+                    "lon": 13.3934,
+                    "popular": False
+                },
+                {
+                    "name": "Bernauer Str.",
+                    "lat": 52.5375,
+                    "lon": 13.3956,
+                    "popular": True
+                },
+                {
+                    "name": "Rosenthaler Platz",
+                    "lat": 52.5299,
+                    "lon": 13.4013,
+                    "popular": True
+                },
+                {
+                    "name": "Weinmeisterstr.",
+                    "lat": 52.5256,
+                    "lon": 13.4047,
+                    "popular": False
+                },
+                {
+                    "name": "Alexanderplatz",
+                    "lat": 52.5219,
+                    "lon": 13.4132,
+                    "popular": True
+                },
+                {
+                    "name": "Jannowitzbruecke",
+                    "lat": 52.5151,
+                    "lon": 13.4184,
+                    "popular": False
+                },
+                {
+                    "name": "Heinrich-Heine-Str.",
+                    "lat": 52.5103,
+                    "lon": 13.4219,
+                    "popular": False
+                },
+                {
+                    "name": "Moritzplatz",
+                    "lat": 52.5037,
+                    "lon": 13.4107,
+                    "popular": True
+                },
+                {
+                    "name": "Kottbusser Tor",
+                    "lat": 52.499,
+                    "lon": 13.4182,
+                    "popular": True
+                },
+                {
+                    "name": "Hermannstr.",
+                    "lat": 52.4677,
+                    "lon": 13.4313,
+                    "popular": False
+                }
+            ]
+        },
+        "sbahn_ring": {
+            "name": "S-Bahn Ring",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 52.5261,
+                    "lon": 13.3694,
+                    "popular": True
+                },
+                {
+                    "name": "Friedrichstr.",
+                    "lat": 52.5204,
+                    "lon": 13.3879,
+                    "popular": True
+                },
+                {
+                    "name": "Hackescher Markt",
+                    "lat": 52.5228,
+                    "lon": 13.4024,
+                    "popular": True
+                },
+                {
+                    "name": "Alexanderplatz",
+                    "lat": 52.5219,
+                    "lon": 13.4132,
+                    "popular": True
+                },
+                {
+                    "name": "Jannowitzbruecke",
+                    "lat": 52.5151,
+                    "lon": 13.4184,
+                    "popular": False
+                },
+                {
+                    "name": "Ostbahnhof",
+                    "lat": 52.5107,
+                    "lon": 13.4346,
+                    "popular": True
+                },
+                {
+                    "name": "Warschauer Str.",
+                    "lat": 52.5057,
+                    "lon": 13.449,
+                    "popular": True
+                },
+                {
+                    "name": "Ostkreuz",
+                    "lat": 52.5028,
+                    "lon": 13.4694,
+                    "popular": True
+                },
+                {
+                    "name": "Treptower Park",
+                    "lat": 52.4967,
+                    "lon": 13.4627,
+                    "popular": False
+                },
+                {
+                    "name": "Neukoelln",
+                    "lat": 52.4812,
+                    "lon": 13.4352,
+                    "popular": False
+                },
+                {
+                    "name": "Hermannstr.",
+                    "lat": 52.4677,
+                    "lon": 13.4313,
+                    "popular": False
+                },
+                {
+                    "name": "Tempelhof",
+                    "lat": 52.4706,
+                    "lon": 13.3854,
+                    "popular": False
+                },
+                {
+                    "name": "Suedkreuz",
+                    "lat": 52.4753,
+                    "lon": 13.3653,
+                    "popular": True
+                },
+                {
+                    "name": "Schoeneberg",
+                    "lat": 52.4835,
+                    "lon": 13.3532,
+                    "popular": False
+                },
+                {
+                    "name": "Westkreuz",
+                    "lat": 52.5013,
+                    "lon": 13.2836,
+                    "popular": True
+                }
+            ]
+        },
+        "sbahn_s1": {
+            "name": "S-Bahn S1",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Oranienburg",
+                    "lat": 52.7545,
+                    "lon": 13.2406,
+                    "popular": False
+                },
+                {
+                    "name": "Birkenwerder",
+                    "lat": 52.6827,
+                    "lon": 13.2867,
+                    "popular": False
+                },
+                {
+                    "name": "Frohnau",
+                    "lat": 52.6329,
+                    "lon": 13.2867,
+                    "popular": False
+                },
+                {
+                    "name": "Waidmannslust",
+                    "lat": 52.6176,
+                    "lon": 13.3038,
+                    "popular": False
+                },
+                {
+                    "name": "Wittenau",
+                    "lat": 52.5936,
+                    "lon": 13.3262,
+                    "popular": False
+                },
+                {
+                    "name": "Bornholmer Str.",
+                    "lat": 52.5502,
+                    "lon": 13.3987,
+                    "popular": False
+                },
+                {
+                    "name": "Gesundbrunnen",
+                    "lat": 52.5487,
+                    "lon": 13.3888,
+                    "popular": False
+                },
+                {
+                    "name": "Nordbahnhof",
+                    "lat": 52.532,
+                    "lon": 13.3884,
+                    "popular": False
+                },
+                {
+                    "name": "Friedrichstr.",
+                    "lat": 52.5204,
+                    "lon": 13.3879,
+                    "popular": True
+                },
+                {
+                    "name": "Brandenburger Tor",
+                    "lat": 52.5163,
+                    "lon": 13.3814,
+                    "popular": True
+                },
+                {
+                    "name": "Potsdamer Platz",
+                    "lat": 52.5096,
+                    "lon": 13.3762,
+                    "popular": True
+                },
+                {
+                    "name": "Anhalter Bahnhof",
+                    "lat": 52.5044,
+                    "lon": 13.382,
+                    "popular": False
+                },
+                {
+                    "name": "Yorckstr.",
+                    "lat": 52.4925,
+                    "lon": 13.3676,
+                    "popular": False
+                },
+                {
+                    "name": "Wannsee",
+                    "lat": 52.4214,
+                    "lon": 13.1793,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "munich": {
+        "ubahn_u1": {
+            "name": "U-Bahn U1",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Olympia-Einkaufszentrum",
+                    "lat": 48.1804,
+                    "lon": 11.525,
+                    "popular": False
+                },
+                {
+                    "name": "Georg-Brauchle-Ring",
+                    "lat": 48.175,
+                    "lon": 11.5341,
+                    "popular": False
+                },
+                {
+                    "name": "Westfriedhof",
+                    "lat": 48.1684,
+                    "lon": 11.5381,
+                    "popular": False
+                },
+                {
+                    "name": "Gern",
+                    "lat": 48.161,
+                    "lon": 11.5382,
+                    "popular": False
+                },
+                {
+                    "name": "Rotkreuzplatz",
+                    "lat": 48.1522,
+                    "lon": 11.5382,
+                    "popular": False
+                },
+                {
+                    "name": "Maillingerstr.",
+                    "lat": 48.1478,
+                    "lon": 11.5481,
+                    "popular": False
+                },
+                {
+                    "name": "Stiglmaierplatz",
+                    "lat": 48.1466,
+                    "lon": 11.5588,
+                    "popular": False
+                },
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 48.1403,
+                    "lon": 11.5583,
+                    "popular": True
+                },
+                {
+                    "name": "Sendlinger Tor",
+                    "lat": 48.1341,
+                    "lon": 11.5676,
+                    "popular": True
+                },
+                {
+                    "name": "Fraunhoferstr.",
+                    "lat": 48.1294,
+                    "lon": 11.5758,
+                    "popular": False
+                },
+                {
+                    "name": "Kolumbusplatz",
+                    "lat": 48.1218,
+                    "lon": 11.5802,
+                    "popular": False
+                },
+                {
+                    "name": "Candidplatz",
+                    "lat": 48.1162,
+                    "lon": 11.5759,
+                    "popular": False
+                },
+                {
+                    "name": "Wettersteinplatz",
+                    "lat": 48.1101,
+                    "lon": 11.5825,
+                    "popular": False
+                },
+                {
+                    "name": "Mangfallplatz",
+                    "lat": 48.101,
+                    "lon": 11.588,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u2": {
+            "name": "U-Bahn U2",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Feldmoching",
+                    "lat": 48.2141,
+                    "lon": 11.532,
+                    "popular": False
+                },
+                {
+                    "name": "Hasenbergl",
+                    "lat": 48.2064,
+                    "lon": 11.5326,
+                    "popular": False
+                },
+                {
+                    "name": "Scheidplatz",
+                    "lat": 48.1711,
+                    "lon": 11.5698,
+                    "popular": False
+                },
+                {
+                    "name": "Hohenzollernplatz",
+                    "lat": 48.1614,
+                    "lon": 11.5777,
+                    "popular": False
+                },
+                {
+                    "name": "Josephsplatz",
+                    "lat": 48.1538,
+                    "lon": 11.5717,
+                    "popular": False
+                },
+                {
+                    "name": "Theresienstr.",
+                    "lat": 48.151,
+                    "lon": 11.5686,
+                    "popular": False
+                },
+                {
+                    "name": "Koenigsplatz",
+                    "lat": 48.1455,
+                    "lon": 11.566,
+                    "popular": True
+                },
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 48.1403,
+                    "lon": 11.5583,
+                    "popular": True
+                },
+                {
+                    "name": "Sendlinger Tor",
+                    "lat": 48.1341,
+                    "lon": 11.5676,
+                    "popular": True
+                },
+                {
+                    "name": "Fraunhoferstr.",
+                    "lat": 48.1294,
+                    "lon": 11.5758,
+                    "popular": False
+                },
+                {
+                    "name": "Kolumbusplatz",
+                    "lat": 48.1218,
+                    "lon": 11.5802,
+                    "popular": False
+                },
+                {
+                    "name": "Silberhornstr.",
+                    "lat": 48.1193,
+                    "lon": 11.5825,
+                    "popular": False
+                },
+                {
+                    "name": "Innsbrucker Ring",
+                    "lat": 48.1198,
+                    "lon": 11.6074,
+                    "popular": False
+                },
+                {
+                    "name": "Messestadt West",
+                    "lat": 48.1309,
+                    "lon": 11.6974,
+                    "popular": False
+                },
+                {
+                    "name": "Messestadt Ost",
+                    "lat": 48.1321,
+                    "lon": 11.7087,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u3": {
+            "name": "U-Bahn U3",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Moosach",
+                    "lat": 48.1767,
+                    "lon": 11.5142,
+                    "popular": False
+                },
+                {
+                    "name": "Olympiazentrum",
+                    "lat": 48.18,
+                    "lon": 11.5544,
+                    "popular": True
+                },
+                {
+                    "name": "Olympiapark",
+                    "lat": 48.1741,
+                    "lon": 11.5534,
+                    "popular": False
+                },
+                {
+                    "name": "Petuelring",
+                    "lat": 48.168,
+                    "lon": 11.5627,
+                    "popular": False
+                },
+                {
+                    "name": "Scheidplatz",
+                    "lat": 48.1711,
+                    "lon": 11.5698,
+                    "popular": False
+                },
+                {
+                    "name": "Bonner Platz",
+                    "lat": 48.1651,
+                    "lon": 11.5751,
+                    "popular": False
+                },
+                {
+                    "name": "Muenchner Freiheit",
+                    "lat": 48.1618,
+                    "lon": 11.5854,
+                    "popular": True
+                },
+                {
+                    "name": "Giselastr.",
+                    "lat": 48.1556,
+                    "lon": 11.5856,
+                    "popular": False
+                },
+                {
+                    "name": "Universitaet",
+                    "lat": 48.1501,
+                    "lon": 11.5809,
+                    "popular": True
+                },
+                {
+                    "name": "Odeonsplatz",
+                    "lat": 48.1427,
+                    "lon": 11.5773,
+                    "popular": True
+                },
+                {
+                    "name": "Marienplatz",
+                    "lat": 48.1372,
+                    "lon": 11.5755,
+                    "popular": True
+                },
+                {
+                    "name": "Sendlinger Tor",
+                    "lat": 48.1341,
+                    "lon": 11.5676,
+                    "popular": True
+                },
+                {
+                    "name": "Goetheplatz",
+                    "lat": 48.1296,
+                    "lon": 11.5602,
+                    "popular": False
+                },
+                {
+                    "name": "Implerstr.",
+                    "lat": 48.1209,
+                    "lon": 11.5556,
+                    "popular": False
+                },
+                {
+                    "name": "Fuerstenried West",
+                    "lat": 48.0955,
+                    "lon": 11.4764,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u4": {
+            "name": "U-Bahn U4",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Westendstr.",
+                    "lat": 48.1437,
+                    "lon": 11.5216,
+                    "popular": False
+                },
+                {
+                    "name": "Heimeranplatz",
+                    "lat": 48.1337,
+                    "lon": 11.5322,
+                    "popular": False
+                },
+                {
+                    "name": "Schwanthalerhoehe",
+                    "lat": 48.1351,
+                    "lon": 11.5459,
+                    "popular": False
+                },
+                {
+                    "name": "Theresienwiese",
+                    "lat": 48.1323,
+                    "lon": 11.5498,
+                    "popular": True
+                },
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 48.1403,
+                    "lon": 11.5583,
+                    "popular": True
+                },
+                {
+                    "name": "Karlsplatz (Stachus)",
+                    "lat": 48.1399,
+                    "lon": 11.566,
+                    "popular": True
+                },
+                {
+                    "name": "Odeonsplatz",
+                    "lat": 48.1427,
+                    "lon": 11.5773,
+                    "popular": True
+                },
+                {
+                    "name": "Lehel",
+                    "lat": 48.142,
+                    "lon": 11.5869,
+                    "popular": False
+                },
+                {
+                    "name": "Max-Weber-Platz",
+                    "lat": 48.1365,
+                    "lon": 11.5983,
+                    "popular": True
+                },
+                {
+                    "name": "Prinzregentenplatz",
+                    "lat": 48.1385,
+                    "lon": 11.6064,
+                    "popular": False
+                },
+                {
+                    "name": "Arabellapark",
+                    "lat": 48.1549,
+                    "lon": 11.6238,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u5": {
+            "name": "U-Bahn U5",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Laimer Platz",
+                    "lat": 48.1382,
+                    "lon": 11.4977,
+                    "popular": False
+                },
+                {
+                    "name": "Westendstr.",
+                    "lat": 48.1437,
+                    "lon": 11.5216,
+                    "popular": False
+                },
+                {
+                    "name": "Heimeranplatz",
+                    "lat": 48.1337,
+                    "lon": 11.5322,
+                    "popular": False
+                },
+                {
+                    "name": "Schwanthalerhoehe",
+                    "lat": 48.1351,
+                    "lon": 11.5459,
+                    "popular": False
+                },
+                {
+                    "name": "Theresienwiese",
+                    "lat": 48.1323,
+                    "lon": 11.5498,
+                    "popular": True
+                },
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 48.1403,
+                    "lon": 11.5583,
+                    "popular": True
+                },
+                {
+                    "name": "Karlsplatz (Stachus)",
+                    "lat": 48.1399,
+                    "lon": 11.566,
+                    "popular": True
+                },
+                {
+                    "name": "Odeonsplatz",
+                    "lat": 48.1427,
+                    "lon": 11.5773,
+                    "popular": True
+                },
+                {
+                    "name": "Lehel",
+                    "lat": 48.142,
+                    "lon": 11.5869,
+                    "popular": False
+                },
+                {
+                    "name": "Max-Weber-Platz",
+                    "lat": 48.1365,
+                    "lon": 11.5983,
+                    "popular": False
+                },
+                {
+                    "name": "Ostbahnhof",
+                    "lat": 48.1272,
+                    "lon": 11.6049,
+                    "popular": True
+                },
+                {
+                    "name": "Innsbrucker Ring",
+                    "lat": 48.1198,
+                    "lon": 11.6074,
+                    "popular": False
+                },
+                {
+                    "name": "Neuperlach Zentrum",
+                    "lat": 48.0987,
+                    "lon": 11.6416,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u6": {
+            "name": "U-Bahn U6",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Garching-Forschungszentrum",
+                    "lat": 48.2651,
+                    "lon": 11.6716,
+                    "popular": False
+                },
+                {
+                    "name": "Garching",
+                    "lat": 48.2489,
+                    "lon": 11.6513,
+                    "popular": True
+                },
+                {
+                    "name": "Garching-Hochbrueck",
+                    "lat": 48.2356,
+                    "lon": 11.6388,
+                    "popular": False
+                },
+                {
+                    "name": "Froettmaning",
+                    "lat": 48.2196,
+                    "lon": 11.6244,
+                    "popular": True
+                },
+                {
+                    "name": "Kieferngarten",
+                    "lat": 48.2058,
+                    "lon": 11.6148,
+                    "popular": False
+                },
+                {
+                    "name": "Nordfriedhof",
+                    "lat": 48.1697,
+                    "lon": 11.5941,
+                    "popular": False
+                },
+                {
+                    "name": "Muenchner Freiheit",
+                    "lat": 48.1618,
+                    "lon": 11.5854,
+                    "popular": True
+                },
+                {
+                    "name": "Giselastr.",
+                    "lat": 48.1556,
+                    "lon": 11.5856,
+                    "popular": False
+                },
+                {
+                    "name": "Universitaet",
+                    "lat": 48.1501,
+                    "lon": 11.5809,
+                    "popular": False
+                },
+                {
+                    "name": "Odeonsplatz",
+                    "lat": 48.1427,
+                    "lon": 11.5773,
+                    "popular": True
+                },
+                {
+                    "name": "Marienplatz",
+                    "lat": 48.1372,
+                    "lon": 11.5755,
+                    "popular": True
+                },
+                {
+                    "name": "Sendlinger Tor",
+                    "lat": 48.1341,
+                    "lon": 11.5676,
+                    "popular": True
+                },
+                {
+                    "name": "Goetheplatz",
+                    "lat": 48.1296,
+                    "lon": 11.5602,
+                    "popular": False
+                },
+                {
+                    "name": "Implerstr.",
+                    "lat": 48.1209,
+                    "lon": 11.5556,
+                    "popular": False
+                },
+                {
+                    "name": "Harras",
+                    "lat": 48.1139,
+                    "lon": 11.5397,
+                    "popular": True
+                }
+            ]
+        },
+        "sbahn_munich": {
+            "name": "S-Bahn Stammstrecke",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Pasing",
+                    "lat": 48.1503,
+                    "lon": 11.4616,
+                    "popular": True
+                },
+                {
+                    "name": "Laim",
+                    "lat": 48.1434,
+                    "lon": 11.4903,
+                    "popular": False
+                },
+                {
+                    "name": "Hirschgarten",
+                    "lat": 48.142,
+                    "lon": 11.5052,
+                    "popular": False
+                },
+                {
+                    "name": "Donnersbergerbruecke",
+                    "lat": 48.1423,
+                    "lon": 11.5356,
+                    "popular": False
+                },
+                {
+                    "name": "Hackerbruecke",
+                    "lat": 48.1428,
+                    "lon": 11.5481,
+                    "popular": True
+                },
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 48.1403,
+                    "lon": 11.5583,
+                    "popular": True
+                },
+                {
+                    "name": "Karlsplatz (Stachus)",
+                    "lat": 48.1399,
+                    "lon": 11.566,
+                    "popular": True
+                },
+                {
+                    "name": "Marienplatz",
+                    "lat": 48.1372,
+                    "lon": 11.5755,
+                    "popular": True
+                },
+                {
+                    "name": "Isartor",
+                    "lat": 48.1336,
+                    "lon": 11.5828,
+                    "popular": True
+                },
+                {
+                    "name": "Rosenheimer Platz",
+                    "lat": 48.128,
+                    "lon": 11.5932,
+                    "popular": False
+                },
+                {
+                    "name": "Ostbahnhof",
+                    "lat": 48.1272,
+                    "lon": 11.6049,
+                    "popular": True
+                },
+                {
+                    "name": "Leuchtenbergring",
+                    "lat": 48.1272,
+                    "lon": 11.6193,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "hamburg": {
+        "ubahn_u1": {
+            "name": "U-Bahn U1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Norderstedt Mitte",
+                    "lat": 53.6853,
+                    "lon": 9.9865,
+                    "popular": False
+                },
+                {
+                    "name": "Garstedt",
+                    "lat": 53.6701,
+                    "lon": 9.981,
+                    "popular": False
+                },
+                {
+                    "name": "Ochsenzoll",
+                    "lat": 53.662,
+                    "lon": 9.9825,
+                    "popular": False
+                },
+                {
+                    "name": "Kellinghusenstr.",
+                    "lat": 53.5919,
+                    "lon": 9.9893,
+                    "popular": False
+                },
+                {
+                    "name": "Hallerstr.",
+                    "lat": 53.5843,
+                    "lon": 9.99,
+                    "popular": False
+                },
+                {
+                    "name": "Stephansplatz",
+                    "lat": 53.56,
+                    "lon": 9.99,
+                    "popular": True
+                },
+                {
+                    "name": "Jungfernstieg",
+                    "lat": 53.552,
+                    "lon": 9.9933,
+                    "popular": True
+                },
+                {
+                    "name": "Meßberg",
+                    "lat": 53.549,
+                    "lon": 10.0042,
+                    "popular": False
+                },
+                {
+                    "name": "Steinstr.",
+                    "lat": 53.5474,
+                    "lon": 10.0075,
+                    "popular": False
+                },
+                {
+                    "name": "Hauptbahnhof Sued",
+                    "lat": 53.552,
+                    "lon": 10.007,
+                    "popular": True
+                },
+                {
+                    "name": "Lohmuhlenstr.",
+                    "lat": 53.5533,
+                    "lon": 10.0233,
+                    "popular": False
+                },
+                {
+                    "name": "Luebecker Str.",
+                    "lat": 53.5561,
+                    "lon": 10.031,
+                    "popular": False
+                },
+                {
+                    "name": "Wandsbek Markt",
+                    "lat": 53.572,
+                    "lon": 10.0678,
+                    "popular": True
+                },
+                {
+                    "name": "Farmsen",
+                    "lat": 53.604,
+                    "lon": 10.1198,
+                    "popular": False
+                },
+                {
+                    "name": "Volksdorf",
+                    "lat": 53.65,
+                    "lon": 10.1708,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u3": {
+            "name": "U-Bahn U3",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Barmbek",
+                    "lat": 53.5874,
+                    "lon": 10.044,
+                    "popular": True
+                },
+                {
+                    "name": "Dehnhaide",
+                    "lat": 53.5801,
+                    "lon": 10.0445,
+                    "popular": False
+                },
+                {
+                    "name": "Muendsburger Damm",
+                    "lat": 53.5718,
+                    "lon": 10.0294,
+                    "popular": False
+                },
+                {
+                    "name": "Uhlandstr.",
+                    "lat": 53.568,
+                    "lon": 10.0209,
+                    "popular": False
+                },
+                {
+                    "name": "Hamburger Str.",
+                    "lat": 53.5637,
+                    "lon": 10.0222,
+                    "popular": False
+                },
+                {
+                    "name": "Hauptbahnhof Nord",
+                    "lat": 53.5536,
+                    "lon": 10.0082,
+                    "popular": True
+                },
+                {
+                    "name": "Moenckebergstr.",
+                    "lat": 53.5515,
+                    "lon": 10.0051,
+                    "popular": True
+                },
+                {
+                    "name": "Rathaus",
+                    "lat": 53.55,
+                    "lon": 9.9926,
+                    "popular": True
+                },
+                {
+                    "name": "Roedingsmarkt",
+                    "lat": 53.5463,
+                    "lon": 9.9879,
+                    "popular": False
+                },
+                {
+                    "name": "Baumwall",
+                    "lat": 53.5457,
+                    "lon": 9.9823,
+                    "popular": True
+                },
+                {
+                    "name": "Landungsbruecken",
+                    "lat": 53.5456,
+                    "lon": 9.9695,
+                    "popular": True
+                },
+                {
+                    "name": "St. Pauli",
+                    "lat": 53.5524,
+                    "lon": 9.9657,
+                    "popular": True
+                },
+                {
+                    "name": "Feldstr.",
+                    "lat": 53.557,
+                    "lon": 9.97,
+                    "popular": False
+                },
+                {
+                    "name": "Sternschanze",
+                    "lat": 53.5635,
+                    "lon": 9.9661,
+                    "popular": True
+                },
+                {
+                    "name": "Schlump",
+                    "lat": 53.5678,
+                    "lon": 9.9706,
+                    "popular": False
+                }
+            ]
+        },
+        "sbahn_hamburg": {
+            "name": "S-Bahn Hamburg",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Altona",
+                    "lat": 53.5528,
+                    "lon": 9.9355,
+                    "popular": True
+                },
+                {
+                    "name": "Koenigsstr.",
+                    "lat": 53.5528,
+                    "lon": 9.9454,
+                    "popular": False
+                },
+                {
+                    "name": "Reeperbahn",
+                    "lat": 53.5498,
+                    "lon": 9.9594,
+                    "popular": True
+                },
+                {
+                    "name": "Landungsbruecken",
+                    "lat": 53.5456,
+                    "lon": 9.9695,
+                    "popular": True
+                },
+                {
+                    "name": "Stadthausbruecke",
+                    "lat": 53.5478,
+                    "lon": 9.9852,
+                    "popular": False
+                },
+                {
+                    "name": "Jungfernstieg",
+                    "lat": 53.552,
+                    "lon": 9.9933,
+                    "popular": True
+                },
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 53.553,
+                    "lon": 10.0069,
+                    "popular": True
+                },
+                {
+                    "name": "Berliner Tor",
+                    "lat": 53.553,
+                    "lon": 10.0232,
+                    "popular": False
+                },
+                {
+                    "name": "Dammtor",
+                    "lat": 53.5607,
+                    "lon": 9.9896,
+                    "popular": True
+                },
+                {
+                    "name": "Sternschanze",
+                    "lat": 53.5635,
+                    "lon": 9.9661,
+                    "popular": True
+                },
+                {
+                    "name": "Holstenstr.",
+                    "lat": 53.5589,
+                    "lon": 9.9506,
+                    "popular": False
+                },
+                {
+                    "name": "Harburg",
+                    "lat": 53.456,
+                    "lon": 9.992,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "frankfurt": {
+        "ubahn_u4": {
+            "name": "U-Bahn U4",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Bockenheimer Warte",
+                    "lat": 50.1183,
+                    "lon": 8.6733,
+                    "popular": True
+                },
+                {
+                    "name": "Festhalle/Messe",
+                    "lat": 50.1121,
+                    "lon": 8.6529,
+                    "popular": True
+                },
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 50.1072,
+                    "lon": 8.6637,
+                    "popular": True
+                },
+                {
+                    "name": "Willy-Brandt-Platz",
+                    "lat": 50.1086,
+                    "lon": 8.6732,
+                    "popular": True
+                },
+                {
+                    "name": "Dom/Roemer",
+                    "lat": 50.111,
+                    "lon": 8.684,
+                    "popular": True
+                },
+                {
+                    "name": "Konstablerwache",
+                    "lat": 50.1142,
+                    "lon": 8.6916,
+                    "popular": True
+                },
+                {
+                    "name": "Merianplatz",
+                    "lat": 50.1188,
+                    "lon": 8.695,
+                    "popular": False
+                },
+                {
+                    "name": "Hoehenstrase",
+                    "lat": 50.1239,
+                    "lon": 8.6976,
+                    "popular": False
+                },
+                {
+                    "name": "Bornheim Mitte",
+                    "lat": 50.1276,
+                    "lon": 8.7015,
+                    "popular": False
+                },
+                {
+                    "name": "Seckbacher Landstr.",
+                    "lat": 50.1328,
+                    "lon": 8.7164,
+                    "popular": False
+                },
+                {
+                    "name": "Schaeﬀlestr./Enkheim",
+                    "lat": 50.1378,
+                    "lon": 8.747,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u5": {
+            "name": "U-Bahn U5",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 50.1072,
+                    "lon": 8.6637,
+                    "popular": True
+                },
+                {
+                    "name": "Konstablerwache",
+                    "lat": 50.1142,
+                    "lon": 8.6916,
+                    "popular": True
+                },
+                {
+                    "name": "Musterschule",
+                    "lat": 50.1194,
+                    "lon": 8.6874,
+                    "popular": False
+                },
+                {
+                    "name": "Gluaburgstr.",
+                    "lat": 50.1248,
+                    "lon": 8.6818,
+                    "popular": False
+                },
+                {
+                    "name": "Marbachweg/Sozialzentrum",
+                    "lat": 50.1362,
+                    "lon": 8.677,
+                    "popular": False
+                },
+                {
+                    "name": "Gießener Str.",
+                    "lat": 50.1428,
+                    "lon": 8.6752,
+                    "popular": False
+                },
+                {
+                    "name": "Theobald-Ziegler-Str.",
+                    "lat": 50.1493,
+                    "lon": 8.6711,
+                    "popular": False
+                },
+                {
+                    "name": "Preungesheim",
+                    "lat": 50.1546,
+                    "lon": 8.6972,
+                    "popular": False
+                }
+            ]
+        },
+        "sbahn_frankfurt": {
+            "name": "S-Bahn Frankfurt",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 50.1072,
+                    "lon": 8.6637,
+                    "popular": True
+                },
+                {
+                    "name": "Taunusanlage",
+                    "lat": 50.1121,
+                    "lon": 8.67,
+                    "popular": True
+                },
+                {
+                    "name": "Hauptwache",
+                    "lat": 50.1142,
+                    "lon": 8.6789,
+                    "popular": True
+                },
+                {
+                    "name": "Konstablerwache",
+                    "lat": 50.1142,
+                    "lon": 8.6916,
+                    "popular": True
+                },
+                {
+                    "name": "Ostendstr.",
+                    "lat": 50.1118,
+                    "lon": 8.7031,
+                    "popular": False
+                },
+                {
+                    "name": "Galluswarte",
+                    "lat": 50.1052,
+                    "lon": 8.6437,
+                    "popular": False
+                },
+                {
+                    "name": "Frankfurt Sued",
+                    "lat": 50.0999,
+                    "lon": 8.6867,
+                    "popular": True
+                },
+                {
+                    "name": "Lokalbahnhof",
+                    "lat": 50.1022,
+                    "lon": 8.69,
+                    "popular": False
+                },
+                {
+                    "name": "Frankfurt Flughafen",
+                    "lat": 50.0519,
+                    "lon": 8.5706,
+                    "popular": True
+                },
+                {
+                    "name": "Offenbach Ost",
+                    "lat": 50.0997,
+                    "lon": 8.7712,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "cologne": {
+        "stadtbahn_1": {
+            "name": "Stadtbahn Line 1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Weiden West",
+                    "lat": 50.9404,
+                    "lon": 6.8404,
+                    "popular": False
+                },
+                {
+                    "name": "Koernerstr.",
+                    "lat": 50.9398,
+                    "lon": 6.858,
+                    "popular": False
+                },
+                {
+                    "name": "Rudolfplatz",
+                    "lat": 50.9363,
+                    "lon": 6.9369,
+                    "popular": True
+                },
+                {
+                    "name": "Neumarkt",
+                    "lat": 50.9353,
+                    "lon": 6.9478,
+                    "popular": True
+                },
+                {
+                    "name": "Heumarkt",
+                    "lat": 50.9347,
+                    "lon": 6.9607,
+                    "popular": True
+                },
+                {
+                    "name": "Deutzer Freiheit",
+                    "lat": 50.9339,
+                    "lon": 6.9752,
+                    "popular": False
+                },
+                {
+                    "name": "Koeln Hbf/Dom",
+                    "lat": 50.943,
+                    "lon": 6.9585,
+                    "popular": True
+                },
+                {
+                    "name": "Breslauer Platz/Hbf",
+                    "lat": 50.9452,
+                    "lon": 6.9605,
+                    "popular": True
+                },
+                {
+                    "name": "Ebertplatz",
+                    "lat": 50.9512,
+                    "lon": 6.9563,
+                    "popular": False
+                },
+                {
+                    "name": "Reichenspergerplatz",
+                    "lat": 50.9558,
+                    "lon": 6.9581,
+                    "popular": False
+                },
+                {
+                    "name": "Stegerwaldsiedlung",
+                    "lat": 50.9805,
+                    "lon": 6.9498,
+                    "popular": False
+                },
+                {
+                    "name": "Bensberg",
+                    "lat": 50.9654,
+                    "lon": 7.1546,
+                    "popular": False
+                }
+            ]
+        },
+        "stadtbahn_9": {
+            "name": "Stadtbahn Line 9",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Suelz Hermeskeiler Platz",
+                    "lat": 50.9184,
+                    "lon": 6.9221,
+                    "popular": False
+                },
+                {
+                    "name": "Universitaetsstr.",
+                    "lat": 50.9266,
+                    "lon": 6.9301,
+                    "popular": True
+                },
+                {
+                    "name": "Neumarkt",
+                    "lat": 50.9353,
+                    "lon": 6.9478,
+                    "popular": True
+                },
+                {
+                    "name": "Heumarkt",
+                    "lat": 50.9347,
+                    "lon": 6.9607,
+                    "popular": True
+                },
+                {
+                    "name": "Deutz/Messe",
+                    "lat": 50.941,
+                    "lon": 6.975,
+                    "popular": True
+                },
+                {
+                    "name": "Deutz/LANXESS arena",
+                    "lat": 50.9382,
+                    "lon": 6.9771,
+                    "popular": False
+                },
+                {
+                    "name": "Koeln-Muelheim",
+                    "lat": 50.9565,
+                    "lon": 6.998,
+                    "popular": False
+                },
+                {
+                    "name": "Wiener Platz",
+                    "lat": 50.957,
+                    "lon": 6.9956,
+                    "popular": False
+                },
+                {
+                    "name": "Koenigsforst",
+                    "lat": 50.943,
+                    "lon": 7.087,
+                    "popular": False
+                }
+            ]
+        },
+        "sbahn_cologne": {
+            "name": "S-Bahn Koeln",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Koeln Hbf",
+                    "lat": 50.943,
+                    "lon": 6.9585,
+                    "popular": True
+                },
+                {
+                    "name": "Koeln Messe/Deutz",
+                    "lat": 50.941,
+                    "lon": 6.975,
+                    "popular": True
+                },
+                {
+                    "name": "Koeln-Ehrenfeld",
+                    "lat": 50.9457,
+                    "lon": 6.9163,
+                    "popular": True
+                },
+                {
+                    "name": "Koeln-Nippes",
+                    "lat": 50.9622,
+                    "lon": 6.9498,
+                    "popular": False
+                },
+                {
+                    "name": "Koeln-Chorweiler",
+                    "lat": 51.0189,
+                    "lon": 6.9018,
+                    "popular": False
+                },
+                {
+                    "name": "Koeln Sued",
+                    "lat": 50.9206,
+                    "lon": 6.9668,
+                    "popular": False
+                },
+                {
+                    "name": "Koeln-Porz",
+                    "lat": 50.89,
+                    "lon": 7.0557,
+                    "popular": False
+                },
+                {
+                    "name": "Koeln/Bonn Flughafen",
+                    "lat": 50.8789,
+                    "lon": 7.121,
+                    "popular": True
+                },
+                {
+                    "name": "Koeln West",
+                    "lat": 50.9425,
+                    "lon": 6.9289,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "dusseldorf": {
+        "ubahn_dusseldorf": {
+            "name": "Stadtbahn Duesseldorf",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Duesseldorf Hbf",
+                    "lat": 51.22,
+                    "lon": 6.7942,
+                    "popular": True
+                },
+                {
+                    "name": "Heinrich-Heine-Allee",
+                    "lat": 51.2261,
+                    "lon": 6.7763,
+                    "popular": True
+                },
+                {
+                    "name": "Schadowstr.",
+                    "lat": 51.2288,
+                    "lon": 6.7838,
+                    "popular": True
+                },
+                {
+                    "name": "Oststr.",
+                    "lat": 51.223,
+                    "lon": 6.7922,
+                    "popular": False
+                },
+                {
+                    "name": "Tonhallenstr.",
+                    "lat": 51.2341,
+                    "lon": 6.7751,
+                    "popular": False
+                },
+                {
+                    "name": "Nordstr.",
+                    "lat": 51.2363,
+                    "lon": 6.7805,
+                    "popular": False
+                },
+                {
+                    "name": "Steinstr./Koenigsallee",
+                    "lat": 51.2196,
+                    "lon": 6.7821,
+                    "popular": True
+                },
+                {
+                    "name": "Benrather Str.",
+                    "lat": 51.2162,
+                    "lon": 6.7788,
+                    "popular": False
+                },
+                {
+                    "name": "Kirchplatz",
+                    "lat": 51.2203,
+                    "lon": 6.7658,
+                    "popular": False
+                },
+                {
+                    "name": "Bilk S",
+                    "lat": 51.2099,
+                    "lon": 6.7725,
+                    "popular": True
+                },
+                {
+                    "name": "Oberbilker Markt",
+                    "lat": 51.2116,
+                    "lon": 6.7933,
+                    "popular": False
+                },
+                {
+                    "name": "Duesseldorf Flughafen",
+                    "lat": 51.2536,
+                    "lon": 6.7668,
+                    "popular": True
+                }
+            ]
+        }
+    },
+    "stuttgart": {
+        "sbahn_stuttgart": {
+            "name": "S-Bahn Stuttgart",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Stuttgart Hbf",
+                    "lat": 48.7845,
+                    "lon": 9.1816,
+                    "popular": True
+                },
+                {
+                    "name": "Stadtmitte",
+                    "lat": 48.7773,
+                    "lon": 9.1729,
+                    "popular": True
+                },
+                {
+                    "name": "Feuersee",
+                    "lat": 48.7746,
+                    "lon": 9.1681,
+                    "popular": True
+                },
+                {
+                    "name": "Schwabstr.",
+                    "lat": 48.7724,
+                    "lon": 9.1574,
+                    "popular": False
+                },
+                {
+                    "name": "Vaihingen",
+                    "lat": 48.743,
+                    "lon": 9.1578,
+                    "popular": True
+                },
+                {
+                    "name": "Universitaet",
+                    "lat": 48.746,
+                    "lon": 9.1078,
+                    "popular": False
+                },
+                {
+                    "name": "Oesterfeld",
+                    "lat": 48.7401,
+                    "lon": 9.0977,
+                    "popular": False
+                },
+                {
+                    "name": "Bad Cannstatt",
+                    "lat": 48.8003,
+                    "lon": 9.209,
+                    "popular": True
+                },
+                {
+                    "name": "Fellbach",
+                    "lat": 48.8101,
+                    "lon": 9.276,
+                    "popular": False
+                },
+                {
+                    "name": "Stuttgart Flughafen/Messe",
+                    "lat": 48.6899,
+                    "lon": 9.2219,
+                    "popular": True
+                },
+                {
+                    "name": "Esslingen",
+                    "lat": 48.7388,
+                    "lon": 9.3108,
+                    "popular": False
+                },
+                {
+                    "name": "Ludwigsburg",
+                    "lat": 48.8931,
+                    "lon": 9.186,
+                    "popular": False
+                }
+            ]
+        },
+        "stadtbahn_stuttgart": {
+            "name": "Stadtbahn Stuttgart",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Hauptbahnhof (Arnulf-Klett-Platz)",
+                    "lat": 48.7845,
+                    "lon": 9.1816,
+                    "popular": True
+                },
+                {
+                    "name": "Charlottenplatz",
+                    "lat": 48.775,
+                    "lon": 9.1821,
+                    "popular": True
+                },
+                {
+                    "name": "Oesterreichischer Platz",
+                    "lat": 48.771,
+                    "lon": 9.1768,
+                    "popular": False
+                },
+                {
+                    "name": "Marienplatz",
+                    "lat": 48.7673,
+                    "lon": 9.1723,
+                    "popular": True
+                },
+                {
+                    "name": "Erwin-Schoettle-Platz",
+                    "lat": 48.7567,
+                    "lon": 9.1704,
+                    "popular": False
+                },
+                {
+                    "name": "Degerloch",
+                    "lat": 48.7491,
+                    "lon": 9.171,
+                    "popular": False
+                },
+                {
+                    "name": "Rathaus",
+                    "lat": 48.7789,
+                    "lon": 9.1793,
+                    "popular": True
+                },
+                {
+                    "name": "Schlossplatz",
+                    "lat": 48.7789,
+                    "lon": 9.1774,
+                    "popular": True
+                },
+                {
+                    "name": "Berliner Platz (Liederhalle)",
+                    "lat": 48.775,
+                    "lon": 9.1668,
+                    "popular": False
+                },
+                {
+                    "name": "Mineralbäder",
+                    "lat": 48.7937,
+                    "lon": 9.2019,
+                    "popular": False
+                },
+                {
+                    "name": "Pragsattel",
+                    "lat": 48.8044,
+                    "lon": 9.1806,
+                    "popular": False
+                },
+                {
+                    "name": "Wilhelma",
+                    "lat": 48.8048,
+                    "lon": 9.2065,
+                    "popular": True
+                }
+            ]
+        }
+    },
+    "nuremberg": {
+        "ubahn_u1": {
+            "name": "U-Bahn U1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Fuerth Hardhöhe",
+                    "lat": 49.4681,
+                    "lon": 10.9582,
+                    "popular": False
+                },
+                {
+                    "name": "Fuerth Stadthalle",
+                    "lat": 49.47,
+                    "lon": 10.9716,
+                    "popular": False
+                },
+                {
+                    "name": "Fuerth Hauptbahnhof",
+                    "lat": 49.4733,
+                    "lon": 10.9895,
+                    "popular": True
+                },
+                {
+                    "name": "Stadtgrenze",
+                    "lat": 49.4742,
+                    "lon": 11.0019,
+                    "popular": False
+                },
+                {
+                    "name": "Eberhardshof",
+                    "lat": 49.4568,
+                    "lon": 11.0271,
+                    "popular": False
+                },
+                {
+                    "name": "Gostenhof",
+                    "lat": 49.4524,
+                    "lon": 11.0499,
+                    "popular": False
+                },
+                {
+                    "name": "Plärrer",
+                    "lat": 49.4492,
+                    "lon": 11.0614,
+                    "popular": True
+                },
+                {
+                    "name": "Weißer Turm",
+                    "lat": 49.4486,
+                    "lon": 11.0723,
+                    "popular": True
+                },
+                {
+                    "name": "Lorenzkirche",
+                    "lat": 49.4512,
+                    "lon": 11.0783,
+                    "popular": True
+                },
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 49.4462,
+                    "lon": 11.0824,
+                    "popular": True
+                },
+                {
+                    "name": "Maffeiplatz",
+                    "lat": 49.4434,
+                    "lon": 11.0925,
+                    "popular": False
+                },
+                {
+                    "name": "Aufseßplatz",
+                    "lat": 49.4395,
+                    "lon": 11.0863,
+                    "popular": False
+                },
+                {
+                    "name": "Langwasser Sued",
+                    "lat": 49.4048,
+                    "lon": 11.0896,
+                    "popular": False
+                }
+            ]
+        },
+        "ubahn_u2": {
+            "name": "U-Bahn U2",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Röthenbach",
+                    "lat": 49.4276,
+                    "lon": 11.0305,
+                    "popular": False
+                },
+                {
+                    "name": "Hohe Marter",
+                    "lat": 49.4312,
+                    "lon": 11.0394,
+                    "popular": False
+                },
+                {
+                    "name": "Schweinau",
+                    "lat": 49.4358,
+                    "lon": 11.0461,
+                    "popular": False
+                },
+                {
+                    "name": "St. Leonhard",
+                    "lat": 49.4399,
+                    "lon": 11.0553,
+                    "popular": False
+                },
+                {
+                    "name": "Plärrer",
+                    "lat": 49.4492,
+                    "lon": 11.0614,
+                    "popular": True
+                },
+                {
+                    "name": "Opernhaus",
+                    "lat": 49.453,
+                    "lon": 11.075,
+                    "popular": True
+                },
+                {
+                    "name": "Hauptbahnhof",
+                    "lat": 49.4462,
+                    "lon": 11.0824,
+                    "popular": True
+                },
+                {
+                    "name": "Wöhrder Wiese",
+                    "lat": 49.4538,
+                    "lon": 11.09,
+                    "popular": False
+                },
+                {
+                    "name": "Friedrich-Ebert-Platz",
+                    "lat": 49.4622,
+                    "lon": 11.0846,
+                    "popular": False
+                },
+                {
+                    "name": "Nordwestring",
+                    "lat": 49.4688,
+                    "lon": 11.0778,
+                    "popular": False
+                },
+                {
+                    "name": "Schoppershof",
+                    "lat": 49.4745,
+                    "lon": 11.0874,
+                    "popular": False
+                },
+                {
+                    "name": "Ziegelstein",
+                    "lat": 49.4802,
+                    "lon": 11.1011,
+                    "popular": False
+                },
+                {
+                    "name": "Flughafen",
+                    "lat": 49.4949,
+                    "lon": 11.077,
+                    "popular": True
+                }
+            ]
+        }
+    },
+    "madrid": {
+        "metro_1": {
+            "name": "Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Sol",
+                    "lat": 40.4169,
+                    "lon": -3.7035,
+                    "popular": True
+                },
+                {
+                    "name": "Gran Vía",
+                    "lat": 40.42,
+                    "lon": -3.7015,
+                    "popular": True
+                },
+                {
+                    "name": "Atocha Renfe",
+                    "lat": 40.4065,
+                    "lon": -3.693,
+                    "popular": True
+                },
+                {
+                    "name": "Chamartín",
+                    "lat": 40.4722,
+                    "lon": -3.6826,
+                    "popular": True
+                },
+                {
+                    "name": "Tribunal",
+                    "lat": 40.4267,
+                    "lon": -3.7008,
+                    "popular": True
+                },
+                {
+                    "name": "Bilbao",
+                    "lat": 40.429,
+                    "lon": -3.7025,
+                    "popular": False
+                },
+                {
+                    "name": "Iglesia",
+                    "lat": 40.4325,
+                    "lon": -3.6998,
+                    "popular": False
+                },
+                {
+                    "name": "Tetuán",
+                    "lat": 40.4601,
+                    "lon": -3.696,
+                    "popular": False
+                },
+                {
+                    "name": "Plaza de Castilla",
+                    "lat": 40.4662,
+                    "lon": -3.6888,
+                    "popular": True
+                },
+                {
+                    "name": "Valdecarros",
+                    "lat": 40.346,
+                    "lon": -3.6615,
+                    "popular": False
+                },
+                {
+                    "name": "Buenos Aires",
+                    "lat": 40.3819,
+                    "lon": -3.669,
+                    "popular": False
+                },
+                {
+                    "name": "Pacífico",
+                    "lat": 40.401,
+                    "lon": -3.686,
+                    "popular": False
+                },
+                {
+                    "name": "Menéndez Pelayo",
+                    "lat": 40.4065,
+                    "lon": -3.685,
+                    "popular": False
+                },
+                {
+                    "name": "Estrecho",
+                    "lat": 40.4497,
+                    "lon": -3.6983,
+                    "popular": False
+                },
+                {
+                    "name": "Pinar de Chamartín",
+                    "lat": 40.481,
+                    "lon": -3.6772,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_2": {
+            "name": "Metro Line 2",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Sol",
+                    "lat": 40.4169,
+                    "lon": -3.7035,
+                    "popular": True
+                },
+                {
+                    "name": "Ópera",
+                    "lat": 40.4178,
+                    "lon": -3.7083,
+                    "popular": True
+                },
+                {
+                    "name": "Retiro",
+                    "lat": 40.4208,
+                    "lon": -3.6844,
+                    "popular": True
+                },
+                {
+                    "name": "Sevilla",
+                    "lat": 40.4195,
+                    "lon": -3.6973,
+                    "popular": True
+                },
+                {
+                    "name": "Banco de España",
+                    "lat": 40.42,
+                    "lon": -3.693,
+                    "popular": True
+                },
+                {
+                    "name": "Santo Domingo",
+                    "lat": 40.421,
+                    "lon": -3.7085,
+                    "popular": False
+                },
+                {
+                    "name": "Noviciado",
+                    "lat": 40.426,
+                    "lon": -3.71,
+                    "popular": False
+                },
+                {
+                    "name": "Ventura Rodríguez",
+                    "lat": 40.426,
+                    "lon": -3.7145,
+                    "popular": False
+                },
+                {
+                    "name": "Príncipe Pío",
+                    "lat": 40.419,
+                    "lon": -3.72,
+                    "popular": True
+                },
+                {
+                    "name": "Las Rosas",
+                    "lat": 40.431,
+                    "lon": -3.61,
+                    "popular": False
+                },
+                {
+                    "name": "Goya",
+                    "lat": 40.422,
+                    "lon": -3.6785,
+                    "popular": True
+                },
+                {
+                    "name": "Cuatro Caminos",
+                    "lat": 40.4468,
+                    "lon": -3.7065,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_3": {
+            "name": "Metro Line 3",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Sol",
+                    "lat": 40.4169,
+                    "lon": -3.7035,
+                    "popular": True
+                },
+                {
+                    "name": "Callao",
+                    "lat": 40.4199,
+                    "lon": -3.7062,
+                    "popular": True
+                },
+                {
+                    "name": "Moncloa",
+                    "lat": 40.4351,
+                    "lon": -3.7193,
+                    "popular": True
+                },
+                {
+                    "name": "Plaza de España",
+                    "lat": 40.4237,
+                    "lon": -3.7123,
+                    "popular": True
+                },
+                {
+                    "name": "Ventas",
+                    "lat": 40.4316,
+                    "lon": -3.6632,
+                    "popular": False
+                },
+                {
+                    "name": "Argüelles",
+                    "lat": 40.4305,
+                    "lon": -3.7165,
+                    "popular": True
+                },
+                {
+                    "name": "Lavapiés",
+                    "lat": 40.4093,
+                    "lon": -3.701,
+                    "popular": True
+                },
+                {
+                    "name": "Embajadores",
+                    "lat": 40.4055,
+                    "lon": -3.701,
+                    "popular": False
+                },
+                {
+                    "name": "Legazpi",
+                    "lat": 40.391,
+                    "lon": -3.6945,
+                    "popular": False
+                },
+                {
+                    "name": "Villaverde Alto",
+                    "lat": 40.3475,
+                    "lon": -3.7135,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_5": {
+            "name": "Metro Line 5",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Gran Vía",
+                    "lat": 40.42,
+                    "lon": -3.7015,
+                    "popular": True
+                },
+                {
+                    "name": "Chueca",
+                    "lat": 40.4225,
+                    "lon": -3.6975,
+                    "popular": True
+                },
+                {
+                    "name": "Callao",
+                    "lat": 40.4199,
+                    "lon": -3.7062,
+                    "popular": True
+                },
+                {
+                    "name": "Ópera",
+                    "lat": 40.4178,
+                    "lon": -3.7083,
+                    "popular": True
+                },
+                {
+                    "name": "La Latina",
+                    "lat": 40.412,
+                    "lon": -3.7098,
+                    "popular": True
+                },
+                {
+                    "name": "Carabanchel",
+                    "lat": 40.387,
+                    "lon": -3.744,
+                    "popular": False
+                },
+                {
+                    "name": "Aluche",
+                    "lat": 40.386,
+                    "lon": -3.759,
+                    "popular": False
+                },
+                {
+                    "name": "Campamento",
+                    "lat": 40.3838,
+                    "lon": -3.771,
+                    "popular": False
+                },
+                {
+                    "name": "Alameda de Osuna",
+                    "lat": 40.453,
+                    "lon": -3.5887,
+                    "popular": False
+                },
+                {
+                    "name": "Canillejas",
+                    "lat": 40.444,
+                    "lon": -3.612,
+                    "popular": False
+                },
+                {
+                    "name": "El Carmen",
+                    "lat": 40.4395,
+                    "lon": -3.628,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_6": {
+            "name": "Metro Line 6 (Circular)",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Moncloa",
+                    "lat": 40.4351,
+                    "lon": -3.7193,
+                    "popular": True
+                },
+                {
+                    "name": "Príncipe Pío",
+                    "lat": 40.419,
+                    "lon": -3.72,
+                    "popular": True
+                },
+                {
+                    "name": "Méndez Álvaro",
+                    "lat": 40.3978,
+                    "lon": -3.686,
+                    "popular": True
+                },
+                {
+                    "name": "Pacífico",
+                    "lat": 40.401,
+                    "lon": -3.686,
+                    "popular": False
+                },
+                {
+                    "name": "Sainz de Baranda",
+                    "lat": 40.415,
+                    "lon": -3.6735,
+                    "popular": False
+                },
+                {
+                    "name": "O'Donnell",
+                    "lat": 40.425,
+                    "lon": -3.673,
+                    "popular": False
+                },
+                {
+                    "name": "Diego de León",
+                    "lat": 40.4365,
+                    "lon": -3.6776,
+                    "popular": False
+                },
+                {
+                    "name": "Avenida de América",
+                    "lat": 40.4395,
+                    "lon": -3.677,
+                    "popular": True
+                },
+                {
+                    "name": "Nuevos Ministerios",
+                    "lat": 40.446,
+                    "lon": -3.692,
+                    "popular": True
+                },
+                {
+                    "name": "Cuatro Caminos",
+                    "lat": 40.4468,
+                    "lon": -3.7065,
+                    "popular": False
+                },
+                {
+                    "name": "Guzmán el Bueno",
+                    "lat": 40.44,
+                    "lon": -3.7115,
+                    "popular": False
+                },
+                {
+                    "name": "Ciudad Universitaria",
+                    "lat": 40.443,
+                    "lon": -3.724,
+                    "popular": False
+                },
+                {
+                    "name": "Argüelles",
+                    "lat": 40.4305,
+                    "lon": -3.7165,
+                    "popular": False
+                },
+                {
+                    "name": "Conde de Casal",
+                    "lat": 40.4098,
+                    "lon": -3.679,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_8": {
+            "name": "Metro Line 8",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Nuevos Ministerios",
+                    "lat": 40.446,
+                    "lon": -3.692,
+                    "popular": True
+                },
+                {
+                    "name": "Aeropuerto T1-T2-T3",
+                    "lat": 40.468,
+                    "lon": -3.57,
+                    "popular": True
+                },
+                {
+                    "name": "Aeropuerto T4",
+                    "lat": 40.492,
+                    "lon": -3.592,
+                    "popular": True
+                },
+                {
+                    "name": "Colombia",
+                    "lat": 40.457,
+                    "lon": -3.677,
+                    "popular": False
+                },
+                {
+                    "name": "Pinar del Rey",
+                    "lat": 40.4695,
+                    "lon": -3.651,
+                    "popular": False
+                },
+                {
+                    "name": "Mar de Cristal",
+                    "lat": 40.472,
+                    "lon": -3.638,
+                    "popular": False
+                },
+                {
+                    "name": "Campo de las Naciones",
+                    "lat": 40.4615,
+                    "lon": -3.616,
+                    "popular": False
+                },
+                {
+                    "name": "Barajas",
+                    "lat": 40.4755,
+                    "lon": -3.58,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_10": {
+            "name": "Metro Line 10",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Tribunal",
+                    "lat": 40.4267,
+                    "lon": -3.7008,
+                    "popular": True
+                },
+                {
+                    "name": "Cuzco",
+                    "lat": 40.451,
+                    "lon": -3.6885,
+                    "popular": True
+                },
+                {
+                    "name": "Santiago Bernabéu",
+                    "lat": 40.453,
+                    "lon": -3.69,
+                    "popular": True
+                },
+                {
+                    "name": "Nuevos Ministerios",
+                    "lat": 40.446,
+                    "lon": -3.692,
+                    "popular": True
+                },
+                {
+                    "name": "Plaza de España",
+                    "lat": 40.4237,
+                    "lon": -3.7123,
+                    "popular": True
+                },
+                {
+                    "name": "Alonso Martínez",
+                    "lat": 40.4268,
+                    "lon": -3.696,
+                    "popular": True
+                },
+                {
+                    "name": "Gregorio Marañón",
+                    "lat": 40.439,
+                    "lon": -3.6935,
+                    "popular": False
+                },
+                {
+                    "name": "Begoña",
+                    "lat": 40.4675,
+                    "lon": -3.658,
+                    "popular": False
+                },
+                {
+                    "name": "Chamartín",
+                    "lat": 40.4722,
+                    "lon": -3.6826,
+                    "popular": True
+                },
+                {
+                    "name": "Lago",
+                    "lat": 40.415,
+                    "lon": -3.717,
+                    "popular": False
+                },
+                {
+                    "name": "Batán",
+                    "lat": 40.41,
+                    "lon": -3.731,
+                    "popular": False
+                },
+                {
+                    "name": "Casa de Campo",
+                    "lat": 40.408,
+                    "lon": -3.745,
+                    "popular": False
+                }
+            ]
+        },
+        "cercanias_madrid": {
+            "name": "Cercanías Madrid",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Atocha",
+                    "lat": 40.4065,
+                    "lon": -3.693,
+                    "popular": True
+                },
+                {
+                    "name": "Chamartín",
+                    "lat": 40.4722,
+                    "lon": -3.6826,
+                    "popular": True
+                },
+                {
+                    "name": "Sol",
+                    "lat": 40.4169,
+                    "lon": -3.7035,
+                    "popular": True
+                },
+                {
+                    "name": "Nuevos Ministerios",
+                    "lat": 40.446,
+                    "lon": -3.692,
+                    "popular": True
+                },
+                {
+                    "name": "Recoletos",
+                    "lat": 40.4235,
+                    "lon": -3.6915,
+                    "popular": False
+                },
+                {
+                    "name": "Méndez Álvaro",
+                    "lat": 40.3978,
+                    "lon": -3.686,
+                    "popular": False
+                },
+                {
+                    "name": "Príncipe Pío",
+                    "lat": 40.419,
+                    "lon": -3.72,
+                    "popular": True
+                },
+                {
+                    "name": "Pirámides",
+                    "lat": 40.4055,
+                    "lon": -3.7115,
+                    "popular": False
+                },
+                {
+                    "name": "Embajadores",
+                    "lat": 40.4055,
+                    "lon": -3.701,
+                    "popular": False
+                },
+                {
+                    "name": "Alcalá de Henares",
+                    "lat": 40.4818,
+                    "lon": -3.3645,
+                    "popular": False
+                },
+                {
+                    "name": "Getafe Centro",
+                    "lat": 40.305,
+                    "lon": -3.7315,
+                    "popular": False
+                },
+                {
+                    "name": "Fuenlabrada",
+                    "lat": 40.284,
+                    "lon": -3.794,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "barcelona": {
+        "metro_l1": {
+            "name": "Metro L1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Arc de Triomf",
+                    "lat": 41.391,
+                    "lon": 2.1805,
+                    "popular": True
+                },
+                {
+                    "name": "Hospital de Bellvitge",
+                    "lat": 41.3459,
+                    "lon": 2.0978,
+                    "popular": False
+                },
+                {
+                    "name": "Fondo",
+                    "lat": 41.438,
+                    "lon": 2.244,
+                    "popular": False
+                },
+                {
+                    "name": "Plaça de Catalunya",
+                    "lat": 41.3875,
+                    "lon": 2.17,
+                    "popular": True
+                },
+                {
+                    "name": "Urquinaona",
+                    "lat": 41.3893,
+                    "lon": 2.1728,
+                    "popular": True
+                },
+                {
+                    "name": "Clot",
+                    "lat": 41.4102,
+                    "lon": 2.187,
+                    "popular": False
+                },
+                {
+                    "name": "Marina",
+                    "lat": 41.398,
+                    "lon": 2.1845,
+                    "popular": False
+                },
+                {
+                    "name": "Glòries",
+                    "lat": 41.403,
+                    "lon": 2.187,
+                    "popular": False
+                },
+                {
+                    "name": "Navas",
+                    "lat": 41.409,
+                    "lon": 2.185,
+                    "popular": False
+                },
+                {
+                    "name": "Fabra i Puig",
+                    "lat": 41.4188,
+                    "lon": 2.173,
+                    "popular": False
+                },
+                {
+                    "name": "Torrassa",
+                    "lat": 41.3692,
+                    "lon": 2.1165,
+                    "popular": False
+                },
+                {
+                    "name": "Santa Coloma",
+                    "lat": 41.4425,
+                    "lon": 2.209,
+                    "popular": False
+                },
+                {
+                    "name": "Hospitalet de Llobregat - Av. Carrilet",
+                    "lat": 41.3653,
+                    "lon": 2.1095,
+                    "popular": False
+                },
+                {
+                    "name": "Bellvitge",
+                    "lat": 41.35,
+                    "lon": 2.1015,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_l2": {
+            "name": "Metro L2",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Sagrada Família",
+                    "lat": 41.4035,
+                    "lon": 2.1744,
+                    "popular": True
+                },
+                {
+                    "name": "Passeig de Gràcia",
+                    "lat": 41.3917,
+                    "lon": 2.1649,
+                    "popular": True
+                },
+                {
+                    "name": "Paral·lel",
+                    "lat": 41.3752,
+                    "lon": 2.1685,
+                    "popular": True
+                },
+                {
+                    "name": "Universitat",
+                    "lat": 41.387,
+                    "lon": 2.164,
+                    "popular": True
+                },
+                {
+                    "name": "Sant Antoni",
+                    "lat": 41.3798,
+                    "lon": 2.1625,
+                    "popular": False
+                },
+                {
+                    "name": "Monumental",
+                    "lat": 41.3987,
+                    "lon": 2.1792,
+                    "popular": False
+                },
+                {
+                    "name": "Tetuan",
+                    "lat": 41.3947,
+                    "lon": 2.1753,
+                    "popular": False
+                },
+                {
+                    "name": "Encants",
+                    "lat": 41.405,
+                    "lon": 2.1808,
+                    "popular": False
+                },
+                {
+                    "name": "Clot",
+                    "lat": 41.4102,
+                    "lon": 2.187,
+                    "popular": False
+                },
+                {
+                    "name": "Badalona Pompeu Fabra",
+                    "lat": 41.4505,
+                    "lon": 2.2395,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_l3": {
+            "name": "Metro L3",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Sants Estació",
+                    "lat": 41.379,
+                    "lon": 2.1397,
+                    "popular": True
+                },
+                {
+                    "name": "Passeig de Gràcia",
+                    "lat": 41.3917,
+                    "lon": 2.1649,
+                    "popular": True
+                },
+                {
+                    "name": "Diagonal",
+                    "lat": 41.3938,
+                    "lon": 2.16,
+                    "popular": True
+                },
+                {
+                    "name": "Liceu",
+                    "lat": 41.3805,
+                    "lon": 2.173,
+                    "popular": True
+                },
+                {
+                    "name": "Drassanes",
+                    "lat": 41.3755,
+                    "lon": 2.1738,
+                    "popular": True
+                },
+                {
+                    "name": "Espanya",
+                    "lat": 41.3755,
+                    "lon": 2.149,
+                    "popular": True
+                },
+                {
+                    "name": "Plaça de Catalunya",
+                    "lat": 41.3875,
+                    "lon": 2.17,
+                    "popular": True
+                },
+                {
+                    "name": "Fontana",
+                    "lat": 41.4003,
+                    "lon": 2.156,
+                    "popular": True
+                },
+                {
+                    "name": "Lesseps",
+                    "lat": 41.4037,
+                    "lon": 2.1525,
+                    "popular": False
+                },
+                {
+                    "name": "Vallcarca",
+                    "lat": 41.4083,
+                    "lon": 2.147,
+                    "popular": False
+                },
+                {
+                    "name": "Penitents",
+                    "lat": 41.4115,
+                    "lon": 2.141,
+                    "popular": False
+                },
+                {
+                    "name": "Vall d'Hebron",
+                    "lat": 41.4272,
+                    "lon": 2.1475,
+                    "popular": False
+                },
+                {
+                    "name": "Zona Universitària",
+                    "lat": 41.3865,
+                    "lon": 2.113,
+                    "popular": False
+                },
+                {
+                    "name": "Palau Reial",
+                    "lat": 41.387,
+                    "lon": 2.12,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_l4": {
+            "name": "Metro L4",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Passeig de Gràcia",
+                    "lat": 41.3917,
+                    "lon": 2.1649,
+                    "popular": True
+                },
+                {
+                    "name": "Barceloneta",
+                    "lat": 41.3808,
+                    "lon": 2.189,
+                    "popular": True
+                },
+                {
+                    "name": "Jaume I",
+                    "lat": 41.3844,
+                    "lon": 2.1805,
+                    "popular": True
+                },
+                {
+                    "name": "Urquinaona",
+                    "lat": 41.3893,
+                    "lon": 2.1728,
+                    "popular": True
+                },
+                {
+                    "name": "Girona",
+                    "lat": 41.395,
+                    "lon": 2.172,
+                    "popular": False
+                },
+                {
+                    "name": "Verdaguer",
+                    "lat": 41.3988,
+                    "lon": 2.1675,
+                    "popular": False
+                },
+                {
+                    "name": "Joanic",
+                    "lat": 41.404,
+                    "lon": 2.162,
+                    "popular": False
+                },
+                {
+                    "name": "Alfons X",
+                    "lat": 41.4078,
+                    "lon": 2.163,
+                    "popular": False
+                },
+                {
+                    "name": "Guinardó - Hospital de Sant Pau",
+                    "lat": 41.412,
+                    "lon": 2.168,
+                    "popular": False
+                },
+                {
+                    "name": "Maragall",
+                    "lat": 41.4168,
+                    "lon": 2.171,
+                    "popular": False
+                },
+                {
+                    "name": "Ciutadella - Vila Olímpica",
+                    "lat": 41.385,
+                    "lon": 2.192,
+                    "popular": True
+                },
+                {
+                    "name": "Bogatell",
+                    "lat": 41.397,
+                    "lon": 2.205,
+                    "popular": False
+                },
+                {
+                    "name": "La Pau",
+                    "lat": 41.4185,
+                    "lon": 2.212,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_l5": {
+            "name": "Metro L5",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Sagrada Família",
+                    "lat": 41.4035,
+                    "lon": 2.1744,
+                    "popular": True
+                },
+                {
+                    "name": "Diagonal",
+                    "lat": 41.3938,
+                    "lon": 2.16,
+                    "popular": True
+                },
+                {
+                    "name": "Sants Estació",
+                    "lat": 41.379,
+                    "lon": 2.1397,
+                    "popular": True
+                },
+                {
+                    "name": "Verdaguer",
+                    "lat": 41.3988,
+                    "lon": 2.1675,
+                    "popular": True
+                },
+                {
+                    "name": "Hospital de Sant Pau",
+                    "lat": 41.4095,
+                    "lon": 2.1745,
+                    "popular": False
+                },
+                {
+                    "name": "Camp de l'Arpa",
+                    "lat": 41.411,
+                    "lon": 2.181,
+                    "popular": False
+                },
+                {
+                    "name": "Entença",
+                    "lat": 41.3808,
+                    "lon": 2.146,
+                    "popular": False
+                },
+                {
+                    "name": "Plaça de Sants",
+                    "lat": 41.378,
+                    "lon": 2.133,
+                    "popular": False
+                },
+                {
+                    "name": "Badal",
+                    "lat": 41.373,
+                    "lon": 2.129,
+                    "popular": False
+                },
+                {
+                    "name": "Collblanc",
+                    "lat": 41.37,
+                    "lon": 2.1195,
+                    "popular": False
+                },
+                {
+                    "name": "Cornellà Centre",
+                    "lat": 41.3545,
+                    "lon": 2.071,
+                    "popular": False
+                },
+                {
+                    "name": "Horta",
+                    "lat": 41.4285,
+                    "lon": 2.163,
+                    "popular": False
+                },
+                {
+                    "name": "El Coll - La Teixonera",
+                    "lat": 41.421,
+                    "lon": 2.156,
+                    "popular": False
+                }
+            ]
+        },
+        "metro_l9": {
+            "name": "Metro L9/L10",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Aeroport T1",
+                    "lat": 41.2883,
+                    "lon": 2.0699,
+                    "popular": True
+                },
+                {
+                    "name": "Aeroport T2",
+                    "lat": 41.2975,
+                    "lon": 2.0783,
+                    "popular": True
+                },
+                {
+                    "name": "Zona Universitària",
+                    "lat": 41.3865,
+                    "lon": 2.113,
+                    "popular": True
+                },
+                {
+                    "name": "Collblanc",
+                    "lat": 41.37,
+                    "lon": 2.1195,
+                    "popular": False
+                },
+                {
+                    "name": "Torrassa",
+                    "lat": 41.3692,
+                    "lon": 2.1165,
+                    "popular": False
+                },
+                {
+                    "name": "Can Tries - Gornal",
+                    "lat": 41.3618,
+                    "lon": 2.1125,
+                    "popular": False
+                },
+                {
+                    "name": "Europa - Fira",
+                    "lat": 41.3575,
+                    "lon": 2.1095,
+                    "popular": True
+                },
+                {
+                    "name": "Fira",
+                    "lat": 41.356,
+                    "lon": 2.107,
+                    "popular": False
+                },
+                {
+                    "name": "Parc Logístic",
+                    "lat": 41.3445,
+                    "lon": 2.0975,
+                    "popular": False
+                },
+                {
+                    "name": "Mercabarna",
+                    "lat": 41.3395,
+                    "lon": 2.0875,
+                    "popular": False
+                },
+                {
+                    "name": "Les Moreres",
+                    "lat": 41.326,
+                    "lon": 2.074,
+                    "popular": False
+                },
+                {
+                    "name": "El Prat Estació",
+                    "lat": 41.32,
+                    "lon": 2.0695,
+                    "popular": False
+                }
+            ]
+        },
+        "fgc_barcelona": {
+            "name": "FGC (Ferrocarrils de la Generalitat)",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Plaça de Catalunya",
+                    "lat": 41.3875,
+                    "lon": 2.17,
+                    "popular": True
+                },
+                {
+                    "name": "Provença",
+                    "lat": 41.3937,
+                    "lon": 2.1585,
+                    "popular": True
+                },
+                {
+                    "name": "Sarrià",
+                    "lat": 41.397,
+                    "lon": 2.125,
+                    "popular": False
+                },
+                {
+                    "name": "Reina Elisenda",
+                    "lat": 41.396,
+                    "lon": 2.117,
+                    "popular": False
+                },
+                {
+                    "name": "Muntaner",
+                    "lat": 41.3945,
+                    "lon": 2.144,
+                    "popular": False
+                },
+                {
+                    "name": "Tibidabo",
+                    "lat": 41.4055,
+                    "lon": 2.133,
+                    "popular": True
+                },
+                {
+                    "name": "Peu del Funicular",
+                    "lat": 41.404,
+                    "lon": 2.1185,
+                    "popular": False
+                },
+                {
+                    "name": "Les Tres Torres",
+                    "lat": 41.398,
+                    "lon": 2.131,
+                    "popular": False
+                },
+                {
+                    "name": "Sant Gervasi",
+                    "lat": 41.3988,
+                    "lon": 2.137,
+                    "popular": False
+                },
+                {
+                    "name": "Gràcia",
+                    "lat": 41.3988,
+                    "lon": 2.153,
+                    "popular": True
+                }
+            ]
+        }
+    },
+    "valencia": {
+        "metrovalencia_1": {
+            "name": "MetroValencia Line 1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Àngel Guimerà",
+                    "lat": 39.4715,
+                    "lon": -0.3835,
+                    "popular": True
+                },
+                {
+                    "name": "Plaça d'Espanya",
+                    "lat": 39.4683,
+                    "lon": -0.3825,
+                    "popular": True
+                },
+                {
+                    "name": "Jesús",
+                    "lat": 39.462,
+                    "lon": -0.381,
+                    "popular": False
+                },
+                {
+                    "name": "Paterna",
+                    "lat": 39.503,
+                    "lon": -0.4405,
+                    "popular": False
+                },
+                {
+                    "name": "Bétera",
+                    "lat": 39.588,
+                    "lon": -0.462,
+                    "popular": False
+                },
+                {
+                    "name": "Empalme",
+                    "lat": 39.4938,
+                    "lon": -0.4065,
+                    "popular": False
+                },
+                {
+                    "name": "Burjassot",
+                    "lat": 39.507,
+                    "lon": -0.4135,
+                    "popular": False
+                },
+                {
+                    "name": "Seminari - CEU",
+                    "lat": 39.5195,
+                    "lon": -0.426,
+                    "popular": False
+                },
+                {
+                    "name": "Nou d'Octubre",
+                    "lat": 39.466,
+                    "lon": -0.39,
+                    "popular": False
+                },
+                {
+                    "name": "Torrent",
+                    "lat": 39.4365,
+                    "lon": -0.4665,
+                    "popular": False
+                },
+                {
+                    "name": "Sant Isidre",
+                    "lat": 39.4542,
+                    "lon": -0.381,
+                    "popular": False
+                }
+            ]
+        },
+        "metrovalencia_3": {
+            "name": "MetroValencia Line 3",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Xàtiva",
+                    "lat": 39.4685,
+                    "lon": -0.377,
+                    "popular": True
+                },
+                {
+                    "name": "Colón",
+                    "lat": 39.47,
+                    "lon": -0.369,
+                    "popular": True
+                },
+                {
+                    "name": "Aeroport",
+                    "lat": 39.4905,
+                    "lon": -0.4815,
+                    "popular": True
+                },
+                {
+                    "name": "Àngel Guimerà",
+                    "lat": 39.4715,
+                    "lon": -0.3835,
+                    "popular": True
+                },
+                {
+                    "name": "Alameda",
+                    "lat": 39.476,
+                    "lon": -0.363,
+                    "popular": True
+                },
+                {
+                    "name": "Facultats",
+                    "lat": 39.479,
+                    "lon": -0.358,
+                    "popular": False
+                },
+                {
+                    "name": "Benimaclet",
+                    "lat": 39.488,
+                    "lon": -0.3565,
+                    "popular": False
+                },
+                {
+                    "name": "Machado",
+                    "lat": 39.495,
+                    "lon": -0.453,
+                    "popular": False
+                },
+                {
+                    "name": "Mislata",
+                    "lat": 39.4745,
+                    "lon": -0.4175,
+                    "popular": False
+                },
+                {
+                    "name": "Quart de Poblet",
+                    "lat": 39.4765,
+                    "lon": -0.4395,
+                    "popular": False
+                },
+                {
+                    "name": "Manises",
+                    "lat": 39.4825,
+                    "lon": -0.4615,
+                    "popular": False
+                },
+                {
+                    "name": "Alboraya - Peris Aragó",
+                    "lat": 39.4965,
+                    "lon": -0.351,
+                    "popular": False
+                },
+                {
+                    "name": "Rafelbunyol",
+                    "lat": 39.5465,
+                    "lon": -0.338,
+                    "popular": False
+                }
+            ]
+        },
+        "metrovalencia_5": {
+            "name": "MetroValencia Line 5",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Àngel Guimerà",
+                    "lat": 39.4715,
+                    "lon": -0.3835,
+                    "popular": True
+                },
+                {
+                    "name": "Alameda",
+                    "lat": 39.476,
+                    "lon": -0.363,
+                    "popular": True
+                },
+                {
+                    "name": "Colón",
+                    "lat": 39.47,
+                    "lon": -0.369,
+                    "popular": True
+                },
+                {
+                    "name": "Xàtiva",
+                    "lat": 39.4685,
+                    "lon": -0.377,
+                    "popular": True
+                },
+                {
+                    "name": "Amistat - Casa de Salud",
+                    "lat": 39.47,
+                    "lon": -0.39,
+                    "popular": False
+                },
+                {
+                    "name": "Aragón",
+                    "lat": 39.47,
+                    "lon": -0.396,
+                    "popular": False
+                },
+                {
+                    "name": "Av. del Cid",
+                    "lat": 39.47,
+                    "lon": -0.401,
+                    "popular": False
+                },
+                {
+                    "name": "Mislata - Almassil",
+                    "lat": 39.4718,
+                    "lon": -0.41,
+                    "popular": False
+                },
+                {
+                    "name": "Marítim - Serreria",
+                    "lat": 39.464,
+                    "lon": -0.335,
+                    "popular": True
+                },
+                {
+                    "name": "Ayora",
+                    "lat": 39.475,
+                    "lon": -0.351,
+                    "popular": False
+                },
+                {
+                    "name": "Neptu",
+                    "lat": 39.4575,
+                    "lon": -0.328,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "seville": {
+        "sevilla_metro_1": {
+            "name": "Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Puerta de Jerez",
+                    "lat": 37.385,
+                    "lon": -5.9965,
+                    "popular": True
+                },
+                {
+                    "name": "Prado de San Sebastián",
+                    "lat": 37.3815,
+                    "lon": -5.9875,
+                    "popular": True
+                },
+                {
+                    "name": "San Bernardo",
+                    "lat": 37.3795,
+                    "lon": -5.9785,
+                    "popular": True
+                },
+                {
+                    "name": "Nervión",
+                    "lat": 37.387,
+                    "lon": -5.9705,
+                    "popular": True
+                },
+                {
+                    "name": "Gran Plaza",
+                    "lat": 37.3885,
+                    "lon": -5.9625,
+                    "popular": False
+                },
+                {
+                    "name": "Parque de los Príncipes",
+                    "lat": 37.377,
+                    "lon": -6.0055,
+                    "popular": False
+                },
+                {
+                    "name": "Blas Infante",
+                    "lat": 37.3705,
+                    "lon": -6.017,
+                    "popular": False
+                },
+                {
+                    "name": "Cavaleri",
+                    "lat": 37.351,
+                    "lon": -6.042,
+                    "popular": False
+                },
+                {
+                    "name": "Ciudad Expo",
+                    "lat": 37.339,
+                    "lon": -6.0595,
+                    "popular": False
+                },
+                {
+                    "name": "Condequinto",
+                    "lat": 37.331,
+                    "lon": -6.0715,
+                    "popular": False
+                },
+                {
+                    "name": "Montequinto",
+                    "lat": 37.322,
+                    "lon": -6.0395,
+                    "popular": False
+                },
+                {
+                    "name": "Pablo de Olavide",
+                    "lat": 37.3545,
+                    "lon": -6.044,
+                    "popular": False
+                },
+                {
+                    "name": "Olivar de Quintos",
+                    "lat": 37.312,
+                    "lon": -6.049,
+                    "popular": False
+                }
+            ]
+        },
+        "sevilla_tram": {
+            "name": "MetroCentro Tram",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Plaza Nueva",
+                    "lat": 37.3893,
+                    "lon": -5.9968,
+                    "popular": True
+                },
+                {
+                    "name": "Archivo de Indias",
+                    "lat": 37.386,
+                    "lon": -5.992,
+                    "popular": True
+                },
+                {
+                    "name": "Puerta de Jerez",
+                    "lat": 37.385,
+                    "lon": -5.9965,
+                    "popular": True
+                },
+                {
+                    "name": "Prado de San Sebastián",
+                    "lat": 37.3815,
+                    "lon": -5.9875,
+                    "popular": True
+                },
+                {
+                    "name": "San Fernando",
+                    "lat": 37.3835,
+                    "lon": -5.9918,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "bilbao": {
+        "bilbao_metro_1": {
+            "name": "Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Casco Viejo",
+                    "lat": 43.2587,
+                    "lon": -2.9224,
+                    "popular": True
+                },
+                {
+                    "name": "Moyúa",
+                    "lat": 43.2622,
+                    "lon": -2.9365,
+                    "popular": True
+                },
+                {
+                    "name": "Abando",
+                    "lat": 43.261,
+                    "lon": -2.929,
+                    "popular": True
+                },
+                {
+                    "name": "Indautxu",
+                    "lat": 43.2632,
+                    "lon": -2.943,
+                    "popular": True
+                },
+                {
+                    "name": "San Mamés",
+                    "lat": 43.264,
+                    "lon": -2.9495,
+                    "popular": True
+                },
+                {
+                    "name": "Deusto",
+                    "lat": 43.27,
+                    "lon": -2.9545,
+                    "popular": False
+                },
+                {
+                    "name": "Sarriko",
+                    "lat": 43.272,
+                    "lon": -2.962,
+                    "popular": False
+                },
+                {
+                    "name": "Basauri",
+                    "lat": 43.2365,
+                    "lon": -2.885,
+                    "popular": False
+                },
+                {
+                    "name": "Etxebarri",
+                    "lat": 43.235,
+                    "lon": -2.8785,
+                    "popular": False
+                },
+                {
+                    "name": "Bolueta",
+                    "lat": 43.2545,
+                    "lon": -2.9075,
+                    "popular": False
+                },
+                {
+                    "name": "Santutxu",
+                    "lat": 43.2555,
+                    "lon": -2.913,
+                    "popular": False
+                },
+                {
+                    "name": "Plentzia",
+                    "lat": 43.406,
+                    "lon": -2.949,
+                    "popular": False
+                },
+                {
+                    "name": "Algorta",
+                    "lat": 43.3445,
+                    "lon": -3.0125,
+                    "popular": False
+                },
+                {
+                    "name": "Areeta",
+                    "lat": 43.328,
+                    "lon": -3.012,
+                    "popular": False
+                }
+            ]
+        },
+        "bilbao_metro_2": {
+            "name": "Metro Line 2",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Basauri",
+                    "lat": 43.2365,
+                    "lon": -2.885,
+                    "popular": True
+                },
+                {
+                    "name": "Ansio",
+                    "lat": 43.233,
+                    "lon": -2.8765,
+                    "popular": False
+                },
+                {
+                    "name": "Ariz",
+                    "lat": 43.231,
+                    "lon": -2.869,
+                    "popular": False
+                },
+                {
+                    "name": "Gurutzeta - Cruces",
+                    "lat": 43.296,
+                    "lon": -2.9825,
+                    "popular": False
+                },
+                {
+                    "name": "Sestao",
+                    "lat": 43.3095,
+                    "lon": -3.006,
+                    "popular": False
+                },
+                {
+                    "name": "Urbinaga",
+                    "lat": 43.2845,
+                    "lon": -2.97,
+                    "popular": False
+                },
+                {
+                    "name": "Bagatza",
+                    "lat": 43.29,
+                    "lon": -2.9755,
+                    "popular": False
+                },
+                {
+                    "name": "Santurtzi",
+                    "lat": 43.3285,
+                    "lon": -3.031,
+                    "popular": False
+                },
+                {
+                    "name": "Kabiezes",
+                    "lat": 43.3355,
+                    "lon": -3.0365,
+                    "popular": False
+                },
+                {
+                    "name": "Peñota",
+                    "lat": 43.337,
+                    "lon": -3.039,
+                    "popular": False
+                }
+            ]
+        },
+        "bilbao_tram": {
+            "name": "EuskoTran",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Atxuri",
+                    "lat": 43.26,
+                    "lon": -2.919,
+                    "popular": True
+                },
+                {
+                    "name": "Ribera",
+                    "lat": 43.259,
+                    "lon": -2.923,
+                    "popular": True
+                },
+                {
+                    "name": "Arriaga",
+                    "lat": 43.2595,
+                    "lon": -2.926,
+                    "popular": True
+                },
+                {
+                    "name": "Abando",
+                    "lat": 43.261,
+                    "lon": -2.929,
+                    "popular": True
+                },
+                {
+                    "name": "Uribitarte",
+                    "lat": 43.263,
+                    "lon": -2.9325,
+                    "popular": False
+                },
+                {
+                    "name": "Guggenheim",
+                    "lat": 43.2678,
+                    "lon": -2.934,
+                    "popular": True
+                },
+                {
+                    "name": "San Mamés",
+                    "lat": 43.264,
+                    "lon": -2.9495,
+                    "popular": True
+                },
+                {
+                    "name": "Sabino Arana",
+                    "lat": 43.2642,
+                    "lon": -2.9545,
+                    "popular": False
+                },
+                {
+                    "name": "Basurto",
+                    "lat": 43.2645,
+                    "lon": -2.96,
+                    "popular": False
+                },
+                {
+                    "name": "La Casilla",
+                    "lat": 43.258,
+                    "lon": -2.951,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "malaga": {
+        "malaga_metro_1": {
+            "name": "Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "El Perchel",
+                    "lat": 36.7125,
+                    "lon": -4.4315,
+                    "popular": True
+                },
+                {
+                    "name": "La Unión",
+                    "lat": 36.7105,
+                    "lon": -4.4365,
+                    "popular": False
+                },
+                {
+                    "name": "Barbarela",
+                    "lat": 36.706,
+                    "lon": -4.454,
+                    "popular": False
+                },
+                {
+                    "name": "La Luz - La Paz",
+                    "lat": 36.7045,
+                    "lon": -4.4605,
+                    "popular": False
+                },
+                {
+                    "name": "Ciudad de la Justicia",
+                    "lat": 36.7065,
+                    "lon": -4.4695,
+                    "popular": False
+                },
+                {
+                    "name": "Universidad",
+                    "lat": 36.715,
+                    "lon": -4.474,
+                    "popular": True
+                },
+                {
+                    "name": "Clínico",
+                    "lat": 36.7186,
+                    "lon": -4.479,
+                    "popular": False
+                },
+                {
+                    "name": "El Cónsul",
+                    "lat": 36.719,
+                    "lon": -4.487,
+                    "popular": False
+                },
+                {
+                    "name": "Plaza de la Marina",
+                    "lat": 36.7185,
+                    "lon": -4.4215,
+                    "popular": True
+                },
+                {
+                    "name": "Atarazanas",
+                    "lat": 36.7168,
+                    "lon": -4.4265,
+                    "popular": True
+                },
+                {
+                    "name": "Guadalmedina",
+                    "lat": 36.7155,
+                    "lon": -4.428,
+                    "popular": False
+                },
+                {
+                    "name": "Andalucía Tech",
+                    "lat": 36.7145,
+                    "lon": -4.483,
+                    "popular": False
+                }
+            ]
+        },
+        "malaga_metro_2": {
+            "name": "Metro Line 2",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "El Perchel",
+                    "lat": 36.7125,
+                    "lon": -4.4315,
+                    "popular": True
+                },
+                {
+                    "name": "La Isla",
+                    "lat": 36.709,
+                    "lon": -4.4245,
+                    "popular": False
+                },
+                {
+                    "name": "Princesa - Huelin",
+                    "lat": 36.7058,
+                    "lon": -4.4385,
+                    "popular": False
+                },
+                {
+                    "name": "La Luz - La Paz",
+                    "lat": 36.7045,
+                    "lon": -4.4605,
+                    "popular": False
+                },
+                {
+                    "name": "Palacio de los Deportes",
+                    "lat": 36.6945,
+                    "lon": -4.469,
+                    "popular": False
+                },
+                {
+                    "name": "Plaza de la Marina",
+                    "lat": 36.7185,
+                    "lon": -4.4215,
+                    "popular": True
+                },
+                {
+                    "name": "Atarazanas",
+                    "lat": 36.7168,
+                    "lon": -4.4265,
+                    "popular": True
+                },
+                {
+                    "name": "Guadalmedina",
+                    "lat": 36.7155,
+                    "lon": -4.428,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "palma_de_mallorca": {
+        "palma_metro": {
+            "name": "Metro Line M1",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Estació Intermodal",
+                    "lat": 39.575,
+                    "lon": 2.654,
+                    "popular": True
+                },
+                {
+                    "name": "Jacint Verdaguer",
+                    "lat": 39.575,
+                    "lon": 2.644,
+                    "popular": False
+                },
+                {
+                    "name": "Son Costa - Son Fortesa",
+                    "lat": 39.5755,
+                    "lon": 2.635,
+                    "popular": False
+                },
+                {
+                    "name": "Son Fuster Vell",
+                    "lat": 39.578,
+                    "lon": 2.621,
+                    "popular": False
+                },
+                {
+                    "name": "Son Sardina",
+                    "lat": 39.5885,
+                    "lon": 2.6095,
+                    "popular": False
+                },
+                {
+                    "name": "UIB",
+                    "lat": 39.638,
+                    "lon": 2.648,
+                    "popular": True
+                },
+                {
+                    "name": "Marratxí",
+                    "lat": 39.6195,
+                    "lon": 2.635,
+                    "popular": False
+                },
+                {
+                    "name": "Polígon de Marratxí",
+                    "lat": 39.607,
+                    "lon": 2.624,
+                    "popular": False
+                },
+                {
+                    "name": "Son Cladera - Es Vivero",
+                    "lat": 39.5815,
+                    "lon": 2.6155,
+                    "popular": False
+                }
+            ]
+        }
+    }
 }
 
 
