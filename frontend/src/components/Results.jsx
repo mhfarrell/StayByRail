@@ -1,6 +1,44 @@
-import { useState, useMemo, lazy, Suspense } from "react";
+import { useState, useMemo, useEffect, lazy, Suspense } from "react";
 import HotelCard from "./HotelCard";
 const HotelMap = lazy(() => import("./HotelMap"));
+
+// Known hotel chain names (more specific first to avoid partial matches)
+const KNOWN_CHAINS = [
+  "Hampton by Hilton", "DoubleTree by Hilton", "Hilton Garden Inn", "Curio Collection by Hilton",
+  "Courtyard by Marriott", "Fairfield by Marriott", "JW Marriott", "Four Points by Sheraton",
+  "SpringHill Suites", "Residence Inn",
+  "Holiday Inn Express", "Staybridge Suites", "Crowne Plaza", "InterContinental",
+  "Hyatt Regency", "Hyatt Place", "Hyatt Centric", "Grand Hyatt",
+  "Radisson Blu", "Radisson RED", "Park Inn by Radisson",
+  "Hub by Premier Inn",
+  "ibis Styles", "ibis budget",
+  "Sotetsu Fresa Inn", "Hotel Route Inn", "Hotel JAL City", "Hotel Monterey",
+  "Hotel Gracery", "Hotel MyStays", "Hotel Wing",
+  "Daiwa Roynet", "Mitsui Garden", "Dormy Inn", "Toyoko Inn",
+  "Premier Inn", "Travelodge", "EasyHotel", "Point A",
+  "Hilton", "Conrad", "Waldorf Astoria",
+  "Marriott", "Sheraton", "Westin", "Le Meridien", "Moxy", "AC Hotel", "Aloft",
+  "Holiday Inn", "Kimpton", "voco",
+  "Hyatt", "Radisson",
+  "ibis", "Novotel", "Mercure", "Sofitel", "Pullman", "MGallery",
+  "Ramada", "Days Inn", "Wyndham",
+  "Best Western", "citizenM", "YOTEL", "Leonardo Hotel", "Motel One",
+  "Park Plaza", "NH Hotel", "Melia",
+  "APA Hotel", "Via Inn", "Super Hotel", "Candeo Hotels",
+  "Comfort Hotel", "Cross Hotel",
+];
+
+function getChain(hotelName) {
+  const lower = (hotelName || "").toLowerCase();
+  for (const chain of KNOWN_CHAINS) {
+    if (lower.startsWith(chain.toLowerCase())) return chain;
+  }
+  return null;
+}
+
+function hotelCardId(name) {
+  return "hotel-" + (name || "").replace(/\s+/g, "-").replace(/[^a-zA-Z0-9-]/g, "").toLowerCase();
+}
 
 // Check if a hotel's amenities match a wishlist item
 function matchesWishlistItem(amenities, item) {
@@ -48,19 +86,33 @@ function Results({ data, wishlist }) {
   const [priceMode, setPriceMode] = useState("per_night");
   const [maxWalk, setMaxWalk] = useState(10);
   const [sortBy, setSortBy] = useState("price_asc");
+  const [chainFilter, setChainFilter] = useState("");
+
+  // Reset chain filter when new search results arrive
+  useEffect(() => { setChainFilter(""); }, [data]);
 
   // Flatten all hotels, score them, filter, sort
-  const { allHotels, stationGroups } = useMemo(() => {
-    if (!data) return { allHotels: [], stationGroups: [] };
+  const { allHotels, stationGroups, availableChains } = useMemo(() => {
+    if (!data) return { allHotels: [], stationGroups: [], availableChains: [] };
 
     const all = [];
     for (const group of data.results) {
       for (const hotel of group.hotels) {
         if (hotel.walk_minutes != null && hotel.walk_minutes > maxWalk) continue;
         const score = scoreHotel(hotel, wishlist);
-        all.push({ ...hotel, wishlist_score: score });
+        const chain = getChain(hotel.name);
+        all.push({ ...hotel, wishlist_score: score, chain });
       }
     }
+
+    // Extract available chains with counts
+    const chainCounts = {};
+    for (const h of all) {
+      if (h.chain) chainCounts[h.chain] = (chainCounts[h.chain] || 0) + 1;
+    }
+    const chains = Object.entries(chainCounts)
+      .sort((a, b) => b[1] - a[1])
+      .map(([name, count]) => ({ name, count }));
 
     // Sort
     const sorted = [...all];
@@ -98,8 +150,28 @@ function Results({ data, wishlist }) {
       if (hotels.length > 0) groups.push({ ...group, hotels });
     }
 
-    return { allHotels: sorted, stationGroups: groups };
+    return { allHotels: sorted, stationGroups: groups, availableChains: chains };
   }, [data, maxWalk, wishlist, sortBy]);
+
+  // Apply chain filter
+  const displayedHotels = chainFilter
+    ? allHotels.filter((h) => h.chain === chainFilter)
+    : allHotels;
+
+  const filteredGroups = useMemo(() => {
+    if (!chainFilter) return stationGroups;
+    return stationGroups
+      .map((g) => ({
+        ...g,
+        hotels: g.hotels.filter((h) => getChain(h.name) === chainFilter),
+      }))
+      .filter((g) => g.hotels.length > 0);
+  }, [stationGroups, chainFilter]);
+
+  const scrollToHotel = (hotelName) => {
+    const el = document.getElementById(hotelCardId(hotelName));
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
 
   if (!data || data.total_hotels === 0) {
     return (
@@ -114,7 +186,8 @@ function Results({ data, wishlist }) {
     <div className="results">
       <div className="results-header">
         <h2>
-          {allHotels.length} hotel{allHotels.length !== 1 ? "s" : ""} found
+          {displayedHotels.length} hotel{displayedHotels.length !== 1 ? "s" : ""} found
+          {chainFilter && <span className="chain-filter-label"> ({chainFilter})</span>}
         </h2>
         <span className="results-meta">
           {data.city.charAt(0).toUpperCase() + data.city.slice(1)} · {data.line}{" "}
@@ -161,6 +234,24 @@ function Results({ data, wishlist }) {
           </select>
         </div>
 
+        {availableChains.length > 0 && (
+          <div className="control-group">
+            <label>Hotel chain</label>
+            <select
+              className="sort-select"
+              value={chainFilter}
+              onChange={(e) => setChainFilter(e.target.value)}
+            >
+              <option value="">All chains</option>
+              {availableChains.map((c) => (
+                <option key={c.name} value={c.name}>
+                  {c.name} ({c.count})
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+
         <div className="control-group slider-group">
           <label>
             Max walk to station:{" "}
@@ -184,20 +275,26 @@ function Results({ data, wishlist }) {
 
       {/* Map */}
       <Suspense fallback={<div className="loading"><div className="spinner" /></div>}>
-        <HotelMap stationGroups={stationGroups} priceMode={priceMode} />
+        <HotelMap stationGroups={filteredGroups} priceMode={priceMode} onHotelClick={scrollToHotel} />
       </Suspense>
 
       {/* Flat sorted hotel list */}
-      {allHotels.length === 0 ? (
+      {displayedHotels.length === 0 ? (
         <div className="no-results">
-          <p>No hotels within {maxWalk} min walk. Try increasing the slider.</p>
+          <p>
+            {chainFilter
+              ? <>No {chainFilter} hotels found. <button className="clear-filter-link" onClick={() => setChainFilter("")}>Clear filter</button></>
+              : <>No hotels within {maxWalk} min walk. Try increasing the slider.</>
+            }
+          </p>
         </div>
       ) : (
         <div className="hotel-grid">
-          {allHotels.map((hotel, i) => (
+          {displayedHotels.map((hotel, i) => (
             <HotelCard
               key={hotel.name + i}
               hotel={hotel}
+              cardId={hotelCardId(hotel.name)}
               priceMode={priceMode}
               checkIn={data.check_in}
               checkOut={data.check_out}

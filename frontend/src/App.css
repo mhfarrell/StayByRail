@@ -810,6 +810,22 @@ button[type="submit"]:disabled {
   border-color: var(--border-hover);
 }
 
+.chain-filter-label {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.clear-filter-link {
+  background: none;
+  border: none;
+  color: var(--accent-blue);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: inherit;
+  padding: 0;
+}
+
 /* Theme toggle */
 .theme-toggle {
   background: var(--bg-card);

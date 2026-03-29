@@ -1,4 +1,4 @@
-function HotelCard({ hotel, priceMode, checkIn, checkOut, adults, wishlist }) {
+function HotelCard({ hotel, cardId, priceMode, checkIn, checkOut, adults, wishlist }) {
   const stars = hotel.hotel_class
     ? "★".repeat(hotel.hotel_class) + "☆".repeat(5 - hotel.hotel_class)
     : null;
@@ -49,7 +49,7 @@ function HotelCard({ hotel, priceMode, checkIn, checkOut, adults, wishlist }) {
   const isBookingCheapest = cheapestSite === "Booking.com";
 
   return (
-    <div className="hotel-card">
+    <div className="hotel-card" id={cardId}>
       {hotel.thumbnail && (
         <div className="hotel-thumb">
           <img

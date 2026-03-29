@@ -20,7 +20,7 @@ const stationIcon = new L.Icon({
   className: "station-marker",
 });
 
-function HotelMap({ stationGroups, priceMode }) {
+function HotelMap({ stationGroups, priceMode, onHotelClick }) {
   // Collect all markers with valid GPS
   const hotelMarkers = [];
   const stationMarkers = [];
@@ -54,8 +54,8 @@ function HotelMap({ stationGroups, priceMode }) {
         style={{ height: "450px", width: "100%", borderRadius: "10px" }}
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         />
         {hotelMarkers.map((hotel, i) => (
           <Marker key={hotel.name + i} position={[hotel.lat, hotel.lon]}>
@@ -73,6 +73,27 @@ function HotelMap({ stationGroups, priceMode }) {
                   <>
                     <br />
                     {hotel.walk_minutes} min walk to {hotel.nearest_station}
+                  </>
+                )}
+                {onHotelClick && (
+                  <>
+                    <br />
+                    <button
+                      onClick={() => onHotelClick(hotel.name)}
+                      style={{
+                        marginTop: 6,
+                        background: "#2563eb",
+                        color: "#fff",
+                        border: "none",
+                        borderRadius: 5,
+                        padding: "4px 10px",
+                        fontSize: 12,
+                        cursor: "pointer",
+                        width: "100%",
+                      }}
+                    >
+                      See details
+                    </button>
                   </>
                 )}
               </div>
