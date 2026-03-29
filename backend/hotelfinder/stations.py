@@ -11978,6 +11978,718 @@ LINES = {
                 }
             ]
         }
+    },
+    "bangkok": {
+        "bts_sukhumvit": {
+            "name": "BTS Sukhumvit Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Siam",
+                    "lat": 13.7454,
+                    "lon": 100.5342,
+                    "popular": True
+                },
+                {
+                    "name": "Chit Lom",
+                    "lat": 13.7440,
+                    "lon": 100.5432,
+                    "popular": True
+                },
+                {
+                    "name": "Phloen Chit",
+                    "lat": 13.7439,
+                    "lon": 100.5490,
+                    "popular": True
+                },
+                {
+                    "name": "Nana",
+                    "lat": 13.7404,
+                    "lon": 100.5553,
+                    "popular": True
+                },
+                {
+                    "name": "Asok",
+                    "lat": 13.7370,
+                    "lon": 100.5607,
+                    "popular": True
+                },
+                {
+                    "name": "Phrom Phong",
+                    "lat": 13.7309,
+                    "lon": 100.5698,
+                    "popular": True
+                },
+                {
+                    "name": "Thong Lo",
+                    "lat": 13.7244,
+                    "lon": 100.5782,
+                    "popular": True
+                },
+                {
+                    "name": "Ekkamai",
+                    "lat": 13.7195,
+                    "lon": 100.5852,
+                    "popular": True
+                },
+                {
+                    "name": "Phra Khanong",
+                    "lat": 13.7149,
+                    "lon": 100.5916,
+                    "popular": False
+                },
+                {
+                    "name": "On Nut",
+                    "lat": 13.7058,
+                    "lon": 100.6012,
+                    "popular": True
+                },
+                {
+                    "name": "National Stadium",
+                    "lat": 13.7463,
+                    "lon": 100.5292,
+                    "popular": True
+                },
+                {
+                    "name": "Ratchathewi",
+                    "lat": 13.7518,
+                    "lon": 100.5319,
+                    "popular": False
+                },
+                {
+                    "name": "Phaya Thai",
+                    "lat": 13.7567,
+                    "lon": 100.5316,
+                    "popular": True
+                },
+                {
+                    "name": "Victory Monument",
+                    "lat": 13.7625,
+                    "lon": 100.5354,
+                    "popular": True
+                },
+                {
+                    "name": "Sanam Pao",
+                    "lat": 13.7720,
+                    "lon": 100.5421,
+                    "popular": False
+                },
+                {
+                    "name": "Ari",
+                    "lat": 13.7795,
+                    "lon": 100.5451,
+                    "popular": True
+                },
+                {
+                    "name": "Mo Chit",
+                    "lat": 13.8025,
+                    "lon": 100.5535,
+                    "popular": True
+                }
+            ]
+        },
+        "bts_silom": {
+            "name": "BTS Silom Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Siam",
+                    "lat": 13.7454,
+                    "lon": 100.5342,
+                    "popular": True
+                },
+                {
+                    "name": "Ratchadamri",
+                    "lat": 13.7413,
+                    "lon": 100.5399,
+                    "popular": True
+                },
+                {
+                    "name": "Sala Daeng",
+                    "lat": 13.7282,
+                    "lon": 100.5345,
+                    "popular": True
+                },
+                {
+                    "name": "Chong Nonsi",
+                    "lat": 13.7237,
+                    "lon": 100.5293,
+                    "popular": True
+                },
+                {
+                    "name": "Surasak",
+                    "lat": 13.7195,
+                    "lon": 100.5210,
+                    "popular": False
+                },
+                {
+                    "name": "Saphan Taksin",
+                    "lat": 13.7181,
+                    "lon": 100.5142,
+                    "popular": True
+                },
+                {
+                    "name": "Krung Thon Buri",
+                    "lat": 13.7200,
+                    "lon": 100.5024,
+                    "popular": False
+                },
+                {
+                    "name": "Wongwian Yai",
+                    "lat": 13.7221,
+                    "lon": 100.4955,
+                    "popular": True
+                },
+                {
+                    "name": "Pho Nimit",
+                    "lat": 13.7237,
+                    "lon": 100.4865,
+                    "popular": False
+                },
+                {
+                    "name": "Talat Phlu",
+                    "lat": 13.7238,
+                    "lon": 100.4762,
+                    "popular": False
+                },
+                {
+                    "name": "Bang Wa",
+                    "lat": 13.7206,
+                    "lon": 100.4578,
+                    "popular": True
+                },
+                {
+                    "name": "Saint Louis",
+                    "lat": 13.7237,
+                    "lon": 100.5279,
+                    "popular": False
+                }
+            ]
+        },
+        "mrt_blue": {
+            "name": "MRT Blue Line",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Hua Lamphong",
+                    "lat": 13.7380,
+                    "lon": 100.5170,
+                    "popular": True
+                },
+                {
+                    "name": "Sam Yan",
+                    "lat": 13.7327,
+                    "lon": 100.5291,
+                    "popular": True
+                },
+                {
+                    "name": "Silom",
+                    "lat": 13.7291,
+                    "lon": 100.5367,
+                    "popular": True
+                },
+                {
+                    "name": "Lumphini",
+                    "lat": 13.7260,
+                    "lon": 100.5457,
+                    "popular": True
+                },
+                {
+                    "name": "Khlong Toei",
+                    "lat": 13.7222,
+                    "lon": 100.5538,
+                    "popular": False
+                },
+                {
+                    "name": "Queen Sirikit National Convention Centre",
+                    "lat": 13.7226,
+                    "lon": 100.5600,
+                    "popular": True
+                },
+                {
+                    "name": "Sukhumvit",
+                    "lat": 13.7370,
+                    "lon": 100.5607,
+                    "popular": True
+                },
+                {
+                    "name": "Phetchaburi",
+                    "lat": 13.7485,
+                    "lon": 100.5624,
+                    "popular": False
+                },
+                {
+                    "name": "Phra Ram 9",
+                    "lat": 13.7572,
+                    "lon": 100.5650,
+                    "popular": True
+                },
+                {
+                    "name": "Thailand Cultural Centre",
+                    "lat": 13.7651,
+                    "lon": 100.5699,
+                    "popular": False
+                },
+                {
+                    "name": "Huai Khwang",
+                    "lat": 13.7758,
+                    "lon": 100.5740,
+                    "popular": False
+                },
+                {
+                    "name": "Sutthisan",
+                    "lat": 13.7868,
+                    "lon": 100.5746,
+                    "popular": False
+                },
+                {
+                    "name": "Ratchadaphisek",
+                    "lat": 13.7933,
+                    "lon": 100.5748,
+                    "popular": False
+                },
+                {
+                    "name": "Lat Phrao",
+                    "lat": 13.8060,
+                    "lon": 100.5738,
+                    "popular": True
+                },
+                {
+                    "name": "Chatuchak Park",
+                    "lat": 13.8024,
+                    "lon": 100.5535,
+                    "popular": True
+                },
+                {
+                    "name": "Kamphaeng Phet",
+                    "lat": 13.7996,
+                    "lon": 100.5508,
+                    "popular": False
+                },
+                {
+                    "name": "Bang Sue",
+                    "lat": 13.8066,
+                    "lon": 100.5396,
+                    "popular": True
+                },
+                {
+                    "name": "Sanam Chai",
+                    "lat": 13.7440,
+                    "lon": 100.4984,
+                    "popular": True
+                },
+                {
+                    "name": "Itsaraphap",
+                    "lat": 13.7427,
+                    "lon": 100.4865,
+                    "popular": False
+                }
+            ]
+        },
+        "mrt_yellow": {
+            "name": "MRT Yellow Line",
+            "popularity": 3,
+            "stations": [
+                {
+                    "name": "Lat Phrao",
+                    "lat": 13.8060,
+                    "lon": 100.5738,
+                    "popular": True
+                },
+                {
+                    "name": "Phawana",
+                    "lat": 13.8079,
+                    "lon": 100.5776,
+                    "popular": False
+                },
+                {
+                    "name": "Chorakhe Bua",
+                    "lat": 13.8121,
+                    "lon": 100.5850,
+                    "popular": False
+                },
+                {
+                    "name": "Lat Phrao 71",
+                    "lat": 13.8025,
+                    "lon": 100.6012,
+                    "popular": False
+                },
+                {
+                    "name": "Lat Phrao 83",
+                    "lat": 13.7963,
+                    "lon": 100.6090,
+                    "popular": False
+                },
+                {
+                    "name": "Bangkapi",
+                    "lat": 13.7730,
+                    "lon": 100.6347,
+                    "popular": True
+                },
+                {
+                    "name": "Si Kritha",
+                    "lat": 13.7545,
+                    "lon": 100.6510,
+                    "popular": False
+                },
+                {
+                    "name": "Hua Mak",
+                    "lat": 13.7437,
+                    "lon": 100.6486,
+                    "popular": True
+                },
+                {
+                    "name": "Srinagarindra 38",
+                    "lat": 13.7175,
+                    "lon": 100.6440,
+                    "popular": False
+                },
+                {
+                    "name": "Samrong",
+                    "lat": 13.6489,
+                    "lon": 100.5956,
+                    "popular": True
+                }
+            ]
+        },
+        "airport_rail": {
+            "name": "Airport Rail Link",
+            "popularity": 2,
+            "stations": [
+                {
+                    "name": "Suvarnabhumi",
+                    "lat": 13.6900,
+                    "lon": 100.7501,
+                    "popular": True
+                },
+                {
+                    "name": "Lat Krabang",
+                    "lat": 13.7281,
+                    "lon": 100.7308,
+                    "popular": False
+                },
+                {
+                    "name": "Ban Thap Chang",
+                    "lat": 13.7362,
+                    "lon": 100.7099,
+                    "popular": False
+                },
+                {
+                    "name": "Hua Mak",
+                    "lat": 13.7381,
+                    "lon": 100.6454,
+                    "popular": False
+                },
+                {
+                    "name": "Ramkhamhaeng",
+                    "lat": 13.7564,
+                    "lon": 100.6234,
+                    "popular": True
+                },
+                {
+                    "name": "Makkasan",
+                    "lat": 13.7512,
+                    "lon": 100.5602,
+                    "popular": True
+                },
+                {
+                    "name": "Ratchaprarop",
+                    "lat": 13.7538,
+                    "lon": 100.5409,
+                    "popular": False
+                },
+                {
+                    "name": "Phaya Thai",
+                    "lat": 13.7567,
+                    "lon": 100.5316,
+                    "popular": True
+                }
+            ]
+        }
+    },
+    "chiang_mai": {
+        "chiangmai_rail": {
+            "name": "Chiang Mai Key Areas",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Chiang Mai Station",
+                    "lat": 18.7546,
+                    "lon": 98.9853,
+                    "popular": True
+                },
+                {
+                    "name": "Old City (Tha Phae Gate)",
+                    "lat": 18.7874,
+                    "lon": 98.9934,
+                    "popular": True
+                },
+                {
+                    "name": "Old City (Chedi Luang)",
+                    "lat": 18.7864,
+                    "lon": 98.9862,
+                    "popular": True
+                },
+                {
+                    "name": "Night Bazaar",
+                    "lat": 18.7854,
+                    "lon": 98.9979,
+                    "popular": True
+                },
+                {
+                    "name": "Nimman (Nimmanhaemin Road)",
+                    "lat": 18.7970,
+                    "lon": 98.9682,
+                    "popular": True
+                },
+                {
+                    "name": "Chiang Mai University Area",
+                    "lat": 18.8025,
+                    "lon": 98.9534,
+                    "popular": True
+                },
+                {
+                    "name": "Warorot Market",
+                    "lat": 18.7919,
+                    "lon": 99.0011,
+                    "popular": True
+                },
+                {
+                    "name": "Riverside",
+                    "lat": 18.7838,
+                    "lon": 99.0025,
+                    "popular": True
+                },
+                {
+                    "name": "Chiang Mai Airport Area",
+                    "lat": 18.7669,
+                    "lon": 98.9625,
+                    "popular": True
+                },
+                {
+                    "name": "Santitham",
+                    "lat": 18.8000,
+                    "lon": 98.9804,
+                    "popular": False
+                },
+                {
+                    "name": "Chang Phueak",
+                    "lat": 18.8007,
+                    "lon": 98.9890,
+                    "popular": False
+                },
+                {
+                    "name": "Huay Kaew Road",
+                    "lat": 18.7990,
+                    "lon": 98.9710,
+                    "popular": False
+                }
+            ]
+        }
+    },
+    "phuket": {
+        "phuket_areas": {
+            "name": "Phuket Key Areas",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Phuket Town",
+                    "lat": 7.8804,
+                    "lon": 98.3923,
+                    "popular": True
+                },
+                {
+                    "name": "Patong Beach",
+                    "lat": 7.8965,
+                    "lon": 98.2961,
+                    "popular": True
+                },
+                {
+                    "name": "Kata Beach",
+                    "lat": 7.8200,
+                    "lon": 98.2983,
+                    "popular": True
+                },
+                {
+                    "name": "Karon Beach",
+                    "lat": 7.8440,
+                    "lon": 98.2946,
+                    "popular": True
+                },
+                {
+                    "name": "Kamala Beach",
+                    "lat": 7.9521,
+                    "lon": 98.2810,
+                    "popular": True
+                },
+                {
+                    "name": "Surin Beach",
+                    "lat": 7.9761,
+                    "lon": 98.2779,
+                    "popular": True
+                },
+                {
+                    "name": "Bang Tao Beach",
+                    "lat": 7.9962,
+                    "lon": 98.2927,
+                    "popular": True
+                },
+                {
+                    "name": "Rawai",
+                    "lat": 7.7776,
+                    "lon": 98.3257,
+                    "popular": True
+                },
+                {
+                    "name": "Nai Harn Beach",
+                    "lat": 7.7702,
+                    "lon": 98.3042,
+                    "popular": True
+                },
+                {
+                    "name": "Chalong",
+                    "lat": 7.8268,
+                    "lon": 98.3396,
+                    "popular": True
+                },
+                {
+                    "name": "Phuket Airport Area",
+                    "lat": 8.1072,
+                    "lon": 98.3169,
+                    "popular": False
+                },
+                {
+                    "name": "Old Phuket Town",
+                    "lat": 7.8837,
+                    "lon": 98.3868,
+                    "popular": True
+                }
+            ]
+        }
+    },
+    "pattaya": {
+        "pattaya_areas": {
+            "name": "Pattaya Key Areas",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Pattaya Central (Beach Road)",
+                    "lat": 12.9271,
+                    "lon": 100.8771,
+                    "popular": True
+                },
+                {
+                    "name": "Pattaya Walking Street",
+                    "lat": 12.9245,
+                    "lon": 100.8726,
+                    "popular": True
+                },
+                {
+                    "name": "Jomtien Beach",
+                    "lat": 12.8896,
+                    "lon": 100.8710,
+                    "popular": True
+                },
+                {
+                    "name": "Naklua",
+                    "lat": 12.9582,
+                    "lon": 100.8886,
+                    "popular": True
+                },
+                {
+                    "name": "Pattaya Second Road",
+                    "lat": 12.9338,
+                    "lon": 100.8828,
+                    "popular": True
+                },
+                {
+                    "name": "North Pattaya",
+                    "lat": 12.9530,
+                    "lon": 100.8830,
+                    "popular": True
+                },
+                {
+                    "name": "South Pattaya",
+                    "lat": 12.9150,
+                    "lon": 100.8685,
+                    "popular": True
+                },
+                {
+                    "name": "Pratumnak Hill",
+                    "lat": 12.9115,
+                    "lon": 100.8640,
+                    "popular": True
+                },
+                {
+                    "name": "Pattaya Tai (South Road)",
+                    "lat": 12.9200,
+                    "lon": 100.8750,
+                    "popular": False
+                },
+                {
+                    "name": "Terminal 21 Pattaya Area",
+                    "lat": 12.9470,
+                    "lon": 100.8860,
+                    "popular": True
+                }
+            ]
+        }
+    },
+    "krabi": {
+        "krabi_areas": {
+            "name": "Krabi Key Areas",
+            "popularity": 1,
+            "stations": [
+                {
+                    "name": "Krabi Town",
+                    "lat": 8.0863,
+                    "lon": 98.9063,
+                    "popular": True
+                },
+                {
+                    "name": "Ao Nang",
+                    "lat": 8.0295,
+                    "lon": 98.8268,
+                    "popular": True
+                },
+                {
+                    "name": "Railay Beach",
+                    "lat": 8.0103,
+                    "lon": 98.8375,
+                    "popular": True
+                },
+                {
+                    "name": "Klong Muang Beach",
+                    "lat": 8.0700,
+                    "lon": 98.7880,
+                    "popular": True
+                },
+                {
+                    "name": "Nopparat Thara Beach",
+                    "lat": 8.0410,
+                    "lon": 98.8182,
+                    "popular": True
+                },
+                {
+                    "name": "Krabi Airport Area",
+                    "lat": 8.0989,
+                    "lon": 98.9862,
+                    "popular": False
+                },
+                {
+                    "name": "Ao Nam Mao",
+                    "lat": 8.0530,
+                    "lon": 98.8050,
+                    "popular": False
+                },
+                {
+                    "name": "Khlong Thom",
+                    "lat": 7.9371,
+                    "lon": 99.1569,
+                    "popular": False
+                }
+            ]
+        }
     }
 }
 

@@ -67,6 +67,9 @@ CITY_COUNTRIES = {
     # Spain
     "madrid": "Spain", "barcelona": "Spain", "valencia": "Spain", "seville": "Spain",
     "bilbao": "Spain", "malaga": "Spain", "palma_de_mallorca": "Spain",
+    # Thailand
+    "bangkok": "Thailand", "chiang_mai": "Thailand", "phuket": "Thailand",
+    "pattaya": "Thailand", "krabi": "Thailand",
 }
 
 
