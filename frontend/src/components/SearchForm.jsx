@@ -99,7 +99,7 @@ function SearchForm({ cities, onSearch, loading }) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    if (e) e.preventDefault();
     onSearch(
       {
         city,
@@ -262,8 +262,18 @@ function SearchForm({ cities, onSearch, loading }) {
         )}
       </div>
 
-      <button type="submit" disabled={loading || !checkIn || !checkOut} className={loading ? "btn-loading" : ""}>
-        {loading ? (
+      <button
+        type="button"
+        onClick={handleSubmit}
+        disabled={loading || !checkIn || !checkOut || !line || !Object.keys(cities).length}
+        className={loading ? "btn-loading" : ""}
+      >
+        {!Object.keys(cities).length ? (
+          <>
+            <span className="btn-spinner" />
+            Connecting...
+          </>
+        ) : loading ? (
           <>
             <span className="btn-spinner" />
             Searching...

@@ -48,10 +48,23 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${API}/cities`)
-      .then((r) => r.json())
-      .then(setCities)
-      .catch(() => setError("Could not connect to backend. Is it running?"));
+    const fetchCities = (attempt = 1) => {
+      fetch(`${API}/cities`)
+        .then((r) => {
+          if (!r.ok) throw new Error("Bad response");
+          return r.json();
+        })
+        .then(setCities)
+        .catch(() => {
+          if (attempt < 3) {
+            // Retry after delay (handles Render cold start)
+            setTimeout(() => fetchCities(attempt + 1), attempt * 3000);
+          } else {
+            setError("Could not connect to the server. Please refresh the page.");
+          }
+        });
+    };
+    fetchCities();
 
     fetch(`${API}/sources`)
       .then((r) => r.json())
