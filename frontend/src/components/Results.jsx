@@ -31,7 +31,7 @@ const KNOWN_CHAINS = [
 function getChain(hotelName) {
   const lower = (hotelName || "").toLowerCase();
   for (const chain of KNOWN_CHAINS) {
-    if (lower.startsWith(chain.toLowerCase())) return chain;
+    if (lower.includes(chain.toLowerCase())) return chain;
   }
   return null;
 }
