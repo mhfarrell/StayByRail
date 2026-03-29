@@ -262,9 +262,21 @@ function SearchForm({ cities, onSearch, loading }) {
         )}
       </div>
 
-      <button type="submit" disabled={loading || !checkIn || !checkOut}>
-        {loading ? "Searching..." : "Search Hotels"}
+      <button type="submit" disabled={loading || !checkIn || !checkOut} className={loading ? "btn-loading" : ""}>
+        {loading ? (
+          <>
+            <span className="btn-spinner" />
+            Searching...
+          </>
+        ) : (
+          "Search Hotels"
+        )}
       </button>
+      {loading && (
+        <div className="form-loading-hint">
+          This can take up to 30 seconds on first search
+        </div>
+      )}
     </form>
   );
 }
