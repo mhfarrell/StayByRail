@@ -1,0 +1,237 @@
+import { useState, useEffect } from "react";
+
+const AMENITY_OPTIONS = [
+  "Fridge",
+  "Free Wi-Fi",
+  "Air conditioning",
+  "Parking",
+  "Restaurant",
+  "Pool",
+  "Gym",
+  "Onsen",
+  "Public bath",
+  "Laundry",
+  "Kitchen",
+  "Washer",
+  "Balcony",
+  "Room service",
+  "Bar",
+  "Spa",
+  "Pet friendly",
+  "Breakfast",
+  "Iron",
+  "Safe",
+];
+
+function SearchForm({ cities, onSearch, loading }) {
+  const [city, setCity] = useState("tokyo");
+  const [line, setLine] = useState("yamanote");
+  const [checkIn, setCheckIn] = useState("");
+  const [checkOut, setCheckOut] = useState("");
+  const [maxPrice, setMaxPrice] = useState(100);
+  const [adults, setAdults] = useState(2);
+  const [popularOnly, setPopularOnly] = useState(true);
+  const [wishlist, setWishlist] = useState([]);
+  const [showAmenities, setShowAmenities] = useState(false);
+
+  useEffect(() => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const checkout = new Date(tomorrow);
+    checkout.setDate(checkout.getDate() + 3);
+    setCheckIn(fmt(tomorrow));
+    setCheckOut(fmt(checkout));
+  }, []);
+
+  useEffect(() => {
+    if (cities[city]) {
+      const lines = Object.keys(cities[city].lines);
+      if (lines.length > 0 && !lines.includes(line)) {
+        setLine(lines[0]);
+      }
+    }
+  }, [city, cities]);
+
+  const fmt = (d) => d.toISOString().split("T")[0];
+
+  const numNights =
+    checkIn && checkOut
+      ? Math.max(
+          0,
+          Math.round(
+            (new Date(checkOut) - new Date(checkIn)) / (1000 * 60 * 60 * 24)
+          )
+        )
+      : 0;
+
+  const toggleAmenity = (amenity) => {
+    setWishlist((prev) => {
+      if (prev.includes(amenity)) {
+        return prev.filter((a) => a !== amenity);
+      }
+      if (prev.length >= 5) return prev;
+      return [...prev, amenity];
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSearch(
+      {
+        city,
+        line,
+        check_in: checkIn,
+        check_out: checkOut,
+        max_price: maxPrice,
+        adults,
+        popular_only: popularOnly,
+      },
+      wishlist
+    );
+  };
+
+  const cityLines = cities[city]?.lines || {};
+
+  return (
+    <form className="search-form" onSubmit={handleSubmit}>
+      <div className="form-row">
+        <div className="field">
+          <label>City</label>
+          <select value={city} onChange={(e) => setCity(e.target.value)}>
+            {Object.keys(cities).map((c) => (
+              <option key={c} value={c}>
+                {c.charAt(0).toUpperCase() + c.slice(1)}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="field">
+          <label>Train Line</label>
+          <select value={line} onChange={(e) => setLine(e.target.value)}>
+            {Object.entries(cityLines).map(([key, name]) => (
+              <option key={key} value={key}>
+                {name}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="field">
+          <label>Check-in</label>
+          <input
+            type="date"
+            value={checkIn}
+            onChange={(e) => {
+              const val = e.target.value;
+              setCheckIn(val);
+              if (val) {
+                const d = new Date(val);
+                const lastDay = new Date(d.getFullYear(), d.getMonth() + 1, 0);
+                setCheckOut(fmt(lastDay));
+              }
+            }}
+            required
+          />
+        </div>
+
+        <div className="field">
+          <label>Check-out</label>
+          <input
+            type="date"
+            value={checkOut}
+            onChange={(e) => setCheckOut(e.target.value)}
+            required
+          />
+        </div>
+      </div>
+
+      <div className="form-row">
+        <div className="field">
+          <label>Max £/night</label>
+          <input
+            type="number"
+            value={maxPrice}
+            onChange={(e) => setMaxPrice(Number(e.target.value))}
+            min={10}
+            max={500}
+          />
+        </div>
+
+        <div className="field">
+          <label>Guests</label>
+          <input
+            type="number"
+            value={adults}
+            onChange={(e) => setAdults(Number(e.target.value))}
+            min={1}
+            max={6}
+          />
+        </div>
+
+        <div className="field checkbox-field">
+          <label>
+            <input
+              type="checkbox"
+              checked={popularOnly}
+              onChange={(e) => setPopularOnly(e.target.checked)}
+            />
+            Popular stations only
+          </label>
+        </div>
+
+        <div className="field">
+          {numNights > 0 && (
+            <span className="nights-badge">
+              {numNights} night{numNights !== 1 ? "s" : ""} · max £
+              {maxPrice * numNights} total
+            </span>
+          )}
+        </div>
+      </div>
+
+      {/* Amenity Wishlist */}
+      <div className="wishlist-section">
+        <button
+          type="button"
+          className="wishlist-toggle"
+          onClick={() => setShowAmenities(!showAmenities)}
+        >
+          Amenities ({wishlist.length}/5)
+          {wishlist.length > 0 && (
+            <span className="wishlist-preview">
+              {wishlist.join(", ")}
+            </span>
+          )}
+          <span className="wishlist-arrow">{showAmenities ? "▲" : "▼"}</span>
+        </button>
+
+        {showAmenities && (
+          <div className="wishlist-grid">
+            {AMENITY_OPTIONS.map((amenity) => {
+              const selected = wishlist.includes(amenity);
+              const disabled = !selected && wishlist.length >= 5;
+              return (
+                <button
+                  key={amenity}
+                  type="button"
+                  className={`wishlist-chip ${selected ? "chip-selected" : ""} ${disabled ? "chip-disabled" : ""}`}
+                  onClick={() => !disabled && toggleAmenity(amenity)}
+                >
+                  {selected && "✓ "}
+                  {amenity}
+                </button>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      <button type="submit" disabled={loading || !checkIn || !checkOut}>
+        {loading ? "Searching..." : "Search Hotels"}
+      </button>
+    </form>
+  );
+}
+
+export default SearchForm;

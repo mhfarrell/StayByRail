@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48">
+  <!-- Icon: Bed/roof shape with rail line -->
+  <!-- Roof / triangular top -->
+  <path d="M6 18 L20 8 L34 18" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bed base -->
+  <rect x="8" y="18" width="24" height="10" rx="1.5" fill="#2563eb"/>
+  <!-- Pillow -->
+  <rect x="11" y="20" width="6" height="4" rx="1.5" fill="#0ea5e9"/>
+  <!-- Blanket surface -->
+  <rect x="19" y="22" width="10" height="6" rx="1" fill="#0ea5e9" opacity="0.5"/>
+  <!-- Bed legs -->
+  <rect x="9" y="28" width="2" height="3" rx="0.5" fill="#2563eb"/>
+  <rect x="29" y="28" width="2" height="3" rx="0.5" fill="#2563eb"/>
+  <!-- Rail track: two parallel lines -->
+  <line x1="2" y1="36" x2="38" y2="36" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="2" y1="40" x2="38" y2="40" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Rail ties (cross-sleepers) -->
+  <line x1="6" y1="34.5" x2="6" y2="41.5" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="12" y1="34.5" x2="12" y2="41.5" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="18" y1="34.5" x2="18" y2="41.5" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="24" y1="34.5" x2="24" y2="41.5" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="30" y1="34.5" x2="30" y2="41.5" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="36" y1="34.5" x2="36" y2="41.5" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Text: StayByRail -->
+  <text x="48" y="30" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="22" letter-spacing="-0.5">
+    <tspan fill="#f8fafc">Stay</tspan><tspan fill="#94a3b8" font-size="16" font-weight="400" dy="0">By</tspan><tspan fill="#2563eb" font-size="22" font-weight="700" dy="0">Rail</tspan>
+  </text>
+</svg>
