@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import SearchForm from "./components/SearchForm";
 import Results from "./components/Results";
 import SourcesBanner from "./components/SourcesBanner";
@@ -59,11 +59,19 @@ function App() {
       .catch(() => {});
   }, []);
 
+  const loadingRef = React.useRef(null);
+
   const handleSearch = async (params, selectedWishlist) => {
     setLoading(true);
     setError(null);
     setResults(null);
     setWishlist(selectedWishlist || []);
+
+    // Scroll to loading indicator on mobile
+    setTimeout(() => {
+      loadingRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 100);
+
     try {
       const qs = new URLSearchParams(params).toString();
       const headers = {};
@@ -137,9 +145,10 @@ function App() {
         {error && <div className="error-banner">{error}</div>}
 
         {loading && (
-          <div className="loading">
+          <div className="loading" ref={loadingRef}>
             <div className="spinner" />
             <p>Searching hotels near train stations...</p>
+            <p className="loading-hint">This can take up to 30 seconds on first search</p>
           </div>
         )}
 

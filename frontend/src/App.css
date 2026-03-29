@@ -364,6 +364,12 @@ button[type="submit"]:disabled {
   to { transform: rotate(360deg); }
 }
 
+.loading-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
 /* Error */
 .error-banner {
   background: var(--red-bg);
