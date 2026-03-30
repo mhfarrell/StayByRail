@@ -129,6 +129,71 @@ def list_sources():
     return sources
 
 
+@app.get("/api/key-status")
+def key_status(request: Request):
+    """Check if API keys are valid / have remaining quota."""
+    import requests as http
+
+    serp_key = request.headers.get("x-serpapi-key") or os.environ.get("SERPAPI_KEY", "")
+    rapid_key = request.headers.get("x-rapidapi-key") or os.environ.get("RAPIDAPI_KEY", "")
+
+    result = {"serpapi": {"configured": False}, "rapidapi": {"configured": False}}
+
+    # Check SerpAPI: their /account endpoint returns searches_remaining
+    if serp_key:
+        result["serpapi"]["configured"] = True
+        try:
+            resp = http.get(
+                "https://serpapi.com/account.json",
+                params={"api_key": serp_key},
+                timeout=5,
+            )
+            if resp.status_code == 200:
+                data = resp.json()
+                remaining = data.get("total_searches_left", 0)
+                plan = data.get("plan_name", "")
+                result["serpapi"]["valid"] = True
+                result["serpapi"]["remaining"] = remaining
+                result["serpapi"]["plan"] = plan
+            else:
+                result["serpapi"]["valid"] = False
+                result["serpapi"]["error"] = "Invalid key"
+        except Exception:
+            result["serpapi"]["valid"] = None
+            result["serpapi"]["error"] = "Could not reach SerpAPI"
+
+    # Check RapidAPI: hit a lightweight endpoint to see if the key works
+    if rapid_key:
+        result["rapidapi"]["configured"] = True
+        try:
+            resp = http.get(
+                "https://booking-com15.p.rapidapi.com/api/v1/meta/getExchangeRates",
+                params={"base_currency": "GBP"},
+                headers={
+                    "X-RapidAPI-Key": rapid_key,
+                    "X-RapidAPI-Host": "booking-com15.p.rapidapi.com",
+                },
+                timeout=5,
+            )
+            if resp.status_code == 200:
+                result["rapidapi"]["valid"] = True
+            elif resp.status_code == 429:
+                result["rapidapi"]["valid"] = True
+                result["rapidapi"]["rate_limited"] = True
+                result["rapidapi"]["error"] = "Rate limit reached"
+            elif resp.status_code in (401, 403):
+                result["rapidapi"]["valid"] = False
+                result["rapidapi"]["error"] = "Invalid key"
+            else:
+                result["rapidapi"]["valid"] = False
+                result["rapidapi"]["error"] = f"HTTP {resp.status_code}"
+        except Exception:
+            result["rapidapi"]["valid"] = None
+            result["rapidapi"]["error"] = "Could not reach RapidAPI"
+
+    return result
+
+
 @app.get("/api/stations")
 def list_stations(city: str, line: str, popular_only: bool = True):
     stations = get_stations(city, line, popular_only)

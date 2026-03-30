@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 const SERP_KEY = "staybyrail_serpapi_key";
 const RAPID_KEY = "staybyrail_rapidapi_key";
 
@@ -11,6 +12,8 @@ function Header({ theme, onToggleTheme }) {
   const [serpSaved, setSerpSaved] = useState(false);
   const [rapidSaved, setRapidSaved] = useState(false);
   const [message, setMessage] = useState(null);
+  const [keyStatus, setKeyStatus] = useState(null);
+  const [checkingKeys, setCheckingKeys] = useState(false);
 
   const aboutRef = useRef(null);
   const settingsRef = useRef(null);
@@ -21,6 +24,20 @@ function Header({ theme, onToggleTheme }) {
     const r = localStorage.getItem(RAPID_KEY);
     if (r) { setRapidKey(r); setRapidSaved(true); }
   }, []);
+
+  const checkKeyStatus = () => {
+    setCheckingKeys(true);
+    const headers = {};
+    const s = localStorage.getItem(SERP_KEY);
+    if (s) headers["X-SerpAPI-Key"] = s;
+    const r = localStorage.getItem(RAPID_KEY);
+    if (r) headers["X-RapidAPI-Key"] = r;
+    fetch(`${API}/key-status`, { headers })
+      .then((res) => res.json())
+      .then(setKeyStatus)
+      .catch(() => setKeyStatus(null))
+      .finally(() => setCheckingKeys(false));
+  };
 
   // Close dropdowns when clicking outside
   useEffect(() => {
@@ -128,7 +145,7 @@ function Header({ theme, onToggleTheme }) {
           <div className="header-dropdown" ref={settingsRef}>
             <button
               className="header-nav-btn"
-              onClick={() => { setShowSettings(!showSettings); setShowAbout(false); }}
+              onClick={() => { const opening = !showSettings; setShowSettings(opening); setShowAbout(false); if (opening) checkKeyStatus(); }}
               aria-label="Settings"
               title="Settings"
             >
@@ -149,11 +166,35 @@ function Header({ theme, onToggleTheme }) {
                   </div>
                 </div>
 
+                {/* Server key status */}
+                <div className="dropdown-row">
+                  <span className="dropdown-label">Server Key Status</span>
+                  {checkingKeys ? (
+                    <span className="key-checking">Checking...</span>
+                  ) : keyStatus ? (
+                    <div className="key-status-grid">
+                      <KeyStatusRow
+                        label="SerpAPI (Google Hotels)"
+                        status={keyStatus.serpapi}
+                      />
+                      <KeyStatusRow
+                        label="RapidAPI (Booking + TripAdvisor)"
+                        status={keyStatus.rapidapi}
+                      />
+                    </div>
+                  ) : (
+                    <span className="key-hint">Open settings to check status</span>
+                  )}
+                  <button className="key-btn key-refresh" onClick={checkKeyStatus} disabled={checkingKeys} style={{ marginTop: "0.4rem" }}>
+                    Refresh Status
+                  </button>
+                </div>
+
                 {/* SerpAPI key */}
                 <div className="dropdown-row">
                   <span className="dropdown-label">
-                    SerpAPI Key
-                    {hasSerpKey && <span className="key-status key-active">Active</span>}
+                    SerpAPI Key (optional)
+                    {hasSerpKey && <span className="key-status key-active">Saved</span>}
                   </span>
                   <div className="key-input-row">
                     <input
@@ -177,8 +218,8 @@ function Header({ theme, onToggleTheme }) {
                 {/* RapidAPI key */}
                 <div className="dropdown-row">
                   <span className="dropdown-label">
-                    RapidAPI Key
-                    {hasRapidKey && <span className="key-status key-active">Active</span>}
+                    RapidAPI Key (optional)
+                    {hasRapidKey && <span className="key-status key-active">Saved</span>}
                   </span>
                   <div className="key-input-row">
                     <input
@@ -211,6 +252,54 @@ function Header({ theme, onToggleTheme }) {
         </nav>
       </div>
     </header>
+  );
+}
+
+function KeyStatusRow({ label, status }) {
+  if (!status.configured) {
+    return (
+      <div className="key-status-row">
+        <span className="key-dot key-dot-off" />
+        <span className="key-status-label">{label}</span>
+        <span className="key-status-value key-status-off">No key</span>
+      </div>
+    );
+  }
+  if (status.valid === false) {
+    return (
+      <div className="key-status-row">
+        <span className="key-dot key-dot-error" />
+        <span className="key-status-label">{label}</span>
+        <span className="key-status-value key-status-error">{status.error || "Invalid"}</span>
+      </div>
+    );
+  }
+  if (status.rate_limited) {
+    return (
+      <div className="key-status-row">
+        <span className="key-dot key-dot-warn" />
+        <span className="key-status-label">{label}</span>
+        <span className="key-status-value key-status-warn">Rate limited</span>
+      </div>
+    );
+  }
+  if (status.valid) {
+    return (
+      <div className="key-status-row">
+        <span className="key-dot key-dot-ok" />
+        <span className="key-status-label">{label}</span>
+        <span className="key-status-value key-status-ok">
+          {status.remaining != null ? `${status.remaining} searches left` : "Active"}
+        </span>
+      </div>
+    );
+  }
+  return (
+    <div className="key-status-row">
+      <span className="key-dot key-dot-off" />
+      <span className="key-status-label">{label}</span>
+      <span className="key-status-value key-status-off">{status.error || "Unknown"}</span>
+    </div>
   );
 }
 

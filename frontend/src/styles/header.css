@@ -305,6 +305,71 @@
   }
 }
 
+/* ---- Key status grid ---- */
+.key-status-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.key-status-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--bg-input);
+  border-radius: 6px;
+}
+
+.key-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.key-dot-ok { background: #3fb950; box-shadow: 0 0 4px #3fb95088; }
+.key-dot-warn { background: var(--accent-orange); box-shadow: 0 0 4px rgba(245, 158, 11, 0.4); }
+.key-dot-error { background: var(--accent-red); box-shadow: 0 0 4px rgba(239, 68, 68, 0.4); }
+.key-dot-off { background: #6e7681; }
+
+.key-status-label {
+  flex: 1;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.78rem;
+}
+
+.key-status-value {
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.key-status-ok { color: var(--accent-green); }
+.key-status-warn { color: var(--accent-orange); }
+.key-status-error { color: var(--accent-red); }
+.key-status-off { color: var(--text-muted); }
+
+.key-checking {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.key-refresh {
+  background: var(--bg-hover);
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  padding: 0.3rem 0.6rem;
+  min-height: 36px;
+}
+
+.key-refresh:active {
+  background: var(--border);
+}
+
 /* ---- Flash message ---- */
 .dropdown-msg {
   background: var(--green-bg);
