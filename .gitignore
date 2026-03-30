@@ -16,3 +16,4 @@ frontend/src/assets/vite.svg
 frontend/public/icons.svg
 .wrangler/
 .claude/
+test-results/
