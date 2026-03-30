@@ -126,7 +126,7 @@ function App() {
         <main className="app">
           <SourcesBanner sources={sources} sourceCounts={results?.source_counts} />
 
-          <SearchForm cities={cities} onSearch={handleSearch} loading={loading} />
+          <SearchForm cities={cities} onSearch={handleSearch} loading={loading} ready={Object.keys(cities).length > 0} />
 
           {error && <div className="error-banner">{error}</div>}
 

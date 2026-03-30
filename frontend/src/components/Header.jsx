@@ -40,14 +40,15 @@ function Header({ theme, onToggleTheme }) {
   };
 
   // Close dropdowns when clicking outside — only listen when a dropdown is open
+  // Uses "click" (not mousedown/touchstart) to avoid stealing events from other elements
   useEffect(() => {
     if (!showAbout && !showSettings) return;
     const handler = (e) => {
       if (showAbout && aboutRef.current && !aboutRef.current.contains(e.target)) setShowAbout(false);
       if (showSettings && settingsRef.current && !settingsRef.current.contains(e.target)) setShowSettings(false);
     };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
+    document.addEventListener("click", handler);
+    return () => document.removeEventListener("click", handler);
   }, [showAbout, showSettings]);
 
   const saveKey = (type) => {

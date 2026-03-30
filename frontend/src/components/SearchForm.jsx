@@ -23,7 +23,7 @@ const AMENITY_OPTIONS = [
   "Safe",
 ];
 
-function SearchForm({ cities, onSearch, loading }) {
+function SearchForm({ cities, onSearch, loading, ready }) {
   const [country, setCountry] = useState("United Kingdom");
   const [city, setCity] = useState("london");
   const [line, setLine] = useState("");
@@ -265,15 +265,21 @@ function SearchForm({ cities, onSearch, loading }) {
 
       <button
         type="submit"
-        disabled={loading || !checkIn || !checkOut}
+        disabled={!ready || loading || !checkIn || !checkOut}
         onClick={(e) => {
-          if (!loading && checkIn && checkOut) {
+          if (ready && !loading && checkIn && checkOut) {
             e.preventDefault();
             handleSubmit();
           }
         }}
       >
-        {loading ? "Searching..." : "Search Hotels"}
+        {!ready ? (
+          <span className="btn-loading"><span className="btn-spinner" /> Connecting to server...</span>
+        ) : loading ? (
+          <span className="btn-loading"><span className="btn-spinner" /> Searching...</span>
+        ) : (
+          "Search Hotels"
+        )}
       </button>
     </form>
   );
