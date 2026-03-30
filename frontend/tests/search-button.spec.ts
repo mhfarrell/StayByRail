@@ -5,7 +5,7 @@ test.describe("Search button behavior", () => {
   test("is disabled while cities are loading", async ({ page }) => {
     const releaseCities = await mockAPIsWithDelayedCities(page);
 
-    await page.goto("/");
+    await page.goto("/search");
 
     // The button should be disabled and show "Connecting to server..."
     const btn = page.locator('form.search-form button[type="submit"]');
@@ -22,7 +22,7 @@ test.describe("Search button behavior", () => {
 
   test("becomes enabled after cities load", async ({ page }) => {
     await mockAllAPIs(page);
-    await page.goto("/");
+    await page.goto("/search");
 
     const btn = page.locator('form.search-form button[type="submit"]');
     await expect(btn).toBeEnabled();
@@ -31,7 +31,7 @@ test.describe("Search button behavior", () => {
 
   test("clicking search triggers an API request", async ({ page }) => {
     await mockAllAPIs(page);
-    await page.goto("/");
+    await page.goto("/search");
 
     const btn = page.locator('form.search-form button[type="submit"]');
     await expect(btn).toBeEnabled();
@@ -50,7 +50,7 @@ test.describe("Search button behavior", () => {
     page,
   }) => {
     await mockAllAPIs(page);
-    await page.goto("/");
+    await page.goto("/search");
 
     // Open the About dropdown
     const aboutBtn = page.locator("button.header-nav-btn", {
@@ -83,7 +83,7 @@ test.describe("Search button on mobile viewport", () => {
     page,
   }) => {
     await mockAllAPIs(page);
-    await page.goto("/");
+    await page.goto("/search");
 
     const btn = page.locator('form.search-form button[type="submit"]');
     await expect(btn).toBeEnabled();
@@ -101,7 +101,7 @@ test.describe("Search button on mobile viewport", () => {
     page,
   }) => {
     await mockAllAPIs(page);
-    await page.goto("/");
+    await page.goto("/search");
 
     // Open Settings dropdown
     const settingsBtn = page.locator('button[aria-label="Settings"]');

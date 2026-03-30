@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { NavLink, Link } from "react-router-dom";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 const SERP_KEY = "staybyrail_serpapi_key";
@@ -76,7 +77,7 @@ function Header({ theme, onToggleTheme }) {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <div className="header-brand">
+        <Link to="/" className="header-brand" onClick={closeAll}>
           <svg className="site-logo" viewBox="0 0 40 44" width="36" height="40" aria-hidden="true">
             <path d="M4 16 L20 6 L36 16" fill="none" stroke="#2563eb" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round"/>
             <rect x="6" y="16" width="28" height="12" rx="2" fill="#2563eb"/>
@@ -89,43 +90,58 @@ function Header({ theme, onToggleTheme }) {
             {[5,11,17,23,29,35].map(x => <line key={x} x1={x} y1="34.5" x2={x} y2="42" stroke="#f59e0b" strokeWidth="1.3" strokeLinecap="round"/>)}
           </svg>
           <div className="header-text">
-            <h1 className="brand-name">
+            <span className="brand-name">
               <span className="brand-stay">Stay</span>
               <span className="brand-by">By</span>
               <span className="brand-rail">Rail</span>
-            </h1>
+            </span>
             <p className="subtitle">Find hotels near train stations</p>
           </div>
-        </div>
+        </Link>
 
         <nav className="header-nav">
-          <span className="header-badge">52 cities</span>
-          <span className="header-badge">6 countries</span>
+          {/* Search link */}
+          <NavLink
+            to="/search"
+            className={({ isActive }) => `header-nav-btn${isActive ? " active" : ""}`}
+            onClick={closeAll}
+          >
+            Search
+          </NavLink>
 
-          {/* About dropdown */}
+          {/* About Us dropdown */}
           <div className="header-dropdown" ref={aboutRef}>
             <button
-              className="header-nav-btn"
+              className={`header-nav-btn${showAbout ? " active" : ""}`}
               onClick={() => { setShowAbout(!showAbout); setShowSettings(false); }}
             >
               About
+              <svg width="10" height="10" viewBox="0 0 10 6" fill="none" aria-hidden="true" style={{ marginLeft: 2 }}>
+                <path d={showAbout ? "M1 5l4-4 4 4" : "M1 1l4 4 4-4"} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
             </button>
             {showAbout && (
               <div className="dropdown-panel dropdown-about">
                 <button className="dropdown-close" onClick={closeAll} aria-label="Close">&times;</button>
-                <h3 className="dropdown-heading">About StayByRail</h3>
-                <p className="dropdown-text">
-                  Find hotels within walking distance of major train stations.
-                  Search by city and line, set your dates, and compare prices
-                  from multiple booking platforms.
-                </p>
-                <p className="dropdown-text">
-                  <strong>52 cities</strong> across <strong>6 countries</strong>: Japan, United Kingdom,
-                  France, Germany, Spain, and Thailand.
-                </p>
-                <p className="dropdown-text dropdown-text-muted">
-                  Data from Google Hotels, Booking.com, and TripAdvisor.
-                </p>
+                <p className="dropdown-label" style={{ marginBottom: "0.5rem" }}>About Us</p>
+                <nav className="dropdown-nav">
+                  <Link to="/about" className="dropdown-nav-link" onClick={closeAll}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    About StayByRail
+                  </Link>
+                  <Link to="/how-it-works" className="dropdown-nav-link" onClick={closeAll}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    How It Works
+                  </Link>
+                  <Link to="/coverage" className="dropdown-nav-link" onClick={closeAll}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Coverage
+                  </Link>
+                  <Link to="/faq" className="dropdown-nav-link" onClick={closeAll}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    FAQ
+                  </Link>
+                </nav>
               </div>
             )}
           </div>

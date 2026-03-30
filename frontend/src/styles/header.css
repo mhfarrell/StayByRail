@@ -22,11 +22,13 @@
   margin: 0 auto;
 }
 
-/* ---- Brand ---- */
+/* ---- Brand (now a Link) ---- */
 .header-brand {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
 }
 
 .site-logo {
@@ -404,6 +406,44 @@
 
 .key-refresh:active {
   background: var(--border);
+}
+
+/* ---- Active nav link ---- */
+.header-nav-btn.active {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+/* ---- Dropdown nav links (About Us sub-menu) ---- */
+.dropdown-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.dropdown-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.65rem;
+  border-radius: 8px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+  min-height: var(--touch-min);
+}
+
+.dropdown-nav-link:active {
+  background: var(--bg-hover);
+}
+
+@media (hover: hover) {
+  .dropdown-nav-link:hover {
+    background: var(--bg-hover);
+    color: var(--accent-blue);
+  }
 }
 
 /* ---- Flash message ---- */

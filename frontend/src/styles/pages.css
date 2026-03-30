@@ -1,0 +1,166 @@
+/* ============================================================
+   pages.css — Page-level layout: hero, content wrappers
+   ============================================================ */
+
+/* ---- Hero (Home page) ---- */
+.page-hero {
+  text-align: center;
+  padding: 2rem 0.5rem 1.75rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+.hero-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 560px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.65;
+}
+
+.hero-cta {
+  display: inline-block;
+  background: #f59e0b;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.9rem 2.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: background 0.15s, transform 0.1s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(245, 158, 11, 0.3);
+}
+
+.hero-cta:active {
+  transform: translateY(0);
+  background: #d97706;
+}
+
+@media (hover: hover) {
+  .hero-cta:hover {
+    background: #fbbf24;
+    transform: translateY(-1px);
+  }
+}
+
+/* ---- Content page wrapper ---- */
+.page-content {
+  padding: 0.5rem 0 1rem;
+}
+
+.page-heading {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.page-intro {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+
+/* ---- About page blocks ---- */
+.about-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-block {
+  border-left: 3px solid var(--accent-blue);
+  padding-left: 1.25rem;
+}
+
+.about-block-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+}
+
+.about-block-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.about-block-text:last-child {
+  margin-bottom: 0;
+}
+
+.about-link {
+  color: var(--accent-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.about-link:active {
+  text-decoration: underline;
+}
+
+@media (hover: hover) {
+  .about-link:hover {
+    text-decoration: underline;
+  }
+}
+
+/* ---- Tablet ---- */
+@media (min-width: 600px) {
+  .page-hero {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .page-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* ---- Desktop ---- */
+@media (min-width: 900px) {
+  .page-hero {
+    padding: 3rem 1rem 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .page-heading {
+    font-size: 2rem;
+  }
+
+  .page-intro {
+    font-size: 1rem;
+  }
+}

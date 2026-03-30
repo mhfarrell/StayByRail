@@ -4,7 +4,7 @@ import { mockAllAPIs, CITIES_RESPONSE } from "./mocks";
 test.describe("Search form", () => {
   test.beforeEach(async ({ page }) => {
     await mockAllAPIs(page);
-    await page.goto("/");
+    await page.goto("/search");
   });
 
   test("country dropdown is populated from API data", async ({ page }) => {

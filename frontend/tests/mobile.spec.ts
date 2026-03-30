@@ -6,7 +6,7 @@ test.describe("Mobile-specific tests", () => {
 
   test.beforeEach(async ({ page }) => {
     await mockAllAPIs(page);
-    await page.goto("/");
+    await page.goto("/search");
   });
 
   test("all form elements are visible and tappable", async ({ page }) => {
