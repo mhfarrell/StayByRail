@@ -140,11 +140,11 @@ function App() {
 
           {results && <Results data={results} wishlist={wishlist} />}
 
+          <Footer />
+
           <div className="ad-banner">
             <AdUnit format="horizontal" style={{ width: "100%", height: 90 }} />
           </div>
-
-          <Footer />
         </main>
 
         <aside className="ad-rail ad-rail-right">

@@ -95,7 +95,7 @@ test.describe("Mobile-specific tests", () => {
     });
     await aboutBtn.click();
     await expect(page.locator(".dropdown-about")).toBeVisible();
-    await page.locator("form.search-form").click({ force: true });
+    await page.locator(".dropdown-backdrop").click();
     await expect(page.locator(".dropdown-about")).not.toBeVisible();
 
     // Scroll down — the search button should come into view

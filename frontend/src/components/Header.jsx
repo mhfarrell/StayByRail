@@ -39,17 +39,7 @@ function Header({ theme, onToggleTheme }) {
       .finally(() => setCheckingKeys(false));
   };
 
-  // Close dropdowns when clicking outside — only listen when a dropdown is open
-  // Uses "click" (not mousedown/touchstart) to avoid stealing events from other elements
-  useEffect(() => {
-    if (!showAbout && !showSettings) return;
-    const handler = (e) => {
-      if (showAbout && aboutRef.current && !aboutRef.current.contains(e.target)) setShowAbout(false);
-      if (showSettings && settingsRef.current && !settingsRef.current.contains(e.target)) setShowSettings(false);
-    };
-    document.addEventListener("click", handler);
-    return () => document.removeEventListener("click", handler);
-  }, [showAbout, showSettings]);
+  const closeAll = () => { setShowAbout(false); setShowSettings(false); };
 
   const saveKey = (type) => {
     if (type === "serp" && serpKey.trim()) {
@@ -122,6 +112,7 @@ function Header({ theme, onToggleTheme }) {
             </button>
             {showAbout && (
               <div className="dropdown-panel dropdown-about">
+                <button className="dropdown-close" onClick={closeAll} aria-label="Close">&times;</button>
                 <h3 className="dropdown-heading">About StayByRail</h3>
                 <p className="dropdown-text">
                   Find hotels within walking distance of major train stations.
@@ -155,6 +146,7 @@ function Header({ theme, onToggleTheme }) {
             </button>
             {showSettings && (
               <div className="dropdown-panel dropdown-settings">
+                <button className="dropdown-close" onClick={closeAll} aria-label="Close">&times;</button>
                 {/* Theme */}
                 <div className="dropdown-row">
                   <span className="dropdown-label">Theme</span>
@@ -249,6 +241,9 @@ function Header({ theme, onToggleTheme }) {
 
         </nav>
       </div>
+      {(showAbout || showSettings) && (
+        <div className="dropdown-backdrop" onClick={closeAll} />
+      )}
     </header>
   );
 }

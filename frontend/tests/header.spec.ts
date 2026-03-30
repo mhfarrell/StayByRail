@@ -52,8 +52,8 @@ test.describe("Header dropdowns", () => {
     await aboutBtn.click();
     await expect(aboutPanel).toBeVisible();
 
-    // Click on the main content area to close
-    await page.locator("form.search-form").click({ force: true });
+    // Click on the backdrop to close
+    await page.locator(".dropdown-backdrop").click();
     await expect(aboutPanel).not.toBeVisible();
   });
 

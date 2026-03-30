@@ -59,8 +59,8 @@ test.describe("Search button behavior", () => {
     await aboutBtn.click();
     await expect(page.locator(".dropdown-about")).toBeVisible();
 
-    // Close by clicking body
-    await page.locator("body").click({ position: { x: 5, y: 5 } });
+    // Close by clicking the backdrop
+    await page.locator(".dropdown-backdrop").click();
     await expect(page.locator(".dropdown-about")).not.toBeVisible();
 
     // Now click search — it should still fire a request
@@ -108,8 +108,8 @@ test.describe("Search button on mobile viewport", () => {
     await settingsBtn.click();
     await expect(page.locator(".dropdown-settings")).toBeVisible();
 
-    // Close it by clicking elsewhere
-    await page.locator("body").click({ position: { x: 5, y: 5 } });
+    // Close it via the close button
+    await page.locator(".dropdown-settings .dropdown-close").click();
     await expect(page.locator(".dropdown-settings")).not.toBeVisible();
 
     // Search button should still work
