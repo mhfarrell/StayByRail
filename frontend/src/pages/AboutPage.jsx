@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import PageMeta from "../components/PageMeta";
 
 function AboutPage() {
   return (
     <div className="page-content">
+      <PageMeta
+        title="About StayByRail — Hotels Near Train Stations"
+        description="StayByRail helps travellers find hotels within walking distance of major train and metro stations across 52 cities in 6 countries. Built by Matt Farrell."
+      />
       <h2 className="page-heading">About StayByRail</h2>
       <p className="page-intro">
         StayByRail helps travellers find hotels within walking distance of major

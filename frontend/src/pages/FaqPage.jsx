@@ -1,6 +1,58 @@
+import PageMeta from "../components/PageMeta";
+
 function FaqPage() {
   return (
     <div className="page-content">
+      <PageMeta
+        title="FAQ — StayByRail | Hotels Near Train Stations"
+        description="Answers to common questions about StayByRail — how it works, which cities are covered, data sources, and how to use your own API keys."
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does StayByRail work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "StayByRail searches for hotels near the train or metro station you select. Choose a city, pick a rail line and station, enter your travel dates, and we query multiple booking platforms simultaneously. Results are sorted by walking distance to the station so you can quickly find the most convenient option at the best price."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which cities and countries are covered?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "StayByRail currently covers 52 cities across six countries: Japan (12 cities including Tokyo, Osaka, and Kyoto), the United Kingdom (13 cities including London, Manchester, and Edinburgh), France (7 cities including Paris and Lyon), Germany (8 cities including Berlin and Munich), Spain (7 cities including Madrid and Barcelona), and Thailand (5 cities including Bangkok)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is StayByRail free to use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, StayByRail is completely free for all users. There are no registration requirements, no hidden fees, and no premium tiers. You search, compare, and then book directly through the booking platform of your choice."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What data sources does StayByRail use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hotel listings and pricing come from Google Hotels (via SerpAPI), Booking.com, and TripAdvisor (via RapidAPI). Station locations and rail line data are sourced from official transit authorities and open data projects."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I book directly through StayByRail?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "StayByRail is a comparison tool, not a booking engine. When you find a hotel you like, clicking the booking link takes you directly to Google Hotels, Booking.com, or TripAdvisor to complete your reservation."
+              }
+            }
+          ]
+        }}
+      />
       <h2 className="page-heading">Frequently Asked Questions</h2>
       <p className="page-intro">
         Everything you need to know about using StayByRail to find the perfect hotel

@@ -398,3 +398,112 @@
     gap: 0.35rem;
   }
 }
+
+/* ---- Shortlist heart button ---- */
+.shortlist-heart-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-muted);
+  font-size: 1rem;
+  width: 34px;
+  height: 34px;
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shortlist-heart-btn:active {
+  background: var(--bg-hover);
+}
+
+.shortlist-heart-btn.shortlisted {
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.4);
+  background: rgba(239, 68, 68, 0.08);
+}
+
+@media (hover: hover) {
+  .shortlist-heart-btn:hover {
+    color: #ef4444;
+    border-color: rgba(239, 68, 68, 0.4);
+    background: rgba(239, 68, 68, 0.08);
+  }
+}
+
+/* ---- Price badges ---- */
+.price-badges {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.price-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.badge-cheapest {
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--accent-green);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.badge-value {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--accent-orange);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* ---- No-link price display ---- */
+.price-no-link {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- Booking.com compare button (secondary CTA) ---- */
+.booking-compare-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #003580;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  min-height: var(--touch-min);
+  transition: background 0.15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.booking-compare-btn:active {
+  background: #00487a;
+}
+
+@media (hover: hover) {
+  .booking-compare-btn:hover {
+    background: #00487a;
+  }
+}
+
+/* ---- Walk time with icon ---- */
+.walk-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}

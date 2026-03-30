@@ -1,6 +1,12 @@
+import PageMeta from "../components/PageMeta";
+
 function CoveragePage() {
   return (
     <div className="page-content">
+      <PageMeta
+        title="Coverage — StayByRail | 52 Cities, 6 Countries"
+        description="StayByRail covers 52 cities across Japan, the United Kingdom, France, Germany, Spain, and Thailand — including JR lines, London Underground, Paris Metro, and BTS Skytrain."
+      />
       <h2 className="page-heading">Our Coverage</h2>
       <p className="page-intro">
         StayByRail covers major rail and metro networks across six countries and

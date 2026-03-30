@@ -21,6 +21,7 @@ import "./styles/hotel-map.css";
 import "./styles/sources-banner.css";
 import "./styles/content.css";
 import "./styles/pages.css";
+import "./styles/shortlist.css";
 
 function useTheme() {
   const [theme, setTheme] = useState(() => {

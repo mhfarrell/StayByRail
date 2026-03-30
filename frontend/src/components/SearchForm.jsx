@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const AMENITY_OPTIONS = [
   "Fridge",
@@ -23,7 +23,7 @@ const AMENITY_OPTIONS = [
   "Safe",
 ];
 
-function SearchForm({ cities, onSearch, loading, ready }) {
+function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
   const [country, setCountry] = useState("United Kingdom");
   const [city, setCity] = useState("london");
   const [line, setLine] = useState("");
@@ -34,6 +34,7 @@ function SearchForm({ cities, onSearch, loading, ready }) {
   const [popularOnly, setPopularOnly] = useState(true);
   const [wishlist, setWishlist] = useState([]);
   const [showAmenities, setShowAmenities] = useState(false);
+  const appliedInitial = useRef(false);
 
   // Build country -> cities map
   const countries = {};
@@ -78,6 +79,23 @@ function SearchForm({ cities, onSearch, loading, ready }) {
       }
     }
   }, [city, cities]);
+
+  // Apply URL params once cities are loaded
+  useEffect(() => {
+    if (appliedInitial.current || !initialValues || Object.keys(cities).length === 0) return;
+    if (initialValues.city && cities[initialValues.city]) {
+      const cityData = cities[initialValues.city];
+      if (cityData?.country) setCountry(cityData.country);
+      setCity(initialValues.city);
+    }
+    if (initialValues.line) setLine(initialValues.line);
+    if (initialValues.check_in) setCheckIn(initialValues.check_in);
+    if (initialValues.check_out) setCheckOut(initialValues.check_out);
+    if (initialValues.max_price) setMaxPrice(initialValues.max_price);
+    if (initialValues.adults) setAdults(initialValues.adults);
+    if (initialValues.popular_only != null) setPopularOnly(initialValues.popular_only);
+    appliedInitial.current = true;
+  }, [cities, initialValues]);
 
   const numNights =
     checkIn && checkOut

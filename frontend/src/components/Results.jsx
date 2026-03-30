@@ -1,8 +1,7 @@
-import { useState, useMemo, useEffect, lazy, Suspense } from "react";
+import { useState, useMemo, useEffect, useRef, lazy, Suspense } from "react";
 import HotelCard from "./HotelCard";
 const HotelMap = lazy(() => import("./HotelMap"));
 
-// Known hotel chain names (more specific first to avoid partial matches)
 const KNOWN_CHAINS = [
   "Hampton by Hilton", "DoubleTree by Hilton", "Hilton Garden Inn", "Curio Collection by Hilton",
   "Courtyard by Marriott", "Fairfield by Marriott", "JW Marriott", "Four Points by Sheraton",
@@ -42,12 +41,10 @@ function hotelCardId(name) {
   return "hotel-" + (name || "").replace(/\s+/g, "-").replace(/[^a-zA-Z0-9-]/g, "").toLowerCase();
 }
 
-// Check if a hotel's amenities match a wishlist item
 function matchesWishlistItem(amenities, item) {
-  if (!amenities || amenities.length === 0) return null; // unknown
+  if (!amenities || amenities.length === 0) return null;
   const text = amenities.join(" ").toLowerCase();
   const key = item.toLowerCase();
-  // Map common wishlist names to amenity keywords
   const aliases = {
     fridge: ["refrigerator", "fridge", "mini-fridge", "mini fridge", "kitchenette"],
     "free wi-fi": ["free wi-fi", "wi-fi", "wifi", "free wifi"],
@@ -84,16 +81,30 @@ function scoreHotel(hotel, wishlist) {
   return { matched, total: wishlist.length, items };
 }
 
-function Results({ data, wishlist }) {
+function Results({ data, wishlist, onShortlist, isShortlisted }) {
   const [priceMode, setPriceMode] = useState("per_night");
   const [maxWalk, setMaxWalk] = useState(10);
   const [sortBy, setSortBy] = useState("price_asc");
   const [chainFilter, setChainFilter] = useState("");
+  const [viewMode, setViewMode] = useState("station");
+  const [collapsedStations, setCollapsedStations] = useState(new Set());
 
-  // Reset chain filter when new search results arrive
   useEffect(() => { setChainFilter(""); }, [data]);
 
-  // Flatten all hotels, score them, filter, sort
+  // Build map of station -> original order from API data
+  const stationOrder = useMemo(() => {
+    const map = new Map();
+    if (!data?.results) return map;
+    for (const group of data.results) {
+      for (const hotel of group.hotels) {
+        if (hotel.nearest_station && !map.has(hotel.nearest_station)) {
+          map.set(hotel.nearest_station, map.size);
+        }
+      }
+    }
+    return map;
+  }, [data]);
+
   const { allHotels, stationGroups, availableChains } = useMemo(() => {
     if (!data) return { allHotels: [], stationGroups: [], availableChains: [] };
 
@@ -107,7 +118,6 @@ function Results({ data, wishlist }) {
       }
     }
 
-    // Extract available chains with counts
     const chainCounts = {};
     for (const h of all) {
       if (h.chain) chainCounts[h.chain] = (chainCounts[h.chain] || 0) + 1;
@@ -116,7 +126,6 @@ function Results({ data, wishlist }) {
       .sort((a, b) => b[1] - a[1])
       .map(([name, count]) => ({ name, count }));
 
-    // Sort
     const sorted = [...all];
     switch (sortBy) {
       case "wishlist":
@@ -143,7 +152,6 @@ function Results({ data, wishlist }) {
         break;
     }
 
-    // Also rebuild station groups for the map
     const groups = [];
     for (const group of data.results) {
       const hotels = group.hotels.filter(
@@ -155,7 +163,6 @@ function Results({ data, wishlist }) {
     return { allHotels: sorted, stationGroups: groups, availableChains: chains };
   }, [data, maxWalk, wishlist, sortBy]);
 
-  // Apply chain filter
   const displayedHotels = chainFilter
     ? allHotels.filter((h) => h.chain === chainFilter)
     : allHotels;
@@ -163,12 +170,54 @@ function Results({ data, wishlist }) {
   const filteredGroups = useMemo(() => {
     if (!chainFilter) return stationGroups;
     return stationGroups
-      .map((g) => ({
-        ...g,
-        hotels: g.hotels.filter((h) => getChain(h.name) === chainFilter),
-      }))
+      .map((g) => ({ ...g, hotels: g.hotels.filter((h) => getChain(h.name) === chainFilter) }))
       .filter((g) => g.hotels.length > 0);
   }, [stationGroups, chainFilter]);
+
+  // Station display groups (grouped by nearest_station, in original API order)
+  const stationDisplayGroups = useMemo(() => {
+    const map = new Map();
+    for (const hotel of displayedHotels) {
+      const stn = hotel.nearest_station || "Other";
+      if (!map.has(stn)) map.set(stn, []);
+      map.get(stn).push(hotel);
+    }
+    return [...map.entries()]
+      .sort(([a], [b]) => (stationOrder.get(a) ?? 999) - (stationOrder.get(b) ?? 999))
+      .map(([stationName, hotels]) => {
+        const priced = hotels.filter((h) => h.price_per_night);
+        const minPrice = priced.length ? Math.min(...priced.map((h) => h.price_per_night)) : null;
+        const minPriceStr = priced.find((h) => h.price_per_night === minPrice)?.price_per_night_str;
+        return { stationName, hotels, minPrice, minPriceStr };
+      });
+  }, [displayedHotels, stationOrder]);
+
+  // Price badges
+  const { globalMinPrice, goodValueSet } = useMemo(() => {
+    const priced = displayedHotels.filter((h) => h.price_per_night);
+    if (priced.length === 0) return { globalMinPrice: null, goodValueSet: new Set() };
+
+    const prices = priced.map((h) => h.price_per_night).sort((a, b) => a - b);
+    const minPrice = prices[0];
+    const median = prices[Math.floor(prices.length / 2)];
+
+    const gvSet = new Set(
+      priced
+        .filter((h) => h.overall_rating >= 4.0 && h.price_per_night <= median)
+        .map((h) => h.name)
+    );
+
+    return { globalMinPrice: minPrice, goodValueSet: gvSet };
+  }, [displayedHotels]);
+
+  const toggleStation = (name) => {
+    setCollapsedStations((prev) => {
+      const next = new Set(prev);
+      if (next.has(name)) next.delete(name);
+      else next.add(name);
+      return next;
+    });
+  };
 
   const scrollToHotel = (hotelName) => {
     const el = document.getElementById(hotelCardId(hotelName));
@@ -183,6 +232,23 @@ function Results({ data, wishlist }) {
       </div>
     );
   }
+
+  const renderHotelCard = (hotel, i) => (
+    <HotelCard
+      key={hotel.name + i}
+      hotel={hotel}
+      cardId={hotelCardId(hotel.name)}
+      priceMode={priceMode}
+      checkIn={data.check_in}
+      checkOut={data.check_out}
+      adults={data.adults}
+      wishlist={wishlist}
+      onShortlist={onShortlist}
+      isShortlisted={isShortlisted?.(hotel.name)}
+      isCheapest={hotel.price_per_night != null && hotel.price_per_night === globalMinPrice}
+      isGoodValue={goodValueSet.has(hotel.name)}
+    />
+  );
 
   return (
     <div className="results">
@@ -200,6 +266,25 @@ function Results({ data, wishlist }) {
 
       {/* Controls bar */}
       <div className="results-controls">
+        {/* View mode toggle */}
+        <div className="control-group">
+          <label>View</label>
+          <div className="toggle-group">
+            <button
+              className={`toggle-btn ${viewMode === "station" ? "active" : ""}`}
+              onClick={() => setViewMode("station")}
+            >
+              By Station
+            </button>
+            <button
+              className={`toggle-btn ${viewMode === "list" ? "active" : ""}`}
+              onClick={() => setViewMode("list")}
+            >
+              All Hotels
+            </button>
+          </div>
+        </div>
+
         <div className="control-group">
           <label>Show prices as</label>
           <div className="toggle-group">
@@ -280,30 +365,62 @@ function Results({ data, wishlist }) {
         <HotelMap stationGroups={filteredGroups} priceMode={priceMode} onHotelClick={scrollToHotel} />
       </Suspense>
 
-      {/* Flat sorted hotel list */}
+      {/* Hotel list */}
       {displayedHotels.length === 0 ? (
         <div className="no-results">
           <p>
             {chainFilter
-              ? <>No {chainFilter} hotels found. <button className="clear-filter-link" onClick={() => setChainFilter("")}>Clear filter</button></>
+              ? <><>{" "}</><button className="clear-filter-link" onClick={() => setChainFilter("")}>Clear filter</button></>
               : <>No hotels within {maxWalk} min walk. Try increasing the slider.</>
             }
           </p>
         </div>
+      ) : viewMode === "station" ? (
+        /* Station grouped view */
+        <div className="station-groups">
+          {stationDisplayGroups.map(({ stationName, hotels, minPriceStr }) => {
+            const collapsed = collapsedStations.has(stationName);
+            return (
+              <div key={stationName} className="station-group">
+                <button
+                  className="station-section-header"
+                  onClick={() => toggleStation(stationName)}
+                  aria-expanded={!collapsed}
+                >
+                  <svg className="station-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <rect x="2" y="7" width="20" height="15" rx="2"/>
+                    <path d="M16 3H8M12 3v4"/>
+                    <circle cx="7.5" cy="17.5" r="1.5"/>
+                    <circle cx="16.5" cy="17.5" r="1.5"/>
+                  </svg>
+                  <span className="station-section-name">{stationName}</span>
+                  <span className="station-section-count">{hotels.length} hotel{hotels.length !== 1 ? "s" : ""}</span>
+                  {minPriceStr && (
+                    <span className="station-section-from">from {minPriceStr}</span>
+                  )}
+                  <svg
+                    className={`station-chevron ${collapsed ? "collapsed" : ""}`}
+                    width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" strokeWidth="2.5"
+                    strokeLinecap="round" strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 9l6 6 6-6"/>
+                  </svg>
+                </button>
+                {!collapsed && (
+                  <div className="hotel-grid station-hotel-grid">
+                    {hotels.map((hotel, i) => renderHotelCard(hotel, i))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       ) : (
+        /* Flat list view */
         <div className="hotel-grid">
-          {displayedHotels.map((hotel, i) => (
-            <HotelCard
-              key={hotel.name + i}
-              hotel={hotel}
-              cardId={hotelCardId(hotel.name)}
-              priceMode={priceMode}
-              checkIn={data.check_in}
-              checkOut={data.check_out}
-              adults={data.adults}
-              wishlist={wishlist}
-            />
-          ))}
+          {displayedHotels.map((hotel, i) => renderHotelCard(hotel, i))}
         </div>
       )}
     </div>

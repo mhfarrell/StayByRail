@@ -1,8 +1,28 @@
 import { Link } from "react-router-dom";
+import PageMeta from "../components/PageMeta";
 
 function HomePage() {
   return (
     <>
+      <PageMeta
+        title="StayByRail — Find Hotels Near Train Stations"
+        description="Compare hotels near train and metro stations across 52 cities in 6 countries. Real-time prices from Google Hotels, Booking.com, and TripAdvisor."
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "StayByRail",
+          "url": "https://staybyrail.co.uk",
+          "description": "Find hotels near train and metro stations. Compare prices from Google Hotels, Booking.com, and TripAdvisor across 52 cities in 6 countries.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://staybyrail.co.uk/search?city={city}&check_in={check_in}&check_out={check_out}"
+            },
+            "query-input": "required name=city"
+          }
+        }}
+      />
       {/* ---- Hero ---- */}
       <section className="page-hero">
         <h2 className="hero-title">Find hotels near train stations</h2>

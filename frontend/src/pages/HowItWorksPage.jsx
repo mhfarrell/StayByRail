@@ -1,6 +1,35 @@
+import PageMeta from "../components/PageMeta";
+
 function HowItWorksPage() {
   return (
     <div className="page-content">
+      <PageMeta
+        title="How StayByRail Works — Find Hotels Near Train Stations"
+        description="Three simple steps to find hotels near any train or metro station. Choose your city and line, set your dates and budget, then compare hotels sorted by walking distance."
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How to find hotels near train stations with StayByRail",
+          "description": "Find and compare hotels within walking distance of train and metro stations across 52 cities.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Choose Your City and Rail Line",
+              "text": "Select from 52 cities across Japan, the United Kingdom, France, Germany, Spain, and Thailand. Pick a specific train or metro line and station to search around."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Set Your Dates and Budget",
+              "text": "Enter your check-in and check-out dates and optionally set a maximum nightly budget to filter results to your price range."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Compare Hotels by Walking Distance",
+              "text": "Results are sorted by walking distance to the station. Compare prices from Google Hotels, Booking.com, and TripAdvisor side by side, then book directly through your preferred site."
+            }
+          ]
+        }}
+      />
       <h2 className="page-heading">How StayByRail Works</h2>
       <p className="page-intro">
         StayByRail makes it simple to find accommodation within walking distance of

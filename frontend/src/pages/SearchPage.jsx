@@ -1,7 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useSearchParams } from "react-router-dom";
 import SearchForm from "../components/SearchForm";
 import Results from "../components/Results";
 import SourcesBanner from "../components/SourcesBanner";
+import ShortlistPanel from "../components/ShortlistPanel";
+import { useShortlist } from "../hooks/useShortlist";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 
@@ -12,6 +15,19 @@ function SearchPage() {
   const [wishlist, setWishlist] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const { items: shortlistItems, toggle: toggleShortlist, clear: clearShortlist, isIn: isShortlisted } = useShortlist();
+
+  // Read initial search params from URL
+  const urlParams = useRef({
+    city: searchParams.get("city"),
+    line: searchParams.get("line"),
+    check_in: searchParams.get("check_in"),
+    check_out: searchParams.get("check_out"),
+    max_price: searchParams.get("max_price") ? Number(searchParams.get("max_price")) : null,
+    adults: searchParams.get("adults") ? Number(searchParams.get("adults")) : null,
+    popular_only: searchParams.get("popular_only") === "true" ? true : searchParams.get("popular_only") === "false" ? false : null,
+  });
 
   useEffect(() => {
     const fetchCities = (attempt = 1) => {
@@ -38,6 +54,13 @@ function SearchPage() {
   }, []);
 
   const handleSearch = async (params, selectedWishlist) => {
+    // Update URL params (shareable link)
+    const urlUpdate = {};
+    for (const [k, v] of Object.entries(params)) {
+      if (v != null && v !== "") urlUpdate[k] = String(v);
+    }
+    setSearchParams(urlUpdate, { replace: true });
+
     setLoading(true);
     setError(null);
     setResults(null);
@@ -75,6 +98,7 @@ function SearchPage() {
         onSearch={handleSearch}
         loading={loading}
         ready={Object.keys(cities).length > 0}
+        initialValues={urlParams.current}
       />
 
       {error && <div className="error-banner">{error}</div>}
@@ -87,7 +111,20 @@ function SearchPage() {
         </div>
       )}
 
-      {results && <Results data={results} wishlist={wishlist} />}
+      {results && (
+        <Results
+          data={results}
+          wishlist={wishlist}
+          onShortlist={toggleShortlist}
+          isShortlisted={isShortlisted}
+        />
+      )}
+
+      <ShortlistPanel
+        items={shortlistItems}
+        onToggle={toggleShortlist}
+        onClear={clearShortlist}
+      />
     </>
   );
 }
