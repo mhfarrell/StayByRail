@@ -181,7 +181,10 @@ def key_status(request: Request):
                 result["rapidapi"]["valid"] = True
                 result["rapidapi"]["rate_limited"] = True
                 result["rapidapi"]["error"] = "Rate limit reached"
-            elif resp.status_code in (401, 403):
+            elif resp.status_code == 403:
+                # Key is valid but not subscribed to this test endpoint — treat as active
+                result["rapidapi"]["valid"] = True
+            elif resp.status_code == 401:
                 result["rapidapi"]["valid"] = False
                 result["rapidapi"]["error"] = "Invalid key"
             else:

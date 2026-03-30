@@ -18,6 +18,7 @@ function Header({ theme, onToggleTheme }) {
 
   const aboutRef = useRef(null);
   const settingsRef = useRef(null);
+  const keyStatusLoaded = useRef(false);
 
   useEffect(() => {
     const s = localStorage.getItem(SERP_KEY);
@@ -150,7 +151,7 @@ function Header({ theme, onToggleTheme }) {
           <div className="header-dropdown" ref={settingsRef}>
             <button
               className="header-nav-btn"
-              onClick={() => { const opening = !showSettings; setShowSettings(opening); setShowAbout(false); if (opening) checkKeyStatus(); }}
+              onClick={() => { const opening = !showSettings; setShowSettings(opening); setShowAbout(false); if (opening && !keyStatusLoaded.current) { keyStatusLoaded.current = true; checkKeyStatus(); } }}
               aria-label="Settings"
               title="Settings"
             >
