@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const LS_KEY = "staybyrail_serpapi_key";
 
-function Settings({ theme, onToggleTheme }) {
+function Settings() {
   const [open, setOpen] = useState(false);
   const [apiKey, setApiKey] = useState("");
   const [saved, setSaved] = useState(false);
@@ -53,36 +53,17 @@ function Settings({ theme, onToggleTheme }) {
           strokeWidth="1.8"
           strokeLinecap="round"
           strokeLinejoin="round"
+          aria-hidden="true"
         >
           <circle cx="10" cy="10" r="3" />
           <path d="M10 1.5v2M10 16.5v2M3.3 3.3l1.4 1.4M15.3 15.3l1.4 1.4M1.5 10h2M16.5 10h2M3.3 16.7l1.4-1.4M15.3 4.7l1.4-1.4" />
         </svg>
-        <span>Settings</span>
+        <span>API Key</span>
         <span className={`settings-indicator ${hasKey ? "ind-on" : "ind-off"}`} />
       </button>
 
       {open && (
         <div className="settings-body">
-          {/* Theme toggle */}
-          <div className="settings-row">
-            <label className="settings-label">Theme</label>
-            <div className="toggle-group">
-              <button
-                className={`toggle-btn ${theme === "dark" ? "active" : ""}`}
-                onClick={() => theme !== "dark" && onToggleTheme()}
-              >
-                Dark
-              </button>
-              <button
-                className={`toggle-btn ${theme === "light" ? "active" : ""}`}
-                onClick={() => theme !== "light" && onToggleTheme()}
-              >
-                Light
-              </button>
-            </div>
-          </div>
-
-          {/* API key */}
           <div className="settings-row">
             <label className="settings-label" htmlFor="serpapi-key">
               SerpAPI Key (optional)
@@ -106,9 +87,8 @@ function Settings({ theme, onToggleTheme }) {
               </button>
               {hasKey && (
                 <button
-                  className="settings-save-btn"
+                  className="settings-save-btn settings-clear-btn"
                   onClick={handleClear}
-                  style={{ background: "var(--red-border)" }}
                 >
                   Clear
                 </button>

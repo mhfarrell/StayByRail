@@ -1,0 +1,173 @@
+/* ============================================================
+   header.css — Site header (mobile-first)
+   Mobile: full-width, edge-to-edge, sticky
+   900px+: contained card with border-radius + shadow
+   ============================================================ */
+
+.site-header {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 0.65rem 0.85rem;
+  margin-bottom: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.site-logo {
+  flex-shrink: 0;
+  width: 28px;
+  height: 30px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.brand-stay {
+  color: var(--text-heading);
+}
+
+.brand-by {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.brand-rail {
+  color: #2563eb;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  margin-top: 0.1rem;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-badge {
+  display: none;
+  background: var(--amenity-bg);
+  color: var(--accent-blue);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ---- Theme toggle button ---- */
+.header-theme-toggle {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  min-width: var(--touch-min);
+  min-height: var(--touch-min);
+  padding: 0.45rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.header-theme-toggle:active {
+  background: var(--bg-hover);
+}
+
+@media (hover: hover) {
+  .header-theme-toggle:hover {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+  }
+}
+
+/* ---- Tablet ---- */
+@media (min-width: 600px) {
+  .site-header {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .header-brand {
+    gap: 0.75rem;
+  }
+
+  .brand-name {
+    font-size: 1.35rem;
+  }
+
+  .brand-by {
+    font-size: 0.85rem;
+  }
+
+  .subtitle {
+    font-size: 0.78rem;
+  }
+
+  .header-actions {
+    gap: 0.75rem;
+  }
+
+  .header-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+  }
+}
+
+/* ---- Desktop: contained card look ---- */
+@media (min-width: 900px) {
+  .site-header {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--card-shadow);
+    position: static;
+  }
+
+  .site-logo {
+    width: auto;
+    height: auto;
+  }
+
+  .brand-name {
+    font-size: 1.55rem;
+  }
+
+  .brand-by {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.82rem;
+  }
+}

@@ -1,0 +1,145 @@
+/* ============================================================
+   base.css — Global interactive element fixes + utilities
+   ============================================================ */
+
+/* ---- Touch behaviour for all interactive elements ---- */
+button,
+a,
+select,
+input,
+textarea,
+label,
+[role="button"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+button,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* ---- Focus-visible ring ---- */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+/* ---- Shared toggle-group utility (Settings + Results) ---- */
+.toggle-group {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  background: var(--bg-input);
+  color: var(--text-secondary);
+  border: none;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  min-height: var(--touch-min);
+  transition: background 0.15s, color 0.15s;
+}
+
+.toggle-btn:not(:last-child) {
+  border-right: 1px solid var(--border);
+}
+
+.toggle-btn.active {
+  background: var(--btn-green);
+  color: var(--text-heading);
+}
+
+.toggle-btn:active:not(.active) {
+  background: var(--bg-hover);
+}
+
+@media (hover: hover) {
+  .toggle-btn:hover:not(.active) {
+    background: var(--amenity-bg);
+    color: var(--text-primary);
+  }
+}
+
+@media (min-width: 600px) {
+  .toggle-btn {
+    padding: 0.45rem 1.1rem;
+    flex: none;
+  }
+}
+
+/* ---- Loading / spinners ---- */
+.loading {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--text-secondary);
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent-blue);
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  opacity: 0.9;
+}
+
+.btn-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #0f172a;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+.form-loading-hint {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.loading-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* ---- Error banner ---- */
+.error-banner {
+  background: var(--red-bg);
+  border: 1px solid var(--red-border);
+  border-radius: 8px;
+  padding: 0.85rem 1.1rem;
+  color: var(--accent-red);
+  margin-bottom: 1.5rem;
+}

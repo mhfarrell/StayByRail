@@ -12,8 +12,9 @@ Deploy manually after pushing — GitHub auto-deploy is not connected.
 
 **Frontend (Cloudflare Pages):**
 ```bash
-cd frontend && npm run build && npx wrangler pages deploy dist --project-name staybyrail
+cd frontend && VITE_API_URL=https://staybyrail-api.onrender.com/api npm run build && npx wrangler pages deploy dist --project-name staybyrail
 ```
+IMPORTANT: Must set `VITE_API_URL` for production. The local `.env` has `localhost` which breaks the live site.
 
 **Backend (Render):**
 ```bash

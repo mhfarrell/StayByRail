@@ -60,7 +60,7 @@ function HotelMap({ stationGroups, priceMode, onHotelClick }) {
       <MapContainer
         center={[avgLat, avgLon]}
         zoom={14}
-        style={{ height: "450px", width: "100%", borderRadius: "10px" }}
+        className="hotel-map"
       >
         <RecenterMap lat={avgLat} lon={avgLon} />
         <TileLayer
@@ -89,18 +89,8 @@ function HotelMap({ stationGroups, priceMode, onHotelClick }) {
                   <>
                     <br />
                     <button
+                      className="map-popup-btn"
                       onClick={() => onHotelClick(hotel.name)}
-                      style={{
-                        marginTop: 6,
-                        background: "#2563eb",
-                        color: "#fff",
-                        border: "none",
-                        borderRadius: 5,
-                        padding: "4px 10px",
-                        fontSize: 12,
-                        cursor: "pointer",
-                        width: "100%",
-                      }}
                     >
                       See details
                     </button>

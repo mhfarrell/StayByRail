@@ -1,0 +1,93 @@
+/* ============================================================
+   sources-banner.css — Sources banner (mobile-first)
+   Mobile: horizontal scroll with flex-nowrap
+   600px+: wrap naturally
+   ============================================================ */
+
+.sources-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.sources-banner::-webkit-scrollbar {
+  display: none;
+}
+
+.sources-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-right: 0.25rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ---- Source chips ---- */
+.source-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.source-active {
+  background: var(--green-bg);
+  color: var(--accent-green);
+  border: 1px solid var(--green-border);
+}
+
+.source-inactive {
+  background: var(--tag-bg);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+/* ---- Dots ---- */
+.source-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.dot-on {
+  background: #3fb950;
+}
+
+.dot-off {
+  background: #6e7681;
+}
+
+/* ---- Counts ---- */
+.source-count {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 0.35rem;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  margin-left: 0.15rem;
+}
+
+/* ---- Tablet+: allow wrapping ---- */
+@media (min-width: 600px) {
+  .sources-banner {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    padding: 0.6rem 1rem;
+    font-size: 0.82rem;
+  }
+}

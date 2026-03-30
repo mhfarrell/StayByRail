@@ -1,0 +1,290 @@
+/* ============================================================
+   search-form.css — Search form (mobile-first)
+   Mobile: single column, all fields full-width
+   600px: 2-column grid
+   900px: multi-column flex
+   ============================================================ */
+
+.search-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--card-shadow);
+}
+
+/* ---- Form row: stacked on mobile ---- */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ---- Field ---- */
+.field {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+}
+
+.field label {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* All inputs: 16px font to prevent iOS zoom, 44px min-height */
+.field select,
+.field input[type="date"],
+.field input[type="number"] {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  padding: 0.7rem 0.85rem;
+  font-size: 16px;
+  min-height: var(--touch-min);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.field select:focus,
+.field input:focus {
+  outline: none;
+  border-color: var(--border-hover);
+  box-shadow: var(--focus-ring);
+}
+
+/* ---- Checkbox field ---- */
+.checkbox-field {
+  justify-content: flex-end;
+}
+
+.checkbox-field label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  text-transform: none;
+  letter-spacing: 0;
+  cursor: pointer;
+  min-height: var(--touch-min);
+}
+
+/* ---- Nights badge ---- */
+.nights-badge {
+  display: block;
+  background: var(--amenity-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.85rem;
+  color: var(--accent-blue);
+  white-space: nowrap;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+/* ---- Submit button ---- */
+button[type="submit"] {
+  width: 100%;
+  background: #f59e0b;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  min-height: 48px;
+  letter-spacing: 0.01em;
+  -webkit-tap-highlight-color: rgba(245, 158, 11, 0.3);
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  user-select: none;
+  transition: background 0.15s, transform 0.1s;
+}
+
+button[type="submit"]:active:not(:disabled) {
+  transform: translateY(0);
+  background: #d97706;
+}
+
+button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (hover: hover) {
+  button[type="submit"]:hover:not(:disabled) {
+    background: #fbbf24;
+    transform: translateY(-1px);
+  }
+}
+
+/* ---- Wishlist section ---- */
+.wishlist-section {
+  margin-bottom: 1.25rem;
+}
+
+.wishlist-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  min-height: var(--touch-min);
+  transition: border-color 0.15s;
+}
+
+.wishlist-toggle:active {
+  background: var(--bg-hover);
+}
+
+@media (hover: hover) {
+  .wishlist-toggle:hover {
+    border-color: var(--border-hover);
+  }
+}
+
+.wishlist-preview {
+  color: var(--accent-blue);
+  font-size: 0.8rem;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wishlist-arrow {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
+
+.wishlist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+  padding: 0.85rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.wishlist-chip {
+  background: var(--tag-bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  min-height: var(--touch-min);
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.15s;
+}
+
+.wishlist-chip:active:not(.chip-disabled) {
+  background: var(--bg-hover);
+}
+
+@media (hover: hover) {
+  .wishlist-chip:hover:not(.chip-disabled) {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+  }
+}
+
+.chip-selected {
+  background: var(--green-bg);
+  color: var(--accent-green);
+  border-color: var(--green-border);
+}
+
+.chip-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ---- Tablet: 2-column grid ---- */
+@media (min-width: 600px) {
+  .search-form {
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .field {
+    min-width: 0;
+  }
+
+  .nights-badge {
+    width: auto;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .wishlist-chip {
+    min-height: auto;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.78rem;
+  }
+}
+
+/* ---- Desktop: multi-column flex ---- */
+@media (min-width: 900px) {
+  .search-form {
+    padding: 1.75rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+    align-items: flex-end;
+  }
+
+  .field {
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .field select,
+  .field input[type="date"],
+  .field input[type="number"] {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    border-radius: 8px;
+    padding: 0.85rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,109 @@
+/* ============================================================
+   about.css — Collapsible About section (mobile-first)
+   ============================================================ */
+
+.about-section {
+  margin-bottom: 1rem;
+}
+
+/* ---- Toggle button ---- */
+.about-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: var(--touch-min);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.about-toggle:active {
+  background: var(--bg-hover);
+}
+
+@media (hover: hover) {
+  .about-toggle:hover {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+  }
+}
+
+.about-toggle-label {
+  font-weight: 600;
+}
+
+.about-toggle-icon {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.about-toggle-icon-open {
+  transform: rotate(180deg);
+}
+
+/* ---- Content panel ---- */
+.about-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.about-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-coverage,
+.about-sources {
+  margin-bottom: 0.75rem;
+}
+
+.about-coverage:last-child,
+.about-sources:last-child {
+  margin-bottom: 0;
+}
+
+.about-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.about-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ---- Desktop ---- */
+@media (min-width: 900px) {
+  .about-content {
+    padding: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .about-heading {
+    font-size: 0.9rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+}
