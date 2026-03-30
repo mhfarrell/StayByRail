@@ -148,12 +148,12 @@ def get_property_details(property_token, check_in, check_out, currency="GBP", ad
 # Source 2: Booking.com via RapidAPI (optional, needs RAPIDAPI_KEY)
 # ---------------------------------------------------------------------------
 
-def _booking_search(city, check_in, check_out, max_price_gbp, adults, lat, lon):
+def _booking_search(city, check_in, check_out, max_price_gbp, adults, lat, lon, rapidapi_key=None):
     """
     Search Booking.com via RapidAPI. Free tier: 500 requests/month.
-    Set RAPIDAPI_KEY in .env to enable.
+    Set RAPIDAPI_KEY in .env to enable, or pass per-request.
     """
-    api_key = os.environ.get("RAPIDAPI_KEY", "")
+    api_key = rapidapi_key or os.environ.get("RAPIDAPI_KEY", "")
     if not api_key:
         return []
 
@@ -232,12 +232,12 @@ def _booking_search(city, check_in, check_out, max_price_gbp, adults, lat, lon):
 # Source 3: Trip.com via RapidAPI (optional, needs RAPIDAPI_KEY)
 # ---------------------------------------------------------------------------
 
-def _tripadvisor_search(query, check_in, check_out, lat, lon):
+def _tripadvisor_search(query, check_in, check_out, lat, lon, rapidapi_key=None):
     """
     Search TripAdvisor via RapidAPI for additional hotel options.
-    Uses the same RAPIDAPI_KEY.
+    Uses the same RAPIDAPI_KEY, or per-request override.
     """
-    api_key = os.environ.get("RAPIDAPI_KEY", "")
+    api_key = rapidapi_key or os.environ.get("RAPIDAPI_KEY", "")
     if not api_key:
         return []
 
@@ -295,11 +295,11 @@ def _tripadvisor_search(query, check_in, check_out, lat, lon):
 # Combined multi-source search
 # ---------------------------------------------------------------------------
 
-def search_hotels_multi(query, check_in, check_out, max_price=100, currency="GBP", adults=2, lat=None, lon=None, api_key_override=None):
+def search_hotels_multi(query, check_in, check_out, max_price=100, currency="GBP", adults=2, lat=None, lon=None, api_key_override=None, rapidapi_key_override=None):
     """
     Search all available sources and merge results.
     Always uses SerpAPI (Google Hotels). Optionally adds Booking.com and
-    TripAdvisor if RAPIDAPI_KEY is configured.
+    TripAdvisor if RAPIDAPI_KEY is configured or provided per-request.
     """
     all_results = []
 
@@ -307,14 +307,16 @@ def search_hotels_multi(query, check_in, check_out, max_price=100, currency="GBP
     google = search_hotels(query, check_in, check_out, max_price, currency, adults, api_key_override=api_key_override)
     all_results.extend(google)
 
+    rapid_key = rapidapi_key_override or os.environ.get("RAPIDAPI_KEY", "")
+
     # Source 2: Booking.com via RapidAPI (if key set and we have coordinates)
-    if lat and lon and os.environ.get("RAPIDAPI_KEY"):
-        booking = _booking_search("", check_in, check_out, max_price, adults, lat, lon)
+    if lat and lon and rapid_key:
+        booking = _booking_search("", check_in, check_out, max_price, adults, lat, lon, rapidapi_key=rapid_key)
         all_results.extend(booking)
 
     # Source 3: TripAdvisor via RapidAPI (if key set)
-    if os.environ.get("RAPIDAPI_KEY"):
-        tripadvisor = _tripadvisor_search(query, check_in, check_out, lat, lon)
+    if rapid_key:
+        tripadvisor = _tripadvisor_search(query, check_in, check_out, lat, lon, rapidapi_key=rapid_key)
         all_results.extend(tripadvisor)
 
     return all_results

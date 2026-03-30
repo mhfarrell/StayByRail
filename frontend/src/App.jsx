@@ -1,23 +1,19 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import About from "./components/About";
 import SearchForm from "./components/SearchForm";
 import Results from "./components/Results";
 import SourcesBanner from "./components/SourcesBanner";
-import Settings from "./components/Settings";
 import AdUnit from "./components/AdUnit";
 import "./styles/variables.css";
 import "./styles/base.css";
 import "./styles/layout.css";
 import "./styles/header.css";
 import "./styles/footer.css";
-import "./styles/about.css";
 import "./styles/search-form.css";
 import "./styles/results.css";
 import "./styles/hotel-card.css";
 import "./styles/hotel-map.css";
-import "./styles/settings.css";
 import "./styles/sources-banner.css";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
@@ -93,10 +89,11 @@ function App() {
     try {
       const qs = new URLSearchParams(params).toString();
       const headers = {};
-      const userKey = localStorage.getItem("staybyrail_serpapi_key");
-      if (userKey) {
-        headers["X-SerpAPI-Key"] = userKey;
-      }
+      const serpKey = localStorage.getItem("staybyrail_serpapi_key");
+      if (serpKey) headers["X-SerpAPI-Key"] = serpKey;
+      const rapidKey = localStorage.getItem("staybyrail_rapidapi_key");
+      if (rapidKey) headers["X-RapidAPI-Key"] = rapidKey;
+
       const resp = await fetch(`${API}/search?${qs}`, { headers });
       if (!resp.ok) {
         let msg = "Search failed";
@@ -117,7 +114,6 @@ function App() {
       <Header theme={theme} onToggleTheme={toggleTheme} />
 
       <div className="page-wrapper">
-        {/* Left ad rail */}
         <aside className="ad-rail ad-rail-left">
           <div className="ad-slot ad-slot-tall">
             <AdUnit format="vertical" style={{ width: 160, height: 600 }} />
@@ -127,7 +123,6 @@ function App() {
           </div>
         </aside>
 
-        {/* Main content */}
         <main className="app">
           <SourcesBanner sources={sources} sourceCounts={results?.source_counts} />
 
@@ -145,10 +140,6 @@ function App() {
 
           {results && <Results data={results} wishlist={wishlist} />}
 
-          <About />
-
-          <Settings />
-
           <div className="ad-banner">
             <AdUnit format="horizontal" style={{ width: "100%", height: 90 }} />
           </div>
@@ -156,7 +147,6 @@ function App() {
           <Footer />
         </main>
 
-        {/* Right ad rail */}
         <aside className="ad-rail ad-rail-right">
           <div className="ad-slot ad-slot-tall">
             <AdUnit format="vertical" style={{ width: 160, height: 600 }} />

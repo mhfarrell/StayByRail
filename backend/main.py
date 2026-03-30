@@ -164,8 +164,9 @@ def search(
     popular_only: bool = True,
     station: str | None = None,
 ):
-    # Use per-request key if provided, otherwise fall back to server env
+    # Use per-request keys if provided, otherwise fall back to server env
     api_key = request.headers.get("x-serpapi-key") or os.environ.get("SERPAPI_KEY", "")
+    rapidapi_key = request.headers.get("x-rapidapi-key") or os.environ.get("RAPIDAPI_KEY", "")
 
     stations = get_stations(city, line, popular_only)
     if not stations:
@@ -206,6 +207,7 @@ def search(
                 lat=s["lat"],
                 lon=s["lon"],
                 api_key_override=api_key,
+                rapidapi_key_override=rapidapi_key,
             )
         except RuntimeError as e:
             raise HTTPException(500, str(e))
