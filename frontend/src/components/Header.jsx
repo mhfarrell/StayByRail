@@ -39,19 +39,16 @@ function Header({ theme, onToggleTheme }) {
       .finally(() => setCheckingKeys(false));
   };
 
-  // Close dropdowns when clicking outside
+  // Close dropdowns when clicking outside — only listen when a dropdown is open
   useEffect(() => {
+    if (!showAbout && !showSettings) return;
     const handler = (e) => {
-      if (aboutRef.current && !aboutRef.current.contains(e.target)) setShowAbout(false);
-      if (settingsRef.current && !settingsRef.current.contains(e.target)) setShowSettings(false);
+      if (showAbout && aboutRef.current && !aboutRef.current.contains(e.target)) setShowAbout(false);
+      if (showSettings && settingsRef.current && !settingsRef.current.contains(e.target)) setShowSettings(false);
     };
     document.addEventListener("mousedown", handler);
-    document.addEventListener("touchstart", handler);
-    return () => {
-      document.removeEventListener("mousedown", handler);
-      document.removeEventListener("touchstart", handler);
-    };
-  }, []);
+    return () => document.removeEventListener("mousedown", handler);
+  }, [showAbout, showSettings]);
 
   const saveKey = (type) => {
     if (type === "serp" && serpKey.trim()) {
