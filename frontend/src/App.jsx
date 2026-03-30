@@ -5,6 +5,7 @@ import SearchForm from "./components/SearchForm";
 import Results from "./components/Results";
 import SourcesBanner from "./components/SourcesBanner";
 import AdUnit from "./components/AdUnit";
+import ContentSections from "./components/ContentSections";
 import "./styles/variables.css";
 import "./styles/base.css";
 import "./styles/layout.css";
@@ -15,6 +16,7 @@ import "./styles/results.css";
 import "./styles/hotel-card.css";
 import "./styles/hotel-map.css";
 import "./styles/sources-banner.css";
+import "./styles/content.css";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 
@@ -140,11 +142,13 @@ function App() {
 
           {results && <Results data={results} wishlist={wishlist} />}
 
-          <Footer />
+          <ContentSections />
 
           <div className="ad-banner">
             <AdUnit format="horizontal" style={{ width: "100%", height: 90 }} />
           </div>
+
+          <Footer />
         </main>
 
         <aside className="ad-rail ad-rail-right">

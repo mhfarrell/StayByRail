@@ -1,0 +1,406 @@
+/* ============================================================
+   content.css — Content sections for SEO / AdSense (mobile-first)
+   Sections: How It Works, Destinations, Benefits, FAQ, Coverage
+   ============================================================ */
+
+/* ---- Wrapper ---- */
+.content-sections {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ---- Shared heading styles ---- */
+.content-heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.content-intro {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 720px;
+  margin-bottom: 1.5rem;
+}
+
+/* ============================================================
+   1. How StayByRail Works — Steps
+   ============================================================ */
+
+.content-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.content-step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.content-step-number {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--amenity-bg);
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+  flex-shrink: 0;
+}
+
+.content-step-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+}
+
+.content-step-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* ============================================================
+   2. Popular Destinations — City cards
+   ============================================================ */
+
+.content-city-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.content-city-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--card-shadow);
+  border-top: 3px solid var(--accent-blue);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Accent colours per data-accent attribute */
+.content-city-card[data-accent="red"] {
+  border-top-color: var(--accent-red);
+}
+
+.content-city-card[data-accent="blue"] {
+  border-top-color: var(--accent-blue);
+}
+
+.content-city-card[data-accent="purple"] {
+  border-top-color: #8b5cf6;
+}
+
+.content-city-card[data-accent="green"] {
+  border-top-color: var(--accent-green);
+}
+
+.content-city-card[data-accent="orange"] {
+  border-top-color: var(--accent-orange);
+}
+
+.content-city-card[data-accent="teal"] {
+  border-top-color: #14b8a6;
+}
+
+.content-city-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+}
+
+.content-city-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* ============================================================
+   3. Why Book Near Train Stations — Benefit cards
+   ============================================================ */
+
+.content-benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.content-benefit-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.content-benefit-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--green-bg);
+  color: var(--accent-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+  flex-shrink: 0;
+}
+
+.content-benefit-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+}
+
+.content-benefit-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* ============================================================
+   4. Frequently Asked Questions
+   ============================================================ */
+
+.content-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.content-faq-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.content-faq-item:first-child {
+  padding-top: 0;
+}
+
+.content-faq-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.content-faq-question {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.content-faq-answer {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   5. Coverage — Country cards
+   ============================================================ */
+
+.content-country-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.content-country-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.content-country-flag {
+  margin-bottom: 0.75rem;
+  color: var(--text-muted);
+}
+
+.content-country-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.2rem;
+}
+
+.content-country-cities {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+}
+
+.content-country-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.content-expanding {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* ============================================================
+   Hover effects — only on pointer devices
+   ============================================================ */
+
+@media (hover: hover) {
+  .content-step-card:hover,
+  .content-city-card:hover,
+  .content-benefit-card:hover,
+  .content-country-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--card-shadow), 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ============================================================
+   Tablet — 600px+: 2-column grids
+   ============================================================ */
+
+@media (min-width: 600px) {
+  .content-sections {
+    gap: 3.5rem;
+  }
+
+  .content-heading {
+    font-size: 1.65rem;
+  }
+
+  .content-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Let the 3rd step span full width when only 2 cols */
+  .content-step-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
+  .content-city-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content-benefit-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content-country-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content-faq-question {
+    font-size: 1.05rem;
+  }
+}
+
+/* ============================================================
+   Desktop — 900px+: 3-column grids where appropriate
+   ============================================================ */
+
+@media (min-width: 900px) {
+  .content-sections {
+    margin-top: 4rem;
+    gap: 4rem;
+  }
+
+  .content-heading {
+    font-size: 1.8rem;
+  }
+
+  .content-intro {
+    font-size: 1rem;
+  }
+
+  .content-steps {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* Reset the last-child span for 3-col */
+  .content-step-card:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+
+  .content-city-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* Let the last city card span remaining space if odd count */
+  .content-city-card:last-child:nth-child(3n + 1) {
+    grid-column: 1 / -1;
+  }
+
+  .content-benefit-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .content-country-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .content-faq-item {
+    padding: 1.5rem 0;
+  }
+
+  .content-faq-question {
+    font-size: 1.1rem;
+  }
+
+  .content-faq-answer {
+    font-size: 0.92rem;
+    max-width: 800px;
+  }
+}
+
+/* ============================================================
+   Wide desktop — 1200px+: 4-column for countries
+   ============================================================ */
+
+@media (min-width: 1200px) {
+  .content-city-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .content-city-card:last-child:nth-child(3n + 1) {
+    grid-column: auto;
+  }
+
+  /* With 10 cities and 4 columns, last 2 cards in row of 2 */
+  .content-city-card:last-child:nth-child(4n + 2) {
+    grid-column: auto;
+  }
+
+  .content-benefit-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .content-country-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
