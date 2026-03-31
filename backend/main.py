@@ -1,7 +1,6 @@
 import json
 import os
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -12,7 +11,7 @@ from pydantic import BaseModel
 
 from staybyrail.api import _cache_key, _get_cached, _set_cached, search_hotels_multi
 from staybyrail.events import get_events as fetch_events
-from staybyrail.filters import filter_hotels
+from staybyrail.filters import filter_hotels, haversine_km, is_excluded_type, has_fridge, walk_minutes
 from staybyrail.stations import LINES, get_cities, get_lines, get_stations
 
 load_dotenv()
@@ -356,101 +355,117 @@ def search(
         cached_response["from_cache"] = True
         return cached_response
 
-    # ---- Fetch hotels for all stations concurrently ----
-    def _fetch_station(s):
-        query = f"hotels near {s['name']} Station {city.title()}"
-        try:
-            raw = search_hotels_multi(
-                query=query,
-                check_in=check_in,
-                check_out=check_out,
-                max_price=max_price,
-                currency=currency,
-                adults=adults,
-                lat=s["lat"],
-                lon=s["lon"],
-                api_key_override=api_key,
-                rapidapi_key_override=rapidapi_key,
-            )
-        except Exception:
-            raw = []
-        return s, filter_hotels(raw, s["lat"], s["lon"])
+    # ---- Single broad search, then assign hotels to nearest station ----
+    # One API call instead of one per station — massively reduces SerpAPI usage
+    query = f"hotels in {city.title()}"
+    try:
+        raw = search_hotels_multi(
+            query=query,
+            check_in=check_in,
+            check_out=check_out,
+            max_price=max_price,
+            currency=currency,
+            adults=adults,
+            lat=stations[0]["lat"],
+            lon=stations[0]["lon"],
+            api_key_override=api_key,
+            rapidapi_key_override=rapidapi_key,
+        )
+    except Exception:
+        raw = []
 
-    station_results = []
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        futures = {pool.submit(_fetch_station, s): s for s in stations}
-        for future in as_completed(futures):
-            station_results.append(future.result())
-
-    # Sort back into original station order
-    station_order = {s["name"]: i for i, s in enumerate(stations)}
-    station_results.sort(key=lambda x: station_order.get(x[0]["name"], 999))
-
-    # ---- Build response from parallel results ----
+    # Assign each hotel to its nearest station and calculate distance
+    station_buckets = {s["name"]: {"station": s, "hotels": []} for s in stations}
     seen_hotels = {}
+
+    for h in raw:
+        if is_excluded_type(h):
+            continue
+
+        name = h.get("name", "")
+        if not name or name in seen_hotels:
+            continue
+
+        gps = h.get("gps_coordinates", {})
+        lat = gps.get("latitude")
+        lon = gps.get("longitude")
+        if not lat or not lon:
+            continue
+
+        # Find nearest station on this line
+        best_station = None
+        best_dist = float("inf")
+        for s in stations:
+            d = haversine_km(lat, lon, s["lat"], s["lon"])
+            if d < best_dist:
+                best_dist = d
+                best_station = s
+
+        # Skip hotels more than 2km from any station
+        if best_dist > 2.0:
+            continue
+
+        seen_hotels[name] = True
+        walk_min = walk_minutes(best_dist)
+        amenities = h.get("amenities", [])
+
+        rate = h.get("rate_per_night", {})
+        price_num = rate.get("extracted_lowest")
+        price_str = rate.get("lowest") or ""
+        before_tax_num = rate.get("extracted_before_taxes_fees")
+        before_tax_str = rate.get("before_taxes_fees") or ""
+
+        if price_num is None and price_str:
+            cleaned = "".join(c for c in price_str if c.isdigit() or c == ".")
+            try:
+                price_num = float(cleaned)
+            except ValueError:
+                pass
+
+        total_price = round(price_num * num_nights, 2) if price_num else None
+        before_tax_total = round(before_tax_num * num_nights, 2) if before_tax_num else None
+        source = h.get("_source", "google_hotels")
+
+        station_buckets[best_station["name"]]["hotels"].append({
+            "name": name,
+            "type": h.get("type", ""),
+            "source": source,
+            "price_per_night": price_num,
+            "price_per_night_str": price_str,
+            "price_before_tax": before_tax_num,
+            "price_before_tax_str": before_tax_str,
+            "total_price": total_price,
+            "total_price_str": f"£{total_price:.0f}" if total_price else None,
+            "total_before_tax": before_tax_total,
+            "total_before_tax_str": f"£{before_tax_total:.0f}" if before_tax_total else None,
+            "num_nights": num_nights,
+            "hotel_class": h.get("hotel_class"),
+            "overall_rating": h.get("overall_rating"),
+            "reviews": h.get("reviews"),
+            "amenities": amenities,
+            "has_fridge": has_fridge(amenities),
+            "walk_minutes": walk_min,
+            "distance_km": round(best_dist, 2),
+            "images": h.get("images", []),
+            "link": h.get("link"),
+            "check_in_time": h.get("check_in_time"),
+            "check_out_time": h.get("check_out_time"),
+            "gps_coordinates": gps,
+            "nearest_station": best_station["name"],
+            "thumbnail": _best_thumbnail(h.get("images")),
+        })
+
+    # Build results grouped by station (preserve original station order)
     results_by_station = []
-
-    for s, filtered in station_results:
-        station_hotels = []
-        for h in filtered:
-            name = h.get("name", "")
-            if name in seen_hotels:
-                continue
-            seen_hotels[name] = True
-
-            rate = h.get("rate_per_night", {})
-            price_num = rate.get("extracted_lowest")
-            price_str = rate.get("lowest") or ""
-            before_tax_num = rate.get("extracted_before_taxes_fees")
-            before_tax_str = rate.get("before_taxes_fees") or ""
-
-            if price_num is None and price_str:
-                cleaned = "".join(c for c in price_str if c.isdigit() or c == ".")
-                try:
-                    price_num = float(cleaned)
-                except ValueError:
-                    pass
-
-            total_price = round(price_num * num_nights, 2) if price_num else None
-            before_tax_total = round(before_tax_num * num_nights, 2) if before_tax_num else None
-
-            source = h.get("_source", "google_hotels")
-
-            station_hotels.append({
-                "name": name,
-                "type": h.get("type", ""),
-                "source": source,
-                "price_per_night": price_num,
-                "price_per_night_str": price_str,
-                "price_before_tax": before_tax_num,
-                "price_before_tax_str": before_tax_str,
-                "total_price": total_price,
-                "total_price_str": f"£{total_price:.0f}" if total_price else None,
-                "total_before_tax": before_tax_total,
-                "total_before_tax_str": f"£{before_tax_total:.0f}" if before_tax_total else None,
-                "num_nights": num_nights,
-                "hotel_class": h.get("hotel_class"),
-                "overall_rating": h.get("overall_rating"),
-                "reviews": h.get("reviews"),
-                "amenities": h.get("amenities", []),
-                "has_fridge": h.get("has_fridge"),
-                "walk_minutes": h.get("walk_minutes"),
-                "distance_km": h.get("distance_km"),
-                "images": h.get("images", []),
-                "link": h.get("link"),
-                "check_in_time": h.get("check_in_time"),
-                "check_out_time": h.get("check_out_time"),
-                "gps_coordinates": h.get("gps_coordinates", {}),
-                "nearest_station": s["name"],
-                "thumbnail": _best_thumbnail(h.get("images")),
-            })
-
-        if station_hotels:
-            station_hotels.sort(key=lambda x: x["price_per_night"] or 9999)
+    for s in stations:
+        bucket = station_buckets[s["name"]]
+        hotels = bucket["hotels"]
+        if hotels:
+            hotels.sort(key=lambda x: x["price_per_night"] or 9999)
             results_by_station.append({
                 "station": s["name"],
                 "popular": s["popular"],
-                "hotels": station_hotels,
+                "hotels": hotels,
             })
 
     # Count results by source
