@@ -20,7 +20,7 @@ function useCityImages() {
 
   useEffect(() => {
     CITIES.forEach(({ city, wiki }) => {
-      const key = `sbr_home2_${city}`;
+      const key = `sbr_home3_${city}`;
       const cached = sessionStorage.getItem(key);
       if (cached) {
         setImages((prev) => ({ ...prev, [city]: cached }));
@@ -29,11 +29,7 @@ function useCityImages() {
       fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
         .then((r) => r.json())
         .then((data) => {
-          const thumb = data.thumbnail?.source || "";
-          let url = thumb;
-          if (thumb && thumb.includes("/thumb/")) {
-            url = thumb.replace(/\/\d+px-/, "/800px-");
-          }
+          const url = data.originalimage?.source || data.thumbnail?.source || "";
           if (url) {
             sessionStorage.setItem(key, url);
             setImages((prev) => ({ ...prev, [city]: url }));

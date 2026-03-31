@@ -87,17 +87,13 @@ function useCountryImages() {
   useEffect(() => {
     for (const [country, data] of Object.entries(TRANSIT_DATA)) {
       if (!data.wiki) continue;
-      const key = `sbr_transit2_${country}`;
+      const key = `sbr_transit3_${country}`;
       const cached = sessionStorage.getItem(key);
       if (cached) { setImages((p) => ({ ...p, [country]: cached })); continue; }
       fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(data.wiki)}`)
         .then((r) => r.json())
         .then((d) => {
-          const thumb = d.thumbnail?.source || "";
-          let url = thumb;
-          if (thumb && thumb.includes("/thumb/")) {
-            url = thumb.replace(/\/\d+px-/, "/800px-");
-          }
+          const url = d.originalimage?.source || d.thumbnail?.source || "";
           if (url) { sessionStorage.setItem(key, url); setImages((p) => ({ ...p, [country]: url })); }
         })
         .catch(() => {});
