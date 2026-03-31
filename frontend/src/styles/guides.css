@@ -218,6 +218,78 @@
   flex-shrink: 0;
 }
 
+/* ---- Events section ---- */
+.guide-events-block {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.guide-events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.guide-event-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.guide-event-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.guide-event-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-amber, #f59e0b);
+  background: rgba(245, 158, 11, 0.1);
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+}
+
+.guide-event-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.guide-event-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  text-decoration: none;
+  line-height: 1.35;
+}
+
+.guide-event-name:hover {
+  text-decoration: underline;
+}
+
+.guide-event-venue {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.guide-events-credit {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
 /* ---- Tablet: 2 columns ---- */
 @media (min-width: 600px) {
   .guides-grid {

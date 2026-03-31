@@ -6,7 +6,7 @@ import { useCityData } from "../hooks/useCityData";
 function GuidePage() {
   const { slug } = useParams();
   const guide = getGuide(slug);
-  const { image, weather } = useCityData(guide);
+  const { image, weather, events } = useCityData(guide);
 
   if (!guide) return <Navigate to="/guides" replace />;
 
@@ -75,6 +75,45 @@ function GuidePage() {
               </li>
             ))}
           </ul>
+        </div>
+      )}
+
+      {/* Events */}
+      {events && events.length > 0 && (
+        <div className="guide-events-block">
+          <h3 className="guide-stations-heading">What's On in {guide.city}</h3>
+          <ul className="guide-events-list">
+            {events.map((ev, i) => (
+              <li key={i} className="guide-event-item">
+                <div className="guide-event-meta">
+                  {ev.category && <span className="guide-event-tag">{ev.category}</span>}
+                  {ev.date && (
+                    <span className="guide-event-date">
+                      {new Date(ev.date + "T00:00:00").toLocaleDateString("en-GB", {
+                        day: "numeric", month: "short", year: "numeric",
+                      })}
+                      {ev.time && " · " + ev.time.slice(0, 5)}
+                    </span>
+                  )}
+                </div>
+                <a
+                  href={ev.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="guide-event-name"
+                >
+                  {ev.name}
+                </a>
+                {ev.venue && <span className="guide-event-venue">{ev.venue}</span>}
+              </li>
+            ))}
+          </ul>
+          <p className="guide-events-credit">
+            Events via{" "}
+            <a href="https://www.ticketmaster.com" target="_blank" rel="noopener noreferrer" className="about-link">
+              Ticketmaster
+            </a>
+          </p>
         </div>
       )}
 

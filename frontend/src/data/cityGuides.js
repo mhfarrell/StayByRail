@@ -43,6 +43,7 @@ export const cityGuides = [
     wikipedia: "Tokyo",
     lat: 35.6762,
     lon: 139.6503,
+    countryCode: "JP",
   },
   {
     slug: "london",
@@ -84,6 +85,7 @@ export const cityGuides = [
     wikipedia: "London",
     lat: 51.5074,
     lon: -0.1278,
+    countryCode: "GB",
   },
   {
     slug: "paris",
@@ -124,6 +126,7 @@ export const cityGuides = [
     wikipedia: "Paris",
     lat: 48.8566,
     lon: 2.3522,
+    countryCode: "FR",
   },
   {
     slug: "osaka",
@@ -164,6 +167,7 @@ export const cityGuides = [
     wikipedia: "Osaka",
     lat: 34.6937,
     lon: 135.5023,
+    countryCode: "JP",
   },
   {
     slug: "barcelona",
@@ -204,6 +208,7 @@ export const cityGuides = [
     wikipedia: "Barcelona",
     lat: 41.3851,
     lon: 2.1734,
+    countryCode: "ES",
   },
   {
     slug: "bangkok",
@@ -244,6 +249,7 @@ export const cityGuides = [
     wikipedia: "Bangkok",
     lat: 13.7563,
     lon: 100.5018,
+    countryCode: "TH",
   },
   {
     slug: "berlin",
@@ -284,6 +290,7 @@ export const cityGuides = [
     wikipedia: "Berlin",
     lat: 52.5200,
     lon: 13.4050,
+    countryCode: "DE",
   },
   {
     slug: "kyoto",
@@ -328,6 +335,7 @@ export const cityGuides = [
     wikipedia: "Kyoto",
     lat: 35.0116,
     lon: 135.7681,
+    countryCode: "JP",
   },
   {
     slug: "madrid",
@@ -368,6 +376,7 @@ export const cityGuides = [
     wikipedia: "Madrid",
     lat: 40.4168,
     lon: -3.7038,
+    countryCode: "ES",
   },
   {
     slug: "birmingham",
@@ -408,6 +417,7 @@ export const cityGuides = [
     wikipedia: "Birmingham",
     lat: 52.4862,
     lon: -1.8904,
+    countryCode: "GB",
   },
   {
     slug: "krabi",
@@ -448,6 +458,7 @@ export const cityGuides = [
     wikipedia: "Krabi_Province",
     lat: 8.0863,
     lon: 98.9063,
+    countryCode: "TH",
   },
 ];
 

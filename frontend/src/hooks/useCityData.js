@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
+
 const WMO = {
   0: "Clear sky", 1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
   45: "Fog", 48: "Freezing fog",
@@ -25,11 +27,13 @@ const WMO_ICON = {
 export function useCityData(guide) {
   const [image, setImage] = useState(null);
   const [weather, setWeather] = useState(null);
+  const [events, setEvents] = useState(null);
 
   useEffect(() => {
     if (!guide) return;
     setImage(null);
     setWeather(null);
+    setEvents(null);
 
     // Wikipedia image
     if (guide.wikipedia) {
@@ -87,7 +91,29 @@ export function useCityData(guide) {
           .catch(() => {});
       }
     }
+    // Ticketmaster events (via backend to keep key server-side)
+    if (guide.city) {
+      const cacheKey = `sbr_events_${guide.slug}`;
+      const cached = sessionStorage.getItem(cacheKey);
+      const cacheTs = sessionStorage.getItem(`${cacheKey}_ts`);
+      const fresh = cacheTs && Date.now() - Number(cacheTs) < 3 * 60 * 60 * 1000;
+      if (cached && fresh) {
+        setEvents(JSON.parse(cached));
+      } else {
+        const qs = new URLSearchParams({ city: guide.city });
+        if (guide.countryCode) qs.set("country_code", guide.countryCode);
+        fetch(`${API}/events?${qs}`)
+          .then((r) => r.json())
+          .then((data) => {
+            const list = data.events || [];
+            sessionStorage.setItem(cacheKey, JSON.stringify(list));
+            sessionStorage.setItem(`${cacheKey}_ts`, String(Date.now()));
+            setEvents(list);
+          })
+          .catch(() => setEvents([]));
+      }
+    }
   }, [guide?.slug]);
 
-  return { image, weather };
+  return { image, weather, events };
 }
