@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PageMeta from "../components/PageMeta";
+
+const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 
 const TRANSIT_DATA = {
   Japan: {
@@ -68,6 +70,10 @@ const TRANSIT_DATA = {
 
 function TrainTimesPage() {
   const [selectedCity, setSelectedCity] = useState("");
+  const [stationInput, setStationInput] = useState("");
+  const [departures, setDepartures] = useState(null);
+  const [loadingDep, setLoadingDep] = useState(false);
+  const [depSource, setDepSource] = useState("");
 
   const allCities = [];
   for (const [country, data] of Object.entries(TRANSIT_DATA)) {
@@ -80,6 +86,27 @@ function TrainTimesPage() {
     ? allCities.find((c) => c.city === selectedCity)?.country
     : null;
   const countryData = selectedCountry ? TRANSIT_DATA[selectedCountry] : null;
+
+  // Map country names to codes for the departures API
+  const countryCodeMap = {
+    Japan: "JP", "United Kingdom": "GB", France: "FR",
+    Germany: "DE", Spain: "ES", Thailand: "TH",
+  };
+
+  const fetchDepartures = () => {
+    if (!stationInput.trim() || !selectedCountry) return;
+    setLoadingDep(true);
+    setDepartures(null);
+    const cc = countryCodeMap[selectedCountry] || "";
+    fetch(`${API}/departures?station=${encodeURIComponent(stationInput.trim())}&country=${cc}`)
+      .then((r) => r.json())
+      .then((data) => {
+        setDepartures(data.departures || []);
+        setDepSource(data.source || "");
+      })
+      .catch(() => setDepartures([]))
+      .finally(() => setLoadingDep(false));
+  };
 
   return (
     <div className="page-content">
@@ -144,6 +171,49 @@ function TrainTimesPage() {
             <div className="transit-tip">
               <strong>Tip:</strong> {countryData.tips}
             </div>
+
+            {/* Live departures (UK + Japan) */}
+            {(selectedCountry === "United Kingdom" || selectedCountry === "Japan") && (
+              <div className="transit-departures">
+                <h4 className="transit-dep-heading">Live Departures</h4>
+                <div className="transit-dep-search">
+                  <input
+                    className="transit-dep-input"
+                    placeholder={selectedCountry === "Japan" ? "Station name (e.g. Shinjuku)" : "Station code (e.g. KGX, PAD, EDB)"}
+                    value={stationInput}
+                    onChange={(e) => setStationInput(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && fetchDepartures()}
+                  />
+                  <button className="transit-dep-btn" onClick={fetchDepartures} disabled={loadingDep || !stationInput.trim()}>
+                    {loadingDep ? "Loading..." : "Get Departures"}
+                  </button>
+                </div>
+
+                {departures && departures.length > 0 && (
+                  <div className="transit-dep-board">
+                    <div className="transit-dep-header">
+                      <span>Time</span>
+                      <span>Destination</span>
+                      <span>Platform</span>
+                      <span>Status</span>
+                    </div>
+                    {departures.map((d, i) => (
+                      <div key={i} className={`transit-dep-row ${d.status === "On time" || d.expected === d.time ? "" : "transit-dep-delayed"}`}>
+                        <span className="transit-dep-time">{d.time}</span>
+                        <span className="transit-dep-dest">{d.destination}</span>
+                        <span className="transit-dep-plat">{d.platform || "\u2014"}</span>
+                        <span className="transit-dep-status">{d.status || d.expected}</span>
+                      </div>
+                    ))}
+                    {depSource && <p className="transit-dep-credit">Data via {depSource}</p>}
+                  </div>
+                )}
+
+                {departures && departures.length === 0 && !loadingDep && (
+                  <p className="transit-dep-empty">No departures found. Check the station name and try again.</p>
+                )}
+              </div>
+            )}
           </div>
         )}
       </div>

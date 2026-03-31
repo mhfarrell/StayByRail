@@ -253,9 +253,9 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
             <input
               type="checkbox"
               checked={popularOnly}
-              onChange={(e) => setPopularOnly(e.target.checked)}
+              onChange={(e) => { setPopularOnly(e.target.checked); setSelectedStations([]); }}
             />
-            Popular stations only
+            Popular stations
           </label>
         </div>
 
@@ -269,8 +269,8 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
         </div>
       </div>
 
-      {/* Station picker */}
-      {stationsList.length > 0 && (
+      {/* Station picker — only when "Popular stations" is unchecked */}
+      {!popularOnly && stationsList.length > 0 && (
         <div className="wishlist-section">
           <button
             type="button"

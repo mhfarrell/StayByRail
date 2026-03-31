@@ -256,3 +256,126 @@
   gap: 0.5rem 1rem;
   margin-bottom: 0.75rem;
 }
+
+/* ---- Live departures board ---- */
+.transit-departures {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.transit-dep-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.75rem;
+}
+
+.transit-dep-search {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.transit-dep-input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-body);
+  color: var(--text-body);
+  font-family: inherit;
+}
+
+.transit-dep-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent-amber, #f59e0b);
+  color: #000;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.transit-dep-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.transit-dep-board {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+
+.transit-dep-header {
+  display: grid;
+  grid-template-columns: 60px 1fr 70px 90px;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-body);
+  font-weight: 700;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+}
+
+.transit-dep-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 70px 90px;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+}
+
+.transit-dep-row:last-child {
+  border-bottom: none;
+}
+
+.transit-dep-delayed {
+  background: rgba(239, 68, 68, 0.06);
+}
+
+.transit-dep-time {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-heading);
+}
+
+.transit-dep-dest {
+  color: var(--text-body);
+}
+
+.transit-dep-plat {
+  text-align: center;
+  font-weight: 600;
+  color: var(--accent-amber, #f59e0b);
+}
+
+.transit-dep-status {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-green, #22c55e);
+}
+
+.transit-dep-delayed .transit-dep-status {
+  color: #ef4444;
+}
+
+.transit-dep-credit {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  padding: 0.4rem 0.75rem;
+  text-align: right;
+}
+
+.transit-dep-empty {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}

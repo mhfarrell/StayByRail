@@ -199,6 +199,104 @@ def key_status(request: Request):
     return result
 
 
+# ---- Live train departures ----
+
+_departures_cache: dict = {}
+_DEPARTURES_TTL = 120  # 2 minutes
+
+
+@app.get("/api/departures")
+def get_departures(station: str, country: str = ""):
+    """Live departures for a station. Supports UK (National Rail) and Japan (ODPT)."""
+    import requests as http
+
+    cache_key = f"{station}|{country}".lower()
+    cached = _departures_cache.get(cache_key)
+    if cached and time.time() - cached["ts"] < _DEPARTURES_TTL:
+        return cached["data"]
+
+    departures = []
+    source = ""
+
+    country_lower = country.lower()
+
+    # ---- UK: National Rail Darwin (Huxley2 proxy or direct) ----
+    if country_lower in ("gb", "uk", "united kingdom"):
+        nr_key = os.environ.get("NATIONALRAIL_API_KEY", "")
+        if nr_key:
+            try:
+                resp = http.get(
+                    f"https://huxley2.azurewebsites.net/departures/{station}",
+                    params={"accessToken": nr_key, "expand": "true"},
+                    timeout=8,
+                )
+                data = resp.json()
+                for svc in (data.get("trainServices") or [])[:12]:
+                    departures.append({
+                        "time": svc.get("std", ""),
+                        "expected": svc.get("etd", ""),
+                        "destination": svc.get("destination", [{}])[0].get("locationName", ""),
+                        "platform": svc.get("platform", ""),
+                        "operator": svc.get("operator", ""),
+                        "status": svc.get("etd", "On time"),
+                    })
+                source = "National Rail"
+            except Exception:
+                pass
+
+    # ---- Japan (Tokyo): ODPT API ----
+    elif country_lower in ("jp", "japan"):
+        odpt_key = os.environ.get("ODPT_API_KEY", "")
+        if odpt_key:
+            try:
+                # Search station timetable by station name
+                resp = http.get(
+                    "https://api.odpt.org/api/v4/odpt:StationTimetable",
+                    params={
+                        "odpt:station": f"odpt.Station:JR-East.{station.replace(' ', '')}",
+                        "acl:consumerKey": odpt_key,
+                    },
+                    timeout=8,
+                )
+                timetables = resp.json()
+                if timetables:
+                    # Get current time to find upcoming departures
+                    from datetime import datetime as dt
+                    now = dt.utcnow()
+                    # Japan is UTC+9
+                    jp_hour = (now.hour + 9) % 24
+                    jp_min = now.minute
+                    now_str = f"{jp_hour:02d}:{jp_min:02d}"
+
+                    all_deps = []
+                    for tt in timetables:
+                        direction = (tt.get("odpt:railDirection", "") or "").split(".")[-1]
+                        for obj in tt.get("odpt:stationTimetableObject", []):
+                            dep_time = obj.get("odpt:departureTime", "")
+                            if dep_time >= now_str:
+                                train_type = (obj.get("odpt:trainType", "") or "").split(".")[-1]
+                                dest_stations = obj.get("odpt:destinationStation", [])
+                                dest = dest_stations[0].split(".")[-1] if dest_stations else direction
+                                all_deps.append({
+                                    "time": dep_time,
+                                    "expected": dep_time,
+                                    "destination": dest.replace(".", " "),
+                                    "platform": "",
+                                    "operator": "JR East",
+                                    "status": train_type or "Local",
+                                })
+                    # Sort and take next 12
+                    all_deps.sort(key=lambda x: x["time"])
+                    departures = all_deps[:12]
+                source = "ODPT"
+            except Exception:
+                pass
+
+    result = {"departures": departures, "source": source, "station": station}
+    _departures_cache[cache_key] = {"ts": time.time(), "data": result}
+    return result
+
+
 # ---- Events (multi-source: Ticketmaster, PredictHQ, Eventbrite) ----
 
 @app.get("/api/events")
