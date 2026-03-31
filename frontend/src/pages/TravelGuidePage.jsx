@@ -104,9 +104,12 @@ function TravelGuidePage() {
       <div className="travel-region-list">
         {REGIONS.map((r) => (
           <div className="travel-region-card" key={r.country}>
-            {images[r.country] && (
-              <div className="travel-region-img" style={{ backgroundImage: `url(${images[r.country]})` }} />
-            )}
+            <div
+              className="travel-region-img"
+              style={images[r.country] ? { backgroundImage: `url(${images[r.country]})` } : undefined}
+            >
+              {!images[r.country] && <span className="travel-region-flag-fallback">{r.flag}</span>}
+            </div>
             <div className="travel-region-body">
               <div className="travel-region-header">
                 <h3 className="travel-region-name">{r.flag} {r.country}</h3>

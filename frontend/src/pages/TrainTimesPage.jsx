@@ -140,9 +140,10 @@ function TrainTimesPage() {
               className={`transit-country-card ${active ? "transit-country-active" : ""}`}
               onClick={() => { setSelectedCountry(active ? "" : country); setSelectedCity(""); }}
             >
-              {countryImages[country] && (
-                <div className="transit-country-img" style={{ backgroundImage: `url(${countryImages[country]})` }} />
-              )}
+              <div
+                className="transit-country-img"
+                style={countryImages[country] ? { backgroundImage: `url(${countryImages[country]})` } : undefined}
+              />
               <div className="transit-country-body">
                 <span className="transit-country-flag">{data.flag}</span>
                 <span className="transit-country-name">{country}</span>
@@ -194,9 +195,9 @@ function TrainTimesPage() {
           </div>
 
           {/* Live departures — coming soon */}
-          {(selectedCountry === "United Kingdom" || selectedCountry === "Japan") && selectedCity && (
+          {(selectedCountry === "United Kingdom" || selectedCountry === "Japan") && (
             <div className="transit-departures">
-              <h4 className="transit-dep-heading">Live Departures — {selectedCity}</h4>
+              <h4 className="transit-dep-heading">Live Departures{selectedCity ? ` — ${selectedCity}` : ""}</h4>
               <div className="transit-coming-soon">
                 <span className="transit-coming-badge">Coming Soon</span>
                 <p className="transit-coming-text">

@@ -302,6 +302,7 @@
   height: 70px;
   background-size: cover;
   background-position: center;
+  background-color: var(--border);
 }
 
 .transit-country-body {
@@ -420,6 +421,16 @@
   height: 180px;
   background-size: cover;
   background-position: center;
+  background-color: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.travel-region-flag-fallback {
+  font-size: 3rem;
+  opacity: 0.4;
 }
 
 .travel-region-body {
