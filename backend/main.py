@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from staybyrail.api import _cache_key, _get_cached, _set_cached, search_hotels_multi
+from staybyrail.events import get_events as fetch_events
 from staybyrail.filters import filter_hotels
 from staybyrail.stations import LINES, get_cities, get_lines, get_stations
 
@@ -196,62 +197,11 @@ def key_status(request: Request):
     return result
 
 
-# ---- Events (Ticketmaster Discovery API) -------------------------
-_events_cache: dict = {}   # key: "city|country" → {ts, data}
-_EVENTS_TTL = 3 * 60 * 60  # 3 hours
-
+# ---- Events (multi-source: Ticketmaster, PredictHQ, Eventbrite) ----
 
 @app.get("/api/events")
 def get_events(city: str, country_code: str = ""):
-    import time
-    import requests as http
-
-    tm_key = os.environ.get("TICKETMASTER_API_KEY", "")
-    if not tm_key:
-        return {"events": [], "error": "Events not configured"}
-
-    cache_key = f"{city}|{country_code}".lower()
-    cached = _events_cache.get(cache_key)
-    if cached and time.time() - cached["ts"] < _EVENTS_TTL:
-        return {"events": cached["data"]}
-
-    params = {
-        "apikey": tm_key,
-        "city": city,
-        "size": 6,
-        "sort": "date,asc",
-        "classificationName": "music,sports,arts,film,family,miscellaneous",
-    }
-    if country_code:
-        params["countryCode"] = country_code
-
-    try:
-        resp = http.get(
-            "https://app.ticketmaster.com/discovery/v2/events.json",
-            params=params,
-            timeout=6,
-        )
-        raw = resp.json()
-    except Exception:
-        return {"events": [], "error": "Could not reach Ticketmaster"}
-
-    events = []
-    for e in raw.get("_embedded", {}).get("events", []):
-        start = e.get("dates", {}).get("start", {})
-        venues = e.get("_embedded", {}).get("venues", [{}])
-        cats = e.get("classifications", [{}])
-        segment = cats[0].get("segment", {}).get("name", "") if cats else ""
-        events.append({
-            "name": e.get("name", ""),
-            "date": start.get("localDate", ""),
-            "time": start.get("localTime", ""),
-            "venue": venues[0].get("name", "") if venues else "",
-            "category": segment,
-            "url": e.get("url", ""),
-        })
-
-    _events_cache[cache_key] = {"ts": time.time(), "data": events}
-    return {"events": events}
+    return fetch_events(city, country_code)
 
 
 @app.get("/api/stations")

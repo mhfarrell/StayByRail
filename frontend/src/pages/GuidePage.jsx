@@ -6,7 +6,7 @@ import { useCityData } from "../hooks/useCityData";
 function GuidePage() {
   const { slug } = useParams();
   const guide = getGuide(slug);
-  const { image, weather, events } = useCityData(guide);
+  const { image, weather, events, eventSources } = useCityData(guide);
 
   if (!guide) return <Navigate to="/guides" replace />;
 
@@ -108,12 +108,11 @@ function GuidePage() {
               </li>
             ))}
           </ul>
-          <p className="guide-events-credit">
-            Events via{" "}
-            <a href="https://www.ticketmaster.com" target="_blank" rel="noopener noreferrer" className="about-link">
-              Ticketmaster
-            </a>
-          </p>
+          {eventSources && eventSources.length > 0 && (
+            <p className="guide-events-credit">
+              Events via {eventSources.join(", ")}
+            </p>
+          )}
         </div>
       )}
 

@@ -28,6 +28,7 @@ export function useCityData(guide) {
   const [image, setImage] = useState(null);
   const [weather, setWeather] = useState(null);
   const [events, setEvents] = useState(null);
+  const [eventSources, setEventSources] = useState([]);
 
   useEffect(() => {
     if (!guide) return;
@@ -91,14 +92,16 @@ export function useCityData(guide) {
           .catch(() => {});
       }
     }
-    // Ticketmaster events (via backend to keep key server-side)
+    // Events (multi-source: Ticketmaster, PredictHQ, Eventbrite)
     if (guide.city) {
       const cacheKey = `sbr_events_${guide.slug}`;
       const cached = sessionStorage.getItem(cacheKey);
       const cacheTs = sessionStorage.getItem(`${cacheKey}_ts`);
       const fresh = cacheTs && Date.now() - Number(cacheTs) < 3 * 60 * 60 * 1000;
       if (cached && fresh) {
-        setEvents(JSON.parse(cached));
+        const parsed = JSON.parse(cached);
+        setEvents(parsed.events || parsed);
+        setEventSources(parsed.sources || []);
       } else {
         const qs = new URLSearchParams({ city: guide.city });
         if (guide.countryCode) qs.set("country_code", guide.countryCode);
@@ -106,14 +109,16 @@ export function useCityData(guide) {
           .then((r) => r.json())
           .then((data) => {
             const list = data.events || [];
-            sessionStorage.setItem(cacheKey, JSON.stringify(list));
+            const sources = data.sources || [];
+            sessionStorage.setItem(cacheKey, JSON.stringify(data));
             sessionStorage.setItem(`${cacheKey}_ts`, String(Date.now()));
             setEvents(list);
+            setEventSources(sources);
           })
           .catch(() => setEvents([]));
       }
     }
   }, [guide?.slug]);
 
-  return { image, weather, events };
+  return { image, weather, events, eventSources };
 }
