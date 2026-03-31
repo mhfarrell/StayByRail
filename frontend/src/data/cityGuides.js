@@ -40,6 +40,9 @@ export const cityGuides = [
       { name: "Otsuka", reason: "StayByRail pick — quiet residential neighbourhood with excellent Yamanote Line connections and noticeably lower hotel prices than Shinjuku or Shibuya" },
     ],
     searchCity: "Tokyo",
+    wikipedia: "Tokyo",
+    lat: 35.6762,
+    lon: 139.6503,
   },
   {
     slug: "london",
@@ -75,8 +78,12 @@ export const cityGuides = [
       { name: "Victoria", reason: "Gatwick Express, tourist corridor to Westminster" },
       { name: "London Bridge", reason: "Borough Market, Tate Modern, Jubilee/Northern lines" },
       { name: "Bethnal Green", reason: "Zone 2 value, Central line, growing food scene" },
+      { name: "Hammersmith", reason: "StayByRail pick — four Tube lines intersect here, noticeably cheaper hotels than Zone 1, and an easy one-stop ride to the West End on the Piccadilly line" },
     ],
     searchCity: "London",
+    wikipedia: "London",
+    lat: 51.5074,
+    lon: -0.1278,
   },
   {
     slug: "paris",
@@ -114,6 +121,9 @@ export const cityGuides = [
       { name: "Denfert-Rochereau", reason: "Orly airport RER, quieter 14th arrondissement" },
     ],
     searchCity: "Paris",
+    wikipedia: "Paris",
+    lat: 48.8566,
+    lon: 2.3522,
   },
   {
     slug: "osaka",
@@ -151,6 +161,9 @@ export const cityGuides = [
       { name: "Shinsaibashi", reason: "Shopping, boutiques, good restaurant density" },
     ],
     searchCity: "Osaka",
+    wikipedia: "Osaka",
+    lat: 34.6937,
+    lon: 135.5023,
   },
   {
     slug: "barcelona",
@@ -188,6 +201,9 @@ export const cityGuides = [
       { name: "Barceloneta", reason: "Beach access, L4, old port area" },
     ],
     searchCity: "Barcelona",
+    wikipedia: "Barcelona",
+    lat: 41.3851,
+    lon: 2.1734,
   },
   {
     slug: "bangkok",
@@ -225,6 +241,9 @@ export const cityGuides = [
       { name: "Silom / Sala Daeng", reason: "Financial district, Lumphini Park, BTS/MRT interchange" },
     ],
     searchCity: "Bangkok",
+    wikipedia: "Bangkok",
+    lat: 13.7563,
+    lon: 100.5018,
   },
   {
     slug: "berlin",
@@ -262,6 +281,9 @@ export const cityGuides = [
       { name: "Zoologischer Garten", reason: "Charlottenburg, Kurfürstendamm, western Berlin" },
     ],
     searchCity: "Berlin",
+    wikipedia: "Berlin",
+    lat: 52.5200,
+    lon: 13.4050,
   },
   {
     slug: "kyoto",
@@ -303,6 +325,9 @@ export const cityGuides = [
       { name: "Tofukuji", reason: "JR + Keihan interchange, autumn foliage temples" },
     ],
     searchCity: "Kyoto",
+    wikipedia: "Kyoto",
+    lat: 35.0116,
+    lon: 135.7681,
   },
   {
     slug: "madrid",
@@ -340,6 +365,9 @@ export const cityGuides = [
       { name: "Nuevos Ministerios", reason: "Airport Metro (line 8), business district" },
     ],
     searchCity: "Madrid",
+    wikipedia: "Madrid",
+    lat: 40.4168,
+    lon: -3.7038,
   },
   {
     slug: "birmingham",
@@ -377,6 +405,9 @@ export const cityGuides = [
       { name: "Birmingham International", reason: "Airport, NEC, 10 mins from New Street" },
     ],
     searchCity: "Birmingham",
+    wikipedia: "Birmingham",
+    lat: 52.4862,
+    lon: -1.8904,
   },
   {
     slug: "krabi",
@@ -414,6 +445,9 @@ export const cityGuides = [
       { name: "Krabi Airport", reason: "1hr 15min flight from Bangkok if time is short" },
     ],
     searchCity: "Bangkok",
+    wikipedia: "Krabi_Province",
+    lat: 8.0863,
+    lon: 98.9063,
   },
 ];
 

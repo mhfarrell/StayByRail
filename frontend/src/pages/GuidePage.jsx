@@ -1,10 +1,12 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { getGuide } from "../data/cityGuides";
+import { useCityData } from "../hooks/useCityData";
 
 function GuidePage() {
   const { slug } = useParams();
   const guide = getGuide(slug);
+  const { image, weather } = useCityData(guide);
 
   if (!guide) return <Navigate to="/guides" replace />;
 
@@ -18,8 +20,37 @@ function GuidePage() {
         {guide.city}
       </p>
 
-      <h2 className="page-heading">{guide.city} Rail &amp; Hotel Guide</h2>
-      <p className="guide-hero-line">{guide.heroLine}</p>
+      {/* Hero image */}
+      {image && (
+        <div className="guide-hero-img-wrap">
+          <img
+            src={image.src}
+            alt={`${guide.city} — ${image.caption}`}
+            className="guide-hero-img"
+            loading="lazy"
+          />
+          <span className="guide-hero-img-caption">
+            {image.caption} · via Wikipedia
+          </span>
+        </div>
+      )}
+
+      <div className="guide-title-row">
+        <div>
+          <h2 className="page-heading" style={{ marginBottom: "0.25rem" }}>
+            {guide.city} Rail &amp; Hotel Guide
+          </h2>
+          <p className="guide-hero-line">{guide.heroLine}</p>
+        </div>
+        {weather && (
+          <div className="guide-weather-pill">
+            <span className="guide-weather-icon">{weather.icon}</span>
+            <span className="guide-weather-temp">{weather.temp}{weather.unit}</span>
+            <span className="guide-weather-cond">{weather.condition}</span>
+          </div>
+        )}
+      </div>
+
       <p className="page-intro">{guide.intro}</p>
 
       <div className="about-sections">
