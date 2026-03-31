@@ -12,6 +12,8 @@ import FaqPage from "./pages/FaqPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import GuidesIndexPage from "./pages/GuidesIndexPage";
 import GuidePage from "./pages/GuidePage";
+import TravelGuidePage from "./pages/TravelGuidePage";
+import TrainTimesPage from "./pages/TrainTimesPage";
 import "./styles/variables.css";
 import "./styles/base.css";
 import "./styles/layout.css";
@@ -97,6 +99,8 @@ function App() {
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/guides" element={<GuidesIndexPage />} />
             <Route path="/guides/:slug" element={<GuidePage />} />
+            <Route path="/travel-guide" element={<TravelGuidePage />} />
+            <Route path="/train-times" element={<TrainTimesPage />} />
           </Routes>
 
           <div className="ad-banner">

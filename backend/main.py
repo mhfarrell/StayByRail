@@ -1,6 +1,9 @@
+import json
 import os
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
+from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query, Request
@@ -204,6 +207,74 @@ def get_events(city: str, country_code: str = ""):
     return fetch_events(city, country_code)
 
 
+# ---- Tourist tips (user-submitted, stored in JSON file) ----
+TIPS_FILE = Path(__file__).parent / "data" / "tips.json"
+TIPS_FILE.parent.mkdir(exist_ok=True)
+
+def _load_tips():
+    if TIPS_FILE.exists():
+        return json.loads(TIPS_FILE.read_text(encoding="utf-8"))
+    return {}
+
+def _save_tips(tips):
+    TIPS_FILE.write_text(json.dumps(tips, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+class TipPayload(BaseModel):
+    city: str
+    name: str
+    tip: str
+
+
+@app.get("/api/tips")
+def get_tips(city: str):
+    tips = _load_tips()
+    return {"tips": tips.get(city.lower(), [])}
+
+
+@app.post("/api/tips")
+def submit_tip(payload: TipPayload):
+    city_key = payload.city.lower().strip()
+    name = payload.name.strip()[:50]
+    tip = payload.tip.strip()[:500]
+    if not city_key or not name or not tip:
+        raise HTTPException(400, "city, name, and tip are required")
+    tips = _load_tips()
+    if city_key not in tips:
+        tips[city_key] = []
+    tips[city_key].append({
+        "name": name,
+        "tip": tip,
+        "ts": datetime.now().isoformat(),
+    })
+    _save_tips(tips)
+    return {"ok": True}
+
+
+# ---- Station search (across all cities) ----
+
+@app.get("/api/stations/search")
+def search_stations(q: str):
+    """Search for stations by name across all cities."""
+    query = q.lower().strip()
+    if len(query) < 2:
+        return {"results": []}
+    results = []
+    for city_key, city_data in LINES.items():
+        for line_key, line_data in city_data.items():
+            for s in line_data.get("stations", []):
+                if query in s["name"].lower():
+                    results.append({
+                        "station": s["name"],
+                        "city": city_key,
+                        "line": line_key,
+                        "line_name": line_data.get("name", line_key),
+                        "lat": s["lat"],
+                        "lon": s["lon"],
+                    })
+    return {"results": results[:20]}
+
+
 @app.get("/api/stations")
 def list_stations(city: str, line: str, popular_only: bool = True):
     stations = get_stations(city, line, popular_only)
@@ -285,10 +356,8 @@ def search(
         cached_response["from_cache"] = True
         return cached_response
 
-    seen_hotels = {}  # dedupe by name
-    results_by_station = []
-
-    for s in stations:
+    # ---- Fetch hotels for all stations concurrently ----
+    def _fetch_station(s):
         query = f"hotels near {s['name']} Station {city.title()}"
         try:
             raw = search_hotels_multi(
@@ -303,15 +372,25 @@ def search(
                 api_key_override=api_key,
                 rapidapi_key_override=rapidapi_key,
             )
-        except RuntimeError as e:
-            raise HTTPException(500, str(e))
-        except Exception as e:
-            import traceback
-            traceback.print_exc()
+        except Exception:
             raw = []
+        return s, filter_hotels(raw, s["lat"], s["lon"])
 
-        filtered = filter_hotels(raw, s["lat"], s["lon"])
+    station_results = []
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        futures = {pool.submit(_fetch_station, s): s for s in stations}
+        for future in as_completed(futures):
+            station_results.append(future.result())
 
+    # Sort back into original station order
+    station_order = {s["name"]: i for i, s in enumerate(stations)}
+    station_results.sort(key=lambda x: station_order.get(x[0]["name"], 999))
+
+    # ---- Build response from parallel results ----
+    seen_hotels = {}
+    results_by_station = []
+
+    for s, filtered in station_results:
         station_hotels = []
         for h in filtered:
             name = h.get("name", "")
@@ -320,14 +399,11 @@ def search(
             seen_hotels[name] = True
 
             rate = h.get("rate_per_night", {})
-            # Use extracted numeric values when available (more reliable)
             price_num = rate.get("extracted_lowest")
             price_str = rate.get("lowest") or ""
-            # Also grab the before-taxes price for comparison
             before_tax_num = rate.get("extracted_before_taxes_fees")
             before_tax_str = rate.get("before_taxes_fees") or ""
 
-            # Fallback: parse from string if no extracted value
             if price_num is None and price_str:
                 cleaned = "".join(c for c in price_str if c.isdigit() or c == ".")
                 try:

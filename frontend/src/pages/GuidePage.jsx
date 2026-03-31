@@ -1,12 +1,74 @@
+import { useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { getGuide } from "../data/cityGuides";
 import { useCityData } from "../hooks/useCityData";
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
+
+function TipForm({ city, onSubmitted }) {
+  const [name, setName] = useState("");
+  const [tip, setTip] = useState("");
+  const [sending, setSending] = useState(false);
+  const [done, setDone] = useState(false);
+
+  const submit = (e) => {
+    e.preventDefault();
+    if (!name.trim() || !tip.trim()) return;
+    setSending(true);
+    fetch(`${API}/tips`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ city, name: name.trim(), tip: tip.trim() }),
+    })
+      .then(() => { setDone(true); setName(""); setTip(""); onSubmitted(); })
+      .catch(() => {})
+      .finally(() => setSending(false));
+  };
+
+  if (done) return <p className="tip-thanks">Thanks for your tip!</p>;
+
+  return (
+    <form className="tip-form" onSubmit={submit}>
+      <input
+        className="tip-input"
+        placeholder="Your name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        maxLength={50}
+      />
+      <textarea
+        className="tip-textarea"
+        placeholder="Share a travel tip for this city..."
+        value={tip}
+        onChange={(e) => setTip(e.target.value)}
+        maxLength={500}
+        rows={3}
+      />
+      <button type="submit" className="tip-submit" disabled={sending || !name.trim() || !tip.trim()}>
+        {sending ? "Sending..." : "Submit Tip"}
+      </button>
+    </form>
+  );
+}
+
 function GuidePage() {
   const { slug } = useParams();
   const guide = getGuide(slug);
   const { image, weather, events, eventSources } = useCityData(guide);
+  const [tips, setTips] = useState(null);
+  const [tipsLoaded, setTipsLoaded] = useState(false);
+
+  const loadTips = () => {
+    if (!guide) return;
+    fetch(`${API}/tips?city=${encodeURIComponent(guide.city)}`)
+      .then((r) => r.json())
+      .then((data) => setTips(data.tips || []))
+      .catch(() => setTips([]))
+      .finally(() => setTipsLoaded(true));
+  };
+
+  if (!tipsLoaded && guide) loadTips();
 
   if (!guide) return <Navigate to="/guides" replace />;
 
@@ -14,9 +76,9 @@ function GuidePage() {
     <div className="page-content">
       <PageMeta title={guide.metaTitle} description={guide.metaDescription} />
 
-      <p className="guide-breadcrumb">
+      <p className="guide-breadcrumb" style={{ textAlign: "center" }}>
         <Link to="/guides" className="about-link">Guides</Link>
-        {" › "}
+        {" \u203A "}
         {guide.city}
       </p>
 
@@ -25,33 +87,35 @@ function GuidePage() {
         <div className="guide-hero-img-wrap">
           <img
             src={image.src}
-            alt={`${guide.city} — ${image.caption}`}
+            alt={`${guide.city} \u2014 ${image.caption}`}
             className="guide-hero-img"
             loading="lazy"
           />
           <span className="guide-hero-img-caption">
-            {image.caption} · via Wikipedia
+            {image.caption} \u00B7 via Wikipedia
           </span>
         </div>
       )}
 
-      <div className="guide-title-row">
+      <div className="guide-title-row" style={{ justifyContent: "center", textAlign: "center" }}>
         <div>
           <h2 className="page-heading" style={{ marginBottom: "0.25rem" }}>
             {guide.city} Rail &amp; Hotel Guide
           </h2>
           <p className="guide-hero-line">{guide.heroLine}</p>
         </div>
-        {weather && (
+      </div>
+      {weather && (
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: "1rem" }}>
           <div className="guide-weather-pill">
             <span className="guide-weather-icon">{weather.icon}</span>
             <span className="guide-weather-temp">{weather.temp}{weather.unit}</span>
             <span className="guide-weather-cond">{weather.condition}</span>
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
-      <p className="page-intro">{guide.intro}</p>
+      <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>{guide.intro}</p>
 
       <div className="about-sections">
         {guide.sections.map((s) => (
@@ -92,18 +156,17 @@ function GuidePage() {
                       {new Date(ev.date + "T00:00:00").toLocaleDateString("en-GB", {
                         day: "numeric", month: "short", year: "numeric",
                       })}
-                      {ev.time && " · " + ev.time.slice(0, 5)}
+                      {ev.time && " \u00B7 " + ev.time.slice(0, 5)}
                     </span>
                   )}
                 </div>
-                <a
-                  href={ev.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="guide-event-name"
-                >
-                  {ev.name}
-                </a>
+                {ev.url ? (
+                  <a href={ev.url} target="_blank" rel="noopener noreferrer" className="guide-event-name">
+                    {ev.name}
+                  </a>
+                ) : (
+                  <span className="guide-event-name">{ev.name}</span>
+                )}
                 {ev.venue && <span className="guide-event-venue">{ev.venue}</span>}
               </li>
             ))}
@@ -115,6 +178,22 @@ function GuidePage() {
           )}
         </div>
       )}
+
+      {/* Tourist Tips */}
+      <div className="guide-tips-block">
+        <h3 className="guide-stations-heading">Tourist Tips</h3>
+        {tips && tips.length > 0 && (
+          <ul className="guide-tips-list">
+            {tips.map((t, i) => (
+              <li key={i} className="guide-tip-item">
+                <span className="guide-tip-text">{t.tip}</span>
+                <span className="guide-tip-author">\u2014 {t.name}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+        <TipForm city={guide.city} onSubmitted={loadTips} />
+      </div>
 
       <div className="guide-cta-block">
         <p className="guide-cta-text">

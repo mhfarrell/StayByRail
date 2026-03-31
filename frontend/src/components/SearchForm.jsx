@@ -23,10 +23,14 @@ const AMENITY_OPTIONS = [
   "Safe",
 ];
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
+
 function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
   const [country, setCountry] = useState("United Kingdom");
   const [city, setCity] = useState("london");
   const [line, setLine] = useState("");
+  const [station, setStation] = useState("");
+  const [stationsList, setStationsList] = useState([]);
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [maxPrice, setMaxPrice] = useState(100);
@@ -80,6 +84,17 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
     }
   }, [city, cities]);
 
+  // Fetch stations when city/line changes
+  useEffect(() => {
+    setStation("");
+    setStationsList([]);
+    if (!city || !line) return;
+    fetch(`${API}/stations?city=${encodeURIComponent(city)}&line=${encodeURIComponent(line)}&popular_only=false`)
+      .then((r) => r.json())
+      .then((data) => { if (Array.isArray(data)) setStationsList(data); })
+      .catch(() => {});
+  }, [city, line]);
+
   // Apply URL params once cities are loaded
   useEffect(() => {
     if (appliedInitial.current || !initialValues || Object.keys(cities).length === 0) return;
@@ -124,18 +139,17 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
 
   const handleSubmit = (e) => {
     if (e) e.preventDefault();
-    onSearch(
-      {
-        city,
-        line,
-        check_in: checkIn,
-        check_out: checkOut,
-        max_price: maxPrice,
-        adults,
-        popular_only: popularOnly,
-      },
-      wishlist
-    );
+    const params = {
+      city,
+      line,
+      check_in: checkIn,
+      check_out: checkOut,
+      max_price: maxPrice,
+      adults,
+      popular_only: popularOnly,
+    };
+    if (station) params.station = station;
+    onSearch(params, wishlist);
   };
 
   const cityLines = cities[city]?.lines || {};
@@ -175,6 +189,18 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
             ))}
           </select>
         </div>
+
+        {stationsList.length > 0 && (
+          <div className="field">
+            <label>Station</label>
+            <select value={station} onChange={(e) => setStation(e.target.value)}>
+              <option value="">All stations ({stationsList.length})</option>
+              {stationsList.map((s) => (
+                <option key={s.name} value={s.name}>{s.name}</option>
+              ))}
+            </select>
+          </div>
+        )}
 
         <div className="field">
           <label>Check-in</label>

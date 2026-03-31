@@ -6,6 +6,7 @@ dist/
 __pycache__/
 *.pyc
 backend/.cache/
+backend/data/
 .vite/
 *.log
 .DS_Store
