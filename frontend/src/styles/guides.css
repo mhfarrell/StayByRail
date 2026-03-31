@@ -1,0 +1,172 @@
+/* ============================================================
+   guides.css — City guide index and guide page styles
+   ============================================================ */
+
+/* ---- Breadcrumb ---- */
+.guide-breadcrumb {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* ---- Hero line (tagline under heading) ---- */
+.guide-hero-line {
+  font-size: 1rem;
+  color: var(--accent-amber, #f59e0b);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: -0.25rem;
+}
+
+/* ---- Key stations block ---- */
+.guide-stations-block {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.guide-stations-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 1rem;
+}
+
+.guide-stations-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.guide-station-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.75rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-amber, #f59e0b);
+}
+
+.guide-station-name {
+  font-weight: 700;
+  color: var(--text-heading);
+  font-size: 0.9rem;
+}
+
+.guide-station-reason {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ---- CTA block ---- */
+.guide-cta-block {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.guide-cta-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+/* ---- Guides index grid ---- */
+.guides-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.guide-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+@media (hover: hover) {
+  .guide-card:hover {
+    border-color: var(--accent-amber, #f59e0b);
+    box-shadow: 0 2px 12px rgba(245, 158, 11, 0.12);
+  }
+}
+
+.guide-card-flag {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+  width: 2.25rem;
+  text-align: center;
+}
+
+.guide-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.guide-card-city {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.1rem;
+}
+
+.guide-card-country {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.guide-card-line {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guide-card-arrow {
+  color: var(--text-muted);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* ---- Tablet ---- */
+@media (min-width: 600px) {
+  .guides-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .guide-station-item {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+
+  .guide-station-name {
+    min-width: 160px;
+    flex-shrink: 0;
+  }
+}
+
+/* ---- Desktop ---- */
+@media (min-width: 900px) {
+  .guides-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

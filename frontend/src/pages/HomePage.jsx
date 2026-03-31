@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 
+
 function HomePage() {
   return (
     <>
@@ -97,86 +98,26 @@ function HomePage() {
           some of the most popular cities our travellers search for.
         </p>
         <div className="content-city-grid">
-          <div className="content-city-card" data-accent="red">
-            <h3 className="content-city-name">Tokyo</h3>
-            <p className="content-city-text">
-              Explore Japan's capital via the iconic Yamanote Line, which loops through
-              major hubs like Shinjuku, Shibuya, and Tokyo Station. With over 100
-              stations across dozens of lines, finding a hotel near a convenient stop
-              means easy access to everything from Akihabara to the Meiji Shrine.
-            </p>
-          </div>
-          <div className="content-city-card" data-accent="blue">
-            <h3 className="content-city-name">London</h3>
-            <p className="content-city-text">
-              Navigate the Tube and find hotels near Underground stations across all
-              zones. Staying near a Central, Victoria, or Piccadilly line station puts
-              you minutes from the British Museum, Buckingham Palace, and the West End.
-            </p>
-          </div>
-          <div className="content-city-card" data-accent="purple">
-            <h3 className="content-city-name">Paris</h3>
-            <p className="content-city-text">
-              Stay near Metro stations in the City of Light and reach the Eiffel Tower,
-              Louvre, and Montmartre without relying on taxis. The Paris Metro's 16
-              lines cover every arrondissement.
-            </p>
-          </div>
-          <div className="content-city-card" data-accent="green">
-            <h3 className="content-city-name">Berlin</h3>
-            <p className="content-city-text">
-              Find hotels along the U-Bahn and S-Bahn networks in Germany's capital.
-              Berlin's efficient public transport makes it easy to hop between the
-              Brandenburg Gate, Museum Island, and the East Side Gallery.
-            </p>
-          </div>
-          <div className="content-city-card" data-accent="orange">
-            <h3 className="content-city-name">Barcelona</h3>
-            <p className="content-city-text">
-              Hotels near Metro stops in Catalonia's vibrant capital put you within
-              easy reach of the Sagrada Familia, Las Ramblas, and the Gothic Quarter.
-            </p>
-          </div>
-          <div className="content-city-card" data-accent="teal">
-            <h3 className="content-city-name">Bangkok</h3>
-            <p className="content-city-text">
-              Stay near BTS Skytrain and MRT stations to avoid Bangkok's legendary
-              traffic. The Sukhumvit line passes through the city's main hotel and
-              nightlife districts.
-            </p>
-          </div>
-          <div className="content-city-card" data-accent="red">
-            <h3 className="content-city-name">Osaka</h3>
-            <p className="content-city-text">
-              Budget-friendly stays near Midosuji Line stations make Osaka an ideal
-              base for exploring Kansai. The famous Dotonbori street food scene is a
-              short walk from Namba Station.
-            </p>
-          </div>
-          <div className="content-city-card" data-accent="purple">
-            <h3 className="content-city-name">Kyoto</h3>
-            <p className="content-city-text">
-              Traditional ryokan and modern hotels cluster near Karasuma Line stations
-              in Japan's cultural capital. Staying near Kyoto Station gives you direct
-              Shinkansen access for day trips.
-            </p>
-          </div>
-          <div className="content-city-card" data-accent="blue">
-            <h3 className="content-city-name">Madrid</h3>
-            <p className="content-city-text">
-              Spain's capital boasts one of Europe's most extensive metro systems.
-              Hotels near Sol or Gran Via stations place you at the heart of the city,
-              within walking distance of the Prado and Retiro Park.
-            </p>
-          </div>
-          <div className="content-city-card" data-accent="green">
-            <h3 className="content-city-name">Manchester</h3>
-            <p className="content-city-text">
-              Find hotels near Metrolink tram stops across Greater Manchester. The
-              tram network connects Piccadilly and Victoria stations to MediaCityUK
-              and the Etihad Campus.
-            </p>
-          </div>
+          {[
+            { city: "Tokyo", accent: "red", guide: "tokyo", text: "Explore Japan's capital via the iconic Yamanote Line, which loops through major hubs like Shinjuku, Shibuya, and Tokyo Station. With over 100 stations across dozens of lines, finding a hotel near a convenient stop means easy access to everything from Akihabara to the Meiji Shrine." },
+            { city: "London", accent: "blue", guide: "london", text: "Navigate the Tube and find hotels near Underground stations across all zones. Staying near a Central, Victoria, or Piccadilly line station puts you minutes from the British Museum, Buckingham Palace, and the West End." },
+            { city: "Paris", accent: "purple", guide: "paris", text: "Stay near Metro stations in the City of Light and reach the Eiffel Tower, Louvre, and Montmartre without relying on taxis. The Paris Metro's 16 lines cover every arrondissement." },
+            { city: "Berlin", accent: "green", guide: "berlin", text: "Find hotels along the U-Bahn and S-Bahn networks in Germany's capital. Berlin's efficient public transport makes it easy to hop between the Brandenburg Gate, Museum Island, and the East Side Gallery." },
+            { city: "Barcelona", accent: "orange", guide: "barcelona", text: "Hotels near Metro stops in Catalonia's vibrant capital put you within easy reach of the Sagrada Familia, Las Ramblas, and the Gothic Quarter." },
+            { city: "Bangkok", accent: "teal", guide: "bangkok", text: "Stay near BTS Skytrain and MRT stations to avoid Bangkok's legendary traffic. The Sukhumvit line passes through the city's main hotel and nightlife districts." },
+            { city: "Osaka", accent: "red", guide: "osaka", text: "Budget-friendly stays near Midosuji Line stations make Osaka an ideal base for exploring Kansai. The famous Dotonbori street food scene is a short walk from Namba Station." },
+            { city: "Kyoto", accent: "purple", guide: "kyoto", text: "Traditional ryokan and modern hotels cluster near Karasuma Line stations in Japan's cultural capital. Staying near Kyoto Station gives you direct Shinkansen access for day trips." },
+            { city: "Madrid", accent: "blue", guide: "madrid", text: "Spain's capital boasts one of Europe's most extensive metro systems. Hotels near Sol or Gran Via stations place you at the heart of the city, within walking distance of the Prado and Retiro Park." },
+            { city: "Manchester", accent: "green", guide: null, text: "Find hotels near Metrolink tram stops across Greater Manchester. The tram network connects Piccadilly and Victoria stations to MediaCityUK and the Etihad Campus." },
+          ].map(({ city, accent, guide, text }) => (
+            <div className="content-city-card" data-accent={accent} key={city}>
+              <h3 className="content-city-name">
+                {city}
+                {guide && <Link to={`/guides/${guide}`} className="city-guide-link">Guide →</Link>}
+              </h3>
+              <p className="content-city-text">{text}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>

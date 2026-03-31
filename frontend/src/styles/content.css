@@ -119,6 +119,19 @@
   border-top-color: #14b8a6;
 }
 
+.city-guide-link {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-amber, #f59e0b);
+  text-decoration: none;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+
+.city-guide-link:hover {
+  text-decoration: underline;
+}
+
 .content-city-name {
   font-size: 1.1rem;
   font-weight: 700;
