@@ -181,15 +181,13 @@ def key_status(request: Request):
                 result["rapidapi"]["valid"] = True
                 result["rapidapi"]["rate_limited"] = True
                 result["rapidapi"]["error"] = "Rate limit reached"
-            elif resp.status_code == 403:
-                # Key is valid but not subscribed to this test endpoint — treat as active
-                result["rapidapi"]["valid"] = True
             elif resp.status_code == 401:
                 result["rapidapi"]["valid"] = False
                 result["rapidapi"]["error"] = "Invalid key"
             else:
-                result["rapidapi"]["valid"] = False
-                result["rapidapi"]["error"] = f"HTTP {resp.status_code}"
+                # 403 (not subscribed to this test API), 4xx, 5xx — key reached
+                # RapidAPI gateway so it is a real key; subscription is tested at search time
+                result["rapidapi"]["valid"] = True
         except Exception:
             result["rapidapi"]["valid"] = None
             result["rapidapi"]["error"] = "Could not reach RapidAPI"

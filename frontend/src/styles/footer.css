@@ -85,6 +85,15 @@
   color: var(--text-muted);
 }
 
+.footer-privacy-link {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-privacy-link:hover {
+  text-decoration: underline;
+}
+
 /* ---- Desktop: horizontal row ---- */
 @media (min-width: 600px) {
   .footer-inner {

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="site-footer">
@@ -33,7 +35,8 @@ function Footer() {
           </a>
         </div>
         <div className="footer-copyright">
-          &copy; 2025 StayByRail
+          &copy; 2026 StayByRail &nbsp;&middot;&nbsp;
+          <Link to="/privacy" className="footer-privacy-link">Privacy Policy</Link>
         </div>
       </div>
     </footer>

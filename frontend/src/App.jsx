@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import HowItWorksPage from "./pages/HowItWorksPage";
 import CoveragePage from "./pages/CoveragePage";
 import FaqPage from "./pages/FaqPage";
+import PrivacyPage from "./pages/PrivacyPage";
 import "./styles/variables.css";
 import "./styles/base.css";
 import "./styles/layout.css";
@@ -77,6 +78,7 @@ function App() {
             <Route path="/how-it-works" element={<HowItWorksPage />} />
             <Route path="/coverage" element={<CoveragePage />} />
             <Route path="/faq" element={<FaqPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
           </Routes>
 
           <div className="ad-banner">
