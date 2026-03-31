@@ -1,4 +1,5 @@
 import os
+import time
 from datetime import datetime, timedelta
 
 from dotenv import load_dotenv
@@ -6,7 +7,7 @@ from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from hotelfinder.api import search_hotels_multi
+from hotelfinder.api import _cache_key, _get_cached, _set_cached, search_hotels_multi
 from hotelfinder.filters import filter_hotels
 from hotelfinder.stations import LINES, get_cities, get_lines, get_stations
 
@@ -315,6 +316,25 @@ def search(
     except ValueError:
         raise HTTPException(400, "Invalid dates. check_out must be after check_in.")
 
+    # ---- Full-response cache (exact same search = zero API calls) ----
+    search_cache_params = {
+        "endpoint": "search_v2",
+        "city": city.lower().strip(),
+        "line": line.lower().strip(),
+        "check_in": check_in,
+        "check_out": check_out,
+        "max_price": max_price,
+        "currency": currency,
+        "adults": adults,
+        "popular_only": popular_only,
+        "station": (station or "").lower().strip(),
+    }
+    search_cache_key = _cache_key(search_cache_params)
+    cached_response = _get_cached(search_cache_key)
+    if cached_response is not None:
+        cached_response["from_cache"] = True
+        return cached_response
+
     seen_hotels = {}  # dedupe by name
     results_by_station = []
 
@@ -414,7 +434,7 @@ def search(
             src = h.get("source", "google_hotels")
             source_counts[src] = source_counts.get(src, 0) + 1
 
-    return {
+    response = {
         "city": city,
         "line": line,
         "check_in": check_in,
@@ -426,4 +446,7 @@ def search(
         "results": results_by_station,
         "total_hotels": sum(len(r["hotels"]) for r in results_by_station),
         "source_counts": source_counts,
+        "from_cache": False,
     }
+    _set_cached(search_cache_key, response)
+    return response

@@ -13,6 +13,18 @@ CACHE_DIR = Path(__file__).parent.parent / ".cache"
 CACHE_DIR.mkdir(exist_ok=True)
 CACHE_TTL = 86400  # 24 hours
 
+# Price buckets — searches within the same bucket share cached SerpAPI results,
+# so a £80 search and a £95 search both hit the bucket-100 cache entry.
+PRICE_BUCKETS = [75, 100, 150, 200, 300, 500]
+
+
+def _price_bucket(max_price):
+    """Round max_price up to the nearest cache-friendly bucket."""
+    for b in PRICE_BUCKETS:
+        if max_price <= b:
+            return b
+    return max_price
+
 
 def _cache_key(params):
     raw = json.dumps(params, sort_keys=True)
@@ -22,9 +34,15 @@ def _cache_key(params):
 def _get_cached(key):
     path = CACHE_DIR / f"{key}.json"
     if path.exists():
-        data = json.loads(path.read_text(encoding="utf-8"))
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            path.unlink(missing_ok=True)
+            return None
         if time.time() - data.get("_ts", 0) < CACHE_TTL:
             return data.get("result")
+        # Expired — clean up
+        path.unlink(missing_ok=True)
     return None
 
 
@@ -36,15 +54,32 @@ def _set_cached(key, result):
     )
 
 
+def _filter_by_price(properties, max_price, bucketed_price):
+    """Post-filter results from a wider price bucket to the actual max_price."""
+    if max_price >= bucketed_price:
+        return properties
+    result = []
+    for p in properties:
+        rate = p.get("rate_per_night", {})
+        price = rate.get("extracted_lowest")
+        # Keep hotels with unknown price (benefit of the doubt)
+        if price is not None and price > max_price:
+            continue
+        result.append(p)
+    return result
+
+
 # ---------------------------------------------------------------------------
 # Source 1: SerpAPI Google Hotels (aggregates Booking, Expedia, Agoda, etc.)
 # ---------------------------------------------------------------------------
 
 def _serpapi_search(query, check_in, check_out, max_price, currency, adults, sort_by=None, api_key_override=None):
-    """Single SerpAPI Google Hotels search call."""
+    """Single SerpAPI Google Hotels search call with price-bucket caching."""
     api_key = api_key_override or os.environ.get("SERPAPI_KEY", "")
     if not api_key:
         return []
+
+    bucketed_price = _price_bucket(max_price)
 
     params = {
         "engine": "google_hotels",
@@ -52,7 +87,7 @@ def _serpapi_search(query, check_in, check_out, max_price, currency, adults, sor
         "check_in_date": check_in,
         "check_out_date": check_out,
         "currency": currency,
-        "max_price": max_price,
+        "max_price": bucketed_price,
         "adults": adults,
         "hl": "en",
         "gl": "uk",
@@ -64,7 +99,7 @@ def _serpapi_search(query, check_in, check_out, max_price, currency, adults, sor
     cache_key = _cache_key({k: v for k, v in params.items() if k != "api_key"})
     cached = _get_cached(cache_key)
     if cached is not None:
-        return cached
+        return _filter_by_price(cached, max_price, bucketed_price)
 
     try:
         resp = requests.get(
@@ -77,7 +112,7 @@ def _serpapi_search(query, check_in, check_out, max_price, currency, adults, sor
         for p in properties:
             p["_source"] = "google_hotels"
         _set_cached(cache_key, properties)
-        return properties
+        return _filter_by_price(properties, max_price, bucketed_price)
     except Exception:
         return []
 
@@ -89,6 +124,10 @@ def search_hotels(query, check_in, check_out, max_price=100, currency="GBP", adu
     """
     # Primary search (default relevance sort)
     results = _serpapi_search(query, check_in, check_out, max_price, currency, adults, api_key_override=api_key_override)
+
+    # Skip price-sort if relevance returned nothing (saves an API call)
+    if not results:
+        return results
 
     # Secondary search: sort by lowest price to catch budget options missed by relevance
     price_sorted = _serpapi_search(
