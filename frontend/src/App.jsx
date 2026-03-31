@@ -56,8 +56,21 @@ function useTheme() {
   return { theme, toggle };
 }
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
+
+// Ping the backend every 5 min to stop Render free tier from sleeping
+function useKeepAlive() {
+  useEffect(() => {
+    const ping = () => fetch(`${API}/cities`).catch(() => {});
+    ping();
+    const id = setInterval(ping, 5 * 60 * 1000);
+    return () => clearInterval(id);
+  }, []);
+}
+
 function App() {
   const { theme, toggle: toggleTheme } = useTheme();
+  useKeepAlive();
 
   return (
     <BrowserRouter>
