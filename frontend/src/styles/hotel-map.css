@@ -10,6 +10,8 @@
   border-radius: 10px;
   overflow: hidden;
   height: 280px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Ensure leaflet fills its container */
