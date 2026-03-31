@@ -355,24 +355,39 @@ def search(
         cached_response["from_cache"] = True
         return cached_response
 
-    # ---- Single broad search, then assign hotels to nearest station ----
-    # One API call instead of one per station — massively reduces SerpAPI usage
-    query = f"hotels in {city.title()}"
-    try:
-        raw = search_hotels_multi(
-            query=query,
-            check_in=check_in,
-            check_out=check_out,
-            max_price=max_price,
-            currency=currency,
-            adults=adults,
-            lat=stations[0]["lat"],
-            lon=stations[0]["lon"],
-            api_key_override=api_key,
-            rapidapi_key_override=rapidapi_key,
-        )
-    except Exception:
-        raw = []
+    # ---- Search a few anchor stations spread along the line, then assign by distance ----
+    # Pick up to 3 anchors (start, middle, end) for good geographic coverage.
+    # ~4-6 API calls instead of 20, with 60-80 unique hotels.
+    if len(stations) <= 3:
+        anchors = stations
+    else:
+        mid = len(stations) // 2
+        anchors = [stations[0], stations[mid], stations[-1]]
+
+    raw = []
+    seen_raw = set()
+    for anchor in anchors:
+        query = f"hotels near {anchor['name']} Station {city.title()}"
+        try:
+            batch = search_hotels_multi(
+                query=query,
+                check_in=check_in,
+                check_out=check_out,
+                max_price=max_price,
+                currency=currency,
+                adults=adults,
+                lat=anchor["lat"],
+                lon=anchor["lon"],
+                api_key_override=api_key,
+                rapidapi_key_override=rapidapi_key,
+            )
+        except Exception:
+            batch = []
+        for h in batch:
+            name = h.get("name", "")
+            if name and name not in seen_raw:
+                seen_raw.add(name)
+                raw.append(h)
 
     # Assign each hotel to its nearest station and calculate distance
     station_buckets = {s["name"]: {"station": s, "hotels": []} for s in stations}
