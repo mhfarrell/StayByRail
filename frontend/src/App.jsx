@@ -14,6 +14,7 @@ import GuidesIndexPage from "./pages/GuidesIndexPage";
 import GuidePage from "./pages/GuidePage";
 import TravelGuidePage from "./pages/TravelGuidePage";
 import TrainTimesPage from "./pages/TrainTimesPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import "./styles/variables.css";
 import "./styles/base.css";
 import "./styles/layout.css";
@@ -101,6 +102,7 @@ function App() {
             <Route path="/guides/:slug" element={<GuidePage />} />
             <Route path="/travel-guide" element={<TravelGuidePage />} />
             <Route path="/train-times" element={<TrainTimesPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
 
           <div className="ad-banner">

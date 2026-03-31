@@ -1,12 +1,54 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 
+const CITIES = [
+  { city: "Tokyo", accent: "red", guide: "tokyo", wiki: "Tokyo", text: "Explore Japan's capital via the iconic Yamanote Line, which loops through major hubs like Shinjuku, Shibuya, and Tokyo Station." },
+  { city: "London", accent: "blue", guide: "london", wiki: "London", text: "Navigate the Tube and find hotels near Underground stations across all zones. Central, Victoria, or Piccadilly line stations put you minutes from everything." },
+  { city: "Paris", accent: "purple", guide: "paris", wiki: "Paris", text: "Stay near Metro stations in the City of Light and reach the Eiffel Tower, Louvre, and Montmartre without relying on taxis." },
+  { city: "Berlin", accent: "green", guide: "berlin", wiki: "Berlin", text: "Find hotels along the U-Bahn and S-Bahn networks in Germany's capital. Efficient transport connects the Brandenburg Gate, Museum Island, and East Side Gallery." },
+  { city: "Barcelona", accent: "orange", guide: "barcelona", wiki: "Barcelona", text: "Hotels near Metro stops in Catalonia's vibrant capital put you within easy reach of the Sagrada Familia, Las Ramblas, and the Gothic Quarter." },
+  { city: "Bangkok", accent: "teal", guide: "bangkok", wiki: "Bangkok", text: "Stay near BTS Skytrain and MRT stations to avoid Bangkok's legendary traffic. The Sukhumvit line passes through the main hotel districts." },
+  { city: "Osaka", accent: "red", guide: "osaka", wiki: "Osaka", text: "Budget-friendly stays near Midosuji Line stations make Osaka an ideal base for exploring Kansai. Dotonbori street food is a walk from Namba Station." },
+  { city: "Kyoto", accent: "purple", guide: "kyoto", wiki: "Kyoto", text: "Traditional ryokan and modern hotels cluster near Karasuma Line stations. Staying near Kyoto Station gives you direct Shinkansen access." },
+  { city: "Madrid", accent: "blue", guide: "madrid", wiki: "Madrid", text: "Spain's capital boasts one of Europe's most extensive metro systems. Hotels near Sol or Gran Via stations place you at the heart of the city." },
+  { city: "Edinburgh", accent: "green", guide: "edinburgh", wiki: "Edinburgh", text: "Scotland's historic capital is a rail gateway to the Highlands. Waverley and Haymarket stations sit at the centre of the city's best hotel areas." },
+];
+
+function useCityImages() {
+  const [images, setImages] = useState({});
+
+  useEffect(() => {
+    CITIES.forEach(({ city, wiki }) => {
+      const key = `sbr_home_${city}`;
+      const cached = sessionStorage.getItem(key);
+      if (cached) {
+        setImages((prev) => ({ ...prev, [city]: cached }));
+        return;
+      }
+      fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
+        .then((r) => r.json())
+        .then((data) => {
+          const url = data.thumbnail?.source || "";
+          if (url) {
+            sessionStorage.setItem(key, url);
+            setImages((prev) => ({ ...prev, [city]: url }));
+          }
+        })
+        .catch(() => {});
+    });
+  }, []);
+
+  return images;
+}
 
 function HomePage() {
+  const images = useCityImages();
+
   return (
     <>
       <PageMeta
-        title="StayByRail — Find Hotels Near Train Stations"
+        title="StayByRail \u2014 Find Hotels Near Train Stations"
         description="Compare hotels near train and metro stations across 52 cities in 6 countries. Real-time prices from Google Hotels, Booking.com, and TripAdvisor."
         schema={{
           "@context": "https://schema.org",
@@ -29,7 +71,7 @@ function HomePage() {
         <h2 className="hero-title">Find hotels near train stations</h2>
         <p className="hero-subtitle">
           Compare prices from Google Hotels, Booking.com, and TripAdvisor across
-          52 cities in 6 countries — sorted by walking distance to the platform.
+          52 cities in 6 countries \u2014 sorted by walking distance to the platform.
         </p>
         <Link to="/search" className="hero-cta">Search Hotels</Link>
       </section>
@@ -94,29 +136,19 @@ function HomePage() {
         <h2 className="content-heading">Popular Destinations</h2>
         <p className="content-intro">
           From the high-speed Shinkansen network in Japan to the London Underground,
-          StayByRail covers the most-travelled rail networks in the world. Here are
-          some of the most popular cities our travellers search for.
+          StayByRail covers the most-travelled rail networks in the world.
         </p>
         <div className="content-city-grid">
-          {[
-            { city: "Tokyo", accent: "red", guide: "tokyo", text: "Explore Japan's capital via the iconic Yamanote Line, which loops through major hubs like Shinjuku, Shibuya, and Tokyo Station. With over 100 stations across dozens of lines, finding a hotel near a convenient stop means easy access to everything from Akihabara to the Meiji Shrine." },
-            { city: "London", accent: "blue", guide: "london", text: "Navigate the Tube and find hotels near Underground stations across all zones. Staying near a Central, Victoria, or Piccadilly line station puts you minutes from the British Museum, Buckingham Palace, and the West End." },
-            { city: "Paris", accent: "purple", guide: "paris", text: "Stay near Metro stations in the City of Light and reach the Eiffel Tower, Louvre, and Montmartre without relying on taxis. The Paris Metro's 16 lines cover every arrondissement." },
-            { city: "Berlin", accent: "green", guide: "berlin", text: "Find hotels along the U-Bahn and S-Bahn networks in Germany's capital. Berlin's efficient public transport makes it easy to hop between the Brandenburg Gate, Museum Island, and the East Side Gallery." },
-            { city: "Barcelona", accent: "orange", guide: "barcelona", text: "Hotels near Metro stops in Catalonia's vibrant capital put you within easy reach of the Sagrada Familia, Las Ramblas, and the Gothic Quarter." },
-            { city: "Bangkok", accent: "teal", guide: "bangkok", text: "Stay near BTS Skytrain and MRT stations to avoid Bangkok's legendary traffic. The Sukhumvit line passes through the city's main hotel and nightlife districts." },
-            { city: "Osaka", accent: "red", guide: "osaka", text: "Budget-friendly stays near Midosuji Line stations make Osaka an ideal base for exploring Kansai. The famous Dotonbori street food scene is a short walk from Namba Station." },
-            { city: "Kyoto", accent: "purple", guide: "kyoto", text: "Traditional ryokan and modern hotels cluster near Karasuma Line stations in Japan's cultural capital. Staying near Kyoto Station gives you direct Shinkansen access for day trips." },
-            { city: "Madrid", accent: "blue", guide: "madrid", text: "Spain's capital boasts one of Europe's most extensive metro systems. Hotels near Sol or Gran Via stations place you at the heart of the city, within walking distance of the Prado and Retiro Park." },
-            { city: "Manchester", accent: "green", guide: null, text: "Find hotels near Metrolink tram stops across Greater Manchester. The tram network connects Piccadilly and Victoria stations to MediaCityUK and the Etihad Campus." },
-          ].map(({ city, accent, guide, text }) => (
-            <div className="content-city-card" data-accent={accent} key={city}>
-              <h3 className="content-city-name">
-                {city}
-                {guide && <Link to={`/guides/${guide}`} className="city-guide-link">Guide →</Link>}
-              </h3>
-              <p className="content-city-text">{text}</p>
-            </div>
+          {CITIES.map(({ city, accent, guide, text }) => (
+            <Link to={guide ? `/guides/${guide}` : "/search"} className="content-city-card" data-accent={accent} key={city}>
+              {images[city] && (
+                <div className="content-city-img" style={{ backgroundImage: `url(${images[city]})` }} />
+              )}
+              <div className="content-city-body">
+                <h3 className="content-city-name">{city}</h3>
+                <p className="content-city-text">{text}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </section>
