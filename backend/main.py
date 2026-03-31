@@ -7,9 +7,9 @@ from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from hotelfinder.api import _cache_key, _get_cached, _set_cached, search_hotels_multi
-from hotelfinder.filters import filter_hotels
-from hotelfinder.stations import LINES, get_cities, get_lines, get_stations
+from staybyrail.api import _cache_key, _get_cached, _set_cached, search_hotels_multi
+from staybyrail.filters import filter_hotels
+from staybyrail.stations import LINES, get_cities, get_lines, get_stations
 
 load_dotenv()
 
@@ -88,7 +88,7 @@ def list_cities():
 
 @app.get("/api/debug")
 def debug():
-    import hotelfinder.api as api_mod
+    import staybyrail.api as api_mod
     key = os.environ.get("SERPAPI_KEY", "")
     return {
         "key_set": bool(key),
