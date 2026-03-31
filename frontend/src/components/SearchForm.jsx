@@ -83,10 +83,15 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
   // Apply URL params once cities are loaded
   useEffect(() => {
     if (appliedInitial.current || !initialValues || Object.keys(cities).length === 0) return;
-    if (initialValues.city && cities[initialValues.city]) {
-      const cityData = cities[initialValues.city];
-      if (cityData?.country) setCountry(cityData.country);
-      setCity(initialValues.city);
+    if (initialValues.city) {
+      const cityKey = Object.keys(cities).find(
+        (k) => k.toLowerCase() === initialValues.city.toLowerCase()
+      );
+      if (cityKey) {
+        const cityData = cities[cityKey];
+        if (cityData?.country) setCountry(cityData.country);
+        setCity(cityKey);
+      }
     }
     if (initialValues.line) setLine(initialValues.line);
     if (initialValues.check_in) setCheckIn(initialValues.check_in);
