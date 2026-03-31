@@ -18,7 +18,7 @@ function useGuideImages(guides) {
   useEffect(() => {
     guides.forEach((g) => {
       if (!g.wikipedia) return;
-      const cacheKey = `sbr_thumb_${g.slug}`;
+      const cacheKey = `sbr_thumb2_${g.slug}`;
       const cached = sessionStorage.getItem(cacheKey);
       if (cached) {
         setImages((prev) => ({ ...prev, [g.slug]: cached }));
@@ -29,7 +29,11 @@ function useGuideImages(guides) {
       )
         .then((r) => r.json())
         .then((data) => {
-          const url = data.thumbnail?.source || "";
+          const thumb = data.thumbnail?.source || "";
+          let url = thumb;
+          if (thumb && thumb.includes("/thumb/")) {
+            url = thumb.replace(/\/\d+px-/, "/800px-");
+          }
           if (url) {
             sessionStorage.setItem(cacheKey, url);
             setImages((prev) => ({ ...prev, [g.slug]: url }));

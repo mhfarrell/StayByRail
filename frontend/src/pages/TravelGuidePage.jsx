@@ -69,13 +69,20 @@ function useRegionImages() {
   useEffect(() => {
     REGIONS.forEach(({ country, wiki }) => {
       if (!wiki) return;
-      const key = `sbr_travel_${country}`;
+      const key = `sbr_travel2_${country}`;
       const cached = sessionStorage.getItem(key);
       if (cached) { setImages((p) => ({ ...p, [country]: cached })); return; }
       fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
         .then((r) => r.json())
         .then((d) => {
-          const url = d.thumbnail?.source || "";
+          // Use original image for quality, or resize thumbnail to 800px
+          const thumb = d.thumbnail?.source || "";
+          const original = d.originalimage?.source || "";
+          let url = original || thumb;
+          // If original is huge (>2MB risk), resize thumb to 800px instead
+          if (thumb && thumb.includes("/thumb/")) {
+            url = thumb.replace(/\/\d+px-/, "/800px-");
+          }
           if (url) { sessionStorage.setItem(key, url); setImages((p) => ({ ...p, [country]: url })); }
         })
         .catch(() => {});
