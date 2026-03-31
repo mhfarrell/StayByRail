@@ -10,7 +10,7 @@ function TravelGuidePage() {
       <h2 className="page-heading" style={{ textAlign: "center" }}>
         Best Times to Travel
       </h2>
-      <p className="page-intro" style={{ textAlign: "center" }}>
+      <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
         Timing can make or break a trip. The right season means better weather,
         thinner crowds, and lower prices. Here is a country-by-country breakdown
         of when to go — and when to think twice — for every region StayByRail

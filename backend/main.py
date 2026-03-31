@@ -308,6 +308,7 @@ def search(
     adults: int = 2,
     popular_only: bool = True,
     station: str | None = None,
+    stations_filter: str | None = Query(None, alias="stations"),
 ):
     # Use per-request keys if provided, otherwise fall back to server env
     api_key = request.headers.get("x-serpapi-key") or os.environ.get("SERPAPI_KEY", "")
@@ -317,10 +318,14 @@ def search(
     if not stations:
         raise HTTPException(404, "City/line not found")
 
-    if station:
+    if stations_filter:
+        # Multi-station filter: comma-separated list
+        wanted = {n.strip().lower() for n in stations_filter.split(",")}
+        all_stations = get_stations(city, line, popular_only=False)
+        stations = [s for s in all_stations if s["name"].lower() in wanted]
+    elif station:
         stations = [s for s in stations if s["name"].lower() == station.lower()]
         if not stations:
-            # fall back to all stations for this line and try again
             all_stations = get_stations(city, line, popular_only=False)
             stations = [s for s in all_stations if s["name"].lower() == station.lower()]
         if not stations:
@@ -348,6 +353,7 @@ def search(
         "adults": adults,
         "popular_only": popular_only,
         "station": (station or "").lower().strip(),
+        "stations": (stations_filter or "").lower().strip(),
     }
     search_cache_key = _cache_key(search_cache_params)
     cached_response = _get_cached(search_cache_key)

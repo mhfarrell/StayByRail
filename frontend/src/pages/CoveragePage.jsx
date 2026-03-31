@@ -7,8 +7,8 @@ function CoveragePage() {
         title="Coverage — StayByRail | 52 Cities, 6 Countries"
         description="StayByRail covers 52 cities across Japan, the United Kingdom, France, Germany, Spain, and Thailand — including JR lines, London Underground, Paris Metro, and BTS Skytrain."
       />
-      <h2 className="page-heading">Our Coverage</h2>
-      <p className="page-intro">
+      <h2 className="page-heading" style={{ textAlign: "center" }}>Our Coverage</h2>
+      <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
         StayByRail covers major rail and metro networks across six countries and
         52 cities. Whether you are planning a Shinkansen trip through Japan, a
         Eurostar connection through France, or a backpacking route through Thailand,

@@ -29,8 +29,9 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
   const [country, setCountry] = useState("United Kingdom");
   const [city, setCity] = useState("london");
   const [line, setLine] = useState("");
-  const [station, setStation] = useState("");
+  const [selectedStations, setSelectedStations] = useState([]);
   const [stationsList, setStationsList] = useState([]);
+  const [showStations, setShowStations] = useState(false);
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [maxPrice, setMaxPrice] = useState(100);
@@ -86,8 +87,9 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
 
   // Fetch stations when city/line changes
   useEffect(() => {
-    setStation("");
+    setSelectedStations([]);
     setStationsList([]);
+    setShowStations(false);
     if (!city || !line) return;
     fetch(`${API}/stations?city=${encodeURIComponent(city)}&line=${encodeURIComponent(line)}&popular_only=false`)
       .then((r) => r.json())
@@ -148,7 +150,11 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
       adults,
       popular_only: popularOnly,
     };
-    if (station) params.station = station;
+    if (selectedStations.length === 1) {
+      params.station = selectedStations[0];
+    } else if (selectedStations.length > 1) {
+      params.stations = selectedStations.join(",");
+    }
     onSearch(params, wishlist);
   };
 
@@ -189,18 +195,6 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
             ))}
           </select>
         </div>
-
-        {stationsList.length > 0 && (
-          <div className="field">
-            <label>Station</label>
-            <select value={station} onChange={(e) => setStation(e.target.value)}>
-              <option value="">All stations ({stationsList.length})</option>
-              {stationsList.map((s) => (
-                <option key={s.name} value={s.name}>{s.name}</option>
-              ))}
-            </select>
-          </div>
-        )}
 
         <div className="field">
           <label>Check-in</label>
@@ -274,6 +268,58 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
           )}
         </div>
       </div>
+
+      {/* Station picker */}
+      {stationsList.length > 0 && (
+        <div className="wishlist-section">
+          <button
+            type="button"
+            className="wishlist-toggle"
+            onClick={() => setShowStations(!showStations)}
+          >
+            Stations ({selectedStations.length || "All"}/{stationsList.length})
+            {selectedStations.length > 0 && (
+              <span className="wishlist-preview">
+                {selectedStations.join(", ")}
+              </span>
+            )}
+            <span className="wishlist-arrow">{showStations ? "\u25B2" : "\u25BC"}</span>
+          </button>
+
+          {showStations && (
+            <div className="wishlist-grid">
+              {stationsList.map((s) => {
+                const selected = selectedStations.includes(s.name);
+                return (
+                  <button
+                    key={s.name}
+                    type="button"
+                    className={`wishlist-chip ${selected ? "chip-selected" : ""}`}
+                    onClick={() =>
+                      setSelectedStations((prev) =>
+                        selected
+                          ? prev.filter((n) => n !== s.name)
+                          : [...prev, s.name]
+                      )
+                    }
+                  >
+                    {selected && "\u2713 "}
+                    {s.name}
+                  </button>
+                );
+              })}
+              <button
+                type="button"
+                className="wishlist-chip"
+                style={{ fontStyle: "italic" }}
+                onClick={() => setSelectedStations([])}
+              >
+                Clear all
+              </button>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Amenity Wishlist */}
       <div className="wishlist-section">
