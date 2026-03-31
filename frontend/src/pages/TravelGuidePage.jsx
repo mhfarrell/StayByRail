@@ -1,6 +1,92 @@
+import { useState, useEffect } from "react";
 import PageMeta from "../components/PageMeta";
 
+const REGIONS = [
+  {
+    country: "Japan",
+    flag: "\u{1F1EF}\u{1F1F5}",
+    wiki: "Cherry_blossoms",
+    best: "March–May & October–November",
+    avoid: "Golden Week (late Apr–early May)",
+    highlight: "Cherry blossom season (late March to mid-April) is magical — the bloom sweeps north from Kyushu to Hokkaido over several weeks. Autumn foliage in November rivals the blossoms, especially in Kyoto and Nikko.",
+    details: "Avoid Golden Week (29 April – 5 May) when trains sell out and prices spike. Typhoon season runs August to October — most pass harmlessly but can disrupt Shinkansen schedules. January–February and June (rainy season) offer the lowest hotel prices.",
+    budget: "Activate your JR Pass to cover your busiest travel days. Winter and rainy season bring the cheapest accommodation.",
+  },
+  {
+    country: "United Kingdom",
+    flag: "\u{1F1EC}\u{1F1E7}",
+    wiki: "Edinburgh_Festival_Fringe",
+    best: "May–September",
+    avoid: "Bank holiday weekends",
+    highlight: "Summer brings the longest days and best weather (18–25\u00B0C). The Edinburgh Festival Fringe in August is the world's largest arts festival — incredible atmosphere but book months ahead.",
+    details: "Shoulder seasons (April–May and September–October) offer mild weather and significantly lower prices. Watch out for bank holiday weekends (early May, late May, late August) when domestic travel spikes and train tickets sell out.",
+    budget: "Book Advance train tickets 12 weeks ahead for 50–70% savings versus walk-up fares. Off-peak trains are cheaper and less crowded.",
+  },
+  {
+    country: "France",
+    flag: "\u{1F1EB}\u{1F1F7}",
+    wiki: "Eiffel_Tower",
+    best: "April–June & September–October",
+    avoid: "August in Paris",
+    highlight: "Paris in spring is everything the clich\u00E9s promise — pleasant weather, manageable crowds, and terrace season in full swing. September brings warm days, lower prices, and the start of wine harvest.",
+    details: "Avoid August in Paris — many local restaurants, bakeries, and shops close for the annual holiday. The south of France peaks July–August. Ski season in the Alps runs December through March, with February being peak.",
+    budget: "SNCF releases TGV Prem's fares 3 months ahead. Ouigo, the low-cost TGV, runs from \u20AC10 on popular routes.",
+  },
+  {
+    country: "Germany",
+    flag: "\u{1F1E9}\u{1F1EA}",
+    wiki: "Oktoberfest",
+    best: "May–June & September",
+    avoid: "Oktoberfest crowds (Munich)",
+    highlight: "Early summer is ideal — warm weather, outdoor beer gardens, and long daylight hours. Christmas markets (late November to 23 December) in Nuremberg, Cologne, and Dresden are worth the cold.",
+    details: "Oktoberfest (late September to early October) — book Munich accommodation months ahead. December hotel prices rise in market cities but remain reasonable elsewhere. Summer is warm and perfect for Berlin, Hamburg, and the Rhine Valley.",
+    budget: "The Deutschland-Ticket (\u20AC49/month) gives unlimited regional and local transit nationwide. ICE Sparpreis fares are cheapest booked early.",
+  },
+  {
+    country: "Spain",
+    flag: "\u{1F1EA}\u{1F1F8}",
+    wiki: "Sagrada_Fam%C3%ADlia",
+    best: "April–June & September–November",
+    avoid: "August inland (40\u00B0C+)",
+    highlight: "Spring brings warm temperatures (20–28\u00B0C), blooming landscapes, and festivals like Las Fallas in Valencia (March) and Semana Santa across Andalusia. Autumn is equally pleasant with thinner crowds.",
+    details: "August is brutal in Madrid and Seville (regularly 40\u00B0C+). Coastal cities like Barcelona and Malaga are hot but bearable with sea breezes. If you must travel in peak summer, head for the Basque Country or Galicia — they stay cooler.",
+    budget: "Renfe's Avlo low-cost high-speed service runs Madrid\u2013Barcelona from \u20AC7. Book AVE tickets up to 120 days ahead for the best fares.",
+  },
+  {
+    country: "Thailand",
+    flag: "\u{1F1F9}\u{1F1ED}",
+    wiki: "Songkran_(Thailand)",
+    best: "November–February",
+    avoid: "March–May (extreme heat)",
+    highlight: "Cool season (25–30\u00B0C) with low humidity and clear skies — perfect for temples, markets, and island hopping. This is peak tourist season, so book ahead for Phuket and Chiang Mai.",
+    details: "Hot season (March–May) brings intense heat, but Songkran (13–15 April), the Thai New Year water festival, is unforgettable. Wet season (June–October) sees short, heavy daily downpours — prices drop significantly and landscapes are lush and green.",
+    budget: "Overnight sleeper trains from Bangkok to Chiang Mai save a hotel night. Bangkok's BTS and MRT are cheap and efficient for getting around.",
+  },
+];
+
+function useRegionImages() {
+  const [images, setImages] = useState({});
+  useEffect(() => {
+    REGIONS.forEach(({ country, wiki }) => {
+      if (!wiki) return;
+      const key = `sbr_travel_${country}`;
+      const cached = sessionStorage.getItem(key);
+      if (cached) { setImages((p) => ({ ...p, [country]: cached })); return; }
+      fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
+        .then((r) => r.json())
+        .then((d) => {
+          const url = d.thumbnail?.source || "";
+          if (url) { sessionStorage.setItem(key, url); setImages((p) => ({ ...p, [country]: url })); }
+        })
+        .catch(() => {});
+    });
+  }, []);
+  return images;
+}
+
 function TravelGuidePage() {
+  const images = useRegionImages();
+
   return (
     <div className="page-content">
       <PageMeta
@@ -11,143 +97,32 @@ function TravelGuidePage() {
         Best Times to Travel
       </h2>
       <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
-        Timing can make or break a trip. The right season means better weather,
-        thinner crowds, and lower prices. Here is a country-by-country breakdown
-        of when to go — and when to think twice — for every region StayByRail
-        covers.
+        The right timing means better weather, thinner crowds, and lower prices.
+        Here's when to go — and when to think twice — for every region we cover.
       </p>
 
-      <div className="about-sections">
-        <div className="about-block">
-          <h3 className="about-block-heading">Japan</h3>
-          <p className="about-block-text">
-            <strong>Cherry blossom season (late March to mid-April)</strong> is
-            the most iconic time to visit. The bloom moves north from Kyushu to
-            Hokkaido over several weeks, so you can chase it by planning your
-            route accordingly. Autumn foliage in November rivals the blossoms
-            for sheer beauty, especially in Kyoto and Nikko.
-          </p>
-          <p className="about-block-text">
-            <strong>Avoid Golden Week (late April to early May)</strong> if you
-            can. It is a cluster of national holidays when domestic travel
-            surges — trains sell out, hotel prices spike, and popular
-            attractions get extremely crowded. Typhoon season runs roughly from
-            August to October and can disrupt travel plans, particularly in
-            southern and western regions.
-          </p>
-          <p className="about-block-text">
-            If you are using a <strong>Japan Rail Pass</strong>, activate it to
-            cover your busiest travel days. The pass is valid on most JR trains
-            including the Shinkansen (except Nozomi and Mizuho services). Buy
-            it before you arrive — it cannot be purchased inside Japan by
-            tourists.
-          </p>
-        </div>
-
-        <div className="about-block">
-          <h3 className="about-block-heading">United Kingdom</h3>
-          <p className="about-block-text">
-            <strong>Summer (June to August)</strong> brings the longest days and
-            the best chance of dry weather, though nothing is guaranteed.
-            London, Edinburgh, and the Lake District are all at their liveliest,
-            and outdoor events fill the calendar. The{" "}
-            <strong>Edinburgh Festival Fringe in August</strong> is the world's
-            largest arts festival and worth planning a trip around — just book
-            accommodation well in advance.
-          </p>
-          <p className="about-block-text">
-            <strong>Shoulder seasons (April-May and September-October)</strong>{" "}
-            offer noticeably lower hotel prices and fewer tourists. Spring
-            brings daffodils and mild temperatures; early autumn still has
-            comfortable weather before the clocks change. Watch out for{" "}
-            <strong>bank holiday weekends</strong> (early May, late May, late
-            August) when domestic travel spikes and train tickets sell out.
-          </p>
-        </div>
-
-        <div className="about-block">
-          <h3 className="about-block-heading">France</h3>
-          <p className="about-block-text">
-            <strong>Spring (April to June) and autumn (September to
-            October)</strong> are the sweet spots for Paris — mild weather,
-            manageable crowds, and the city at its most photogenic. The south
-            of France and Provence are glorious in summer, with lavender fields
-            peaking in late June and July.
-          </p>
-          <p className="about-block-text">
-            <strong>Avoid August in Paris.</strong> Many locals leave the city
-            for their annual holiday, and a surprising number of independent
-            restaurants, bakeries, and shops close for weeks at a time. Tourist
-            attractions stay open but the city loses some of its everyday
-            character. For skiing, the French Alps season runs from{" "}
-            <strong>December through March</strong>, with February being peak
-            season due to school holidays.
-          </p>
-        </div>
-
-        <div className="about-block">
-          <h3 className="about-block-heading">Germany</h3>
-          <p className="about-block-text">
-            <strong>Oktoberfest (late September to early October)</strong> in
-            Munich is the headline event — millions of visitors descend on the
-            city, so book hotels months ahead and expect premium prices. The{" "}
-            <strong>Christmas markets (late November through December)</strong>{" "}
-            are another major draw, with Nuremberg, Cologne, Dresden, and
-            Stuttgart hosting some of the best.
-          </p>
-          <p className="about-block-text">
-            Summer (June to August) is warm and ideal for exploring Berlin,
-            Hamburg, and the Rhine Valley. For the best deals,{" "}
-            <strong>shoulder season (April-May and September-October)</strong>{" "}
-            delivers pleasant weather without the crowds. Germany's efficient
-            rail network makes it easy to cover multiple cities on a single
-            trip, and the Deutschland-Ticket offers excellent value for
-            regional travel.
-          </p>
-        </div>
-
-        <div className="about-block">
-          <h3 className="about-block-heading">Spain</h3>
-          <p className="about-block-text">
-            <strong>Spring (April to June) and autumn (September to
-            November)</strong> are the ideal windows. Temperatures are
-            comfortable, prices are reasonable, and you will dodge the worst of
-            the crowds. Valencia's <strong>Las Fallas festival (March)</strong>{" "}
-            features enormous sculptures and fireworks, while{" "}
-            <strong>La Tomatina (last Wednesday of August)</strong> in Bunol is
-            one of the world's most unusual festivals.
-          </p>
-          <p className="about-block-text">
-            <strong>August heat can be brutal</strong>, especially in inland
-            cities like Madrid and Seville where temperatures regularly exceed
-            40 degrees Celsius. Coastal cities like Barcelona and Valencia are
-            more bearable but packed with summer tourists. If you must travel in
-            peak summer, head for the northern coast — the Basque Country and
-            Galicia stay cooler.
-          </p>
-        </div>
-
-        <div className="about-block">
-          <h3 className="about-block-heading">Thailand</h3>
-          <p className="about-block-text">
-            The <strong>cool season (November to February)</strong> is the most
-            comfortable time to visit. Temperatures hover around 25-30 degrees
-            Celsius with low humidity and minimal rain — perfect for temples,
-            markets, and island hopping. This is peak tourist season, so prices
-            are higher and popular spots like Phuket and Chiang Mai fill up
-            quickly.
-          </p>
-          <p className="about-block-text">
-            The <strong>hot season (March to May)</strong> brings intense heat,
-            particularly in Bangkok and the central plains. However,{" "}
-            <strong>Songkran (13-15 April)</strong>, the Thai New Year water
-            festival, is an unforgettable experience if you do not mind getting
-            soaked. The <strong>wet season (June to October)</strong> sees daily
-            downpours, usually short but heavy. Prices drop significantly, and
-            many travellers find the green landscapes and emptier beaches worth
-            the occasional rain.
-          </p>
-        </div>
+      <div className="travel-region-list">
+        {REGIONS.map((r) => (
+          <div className="travel-region-card" key={r.country}>
+            {images[r.country] && (
+              <div className="travel-region-img" style={{ backgroundImage: `url(${images[r.country]})` }} />
+            )}
+            <div className="travel-region-body">
+              <div className="travel-region-header">
+                <h3 className="travel-region-name">{r.flag} {r.country}</h3>
+                <div className="travel-region-badges">
+                  <span className="travel-badge travel-badge-best">Best: {r.best}</span>
+                  <span className="travel-badge travel-badge-avoid">Avoid: {r.avoid}</span>
+                </div>
+              </div>
+              <p className="travel-region-highlight">{r.highlight}</p>
+              <p className="travel-region-detail">{r.details}</p>
+              <div className="transit-tip">
+                <strong>Budget tip:</strong> {r.budget}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
