@@ -1,103 +1,169 @@
+import { useState, useEffect } from "react";
 import PageMeta from "../components/PageMeta";
+
+const WMO = {
+  0: "Clear sky", 1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
+  45: "Fog", 48: "Freezing fog", 51: "Light drizzle", 53: "Drizzle", 55: "Heavy drizzle",
+  61: "Light rain", 63: "Rain", 65: "Heavy rain", 71: "Light snow", 73: "Snow", 75: "Heavy snow",
+  80: "Showers", 81: "Showers", 82: "Heavy showers", 85: "Snow showers", 86: "Heavy snow",
+  95: "Thunderstorm", 96: "Thunderstorm", 99: "Thunderstorm",
+};
+const WMO_ICON = {
+  0: "\u2600\uFE0F", 1: "\uD83C\uDF24\uFE0F", 2: "\u26C5", 3: "\u2601\uFE0F",
+  45: "\uD83C\uDF2B\uFE0F", 48: "\uD83C\uDF2B\uFE0F",
+  51: "\uD83C\uDF26\uFE0F", 53: "\uD83C\uDF26\uFE0F", 55: "\uD83C\uDF27\uFE0F",
+  61: "\uD83C\uDF27\uFE0F", 63: "\uD83C\uDF27\uFE0F", 65: "\uD83C\uDF27\uFE0F",
+  71: "\uD83C\uDF28\uFE0F", 73: "\u2744\uFE0F", 75: "\u2744\uFE0F",
+  80: "\uD83C\uDF26\uFE0F", 81: "\uD83C\uDF26\uFE0F", 82: "\u26C8\uFE0F",
+  95: "\u26C8\uFE0F", 96: "\u26C8\uFE0F", 99: "\u26C8\uFE0F",
+};
 
 const REGIONS = [
   {
-    country: "Japan",
-    flag: "\u{1F1EF}\u{1F1F5}",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/330px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg",
-    best: "March\u2013May & Oct\u2013Nov",
-    avoid: "Golden Week (late Apr\u2013early May)",
-    highlight: "Cherry blossom season (late March to mid-April) is magical \u2014 the bloom sweeps north from Kyushu to Hokkaido over several weeks. Autumn foliage in November rivals the blossoms, especially in Kyoto and Nikko.",
-    details: "Avoid Golden Week (29 April \u2013 5 May) when trains sell out and prices spike. Typhoon season runs August to October. January\u2013February and June (rainy season) offer the lowest hotel prices.",
-    budget: "Activate your JR Pass to cover your busiest travel days. Winter and rainy season bring the cheapest accommodation.",
+    country: "Japan", flag: "\u{1F1EF}\u{1F1F5}",
+    img: "https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
+    city: "Tokyo", lat: 35.6762, lon: 139.6503,
+    best: "Mar\u2013May & Oct\u2013Nov", avoid: "Golden Week (late Apr\u2013early May)",
+    peak: "Cherry blossom season (late March to mid-April) draws millions. Book 3\u20134 months ahead for Kyoto and Tokyo. Autumn foliage in November is equally stunning with slightly smaller crowds.",
+    off: "January\u2013February and June (rainy season) offer the lowest hotel prices. Typhoon season (Aug\u2013Oct) rarely disrupts travel seriously but check forecasts.",
+    transport: "Japan's rail network is unmatched. Shinkansen bullet trains connect major cities at up to 320 km/h. JR lines, private railways, and metro systems cover every city. The Japan Rail Pass offers unlimited JR travel \u2014 essential for multi-city trips. IC cards (Suica/ICOCA) work across all transit and even vending machines.",
+    tip: "Buy the JR Pass before arriving. Activate it for your busiest travel days. Overnight sleeper trains save both time and a hotel night.",
   },
   {
-    country: "United Kingdom",
-    flag: "\u{1F1EC}\u{1F1E7}",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Houses_of_Parliament_in_2022_%28cropped%29.jpg/330px-Houses_of_Parliament_in_2022_%28cropped%29.jpg",
-    best: "May\u2013September",
-    avoid: "Bank holiday weekends",
-    highlight: "Summer brings the longest days and best weather (18\u201325\u00B0C). The Edinburgh Festival Fringe in August is the world's largest arts festival \u2014 incredible atmosphere but book months ahead.",
-    details: "Shoulder seasons (April\u2013May and September\u2013October) offer mild weather and significantly lower prices. Watch out for bank holiday weekends when domestic travel spikes.",
-    budget: "Book Advance train tickets 12 weeks ahead for 50\u201370% savings versus walk-up fares. Off-peak trains are cheaper and less crowded.",
+    country: "United Kingdom", flag: "\u{1F1EC}\u{1F1E7}",
+    img: "https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
+    city: "London", lat: 51.5074, lon: -0.1278,
+    best: "May\u2013Sep", avoid: "Bank holiday weekends",
+    peak: "Summer (June\u2013August) brings the longest days and best weather. Edinburgh Fringe in August is the world's largest arts festival \u2014 book accommodation months ahead.",
+    off: "April\u2013May and September\u2013October offer mild weather at significantly lower prices. Avoid bank holidays when trains sell out and prices spike.",
+    transport: "National Rail connects every major city. London's Underground (11 lines, 272 stations) is the backbone of the capital. Manchester has the Metrolink tram, Birmingham has the West Midlands Metro, and Edinburgh is connected by ScotRail. Contactless payment works across London \u2014 no Oyster card needed.",
+    tip: "Book Advance tickets 12 weeks ahead for 50\u201370% savings. Off-peak fares are always cheaper \u2014 avoid the 7\u20139am rush.",
   },
   {
-    country: "France",
-    flag: "\u{1F1EB}\u{1F1F7}",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/330px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
-    best: "Apr\u2013Jun & Sep\u2013Oct",
-    avoid: "August in Paris",
-    highlight: "Paris in spring is everything the clich\u00E9s promise \u2014 pleasant weather, manageable crowds, and terrace season in full swing. September brings warm days and the start of wine harvest.",
-    details: "Avoid August in Paris \u2014 many local restaurants and shops close for the annual holiday. The south of France peaks July\u2013August. Ski season runs December through March.",
-    budget: "SNCF releases TGV Prem's fares 3 months ahead. Ouigo, the low-cost TGV, runs from \u20AC10 on popular routes.",
+    country: "France", flag: "\u{1F1EB}\u{1F1F7}",
+    img: "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
+    city: "Paris", lat: 48.8566, lon: 2.3522,
+    best: "Apr\u2013Jun & Sep\u2013Oct", avoid: "August in Paris",
+    peak: "Paris in spring: pleasant weather, terrace season, manageable crowds. September brings warm days, lower prices, and wine harvest in the regions.",
+    off: "August: many Parisian restaurants and shops close for holiday. The city becomes tourist-heavy while the best local spots are shuttered. Head south instead.",
+    transport: "TGV high-speed trains reach 320 km/h, connecting Paris to Lyon (2h), Marseille (3h), and Bordeaux (2h). The Paris M\u00E9tro has 16 lines. Ouigo offers budget TGV seats from \u20AC10. Regional TER trains are affordable for shorter distances. The Navigo pass covers all Paris transit.",
+    tip: "TGV Prem's fares go on sale 3 months ahead. Ouigo is the budget TGV option. Navigo Easy card for unlimited Paris Metro.",
   },
   {
-    country: "Germany",
-    flag: "\u{1F1E9}\u{1F1EA}",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/330px-Brandenburger_Tor_abends.jpg",
-    best: "May\u2013June & September",
-    avoid: "Oktoberfest crowds (Munich)",
-    highlight: "Early summer is ideal \u2014 warm weather, outdoor beer gardens, and long daylight hours. Christmas markets (late November to 23 December) in Nuremberg, Cologne, and Dresden are worth the cold.",
-    details: "Oktoberfest (late September to early October) \u2014 book Munich accommodation months ahead. Summer is warm and perfect for Berlin, Hamburg, and the Rhine Valley.",
-    budget: "The Deutschland-Ticket (\u20AC49/month) gives unlimited regional and local transit nationwide. ICE Sparpreis fares are cheapest booked early.",
+    country: "Germany", flag: "\u{1F1E9}\u{1F1EA}",
+    img: "https://images.pexels.com/photos/109629/pexels-photo-109629.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
+    city: "Berlin", lat: 52.5200, lon: 13.4050,
+    best: "May\u2013Jun & Sep", avoid: "Oktoberfest crowds (Munich)",
+    peak: "Early summer: warm weather, beer gardens, long daylight. Christmas markets (late Nov\u201323 Dec) in Nuremberg, Cologne, and Dresden are worth the cold.",
+    off: "Oktoberfest (late Sep\u2013early Oct) means Munich hotels sell out months ahead. Book early or stay in a nearby city and train in for the day.",
+    transport: "Deutsche Bahn's ICE high-speed trains link all major cities. Every city has excellent U-Bahn (metro) and S-Bahn (suburban rail). The Deutschland-Ticket (\u20AC49/month) is extraordinary value \u2014 unlimited travel on all regional and local transit nationwide. It doesn't cover ICE/IC but regional trains reach everywhere.",
+    tip: "Deutschland-Ticket: \u20AC49/month, unlimited regional transit. ICE Sparpreis fares are cheapest booked well in advance via the DB Navigator app.",
   },
   {
-    country: "Spain",
-    flag: "\u{1F1EA}\u{1F1F8}",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_2941.jpg/330px-%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_2941.jpg",
-    best: "Apr\u2013Jun & Sep\u2013Nov",
-    avoid: "August inland (40\u00B0C+)",
-    highlight: "Spring brings warm temperatures (20\u201328\u00B0C), blooming landscapes, and festivals like Las Fallas in Valencia and Semana Santa across Andalusia. Autumn is equally pleasant.",
-    details: "August is brutal in Madrid and Seville (regularly 40\u00B0C+). Coastal cities like Barcelona are hot but bearable. For cooler summers, head to the Basque Country or Galicia.",
-    budget: "Renfe's Avlo low-cost high-speed service runs Madrid\u2013Barcelona from \u20AC7. Book AVE tickets up to 120 days ahead.",
+    country: "Spain", flag: "\u{1F1EA}\u{1F1F8}",
+    img: "https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
+    city: "Madrid", lat: 40.4168, lon: -3.7038,
+    best: "Apr\u2013Jun & Sep\u2013Nov", avoid: "August inland (40\u00B0C+)",
+    peak: "Spring: 20\u201328\u00B0C, festivals like Las Fallas (Valencia) and Semana Santa. Autumn is equally pleasant with thinner crowds and warm evenings.",
+    off: "August is brutal in Madrid and Seville (40\u00B0C+). Coastal Barcelona is bearable. For cooler summers, head to the Basque Country or Galicia.",
+    transport: "Renfe's AVE network is Europe's longest high-speed rail system. Madrid\u2013Barcelona takes 2.5 hours. Madrid and Barcelona both have extensive metro systems. Cercan\u00EDas commuter trains serve suburban areas. Avlo offers budget high-speed seats from \u20AC7.",
+    tip: "Avlo low-cost high-speed: Madrid\u2013Barcelona from \u20AC7. Book Renfe AVE up to 120 days ahead. T-Casual (Barcelona) gives 10 metro trips.",
   },
   {
-    country: "Thailand",
-    flag: "\u{1F1F9}\u{1F1ED}",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg/330px-%E0%B9%80%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%932.jpg",
-    best: "November\u2013February",
-    avoid: "March\u2013May (extreme heat)",
-    highlight: "Cool season (25\u201330\u00B0C) with low humidity and clear skies \u2014 perfect for temples, markets, and island hopping. This is peak tourist season, so book ahead.",
-    details: "Songkran (13\u201315 April), the Thai New Year water festival, is unforgettable. Wet season (June\u2013October) brings short, heavy downpours but the lowest prices and greenest landscapes.",
-    budget: "Overnight sleeper trains from Bangkok to Chiang Mai save a hotel night. Bangkok's BTS and MRT are cheap and efficient.",
+    country: "Thailand", flag: "\u{1F1F9}\u{1F1ED}",
+    img: "https://images.pexels.com/photos/1682748/pexels-photo-1682748.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
+    city: "Bangkok", lat: 13.7563, lon: 100.5018,
+    best: "Nov\u2013Feb", avoid: "Mar\u2013May (extreme heat)",
+    peak: "Cool season (25\u201330\u00B0C): low humidity, clear skies, perfect for temples and islands. Peak tourist season \u2014 book Phuket and Chiang Mai ahead.",
+    off: "Wet season (June\u2013October): short heavy downpours then sunshine. Prices drop 30\u201350%. Songkran (13\u201315 April) is unforgettable \u2014 a nationwide water fight.",
+    transport: "Bangkok's BTS Skytrain and MRT metro beat the city's legendary traffic. The Airport Rail Link connects Suvarnabhumi to the centre in 30 minutes. Long-distance State Railway trains reach Chiang Mai (overnight sleeper), the southern beaches, and the northeast. Grab is the go-to app for last-mile rides.",
+    tip: "Rabbit card for BTS, tokens for MRT (separate systems). Overnight sleeper Bangkok\u2013Chiang Mai saves a hotel night. Grab beats tuk-tuk prices.",
   },
 ];
 
+function useWeather(regions) {
+  const [weather, setWeather] = useState({});
+  useEffect(() => {
+    regions.forEach((r) => {
+      const key = `sbr_tgwx2_${r.country}`;
+      const ts = sessionStorage.getItem(`${key}_ts`);
+      const cached = sessionStorage.getItem(key);
+      if (cached && ts && Date.now() - Number(ts) < 30 * 60 * 1000) {
+        setWeather((p) => ({ ...p, [r.country]: JSON.parse(cached) }));
+        return;
+      }
+      fetch(`https://api.open-meteo.com/v1/forecast?latitude=${r.lat}&longitude=${r.lon}&current=temperature_2m,weathercode&timezone=auto`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (!data.current) return;
+          const code = data.current.weathercode;
+          const wx = { temp: Math.round(data.current.temperature_2m), condition: WMO[code] || "", icon: WMO_ICON[code] || "" };
+          sessionStorage.setItem(key, JSON.stringify(wx));
+          sessionStorage.setItem(`${key}_ts`, String(Date.now()));
+          setWeather((p) => ({ ...p, [r.country]: wx }));
+        })
+        .catch(() => {});
+    });
+  }, []);
+  return weather;
+}
+
 function TravelGuidePage() {
+  const weather = useWeather(REGIONS);
+
   return (
     <div className="page-content">
       <PageMeta
         title="Best Times to Travel — StayByRail"
-        description="Practical advice on the best times to visit Japan, the UK, France, Germany, Spain, and Thailand."
+        description="When to visit Japan, the UK, France, Germany, Spain, and Thailand. Live weather, seasonal advice, transport guides, and budget tips."
       />
-      <h2 className="page-heading" style={{ textAlign: "center" }}>
-        Best Times to Travel
-      </h2>
+      <h2 className="page-heading" style={{ textAlign: "center" }}>Best Times to Travel</h2>
       <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
         The right timing means better weather, thinner crowds, and lower prices.
         Here's when to go — and when to think twice — for every region we cover.
       </p>
 
-      <div className="travel-region-list">
-        {REGIONS.map((r) => (
-          <div className="travel-region-card" key={r.country}>
-            <img src={r.img} alt={r.country} className="travel-region-img" loading="lazy" />
-            <div className="travel-region-body">
-              <div className="travel-region-header">
-                <h3 className="travel-region-name">{r.flag} {r.country}</h3>
-                <div className="travel-region-badges">
+      <div className="tg-list">
+        {REGIONS.map((r) => {
+          const wx = weather[r.country];
+          return (
+            <div className="tg-card" key={r.country}>
+              <div className="tg-card-hero">
+                <img src={r.img} alt={r.country} className="tg-card-img" loading="lazy" />
+                <div className="tg-card-overlay">
+                  <span className="tg-flag-big">{r.flag}</span>
+                  <h3 className="tg-country-name">{r.country}</h3>
+                  {wx && (
+                    <span className="tg-weather-pill">
+                      {wx.icon} {wx.temp}°C {wx.condition} in {r.city}
+                    </span>
+                  )}
+                </div>
+              </div>
+              <div className="tg-card-content">
+                <div className="tg-badges">
                   <span className="travel-badge travel-badge-best">Best: {r.best}</span>
                   <span className="travel-badge travel-badge-avoid">Avoid: {r.avoid}</span>
                 </div>
-              </div>
-              <p className="travel-region-highlight">{r.highlight}</p>
-              <p className="travel-region-detail">{r.details}</p>
-              <div className="transit-tip">
-                <strong>Budget tip:</strong> {r.budget}
+                <div className="tg-section">
+                  <h4>Peak Season</h4>
+                  <p>{r.peak}</p>
+                </div>
+                <div className="tg-section">
+                  <h4>Off-Peak & What to Avoid</h4>
+                  <p>{r.off}</p>
+                </div>
+                <div className="tg-section">
+                  <h4>Getting Around {r.country}</h4>
+                  <p>{r.transport}</p>
+                </div>
+                <div className="transit-tip">
+                  <strong>Budget tip:</strong> {r.tip}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

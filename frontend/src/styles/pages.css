@@ -388,66 +388,67 @@
   line-height: 1.6;
 }
 
-/* ---- Travel Guide: region cards ---- */
-.travel-region-list {
+/* ---- Travel Guide: cards ---- */
+.tg-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 0.5rem;
 }
 
-.travel-region-card {
+.tg-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 14px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
-@media (min-width: 700px) {
-  .travel-region-card {
-    flex-direction: row;
-  }
-  img.travel-region-img {
-    width: 280px;
-    height: auto;
-    min-height: 100%;
-    flex-shrink: 0;
-  }
-}
-
-img.travel-region-img {
-  width: 100%;
+.tg-card-hero {
+  position: relative;
   height: 180px;
+  overflow: hidden;
+}
+
+.tg-card-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  flex-shrink: 0;
-  background: var(--border);
 }
 
-.travel-region-body {
-  padding: 1.25rem;
+.tg-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.05) 60%);
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  flex: 1;
-  min-width: 0;
+  justify-content: flex-end;
+  padding: 1rem 1.25rem;
+  gap: 0.15rem;
 }
 
-.travel-region-header {
+.tg-flag-big { font-size: 1.4rem; }
+
+.tg-country-name {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.tg-weather-pill {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.85);
+  margin-top: 0.1rem;
+}
+
+.tg-card-content {
+  padding: 1rem 1.25rem 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.75rem;
 }
 
-.travel-region-name {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text-heading);
-}
-
-.travel-region-badges {
+.tg-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
@@ -471,17 +472,27 @@ img.travel-region-img {
   color: #ef4444;
 }
 
-.travel-region-highlight {
-  font-size: 0.9rem;
+.tg-section h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
   color: var(--text-heading);
-  line-height: 1.6;
-  font-weight: 500;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
-.travel-region-detail {
-  font-size: 0.85rem;
+.tg-section p {
+  font-size: 0.86rem;
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+@media (min-width: 800px) {
+  .tg-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
 }
 
 /* ---- Live departures board ---- */
