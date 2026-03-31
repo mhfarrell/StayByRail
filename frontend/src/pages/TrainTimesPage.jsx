@@ -172,46 +172,18 @@ function TrainTimesPage() {
               <strong>Tip:</strong> {countryData.tips}
             </div>
 
-            {/* Live departures (UK + Japan) */}
+            {/* Live departures — coming soon */}
             {(selectedCountry === "United Kingdom" || selectedCountry === "Japan") && (
               <div className="transit-departures">
                 <h4 className="transit-dep-heading">Live Departures</h4>
-                <div className="transit-dep-search">
-                  <input
-                    className="transit-dep-input"
-                    placeholder={selectedCountry === "Japan" ? "Station name (e.g. Shinjuku)" : "Station code (e.g. KGX, PAD, EDB)"}
-                    value={stationInput}
-                    onChange={(e) => setStationInput(e.target.value)}
-                    onKeyDown={(e) => e.key === "Enter" && fetchDepartures()}
-                  />
-                  <button className="transit-dep-btn" onClick={fetchDepartures} disabled={loadingDep || !stationInput.trim()}>
-                    {loadingDep ? "Loading..." : "Get Departures"}
-                  </button>
+                <div className="transit-coming-soon">
+                  <span className="transit-coming-badge">Coming Soon</span>
+                  <p className="transit-coming-text">
+                    Real-time departure boards for {selectedCountry === "Japan" ? "Tokyo" : "UK"} stations are
+                    on the way. We're integrating with {selectedCountry === "Japan" ? "Japan's ODPT open data platform" : "National Rail's Darwin system"} to
+                    bring you live times, platform numbers, and delay alerts directly on this page.
+                  </p>
                 </div>
-
-                {departures && departures.length > 0 && (
-                  <div className="transit-dep-board">
-                    <div className="transit-dep-header">
-                      <span>Time</span>
-                      <span>Destination</span>
-                      <span>Platform</span>
-                      <span>Status</span>
-                    </div>
-                    {departures.map((d, i) => (
-                      <div key={i} className={`transit-dep-row ${d.status === "On time" || d.expected === d.time ? "" : "transit-dep-delayed"}`}>
-                        <span className="transit-dep-time">{d.time}</span>
-                        <span className="transit-dep-dest">{d.destination}</span>
-                        <span className="transit-dep-plat">{d.platform || "\u2014"}</span>
-                        <span className="transit-dep-status">{d.status || d.expected}</span>
-                      </div>
-                    ))}
-                    {depSource && <p className="transit-dep-credit">Data via {depSource}</p>}
-                  </div>
-                )}
-
-                {departures && departures.length === 0 && !loadingDep && (
-                  <p className="transit-dep-empty">No departures found. Check the station name and try again.</p>
-                )}
               </div>
             )}
           </div>
@@ -236,6 +208,90 @@ function TrainTimesPage() {
             </p>
           </div>
         ))}
+      </div>
+
+      {/* Traveller guidance */}
+      <div className="about-sections" style={{ marginTop: "2.5rem" }}>
+        <h2 className="content-heading" style={{ textAlign: "center" }}>Train Travel Tips for First-Timers</h2>
+
+        <div className="about-block">
+          <h3 className="about-block-heading">Booking Ahead vs Walk-Up</h3>
+          <p className="about-block-text">
+            In most of Europe, long-distance trains have two pricing models: advance
+            tickets (cheaper, fixed to a specific train) and walk-up fares (flexible
+            but expensive). The savings on advance tickets can be enormous — 50 to 70%
+            in the UK, and similar on France's TGV and Spain's AVE. Book as soon as
+            tickets go on sale (typically 90 to 120 days ahead) for the best prices.
+            Japan is the exception: most JR trains have flat pricing regardless of when
+            you book, and reserved seats can be booked at the station on the day.
+          </p>
+        </div>
+
+        <div className="about-block">
+          <h3 className="about-block-heading">Rail Passes: When They're Worth It</h3>
+          <p className="about-block-text">
+            Rail passes sound appealing but only save money if you're covering long
+            distances on multiple days. The Japan Rail Pass is excellent value if you're
+            taking three or more Shinkansen trips in a week. Germany's Deutschland-Ticket
+            is a no-brainer at \u20AC49/month for unlimited regional travel. The Eurail pass
+            can work for multi-country trips but rarely beats advance tickets for a
+            single-country itinerary. Always do the maths before buying — add up what
+            individual tickets would cost and compare.
+          </p>
+        </div>
+
+        <div className="about-block">
+          <h3 className="about-block-heading">Navigating Stations</h3>
+          <p className="about-block-text">
+            Large stations can be overwhelming, especially in Japan where signage may be
+            in Japanese first. Look for coloured line indicators — most metro systems use
+            consistent colours for each line. In Europe, departure boards are your best
+            friend: they show platform numbers, calling points, and delays. Arrive at
+            major stations 15 to 20 minutes early for long-distance services. In Japan,
+            platform numbers are announced well in advance and trains are punctual to
+            the second — if you're on the platform at the right time, you won't miss it.
+          </p>
+        </div>
+
+        <div className="about-block">
+          <h3 className="about-block-heading">Smart Cards and Contactless</h3>
+          <p className="about-block-text">
+            Almost every major transit system now supports a stored-value card or
+            contactless payment. London accepts any contactless bank card with automatic
+            fare capping. Tokyo's Suica and Osaka's ICOCA work across almost all
+            transit in Japan and can be used at convenience stores. Bangkok's BTS and
+            MRT still use separate systems — Rabbit card for BTS, stored-value or
+            tokens for MRT. In Germany, the Deutschland-Ticket lives on your phone via
+            the DB Navigator or local transit app. Having the right card or app ready
+            before you arrive saves time and usually money.
+          </p>
+        </div>
+
+        <div className="about-block">
+          <h3 className="about-block-heading">Luggage and Accessibility</h3>
+          <p className="about-block-text">
+            Most metro systems weren't designed with suitcases in mind. In Tokyo and
+            London, expect stairs and escalators rather than lifts at many older
+            stations — check accessibility maps before travelling with heavy luggage.
+            Coin lockers at major Japanese stations are a lifesaver: store your bags
+            for a few hundred yen and explore hands-free. In Europe, long-distance
+            trains usually have luggage racks near doors or overhead shelving, but
+            there are no baggage limits or check-in processes like airlines.
+          </p>
+        </div>
+
+        <div className="about-block">
+          <h3 className="about-block-heading">Staying Connected</h3>
+          <p className="about-block-text">
+            Wi-Fi on trains varies wildly. Japanese Shinkansen have free on-board
+            Wi-Fi, as do most UK long-distance services (though quality varies).
+            German ICE trains offer Wi-Fi in both first and second class. French TGV
+            trains have Wi-Fi on most routes. For metro systems, assume you'll be
+            offline underground — download offline maps (Google Maps, CityMapper, or
+            Navitime for Japan) before descending. An eSIM or local SIM card is
+            almost always more reliable than station Wi-Fi.
+          </p>
+        </div>
       </div>
     </div>
   );
