@@ -22,14 +22,15 @@ _EVENTS_TTL = 3 * 60 * 60  # 3 hours
 
 def _get_city_coords(city):
     """Get approximate city centre by averaging all station coordinates."""
-    city_data = LINES.get(city, {})
+    city_key = city.lower().replace(" ", "_")
+    city_data = LINES.get(city_key, {})
     if not city_data:
         return None, None
     # Grab first available line's stations
     first_line = next(iter(city_data), None)
     if not first_line:
         return None, None
-    stations = get_stations(city, first_line, popular_only=False)
+    stations = get_stations(city_key, first_line, popular_only=False)
     if not stations:
         return None, None
     lats = [s["lat"] for s in stations]
@@ -97,8 +98,7 @@ def _predicthq_events(city, country_code):
     today = datetime.now().strftime("%Y-%m-%d")
     params = {
         "category": "concerts,festivals,performing-arts,sports,community,expos",
-        "location_around.origin": f"{lat},{lon}",
-        "location_around.offset": "15km",
+        "within": f"15km@{lat},{lon}",
         "start.gte": today,
         "sort": "start",
         "limit": 10,
@@ -121,7 +121,8 @@ def _predicthq_events(city, country_code):
 
     events = []
     for e in data.get("results", []):
-        start = e.get("start", "")
+        # PredictHQ uses start_local for the local time string
+        start_local = e.get("start_local", "") or ""
         # Extract venue from entities
         venue = ""
         for entity in e.get("entities", []):
@@ -133,8 +134,8 @@ def _predicthq_events(city, country_code):
 
         events.append({
             "name": e.get("title", ""),
-            "date": start[:10] if start else "",
-            "time": start[11:16] if len(start) > 16 else "",
+            "date": start_local[:10],
+            "time": start_local[11:16] if len(start_local) > 15 else "",
             "venue": venue,
             "category": category,
             "url": "",
@@ -151,21 +152,16 @@ def _eventbrite_events(city, country_code):
     if not api_key:
         return []
 
-    today = datetime.now().strftime("%Y-%m-%dT00:00:00")
-    params = {
-        "location.address": city,
-        "start_date.range_start": today,
-        "sort_by": "date",
-        "expand": "venue",
-    }
     headers = {
         "Authorization": f"Bearer {api_key}",
     }
 
     try:
-        resp = requests.get(
-            "https://www.eventbriteapi.com/v3/events/search/",
-            params=params,
+        resp = requests.post(
+            "https://www.eventbriteapi.com/v3/destination/search/",
+            json={
+                "event_search": {"q": city, "dates": ["current_future"]},
+            },
             headers=headers,
             timeout=10,
         )
@@ -175,17 +171,20 @@ def _eventbrite_events(city, country_code):
         return []
 
     events = []
-    for e in data.get("events", []):
-        start = e.get("start", {})
-        venue = e.get("venue") or {}
-        local_time = start.get("local", "") if start else ""
+    for e in data.get("events", {}).get("results", []):
+        # Extract category from tags
+        category = ""
+        for tag in e.get("tags", []):
+            if tag.get("prefix") == "EventbriteCategory":
+                category = tag.get("display_name", "")
+                break
 
         events.append({
-            "name": (e.get("name") or {}).get("text", ""),
-            "date": local_time[:10],
-            "time": local_time[11:16] if len(local_time) > 16 else "",
-            "venue": venue.get("name", ""),
-            "category": "",
+            "name": e.get("name", ""),
+            "date": e.get("start_date", ""),
+            "time": e.get("start_time", ""),
+            "venue": "",
+            "category": category,
             "url": e.get("url", ""),
             "source": "Eventbrite",
         })
