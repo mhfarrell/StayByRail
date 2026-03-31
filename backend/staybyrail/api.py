@@ -144,6 +144,76 @@ def search_hotels(query, check_in, check_out, max_price=100, currency="GBP", adu
     return results
 
 
+# ---------------------------------------------------------------------------
+# Source 1b: SearchAPI.io Google Hotels (separate quota from SerpAPI)
+# ---------------------------------------------------------------------------
+
+def _searchapi_search(query, check_in, check_out, max_price, currency, adults, sort_by=None):
+    """Search Google Hotels via SearchAPI.io — same data, separate free quota."""
+    api_key = os.environ.get("SEARCHAPI_KEY", "")
+    if not api_key:
+        return []
+
+    bucketed_price = _price_bucket(max_price)
+
+    params = {
+        "engine": "google_hotels",
+        "q": query,
+        "check_in_date": check_in,
+        "check_out_date": check_out,
+        "currency": currency,
+        "price_max": bucketed_price,
+        "adults": adults,
+        "hl": "en",
+        "gl": "uk",
+    }
+    if sort_by:
+        params["sort_by"] = sort_by
+
+    cache_key = _cache_key({"searchapi": True, **params})
+    cached = _get_cached(cache_key)
+    if cached is not None:
+        return _filter_by_price(cached, max_price, bucketed_price)
+
+    try:
+        resp = requests.get(
+            "https://www.searchapi.io/api/v1/search",
+            params={**params, "api_key": api_key},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        raw_properties = data.get("properties", [])
+
+        # Normalise to SerpAPI format so downstream code works unchanged
+        properties = []
+        for p in raw_properties:
+            price_info = p.get("price_per_night", {})
+            properties.append({
+                "name": p.get("name", ""),
+                "type": p.get("type", ""),
+                "hotel_class": p.get("hotel_class"),
+                "overall_rating": p.get("rating"),
+                "reviews": p.get("reviews"),
+                "rate_per_night": {
+                    "lowest": price_info.get("price", ""),
+                    "extracted_lowest": price_info.get("extracted_price"),
+                },
+                "gps_coordinates": p.get("gps_coordinates", {}),
+                "amenities": p.get("amenities", []),
+                "images": p.get("images", []),
+                "link": p.get("link", ""),
+                "check_in_time": p.get("check_in_time"),
+                "check_out_time": p.get("check_out_time"),
+                "_source": "google_hotels",
+            })
+
+        _set_cached(cache_key, properties)
+        return _filter_by_price(properties, max_price, bucketed_price)
+    except Exception:
+        return []
+
+
 def get_property_details(property_token, check_in, check_out, currency="GBP", adults=2):
     """
     Fetch full property details from Google Hotels. The response includes
@@ -337,14 +407,22 @@ def _tripadvisor_search(query, check_in, check_out, lat, lon, rapidapi_key=None)
 def search_hotels_multi(query, check_in, check_out, max_price=100, currency="GBP", adults=2, lat=None, lon=None, api_key_override=None, rapidapi_key_override=None):
     """
     Search all available sources and merge results.
-    Always uses SerpAPI (Google Hotels). Optionally adds Booking.com and
-    TripAdvisor if RAPIDAPI_KEY is configured or provided per-request.
+    Uses SerpAPI + SearchAPI.io for Google Hotels, plus Booking.com and
+    TripAdvisor via RapidAPI when configured.
     """
     all_results = []
 
-    # Source 1: Google Hotels via SerpAPI (always)
+    # Source 1a: Google Hotels via SerpAPI
     google = search_hotels(query, check_in, check_out, max_price, currency, adults, api_key_override=api_key_override)
     all_results.extend(google)
+
+    # Source 1b: Google Hotels via SearchAPI.io (separate quota, deduped below)
+    searchapi = _searchapi_search(query, check_in, check_out, max_price, currency, adults)
+    seen_names = {p.get("name") for p in all_results}
+    for p in searchapi:
+        if p.get("name") not in seen_names:
+            all_results.append(p)
+            seen_names.add(p.get("name"))
 
     rapid_key = rapidapi_key_override or os.environ.get("RAPIDAPI_KEY", "")
 
