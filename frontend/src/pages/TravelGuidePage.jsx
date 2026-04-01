@@ -30,6 +30,12 @@ const REGIONS = [
     transport: "Japan's rail network is unmatched. Shinkansen bullet trains connect major cities at up to 320 km/h. JR lines, private railways, and metro systems cover every city. The Japan Rail Pass offers unlimited JR travel \u2014 essential for multi-city trips. IC cards (Suica/ICOCA) work across all transit and even vending machines.",
     tip: "Buy the JR Pass before arriving. Activate it for your busiest travel days. Overnight sleeper trains save both time and a hotel night.",
     guides: [{ slug: "tokyo", city: "Tokyo" }, { slug: "osaka", city: "Osaka" }, { slug: "kyoto", city: "Kyoto" }],
+    resources: [
+      { label: "Japan Rail Pass", url: "https://www.japanrailpass.net/en/" },
+      { label: "Klook Japan", url: "https://www.klook.com/japan/" },
+      { label: "Navitime", url: "https://www.navitime.co.jp/en/" },
+      { label: "Tabelog", url: "https://tabelog.com/en/" },
+    ],
   },
   {
     country: "United Kingdom", flag: "\u{1F1EC}\u{1F1E7}",
@@ -41,6 +47,12 @@ const REGIONS = [
     transport: "National Rail connects every major city. London's Underground (11 lines, 272 stations) is the backbone of the capital. Manchester has the Metrolink tram, Birmingham has the West Midlands Metro, and Edinburgh is connected by ScotRail. Contactless payment works across London \u2014 no Oyster card needed.",
     tip: "Book Advance tickets 12 weeks ahead for 50\u201370% savings. Off-peak fares are always cheaper \u2014 avoid the 7\u20139am rush.",
     guides: [{ slug: "london", city: "London" }, { slug: "edinburgh", city: "Edinburgh" }, { slug: "birmingham", city: "Birmingham" }],
+    resources: [
+      { label: "Trainline", url: "https://www.thetrainline.com/" },
+      { label: "National Rail", url: "https://www.nationalrail.co.uk/" },
+      { label: "TfL", url: "https://tfl.gov.uk/" },
+      { label: "TimeOut", url: "https://www.timeout.com/london" },
+    ],
   },
   {
     country: "France", flag: "\u{1F1EB}\u{1F1F7}",
@@ -52,6 +64,11 @@ const REGIONS = [
     transport: "TGV high-speed trains reach 320 km/h, connecting Paris to Lyon (2h), Marseille (3h), and Bordeaux (2h). The Paris M\u00E9tro has 16 lines. Ouigo offers budget TGV seats from \u20AC10. Regional TER trains are affordable for shorter distances. The Navigo pass covers all Paris transit.",
     tip: "TGV Prem's fares go on sale 3 months ahead. Ouigo is the budget TGV option. Navigo Easy card for unlimited Paris Metro.",
     guides: [{ slug: "paris", city: "Paris" }],
+    resources: [
+      { label: "SNCF Connect", url: "https://www.sncf-connect.com/en-en/" },
+      { label: "RATP", url: "https://www.ratp.fr/en" },
+      { label: "Le Fooding", url: "https://lefooding.com/en" },
+    ],
   },
   {
     country: "Germany", flag: "\u{1F1E9}\u{1F1EA}",
@@ -63,6 +80,11 @@ const REGIONS = [
     transport: "Deutsche Bahn's ICE high-speed trains link all major cities. Every city has excellent U-Bahn (metro) and S-Bahn (suburban rail). The Deutschland-Ticket (\u20AC49/month) is extraordinary value \u2014 unlimited travel on all regional and local transit nationwide. It doesn't cover ICE/IC but regional trains reach everywhere.",
     tip: "Deutschland-Ticket: \u20AC49/month, unlimited regional transit. ICE Sparpreis fares are cheapest booked well in advance via the DB Navigator app.",
     guides: [{ slug: "berlin", city: "Berlin" }],
+    resources: [
+      { label: "Deutsche Bahn", url: "https://www.bahn.com/en" },
+      { label: "BVG Berlin", url: "https://www.bvg.de/en" },
+      { label: "TimeOut Berlin", url: "https://www.timeout.com/berlin" },
+    ],
   },
   {
     country: "Spain", flag: "\u{1F1EA}\u{1F1F8}",
@@ -74,6 +96,11 @@ const REGIONS = [
     transport: "Renfe's AVE network is Europe's longest high-speed rail system. Madrid\u2013Barcelona takes 2.5 hours. Madrid and Barcelona both have extensive metro systems. Cercan\u00EDas commuter trains serve suburban areas. Avlo offers budget high-speed seats from \u20AC7.",
     tip: "Avlo low-cost high-speed: Madrid\u2013Barcelona from \u20AC7. Book Renfe AVE up to 120 days ahead. T-Casual (Barcelona) gives 10 metro trips.",
     guides: [{ slug: "madrid", city: "Madrid" }, { slug: "barcelona", city: "Barcelona" }],
+    resources: [
+      { label: "Renfe", url: "https://www.renfe.com/es/en" },
+      { label: "Metro Madrid", url: "https://www.metromadrid.es/en" },
+      { label: "TimeOut Barcelona", url: "https://www.timeout.com/barcelona" },
+    ],
   },
   {
     country: "Thailand", flag: "\u{1F1F9}\u{1F1ED}",
@@ -85,6 +112,12 @@ const REGIONS = [
     transport: "Bangkok's BTS Skytrain and MRT metro beat the city's legendary traffic. The Airport Rail Link connects Suvarnabhumi to the centre in 30 minutes. Long-distance State Railway trains reach Chiang Mai (overnight sleeper), the southern beaches, and the northeast. Grab is the go-to app for last-mile rides.",
     tip: "Rabbit card for BTS, tokens for MRT (separate systems). Overnight sleeper Bangkok\u2013Chiang Mai saves a hotel night. Grab beats tuk-tuk prices.",
     guides: [{ slug: "bangkok", city: "Bangkok" }],
+    resources: [
+      { label: "BTS Skytrain", url: "https://www.bts.co.th/eng/" },
+      { label: "Klook Thailand", url: "https://www.klook.com/thailand/" },
+      { label: "Mark Wiens", url: "https://migrationology.com/bangkok/" },
+      { label: "Grab", url: "https://www.grab.com/th/en/" },
+    ],
   },
 ];
 
@@ -174,6 +207,16 @@ function TravelGuidePage() {
                       <Link key={g.slug} to={`/guides/${g.slug}`} className="tg-guide-link">
                         {g.city}
                       </Link>
+                    ))}
+                  </div>
+                )}
+                {r.resources && r.resources.length > 0 && (
+                  <div className="tg-guide-links">
+                    <span className="tg-guide-links-label">Useful links:</span>
+                    {r.resources.map((res) => (
+                      <a key={res.url} href={res.url} target="_blank" rel="noopener noreferrer" className="tg-guide-link">
+                        {res.label}
+                      </a>
                     ))}
                   </div>
                 )}

@@ -216,6 +216,27 @@ function GuidePage() {
         );
       })()}
 
+      {/* Useful external resources */}
+      {guide.links && guide.links.length > 0 && (
+        <div className="guide-resources">
+          <h3 className="guide-section-heading">Useful Resources for {guide.city}</h3>
+          <div className="guide-resources-grid">
+            {guide.links.map((lnk) => (
+              <a
+                key={lnk.url}
+                href={lnk.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="guide-resource-card"
+              >
+                <span className="guide-resource-label">{lnk.label}</span>
+                <span className="guide-resource-desc">{lnk.desc}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="guide-cta-block">
         <p className="guide-cta-text">
           Ready to find a hotel near {guide.city}'s rail stations?
