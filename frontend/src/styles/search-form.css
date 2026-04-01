@@ -61,55 +61,130 @@
   box-shadow: var(--focus-ring);
 }
 
-/* ---- Date range group ---- */
-.daterange-inputs {
-  display: flex;
-  align-items: center;
-  gap: 0;
+/* ---- Date range picker trigger ---- */
+.field-daterange .react-datepicker-wrapper {
+  width: 100%;
 }
 
-.daterange-inputs input[type="date"] {
+.daterange-trigger {
   background: var(--bg-input);
   border: 1px solid var(--border);
+  border-radius: 8px;
   color: var(--text-primary);
   padding: 0.7rem 0.85rem;
   font-size: 16px;
   min-height: var(--touch-min);
+  width: 100%;
+  cursor: pointer;
   transition: border-color 0.15s, box-shadow 0.15s;
-  flex: 1;
-  min-width: 0;
 }
-
-.daterange-inputs input[type="date"]:first-child {
-  border-radius: 8px 0 0 8px;
-  border-right: none;
-}
-
-.daterange-inputs input[type="date"]:last-child {
-  border-radius: 0 8px 8px 0;
-  border-left: none;
-}
-
-.daterange-inputs input[type="date"]:focus {
+.daterange-trigger:focus {
   outline: none;
   border-color: var(--border-hover);
   box-shadow: var(--focus-ring);
-  z-index: 1;
 }
 
-.daterange-sep {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  flex-shrink: 0;
-  background: var(--bg-input);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  color: var(--text-muted);
+/* ---- Calendar popup theme ---- */
+.daterange-calendar.react-datepicker {
+  font-family: inherit;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.35);
+  color: var(--text-primary);
   font-size: 0.85rem;
-  min-height: var(--touch-min);
-  user-select: none;
+  overflow: hidden;
+}
+
+.daterange-calendar .react-datepicker__header {
+  background: var(--bg-input);
+  border-bottom: 1px solid var(--border);
+  padding-top: 0.6rem;
+}
+
+.daterange-calendar .react-datepicker__current-month,
+.daterange-calendar .react-datepicker__day-name {
+  color: var(--text-primary);
+}
+
+.daterange-calendar .react-datepicker__day-name {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  width: 2.2rem;
+  line-height: 2.2rem;
+}
+
+.daterange-calendar .react-datepicker__day {
+  color: var(--text-primary);
+  border-radius: 6px;
+  width: 2.2rem;
+  line-height: 2.2rem;
+  margin: 1px;
+  transition: background 0.1s;
+}
+
+.daterange-calendar .react-datepicker__day:hover {
+  background: var(--bg-hover);
+}
+
+.daterange-calendar .react-datepicker__day--selected,
+.daterange-calendar .react-datepicker__day--range-start,
+.daterange-calendar .react-datepicker__day--range-end {
+  background: var(--accent-blue) !important;
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.daterange-calendar .react-datepicker__day--in-range,
+.daterange-calendar .react-datepicker__day--in-selecting-range {
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--text-primary);
+  border-radius: 0;
+}
+
+.daterange-calendar .react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range) {
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.daterange-calendar .react-datepicker__day--range-start {
+  border-radius: 6px 0 0 6px;
+}
+.daterange-calendar .react-datepicker__day--range-end {
+  border-radius: 0 6px 6px 0;
+}
+.daterange-calendar .react-datepicker__day--range-start.react-datepicker__day--range-end {
+  border-radius: 6px;
+}
+
+.daterange-calendar .react-datepicker__day--disabled {
+  color: var(--text-muted);
+  opacity: 0.35;
+}
+
+.daterange-calendar .react-datepicker__day--outside-month {
+  color: var(--text-muted);
+  opacity: 0.4;
+}
+
+.daterange-calendar .react-datepicker__navigation {
+  top: 10px;
+}
+
+.daterange-calendar .react-datepicker__navigation-icon::before {
+  border-color: var(--text-secondary);
+}
+
+.daterange-calendar .react-datepicker__triangle {
+  display: none;
+}
+
+/* Mobile: show 1 month only */
+@media (max-width: 599px) {
+  .daterange-calendar .react-datepicker__month-container + .react-datepicker__month-container {
+    display: none;
+  }
 }
 
 /* ---- Checkbox field ---- */
@@ -360,19 +435,15 @@ button[type="submit"]:disabled {
     font-size: 0.9rem;
   }
 
-  .daterange-inputs input[type="date"] {
+  .daterange-trigger {
     padding: 0.65rem 0.85rem;
     font-size: 0.9rem;
-  }
-
-  .daterange-sep {
-    font-size: 0.8rem;
   }
 
   /* Row 1: country, city, date range */
   .form-row-location .field-daterange {
     flex: 1.5;
-    min-width: 280px;
+    min-width: 220px;
   }
 
   /* Row 2: train line stretches, checkbox stays compact */

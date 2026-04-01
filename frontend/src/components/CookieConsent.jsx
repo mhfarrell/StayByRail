@@ -18,15 +18,27 @@ function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="cookie-banner">
-      <p className="cookie-text">
-        This site uses cookies for advertising via Google AdSense.
-        See our <Link to="/privacy" className="cookie-link">Privacy Policy</Link> for
-        details.
-      </p>
-      <button className="cookie-accept" onClick={accept}>
-        Accept
-      </button>
+    <div className="cookie-overlay">
+      <div className="cookie-banner">
+        <div className="cookie-icon">&#x1F36A;</div>
+        <div className="cookie-body">
+          <p className="cookie-heading">This site uses cookies</p>
+          <p className="cookie-text">
+            We use cookies for advertising via Google AdSense and to improve your
+            experience. By continuing to browse you accept our use of cookies.
+            Read our{" "}
+            <Link to="/privacy" className="cookie-link">
+              Privacy Policy
+            </Link>{" "}
+            for full details.
+          </p>
+        </div>
+        <div className="cookie-actions">
+          <button className="cookie-accept" onClick={accept}>
+            Accept cookies
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

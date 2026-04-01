@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const AMENITY_OPTIONS = [
   "Fridge",
@@ -32,8 +34,8 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
   const [selectedStations, setSelectedStations] = useState([]);
   const [stationsList, setStationsList] = useState([]);
   const [showStations, setShowStations] = useState(false);
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
+  const [startDate, setStartDate] = useState(null);
+  const [endDate, setEndDate] = useState(null);
   const [maxPrice, setMaxPrice] = useState(100);
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
@@ -57,16 +59,25 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
 
   const citiesInCountry = countries[country] || [];
 
-  const fmt = (d) => d.toISOString().split("T")[0];
-  const today = fmt(new Date());
+  const fmt = (d) => {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, "0");
+    const day = String(d.getDate()).padStart(2, "0");
+    return `${y}-${m}-${day}`;
+  };
+  const parseDate = (s) => {
+    if (!s) return null;
+    const [y, m, d] = s.split("-").map(Number);
+    return new Date(y, m - 1, d);
+  };
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
 
   useEffect(() => {
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
     const checkout = new Date(tomorrow);
     checkout.setDate(checkout.getDate() + 3);
-    setCheckIn(fmt(tomorrow));
-    setCheckOut(fmt(checkout));
+    setStartDate(tomorrow);
+    setEndDate(checkout);
   }, []);
 
   // When country changes, pick the first city in that country
@@ -112,8 +123,8 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
       }
     }
     if (initialValues.line) setLine(initialValues.line);
-    if (initialValues.check_in) setCheckIn(initialValues.check_in);
-    if (initialValues.check_out) setCheckOut(initialValues.check_out);
+    if (initialValues.check_in) setStartDate(parseDate(initialValues.check_in));
+    if (initialValues.check_out) setEndDate(parseDate(initialValues.check_out));
     if (initialValues.max_price) setMaxPrice(initialValues.max_price);
     if (initialValues.adults) setAdults(initialValues.adults);
     if (initialValues.children) setChildren(Number(initialValues.children));
@@ -121,14 +132,12 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
     appliedInitial.current = true;
   }, [cities, initialValues]);
 
+  const checkIn = startDate ? fmt(startDate) : "";
+  const checkOut = endDate ? fmt(endDate) : "";
+
   const numNights =
-    checkIn && checkOut
-      ? Math.max(
-          0,
-          Math.round(
-            (new Date(checkOut) - new Date(checkIn)) / (1000 * 60 * 60 * 24)
-          )
-        )
+    startDate && endDate
+      ? Math.max(0, Math.round((endDate - startDate) / (1000 * 60 * 60 * 24)))
       : 0;
 
   const toggleAmenity = (amenity) => {
@@ -189,29 +198,21 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
 
         <div className="field field-daterange">
           <label>Dates</label>
-          <div className="daterange-inputs">
-            <input
-              type="date"
-              value={checkIn}
-              min={today}
-              onChange={(e) => {
-                const val = e.target.value;
-                setCheckIn(val);
-                if (val) {
-                  const d = new Date(val);
-                  const lastDay = new Date(d.getFullYear(), d.getMonth() + 1, 0);
-                  setCheckOut(fmt(lastDay));
-                }
-              }}
-            />
-            <span className="daterange-sep">—</span>
-            <input
-              type="date"
-              value={checkOut}
-              min={checkIn || today}
-              onChange={(e) => setCheckOut(e.target.value)}
-            />
-          </div>
+          <DatePicker
+            selectsRange
+            startDate={startDate}
+            endDate={endDate}
+            onChange={([start, end]) => {
+              setStartDate(start);
+              setEndDate(end);
+            }}
+            minDate={tomorrow}
+            monthsShown={2}
+            dateFormat="dd MMM yyyy"
+            placeholderText="Select dates"
+            className="daterange-trigger"
+            calendarClassName="daterange-calendar"
+          />
         </div>
       </div>
 
@@ -374,9 +375,9 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
       {/* Row 6: Search */}
       <button
         type="submit"
-        disabled={!ready || loading || !checkIn || !checkOut}
+        disabled={!ready || loading || !startDate || !endDate}
         onClick={(e) => {
-          if (ready && !loading && checkIn && checkOut) {
+          if (ready && !loading && startDate && endDate) {
             e.preventDefault();
             handleSubmit();
           }
