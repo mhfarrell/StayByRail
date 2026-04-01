@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 
 function HowItWorksPage() {
@@ -106,8 +107,9 @@ function HowItWorksPage() {
           <h3 className="content-benefit-title">Save on Transport Costs</h3>
           <p className="content-benefit-text">
             When your hotel is a short walk from the station, you eliminate the need
-            for expensive taxi rides or airport shuttle services. In cities like
-            Tokyo and London, where a single taxi fare from the airport can exceed
+            for expensive taxi rides or airport shuttle services. In cities like{" "}
+            <Link to="/guides/tokyo" className="about-link">Tokyo</Link> and{" "}
+            <Link to="/guides/london" className="about-link">London</Link>, where a single taxi fare from the airport can exceed
             the cost of a night's accommodation, this adds up quickly. Walking to the
             nearest station keeps your daily transport budget low.
           </p>
@@ -139,8 +141,10 @@ function HowItWorksPage() {
           <h3 className="content-benefit-title">Easy Airport Connections</h3>
           <p className="content-benefit-text">
             Most major airports are connected to the city centre by express train
-            services. Hotels near key interchange stations — such as Shin-Osaka,
-            Gare du Nord, or London Paddington — let you reach the terminal in under
+            services. Hotels near key interchange stations — such as{" "}
+            <Link to="/guides/osaka" className="about-link">Shin-Osaka</Link>,{" "}
+            <Link to="/guides/paris" className="about-link">Gare du Nord</Link>, or{" "}
+            <Link to="/guides/london" className="about-link">London Paddington</Link> — let you reach the terminal in under
             an hour without transfers. This is especially valuable for early-morning
             flights or late-night arrivals.
           </p>
@@ -159,10 +163,25 @@ function HowItWorksPage() {
             A central station hotel acts as a launchpad to every part of the city.
             Rather than being confined to one district, you can reach markets, museums,
             parks, and nightlife areas across town in minutes. In cities with radial
-            networks like Paris or Madrid, one well-chosen station puts the entire
+            networks like <Link to="/guides/paris" className="about-link">Paris</Link> or{" "}
+            <Link to="/guides/madrid" className="about-link">Madrid</Link>, one well-chosen station puts the entire
             metro map within easy reach.
           </p>
         </div>
+      </div>
+
+      <div className="guide-cta-block" style={{ marginTop: "2.5rem" }}>
+        <p className="guide-cta-text">
+          Ready to try it?
+        </p>
+        <Link to="/search" className="hero-cta">Search Hotels</Link>
+        <p style={{ marginTop: "1rem", fontSize: "0.9rem", color: "var(--text-secondary)" }}>
+          <Link to="/guides" className="about-link">Browse city guides</Link>
+          {" · "}
+          <Link to="/coverage" className="about-link">View full coverage</Link>
+          {" · "}
+          <Link to="/faq" className="about-link">Read the FAQ</Link>
+        </p>
       </div>
     </div>
   );

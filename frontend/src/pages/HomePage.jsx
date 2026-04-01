@@ -70,8 +70,8 @@ function HomePage() {
       <section className="page-hero">
         <h2 className="hero-title">Find hotels near train stations</h2>
         <p className="hero-subtitle">
-          Compare prices from Google Hotels, Booking.com, and TripAdvisor across
-          52 cities in 6 countries — sorted by walking distance to the platform.
+          Compare prices from Google Hotels, Booking.com, and TripAdvisor across{" "}
+          <Link to="/coverage" className="hero-subtitle-link">52 cities in 6 countries</Link> — sorted by walking distance to the platform.
         </p>
         <Link to="/search" className="hero-cta">Search Hotels</Link>
       </section>

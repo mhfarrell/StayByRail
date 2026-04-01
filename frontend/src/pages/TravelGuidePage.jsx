@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 
 const WMO = {
@@ -28,6 +29,7 @@ const REGIONS = [
     off: "January\u2013February and June (rainy season) offer the lowest hotel prices. Typhoon season (Aug\u2013Oct) rarely disrupts travel seriously but check forecasts.",
     transport: "Japan's rail network is unmatched. Shinkansen bullet trains connect major cities at up to 320 km/h. JR lines, private railways, and metro systems cover every city. The Japan Rail Pass offers unlimited JR travel \u2014 essential for multi-city trips. IC cards (Suica/ICOCA) work across all transit and even vending machines.",
     tip: "Buy the JR Pass before arriving. Activate it for your busiest travel days. Overnight sleeper trains save both time and a hotel night.",
+    guides: [{ slug: "tokyo", city: "Tokyo" }, { slug: "osaka", city: "Osaka" }, { slug: "kyoto", city: "Kyoto" }],
   },
   {
     country: "United Kingdom", flag: "\u{1F1EC}\u{1F1E7}",
@@ -38,6 +40,7 @@ const REGIONS = [
     off: "April\u2013May and September\u2013October offer mild weather at significantly lower prices. Avoid bank holidays when trains sell out and prices spike.",
     transport: "National Rail connects every major city. London's Underground (11 lines, 272 stations) is the backbone of the capital. Manchester has the Metrolink tram, Birmingham has the West Midlands Metro, and Edinburgh is connected by ScotRail. Contactless payment works across London \u2014 no Oyster card needed.",
     tip: "Book Advance tickets 12 weeks ahead for 50\u201370% savings. Off-peak fares are always cheaper \u2014 avoid the 7\u20139am rush.",
+    guides: [{ slug: "london", city: "London" }, { slug: "edinburgh", city: "Edinburgh" }, { slug: "birmingham", city: "Birmingham" }],
   },
   {
     country: "France", flag: "\u{1F1EB}\u{1F1F7}",
@@ -48,6 +51,7 @@ const REGIONS = [
     off: "August: many Parisian restaurants and shops close for holiday. The city becomes tourist-heavy while the best local spots are shuttered. Head south instead.",
     transport: "TGV high-speed trains reach 320 km/h, connecting Paris to Lyon (2h), Marseille (3h), and Bordeaux (2h). The Paris M\u00E9tro has 16 lines. Ouigo offers budget TGV seats from \u20AC10. Regional TER trains are affordable for shorter distances. The Navigo pass covers all Paris transit.",
     tip: "TGV Prem's fares go on sale 3 months ahead. Ouigo is the budget TGV option. Navigo Easy card for unlimited Paris Metro.",
+    guides: [{ slug: "paris", city: "Paris" }],
   },
   {
     country: "Germany", flag: "\u{1F1E9}\u{1F1EA}",
@@ -58,6 +62,7 @@ const REGIONS = [
     off: "Oktoberfest (late Sep\u2013early Oct) means Munich hotels sell out months ahead. Book early or stay in a nearby city and train in for the day.",
     transport: "Deutsche Bahn's ICE high-speed trains link all major cities. Every city has excellent U-Bahn (metro) and S-Bahn (suburban rail). The Deutschland-Ticket (\u20AC49/month) is extraordinary value \u2014 unlimited travel on all regional and local transit nationwide. It doesn't cover ICE/IC but regional trains reach everywhere.",
     tip: "Deutschland-Ticket: \u20AC49/month, unlimited regional transit. ICE Sparpreis fares are cheapest booked well in advance via the DB Navigator app.",
+    guides: [{ slug: "berlin", city: "Berlin" }],
   },
   {
     country: "Spain", flag: "\u{1F1EA}\u{1F1F8}",
@@ -68,6 +73,7 @@ const REGIONS = [
     off: "August is brutal in Madrid and Seville (40\u00B0C+). Coastal Barcelona is bearable. For cooler summers, head to the Basque Country or Galicia.",
     transport: "Renfe's AVE network is Europe's longest high-speed rail system. Madrid\u2013Barcelona takes 2.5 hours. Madrid and Barcelona both have extensive metro systems. Cercan\u00EDas commuter trains serve suburban areas. Avlo offers budget high-speed seats from \u20AC7.",
     tip: "Avlo low-cost high-speed: Madrid\u2013Barcelona from \u20AC7. Book Renfe AVE up to 120 days ahead. T-Casual (Barcelona) gives 10 metro trips.",
+    guides: [{ slug: "madrid", city: "Madrid" }, { slug: "barcelona", city: "Barcelona" }],
   },
   {
     country: "Thailand", flag: "\u{1F1F9}\u{1F1ED}",
@@ -78,6 +84,7 @@ const REGIONS = [
     off: "Wet season (June\u2013October): short heavy downpours then sunshine. Prices drop 30\u201350%. Songkran (13\u201315 April) is unforgettable \u2014 a nationwide water fight.",
     transport: "Bangkok's BTS Skytrain and MRT metro beat the city's legendary traffic. The Airport Rail Link connects Suvarnabhumi to the centre in 30 minutes. Long-distance State Railway trains reach Chiang Mai (overnight sleeper), the southern beaches, and the northeast. Grab is the go-to app for last-mile rides.",
     tip: "Rabbit card for BTS, tokens for MRT (separate systems). Overnight sleeper Bangkok\u2013Chiang Mai saves a hotel night. Grab beats tuk-tuk prices.",
+    guides: [{ slug: "bangkok", city: "Bangkok" }],
   },
 ];
 
@@ -160,10 +167,32 @@ function TravelGuidePage() {
                 <div className="transit-tip">
                   <strong>Budget tip:</strong> {r.tip}
                 </div>
+                {r.guides && r.guides.length > 0 && (
+                  <div className="tg-guide-links">
+                    <span className="tg-guide-links-label">City guides:</span>
+                    {r.guides.map((g) => (
+                      <Link key={g.slug} to={`/guides/${g.slug}`} className="tg-guide-link">
+                        {g.city}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           );
         })}
+      </div>
+
+      <div className="guide-cta-block" style={{ marginTop: "2.5rem" }}>
+        <p className="guide-cta-text">Ready to book?</p>
+        <Link to="/search" className="hero-cta">Search Hotels</Link>
+        <p style={{ marginTop: "1rem", fontSize: "0.9rem", color: "var(--text-secondary)" }}>
+          <Link to="/guides" className="about-link">City rail guides</Link>
+          {" · "}
+          <Link to="/train-times" className="about-link">Train times and resources</Link>
+          {" · "}
+          <Link to="/coverage" className="about-link">Full coverage</Link>
+        </p>
       </div>
     </div>
   );

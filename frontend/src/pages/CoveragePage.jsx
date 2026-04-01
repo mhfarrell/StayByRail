@@ -1,4 +1,5 @@
 import PageMeta from "../components/PageMeta";
+import { Link } from "react-router-dom";
 
 function CoveragePage() {
   return (
@@ -27,7 +28,7 @@ function CoveragePage() {
           <h3 className="content-country-name">Japan</h3>
           <p className="content-country-cities">12 cities</p>
           <p className="content-country-text">
-            Tokyo, Osaka, Kyoto, Hiroshima, Yokohama, Nagoya, Sapporo, Fukuoka,
+            <Link to="/guides/tokyo" className="about-link">Tokyo</Link>, <Link to="/guides/osaka" className="about-link">Osaka</Link>, <Link to="/guides/kyoto" className="about-link">Kyoto</Link>, Hiroshima, Yokohama, Nagoya, Sapporo, Fukuoka,
             Kobe, Sendai, Kawasaki, and Kitakyushu. Covering JR, metro, and private
             railway lines including the Shinkansen network.
           </p>
@@ -45,7 +46,7 @@ function CoveragePage() {
           <h3 className="content-country-name">United Kingdom</h3>
           <p className="content-country-cities">13 cities</p>
           <p className="content-country-text">
-            London, Manchester, Birmingham, Edinburgh, Glasgow, Liverpool, Leeds,
+            <Link to="/guides/london" className="about-link">London</Link>, Manchester, <Link to="/guides/birmingham" className="about-link">Birmingham</Link>, <Link to="/guides/edinburgh" className="about-link">Edinburgh</Link>, Glasgow, Liverpool, Leeds,
             Bristol, Sheffield, Newcastle, Nottingham, Cardiff, and Leicester.
             Covering the Underground, Overground, Metrolink, and national rail.
           </p>
@@ -61,7 +62,7 @@ function CoveragePage() {
           <h3 className="content-country-name">France</h3>
           <p className="content-country-cities">7 cities</p>
           <p className="content-country-text">
-            Paris, Lyon, Marseille, Toulouse, Nice, Bordeaux, and Strasbourg.
+            <Link to="/guides/paris" className="about-link">Paris</Link>, Lyon, Marseille, Toulouse, Nice, Bordeaux, and Strasbourg.
             Covering the Metro, RER, tramway, and TGV station areas.
           </p>
         </div>
@@ -76,7 +77,7 @@ function CoveragePage() {
           <h3 className="content-country-name">Germany</h3>
           <p className="content-country-cities">8 cities</p>
           <p className="content-country-text">
-            Berlin, Munich, Hamburg, Frankfurt, Cologne, Stuttgart, Dusseldorf,
+            <Link to="/guides/berlin" className="about-link">Berlin</Link>, Munich, Hamburg, Frankfurt, Cologne, Stuttgart, Dusseldorf,
             and Dresden. Covering U-Bahn, S-Bahn, and Deutsche Bahn stations.
           </p>
         </div>
@@ -91,7 +92,7 @@ function CoveragePage() {
           <h3 className="content-country-name">Spain</h3>
           <p className="content-country-cities">7 cities</p>
           <p className="content-country-text">
-            Madrid, Barcelona, Valencia, Seville, Bilbao, Malaga, and Zaragoza.
+            <Link to="/guides/madrid" className="about-link">Madrid</Link>, <Link to="/guides/barcelona" className="about-link">Barcelona</Link>, Valencia, Seville, Bilbao, Malaga, and Zaragoza.
             Covering Metro, Cercanias, and AVE high-speed rail stations.
           </p>
         </div>
@@ -108,7 +109,7 @@ function CoveragePage() {
           <h3 className="content-country-name">Thailand</h3>
           <p className="content-country-cities">5 cities</p>
           <p className="content-country-text">
-            Bangkok, Chiang Mai, Pattaya, Phuket, and Hat Yai. Covering BTS
+            <Link to="/guides/bangkok" className="about-link">Bangkok</Link>, Chiang Mai, Pattaya, Phuket, and Hat Yai. Covering BTS
             Skytrain, MRT, Airport Rail Link, and national rail stations.
           </p>
         </div>
@@ -118,6 +119,13 @@ function CoveragePage() {
         We are continually expanding our coverage. New cities and rail networks are
         added regularly as data sources become available. Have a city you would like
         to see? We welcome suggestions from the travel community.
+      </p>
+      <p className="content-expanding" style={{ textAlign: "center" }}>
+        <Link to="/guides" className="about-link">Browse our city guides →</Link>
+        {" · "}
+        <Link to="/travel-guide" className="about-link">Best times to travel →</Link>
+        {" · "}
+        <Link to="/train-times" className="about-link">Train times and transit resources →</Link>
       </p>
     </div>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 
 function FaqPage() {
@@ -73,12 +74,20 @@ function FaqPage() {
         <div className="content-faq-item">
           <h3 className="content-faq-question">Which cities and countries are covered?</h3>
           <p className="content-faq-answer">
-            StayByRail currently covers 52 cities across six countries: Japan (12
-            cities including Tokyo, Osaka, Kyoto, and Hiroshima), the United Kingdom
-            (13 cities including London, Manchester, and Edinburgh), France (7 cities
-            including Paris, Lyon, and Marseille), Germany (8 cities including Berlin,
-            Munich, and Hamburg), Spain (7 cities including Madrid, Barcelona, and
-            Seville), and Thailand (5 cities including Bangkok and Chiang Mai). We are
+            StayByRail currently covers{" "}
+            <Link to="/coverage" className="about-link">52 cities across six countries</Link>: Japan (12
+            cities including <Link to="/guides/tokyo" className="about-link">Tokyo</Link>,{" "}
+            <Link to="/guides/osaka" className="about-link">Osaka</Link>,{" "}
+            <Link to="/guides/kyoto" className="about-link">Kyoto</Link>, and Hiroshima), the United Kingdom
+            (13 cities including <Link to="/guides/london" className="about-link">London</Link>, Manchester, and{" "}
+            <Link to="/guides/edinburgh" className="about-link">Edinburgh</Link>), France (7 cities
+            including <Link to="/guides/paris" className="about-link">Paris</Link>, Lyon, and Marseille), Germany (8 cities including{" "}
+            <Link to="/guides/berlin" className="about-link">Berlin</Link>,
+            Munich, and Hamburg), Spain (7 cities including{" "}
+            <Link to="/guides/madrid" className="about-link">Madrid</Link>,{" "}
+            <Link to="/guides/barcelona" className="about-link">Barcelona</Link>, and
+            Seville), and Thailand (5 cities including{" "}
+            <Link to="/guides/bangkok" className="about-link">Bangkok</Link> and Chiang Mai). We are
             actively expanding to additional countries and cities.
           </p>
         </div>
@@ -142,6 +151,21 @@ function FaqPage() {
             which helps ensure searches keep working when the shared limits are reached.
           </p>
         </div>
+      </div>
+
+      <div className="guide-cta-block" style={{ marginTop: "2.5rem" }}>
+        <p className="guide-cta-text">Still have questions?</p>
+        <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 1.8 }}>
+          <Link to="/how-it-works" className="about-link">How StayByRail works</Link>
+          {" · "}
+          <Link to="/coverage" className="about-link">Full city coverage</Link>
+          {" · "}
+          <Link to="/guides" className="about-link">City rail guides</Link>
+          {" · "}
+          <Link to="/travel-guide" className="about-link">Best times to travel</Link>
+          {" · "}
+          <a href="mailto:hello@staybyrail.co.uk" className="about-link">Contact us</a>
+        </p>
       </div>
     </div>
   );

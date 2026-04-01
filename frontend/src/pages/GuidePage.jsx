@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
-import { getGuide } from "../data/cityGuides";
+import { getGuide, cityGuides } from "../data/cityGuides";
 import { useCityData } from "../hooks/useCityData";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
@@ -194,6 +194,27 @@ function GuidePage() {
         )}
         <TipForm city={guide.city} onSubmitted={loadTips} />
       </div>
+
+      {/* Related guides from same country */}
+      {(() => {
+        const related = cityGuides
+          .filter((g) => g.country === guide.country && g.slug !== slug)
+          .slice(0, 4);
+        if (!related.length) return null;
+        return (
+          <div className="guide-related">
+            <h3 className="guide-section-heading">More {guide.country} Guides</h3>
+            <div className="guide-related-grid">
+              {related.map((g) => (
+                <Link key={g.slug} to={`/guides/${g.slug}`} className="guide-related-card">
+                  <span className="guide-related-city">{g.city}</span>
+                  <span className="guide-related-line">{g.heroLine}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        );
+      })()}
 
       <div className="guide-cta-block">
         <p className="guide-cta-text">

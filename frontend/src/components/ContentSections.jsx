@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ContentSections() {
   return (
     <div className="content-sections">
@@ -21,7 +23,7 @@ function ContentSections() {
             </div>
             <h3 className="content-step-title">1. Choose Your City and Line</h3>
             <p className="content-step-text">
-              Select from 52 cities across Japan, the United Kingdom, France, Germany,
+              Select from <Link to="/coverage" className="about-link">52 cities</Link> across Japan, the United Kingdom, France, Germany,
               Spain, and Thailand. Pick a specific train or metro line and station to
               search around.
             </p>
@@ -70,105 +72,105 @@ function ContentSections() {
         </p>
         <div className="content-city-grid">
           <div className="content-city-card" data-accent="red">
-            <h3 className="content-city-name">Tokyo</h3>
+            <h3 className="content-city-name"><Link to="/guides/tokyo" className="about-link">Tokyo</Link></h3>
             <p className="content-city-text">
               Explore Japan's capital via the iconic Yamanote Line, which loops through
               major hubs like Shinjuku, Shibuya, and Tokyo Station. With over 100
               stations across dozens of lines, finding a hotel near a convenient stop
               means easy access to everything from Akihabara's electronics district to
               the serene Meiji Shrine. Budget business hotels near JR stations offer
-              excellent value for travellers.
+              excellent value for travellers. <Link to="/guides/tokyo" className="content-city-link">View guide →</Link>
             </p>
           </div>
           <div className="content-city-card" data-accent="blue">
-            <h3 className="content-city-name">London</h3>
+            <h3 className="content-city-name"><Link to="/guides/london" className="about-link">London</Link></h3>
             <p className="content-city-text">
               Navigate the Tube and find hotels near Underground stations across all
               zones. Staying near a Central, Victoria, or Piccadilly line station puts
               you minutes from attractions like the British Museum, Buckingham Palace,
               and the West End. Hotels near major terminuses such as King's Cross and
-              Paddington also provide direct links to the rest of the UK.
+              Paddington also provide direct links to the rest of the UK. <Link to="/guides/london" className="content-city-link">View guide →</Link>
             </p>
           </div>
           <div className="content-city-card" data-accent="purple">
-            <h3 className="content-city-name">Paris</h3>
+            <h3 className="content-city-name"><Link to="/guides/paris" className="about-link">Paris</Link></h3>
             <p className="content-city-text">
               Stay near Metro stations in the City of Light and reach the Eiffel Tower,
               Louvre, and Montmartre without relying on taxis. The Paris Metro's 16
               lines cover every arrondissement, so a well-placed hotel means you can
               walk to the platform in minutes. Areas around Gare du Nord and Gare de
-              Lyon offer good mid-range accommodation with national rail connections.
+              Lyon offer good mid-range accommodation with national rail connections. <Link to="/guides/paris" className="content-city-link">View guide →</Link>
             </p>
           </div>
           <div className="content-city-card" data-accent="green">
-            <h3 className="content-city-name">Berlin</h3>
+            <h3 className="content-city-name"><Link to="/guides/berlin" className="about-link">Berlin</Link></h3>
             <p className="content-city-text">
               Find hotels along the U-Bahn and S-Bahn networks in Germany's capital.
               Berlin's efficient public transport makes it easy to hop between the
               Brandenburg Gate, Museum Island, and the East Side Gallery. Neighbourhoods
               like Mitte and Kreuzberg have abundant hotel options near stations, and
-              the S-Bahn ring connects you to every corner of the city.
+              the S-Bahn ring connects you to every corner of the city. <Link to="/guides/berlin" className="content-city-link">View guide →</Link>
             </p>
           </div>
           <div className="content-city-card" data-accent="orange">
-            <h3 className="content-city-name">Barcelona</h3>
+            <h3 className="content-city-name"><Link to="/guides/barcelona" className="about-link">Barcelona</Link></h3>
             <p className="content-city-text">
               Hotels near Metro stops in Catalonia's vibrant capital put you within
               easy reach of the Sagrada Familia, Las Ramblas, and the Gothic Quarter.
               Lines L3 and L4 are especially useful for visitors, connecting the
               beachfront to the city centre. Staying near Passeig de Gracia gives you
-              walking access to Gaudi's masterpieces and upscale shopping.
+              walking access to Gaudi's masterpieces and upscale shopping. <Link to="/guides/barcelona" className="content-city-link">View guide →</Link>
             </p>
           </div>
           <div className="content-city-card" data-accent="teal">
-            <h3 className="content-city-name">Bangkok</h3>
+            <h3 className="content-city-name"><Link to="/guides/bangkok" className="about-link">Bangkok</Link></h3>
             <p className="content-city-text">
               Stay near BTS Skytrain and MRT stations to avoid Bangkok's legendary
               traffic. The Sukhumvit line passes through the city's main hotel and
               nightlife districts, while the Silom line connects to the business
               centre and the Chao Phraya riverfront. Hotels near BTS stations often
-              offer excellent value compared to other major Asian capitals.
+              offer excellent value compared to other major Asian capitals. <Link to="/guides/bangkok" className="content-city-link">View guide →</Link>
             </p>
           </div>
           <div className="content-city-card" data-accent="red">
-            <h3 className="content-city-name">Osaka</h3>
+            <h3 className="content-city-name"><Link to="/guides/osaka" className="about-link">Osaka</Link></h3>
             <p className="content-city-text">
               Budget-friendly stays near Midosuji Line stations make Osaka an ideal base
               for exploring Kansai. The Midosuji Line runs directly from Shin-Osaka
               (Shinkansen hub) through Umeda and Namba, Osaka's two major entertainment
               districts. The famous Dotonbori street food scene is a short walk from
-              Namba Station, and day trips to Kyoto and Nara are under an hour away.
+              Namba Station, and day trips to Kyoto and Nara are under an hour away. <Link to="/guides/osaka" className="content-city-link">View guide →</Link>
             </p>
           </div>
           <div className="content-city-card" data-accent="purple">
-            <h3 className="content-city-name">Kyoto</h3>
+            <h3 className="content-city-name"><Link to="/guides/kyoto" className="about-link">Kyoto</Link></h3>
             <p className="content-city-text">
               Traditional ryokan and modern hotels cluster near Karasuma Line stations in
               Japan's cultural capital. The Karasuma Line connects Kyoto Station to the
               northern temple district, while the Tozai Line provides east-west access
               to landmarks like the Philosophers' Path and Nijo Castle. Staying near
               Kyoto Station gives you direct Shinkansen access for day trips to Tokyo
-              and Hiroshima.
+              and Hiroshima. <Link to="/guides/kyoto" className="content-city-link">View guide →</Link>
             </p>
           </div>
           <div className="content-city-card" data-accent="blue">
-            <h3 className="content-city-name">Madrid</h3>
+            <h3 className="content-city-name"><Link to="/guides/madrid" className="about-link">Madrid</Link></h3>
             <p className="content-city-text">
               Spain's capital boasts one of Europe's most extensive metro systems, with
               13 lines serving over 300 stations. Hotels near Sol or Gran Via stations
               place you at the heart of the city, within walking distance of the Prado
               Museum, Retiro Park, and the Royal Palace. The Cercanias commuter rail
-              also connects to Toledo and other nearby cities for easy day trips.
+              also connects to Toledo and other nearby cities for easy day trips. <Link to="/guides/madrid" className="content-city-link">View guide →</Link>
             </p>
           </div>
           <div className="content-city-card" data-accent="green">
-            <h3 className="content-city-name">Manchester</h3>
+            <h3 className="content-city-name"><Link to="/search" className="about-link">Manchester</Link></h3>
             <p className="content-city-text">
               Find hotels near Metrolink tram stops across Greater Manchester. The
               tram network connects Manchester Piccadilly and Victoria stations to
               MediaCityUK, the Etihad Campus, and the Trafford Centre. Staying near
               the city centre's tram stops gives you easy access to the Northern Quarter,
-              Deansgate, and direct trains to London, Liverpool, and the Lake District.
+              Deansgate, and direct trains to London, Liverpool, and the Lake District. <Link to="/search" className="content-city-link">Search Manchester →</Link>
             </p>
           </div>
         </div>
@@ -195,8 +197,8 @@ function ContentSections() {
             <h3 className="content-benefit-title">Save on Transport Costs</h3>
             <p className="content-benefit-text">
               When your hotel is a short walk from the station, you eliminate the need
-              for expensive taxi rides or airport shuttle services. In cities like
-              Tokyo and London, where a single taxi fare from the airport can exceed
+              for expensive taxi rides or airport shuttle services. In cities like{" "}
+              <Link to="/guides/tokyo" className="about-link">Tokyo</Link> and <Link to="/guides/london" className="about-link">London</Link>, where a single taxi fare from the airport can exceed
               the cost of a night's accommodation, this adds up quickly. Walking to the
               nearest station keeps your daily transport budget low.
             </p>
@@ -228,8 +230,8 @@ function ContentSections() {
             <h3 className="content-benefit-title">Easy Airport Connections</h3>
             <p className="content-benefit-text">
               Most major airports are connected to the city centre by express train
-              services. Hotels near key interchange stations — such as Shin-Osaka,
-              Gare du Nord, or London Paddington — let you reach the terminal in under
+              services. Hotels near key interchange stations — such as <Link to="/guides/osaka" className="about-link">Shin-Osaka</Link>,{" "}
+              <Link to="/guides/paris" className="about-link">Gare du Nord</Link>, or <Link to="/guides/london" className="about-link">London Paddington</Link> — let you reach the terminal in under
               an hour without transfers. This is especially valuable for early-morning
               flights or late-night arrivals.
             </p>
@@ -248,7 +250,7 @@ function ContentSections() {
               A central station hotel acts as a launchpad to every part of the city.
               Rather than being confined to one district, you can reach markets, museums,
               parks, and nightlife areas across town in minutes. In cities with radial
-              networks like Paris or Madrid, one well-chosen station puts the entire
+              networks like <Link to="/guides/paris" className="about-link">Paris</Link> or <Link to="/guides/madrid" className="about-link">Madrid</Link>, one well-chosen station puts the entire
               metro map within easy reach.
             </p>
           </div>
@@ -272,13 +274,14 @@ function ContentSections() {
           <div className="content-faq-item">
             <h3 className="content-faq-question">Which cities and countries are covered?</h3>
             <p className="content-faq-answer">
-              StayByRail currently covers 52 cities across six countries: Japan (12
+              StayByRail currently covers <Link to="/coverage" className="about-link">52 cities across six countries</Link>: Japan (12
               cities including Tokyo, Osaka, Kyoto, and Hiroshima), the United Kingdom
               (13 cities including London, Manchester, and Edinburgh), France (7 cities
               including Paris, Lyon, and Marseille), Germany (8 cities including Berlin,
               Munich, and Hamburg), Spain (7 cities including Madrid, Barcelona, and
               Seville), and Thailand (5 cities including Bangkok and Chiang Mai). We are
-              actively expanding to additional countries and cities.
+              actively expanding to additional countries and cities.{" "}
+              <Link to="/coverage" className="about-link">See our full coverage →</Link>
             </p>
           </div>
           <div className="content-faq-item">
@@ -332,7 +335,8 @@ function ContentSections() {
           StayByRail covers major rail and metro networks across six countries and
           52 cities. Whether you are planning a Shinkansen trip through Japan, a
           Eurostar connection through France, or a backpacking route through Thailand,
-          we have station-level hotel data to help you choose the right place to stay.
+          we have station-level hotel data to help you choose the right place to stay.{" "}
+          <Link to="/guides" className="about-link">Browse our city guides →</Link>
         </p>
         <div className="content-country-grid">
           <div className="content-country-card">

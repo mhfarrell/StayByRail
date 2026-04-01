@@ -40,8 +40,10 @@ function AboutPage() {
           <p className="about-block-text">
             We currently cover <strong>52 cities across 6 countries</strong> —
             Japan, the United Kingdom, France, Germany, Spain, and Thailand.
-            From the Shinkansen network in Japan to the London Underground,
-            the Paris Metro to Bangkok's BTS Skytrain, StayByRail covers the most
+            From the Shinkansen network in <Link to="/guides/tokyo" className="about-link">Japan</Link> to
+            the <Link to="/guides/london" className="about-link">London Underground</Link>,
+            the <Link to="/guides/paris" className="about-link">Paris Metro</Link> to{" "}
+            <Link to="/guides/bangkok" className="about-link">Bangkok's BTS Skytrain</Link>, StayByRail covers the most
             widely travelled rail networks in the world. New cities and lines are
             added regularly as data sources become available.
           </p>
@@ -94,6 +96,21 @@ function AboutPage() {
               LinkedIn
             </a>
             .
+          </p>
+        </div>
+
+        <div className="about-block">
+          <h3 className="about-block-heading">Explore More</h3>
+          <p className="about-block-text">
+            <Link to="/how-it-works" className="about-link">How StayByRail works</Link>
+            {" · "}
+            <Link to="/guides" className="about-link">City rail guides</Link>
+            {" · "}
+            <Link to="/travel-guide" className="about-link">Best times to travel</Link>
+            {" · "}
+            <Link to="/train-times" className="about-link">Train times and transit resources</Link>
+            {" · "}
+            <Link to="/faq" className="about-link">FAQ</Link>
           </p>
         </div>
       </div>
