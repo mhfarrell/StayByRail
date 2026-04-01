@@ -61,6 +61,57 @@
   box-shadow: var(--focus-ring);
 }
 
+/* ---- Date range group ---- */
+.daterange-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.daterange-inputs input[type="date"] {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.7rem 0.85rem;
+  font-size: 16px;
+  min-height: var(--touch-min);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  flex: 1;
+  min-width: 0;
+}
+
+.daterange-inputs input[type="date"]:first-child {
+  border-radius: 8px 0 0 8px;
+  border-right: none;
+}
+
+.daterange-inputs input[type="date"]:last-child {
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+
+.daterange-inputs input[type="date"]:focus {
+  outline: none;
+  border-color: var(--border-hover);
+  box-shadow: var(--focus-ring);
+  z-index: 1;
+}
+
+.daterange-sep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  flex-shrink: 0;
+  background: var(--bg-input);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  min-height: var(--touch-min);
+  user-select: none;
+}
+
 /* ---- Checkbox field ---- */
 .checkbox-field {
   justify-content: flex-end;
@@ -78,9 +129,14 @@
   min-height: var(--touch-min);
 }
 
-/* ---- Nights badge ---- */
+/* ---- Nights/cost pill ---- */
+.field-pill {
+  justify-content: center;
+}
+
 .nights-badge {
-  display: block;
+  display: inline-flex;
+  align-items: center;
   background: var(--amenity-bg);
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -89,8 +145,7 @@
   color: var(--accent-blue);
   white-space: nowrap;
   font-weight: 500;
-  text-align: center;
-  width: 100%;
+  min-height: var(--touch-min);
 }
 
 /* ---- Submit button ---- */
@@ -130,7 +185,7 @@ button[type="submit"]:disabled {
   }
 }
 
-/* ---- Wishlist section ---- */
+/* ---- Wishlist / expandable sections ---- */
 .wishlist-section {
   margin-bottom: 1.25rem;
 }
@@ -223,7 +278,9 @@ button[type="submit"]:disabled {
   cursor: not-allowed;
 }
 
-/* ---- Tablet: 2-column grid ---- */
+/* ============================================================
+   Tablet: 2-column grid
+   ============================================================ */
 @media (min-width: 600px) {
   .search-form {
     padding: 1.25rem;
@@ -242,10 +299,27 @@ button[type="submit"]:disabled {
     min-width: 0;
   }
 
-  .nights-badge {
-    width: auto;
-    display: inline-block;
-    text-align: left;
+  /* Row 1: country | city | dates spanning full width */
+  .form-row-location {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-row-location .field-daterange {
+    grid-column: 1 / -1;
+  }
+
+  /* Row 2: train line + checkbox */
+  .form-row-line {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+
+  /* Row 4: budget row */
+  .form-row-budget {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-row-budget .field-pill {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
   }
 
   .wishlist-chip {
@@ -255,7 +329,9 @@ button[type="submit"]:disabled {
   }
 }
 
-/* ---- Desktop: multi-column flex ---- */
+/* ============================================================
+   Desktop: multi-column flex
+   ============================================================ */
 @media (min-width: 900px) {
   .search-form {
     padding: 1.75rem;
@@ -282,6 +358,36 @@ button[type="submit"]:disabled {
   .field input[type="number"] {
     padding: 0.65rem 0.85rem;
     font-size: 0.9rem;
+  }
+
+  .daterange-inputs input[type="date"] {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.9rem;
+  }
+
+  .daterange-sep {
+    font-size: 0.8rem;
+  }
+
+  /* Row 1: country, city, date range */
+  .form-row-location .field-daterange {
+    flex: 1.5;
+    min-width: 280px;
+  }
+
+  /* Row 2: train line stretches, checkbox stays compact */
+  .form-row-line .field-line {
+    flex: 2;
+  }
+  .form-row-line .checkbox-field {
+    flex: 0 0 auto;
+    min-width: auto;
+  }
+
+  /* Row 4: budget fields equal, pill auto-sized */
+  .form-row-budget .field-pill {
+    flex: 0 0 auto;
+    min-width: auto;
   }
 
   button[type="submit"] {

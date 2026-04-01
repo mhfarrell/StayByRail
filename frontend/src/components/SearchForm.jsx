@@ -165,14 +165,13 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
 
   return (
     <form className="search-form" noValidate onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
-      <div className="form-row">
+      {/* Row 1: Location + Dates */}
+      <div className="form-row form-row-location">
         <div className="field">
           <label>Country</label>
           <select value={country} onChange={(e) => setCountry(e.target.value)}>
             {sortedCountries.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
+              <option key={c} value={c}>{c}</option>
             ))}
           </select>
         </div>
@@ -188,19 +187,45 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
           </select>
         </div>
 
-        <div className="field">
-          <label>Train Line</label>
-          <select value={line} onChange={(e) => setLine(e.target.value)}>
-            {Object.entries(cityLines).map(([key, name]) => (
-              <option key={key} value={key}>
-                {name}
-              </option>
-            ))}
-          </select>
+        <div className="field field-daterange">
+          <label>Dates</label>
+          <div className="daterange-inputs">
+            <input
+              type="date"
+              value={checkIn}
+              min={today}
+              onChange={(e) => {
+                const val = e.target.value;
+                setCheckIn(val);
+                if (val) {
+                  const d = new Date(val);
+                  const lastDay = new Date(d.getFullYear(), d.getMonth() + 1, 0);
+                  setCheckOut(fmt(lastDay));
+                }
+              }}
+            />
+            <span className="daterange-sep">—</span>
+            <input
+              type="date"
+              value={checkOut}
+              min={checkIn || today}
+              onChange={(e) => setCheckOut(e.target.value)}
+            />
+          </div>
         </div>
       </div>
 
-      <div className="form-row">
+      {/* Row 2: Train Line + Popular Stations toggle */}
+      <div className="form-row form-row-line">
+        <div className="field field-line">
+          <label>Train Line</label>
+          <select value={line} onChange={(e) => setLine(e.target.value)}>
+            {Object.entries(cityLines).map(([key, name]) => (
+              <option key={key} value={key}>{name}</option>
+            ))}
+          </select>
+        </div>
+
         <div className="field checkbox-field">
           <label>
             <input
@@ -213,37 +238,60 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
         </div>
       </div>
 
-      <div className="form-row">
-        <div className="field">
-          <label>Check-in</label>
-          <input
-            type="date"
-            value={checkIn}
-            min={today}
-            onChange={(e) => {
-              const val = e.target.value;
-              setCheckIn(val);
-              if (val) {
-                const d = new Date(val);
-                const lastDay = new Date(d.getFullYear(), d.getMonth() + 1, 0);
-                setCheckOut(fmt(lastDay));
-              }
-            }}
-          />
-        </div>
+      {/* Row 3: Station picker (visible when "Popular stations" unchecked) */}
+      {!popularOnly && stationsList.length > 0 && (
+        <div className="wishlist-section">
+          <button
+            type="button"
+            className="wishlist-toggle"
+            onClick={() => setShowStations(!showStations)}
+          >
+            Stations ({selectedStations.length || "All"}/{stationsList.length})
+            {selectedStations.length > 0 && (
+              <span className="wishlist-preview">
+                {selectedStations.join(", ")}
+              </span>
+            )}
+            <span className="wishlist-arrow">{showStations ? "▲" : "▼"}</span>
+          </button>
 
-        <div className="field">
-          <label>Check-out</label>
-          <input
-            type="date"
-            value={checkOut}
-            min={checkIn || today}
-            onChange={(e) => setCheckOut(e.target.value)}
-          />
+          {showStations && (
+            <div className="wishlist-grid">
+              {stationsList.map((s) => {
+                const selected = selectedStations.includes(s.name);
+                return (
+                  <button
+                    key={s.name}
+                    type="button"
+                    className={`wishlist-chip ${selected ? "chip-selected" : ""}`}
+                    onClick={() =>
+                      setSelectedStations((prev) =>
+                        selected
+                          ? prev.filter((n) => n !== s.name)
+                          : [...prev, s.name]
+                      )
+                    }
+                  >
+                    {selected && "✓ "}
+                    {s.name}
+                  </button>
+                );
+              })}
+              <button
+                type="button"
+                className="wishlist-chip"
+                style={{ fontStyle: "italic" }}
+                onClick={() => setSelectedStations([])}
+              >
+                Clear all
+              </button>
+            </div>
+          )}
         </div>
-      </div>
+      )}
 
-      <div className="form-row">
+      {/* Row 4: Budget + Guests + Cost pill */}
+      <div className="form-row form-row-budget">
         <div className="field">
           <label>Max £/night</label>
           <input
@@ -277,69 +325,16 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
           />
         </div>
 
-        <div className="field">
-          {numNights > 0 && (
+        {numNights > 0 && (
+          <div className="field field-pill">
             <span className="nights-badge">
-              {numNights} night{numNights !== 1 ? "s" : ""} · max £
-              {maxPrice * numNights} total
+              {numNights} night{numNights !== 1 ? "s" : ""} · max £{maxPrice * numNights} total
             </span>
-          )}
-        </div>
+          </div>
+        )}
       </div>
 
-      {/* Station picker — only when "Popular stations" is unchecked */}
-      {!popularOnly && stationsList.length > 0 && (
-        <div className="wishlist-section">
-          <button
-            type="button"
-            className="wishlist-toggle"
-            onClick={() => setShowStations(!showStations)}
-          >
-            Stations ({selectedStations.length || "All"}/{stationsList.length})
-            {selectedStations.length > 0 && (
-              <span className="wishlist-preview">
-                {selectedStations.join(", ")}
-              </span>
-            )}
-            <span className="wishlist-arrow">{showStations ? "\u25B2" : "\u25BC"}</span>
-          </button>
-
-          {showStations && (
-            <div className="wishlist-grid">
-              {stationsList.map((s) => {
-                const selected = selectedStations.includes(s.name);
-                return (
-                  <button
-                    key={s.name}
-                    type="button"
-                    className={`wishlist-chip ${selected ? "chip-selected" : ""}`}
-                    onClick={() =>
-                      setSelectedStations((prev) =>
-                        selected
-                          ? prev.filter((n) => n !== s.name)
-                          : [...prev, s.name]
-                      )
-                    }
-                  >
-                    {selected && "\u2713 "}
-                    {s.name}
-                  </button>
-                );
-              })}
-              <button
-                type="button"
-                className="wishlist-chip"
-                style={{ fontStyle: "italic" }}
-                onClick={() => setSelectedStations([])}
-              >
-                Clear all
-              </button>
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Amenity Wishlist */}
+      {/* Row 5: Amenities */}
       <div className="wishlist-section">
         <button
           type="button"
@@ -376,6 +371,7 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
         )}
       </div>
 
+      {/* Row 6: Search */}
       <button
         type="submit"
         disabled={!ready || loading || !checkIn || !checkOut}
