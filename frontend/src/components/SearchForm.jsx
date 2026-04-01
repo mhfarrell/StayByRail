@@ -36,6 +36,7 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
   const [checkOut, setCheckOut] = useState("");
   const [maxPrice, setMaxPrice] = useState(100);
   const [adults, setAdults] = useState(2);
+  const [children, setChildren] = useState(0);
   const [popularOnly, setPopularOnly] = useState(true);
   const [wishlist, setWishlist] = useState([]);
   const [showAmenities, setShowAmenities] = useState(false);
@@ -115,6 +116,7 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
     if (initialValues.check_out) setCheckOut(initialValues.check_out);
     if (initialValues.max_price) setMaxPrice(initialValues.max_price);
     if (initialValues.adults) setAdults(initialValues.adults);
+    if (initialValues.children) setChildren(Number(initialValues.children));
     if (initialValues.popular_only != null) setPopularOnly(initialValues.popular_only);
     appliedInitial.current = true;
   }, [cities, initialValues]);
@@ -148,6 +150,7 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
       check_out: checkOut,
       max_price: maxPrice,
       adults,
+      children,
       popular_only: popularOnly,
     };
     if (selectedStations.length === 1) {
@@ -195,7 +198,22 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
             ))}
           </select>
         </div>
+      </div>
 
+      <div className="form-row">
+        <div className="field checkbox-field">
+          <label>
+            <input
+              type="checkbox"
+              checked={popularOnly}
+              onChange={(e) => { setPopularOnly(e.target.checked); setSelectedStations([]); }}
+            />
+            Popular stations only
+          </label>
+        </div>
+      </div>
+
+      <div className="form-row">
         <div className="field">
           <label>Check-in</label>
           <input
@@ -238,7 +256,7 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
         </div>
 
         <div className="field">
-          <label>Guests</label>
+          <label>Adults</label>
           <input
             type="number"
             value={adults}
@@ -248,15 +266,15 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
           />
         </div>
 
-        <div className="field checkbox-field">
-          <label>
-            <input
-              type="checkbox"
-              checked={popularOnly}
-              onChange={(e) => { setPopularOnly(e.target.checked); setSelectedStations([]); }}
-            />
-            Popular stations
-          </label>
+        <div className="field">
+          <label>Children</label>
+          <input
+            type="number"
+            value={children}
+            onChange={(e) => setChildren(Number(e.target.value))}
+            min={0}
+            max={6}
+          />
         </div>
 
         <div className="field">

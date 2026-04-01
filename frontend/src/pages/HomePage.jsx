@@ -71,7 +71,7 @@ function HomePage() {
         <h2 className="hero-title">Find hotels near train stations</h2>
         <p className="hero-subtitle">
           Compare prices from Google Hotels, Booking.com, and TripAdvisor across
-          52 cities in 6 countries \u2014 sorted by walking distance to the platform.
+          52 cities in 6 countries — sorted by walking distance to the platform.
         </p>
         <Link to="/search" className="hero-cta">Search Hotels</Link>
       </section>

@@ -38,6 +38,8 @@ function Footer() {
           &copy; 2026 StayByRail &nbsp;&middot;&nbsp;
           <Link to="/privacy" className="footer-privacy-link">Privacy Policy</Link>
           &nbsp;&middot;&nbsp;
+          <Link to="/terms" className="footer-privacy-link">Terms of Service</Link>
+          &nbsp;&middot;&nbsp;
           <a href="mailto:hello@staybyrail.co.uk" className="footer-privacy-link">hello@staybyrail.co.uk</a>
         </div>
       </div>

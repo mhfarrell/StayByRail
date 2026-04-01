@@ -26,6 +26,7 @@ function SearchPage() {
     check_out: searchParams.get("check_out"),
     max_price: searchParams.get("max_price") ? Number(searchParams.get("max_price")) : null,
     adults: searchParams.get("adults") ? Number(searchParams.get("adults")) : null,
+    children: searchParams.get("children") ? Number(searchParams.get("children")) : null,
     popular_only: searchParams.get("popular_only") === "true" ? true : searchParams.get("popular_only") === "false" ? false : null,
   });
 

@@ -143,3 +143,34 @@ select {
   color: var(--accent-red);
   margin-bottom: 1.5rem;
 }
+
+/* ---- Cookie consent banner ---- */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.9rem 1.5rem;
+  background: var(--bg-header);
+  color: var(--text-primary);
+  border-top: 1px solid var(--border);
+  font-size: 0.88rem;
+  flex-wrap: wrap;
+}
+.cookie-text { margin: 0; }
+.cookie-link { color: var(--accent); text-decoration: underline; }
+.cookie-accept {
+  padding: 0.45rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}

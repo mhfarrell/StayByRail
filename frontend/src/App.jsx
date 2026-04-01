@@ -10,6 +10,8 @@ import HowItWorksPage from "./pages/HowItWorksPage";
 import CoveragePage from "./pages/CoveragePage";
 import FaqPage from "./pages/FaqPage";
 import PrivacyPage from "./pages/PrivacyPage";
+import TermsPage from "./pages/TermsPage";
+import CookieConsent from "./components/CookieConsent";
 import GuidesIndexPage from "./pages/GuidesIndexPage";
 import GuidePage from "./pages/GuidePage";
 import TravelGuidePage from "./pages/TravelGuidePage";
@@ -98,6 +100,7 @@ function App() {
             <Route path="/coverage" element={<CoveragePage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
             <Route path="/guides" element={<GuidesIndexPage />} />
             <Route path="/guides/:slug" element={<GuidePage />} />
             <Route path="/travel-guide" element={<TravelGuidePage />} />
@@ -121,6 +124,7 @@ function App() {
           </div>
         </aside>
       </div>
+      <CookieConsent />
     </BrowserRouter>
   );
 }

@@ -92,7 +92,7 @@ function GuidePage() {
             loading="lazy"
           />
           <span className="guide-hero-img-caption">
-            {image.caption} \u00B7 via Wikipedia
+            {image.caption} · via Wikipedia
           </span>
         </div>
       )}
@@ -187,7 +187,7 @@ function GuidePage() {
             {tips.map((t, i) => (
               <li key={i} className="guide-tip-item">
                 <span className="guide-tip-text">{t.tip}</span>
-                <span className="guide-tip-author">\u2014 {t.name}</span>
+                <span className="guide-tip-author">— {t.name}</span>
               </li>
             ))}
           </ul>

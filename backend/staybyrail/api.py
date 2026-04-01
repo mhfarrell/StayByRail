@@ -73,7 +73,7 @@ def _filter_by_price(properties, max_price, bucketed_price):
 # Source 1: SerpAPI Google Hotels (aggregates Booking, Expedia, Agoda, etc.)
 # ---------------------------------------------------------------------------
 
-def _serpapi_search(query, check_in, check_out, max_price, currency, adults, sort_by=None, api_key_override=None):
+def _serpapi_search(query, check_in, check_out, max_price, currency, adults, sort_by=None, children=0, api_key_override=None):
     """Single SerpAPI Google Hotels search call with price-bucket caching."""
     api_key = api_key_override or os.environ.get("SERPAPI_KEY", "")
     if not api_key:
@@ -93,6 +93,9 @@ def _serpapi_search(query, check_in, check_out, max_price, currency, adults, sor
         "gl": "uk",
         "api_key": api_key,
     }
+    if children > 0:
+        # SerpAPI expects comma-separated ages; assume age 8 for each child
+        params["children"] = ",".join(["8"] * children)
     if sort_by:
         params["sort_by"] = sort_by  # 3=lowest price, 8=highest rating, 13=most reviewed
 
@@ -117,13 +120,13 @@ def _serpapi_search(query, check_in, check_out, max_price, currency, adults, sor
         return []
 
 
-def search_hotels(query, check_in, check_out, max_price=100, currency="GBP", adults=2, api_key_override=None):
+def search_hotels(query, check_in, check_out, max_price=100, currency="GBP", adults=2, children=0, api_key_override=None):
     """
     Search Google Hotels via SerpAPI with multiple sort modes to maximize
     the number of unique results.
     """
     # Primary search (default relevance sort)
-    results = _serpapi_search(query, check_in, check_out, max_price, currency, adults, api_key_override=api_key_override)
+    results = _serpapi_search(query, check_in, check_out, max_price, currency, adults, children=children, api_key_override=api_key_override)
 
     # Skip price-sort if relevance returned nothing (saves an API call)
     if not results:
@@ -131,7 +134,7 @@ def search_hotels(query, check_in, check_out, max_price=100, currency="GBP", adu
 
     # Secondary search: sort by lowest price to catch budget options missed by relevance
     price_sorted = _serpapi_search(
-        query, check_in, check_out, max_price, currency, adults, sort_by=3, api_key_override=api_key_override
+        query, check_in, check_out, max_price, currency, adults, sort_by=3, children=children, api_key_override=api_key_override
     )
 
     # Merge, deduplicating by name
@@ -148,7 +151,7 @@ def search_hotels(query, check_in, check_out, max_price=100, currency="GBP", adu
 # Source 1b: SearchAPI.io Google Hotels (separate quota from SerpAPI)
 # ---------------------------------------------------------------------------
 
-def _searchapi_search(query, check_in, check_out, max_price, currency, adults, sort_by=None):
+def _searchapi_search(query, check_in, check_out, max_price, currency, adults, sort_by=None, children=0):
     """Search Google Hotels via SearchAPI.io — same data, separate free quota."""
     api_key = os.environ.get("SEARCHAPI_KEY", "")
     if not api_key:
@@ -167,6 +170,8 @@ def _searchapi_search(query, check_in, check_out, max_price, currency, adults, s
         "hl": "en",
         "gl": "uk",
     }
+    if children > 0:
+        params["children"] = ",".join(["8"] * children)
     if sort_by:
         params["sort_by"] = sort_by
 
@@ -257,7 +262,7 @@ def get_property_details(property_token, check_in, check_out, currency="GBP", ad
 # Source 2: Booking.com via RapidAPI (optional, needs RAPIDAPI_KEY)
 # ---------------------------------------------------------------------------
 
-def _booking_search(city, check_in, check_out, max_price_gbp, adults, lat, lon, rapidapi_key=None):
+def _booking_search(city, check_in, check_out, max_price_gbp, adults, lat, lon, children=0, rapidapi_key=None):
     """
     Search Booking.com via RapidAPI. Free tier: 500 requests/month.
     Set RAPIDAPI_KEY in .env to enable, or pass per-request.
@@ -285,6 +290,7 @@ def _booking_search(city, check_in, check_out, max_price_gbp, adults, lat, lon, 
         "arrival_date": check_in,
         "departure_date": check_out,
         "adults": adults,
+        "children_qty": children,
         "room_qty": 1,
         "units": "metric",
         "temperature_unit": "c",
@@ -404,7 +410,7 @@ def _tripadvisor_search(query, check_in, check_out, lat, lon, rapidapi_key=None)
 # Combined multi-source search
 # ---------------------------------------------------------------------------
 
-def search_hotels_multi(query, check_in, check_out, max_price=100, currency="GBP", adults=2, lat=None, lon=None, api_key_override=None, rapidapi_key_override=None):
+def search_hotels_multi(query, check_in, check_out, max_price=100, currency="GBP", adults=2, children=0, lat=None, lon=None, api_key_override=None, rapidapi_key_override=None):
     """
     Search all available sources and merge results.
     Uses SerpAPI + SearchAPI.io for Google Hotels, plus Booking.com and
@@ -413,11 +419,11 @@ def search_hotels_multi(query, check_in, check_out, max_price=100, currency="GBP
     all_results = []
 
     # Source 1a: Google Hotels via SerpAPI
-    google = search_hotels(query, check_in, check_out, max_price, currency, adults, api_key_override=api_key_override)
+    google = search_hotels(query, check_in, check_out, max_price, currency, adults, children=children, api_key_override=api_key_override)
     all_results.extend(google)
 
     # Source 1b: Google Hotels via SearchAPI.io (separate quota, deduped below)
-    searchapi = _searchapi_search(query, check_in, check_out, max_price, currency, adults)
+    searchapi = _searchapi_search(query, check_in, check_out, max_price, currency, adults, children=children)
     seen_names = {p.get("name") for p in all_results}
     for p in searchapi:
         if p.get("name") not in seen_names:
@@ -428,7 +434,7 @@ def search_hotels_multi(query, check_in, check_out, max_price=100, currency="GBP
 
     # Source 2: Booking.com via RapidAPI (if key set and we have coordinates)
     if lat and lon and rapid_key:
-        booking = _booking_search("", check_in, check_out, max_price, adults, lat, lon, rapidapi_key=rapid_key)
+        booking = _booking_search("", check_in, check_out, max_price, adults, lat, lon, children=children, rapidapi_key=rapid_key)
         all_results.extend(booking)
 
     # Source 3: TripAdvisor via RapidAPI (if key set)
