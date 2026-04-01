@@ -23,6 +23,8 @@ function AdUnit({ format = "auto", slot, style }) {
 
   useEffect(() => {
     if (!AD_CLIENT) return;
+    // Respect cookie consent — don't load ads if user declined
+    if (localStorage.getItem("staybyrail_cookie_consent") === "declined") return;
     loadAdsense();
 
     // Wait for script to load then push

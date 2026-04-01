@@ -10,8 +10,8 @@ function CookieConsent() {
     }
   }, []);
 
-  const accept = () => {
-    localStorage.setItem("staybyrail_cookie_consent", "accepted");
+  const respond = (choice) => {
+    localStorage.setItem("staybyrail_cookie_consent", choice);
     setVisible(false);
   };
 
@@ -25,8 +25,8 @@ function CookieConsent() {
           <p className="cookie-heading">This site uses cookies</p>
           <p className="cookie-text">
             We use cookies for advertising via Google AdSense and to improve your
-            experience. By continuing to browse you accept our use of cookies.
-            Read our{" "}
+            experience. You can accept or decline non-essential cookies. Read
+            our{" "}
             <Link to="/privacy" className="cookie-link">
               Privacy Policy
             </Link>{" "}
@@ -34,8 +34,11 @@ function CookieConsent() {
           </p>
         </div>
         <div className="cookie-actions">
-          <button className="cookie-accept" onClick={accept}>
-            Accept cookies
+          <button className="cookie-decline" onClick={() => respond("declined")}>
+            Decline
+          </button>
+          <button className="cookie-accept" onClick={() => respond("accepted")}>
+            Accept
           </button>
         </div>
       </div>

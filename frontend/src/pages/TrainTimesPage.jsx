@@ -194,20 +194,6 @@ function TrainTimesPage() {
             <strong>Tip:</strong> {countryData.tips}
           </div>
 
-          {/* Live departures — coming soon */}
-          {(selectedCountry === "United Kingdom" || selectedCountry === "Japan") && (
-            <div className="transit-departures">
-              <h4 className="transit-dep-heading">Live Departures{selectedCity ? ` — ${selectedCity}` : ""}</h4>
-              <div className="transit-coming-soon">
-                <span className="transit-coming-badge">Coming Soon</span>
-                <p className="transit-coming-text">
-                  Real-time departure boards for {selectedCountry === "Japan" ? "Japanese" : "UK"} stations are
-                  on the way. We're integrating with {selectedCountry === "Japan" ? "Japan's ODPT open data platform" : "National Rail's Darwin system"} to
-                  bring you live times, platform numbers, and delay alerts directly on this page.
-                </p>
-              </div>
-            </div>
-          )}
         </div>
       )}
 

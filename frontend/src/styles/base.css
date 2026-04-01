@@ -210,6 +210,8 @@ select {
 .cookie-actions {
   flex-shrink: 0;
   align-self: center;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .cookie-accept {
@@ -223,6 +225,24 @@ select {
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s;
+}
+
+.cookie-decline {
+  padding: 0.6rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+
+.cookie-decline:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
 }
 
 .cookie-accept:hover {
@@ -239,6 +259,7 @@ select {
     padding: 1.2rem;
   }
   .cookie-icon { text-align: center; }
-  .cookie-actions { align-self: stretch; }
-  .cookie-accept { width: 100%; padding: 0.75rem; }
+  .cookie-actions { align-self: stretch; flex-direction: row; }
+  .cookie-decline { flex: 1; padding: 0.75rem; }
+  .cookie-accept { flex: 1; padding: 0.75rem; }
 }
