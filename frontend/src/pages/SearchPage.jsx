@@ -24,6 +24,7 @@ function SearchPage() {
     line: searchParams.get("line"),
     check_in: searchParams.get("check_in"),
     check_out: searchParams.get("check_out"),
+    currency: searchParams.get("currency") || null,
     max_price: searchParams.get("max_price") ? Number(searchParams.get("max_price")) : null,
     adults: searchParams.get("adults") ? Number(searchParams.get("adults")) : null,
     children: searchParams.get("children") ? Number(searchParams.get("children")) : null,

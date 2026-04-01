@@ -2,6 +2,16 @@ import { useState, useEffect, useRef } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+const CURRENCIES = [
+  { code: "GBP", symbol: "£", label: "GBP (£)" },
+  { code: "USD", symbol: "$", label: "USD ($)" },
+  { code: "EUR", symbol: "€", label: "EUR (€)" },
+  { code: "JPY", symbol: "¥", label: "JPY (¥)" },
+  { code: "THB", symbol: "฿", label: "THB (฿)" },
+  { code: "AUD", symbol: "A$", label: "AUD (A$)" },
+  { code: "CAD", symbol: "C$", label: "CAD (C$)" },
+];
+
 const AMENITY_OPTIONS = [
   "Fridge",
   "Free Wi-Fi",
@@ -36,6 +46,7 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
   const [showStations, setShowStations] = useState(false);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
+  const [currency, setCurrency] = useState("GBP");
   const [maxPrice, setMaxPrice] = useState(100);
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
@@ -125,6 +136,7 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
     if (initialValues.line) setLine(initialValues.line);
     if (initialValues.check_in) setStartDate(parseDate(initialValues.check_in));
     if (initialValues.check_out) setEndDate(parseDate(initialValues.check_out));
+    if (initialValues.currency) setCurrency(initialValues.currency);
     if (initialValues.max_price) setMaxPrice(initialValues.max_price);
     if (initialValues.adults) setAdults(initialValues.adults);
     if (initialValues.children) setChildren(Number(initialValues.children));
@@ -157,6 +169,7 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
       line,
       check_in: checkIn,
       check_out: checkOut,
+      currency,
       max_price: maxPrice,
       adults,
       children,
@@ -293,14 +306,23 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
 
       {/* Row 4: Budget + Guests + Cost pill */}
       <div className="form-row form-row-budget">
+        <div className="field field-currency">
+          <label>Currency</label>
+          <select value={currency} onChange={(e) => setCurrency(e.target.value)}>
+            {CURRENCIES.map((c) => (
+              <option key={c.code} value={c.code}>{c.label}</option>
+            ))}
+          </select>
+        </div>
+
         <div className="field">
-          <label>Max £/night</label>
+          <label>Max {CURRENCIES.find((c) => c.code === currency)?.symbol || "£"}/night</label>
           <input
             type="number"
             value={maxPrice}
             onChange={(e) => setMaxPrice(Number(e.target.value))}
             min={10}
-            max={500}
+            max={99999}
           />
         </div>
 
@@ -329,7 +351,7 @@ function SearchForm({ cities, onSearch, loading, ready, initialValues }) {
         {numNights > 0 && (
           <div className="field field-pill">
             <span className="nights-badge">
-              {numNights} night{numNights !== 1 ? "s" : ""} · max £{maxPrice * numNights} total
+              {numNights} night{numNights !== 1 ? "s" : ""} · max {CURRENCIES.find((c) => c.code === currency)?.symbol || "£"}{maxPrice * numNights} total
             </span>
           </div>
         )}

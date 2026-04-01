@@ -455,7 +455,11 @@ button[type="submit"]:disabled {
     min-width: auto;
   }
 
-  /* Row 4: budget fields equal, pill auto-sized */
+  /* Row 4: budget fields equal, currency + pill compact */
+  .form-row-budget .field-currency {
+    flex: 0 0 auto;
+    min-width: 110px;
+  }
   .form-row-budget .field-pill {
     flex: 0 0 auto;
     min-width: auto;
