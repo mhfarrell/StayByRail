@@ -48,7 +48,7 @@ function GuidesIndexPage() {
   return (
     <div className="page-content">
       <PageMeta
-        title="City Rail &amp; Hotel Guides \u2014 StayByRail"
+        title="City Rail & Hotel Guides — StayByRail"
         description="In-depth guides to finding hotels near train and metro stations in Tokyo, London, Paris, Osaka, Barcelona, Bangkok, Berlin, Kyoto, Madrid, Birmingham, and Edinburgh."
       />
       <h2 className="page-heading" style={{ textAlign: "center" }}>City Rail &amp; Hotel Guides</h2>
