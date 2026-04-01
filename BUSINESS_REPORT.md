@@ -167,3 +167,68 @@ The beautiful thing is both are passive once set up. You don't fulfil orders, ha
 2. Extending cache TTL aggressively for popular routes
 3. Encouraging users to bring their own API keys (already built in)
 4. Only upgrading API plans when you have revenue to cover them
+
+---
+
+## Conclusion — What to Realistically Expect
+
+### Right now (Month 1–2, pre-approval)
+
+**Revenue: £0.** AdSense and affiliates are pending. The site earns nothing until those are live. Costs are also £0 so there's no bleed.
+
+### Months 2–4 (AdSense approved, affiliates live, organic trickle)
+
+Realistically you'll see **50–300 monthly visitors** from organic search in this window. The site ranks for "StayByRail" already but won't rank for competitive terms like "hotels near train stations" without backlinks and time. Most early traffic will come from any Reddit/social sharing you do.
+
+| Source | Estimate |
+|--------|----------|
+| AdSense | £2–£10/month |
+| Affiliates | £5–£20/month (1–2 bookings if lucky) |
+| **Total** | **£7–£30/month** |
+| Costs | £0 (free tiers hold at this level) |
+
+This is coffee money. The point of this phase is validation — are real people using the tool and clicking through to book? If yes, everything scales from here.
+
+### Months 4–9 (SEO kicking in, guides indexing)
+
+Google takes 3–6 months to properly rank content pages. Your 11 city guides, FAQ, travel guides, and 25+ indexed pages will start appearing for long-tail queries like "hotels near Shinjuku Station" and "where to stay near Paris Gare du Nord". This is where organic traffic starts compounding.
+
+| Source | Estimate |
+|--------|----------|
+| Monthly visitors | 500–2,000 |
+| AdSense | £15–£100/month |
+| Affiliates | £40–£180/month |
+| **Total** | **£55–£280/month** |
+| Costs | £0–£50 (may need SerpAPI Basic if usage spikes) |
+| **Net** | **£55–£230/month** |
+
+### Months 9–18 (established, compounding)
+
+With consistent content (a few new guides per quarter), backlinks from travel communities, and maturing domain authority, 2,000–10,000 monthly visitors is achievable for a well-maintained niche travel tool.
+
+| Source | Estimate |
+|--------|----------|
+| Monthly visitors | 2,000–10,000 |
+| AdSense | £100–£700/month |
+| Affiliates | £160–£800/month |
+| **Total** | **£260–£1,500/month** |
+| Costs | £60–£250 |
+| **Net** | **£200–£1,250/month** |
+
+### The honest truth
+
+**Most niche sites take 6–12 months to reach £200+/month.** The travel/hotel niche is competitive but your angle (station proximity) is genuinely unique — no one else does this. That specificity is your edge.
+
+The realistic 12-month target with moderate effort (a few hours per month maintaining content, sharing on travel forums, adding the odd new city): **£150–£500/month net passive income.**
+
+The upside scenario with active SEO work (writing station-specific blog posts, building backlinks, getting listed on travel resource pages): **£500–£1,500/month by month 12–18.**
+
+Neither of these requires quitting your day job or spending money you don't have. The site runs itself once the content exists and the affiliate links are wired up. Your main ongoing "cost" is the occasional hour writing a new guide or checking that the APIs haven't changed.
+
+### What to do this week
+
+1. **Apply for AdSense** — the site is ready, don't wait
+2. **Sign up for Booking.com Affiliate Partner Programme** — takes 1–2 weeks to approve
+3. **Submit sitemap to Google Search Console** — accelerates indexing
+4. **Share the Tokyo and London guides** on r/JapanTravel and r/london — these are genuinely useful posts, not spam
+5. **Wait** — SEO is a slow burn, but it compounds. The work is done; now let Google do its job
