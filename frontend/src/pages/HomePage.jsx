@@ -48,7 +48,7 @@ function HomePage() {
   return (
     <>
       <PageMeta
-        title="StayByRail \u2014 Find Hotels Near Train Stations"
+        title="StayByRail Find Hotels Near Train Stations"
         description="Compare hotels near train and metro stations across 52 cities in 6 countries. Real-time prices from Google Hotels, Booking.com, and TripAdvisor."
         schema={{
           "@context": "https://schema.org",
