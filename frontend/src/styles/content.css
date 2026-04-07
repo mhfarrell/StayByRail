@@ -410,6 +410,298 @@ a.content-city-card {
 }
 
 /* ============================================================
+   Homepage — Featured Destinations (the highlight module)
+   ============================================================ */
+
+.home-destinations {
+  margin-top: 3rem;
+}
+
+.home-destinations-head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.home-destinations-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.home-destinations-sub {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.home-city-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+a.home-city-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-city-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-city-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: var(--bg-hover);
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.home-city-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0) 40%, rgba(15, 23, 42, 0.75) 100%);
+  pointer-events: none;
+}
+
+.home-city-country {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #f8fafc;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(6px);
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+}
+
+.home-city-body {
+  padding: 1.1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-top: 3px solid var(--accent-blue);
+}
+
+.home-city-card[data-accent="red"]    .home-city-body { border-top-color: var(--accent-red); }
+.home-city-card[data-accent="blue"]   .home-city-body { border-top-color: var(--accent-blue); }
+.home-city-card[data-accent="purple"] .home-city-body { border-top-color: #8b5cf6; }
+.home-city-card[data-accent="green"]  .home-city-body { border-top-color: var(--accent-green); }
+.home-city-card[data-accent="orange"] .home-city-body { border-top-color: var(--accent-orange); }
+.home-city-card[data-accent="teal"]   .home-city-body { border-top-color: #14b8a6; }
+
+.home-city-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.home-city-line {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.home-city-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.home-city-meta {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.home-city-cta {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+}
+
+.home-destinations-foot {
+  text-align: center;
+  margin-top: 1.75rem;
+}
+
+.home-browse-all {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  text-decoration: none;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.home-browse-all:hover {
+  border-color: var(--border-hover);
+  color: var(--text-heading);
+}
+
+@media (hover: hover) {
+  .home-city-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    box-shadow: var(--card-shadow), 0 10px 24px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* ============================================================
+   Homepage — Compact How It Works strip
+   ============================================================ */
+
+.home-how {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.home-how-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.home-how-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--amenity-bg);
+  color: var(--accent-blue);
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-how-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 0.2rem;
+}
+
+.home-how-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* ============================================================
+   Homepage — Explore more link bar
+   ============================================================ */
+
+.home-explore {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.home-explore-link {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.home-explore-link:hover {
+  color: var(--text-heading);
+  border-color: var(--border-hover);
+  background: var(--bg-card);
+}
+
+/* ---- Tablet ---- */
+@media (min-width: 600px) {
+  .home-city-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-destinations-title {
+    font-size: 2rem;
+  }
+
+  .home-how {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+}
+
+/* ---- Desktop ---- */
+@media (min-width: 1000px) {
+  .home-destinations {
+    margin-top: 4rem;
+  }
+
+  .home-city-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .home-destinations-title {
+    font-size: 2.25rem;
+  }
+
+  .home-destinations-sub {
+    font-size: 1rem;
+  }
+}
+
+/* ---- Wide desktop ---- */
+@media (min-width: 1300px) {
+  .home-city-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ============================================================
    Wide desktop — 1200px+: 4-column for countries
    ============================================================ */
 

@@ -1,26 +1,32 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
+import { cityGuides } from "../data/cityGuides";
 
-const CITIES = [
-  { city: "Tokyo", accent: "red", guide: "tokyo", wiki: "Tokyo", text: "Explore Japan's capital via the iconic Yamanote Line, which loops through major hubs like Shinjuku, Shibuya, and Tokyo Station." },
-  { city: "London", accent: "blue", guide: "london", wiki: "London", text: "Navigate the Tube and find hotels near Underground stations across all zones. Central, Victoria, or Piccadilly line stations put you minutes from everything." },
-  { city: "Paris", accent: "purple", guide: "paris", wiki: "Paris", text: "Stay near Metro stations in the City of Light and reach the Eiffel Tower, Louvre, and Montmartre without relying on taxis." },
-  { city: "Berlin", accent: "green", guide: "berlin", wiki: "Berlin", text: "Find hotels along the U-Bahn and S-Bahn networks in Germany's capital. Efficient transport connects the Brandenburg Gate, Museum Island, and East Side Gallery." },
-  { city: "Barcelona", accent: "orange", guide: "barcelona", wiki: "Barcelona", text: "Hotels near Metro stops in Catalonia's vibrant capital put you within easy reach of the Sagrada Familia, Las Ramblas, and the Gothic Quarter." },
-  { city: "Bangkok", accent: "teal", guide: "bangkok", wiki: "Bangkok", text: "Stay near BTS Skytrain and MRT stations to avoid Bangkok's legendary traffic. The Sukhumvit line passes through the main hotel districts." },
-  { city: "Osaka", accent: "red", guide: "osaka", wiki: "Osaka", text: "Budget-friendly stays near Midosuji Line stations make Osaka an ideal base for exploring Kansai. Dotonbori street food is a walk from Namba Station." },
-  { city: "Kyoto", accent: "purple", guide: "kyoto", wiki: "Kyoto", text: "Traditional ryokan and modern hotels cluster near Karasuma Line stations. Staying near Kyoto Station gives you direct Shinkansen access." },
-  { city: "Madrid", accent: "blue", guide: "madrid", wiki: "Madrid", text: "Spain's capital boasts one of Europe's most extensive metro systems. Hotels near Sol or Gran Via stations place you at the heart of the city." },
-  { city: "Edinburgh", accent: "green", guide: "edinburgh", wiki: "Edinburgh", text: "Scotland's historic capital is a rail gateway to the Highlands. Waverley and Haymarket stations sit at the centre of the city's best hotel areas." },
-];
+// Featured cities for the homepage — pulled live from the guide data so the
+// headlines and meta stay in sync with the guide pages themselves.
+const FEATURED_ACCENTS = {
+  tokyo: "red", london: "blue", paris: "purple", berlin: "green",
+  barcelona: "orange", bangkok: "teal", osaka: "red", kyoto: "purple",
+  madrid: "blue", edinburgh: "green", birmingham: "orange",
+};
 
-function useCityImages() {
+const FEATURED = cityGuides.map((g) => ({
+  slug: g.slug,
+  city: g.city,
+  country: g.country,
+  heroLine: g.heroLine,
+  stations: g.keyStations?.length || 0,
+  accent: FEATURED_ACCENTS[g.slug] || "blue",
+  wiki: g.wikipedia || g.city,
+}));
+
+function useCityImages(list) {
   const [images, setImages] = useState({});
 
   useEffect(() => {
-    CITIES.forEach(({ city, wiki }) => {
-      const key = `sbr_home3_${city}`;
+    list.forEach(({ city, wiki }) => {
+      const key = `sbr_home4_${city}`;
       const cached = sessionStorage.getItem(key);
       if (cached) {
         setImages((prev) => ({ ...prev, [city]: cached }));
@@ -37,13 +43,13 @@ function useCityImages() {
         })
         .catch(() => {});
     });
-  }, []);
+  }, [list]);
 
   return images;
 }
 
 function HomePage() {
-  const images = useCityImages();
+  const images = useCityImages(FEATURED);
 
   return (
     <>
@@ -66,6 +72,7 @@ function HomePage() {
           }
         }}
       />
+
       {/* ---- Hero ---- */}
       <section className="page-hero">
         <h2 className="hero-title">Find hotels near train stations</h2>
@@ -76,82 +83,84 @@ function HomePage() {
         <Link to="/search" className="hero-cta">Search Hotels</Link>
       </section>
 
-      {/* ---- How It Works ---- */}
-      <section className="content-how-it-works">
-        <h2 className="content-heading">How StayByRail Works</h2>
-        <p className="content-intro">
-          Three simple steps to find the closest hotel to your train station.
-        </p>
-        <div className="content-steps">
-          <div className="content-step-card">
-            <div className="content-step-number">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="2"/>
-              </svg>
-            </div>
-            <h3 className="content-step-title">1. Choose Your City and Line</h3>
-            <p className="content-step-text">
-              Select from 52 cities across Japan, the United Kingdom, France, Germany,
-              Spain, and Thailand. Pick a specific train or metro line and station to
-              search around.
-            </p>
-          </div>
-          <div className="content-step-card">
-            <div className="content-step-number">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="2"/>
-                <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" strokeWidth="2"/>
-                <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-              </svg>
-            </div>
-            <h3 className="content-step-title">2. Set Your Dates and Budget</h3>
-            <p className="content-step-text">
-              Enter your check-in and check-out dates, choose your preferred currency,
-              and optionally set a maximum nightly budget to filter results to your
-              price range.
-            </p>
-          </div>
-          <div className="content-step-card">
-            <div className="content-step-number">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
-            <h3 className="content-step-title">3. Compare Hotels by Distance</h3>
-            <p className="content-step-text">
-              Results are sorted by walking distance to the station. Compare prices
-              from multiple booking platforms side by side, view amenities, and book
-              directly through your preferred site.
-            </p>
-          </div>
+      {/* ---- Popular Destinations — the featured module ---- */}
+      <section className="home-destinations">
+        <div className="home-destinations-head">
+          <h2 className="home-destinations-title">Featured City Guides</h2>
+          <p className="home-destinations-sub">
+            Hand-picked stations, neighbourhood notes, and travel tips for the
+            routes our team knows best.
+          </p>
         </div>
-      </section>
 
-      {/* ---- Popular Destinations ---- */}
-      <section className="content-destinations">
-        <h2 className="content-heading">Popular Destinations</h2>
-        <p className="content-intro">
-          From the high-speed Shinkansen network in Japan to the London Underground,
-          StayByRail covers the most-travelled rail networks in the world.
-        </p>
-        <div className="content-city-grid">
-          {CITIES.map(({ city, accent, guide, text }) => (
-            <Link to={guide ? `/guides/${guide}` : "/search"} className="content-city-card" data-accent={accent} key={city}>
-              {images[city] && (
-                <div className="content-city-img" style={{ backgroundImage: `url(${images[city]})` }} />
-              )}
-              <div className="content-city-body">
-                <h3 className="content-city-name">{city}</h3>
-                <p className="content-city-text">{text}</p>
+        <div className="home-city-grid">
+          {FEATURED.map(({ slug, city, country, heroLine, stations, accent }) => (
+            <Link
+              to={`/guides/${slug}`}
+              className="home-city-card"
+              data-accent={accent}
+              key={slug}
+            >
+              <div
+                className="home-city-img"
+                style={images[city] ? { backgroundImage: `url(${images[city]})` } : undefined}
+              >
+                <span className="home-city-country">{country}</span>
+              </div>
+              <div className="home-city-body">
+                <h3 className="home-city-name">{city}</h3>
+                <p className="home-city-line">{heroLine}</p>
+                <div className="home-city-foot">
+                  <span className="home-city-meta">
+                    {stations > 0 ? `${stations} key stations` : "Guide"}
+                  </span>
+                  <span className="home-city-cta">View guide →</span>
+                </div>
               </div>
             </Link>
           ))}
         </div>
+
+        <div className="home-destinations-foot">
+          <Link to="/guides" className="home-browse-all">
+            Browse all city guides →
+          </Link>
+        </div>
       </section>
+
+      {/* ---- Compact how-it-works strip ---- */}
+      <section className="home-how">
+        <div className="home-how-item">
+          <span className="home-how-num">1</span>
+          <div>
+            <h3 className="home-how-title">Pick a station</h3>
+            <p className="home-how-text">Choose a city and train or metro line to search around.</p>
+          </div>
+        </div>
+        <div className="home-how-item">
+          <span className="home-how-num">2</span>
+          <div>
+            <h3 className="home-how-title">Compare live prices</h3>
+            <p className="home-how-text">Real-time rates from Google Hotels, Booking.com, and TripAdvisor.</p>
+          </div>
+        </div>
+        <div className="home-how-item">
+          <span className="home-how-num">3</span>
+          <div>
+            <h3 className="home-how-title">Book direct</h3>
+            <p className="home-how-text">Sorted by walking distance. Book through whichever platform you trust.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ---- Explore more strip ---- */}
+      <nav className="home-explore" aria-label="More StayByRail pages">
+        <Link to="/travel-guide" className="home-explore-link">Best times to travel</Link>
+        <Link to="/coverage" className="home-explore-link">Coverage map</Link>
+        <Link to="/train-times" className="home-explore-link">Train times &amp; passes</Link>
+        <Link to="/how-it-works" className="home-explore-link">How it works</Link>
+        <Link to="/faq" className="home-explore-link">FAQ</Link>
+      </nav>
     </>
   );
 }

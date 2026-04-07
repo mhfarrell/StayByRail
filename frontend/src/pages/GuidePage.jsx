@@ -131,13 +131,42 @@ function GuidePage() {
       {guide.keyStations.length > 0 && (
         <div className="guide-stations-block">
           <h3 className="guide-stations-heading">Key Stations for Hotel Searches</h3>
+          <p className="guide-stations-intro">
+            Hand-picked by the StayByRail team based on transport connections,
+            walking access to landmarks, and hotel density.
+          </p>
           <ul className="guide-stations-list">
-            {guide.keyStations.map((s) => (
-              <li key={s.name} className="guide-station-item">
-                <span className="guide-station-name">{s.name}</span>
-                <span className="guide-station-reason">{s.reason}</span>
-              </li>
-            ))}
+            {guide.keyStations.map((s) => {
+              const isPick = /stay ?by ?rail pick/i.test(s.reason);
+              const reason = isPick
+                ? s.reason.replace(/^stay ?by ?rail pick\s*[—\-–:]\s*/i, "")
+                : s.reason;
+              return (
+                <li
+                  key={s.name}
+                  className={`guide-station-item${isPick ? " guide-station-pick" : ""}`}
+                >
+                  <div className="guide-station-head">
+                    <span className="guide-station-name">{s.name}</span>
+                    {isPick && (
+                      <span className="guide-station-badge" title="StayByRail editor's pick">
+                        <svg
+                          width="11"
+                          height="11"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7-5.4-4.7 7.1-.6z" />
+                        </svg>
+                        Editor's Pick
+                      </span>
+                    )}
+                  </div>
+                  <span className="guide-station-reason">{reason}</span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
@@ -180,18 +209,29 @@ function GuidePage() {
       )}
 
       {/* Tourist Tips */}
-      <div className="guide-tips-block">
-        <h3 className="guide-stations-heading">Tourist Tips</h3>
+      <div className={`guide-tips-block${tips && tips.length > 0 ? " guide-tips-populated" : ""}`}>
+        <h3 className="guide-stations-heading">
+          {tips && tips.length > 0
+            ? `Traveller tips for ${guide.city}`
+            : `Share a tip about ${guide.city}`}
+        </h3>
         {tips && tips.length > 0 && (
           <ul className="guide-tips-list">
             {tips.map((t, i) => (
               <li key={i} className="guide-tip-item">
-                <span className="guide-tip-text">{t.tip}</span>
+                <span className="guide-tip-text">&ldquo;{t.tip}&rdquo;</span>
                 <span className="guide-tip-author">— {t.name}</span>
               </li>
             ))}
           </ul>
         )}
+        {!tips || tips.length === 0 ? (
+          <p className="guide-tips-empty">
+            Been to {guide.city} by rail? Drop a tip for the next traveller —
+            station recommendations, quiet neighbourhoods, or small wins that
+            saved you time.
+          </p>
+        ) : null}
         <TipForm city={guide.city} onSubmitted={loadTips} />
       </div>
 
