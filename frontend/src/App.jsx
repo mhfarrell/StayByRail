@@ -1,22 +1,25 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AdUnit from "./components/AdUnit";
 import HomePage from "./pages/HomePage";
-import SearchPage from "./pages/SearchPage";
-import AboutPage from "./pages/AboutPage";
-import HowItWorksPage from "./pages/HowItWorksPage";
-import CoveragePage from "./pages/CoveragePage";
-import FaqPage from "./pages/FaqPage";
-import PrivacyPage from "./pages/PrivacyPage";
-import TermsPage from "./pages/TermsPage";
 import CookieConsent from "./components/CookieConsent";
-import GuidesIndexPage from "./pages/GuidesIndexPage";
-import GuidePage from "./pages/GuidePage";
-import TravelGuidePage from "./pages/TravelGuidePage";
-import TrainTimesPage from "./pages/TrainTimesPage";
-import NotFoundPage from "./pages/NotFoundPage";
+
+// Heavy/secondary routes are code-split so the initial bundle stays small.
+// HomePage is eager-loaded because it's the LCP target for organic traffic.
+const SearchPage = lazy(() => import("./pages/SearchPage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const HowItWorksPage = lazy(() => import("./pages/HowItWorksPage"));
+const CoveragePage = lazy(() => import("./pages/CoveragePage"));
+const FaqPage = lazy(() => import("./pages/FaqPage"));
+const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
+const TermsPage = lazy(() => import("./pages/TermsPage"));
+const GuidesIndexPage = lazy(() => import("./pages/GuidesIndexPage"));
+const GuidePage = lazy(() => import("./pages/GuidePage"));
+const TravelGuidePage = lazy(() => import("./pages/TravelGuidePage"));
+const TrainTimesPage = lazy(() => import("./pages/TrainTimesPage"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 import "./styles/variables.css";
 import "./styles/base.css";
 import "./styles/layout.css";
@@ -92,21 +95,23 @@ function App() {
         </aside>
 
         <main className="app">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/search" element={<SearchPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/how-it-works" element={<HowItWorksPage />} />
-            <Route path="/coverage" element={<CoveragePage />} />
-            <Route path="/faq" element={<FaqPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/terms" element={<TermsPage />} />
-            <Route path="/guides" element={<GuidesIndexPage />} />
-            <Route path="/guides/:slug" element={<GuidePage />} />
-            <Route path="/travel-guide" element={<TravelGuidePage />} />
-            <Route path="/train-times" element={<TrainTimesPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
+          <Suspense fallback={<div className="route-loading"><div className="spinner" /></div>}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/search" element={<SearchPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/how-it-works" element={<HowItWorksPage />} />
+              <Route path="/coverage" element={<CoveragePage />} />
+              <Route path="/faq" element={<FaqPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/terms" element={<TermsPage />} />
+              <Route path="/guides" element={<GuidesIndexPage />} />
+              <Route path="/guides/:slug" element={<GuidePage />} />
+              <Route path="/travel-guide" element={<TravelGuidePage />} />
+              <Route path="/train-times" element={<TrainTimesPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </Suspense>
 
           <div className="ad-banner">
             <AdUnit format="horizontal" style={{ width: "100%", height: 90 }} />
