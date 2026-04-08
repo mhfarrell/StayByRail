@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { cityGuides } from "../data/cityGuides";
+import { journalArticles } from "../data/journal";
 
 // Featured cities for the homepage — pulled live from the guide data so the
 // headlines and meta stay in sync with the guide pages themselves.
@@ -153,11 +154,52 @@ function HomePage() {
         </div>
       </section>
 
+      {/* ---- Latest from the journal ---- */}
+      {journalArticles.length > 0 && (
+        <section className="home-journal">
+          <div className="home-journal-head">
+            <h2 className="home-journal-title">Latest from the journal</h2>
+            <Link to="/journal" className="home-journal-all">
+              All articles &rarr;
+            </Link>
+          </div>
+          <div className="home-journal-grid">
+            {[...journalArticles]
+              .sort((a, b) => b.datePublished.localeCompare(a.datePublished))
+              .slice(0, 3)
+              .map((a) => (
+                <Link
+                  key={a.slug}
+                  to={`/journal/${a.slug}`}
+                  className="home-journal-card"
+                >
+                  {a.category && (
+                    <span className="home-journal-tag">{a.category}</span>
+                  )}
+                  <h3 className="home-journal-card-title">{a.title}</h3>
+                  {a.subtitle && (
+                    <p className="home-journal-card-sub">{a.subtitle}</p>
+                  )}
+                  <span className="home-journal-card-date">
+                    {new Date(a.datePublished + "T00:00:00").toLocaleDateString("en-GB", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                    })}
+                  </span>
+                </Link>
+              ))}
+          </div>
+        </section>
+      )}
+
       {/* ---- Explore more strip ---- */}
       <nav className="home-explore" aria-label="More StayByRail pages">
         <Link to="/travel-guide" className="home-explore-link">Best times to travel</Link>
+        <Link to="/itineraries" className="home-explore-link">Itineraries</Link>
+        <Link to="/passes" className="home-explore-link">Transport passes</Link>
         <Link to="/coverage" className="home-explore-link">Coverage map</Link>
-        <Link to="/train-times" className="home-explore-link">Train times &amp; passes</Link>
+        <Link to="/train-times" className="home-explore-link">Train times</Link>
         <Link to="/how-it-works" className="home-explore-link">How it works</Link>
         <Link to="/faq" className="home-explore-link">FAQ</Link>
       </nav>

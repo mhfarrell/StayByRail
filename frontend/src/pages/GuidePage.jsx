@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { getGuide, cityGuides } from "../data/cityGuides";
 import { getFaqs } from "../data/guideFaqs";
+import { getPriceBands, guidePriceBands } from "../data/guidePriceBands";
 import stationsData from "../data/stations.json";
 import { useCityData } from "../hooks/useCityData";
 
@@ -102,6 +103,8 @@ function GuidePage() {
   if (!guide) return <Navigate to="/guides" replace />;
 
   const faqs = getFaqs(guide.slug);
+  const priceBands = getPriceBands(guide.slug);
+  const priceNotedAt = guidePriceBands.notedAt;
   const canonical = `https://staybyrail.co.uk/guides/${guide.slug}`;
   const schema = {
     "@context": "https://schema.org",
@@ -267,6 +270,46 @@ function GuidePage() {
           </div>
         ))}
       </div>
+
+      {priceBands && priceBands.length > 0 && (
+        <div className="guide-stations-block">
+          <h3 className="guide-stations-heading">
+            Neighbourhood at a glance
+          </h3>
+          <p className="guide-stations-intro">
+            Typical advance-booking rates for a double room on a neutral
+            mid-week night, sampled in{" "}
+            {new Date(priceNotedAt + "-01T00:00:00").toLocaleDateString(
+              "en-GB",
+              { month: "long", year: "numeric" }
+            )}
+            . Prices vary by season and event calendar — use these as a
+            rough orientation, not a quote.
+          </p>
+          <div className="guide-priceband-wrap">
+            <table className="guide-priceband-table">
+              <thead>
+                <tr>
+                  <th>Area</th>
+                  <th>Budget</th>
+                  <th>Mid</th>
+                  <th>Premium</th>
+                </tr>
+              </thead>
+              <tbody>
+                {priceBands.map((p) => (
+                  <tr key={p.area}>
+                    <td>{p.area}</td>
+                    <td>{p.budget}</td>
+                    <td>{p.mid}</td>
+                    <td>{p.premium}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
 
       {guide.keyStations.length > 0 && (
         <div className="guide-stations-block">
