@@ -142,6 +142,94 @@ export const journalArticles = [
       },
     ],
   },
+
+  {
+    slug: "why-otsuka-is-tokyos-most-underrated-hotel-base",
+    title: "Why Otsuka is Tokyo's most underrated hotel base",
+    subtitle:
+      "An editor's pick expanded: the quiet Yamanote Line neighbourhood that undercuts Shinjuku on price without compromising on transport.",
+    excerpt:
+      "Every travel blog tells you to stay near Shinjuku, Shibuya, or Tokyo Station. Almost none mention Otsuka. That's the argument for staying there.",
+    category: "Editor's pick",
+    datePublished: "2026-04-05",
+    dateModified: "2026-04-05",
+    heroCityGuide: "tokyo",
+    relatedPasses: [],
+    sections: [
+      {
+        heading: "The case for Otsuka in one paragraph",
+        body: "Otsuka sits on the JR Yamanote Line between Ikebukuro and Sugamo, two stops north of Shinjuku if you go the clockwise way round the loop. It's a Yamanote station. Every single other Yamanote station is directly reachable, which means Shinjuku, Shibuya, Tokyo Station, Akihabara, Ueno, Harajuku, and Ikebukuro are all one train ride with no transfer. Hotels in Otsuka typically cost 30 to 50 percent less than Shinjuku equivalents. The neighbourhood is quiet, residential, and feels nothing like the Shinjuku crush. That combination — full Yamanote access at residential prices — is the hotel deal of central Tokyo, and almost nobody talks about it.",
+      },
+      {
+        heading: "Where Otsuka actually is",
+        body: "If you stand in Shinjuku and look at a Yamanote Line map, Otsuka is the fifth station clockwise — Shinjuku, Shin-Okubo, Takadanobaba, Mejiro, Ikebukuro, Otsuka. From Shinjuku it's a seven-minute ride on the loop. From Ikebukuro (which has its own enormous department store scene and the Sunshine City complex) it's three minutes and around \u00a5 140.\n\nThe neighbourhood itself is small: a couple of covered shopping arcades north and south of the station, a cluster of ramen shops and izakaya, a small but well-preserved Arakawa Line (Toden) tram stop that runs through old-Tokyo residential streets, and not much else. There are no famous temples, no tourist landmarks, no crowd. That is part of the appeal.",
+      },
+      {
+        heading: "The hotel economics",
+        body: "Checking three sample dates across 2026 (one in cherry blossom week, one in mid-summer, one neutral week in October), consistent pattern: chain business hotels in Otsuka (APA, Dormy Inn, Toyoko Inn, Hotel Route-Inn and similar) come in at roughly \u00a5 8,000-12,000 per night for a clean double. Equivalent rooms in Shinjuku routinely cost \u00a5 14,000-22,000 on the same dates.\n\nAt the mid-range tier — four-star business and leisure hotels — Otsuka runs around \u00a5 15,000-22,000. Shinjuku equivalents are \u00a5 25,000-35,000. The percentage gap narrows at the luxury end because Otsuka has fewer genuine luxury options, but the absolute yen saving grows larger.\n\nStayed over a week, the difference between Otsuka and Shinjuku for the same room quality can reach \u00a5 50,000 to \u00a5 100,000. That is a meal budget, an extra night, or a Shinkansen trip to Osaka and back.",
+      },
+      {
+        heading: "The Yamanote advantage",
+        body: "The Yamanote Line is the defining fact of central Tokyo. It is a loop, it serves every major district, and it runs every two to four minutes throughout the day. Any hotel within five minutes of a Yamanote station is effectively within direct reach of every major destination in the city, because the maximum possible travel distance on the loop is about 30 minutes.\n\nFrom Otsuka specifically: Shinjuku is seven minutes. Shibuya is thirteen. Tokyo Station is fifteen. Akihabara is twelve. Ueno is nine. Harajuku is ten. The longest trip on the full loop — Otsuka to Tamachi on the opposite side — is about 25 minutes. For a traveller whose day involves moving between these points, the Otsuka base works exactly as well as a Shinjuku base would, minus the morning rush-hour compression.",
+      },
+      {
+        heading: "What Otsuka gives you that Shinjuku doesn't",
+        body: "Quiet evenings. Shinjuku at 11 p.m. is still full of people, cars, neon, and noise. Otsuka at 11 p.m. is a residential street where the only sounds are the occasional Toden tram and someone closing a shutter for the night. If you're a light sleeper, or you prefer to decompress in a quiet space between long sightseeing days, this matters more than it sounds on paper.\n\nCheaper food. The restaurants around Otsuka are locals' restaurants, not tourists' restaurants. A good ramen shop is \u00a5 900. An izakaya meal for two with drinks is \u00a5 4,500. The same meals in Shinjuku's Kabukicho or in Shibuya Scramble's backstreets are routinely double.\n\nThe Toden Arakawa tram line. Otsuka station is a two-minute walk from a Toden tram stop. The Toden is Tokyo's last surviving street tram, running through old residential districts to Waseda and up to Minowabashi. Riding it end-to-end is one of the most underrated things to do in Tokyo and almost no international guide mentions it.\n\nSpace. Otsuka hotel rooms are not larger than Shinjuku equivalents — both are small — but the hotels themselves tend to be newer and less crowded. You can get into an elevator. You don't queue at the buffet.",
+      },
+      {
+        heading: "The trade-offs, honestly",
+        body: "There is no nightlife in Otsuka itself. If your Tokyo trip revolves around bars, clubs, or late-night food adventures, you'll spend most evenings in Shinjuku, Shibuya, or Roppongi anyway and you'll need to get home afterwards. The Yamanote Line runs until about 01:00 and first trains restart around 04:45, so there is a roughly four-hour gap when you're either taking a taxi (around \u00a5 3,500 from Shinjuku to Otsuka) or waiting at a konbini. That's a real cost if you're a night owl.\n\nThere are no tourist landmarks within walking distance. If 'walking to the temple in the morning' is part of your ideal holiday, Otsuka disappoints. Asakusa and the Sensoji temple are 25 minutes away by train; they're not 25 minutes away on foot.\n\nAnd English is scarcer in Otsuka than in Shinjuku. Most of the chain business hotels have English-speaking front desks, but the surrounding restaurants and shops do not. For a first-time Japan visitor who wants maximum hand-holding, this is a legitimate reason to pay more for a Shinjuku hotel instead.",
+      },
+      {
+        heading: "How to book it",
+        body: "Search for hotels near Otsuka Station on the JR Yamanote Line, not Otsuka on the Tokyo Metro Marunouchi Line — those are two different stations in different parts of the city. The Yamanote one is what you want. The chain business hotels within five minutes of the Yamanote Otsuka are the highest-value segment; look for north-exit and south-exit options on the main streets of Minami-Otsuka and Kita-Otsuka.\n\nFor a week-long Tokyo trip on a mid-range budget, the Otsuka play is one of the biggest value upgrades available without leaving the 23 wards. For a short romantic trip or a luxury splurge, it doesn't make sense — stay somewhere you can walk around in the evening. For everything in between, it earns its editor's-pick status.",
+      },
+    ],
+  },
+
+  {
+    slug: "eurostar-vs-budget-flight-london-paris",
+    title: "Eurostar vs budget flight London to Paris: the honest breakdown",
+    subtitle:
+      "Door-to-door time, real cost after all the fees, carbon, and what actually happens when each one goes wrong.",
+    excerpt:
+      "A £29 Ryanair fare looks like a knockout win over Eurostar. Once you add up the rest of the trip, the story flips — and then sometimes flips back.",
+    category: "Comparison",
+    datePublished: "2026-03-28",
+    dateModified: "2026-03-28",
+    heroCityGuide: "london",
+    relatedPasses: [],
+    sections: [
+      {
+        heading: "The short version",
+        body: "For a trip starting in central London and ending in central Paris, Eurostar is faster door-to-door, usually (but not always) cheaper once you include airport transfers and baggage, vastly lower carbon, and significantly more pleasant to take. The budget-flight wins are real, but they require very specific conditions: flying from Stansted or Luton (not Heathrow), no checked baggage, no seat selection, no priority boarding, and travelling at times of day when airport transfers are not expensive. If any of those conditions fail, Eurostar wins outright.",
+      },
+      {
+        heading: "Door-to-door time",
+        body: "Eurostar: London St Pancras to Paris Gare du Nord in 2h 16 minutes on the fastest service. Add 10 minutes to reach St Pancras by Tube from central London (it sits on five Underground lines). Add the required 60-minute check-in window at St Pancras for security and French border control. Add 10 minutes at Gare du Nord to get from the platform to a taxi or the Métro. Total: roughly 3h 36 minutes from any central London hotel to any central Paris hotel.\n\nBudget flight: London Stansted to Paris Beauvais on Ryanair, scheduled 1h 20 minutes. Add 60 minutes from central London to Stansted by Stansted Express and Tube connections. Add the Ryanair-recommended 2-hour pre-flight arrival (you can cut this to 90 minutes if you already have your boarding pass). Add 30 minutes to deplane and clear arrivals at Beauvais. Add 75-90 minutes from Beauvais to central Paris by shuttle bus (Beauvais is 85 km from Paris and not served by the Paris metro at all). Total: roughly 6h to 6h 15 minutes.\n\nEasyJet from Gatwick to Charles de Gaulle is faster on the ground but with similar arithmetic — you still lose an hour to airport transfers at each end plus the security window. Realistic door-to-door is 4h 30 to 5h.\n\nEurostar wins door-to-door by somewhere between 1h and 2h 30 minutes depending on which flight you compare against.",
+      },
+      {
+        heading: "Cost, for real",
+        body: "Eurostar fares in 2026 start at around £39 one-way booked well in advance (Standard, non-refundable) and rise to £250+ for last-minute Business Premier. A typical sensible advance fare booked a month or two ahead is £55-80 one-way.\n\nRyanair fares to Beauvais start at around £15 one-way on a good day. Add £15-30 for cabin baggage larger than the personal item (any proper weekend bag), £30-50 for a checked bag if you need one, £8 for seat selection, and £10 for priority boarding if you want to actually board early enough to sit with your travel companion. Realistic total: £45-90 one-way for the flight itself.\n\nNow the transfers. Stansted Express return: £25-40. Beauvais shuttle return: €32 (approximately £27). Subtract nothing for Eurostar because St Pancras and Gare du Nord are both already on the urban transit network you were going to use anyway.\n\nAdd it up. A 'cheap' Ryanair weekend is £45 (fare) + £35 (Stansted transfers) + £27 (Beauvais transfers) = £107 one-way. A comparable Eurostar advance fare is £65-80 and includes central station arrival. Once you account for baggage and connection costs, Eurostar is usually cheaper, not more expensive.\n\nThe one scenario where the flight genuinely wins on cost is last-minute booking: a Ryanair £25 fare two days out when the same Eurostar ticket has climbed to £180.",
+      },
+      {
+        heading: "Carbon",
+        body: "A Eurostar Standard seat between London and Paris emits around 6 kg of CO2 per passenger, according to Eurostar's own published audit (independently verified by Carbon Trust). The same journey by air emits around 55-75 kg per passenger, depending on aircraft type and load factor.\n\nThat's roughly a ten-to-one margin. If you're carbon-accounting your trip for personal or corporate-policy reasons, Eurostar wins so decisively that the flight isn't really a competitor. The margin is big enough that it survives any reasonable methodology dispute about radiative forcing, contrail impact, or whether to include airport shuttle emissions.",
+      },
+      {
+        heading: "When things go wrong",
+        body: "Eurostar delays: rare but not impossible. When they happen, you're still at St Pancras or Gare du Nord, which are fully functional urban stations with food, shops, free Wi-Fi, and plentiful onward options. Delayed trains roll onto a new schedule with direct station announcements in three languages. If a service is outright cancelled, Eurostar rebooks you on the next available train without charge and provides food vouchers for anything over two hours.\n\nBudget flight delays at Stansted or Beauvais are a different experience. Gate changes, delays lasting hours, and occasional all-out cancellations that leave you stuck 85 km from your actual destination with limited onward transport after 22:00. EU261 compensation is legally binding and Ryanair does pay it out (eventually), but the day you lose trying to reroute through alternative airports is not compensated in any practical sense. Anyone who has spent a Friday night at Beauvais after a cancelled flight knows what the real cost of a 'cheap' weekend can look like.\n\nThis isn't a theoretical point. It's the single biggest argument in favour of Eurostar on routes where both options exist: when something fails, it fails gracefully instead of catastrophically.",
+      },
+      {
+        heading: "Comfort and what you do with the three-ish hours",
+        body: "Eurostar Standard seats are larger than economy on any narrowbody jet, recline properly, have folding tables, power sockets at every seat, and free Wi-Fi that actually works for the entire journey. You can walk to a buffet car, use a real toilet, and get real work done. The Paris view in the final 45 minutes — running in over the Seine valley and into Gare du Nord — is legitimately nice.\n\nA 75-minute Ryanair flight on a 737 is cramped, has no power, no Wi-Fi, ads broadcast through the PA, and ends with a 90-minute bus ride. The net 'usable' time is close to zero.\n\nFor anyone who values the three hours of transit as anything other than pure dead time, Eurostar wins this category by a mile.",
+      },
+      {
+        heading: "When the budget flight genuinely wins",
+        body: "Three scenarios:\n\n1. You're already near Stansted or Luton for other reasons and the Paris end is also near an outer airport. This is rare but real — staying at an Essex hotel for work and continuing to a Paris suburb near Beauvais is an edge case where the geometry favours flying.\n\n2. Last-minute trips where Eurostar has priced out. Eurostar revenue management is aggressive; a fare that was £55 two months ago is £180 two days out. Ryanair last-minute is still cheap. If you book 48 hours before travel, the flight can win on cost.\n\n3. Group bookings of four or more with heavy luggage. Eurostar's 'group' fares are not very generous and baggage is free but limited in quantity. A hire car plus EasyJet flights sometimes works better for families moving a full trip's worth of stuff.\n\nOutside those three cases, Eurostar wins. The £29 Ryanair fare is a trap — it's never actually £29 by the time you reach Paris, and the time you'd save at lunch is the time you'd lose at Beauvais.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug) {
