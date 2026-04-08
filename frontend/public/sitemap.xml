@@ -31,6 +31,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -49,6 +54,11 @@
     <loc>https://staybyrail.co.uk/train-times</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/authors/matt-farrell</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://staybyrail.co.uk/guides</loc>

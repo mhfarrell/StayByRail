@@ -127,7 +127,13 @@ function GuidePage() {
         "description": guide.metaDescription,
         "url": canonical,
         ...(guide.author
-          ? { "author": { "@type": "Person", "name": guide.author } }
+          ? {
+              "author": {
+                "@type": "Person",
+                "name": guide.author,
+                "url": "https://staybyrail.co.uk/authors/matt-farrell",
+              },
+            }
           : {}),
         ...(guide.updatedAt
           ? {
@@ -192,7 +198,14 @@ function GuidePage() {
                 </>
               )}
               {guide.updatedAt && guide.author && " \u00B7 "}
-              {guide.author && <>by {guide.author}</>}
+              {guide.author && (
+                <>
+                  by{" "}
+                  <Link to="/authors/matt-farrell" className="about-link">
+                    {guide.author}
+                  </Link>
+                </>
+              )}
             </p>
           )}
         </div>

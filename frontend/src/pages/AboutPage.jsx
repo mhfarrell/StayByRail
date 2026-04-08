@@ -71,10 +71,14 @@ function AboutPage() {
         <div className="about-block">
           <h3 className="about-block-heading">Built by Matt Farrell</h3>
           <p className="about-block-text">
-            StayByRail was designed and built by Matt Farrell, a software developer
-            based in the UK. The idea came from personal travel frustration — finding
-            hotels near specific stations always meant cross-referencing map apps with
-            booking sites manually. StayByRail automates that process.
+            StayByRail was designed and built by{" "}
+            <Link to="/authors/matt-farrell" className="about-link">
+              Matt Farrell
+            </Link>
+            , a software developer based in the UK. The idea came from personal
+            travel frustration — finding hotels near specific stations always
+            meant cross-referencing map apps with booking sites manually.
+            StayByRail automates that process.
           </p>
           <p className="about-block-text">
             Get in touch or follow the project on{" "}
