@@ -65,8 +65,15 @@ function useCityImages(list) {
   return images;
 }
 
+// Cards shown in the horizontal-scroll carousel on the homepage. ~4 are
+// visible at a time on desktop; the rest are reached by swiping /
+// scrolling right. We only put 10 cards in here so the carousel stays
+// curated — the full list is one tap away on the "Browse more" card at
+// the end of the scroll row.
+const FEATURED_CAROUSEL = FEATURED.slice(0, 10);
+
 function HomePage() {
-  const images = useCityImages(FEATURED);
+  const images = useCityImages(FEATURED_CAROUSEL);
 
   return (
     <>
@@ -110,8 +117,12 @@ function HomePage() {
           </p>
         </div>
 
-        <div className="home-city-grid">
-          {FEATURED.map(({ slug, city, country, heroLine, stations, accent }) => (
+        <div
+          className="home-city-grid home-city-grid-scroll"
+          role="region"
+          aria-label="Featured city guides"
+        >
+          {FEATURED_CAROUSEL.map(({ slug, city, country, heroLine, stations, accent }) => (
             <Link
               to={`/guides/${slug}`}
               className="home-city-card"
@@ -136,11 +147,18 @@ function HomePage() {
               </div>
             </Link>
           ))}
-        </div>
-
-        <div className="home-destinations-foot">
-          <Link to="/guides" className="home-browse-all">
-            Browse all city guides →
+          {/* Final card in the scroll row — escape hatch to the full
+              city-guides index for anyone who wants to see all 23. */}
+          <Link to="/guides" className="home-city-card home-city-more">
+            <div className="home-city-more-body">
+              <span className="home-city-more-kicker">Browse more</span>
+              <span className="home-city-more-title">All city guides</span>
+              <span className="home-city-more-sub">
+                {cityGuides.length} cities across Japan, the UK, France,
+                Germany, Spain, and Thailand.
+              </span>
+              <span className="home-city-cta">See all →</span>
+            </div>
           </Link>
         </div>
       </section>
