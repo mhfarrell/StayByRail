@@ -1141,6 +1141,60 @@ export const cityGuides = [
     updatedAt: "2026-04",
     author: "Matt Farrell",
   },
+  {
+    slug: "phuket",
+    city: "Phuket",
+    country: "Thailand",
+    heroLine: "Thailand's largest island — no rail, no metro, just a cluster of beach towns where which one you pick decides your whole trip",
+    metaTitle: "Where to Stay in Phuket — StayByRail Guide",
+    metaDescription:
+      "An honest guide to choosing a base on Phuket island. No trains and no metro — just 11 distinct beach and town areas, each with a different price, crowd, and vibe.",
+    intro:
+      "Phuket is a 540-square-kilometre island on Thailand's Andaman coast. Unlike most cities covered by StayByRail, it has no metro, no urban rail, no trams, and no commuter trains. The nearest train station is at Surat Thani on the mainland, hours away by bus and ferry. We've included Phuket because picking the right area to stay in is the single most consequential decision a first-time visitor makes — and because 'near which station' is the wrong question to ask here. This guide is about picking the right beach or town instead.",
+    sections: [
+      {
+        heading: "Why Phuket Has No Rail (And How You'll Get Around)",
+        body: "Phuket is an island, connected to the mainland by a single bridge at the north-eastern tip (Sarasin Bridge). There is no rail service on the island and none is planned. The State Railway of Thailand's nearest station is Surat Thani on the mainland, from which you'd take a bus and ferry — a journey that only makes sense if you're specifically doing a long overland trip rather than flying.\n\nTransport on the island itself is some combination of: songthaews (blue shared trucks, cheap but slow and with fixed loose routes), local buses (for the airport and between Phuket Town and major beaches), Grab and Bolt rideshare apps (the easiest option for most tourists), private taxis (overpriced, and the 'taxi mafia' at some beach taxi ranks is a well-known annoyance), tuk-tuks (tiny and for short distances only, negotiate the fare before getting in), and rental scooters (cheap but dangerous — Phuket has one of Thailand's worst road accident rates for tourists).\n\nThe short version: pick your beach or town carefully, stay there most of the time, and use Grab for the occasional longer journey. Any attempt to 'do all the beaches' from a single base involves more hours in traffic than you expect.",
+      },
+      {
+        heading: "The Main Beaches: Patong, Karon, Kata",
+        body: "The west coast of Phuket is where almost every beach visitor stays. The three main beaches run consecutively north to south and have very different characters.\n\n**Patong Beach** is the biggest, loudest, and most built-up. The main strip — Bangla Road — is Thailand's most famous nightlife street outside Bangkok, a dense corridor of beer bars, clubs, ladyboy shows, and go-go bars that runs until 02:00 every night. The beach itself is a wide curve of sand that's fine during the day but crowded in season. Hotels range from party hostels through every mid-tier international brand to serious luxury at the Amari and Novotel. Patong is the right choice if nightlife is the point of your trip, and the wrong choice for almost anything else.\n\n**Karon Beach**, immediately south, is Patong's quieter neighbour — the same long beach but without the nightlife chaos. Hotels are mostly mid-range chains and larger resort complexes set back from the beach road. Good families-and-couples choice.\n\n**Kata Beach**, further south still, is smaller, more boutique, and has the best beach atmosphere of the three. Kata Noi (Little Kata), the next bay south, is the quietest and most premium. For a first-time visitor who wants 'Phuket beach' without the Patong madness, Kata or Kata Noi is the best pick.",
+      },
+      {
+        heading: "The Quieter Beaches: Surin, Bang Tao, Kamala, Nai Harn",
+        body: "North of Patong, the west coast has a string of quieter, more upmarket beaches.\n\n**Surin Beach** is probably the best-looking beach on the island — a curved bay of fine white sand, framed by casuarina trees. It's home to several of the island's most expensive resorts (Amanpuri, The Surin, Twinpalms) and a cluster of beach clubs. Historically had restaurants directly on the sand; these were cleared by the military government in 2014, leaving the beach quieter than it used to be. Best for a luxury trip.\n\n**Bang Tao Beach** is a 6 km stretch of sand north of Surin, anchored by the Laguna Phuket resort complex (five integrated resort hotels around a lagoon system). This is the 'upscale all-inclusive' side of Phuket — the hotels here are large, manicured, and isolated from the more chaotic parts of the island. Good for families who want zero logistics.\n\n**Kamala Beach**, between Patong and Surin, is the middle option: less built-up than Patong, less isolated than Bang Tao. A cluster of mid-range hotels and one standout luxury (Keemala in the hills behind). A good picked base for a medium-budget trip.\n\n**Nai Harn Beach**, at the southern tip of the island, is a smaller quieter bay with one excellent hotel (The Nai Harn, formerly Le Royal Meridien) and very little else. For travellers who want a full escape from the Phuket crowd without going all the way to a separate island, Nai Harn is the best answer.",
+      },
+      {
+        heading: "Phuket Town and Old Phuket Town",
+        body: "Most beach-focused visitors never see Phuket Town, which is the administrative and historical capital of the island on the east (not west) coast. That's a mistake — Old Phuket Town is one of the best-preserved Sino-Portuguese historic quarters in South-East Asia, with a colourful streetscape of 19th-century shophouses along Thalang Road, some of the best street food on the island, and a Sunday Walking Street market that's worth the trip from any of the beaches.\n\nHotels in Old Phuket Town are mostly boutique restorations of the old shophouses. Prices are significantly lower than the west coast beaches and the atmosphere is genuinely different — more local, more historic, and more interesting after dark than any of the beach strips. For a visitor who wants culture alongside beach time, staying one or two nights in Old Phuket Town and the rest on the west coast is a stronger plan than seven nights on the beach alone.",
+      },
+      {
+        heading: "Practical Tips for Phuket",
+        body: "Phuket International Airport is at the north of the island. From the airport, the cheapest route to the major beaches is the airport bus to Phuket Town and then a second bus to your beach — but it's slow (2-3 hours) and involves changes. Most travellers take a Grab or a pre-booked private transfer. Patong is about 45 minutes from the airport in light traffic, Kata about an hour. Bang Tao is much closer, about 25 minutes — which is part of the attraction of that area.\n\nThe high season is November through April, with the peak being Christmas-New Year week and Chinese New Year (prices triple). The low ('green') season is May through October, which is the Southwest monsoon — warm, regular afternoon rain, rougher sea on the west coast (swimming warning flags are common), but quieter and 40-60 percent cheaper. If you can tolerate rain, low-season Phuket is one of the best value tropical trips in Asia.\n\nThe best day trip from Phuket is the boat excursion to Phi Phi islands and Maya Bay. Book a smaller speedboat tour rather than the big 'flagship' boats — the big ones cram 100+ people into the same snorkel spots. The early morning departure times (07:00-08:00) avoid both the crowds and the midday sun.",
+      },
+    ],
+    keyStations: [
+      { name: "Patong Beach", reason: "Largest beach resort, Bangla Road nightlife, highest hotel density, best for party trips" },
+      { name: "Kata Beach", reason: "StayByRail pick — best all-round beach base without Patong's nightlife chaos, walkable atmosphere, mid-range hotel cluster" },
+      { name: "Old Phuket Town", reason: "Sino-Portuguese historic quarter with boutique shophouse hotels and the Sunday Walking Street" },
+      { name: "Karon Beach", reason: "Mid-range family-and-couples beach, quieter neighbour to Patong" },
+      { name: "Bang Tao Beach", reason: "Laguna resort complex, large manicured all-inclusives, closest major beach to the airport" },
+      { name: "Surin Beach", reason: "Upscale west coast beach, home to several of Phuket's most expensive resorts" },
+    ],
+    searchCity: "Phuket",
+    links: [
+      { label: "Phuket.com", url: "https://www.phuket.com/", desc: "Independent Phuket travel guide" },
+      { label: "Tourism Authority of Thailand", url: "https://www.tourismthailand.org/", desc: "Official Thailand tourism info" },
+      { label: "Grab", url: "https://www.grab.com/th/en/", desc: "Rideshare app — essential for getting around Phuket" },
+      { label: "Phi Phi Ferry", url: "https://www.phiphiferry.com/", desc: "Phi Phi islands day trip and ferry bookings" },
+    ],
+    wikipedia: "Phuket_Province",
+    lat: 7.8804,
+    lon: 98.3923,
+    countryCode: "TH",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
 ];
 
 export function getGuide(slug) {

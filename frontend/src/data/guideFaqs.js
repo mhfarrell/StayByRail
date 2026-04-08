@@ -512,6 +512,29 @@ export const guideFaqs = {
       a: "Yes, and this is one of the most popular reasons to visit. Elephant Nature Park is the most ethically respected sanctuary — avoid any operator that offers elephant riding, which is widely considered cruel. Book directly with the sanctuary rather than through your hotel, and pick a full-day option rather than half-day. Transport from Chiang Mai is included in the price.",
     },
   ],
+
+  phuket: [
+    {
+      q: "Where should I stay in Phuket for the first time?",
+      a: "For most first-time visitors, Kata Beach is the best all-round answer — a proper beach atmosphere without the Patong nightlife chaos, a cluster of mid-range and upper-mid hotels, and a walkable strip of restaurants. Patong only if nightlife is the point of your trip. Bang Tao for an all-inclusive resort experience near the airport. Surin or Kata Noi for luxury.",
+    },
+    {
+      q: "Does Phuket have any trains or metro?",
+      a: "No. Phuket is an island with no rail service at all. The nearest train station is at Surat Thani on the mainland, hours away by bus and ferry. Most travellers arrive by air into Phuket International Airport and use Grab (the rideshare app), taxis, or hotel transfers to reach their beach.",
+    },
+    {
+      q: "How do I get around Phuket without a car?",
+      a: "Grab or Bolt rideshare apps are the easiest option for most tourists — reliable, priced in the app, no haggling. Songthaews (shared blue pickup trucks) run fixed loose routes between Phuket Town and the major beaches for very cheap fares. Scooter rental is common but Phuket has one of Thailand's highest road accident rates for tourists and we don't recommend it unless you already ride daily at home.",
+    },
+    {
+      q: "When is the best time to visit Phuket?",
+      a: "November through April is the dry high season, with the peak weeks being Christmas-New Year and Chinese New Year (prices triple). May through October is the Southwest monsoon — warm, with regular afternoon rain and rougher seas on the west coast. The low season is 40-60 percent cheaper and much quieter; if you can tolerate rain, it's one of the best value tropical trips in Asia.",
+    },
+    {
+      q: "Is Patong worth visiting or should I avoid it entirely?",
+      a: "Worth visiting for one evening even if you don't stay there — the walk down Bangla Road is a genuine Thailand-tourism experience and there's some good street food. Worth staying there only if you specifically want to be in the middle of the nightlife. For every other type of trip (family, couples, luxury, quiet), stay somewhere else on the west coast and visit Patong on a Grab for one night if curious.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {

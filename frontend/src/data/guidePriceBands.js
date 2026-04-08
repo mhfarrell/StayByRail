@@ -25,6 +25,7 @@ export const guidePriceBands = {
     seville: "EUR",
     nagoya: "JPY",
     chiang_mai: "THB",
+    phuket: "THB",
     london: "GBP",
     birmingham: "GBP",
     manchester: "GBP",
@@ -170,6 +171,12 @@ export const guidePriceBands = {
       { area: "Nimman", budget: "฿ 1,200", mid: "฿ 2,400", premium: "฿ 5,500" },
       { area: "Night Bazaar / riverside", budget: "฿ 1,100", mid: "฿ 2,300", premium: "฿ 6,500+" },
       { area: "Chiang Mai Station", budget: "฿ 700", mid: "฿ 1,300", premium: "฿ 2,800" },
+    ],
+    phuket: [
+      { area: "Patong Beach", budget: "฿ 1,200", mid: "฿ 2,800", premium: "฿ 7,500+" },
+      { area: "Kata / Karon Beach", budget: "฿ 1,400", mid: "฿ 3,200", premium: "฿ 9,000+" },
+      { area: "Old Phuket Town", budget: "฿ 900", mid: "฿ 1,900", premium: "฿ 4,500" },
+      { area: "Surin / Bang Tao", budget: "฿ 2,000", mid: "฿ 5,500", premium: "฿ 18,000+" },
     ],
   },
 };
