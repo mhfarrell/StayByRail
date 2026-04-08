@@ -466,6 +466,29 @@ export const guideFaqs = {
       a: "Summers (June-September) are punishing — regular afternoon highs above 38°C, and the narrow old-town streets offer only partial shade. Semana Santa (Holy Week) and the Feria de Abril immediately after see hotel prices triple and availability vanish. Spring (March, early April, late April after the Feria) and autumn (October-November) are the sweet spot for weather and reasonable pricing.",
     },
   ],
+
+  nagoya: [
+    {
+      q: "Is Nagoya worth stopping in on the Tokaido Shinkansen?",
+      a: "Yes, especially for a day or overnight. Most travellers speed past on the Nozomi between Tokyo and Kyoto, missing one of Japan's great castles (Nagoya-jo with its reconstructed Honmaru Palace), the second-most important Shinto shrine (Atsuta Jingu), and the best launchpad for Takayama, Ise, and the Kiso Valley. A one-night stopover comfortably covers the city centre; two nights lets you do a proper day trip.",
+    },
+    {
+      q: "How fast is the Shinkansen to Nagoya from Tokyo and Kyoto?",
+      a: "From Tokyo, the fastest Nozomi reaches Nagoya in 1h 34 (around ¥11,300 reserved seat). From Kyoto it's 35 minutes, from Shin-Osaka 51 minutes. JR Pass holders can't use the Nozomi but the Hikari is only 10 minutes slower from Tokyo and uses the same pass.",
+    },
+    {
+      q: "Should I stay near Nagoya Station or Sakae?",
+      a: "Nagoya Station for rail-heavy trips with early Shinkansen departures — the Marriott Associa and JR Gate Tower Hotel are directly connected to the platforms. Sakae for eating, walking around, and evening atmosphere. The two are three minutes apart on the Higashiyama subway line, so the choice is more about step-out-of-the-door convenience than actual distance.",
+    },
+    {
+      q: "Can I do Takayama as a day trip from Nagoya?",
+      a: "Yes but barely — the JR Hida limited express takes 2h 15 each way, leaving you about 4-5 hours in Takayama. Enough for the morning market, old town, and Hida Folk Village, but it's a packed day. For onsen relaxation or a proper Alpine walk, stay overnight in Takayama instead.",
+    },
+    {
+      q: "What food is Nagoya famous for?",
+      a: "Three regional specialties. Miso-katsu (pork cutlet in a thick red miso sauce). Tebasaki (sweet-soy chicken wings — Sekai no Yamachan in Sakae is the famous chain). Hitsumabushi (grilled eel served over rice with three different ways to eat it — Atsuta Horaiken near the shrine is the definitive version, with a legendary queue). All three are genuinely different enough from standard Japanese food to make a trip worthwhile.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {

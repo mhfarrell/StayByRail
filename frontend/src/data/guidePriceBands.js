@@ -23,6 +23,7 @@ export const guidePriceBands = {
     marseille: "EUR",
     valencia: "EUR",
     seville: "EUR",
+    nagoya: "JPY",
     london: "GBP",
     birmingham: "GBP",
     manchester: "GBP",
@@ -156,6 +157,12 @@ export const guidePriceBands = {
       { area: "Arenal / riverside", budget: "€ 80", mid: "€ 135", premium: "€ 250+" },
       { area: "Triana (west bank)", budget: "€ 65", mid: "€ 110", premium: "€ 180" },
       { area: "Santa Justa station", budget: "€ 60", mid: "€ 95", premium: "€ 160" },
+    ],
+    nagoya: [
+      { area: "Nagoya Station", budget: "¥ 7,500", mid: "¥ 13,500", premium: "¥ 28,000" },
+      { area: "Sakae / downtown", budget: "¥ 7,000", mid: "¥ 12,000", premium: "¥ 24,000" },
+      { area: "Kanayama", budget: "¥ 6,500", mid: "¥ 11,000", premium: "¥ 20,000" },
+      { area: "Fushimi", budget: "¥ 7,000", mid: "¥ 11,500", premium: "¥ 22,000" },
     ],
   },
 };

@@ -61,7 +61,7 @@ Priority additions (highest search volume first):
 - [x] Marseille (France) — published April 2026.
 - [x] Valencia (Spain) — published April 2026.
 - [x] Seville (Spain) — published April 2026.
-- [ ] Nagoya (Japan — Shinkansen)
+- [x] Nagoya (Japan — Shinkansen) — published April 2026.
 - [x] Yokohama (Japan) — published April 2026.
 - [x] Hiroshima (Japan — huge tourist demand) — published April 2026.
 - [ ] Chiang Mai (Thailand)

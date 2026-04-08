@@ -1035,6 +1035,59 @@ export const cityGuides = [
     updatedAt: "2026-04",
     author: "Matt Farrell",
   },
+  {
+    slug: "nagoya",
+    city: "Nagoya",
+    country: "Japan",
+    heroLine: "Japan's fourth-largest city and the Tokaido Shinkansen's halfway point, with a six-line subway and the best day-trip access to Ise, Takayama, and Magome",
+    metaTitle: "Hotels Near Nagoya Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Nagoya Station, Sakae, and the Nagoya Subway network. Why Nagoya makes an underrated Shinkansen stopover and how to reach Takayama, Ise, and the Kiso Valley by rail.",
+    intro:
+      "Nagoya is Japan's fourth-largest city by population and the central anchor of the Chubu region, halfway between Tokyo and Osaka on the Tokaido Shinkansen. It is one of the most overlooked stops on the Japan rail itinerary: most travellers pass straight through on the bullet train between Kyoto and Tokyo without realising they're missing one of the country's great castles, its most elegant shrine, and the best launchpad for day trips into the Japan Alps. The rail network is compact but dense — Nagoya Station is a major Shinkansen stop and a six-line municipal subway reaches everywhere in the central wards.",
+    sections: [
+      {
+        heading: "Nagoya Station: The Shinkansen Halfway Point",
+        body: "Nagoya is a scheduled stop for all Nozomi, Hikari, and Kodama services on the Tokaido Shinkansen, which makes it the single most accessible city in central Japan by rail. From Tokyo, the fastest Nozomi reaches Nagoya in 1h 34; from Kyoto it's 35 minutes; from Shin-Osaka 51 minutes. Add in the Hokuriku Shinkansen branch via Maibara and the JR Kansai Line to Ise, and Nagoya becomes a node, not a destination, for half the travellers passing through. That's a missed opportunity.\n\nNagoya Station itself is enormous — one of the largest stations in Japan by floor area — and contains two department stores (JR Central Towers and Takashimaya), the JR Gate Tower hotel (one of the best high-rise business hotels in the country), and direct entry to both the Nagoya Subway's Higashiyama Line (yellow) and Sakura-dori Line (red). Hotels within a 5-minute walk of the station include the Marriott Associa (connected directly to the station), the Strings Hotel, and several newer mid-range Mitsui Garden and Richmond properties. For any trip with multiple Shinkansen legs or early-morning departures, Nagoya Station's hotel cluster is the obvious base.",
+      },
+      {
+        heading: "Sakae: The Downtown Core",
+        body: "Sakae, two subway stops east of Nagoya Station on the Higashiyama Line, is the main shopping, dining, and nightlife district of the city. It sits around the Oasis 21 glass-roofed landmark and the Nagoya TV Tower (Japan's oldest TV tower, predating Tokyo Tower), and is flanked by Sakae Hirokoji-dori, the city's main department store boulevard.\n\nHotels in Sakae are a step cheaper than Nagoya Station equivalents and put you in the middle of the evening activity. For a trip that's more about eating and walking around than catching early Shinkansen, Sakae is the better base. The subway connection to Nagoya Station is three minutes on the Higashiyama Line and six minutes on the Meijo Line (which also runs in a loop around the central city, useful for reaching Nagoya Castle from Sakae in under 10 minutes).",
+      },
+      {
+        heading: "Nagoya Castle, Atsuta Shrine, and the Sights",
+        body: "Nagoya Castle is the standout sight in the city — a massive reconstructed donjon set in a park of lawns, cherry trees, and former samurai residences. The original keep was destroyed in WWII; the current structure is a concrete rebuild from 1959, but the Honmaru Palace inside the grounds was painstakingly reconstructed in traditional wood between 2009 and 2018 and is extraordinary. Reach it from Shiyakusho Station on the Meijo Line (one stop from Sakae) or walk 15 minutes from Sakae itself.\n\nAtsuta Shrine, south of the centre, is the second-most important Shinto shrine in Japan after Ise (it's said to house one of the Imperial Regalia, the sword Kusanagi-no-Tsurugi). The shrine sits in a 200,000-square-metre sacred forest and is reached via the Jingu-Nishi or Jingu-mae stations (Meijo Line and Meitetsu Nagoya Line respectively). It's the single most atmospheric shrine visit in the Chubu region, comparable to Meiji Jingu in Tokyo but with a quarter of the tourists.\n\nThe Toyota Commemorative Museum of Industry and Technology, in a restored original Toyoda Loom Works factory near Sako station, is one of the best industrial museums in Japan and genuinely worth a half-day even for visitors with no interest in cars.",
+      },
+      {
+        heading: "Day Trips by Rail from Nagoya",
+        body: "Nagoya's underrated virtue is its access to destinations that are otherwise hard to reach. Four day trips stand out.\n\n**Takayama**, in the Japan Alps, is 2h 15 on the JR Hida limited express from Nagoya Station. Takayama is one of the best-preserved Edo-period towns in Japan, with a morning market, old merchant houses, and the Hida Folk Village museum. A day trip works; an overnight is better for the onsens.\n\n**Ise Jingu**, Japan's holiest Shinto shrine, is 1h 20 from Nagoya on the JR Kansai Line rapid train or 1h 25 on the Kintetsu limited express. Both inner (Naiku) and outer (Geku) shrines are walkable from Iseshi Station. Pair with a visit to the preserved pilgrim town of Oharaimachi.\n\n**Magome and Tsumago**, the two best-preserved post towns on the Nakasendo highway in the Kiso Valley, are 1h 15 to Nakatsugawa on the JR Chuo Line, then a local bus to Magome. The 8 km hike between Magome and Tsumago is one of the most rewarding half-day walks in central Japan.\n\n**Inuyama and the Meiji Mura open-air museum** are 25 minutes by Meitetsu limited express. Inuyama Castle is one of only five castles in Japan designated as a National Treasure, and Meiji Mura is a 100-hectare outdoor museum of relocated Meiji-era buildings.",
+      },
+      {
+        heading: "Practical Tips for Nagoya",
+        body: "Chubu Centrair International Airport is the main air gateway and connects to Nagoya Station via the Meitetsu Airport Line in 28 minutes on the μ-SKY limited express for around ¥1,250. This is one of the fastest and best-value airport-city rail links in Japan, and a strong reason to consider Nagoya as a point of entry or exit from Japan rather than the default of Haneda or Kansai.\n\nFor JR Pass holders, Nagoya is covered in full and all day trips listed above are on JR lines (except Magome's bus leg and the Meitetsu lines, which aren't). For visitors without a JR Pass but staying in the region, the 'Shoryudo Bus Pass' and various Meitetsu/JR Central regional passes can work out cheaper than buying individual tickets. Check which is right for your itinerary before buying a JR Pass by default.\n\nNagoya's food specialties are miso-katsu (pork cutlet in a red miso sauce), tebasaki (sweet-soy chicken wings, best at Sekai no Yamachan in Sakae), and hitsumabushi (grilled eel over rice, the Nagoya variation on unagi). Atsuta Horaiken near the shrine is the definitive hitsumabushi restaurant and worth the queue.",
+      },
+    ],
+    keyStations: [
+      { name: "Nagoya Station", reason: "Tokaido Shinkansen hub, two subway lines, Meitetsu airport link, highest hotel density" },
+      { name: "Sakae", reason: "StayByRail pick — downtown shopping, dining, and nightlife with two subway lines; best evening atmosphere and cheaper than station hotels" },
+      { name: "Kanayama", reason: "Subway + JR interchange, walking distance to Atsuta Shrine, budget hotels" },
+      { name: "Fushimi", reason: "Higashiyama Line between Nagoya Station and Sakae, quiet central base, walking access to the TV Tower and Oasis 21" },
+      { name: "Shiyakusho", reason: "Nagoya Castle's own subway stop on the Meijo Line" },
+    ],
+    searchCity: "Nagoya",
+    links: [
+      { label: "Nagoya Subway", url: "https://www.kotsu.city.nagoya.jp/en/", desc: "Official Nagoya subway and bus info" },
+      { label: "JR Central", url: "https://global.jr-central.co.jp/en/", desc: "Tokaido Shinkansen and JR Central timetables" },
+      { label: "Visit Nagoya", url: "https://www.nagoya-info.jp/en/", desc: "Official Nagoya tourism site" },
+      { label: "Japan-Guide Nagoya", url: "https://www.japan-guide.com/e/e2157.html", desc: "Comprehensive Nagoya travel planning" },
+    ],
+    wikipedia: "Nagoya",
+    lat: 35.1815,
+    lon: 136.9066,
+    countryCode: "JP",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
 ];
 
 export function getGuide(slug) {
