@@ -38,6 +38,7 @@ function Footer() {
             <span className="footer-nav-heading">Resources</span>
             <Link to="/guides" className="footer-nav-link">All city guides</Link>
             <Link to="/journal" className="footer-nav-link">Journal</Link>
+            <Link to="/itineraries" className="footer-nav-link">Itineraries</Link>
             <Link to="/passes" className="footer-nav-link">Transport passes</Link>
             <Link to="/travel-guide" className="footer-nav-link">Best times to travel</Link>
             <Link to="/train-times" className="footer-nav-link">Train times</Link>

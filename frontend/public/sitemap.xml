@@ -91,6 +91,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/itineraries</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/itineraries/3-days-tokyo-yamanote-line</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/itineraries/paris-weekend-from-gare-du-nord</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/itineraries/london-48-hours-from-kings-cross</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/passes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

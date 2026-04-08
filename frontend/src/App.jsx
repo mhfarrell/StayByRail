@@ -26,6 +26,8 @@ const PassesIndexPage = lazy(() => import("./pages/PassesIndexPage"));
 const PassPage = lazy(() => import("./pages/PassPage"));
 const JournalIndexPage = lazy(() => import("./pages/JournalIndexPage"));
 const JournalArticlePage = lazy(() => import("./pages/JournalArticlePage"));
+const ItinerariesIndexPage = lazy(() => import("./pages/ItinerariesIndexPage"));
+const ItineraryPage = lazy(() => import("./pages/ItineraryPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 import "./styles/variables.css";
 import "./styles/base.css";
@@ -123,6 +125,8 @@ function App() {
               <Route path="/passes/:slug" element={<PassPage />} />
               <Route path="/journal" element={<JournalIndexPage />} />
               <Route path="/journal/:slug" element={<JournalArticlePage />} />
+              <Route path="/itineraries" element={<ItinerariesIndexPage />} />
+              <Route path="/itineraries/:slug" element={<ItineraryPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>
