@@ -496,6 +496,44 @@ a.guide-station-name-link:hover {
   line-height: 1.55;
 }
 
+/* ---- Typical journey times (per key station) ---- */
+.guide-station-journeys {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0 0;
+  border-top: 1px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.guide-station-journey {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.guide-station-journey-time {
+  flex: 0 0 auto;
+  min-width: 3.5rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--text-heading);
+  font-size: 0.8rem;
+}
+
+.guide-station-journey-to {
+  flex: 1 1 auto;
+}
+
+.guide-station-journey-via {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+}
+
 /* ---- CTA block ---- */
 .guide-cta-block {
   margin-top: 2.5rem;
@@ -789,12 +827,19 @@ a.guide-station-name-link:hover {
   .guide-station-item {
     flex-direction: row;
     align-items: baseline;
-    gap: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
   }
 
   .guide-station-name {
     min-width: 160px;
     flex-shrink: 0;
+  }
+
+  /* Journey-time list drops to its own row on desktop. */
+  .guide-station-journeys {
+    flex-basis: 100%;
+    margin-top: 0.25rem;
   }
 }
 

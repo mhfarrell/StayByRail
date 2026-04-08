@@ -121,7 +121,7 @@ These are strategic expansions that need backend station data added to `backend/
 ### Structured additions to existing guides
 
 - [x] Add a **"Neighbourhood at a glance"** price-band table to each guide (budget / mid / premium) — done for all 23 guides; data in `guidePriceBands.js`; dated with an "April 2026" timestamp so the numbers are visibly honest.
-- [ ] Add **typical journey times** to each key station (to airport, to main attraction, to other key stations)
+- [x] Add **typical journey times** to each key station — every one of the 120 keyStations across the 23 guides now ships with three journey times (airport, main attraction, another key station). Data lives in a new `frontend/src/data/guideJourneyTimes.js` file keyed by `{guideSlug: {stationName: [{to, minutes, via}]}}`. `GuidePage.jsx` renders them as a small dashed-border sub-list on each station card; on desktop they drop to their own full-width row so the existing "name | reason" two-column layout still works. Phuket entries are marked as taxi journeys since the island has no rail.
 - [x] Add **FAQ schema** to each guide page (5 real Qs per city, feeds rich results) — covered earlier with the `guideFaqs.js` + FAQPage JSON-LD work.
 
 ---

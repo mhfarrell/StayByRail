@@ -4,6 +4,7 @@ import PageMeta from "../components/PageMeta";
 import { getGuide, cityGuides } from "../data/cityGuides";
 import { getFaqs } from "../data/guideFaqs";
 import { getPriceBands, guidePriceBands } from "../data/guidePriceBands";
+import { getJourneyTimes } from "../data/guideJourneyTimes";
 import stationsData from "../data/stations.json";
 import { useCityData } from "../hooks/useCityData";
 
@@ -325,6 +326,7 @@ function GuidePage() {
                 ? s.reason.replace(/^stay ?by ?rail pick\s*[—\-–:]\s*/i, "")
                 : s.reason;
               const slug = stationSlugFor(s.name);
+              const journeys = getJourneyTimes(guide.slug, s.name);
               return (
                 <li
                   key={s.name}
@@ -357,6 +359,23 @@ function GuidePage() {
                     )}
                   </div>
                   <span className="guide-station-reason">{reason}</span>
+                  {journeys && journeys.length > 0 && (
+                    <ul className="guide-station-journeys" aria-label={`Typical journey times from ${s.name}`}>
+                      {journeys.map((j) => (
+                        <li key={j.to} className="guide-station-journey">
+                          <span className="guide-station-journey-time">
+                            {j.minutes === 0 ? "—" : `${j.minutes} min`}
+                          </span>
+                          <span className="guide-station-journey-to">
+                            to {j.to}
+                            {j.via && (
+                              <span className="guide-station-journey-via"> · {j.via}</span>
+                            )}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               );
             })}
