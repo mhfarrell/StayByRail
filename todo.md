@@ -45,8 +45,8 @@ High search volume, low competition, perfect for long-tail SEO. `/passes` index 
 - [x] `/passes/jr-pass` — Japan Rail Pass after the 2023 hike, break-even maths, regional alternatives.
 - [x] `/passes/oyster-card` — Oyster vs contactless, zone caps, Heathrow Express.
 - [x] `/passes/navigo` — Navigo Découverte weekly pass with the Monday-to-Sunday gotcha.
-- [ ] `/passes/eurail` — Eurail Global Pass for multi-country trips
-- [ ] `/passes/bts-rabbit-card` — Bangkok BTS Rabbit card / MRT card
+- [x] `/passes/eurail` — Eurail Global Pass for multi-country trips — published April 2026 with the 2023 reservation-system reality check.
+- [x] `/passes/bts-rabbit-card` — Bangkok BTS Rabbit card / MRT card — published April 2026 with honest buy/skip advice for short tourist trips.
 
 ### Expand city guide coverage
 
@@ -110,19 +110,19 @@ These are strategic expansions that need backend station data added to `backend/
 
 ### Itinerary pages at `/itineraries/:slug`
 
-Highly shareable, link magnets, real travel utility:
+`/itineraries` scaffold is live. Index + article page with Article + TouristTrip JSON-LD, day-by-day schema, related-guide and related-pass sidebars.
 
-- [ ] "3 days in Tokyo using only the Yamanote Line"
-- [ ] "A weekend in Paris from Gare du Nord"
+- [x] "3 days in Tokyo using only the Yamanote Line" — published at `/itineraries/3-days-tokyo-yamanote-line`.
+- [x] "A weekend in Paris from Gare du Nord" — published at `/itineraries/paris-weekend-from-gare-du-nord`.
 - [ ] "Kansai in 5 days: Kyoto, Osaka, Nara, Himeji"
-- [ ] "London in 48 hours from King's Cross"
+- [x] "London in 48 hours from King's Cross" — published at `/itineraries/london-48-hours-from-kings-cross`.
 - [ ] "Backpacking Thailand by train: Bangkok to Chiang Mai"
 
 ### Structured additions to existing guides
 
-- [ ] Add a **"Neighbourhood at a glance"** price-band table to each guide (budget / mid / premium)
+- [x] Add a **"Neighbourhood at a glance"** price-band table to each guide (budget / mid / premium) — done for all 17 guides; data in `guidePriceBands.js`; dated with an "April 2026" timestamp so the numbers are visibly honest.
 - [ ] Add **typical journey times** to each key station (to airport, to main attraction, to other key stations)
-- [ ] Add **FAQ schema** to each guide page (5 real Qs per city, feeds rich results)
+- [x] Add **FAQ schema** to each guide page (5 real Qs per city, feeds rich results) — covered earlier with the `guideFaqs.js` + FAQPage JSON-LD work.
 
 ---
 
