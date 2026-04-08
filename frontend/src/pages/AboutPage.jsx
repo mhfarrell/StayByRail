@@ -70,18 +70,63 @@ function AboutPage() {
 
         <div className="about-block">
           <h3 className="about-block-heading">Built by Matt Farrell</h3>
-          <p className="about-block-text">
-            StayByRail was designed and built by{" "}
-            <Link to="/authors/matt-farrell" className="about-link">
-              Matt Farrell
+          <div className="about-author-row">
+            <Link to="/authors/matt-farrell" className="about-author-avatar" aria-label="Matt Farrell — author page">
+              <span className="about-author-initials">MF</span>
             </Link>
-            , a software developer based in the UK. The idea came from personal
-            travel frustration — finding hotels near specific stations always
-            meant cross-referencing map apps with booking sites manually.
-            StayByRail automates that process.
+            <div className="about-author-body">
+              <p className="about-block-text">
+                StayByRail was designed and built by{" "}
+                <Link to="/authors/matt-farrell" className="about-link">
+                  Matt Farrell
+                </Link>
+                , a software developer based in the UK. The idea came from
+                personal travel frustration — finding hotels near specific
+                stations always meant cross-referencing map apps with booking
+                sites manually. StayByRail automates that process.
+              </p>
+              <p className="about-block-text">
+                Get in touch or follow the project on{" "}
+                <a
+                  href="https://github.com/mhfarrell"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="about-link"
+                >
+                  GitHub
+                </a>{" "}
+                or{" "}
+                <a
+                  href="https://www.linkedin.com/in/matt-h-farrell/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="about-link"
+                >
+                  LinkedIn
+                </a>
+                . Read the full bio on the{" "}
+                <Link to="/authors/matt-farrell" className="about-link">
+                  author page
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="about-block">
+          <h3 className="about-block-heading">Project timeline</h3>
+          <p className="about-block-text">
+            StayByRail was started on <strong>29 March 2026</strong> as a
+            solo side project and shipped to the live domain within the
+            first week. The site has been actively maintained and expanded
+            since — new city guides, journal articles, itineraries, and
+            transport pass explainers are added on a regular cadence, and
+            the station coverage now stands at <strong>597 programmatic
+            landing pages</strong> across 52 cities.
           </p>
           <p className="about-block-text">
-            Get in touch or follow the project on{" "}
+            The code is open source on{" "}
             <a
               href="https://github.com/mhfarrell"
               target="_blank"
@@ -90,16 +135,8 @@ function AboutPage() {
             >
               GitHub
             </a>{" "}
-            or{" "}
-            <a
-              href="https://www.linkedin.com/in/matt-h-farrell/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="about-link"
-            >
-              LinkedIn
-            </a>
-            .
+            — commit history is the most honest record of how the project
+            has evolved.
           </p>
         </div>
 
