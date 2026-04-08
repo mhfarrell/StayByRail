@@ -54,20 +54,59 @@ You have **11 full guides** but data for **52 cities**. Each new full guide = an
 
 Priority additions (highest search volume first):
 
-- [ ] Manchester (UK — has rail data, missing guide)
-- [ ] Munich (Germany — Oktoberfest traffic)
-- [ ] Hamburg (Germany)
-- [ ] Lyon (France — TGV hub)
+- [x] Manchester (UK — has rail data) — published April 2026.
+- [x] Munich (Germany — Oktoberfest traffic) — published April 2026.
+- [x] Hamburg (Germany) — published April 2026.
+- [x] Lyon (France — TGV hub) — published April 2026.
 - [ ] Marseille (France)
 - [ ] Valencia (Spain)
 - [ ] Seville (Spain)
 - [ ] Nagoya (Japan — Shinkansen)
-- [ ] Yokohama (Japan)
-- [ ] Hiroshima (Japan — huge tourist demand)
+- [x] Yokohama (Japan) — published April 2026.
+- [x] Hiroshima (Japan — huge tourist demand) — published April 2026.
 - [ ] Chiang Mai (Thailand)
 - [ ] Phuket (Thailand)
 
 Template: use an existing guide as a shape, write 4-5 original sections per city. Each guide is ~1500 words.
+
+### New country expansions (backend station data required first)
+
+These are strategic expansions that need backend station data added to `backend/staybyrail/stations.py` before any frontend guide work. Good rail coverage = strong fit for StayByRail; US coverage deliberately limited to cities where rail is the genuinely practical hotel base.
+
+**China** — world's largest high-speed rail network, huge domestic and inbound search volume, natural fit for this site. Target cities for station data + city guides + country explainer:
+- [ ] Beijing (Beijing Subway is enormous; CR High-Speed hub)
+- [ ] Shanghai (Metro + Maglev + 12 Shanghai-terminus high-speed lines)
+- [ ] Guangzhou (South China rail hub, high-speed to Hong Kong)
+- [ ] Shenzhen (mainland terminus for Hong Kong, Futian high-speed)
+- [ ] Chengdu (western China, Panda research, high-speed from Chongqing)
+- [ ] Xi'an (Terracotta Army, Shaanxi high-speed hub)
+- [ ] Hangzhou (tourism destination, G-series from Shanghai)
+
+**South Korea** — Seoul Metro is one of the best in the world; KTX high-speed gives full peninsula coverage. Strong visitor demand from JP/CN/SE Asia. Target cities:
+- [ ] Seoul (Seoul Metropolitan Subway: 300+ stations across 23 lines)
+- [ ] Busan (Busan Metro + KTX terminus)
+- [ ] Incheon (Airport + AREX express)
+- [ ] Daegu
+- [ ] Daejeon
+
+**United States** — rail is only the right hotel basis in a few cities; limit coverage to those. Amtrak intercity + urban heavy-rail/subway:
+- [ ] New York City (MTA Subway, Grand Central, Penn Station, LIRR, NJ Transit)
+- [ ] Washington DC (Metro, Union Station — true rail-first city)
+- [ ] Chicago (CTA L, Union Station — Amtrak long-distance hub)
+- [ ] Boston (MBTA T, South Station, North Station)
+- [ ] San Francisco / Oakland (BART, Caltrain, Muni Metro)
+- [ ] Philadelphia (SEPTA, 30th Street Station)
+
+**Deliberately excluded from US scope**: LA, Miami, Seattle, Dallas, Houston, Phoenix, Atlanta. Rail in those cities exists but isn't dense enough to be the natural hotel-siting axis for tourists — covering them would dilute the site's positioning.
+
+**What adding a country requires** (per country):
+1. Backend station data in `backend/staybyrail/stations.py` with lines, popular flag, lat/lon.
+2. Entries in `CITY_COUNTRIES` / `CITY_DISPLAY` / `CITY_COUNTRY` maps in both `backend/main.py` and `frontend/scripts/gen-stations.py`.
+3. Regenerate `frontend/src/data/stations.json` via the generator.
+4. One long-form city guide per covered city (~1500 words each) in `cityGuides.js` with 5 FAQs in `guideFaqs.js`.
+5. Optional: a **country explainer** page at `/countries/:slug` covering the national rail network, ticket types, typical fares, and when to use local vs national passes. This is the P1.5 layer between transport passes and city guides — hit it for each new country.
+6. Expand `CoveragePage` and `Footer` popular-pages nav.
+7. Regenerate sitemap.
 
 ### Itinerary pages at `/itineraries/:slug`
 
