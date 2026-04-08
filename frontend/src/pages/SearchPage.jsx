@@ -6,6 +6,7 @@ import SourcesBanner from "../components/SourcesBanner";
 import ShortlistPanel from "../components/ShortlistPanel";
 import PageMeta from "../components/PageMeta";
 import { useShortlist } from "../hooks/useShortlist";
+import { trackEvent } from "../utils/analytics";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 
@@ -63,6 +64,12 @@ function SearchPage() {
       if (v != null && v !== "") urlUpdate[k] = String(v);
     }
     setSearchParams(urlUpdate, { replace: true });
+
+    // Conversion funnel: log the search. No-op unless Plausible is live.
+    trackEvent("Hotel Search", {
+      city: params.city || "",
+      line: params.line || "any",
+    });
 
     setLoading(true);
     setError(null);
