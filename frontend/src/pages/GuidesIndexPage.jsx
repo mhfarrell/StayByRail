@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { cityGuides } from "../data/cityGuides";
 import { wikiThumbUrl } from "../utils/wikiImage";
+import { getCityHeroPhoto } from "../data/cityHeroPhotos";
 
 const countryFlag = {
   Japan: "\u{1F1EF}\u{1F1F5}",
@@ -14,10 +15,19 @@ const countryFlag = {
 };
 
 function useGuideImages(guides) {
-  const [images, setImages] = useState({});
+  const [images, setImages] = useState(() => {
+    // Seed with curated photos synchronously so they paint on first render.
+    const seed = {};
+    for (const g of guides) {
+      const curated = getCityHeroPhoto(g.slug);
+      if (curated?.src) seed[g.slug] = curated.src;
+    }
+    return seed;
+  });
 
   useEffect(() => {
     guides.forEach((g) => {
+      if (getCityHeroPhoto(g.slug)) return; // already seeded above
       if (!g.wikipedia) return;
       // Grid thumbs are ~400px wide, 800px covers retina.
       const cacheKey = `sbr_thumb4_${g.slug}`;

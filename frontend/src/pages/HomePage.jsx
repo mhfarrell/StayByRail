@@ -4,6 +4,7 @@ import PageMeta from "../components/PageMeta";
 import { cityGuides } from "../data/cityGuides";
 import { journalArticles } from "../data/journal";
 import { wikiThumbUrl } from "../utils/wikiImage";
+import { getCityHeroPhoto } from "../data/cityHeroPhotos";
 
 // Featured cities for the homepage — pulled live from the guide data so the
 // headlines and meta stay in sync with the guide pages themselves.
@@ -24,10 +25,22 @@ const FEATURED = cityGuides.map((g) => ({
 }));
 
 function useCityImages(list) {
-  const [images, setImages] = useState({});
+  const [images, setImages] = useState(() => {
+    // Seed state synchronously with any curated photos so the cards
+    // paint with real imagery on first render.
+    const seed = {};
+    for (const { slug, city } of list) {
+      const curated = getCityHeroPhoto(slug);
+      if (curated?.src) seed[city] = curated.src;
+    }
+    return seed;
+  });
 
   useEffect(() => {
-    list.forEach(({ city, wiki }) => {
+    list.forEach(({ slug, city, wiki }) => {
+      // Curated photos were already seeded in useState above; skip the
+      // Wikipedia fetch when one exists.
+      if (getCityHeroPhoto(slug)) return;
       // Homepage city cards are ~400px wide at desktop, narrower on mobile.
       // 800px covers retina without fetching the Wikipedia originals.
       const key = `sbr_home5_${city}`;

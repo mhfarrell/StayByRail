@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { wikiThumbUrl } from "../utils/wikiImage";
+import { getCityHeroPhoto } from "../data/cityHeroPhotos";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 
@@ -37,10 +38,22 @@ export function useCityData(guide) {
     setWeather(null);
     setEvents(null);
 
-    // Wikipedia image — guide hero is the LCP element on GuidePage, so use
-    // a generous 1200px width (covers retina on typical ~600px hero widths)
-    // rather than fetching the multi-megabyte `originalimage`.
-    if (guide.wikipedia) {
+    // Prefer a hand-picked photo when one exists in cityHeroPhotos.js.
+    // Falls through to the Wikipedia fetch for cities that haven't been
+    // curated yet.
+    const curated = getCityHeroPhoto(guide.slug);
+    if (curated?.src) {
+      setImage({
+        src: curated.src,
+        caption: `${guide.city} · Photo by ${curated.credit} on ${curated.source}`,
+        creditUrl: curated.link,
+        credit: curated.credit,
+        source: curated.source,
+      });
+    } else if (guide.wikipedia) {
+      // Wikipedia image — guide hero is the LCP element on GuidePage, so
+      // use a generous 1200px width (covers retina on typical ~600px hero
+      // widths) rather than fetching the multi-megabyte `originalimage`.
       const cacheKey = `sbr_wiki2_${guide.slug}`;
       const cached = sessionStorage.getItem(cacheKey);
       if (cached) {
