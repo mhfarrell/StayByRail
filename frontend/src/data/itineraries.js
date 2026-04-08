@@ -567,6 +567,288 @@ export const itineraries = [
     tips:
       "A 7-day JR Pass costs ¥50,000 in 2026 and covers every Shinkansen ride in this itinerary (minus Nozomi services) plus the JR Sagano Line to Arashiyama and the JR Nara Line to Fushimi Inari. Whether it pays off depends on whether you're using it for any other days — see our /passes/jr-pass guide for the detailed break-even maths. For the Kansai days alone, a Kansai Area Pass (5-day, ¥12,000) is typically cheaper than the JR Pass and covers Himeji and Nara within the region. The Kintetsu Line to Nara is the faster option but not covered by JR passes — budget ¥760 each way or switch to the slower JR route if you're already holding a pass. Kyoto Station's coin lockers fill up fast in peak season; use the hotel's luggage service rather than lugging things through Himeji or Osaka. All recommended restaurants get queues at 12:30-13:00 and 19:00-20:00 — shift your eating times 30 minutes either side to skip them.",
   },
+
+  {
+    slug: "backpacking-thailand-by-train-bangkok-to-chiang-mai",
+    title: "Backpacking Thailand by train: Bangkok to Chiang Mai",
+    subtitle:
+      "A seven-day rail-first trip north through Thailand, with the overnight sleeper as its centrepiece. Minimal flying, maximum ground-level scenery.",
+    excerpt:
+      "Almost every backpacker flies Bangkok to Chiang Mai. That's a mistake — the overnight sleeper train is cheaper, more comfortable than anyone expects, and the ride up through the Thai countryside is a destination in itself.",
+    duration: "7 days",
+    city: "Bangkok",
+    country: "Thailand",
+    baseArea: "Bangkok (BTS/MRT), Ayutthaya, and Chiang Mai Old City",
+    relatedCityGuide: "bangkok",
+    relatedPasses: [],
+    updatedAt: "2026-04",
+    intro:
+      "Thailand's State Railway (SRT) is slow, cheap, and criminally under-used by backpackers. The overnight sleeper train from Bangkok's Krung Thep Aphiwat (Bang Sue Central) station to Chiang Mai is one of South-East Asia's great rail journeys and costs less than a budget flight once you account for airport transfers. This seven-day itinerary strings together a Bangkok base, a day trip to Ayutthaya by rail, the overnight sleeper north, and a proper stay in Chiang Mai — all without boarding a plane after the initial arrival in Bangkok. It's designed for budget-conscious travellers with roughly a week on the ground and no strong preference for beaches.",
+    days: [
+      {
+        day: 1,
+        title: "Arrival day: Bangkok and first impressions",
+        summary:
+          "Land at Suvarnabhumi, reach your Sukhumvit hotel on the Airport Rail Link, and acclimatise with a light first night at a local food market.",
+        stops: [
+          {
+            time: "14:00",
+            station: "Phaya Thai",
+            activity:
+              "Airport Rail Link from Suvarnabhumi to Phaya Thai (26 minutes, ฿45). From Phaya Thai transfer to the BTS Sukhumvit Line for one stop east to Ratchathewi, or continue to Siam or Asok depending on your hotel. This is the fastest and cheapest route into central Bangkok — skip the taxi scams at the arrivals hall.",
+          },
+          {
+            time: "16:00",
+            station: "Asok",
+            activity:
+              "Settle into a Sukhumvit Line hotel between Nana and Phrom Phong. Shower, change into the lightest clothes you packed, and drink a litre of water. Bangkok heat is serious.",
+          },
+          {
+            time: "18:00",
+            station: "Phrom Phong",
+            activity:
+              "Early dinner at Emquartier or The Commons near Thong Lor — the mall food courts are a gentle introduction to Thai food with English menus and plenty of choice. Save the street carts for day 2 when you're acclimatised.",
+          },
+          {
+            time: "20:00",
+            station: "Asok",
+            activity:
+              "Walk the short stretch of Sukhumvit Soi 3 to 11 to see the evening energy of central Bangkok. Back to the hotel by 21:30 — tomorrow is an early start.",
+          },
+        ],
+      },
+      {
+        day: 2,
+        title: "Bangkok temples and the Chao Phraya boats",
+        summary:
+          "The classic Bangkok sightseeing day: Wat Phra Kaew and the Grand Palace, Wat Pho, Wat Arun, and the river. Everything by BTS plus boat.",
+        stops: [
+          {
+            time: "08:00",
+            station: "Saphan Taksin",
+            activity:
+              "BTS Silom Line from Sala Daeng or Chong Nonsi to Saphan Taksin. Connect to the Chao Phraya Express Boat at Sathorn pier. Take the orange flag boat upstream to Tha Chang (pier N9) for the Grand Palace.",
+          },
+          {
+            time: "09:00",
+            station: "Tha Chang (boat pier)",
+            activity:
+              "Grand Palace and Wat Phra Kaew (the Temple of the Emerald Buddha). Arrive at opening to avoid both the crowds and the midday heat. Dress code is strictly enforced: no shorts, no bare shoulders, no flip-flops. They'll lend you a sarong if needed.",
+          },
+          {
+            time: "11:30",
+            station: "Tha Tien (boat pier)",
+            activity:
+              "Walk south to Wat Pho — the Temple of the Reclining Buddha. The 46-metre gold Buddha figure is the main event but the smaller chedis and the traditional Thai massage school on the grounds are worth the wander. Lunch at the canteen inside the temple complex.",
+          },
+          {
+            time: "14:00",
+            station: "Tha Tien (boat pier)",
+            activity:
+              "Cross-river ferry (฿5) from Tha Tien to Wat Arun — the Temple of Dawn. Climb the central prang for the best view of the Chao Phraya and the old city.",
+          },
+          {
+            time: "16:30",
+            station: "Saphan Taksin",
+            activity:
+              "Boat back down to Sathorn pier, then BTS to Siam. Evening at Siam Square or MBK for shopping and an air-conditioned cooldown. Dinner at Gaggan (if you can book weeks ahead) or any of the food courts around Siam Paragon.",
+          },
+        ],
+      },
+      {
+        day: 3,
+        title: "Ayutthaya day trip by rail",
+        summary:
+          "Take the SRT third-class local train to Ayutthaya, spend a day in the UNESCO ruins, come back in the evening. The cheapest and most atmospheric way to see Thailand's old capital.",
+        stops: [
+          {
+            time: "07:30",
+            station: "Krung Thep Aphiwat",
+            activity:
+              "MRT from Sukhumvit to Krung Thep Aphiwat (Bang Sue Central) station. The old Hua Lamphong station was retired in 2023; all long-distance trains now leave from Bang Sue. Buy a third-class ticket to Ayutthaya at the counter (฿20, no advance booking required).",
+          },
+          {
+            time: "08:30",
+            station: "Ayutthaya",
+            activity:
+              "Board the Chiang Mai-bound local train. Ayutthaya is about 90 minutes north. Third-class has wooden benches and open windows — it's rough and charming in exactly the ways you'd expect from a ฿20 ticket. Alight at Ayutthaya station.",
+          },
+          {
+            time: "10:30",
+            station: "Ayutthaya",
+            activity:
+              "Cross the Pa Sak river by the tiny longtail ferry (฿5) to reach the historical park. Rent a bicycle (฿50-100 for the day) at one of the shops directly opposite the ferry landing — cycling is by far the best way to see Ayutthaya's ruins.",
+          },
+          {
+            time: "11:30",
+            station: "Ayutthaya",
+            activity:
+              "Cycle loop of the main ruins: Wat Mahathat (the famous Buddha head in the banyan tree roots), Wat Ratchaburana, Wat Phra Si Sanphet (three chedis in a row, the most iconic Ayutthaya image), and Wat Phra Mongkhon Bophit (a giant bronze Buddha inside a modern viharn).",
+          },
+          {
+            time: "15:00",
+            station: "Ayutthaya",
+            activity:
+              "Lunch at one of the noodle shops near Wat Phra Si Sanphet. Continue to Wat Chaiwatthanaram on the west bank of the river for the best sunset photography — the sun sets directly behind the central chedi.",
+          },
+          {
+            time: "18:30",
+            station: "Ayutthaya",
+            activity:
+              "Return the bicycle, cross back to the station, and catch the southbound local train back to Bangkok (90 minutes, ฿20). Shower at the hotel and an early dinner — tomorrow is the overnight sleeper.",
+          },
+        ],
+      },
+      {
+        day: 4,
+        title: "Last day in Bangkok, overnight train north",
+        summary:
+          "A lighter day in Bangkok with one or two last stops, then board the 18:10 overnight sleeper to Chiang Mai — 13 hours rolling through the Thai countryside.",
+        stops: [
+          {
+            time: "10:00",
+            station: "Hua Lamphong (MRT)",
+            activity:
+              "MRT to Hua Lamphong and wander through the old central railway station (now decommissioned for long-distance but still a beautiful 1916 building) and on into Chinatown along Yaowarat Road. Chinatown is Bangkok at its densest and best.",
+          },
+          {
+            time: "12:00",
+            station: "Hua Lamphong (MRT)",
+            activity:
+              "Lunch in Chinatown. Try T&K Seafood (famous for stir-fried clams and crab curry) or any of the dim sum places along Yaowarat. This is the cheapest and best Chinese food in Thailand.",
+          },
+          {
+            time: "14:00",
+            station: "Sam Yan",
+            activity:
+              "Retreat to Sam Yan Mitrtown or the Bangkok Arts and Cultural Centre at Siam for an air-conditioned break. Buy any last snacks or water for the train at 7-Eleven.",
+          },
+          {
+            time: "17:00",
+            station: "Krung Thep Aphiwat",
+            activity:
+              "MRT to Krung Thep Aphiwat (Bang Sue Central). Arrive at the station with at least 30 minutes to spare — it's huge and the platforms for long-distance trains are on the upper level. Find your sleeper coach.",
+          },
+          {
+            time: "18:10",
+            station: "Krung Thep Aphiwat",
+            activity:
+              "Train #9 (Express Sleeper) departs for Chiang Mai. Second-class air-conditioned berths are around ฿950-1,050 booked through the SRT D-Ticket website a week or more in advance. The bunks turn into a proper bed around 20:00; lights out around 22:00.",
+          },
+        ],
+      },
+      {
+        day: 5,
+        title: "Arrival in Chiang Mai and the old city",
+        summary:
+          "Train arrives at 07:15. A songthaew to the old city, a shower at the hotel, and a first walk around the temple core. Take it easy — you just travelled 700 km overnight.",
+        stops: [
+          {
+            time: "07:15",
+            station: "Chiang Mai Station",
+            activity:
+              "Arrive into Chiang Mai. The station is 2.5 km east of the old city. Take a red songthaew for 40-50 baht to the Tha Phae Gate (east side of the moat). Drop your bag at the hotel — most will store it even if check-in is later.",
+          },
+          {
+            time: "09:00",
+            station: "Tha Phae Gate",
+            activity:
+              "Breakfast at one of the cafes on Ratchadamnoen Road inside the moat. Order khao soi (northern Thailand's signature curry noodle dish) at Khao Soi Khun Yai or Khao Soi Mae Sai if either is open for lunch — both are consistently voted the best in town.",
+          },
+          {
+            time: "11:00",
+            station: "Tha Phae Gate",
+            activity:
+              "Walk the old city temple circuit: Wat Phra Singh (royal temple with the famous Lion Buddha), Wat Chedi Luang (the massive ruined chedi in the centre), and Wat Chiang Man (the oldest temple in Chiang Mai, 1297). This is a 90-minute loop at an easy pace.",
+          },
+          {
+            time: "14:00",
+            station: "Tha Phae Gate",
+            activity:
+              "Afternoon rest. Thai massage (฿250-350 for an hour) at one of the women's prison massage programmes — the rehabilitation training provides better quality than most tourist spas and the money supports the programme.",
+          },
+          {
+            time: "18:00",
+            station: "Tha Phae Gate",
+            activity:
+              "If today is Sunday, the Sunday Walking Street market runs along Ratchadamnoen Road from 17:00 — food carts, craft stalls, live music, and one of the best street food experiences in Thailand. If it isn't Sunday, the Night Bazaar is the equivalent on the east side of the moat.",
+          },
+        ],
+      },
+      {
+        day: 6,
+        title: "Doi Suthep and an elephant sanctuary choice",
+        summary:
+          "Half day at Doi Suthep temple on the mountain above Chiang Mai, half day at a proper elephant sanctuary. The choice matters — pick carefully.",
+        stops: [
+          {
+            time: "08:00",
+            station: "Chang Phuak Gate",
+            activity:
+              "Red songthaew from Chang Phuak Gate north of the old city to Doi Suthep. Negotiate ฿80 per person round trip (the driver will wait while you visit the temple). The road climbs steeply through jungle for 40 minutes.",
+          },
+          {
+            time: "09:00",
+            station: "Doi Suthep",
+            activity:
+              "Climb the 309-step naga staircase to Wat Phra That Doi Suthep. The golden chedi at the summit is one of Thailand's most important pilgrimage sites, and the views over Chiang Mai from the temple terrace (cloud-permitting) are extraordinary.",
+          },
+          {
+            time: "12:00",
+            station: "Tha Phae Gate",
+            activity:
+              "Back to Chiang Mai for lunch. Consider booking the afternoon elephant sanctuary visit for day 7 instead if the morning ran long — Elephant Nature Park is a full-day experience and shouldn't be rushed.",
+          },
+          {
+            time: "14:00",
+            station: "Nimman (Nimmanhaemin)",
+            activity:
+              "Afternoon in Nimman. Cafes and bars along Nimmanhaemin Road are the cooler, younger side of Chiang Mai. Ristr8to for coffee, Graph Cafe for atmosphere, or One Nimman for the curated-craft-shop experience.",
+          },
+          {
+            time: "19:00",
+            station: "Tha Phae Gate",
+            activity:
+              "Dinner back in the old city. Try Dash! (modern Thai in a garden courtyard) or SP Chicken (the best grilled chicken in northern Thailand for ฿200 a plate).",
+          },
+        ],
+      },
+      {
+        day: 7,
+        title: "Last day and the flight home",
+        summary:
+          "A morning market, a final temple, and a transfer to Chiang Mai Airport. Thailand's main airports both fly directly back to Europe in the evening.",
+        stops: [
+          {
+            time: "08:00",
+            station: "Tha Phae Gate",
+            activity:
+              "Warorot Market (Kad Luang) — the oldest and most local market in Chiang Mai, a 15-minute walk east of Tha Phae Gate. Breakfast at one of the rice-and-curry shops, then browse the stalls for dried fruit and northern Thai sausages to take home.",
+          },
+          {
+            time: "10:00",
+            station: "Old City (Chedi Luang)",
+            activity:
+              "Final temple visit. Wat Suan Dok, 5-10 minutes west of the moat, has the line of white chedis holding the ashes of the former Chiang Mai royals and is one of the quietest photogenic temples in the city.",
+          },
+          {
+            time: "12:00",
+            station: "Old City (Chedi Luang)",
+            activity:
+              "Last lunch at Khao Soi Mae Sai or Khao Soi Khun Yai (whichever you missed on day 5). Final Thai coffee at any of the Nimman cafes. Head back to the hotel to collect luggage.",
+          },
+          {
+            time: "15:00",
+            station: "Chiang Mai Airport Area",
+            activity:
+              "Grab or taxi to Chiang Mai International Airport (CNX). The airport is only 15 minutes from the old city so no need to leave particularly early. Domestic connections to Bangkok for European flights, or direct international flights on the evening schedule depending on your origin.",
+          },
+        ],
+      },
+    ],
+    tips:
+      "The SRT D-Ticket website (www.dticket.railway.co.th) is the official sleeper booking portal and takes international cards. Book at least 7 days ahead for second-class air-conditioned berths and 14 days ahead for peak season (Songkran, Chinese New Year, December-January). Avoid the agents at Khao San Road selling 'VIP' sleeper tickets — the SRT sleeper is already the VIP version and agents just add a commission. Bring a cheap scarf or sarong for the train — air conditioning on the sleeper runs cold. Convenience stores at Krung Thep Aphiwat station sell snacks, beer, and water at normal prices; don't wait until you're already on the train where the trolley markup is higher. Train #9 is the fastest and most reliable of the Bangkok-Chiang Mai sleepers; the earlier #13 and #109 are older and slower. Do not take the day train — it's a 13-hour hard-seat journey that makes the same trip a memorable test of endurance in entirely the wrong way.",
+  },
 ];
 
 export function getItinerary(slug) {
