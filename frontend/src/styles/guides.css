@@ -212,6 +212,64 @@ a.guide-station-name-link:hover {
   color: var(--accent-amber, #f59e0b);
 }
 
+/* ---- Guide FAQ accordion ---- */
+.guide-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.guide-faq-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card-bg);
+  padding: 0.75rem 1rem;
+  transition: border-color 0.15s ease;
+}
+
+.guide-faq-item[open] {
+  border-color: var(--accent-amber, #f59e0b);
+}
+
+.guide-faq-question {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-heading, var(--text-primary));
+  cursor: pointer;
+  list-style: none;
+  padding-right: 1.5rem;
+  position: relative;
+}
+
+.guide-faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.guide-faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  transition: transform 0.2s ease;
+}
+
+.guide-faq-item[open] .guide-faq-question::after {
+  content: "\2212";
+}
+
+.guide-faq-answer {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0.65rem 0 0;
+  padding: 0;
+}
+
 .guide-station-reason {
   font-size: 0.85rem;
   color: var(--text-secondary);

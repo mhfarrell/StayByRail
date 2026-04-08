@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { getGuide, cityGuides } from "../data/cityGuides";
+import { getFaqs } from "../data/guideFaqs";
 import stationsData from "../data/stations.json";
 import { useCityData } from "../hooks/useCityData";
 
@@ -100,10 +101,23 @@ function GuidePage() {
 
   if (!guide) return <Navigate to="/guides" replace />;
 
+  const faqs = getFaqs(guide.slug);
   const canonical = `https://staybyrail.co.uk/guides/${guide.slug}`;
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
+      ...(faqs && faqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage",
+              "mainEntity": faqs.map((f) => ({
+                "@type": "Question",
+                "name": f.q,
+                "acceptedAnswer": { "@type": "Answer", "text": f.a },
+              })),
+            },
+          ]
+        : []),
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -326,6 +340,23 @@ function GuidePage() {
               >
                 {s.name}
               </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* FAQ — also emitted as FAQPage schema above */}
+      {faqs && faqs.length > 0 && (
+        <div className="guide-stations-block">
+          <h3 className="guide-stations-heading">
+            Frequently Asked Questions
+          </h3>
+          <div className="guide-faq-list">
+            {faqs.map((f, i) => (
+              <details key={i} className="guide-faq-item">
+                <summary className="guide-faq-question">{f.q}</summary>
+                <p className="guide-faq-answer">{f.a}</p>
+              </details>
             ))}
           </div>
         </div>
