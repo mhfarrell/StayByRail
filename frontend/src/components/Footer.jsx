@@ -1,9 +1,47 @@
 import { Link } from "react-router-dom";
 
+const POPULAR_GUIDES = [
+  { slug: "tokyo", label: "Tokyo" },
+  { slug: "london", label: "London" },
+  { slug: "paris", label: "Paris" },
+  { slug: "barcelona", label: "Barcelona" },
+  { slug: "bangkok", label: "Bangkok" },
+  { slug: "kyoto", label: "Kyoto" },
+];
+
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-inner">
+        <nav className="footer-nav" aria-label="Popular pages">
+          <div className="footer-nav-col">
+            <span className="footer-nav-heading">Popular guides</span>
+            {POPULAR_GUIDES.map((g) => (
+              <Link
+                key={g.slug}
+                to={`/guides/${g.slug}`}
+                className="footer-nav-link"
+              >
+                {g.label}
+              </Link>
+            ))}
+          </div>
+          <div className="footer-nav-col">
+            <span className="footer-nav-heading">StayByRail</span>
+            <Link to="/about" className="footer-nav-link">About</Link>
+            <Link to="/authors/matt-farrell" className="footer-nav-link">Editor</Link>
+            <Link to="/how-it-works" className="footer-nav-link">How it works</Link>
+            <Link to="/coverage" className="footer-nav-link">Coverage</Link>
+            <Link to="/contact" className="footer-nav-link">Contact</Link>
+          </div>
+          <div className="footer-nav-col">
+            <span className="footer-nav-heading">Resources</span>
+            <Link to="/guides" className="footer-nav-link">All city guides</Link>
+            <Link to="/travel-guide" className="footer-nav-link">Best times to travel</Link>
+            <Link to="/train-times" className="footer-nav-link">Train times</Link>
+            <Link to="/faq" className="footer-nav-link">FAQ</Link>
+          </div>
+        </nav>
         <div className="footer-author">
           <span className="footer-name">Built by Matt Farrell</span>
           <span className="footer-title">Software Developer</span>
@@ -40,7 +78,7 @@ function Footer() {
           &nbsp;&middot;&nbsp;
           <Link to="/terms" className="footer-privacy-link">Terms of Service</Link>
           &nbsp;&middot;&nbsp;
-          <a href="mailto:hello@staybyrail.co.uk" className="footer-privacy-link">hello@staybyrail.co.uk</a>
+          <Link to="/contact" className="footer-privacy-link">Contact</Link>
         </div>
       </div>
     </footer>
