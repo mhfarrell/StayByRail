@@ -22,6 +22,8 @@ const TrainTimesPage = lazy(() => import("./pages/TrainTimesPage"));
 const StationLandingPage = lazy(() => import("./pages/StationLandingPage"));
 const AuthorPage = lazy(() => import("./pages/AuthorPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
+const PassesIndexPage = lazy(() => import("./pages/PassesIndexPage"));
+const PassPage = lazy(() => import("./pages/PassPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 import "./styles/variables.css";
 import "./styles/base.css";
@@ -115,6 +117,8 @@ function App() {
               <Route path="/hotels-near/:slug" element={<StationLandingPage />} />
               <Route path="/authors/:slug" element={<AuthorPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/passes" element={<PassesIndexPage />} />
+              <Route path="/passes/:slug" element={<PassPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>

@@ -61,6 +61,26 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/passes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/passes/jr-pass</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/passes/oyster-card</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/passes/navigo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/guides</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
