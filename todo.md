@@ -144,7 +144,7 @@ These are strategic expansions that need backend station data added to `backend/
 ### Performance
 
 - [x] **Code-split routes** (repeat of P0 item — critical)
-- [ ] **Preload critical fonts**, lazy-load Leaflet until the user scrolls to the map
+- [x] **Preload critical fonts**, lazy-load Leaflet — Leaflet CSS is now imported inside `HotelMap.jsx` so it's bundled into the `HotelMap` lazy chunk (15 kB) and only fetched when the user lands on a page with a map. Removed the eager `leaflet.css` CDN link that was in `index.html`. Font preload is not needed — the site uses the system font stack (Inter is declared as a family name but never loaded as a file), so there is nothing to preload.
 - [ ] **Image sizing** — Wikipedia images come in as huge originals; resize through an image CDN or swap to Cloudinary / ImageKit
 - [ ] **Cache-Control headers** on Cloudflare Pages for static assets (should already be good, verify in DevTools)
 
