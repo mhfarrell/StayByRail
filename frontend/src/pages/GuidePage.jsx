@@ -66,6 +66,27 @@ function GuidePage() {
     [guide]
   );
 
+  // Fuzzy lookup: map a keyStation display name back to its landing-page slug.
+  // Handles common variants like "Tokyo Station" -> "Tokyo", "King's Cross St. Pancras" -> "King's Cross".
+  const stationSlugFor = useMemo(() => {
+    const normalise = (n) =>
+      n
+        .toLowerCase()
+        .replace(/\s+station\s*$/, "")
+        .replace(/[^a-z0-9]+/g, "");
+    const bySlug = new Map();
+    for (const s of cityStations) bySlug.set(normalise(s.name), s.slug);
+    return (name) => {
+      const key = normalise(name);
+      if (bySlug.has(key)) return bySlug.get(key);
+      // Fallback: find any cityStation whose normalised name is a prefix of the key.
+      for (const [k, slug] of bySlug.entries()) {
+        if (k && (key.startsWith(k) || k.startsWith(key))) return slug;
+      }
+      return null;
+    };
+  }, [cityStations]);
+
   const loadTips = () => {
     if (!guide) return;
     fetch(`${API}/tips?city=${encodeURIComponent(guide.city)}`)
@@ -246,13 +267,23 @@ function GuidePage() {
               const reason = isPick
                 ? s.reason.replace(/^stay ?by ?rail pick\s*[—\-–:]\s*/i, "")
                 : s.reason;
+              const slug = stationSlugFor(s.name);
               return (
                 <li
                   key={s.name}
                   className={`guide-station-item${isPick ? " guide-station-pick" : ""}`}
                 >
                   <div className="guide-station-head">
-                    <span className="guide-station-name">{s.name}</span>
+                    {slug ? (
+                      <Link
+                        to={`/hotels-near/${slug}`}
+                        className="guide-station-name guide-station-name-link"
+                      >
+                        {s.name}
+                      </Link>
+                    ) : (
+                      <span className="guide-station-name">{s.name}</span>
+                    )}
                     {isPick && (
                       <span className="guide-station-badge" title="StayByRail editor's pick">
                         <svg

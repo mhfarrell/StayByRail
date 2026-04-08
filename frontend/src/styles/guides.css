@@ -203,6 +203,15 @@
   font-size: 0.95rem;
 }
 
+a.guide-station-name-link {
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a.guide-station-name-link:hover {
+  color: var(--accent-amber, #f59e0b);
+}
+
 .guide-station-reason {
   font-size: 0.85rem;
   color: var(--text-secondary);
