@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { cityGuides } from "../data/cityGuides";
 import { journalArticles } from "../data/journal";
+import { wikiThumbUrl } from "../utils/wikiImage";
 
 // Featured cities for the homepage — pulled live from the guide data so the
 // headlines and meta stay in sync with the guide pages themselves.
@@ -27,7 +28,9 @@ function useCityImages(list) {
 
   useEffect(() => {
     list.forEach(({ city, wiki }) => {
-      const key = `sbr_home4_${city}`;
+      // Homepage city cards are ~400px wide at desktop, narrower on mobile.
+      // 800px covers retina without fetching the Wikipedia originals.
+      const key = `sbr_home5_${city}`;
       const cached = sessionStorage.getItem(key);
       if (cached) {
         setImages((prev) => ({ ...prev, [city]: cached }));
@@ -36,7 +39,7 @@ function useCityImages(list) {
       fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
         .then((r) => r.json())
         .then((data) => {
-          const url = data.originalimage?.source || data.thumbnail?.source || "";
+          const url = wikiThumbUrl(data, 800);
           if (url) {
             sessionStorage.setItem(key, url);
             setImages((prev) => ({ ...prev, [city]: url }));

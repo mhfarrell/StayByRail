@@ -145,7 +145,7 @@ These are strategic expansions that need backend station data added to `backend/
 
 - [x] **Code-split routes** (repeat of P0 item — critical)
 - [x] **Preload critical fonts**, lazy-load Leaflet — Leaflet CSS is now imported inside `HotelMap.jsx` so it's bundled into the `HotelMap` lazy chunk (15 kB) and only fetched when the user lands on a page with a map. Removed the eager `leaflet.css` CDN link that was in `index.html`. Font preload is not needed — the site uses the system font stack (Inter is declared as a family name but never loaded as a file), so there is nothing to preload.
-- [ ] **Image sizing** — Wikipedia images come in as huge originals; resize through an image CDN or swap to Cloudinary / ImageKit
+- [x] **Image sizing** — Wikipedia images are no longer fetched at their original resolution. A shared `wikiThumbUrl(summary, widthPx)` helper in `frontend/src/utils/wikiImage.js` swaps the `/NNNpx-` segment on the thumbnail URL so Wikimedia's thumb server renders exactly the size each card needs (800px for grid thumbs, 1000–1200px for hero/country images). Used by `useCityData.js`, `HomePage.jsx`, `GuidesIndexPage.jsx`, and `TrainTimesPage.jsx`. Previously the code preferred `originalimage.source`, which often served 4000×3000 JPEGs at several MB each. No external CDN needed.
 - [ ] **Cache-Control headers** on Cloudflare Pages for static assets (should already be good, verify in DevTools)
 
 ### Canonicals and meta

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import PageMeta from "../components/PageMeta";
+import { wikiThumbUrl } from "../utils/wikiImage";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 
@@ -87,13 +88,14 @@ function useCountryImages() {
   useEffect(() => {
     for (const [country, data] of Object.entries(TRANSIT_DATA)) {
       if (!data.wiki) continue;
-      const key = `sbr_transit3_${country}`;
+      // Country header images sit behind a ~600px card, 1000px handles retina.
+      const key = `sbr_transit4_${country}`;
       const cached = sessionStorage.getItem(key);
       if (cached) { setImages((p) => ({ ...p, [country]: cached })); continue; }
       fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(data.wiki)}`)
         .then((r) => r.json())
         .then((d) => {
-          const url = d.originalimage?.source || d.thumbnail?.source || "";
+          const url = wikiThumbUrl(d, 1000);
           if (url) { sessionStorage.setItem(key, url); setImages((p) => ({ ...p, [country]: url })); }
         })
         .catch(() => {});

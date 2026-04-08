@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { cityGuides } from "../data/cityGuides";
+import { wikiThumbUrl } from "../utils/wikiImage";
 
 const countryFlag = {
   Japan: "\u{1F1EF}\u{1F1F5}",
@@ -18,7 +19,8 @@ function useGuideImages(guides) {
   useEffect(() => {
     guides.forEach((g) => {
       if (!g.wikipedia) return;
-      const cacheKey = `sbr_thumb3_${g.slug}`;
+      // Grid thumbs are ~400px wide, 800px covers retina.
+      const cacheKey = `sbr_thumb4_${g.slug}`;
       const cached = sessionStorage.getItem(cacheKey);
       if (cached) {
         setImages((prev) => ({ ...prev, [g.slug]: cached }));
@@ -29,7 +31,7 @@ function useGuideImages(guides) {
       )
         .then((r) => r.json())
         .then((data) => {
-          const url = data.originalimage?.source || data.thumbnail?.source || "";
+          const url = wikiThumbUrl(data, 800);
           if (url) {
             sessionStorage.setItem(cacheKey, url);
             setImages((prev) => ({ ...prev, [g.slug]: url }));

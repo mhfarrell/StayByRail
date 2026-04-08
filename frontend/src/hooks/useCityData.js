@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { wikiThumbUrl } from "../utils/wikiImage";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 
@@ -36,9 +37,11 @@ export function useCityData(guide) {
     setWeather(null);
     setEvents(null);
 
-    // Wikipedia image
+    // Wikipedia image — guide hero is the LCP element on GuidePage, so use
+    // a generous 1200px width (covers retina on typical ~600px hero widths)
+    // rather than fetching the multi-megabyte `originalimage`.
     if (guide.wikipedia) {
-      const cacheKey = `sbr_wiki_${guide.slug}`;
+      const cacheKey = `sbr_wiki2_${guide.slug}`;
       const cached = sessionStorage.getItem(cacheKey);
       if (cached) {
         setImage(JSON.parse(cached));
@@ -48,10 +51,8 @@ export function useCityData(guide) {
         )
           .then((r) => r.json())
           .then((data) => {
-            if (data.originalimage?.source || data.thumbnail?.source) {
-              const src =
-                data.originalimage?.source ||
-                data.thumbnail.source.replace(/\/\d+px-/, "/800px-");
+            const src = wikiThumbUrl(data, 1200);
+            if (src) {
               const img = { src, caption: data.description || data.title };
               sessionStorage.setItem(cacheKey, JSON.stringify(img));
               setImage(img);
