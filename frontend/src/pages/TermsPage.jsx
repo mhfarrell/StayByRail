@@ -45,24 +45,43 @@ function TermsPage() {
           <h3 className="about-block-heading">3. Hotel listings and pricing</h3>
           <p className="about-block-text">
             Hotel results, prices, and availability are sourced from third-party
-            services including Google Hotels, Booking.com, and TripAdvisor.
+            services including Google Hotels (via SerpAPI), Booking.com,
+            TripAdvisor (via RapidAPI), and the other online travel agencies
+            those services aggregate (Agoda, Expedia, Hotels.com and similar).
             StayByRail displays this information for comparison purposes only.
             Prices shown may not reflect the final price at the time of booking
-            and may vary depending on the booking platform, currency, taxes, and
-            fees. StayByRail does not guarantee the accuracy, completeness, or
-            availability of any listing.
+            and may vary depending on the booking platform, currency, taxes,
+            and fees. StayByRail does not guarantee the accuracy, completeness,
+            or availability of any listing.
+          </p>
+          <p className="about-block-text">
+            Supplementary content on city-guide pages — such as photos,
+            summaries, weather snapshots, and local event listings — is
+            retrieved from Wikipedia/Wikimedia, Open-Meteo, Ticketmaster,
+            PredictHQ, and Eventbrite. This content is shown "as is" and
+            attribution is provided where the source requires it.
           </p>
         </div>
 
         <div className="about-block">
-          <h3 className="about-block-heading">4. Third-party links and booking</h3>
+          <h3 className="about-block-heading">4. Third-party links, booking, and affiliate relationships</h3>
           <p className="about-block-text">
             When you click a booking link, you leave StayByRail and are
             redirected to a third-party website (such as Booking.com or
-            TripAdvisor). Your use of those sites is governed by their own terms
-            and privacy policies. StayByRail is not a party to any booking
-            transaction and is not responsible for the services, content, or
-            conduct of third-party platforms.
+            TripAdvisor). Your use of those sites is governed by their own
+            terms and privacy policies. StayByRail is not a party to any
+            booking transaction and is not responsible for the services,
+            content, or conduct of third-party platforms.
+          </p>
+          <p className="about-block-text">
+            Some outbound booking links on StayByRail may be affiliate links,
+            meaning we may earn a small commission if you make a booking after
+            following them, at no extra cost to you. Commission does not
+            influence how results are ranked or displayed — the ordering is
+            controlled by the sort and filter options you select on the search
+            page. Where affiliate links are used, a disclosure notice is shown
+            in the site footer. For the full breakdown, see our{" "}
+            <Link to="/privacy" className="about-link">Privacy Policy</Link>.
           </p>
         </div>
 
@@ -78,13 +97,30 @@ function TermsPage() {
         </div>
 
         <div className="about-block">
-          <h3 className="about-block-heading">6. User-provided content</h3>
+          <h3 className="about-block-heading">6. User-provided content (travel tips)</h3>
           <p className="about-block-text">
-            If you submit tips, suggestions, or feedback through the site, you
-            grant StayByRail a non-exclusive, royalty-free right to use, display,
-            and modify that content in connection with the service. You confirm
-            that any content you submit is your own and does not infringe on any
-            third party's rights.
+            Travel tips you submit through the tip form on a city guide are
+            displayed publicly on that guide alongside the name (or nickname)
+            you entered. By submitting a tip you grant StayByRail a
+            non-exclusive, royalty-free right to display, reproduce, and
+            lightly edit that content in connection with the service. You
+            confirm that the content is your own, accurate to the best of
+            your knowledge, and does not infringe on any third party's
+            rights.
+          </p>
+          <p className="about-block-text">
+            StayByRail reserves the right to moderate, edit, or remove any
+            submitted tip for any reason, including spam, inaccuracy,
+            offensive content, or promotional material. If you would like a
+            tip you submitted to be deleted, email{" "}
+            <a href="mailto:hello@staybyrail.co.uk" className="about-link">
+              hello@staybyrail.co.uk
+            </a>{" "}
+            and it will be removed.
+          </p>
+          <p className="about-block-text">
+            You must be at least 16 years old to submit a tip. If you are
+            under 16, please do not use the tip form.
           </p>
         </div>
 
