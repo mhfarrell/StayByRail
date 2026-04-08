@@ -205,7 +205,7 @@ None of this is automatable. You need to do these — they need a real human voi
 ## P5 — Monetisation readiness (for when CJ approves)
 
 - [ ] Hotel card "Book via Booking.com" button wired to the CJ affiliate tracking link
-- [ ] Disclosure banner / footer line: "StayByRail earns a small commission when you book through our links, at no cost to you"
+- [x] Disclosure banner / footer line — `Footer.jsx` now renders a dashed-border disclosure paragraph above the copyright line on every page: "StayByRail may earn a small commission when you book a hotel through our outbound links, at no extra cost to you. Commission does not influence how results are ranked or displayed." Links through to the Privacy Policy where the full affiliate breakdown lives. Matches the language already on the Privacy and Terms pages.
 - [ ] Conversion tracking — at minimum Plausible or GA4 with affiliate click events
 - [ ] A/B test affiliate CTA copy once there's enough traffic
 

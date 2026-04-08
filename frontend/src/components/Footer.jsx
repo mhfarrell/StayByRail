@@ -75,6 +75,13 @@ function Footer() {
             <span className="footer-link-label">GitHub</span>
           </a>
         </div>
+        <p className="footer-disclosure">
+          StayByRail may earn a small commission when you book a hotel
+          through our outbound links, at no extra cost to you. Commission
+          does not influence how results are ranked or displayed. See our{" "}
+          <Link to="/privacy" className="footer-privacy-link">Privacy Policy</Link>{" "}
+          for the full breakdown.
+        </p>
         <div className="footer-copyright">
           &copy; 2026 StayByRail &nbsp;&middot;&nbsp;
           <Link to="/privacy" className="footer-privacy-link">Privacy Policy</Link>
