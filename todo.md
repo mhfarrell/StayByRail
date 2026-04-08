@@ -29,7 +29,7 @@ Seed articles:
 - [x] "London Zone 1 vs Zone 2: the real hotel cost difference" — published at `/journal/london-zone-1-vs-zone-2-hotel-cost`.
 - [x] "Why Otsuka is Tokyo's most underrated hotel base" — published at `/journal/why-otsuka-is-tokyos-most-underrated-hotel-base` as an editor's pick expansion.
 - [x] "Shinkansen vs flying Tokyo→Osaka in 2026: cost, time, carbon" — published at `/journal/shinkansen-vs-flying-tokyo-osaka-2026`.
-- [ ] "The quietest hotels near Gare du Nord" — practical traveller angle
+- [x] "The quietest hotels near Gare du Nord" — published at `/journal/quietest-hotels-near-gare-du-nord`.
 - [x] "Bangkok BTS vs MRT: which line should you actually stay on" — published at `/journal/bangkok-bts-vs-mrt-where-to-stay`.
 - [ ] "Hammersmith: the London hotel base nobody talks about" — editor's pick expansion
 - [x] "How to use Navigo Découverte as a tourist in Paris" — **shipped as `/passes/navigo`** instead of a journal article.

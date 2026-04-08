@@ -91,6 +91,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/journal/quietest-hotels-near-gare-du-nord</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/itineraries</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
