@@ -50,6 +50,39 @@ function GuidesIndexPage() {
       <PageMeta
         title="City Rail & Hotel Guides — StayByRail"
         description="In-depth guides to finding hotels near train and metro stations in Tokyo, London, Paris, Osaka, Barcelona, Bangkok, Berlin, Kyoto, Madrid, Birmingham, and Edinburgh."
+        canonical="https://staybyrail.co.uk/guides"
+        schema={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://staybyrail.co.uk/",
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "City Guides",
+                  "item": "https://staybyrail.co.uk/guides",
+                },
+              ],
+            },
+            {
+              "@type": "CollectionPage",
+              "name": "City Rail & Hotel Guides",
+              "url": "https://staybyrail.co.uk/guides",
+              "hasPart": cityGuides.map((g) => ({
+                "@type": "TouristDestination",
+                "name": `${g.city}, ${g.country}`,
+                "url": `https://staybyrail.co.uk/guides/${g.slug}`,
+              })),
+            },
+          ],
+        }}
       />
       <h2 className="page-heading" style={{ textAlign: "center" }}>City Rail &amp; Hotel Guides</h2>
       <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>

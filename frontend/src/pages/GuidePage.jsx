@@ -72,9 +72,79 @@ function GuidePage() {
 
   if (!guide) return <Navigate to="/guides" replace />;
 
+  const canonical = `https://staybyrail.co.uk/guides/${guide.slug}`;
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://staybyrail.co.uk/",
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "City Guides",
+            "item": "https://staybyrail.co.uk/guides",
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": `${guide.city} Rail & Hotel Guide`,
+            "item": canonical,
+          },
+        ],
+      },
+      {
+        "@type": "TouristDestination",
+        "name": `${guide.city}, ${guide.country}`,
+        "description": guide.metaDescription,
+        "url": canonical,
+        ...(guide.lat && guide.lon
+          ? {
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": guide.lat,
+                "longitude": guide.lon,
+              },
+            }
+          : {}),
+      },
+      {
+        "@type": "Article",
+        "headline": `${guide.city} Rail & Hotel Guide`,
+        "description": guide.metaDescription,
+        "url": canonical,
+        ...(guide.author
+          ? { "author": { "@type": "Person", "name": guide.author } }
+          : {}),
+        ...(guide.updatedAt
+          ? {
+              "datePublished": `${guide.updatedAt}-01`,
+              "dateModified": `${guide.updatedAt}-01`,
+            }
+          : {}),
+        "publisher": {
+          "@type": "Organization",
+          "name": "StayByRail",
+          "url": "https://staybyrail.co.uk",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="page-content">
-      <PageMeta title={guide.metaTitle} description={guide.metaDescription} />
+      <PageMeta
+        title={guide.metaTitle}
+        description={guide.metaDescription}
+        canonical={canonical}
+        schema={schema}
+      />
 
       <p className="guide-breadcrumb" style={{ textAlign: "center" }}>
         <Link to="/guides" className="about-link">Guides</Link>
