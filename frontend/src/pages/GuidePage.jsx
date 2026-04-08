@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { getGuide, cityGuides } from "../data/cityGuides";
+import stationsData from "../data/stations.json";
 import { useCityData } from "../hooks/useCityData";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
@@ -58,6 +59,12 @@ function GuidePage() {
   const { image, weather, events, eventSources } = useCityData(guide);
   const [tips, setTips] = useState(null);
   const [tipsLoaded, setTipsLoaded] = useState(false);
+
+  // All programmatic station landing pages in this city, for internal linking.
+  const cityStations = useMemo(
+    () => (guide ? stationsData.filter((s) => s.city === guide.slug) : []),
+    [guide]
+  );
 
   const loadTips = () => {
     if (!guide) return;
@@ -253,6 +260,30 @@ function GuidePage() {
               );
             })}
           </ul>
+        </div>
+      )}
+
+      {/* Browse every indexed station in this city */}
+      {cityStations.length > 0 && (
+        <div className="guide-stations-block">
+          <h3 className="guide-stations-heading">
+            Browse hotels near every {guide.city} station
+          </h3>
+          <p className="guide-stations-intro">
+            Dedicated pages with walking-distance hotel listings, live pricing,
+            and station facts for each major stop in {guide.city}.
+          </p>
+          <div className="guide-station-links-grid">
+            {cityStations.map((s) => (
+              <Link
+                key={s.slug}
+                to={`/hotels-near/${s.slug}`}
+                className="guide-station-link"
+              >
+                {s.name}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
 

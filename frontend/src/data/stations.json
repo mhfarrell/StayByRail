@@ -1,0 +1,7991 @@
+[
+  {
+    "slug": "ari-bangkok",
+    "name": "Ari",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7795,
+    "lon": 100.5451,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "asok-bangkok",
+    "name": "Asok",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.737,
+    "lon": 100.5607,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "bang-sue-bangkok",
+    "name": "Bang Sue",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.8066,
+    "lon": 100.5396,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "bang-wa-bangkok",
+    "name": "Bang Wa",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7206,
+    "lon": 100.4578,
+    "lines": [
+      "BTS Silom Line"
+    ],
+    "primaryLineKey": "bts_silom"
+  },
+  {
+    "slug": "bangkapi-bangkok",
+    "name": "Bangkapi",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.773,
+    "lon": 100.6347,
+    "lines": [
+      "MRT Yellow Line"
+    ],
+    "primaryLineKey": "mrt_yellow"
+  },
+  {
+    "slug": "chatuchak-park-bangkok",
+    "name": "Chatuchak Park",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.8024,
+    "lon": 100.5535,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "chit-lom-bangkok",
+    "name": "Chit Lom",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.744,
+    "lon": 100.5432,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "chong-nonsi-bangkok",
+    "name": "Chong Nonsi",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7237,
+    "lon": 100.5293,
+    "lines": [
+      "BTS Silom Line"
+    ],
+    "primaryLineKey": "bts_silom"
+  },
+  {
+    "slug": "ekkamai-bangkok",
+    "name": "Ekkamai",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7195,
+    "lon": 100.5852,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "hua-lamphong-bangkok",
+    "name": "Hua Lamphong",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.738,
+    "lon": 100.517,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "hua-mak-bangkok",
+    "name": "Hua Mak",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7437,
+    "lon": 100.6486,
+    "lines": [
+      "MRT Yellow Line"
+    ],
+    "primaryLineKey": "mrt_yellow"
+  },
+  {
+    "slug": "lat-phrao-bangkok",
+    "name": "Lat Phrao",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.806,
+    "lon": 100.5738,
+    "lines": [
+      "MRT Blue Line",
+      "MRT Yellow Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "lumphini-bangkok",
+    "name": "Lumphini",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.726,
+    "lon": 100.5457,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "makkasan-bangkok",
+    "name": "Makkasan",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7512,
+    "lon": 100.5602,
+    "lines": [
+      "Airport Rail Link"
+    ],
+    "primaryLineKey": "airport_rail"
+  },
+  {
+    "slug": "mo-chit-bangkok",
+    "name": "Mo Chit",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.8025,
+    "lon": 100.5535,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "nana-bangkok",
+    "name": "Nana",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7404,
+    "lon": 100.5553,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "national-stadium-bangkok",
+    "name": "National Stadium",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7463,
+    "lon": 100.5292,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "on-nut-bangkok",
+    "name": "On Nut",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7058,
+    "lon": 100.6012,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "phaya-thai-bangkok",
+    "name": "Phaya Thai",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7567,
+    "lon": 100.5316,
+    "lines": [
+      "BTS Sukhumvit Line",
+      "Airport Rail Link"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "phloen-chit-bangkok",
+    "name": "Phloen Chit",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7439,
+    "lon": 100.549,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "phra-ram-9-bangkok",
+    "name": "Phra Ram 9",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7572,
+    "lon": 100.565,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "phrom-phong-bangkok",
+    "name": "Phrom Phong",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7309,
+    "lon": 100.5698,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "queen-sirikit-national-convention-centre-bangkok",
+    "name": "Queen Sirikit National Convention Centre",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7226,
+    "lon": 100.56,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "ramkhamhaeng-bangkok",
+    "name": "Ramkhamhaeng",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7564,
+    "lon": 100.6234,
+    "lines": [
+      "Airport Rail Link"
+    ],
+    "primaryLineKey": "airport_rail"
+  },
+  {
+    "slug": "ratchadamri-bangkok",
+    "name": "Ratchadamri",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7413,
+    "lon": 100.5399,
+    "lines": [
+      "BTS Silom Line"
+    ],
+    "primaryLineKey": "bts_silom"
+  },
+  {
+    "slug": "sala-daeng-bangkok",
+    "name": "Sala Daeng",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7282,
+    "lon": 100.5345,
+    "lines": [
+      "BTS Silom Line"
+    ],
+    "primaryLineKey": "bts_silom"
+  },
+  {
+    "slug": "sam-yan-bangkok",
+    "name": "Sam Yan",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7327,
+    "lon": 100.5291,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "samrong-bangkok",
+    "name": "Samrong",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.6489,
+    "lon": 100.5956,
+    "lines": [
+      "MRT Yellow Line"
+    ],
+    "primaryLineKey": "mrt_yellow"
+  },
+  {
+    "slug": "sanam-chai-bangkok",
+    "name": "Sanam Chai",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.744,
+    "lon": 100.4984,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "saphan-taksin-bangkok",
+    "name": "Saphan Taksin",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7181,
+    "lon": 100.5142,
+    "lines": [
+      "BTS Silom Line"
+    ],
+    "primaryLineKey": "bts_silom"
+  },
+  {
+    "slug": "siam-bangkok",
+    "name": "Siam",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7454,
+    "lon": 100.5342,
+    "lines": [
+      "BTS Sukhumvit Line",
+      "BTS Silom Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "silom-bangkok",
+    "name": "Silom",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7291,
+    "lon": 100.5367,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "sukhumvit-bangkok",
+    "name": "Sukhumvit",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.737,
+    "lon": 100.5607,
+    "lines": [
+      "MRT Blue Line"
+    ],
+    "primaryLineKey": "mrt_blue"
+  },
+  {
+    "slug": "suvarnabhumi-bangkok",
+    "name": "Suvarnabhumi",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.69,
+    "lon": 100.7501,
+    "lines": [
+      "Airport Rail Link"
+    ],
+    "primaryLineKey": "airport_rail"
+  },
+  {
+    "slug": "thong-lo-bangkok",
+    "name": "Thong Lo",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7244,
+    "lon": 100.5782,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "victory-monument-bangkok",
+    "name": "Victory Monument",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7625,
+    "lon": 100.5354,
+    "lines": [
+      "BTS Sukhumvit Line"
+    ],
+    "primaryLineKey": "bts_sukhumvit"
+  },
+  {
+    "slug": "wongwian-yai-bangkok",
+    "name": "Wongwian Yai",
+    "city": "bangkok",
+    "cityDisplay": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.7221,
+    "lon": 100.4955,
+    "lines": [
+      "BTS Silom Line"
+    ],
+    "primaryLineKey": "bts_silom"
+  },
+  {
+    "slug": "aeroport-t1-barcelona",
+    "name": "Aeroport T1",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.2883,
+    "lon": 2.0699,
+    "lines": [
+      "Metro L9/L10"
+    ],
+    "primaryLineKey": "metro_l9"
+  },
+  {
+    "slug": "aeroport-t2-barcelona",
+    "name": "Aeroport T2",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.2975,
+    "lon": 2.0783,
+    "lines": [
+      "Metro L9/L10"
+    ],
+    "primaryLineKey": "metro_l9"
+  },
+  {
+    "slug": "arc-de-triomf-barcelona",
+    "name": "Arc de Triomf",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.391,
+    "lon": 2.1805,
+    "lines": [
+      "Metro L1"
+    ],
+    "primaryLineKey": "metro_l1"
+  },
+  {
+    "slug": "barceloneta-barcelona",
+    "name": "Barceloneta",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3808,
+    "lon": 2.189,
+    "lines": [
+      "Metro L4"
+    ],
+    "primaryLineKey": "metro_l4"
+  },
+  {
+    "slug": "ciutadella-vila-olimpica-barcelona",
+    "name": "Ciutadella - Vila Olímpica",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.385,
+    "lon": 2.192,
+    "lines": [
+      "Metro L4"
+    ],
+    "primaryLineKey": "metro_l4"
+  },
+  {
+    "slug": "diagonal-barcelona",
+    "name": "Diagonal",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3938,
+    "lon": 2.16,
+    "lines": [
+      "Metro L3",
+      "Metro L5"
+    ],
+    "primaryLineKey": "metro_l3"
+  },
+  {
+    "slug": "drassanes-barcelona",
+    "name": "Drassanes",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3755,
+    "lon": 2.1738,
+    "lines": [
+      "Metro L3"
+    ],
+    "primaryLineKey": "metro_l3"
+  },
+  {
+    "slug": "espanya-barcelona",
+    "name": "Espanya",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3755,
+    "lon": 2.149,
+    "lines": [
+      "Metro L3"
+    ],
+    "primaryLineKey": "metro_l3"
+  },
+  {
+    "slug": "europa-fira-barcelona",
+    "name": "Europa - Fira",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3575,
+    "lon": 2.1095,
+    "lines": [
+      "Metro L9/L10"
+    ],
+    "primaryLineKey": "metro_l9"
+  },
+  {
+    "slug": "fontana-barcelona",
+    "name": "Fontana",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.4003,
+    "lon": 2.156,
+    "lines": [
+      "Metro L3"
+    ],
+    "primaryLineKey": "metro_l3"
+  },
+  {
+    "slug": "gracia-barcelona",
+    "name": "Gràcia",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3988,
+    "lon": 2.153,
+    "lines": [
+      "FGC (Ferrocarrils de la Generalitat)"
+    ],
+    "primaryLineKey": "fgc_barcelona"
+  },
+  {
+    "slug": "jaume-i-barcelona",
+    "name": "Jaume I",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3844,
+    "lon": 2.1805,
+    "lines": [
+      "Metro L4"
+    ],
+    "primaryLineKey": "metro_l4"
+  },
+  {
+    "slug": "liceu-barcelona",
+    "name": "Liceu",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3805,
+    "lon": 2.173,
+    "lines": [
+      "Metro L3"
+    ],
+    "primaryLineKey": "metro_l3"
+  },
+  {
+    "slug": "paral-lel-barcelona",
+    "name": "Paral·lel",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3752,
+    "lon": 2.1685,
+    "lines": [
+      "Metro L2"
+    ],
+    "primaryLineKey": "metro_l2"
+  },
+  {
+    "slug": "passeig-de-gracia-barcelona",
+    "name": "Passeig de Gràcia",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3917,
+    "lon": 2.1649,
+    "lines": [
+      "Metro L2",
+      "Metro L3",
+      "Metro L4"
+    ],
+    "primaryLineKey": "metro_l2"
+  },
+  {
+    "slug": "placa-de-catalunya-barcelona",
+    "name": "Plaça de Catalunya",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3875,
+    "lon": 2.17,
+    "lines": [
+      "Metro L1",
+      "Metro L3",
+      "FGC (Ferrocarrils de la Generalitat)"
+    ],
+    "primaryLineKey": "metro_l1"
+  },
+  {
+    "slug": "provenca-barcelona",
+    "name": "Provença",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3937,
+    "lon": 2.1585,
+    "lines": [
+      "FGC (Ferrocarrils de la Generalitat)"
+    ],
+    "primaryLineKey": "fgc_barcelona"
+  },
+  {
+    "slug": "sagrada-familia-barcelona",
+    "name": "Sagrada Família",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.4035,
+    "lon": 2.1744,
+    "lines": [
+      "Metro L2",
+      "Metro L5"
+    ],
+    "primaryLineKey": "metro_l2"
+  },
+  {
+    "slug": "sants-estacio-barcelona",
+    "name": "Sants Estació",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.379,
+    "lon": 2.1397,
+    "lines": [
+      "Metro L3",
+      "Metro L5"
+    ],
+    "primaryLineKey": "metro_l3"
+  },
+  {
+    "slug": "tibidabo-barcelona",
+    "name": "Tibidabo",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.4055,
+    "lon": 2.133,
+    "lines": [
+      "FGC (Ferrocarrils de la Generalitat)"
+    ],
+    "primaryLineKey": "fgc_barcelona"
+  },
+  {
+    "slug": "universitat-barcelona",
+    "name": "Universitat",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.387,
+    "lon": 2.164,
+    "lines": [
+      "Metro L2"
+    ],
+    "primaryLineKey": "metro_l2"
+  },
+  {
+    "slug": "urquinaona-barcelona",
+    "name": "Urquinaona",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3893,
+    "lon": 2.1728,
+    "lines": [
+      "Metro L1",
+      "Metro L4"
+    ],
+    "primaryLineKey": "metro_l1"
+  },
+  {
+    "slug": "verdaguer-barcelona",
+    "name": "Verdaguer",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3988,
+    "lon": 2.1675,
+    "lines": [
+      "Metro L5"
+    ],
+    "primaryLineKey": "metro_l5"
+  },
+  {
+    "slug": "zona-universitaria-barcelona",
+    "name": "Zona Universitària",
+    "city": "barcelona",
+    "cityDisplay": "Barcelona",
+    "country": "Spain",
+    "lat": 41.3865,
+    "lon": 2.113,
+    "lines": [
+      "Metro L9/L10"
+    ],
+    "primaryLineKey": "metro_l9"
+  },
+  {
+    "slug": "alexanderplatz-berlin",
+    "name": "Alexanderplatz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5219,
+    "lon": 13.4132,
+    "lines": [
+      "U-Bahn U2",
+      "U-Bahn U5",
+      "U-Bahn U8",
+      "S-Bahn Ring"
+    ],
+    "primaryLineKey": "ubahn_u2"
+  },
+  {
+    "slug": "bernauer-str-berlin",
+    "name": "Bernauer Str.",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5375,
+    "lon": 13.3956,
+    "lines": [
+      "U-Bahn U8"
+    ],
+    "primaryLineKey": "ubahn_u8"
+  },
+  {
+    "slug": "brandenburger-tor-berlin",
+    "name": "Brandenburger Tor",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5163,
+    "lon": 13.3814,
+    "lines": [
+      "U-Bahn U5",
+      "S-Bahn S1"
+    ],
+    "primaryLineKey": "ubahn_u5"
+  },
+  {
+    "slug": "frankfurter-allee-berlin",
+    "name": "Frankfurter Allee",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5134,
+    "lon": 13.4745,
+    "lines": [
+      "U-Bahn U5"
+    ],
+    "primaryLineKey": "ubahn_u5"
+  },
+  {
+    "slug": "frankfurter-tor-berlin",
+    "name": "Frankfurter Tor",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5163,
+    "lon": 13.4538,
+    "lines": [
+      "U-Bahn U5"
+    ],
+    "primaryLineKey": "ubahn_u5"
+  },
+  {
+    "slug": "friedrichstr-berlin",
+    "name": "Friedrichstr.",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5204,
+    "lon": 13.3879,
+    "lines": [
+      "U-Bahn U6",
+      "S-Bahn Ring",
+      "S-Bahn S1"
+    ],
+    "primaryLineKey": "ubahn_u6"
+  },
+  {
+    "slug": "gesundbrunnen-berlin",
+    "name": "Gesundbrunnen",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5487,
+    "lon": 13.3888,
+    "lines": [
+      "U-Bahn U8"
+    ],
+    "primaryLineKey": "ubahn_u8"
+  },
+  {
+    "slug": "hackescher-markt-berlin",
+    "name": "Hackescher Markt",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5228,
+    "lon": 13.4024,
+    "lines": [
+      "S-Bahn Ring"
+    ],
+    "primaryLineKey": "sbahn_ring"
+  },
+  {
+    "slug": "hallesches-tor-berlin",
+    "name": "Hallesches Tor",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.4978,
+    "lon": 13.3915,
+    "lines": [
+      "U-Bahn U1"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "hauptbahnhof-berlin",
+    "name": "Hauptbahnhof",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5261,
+    "lon": 13.3694,
+    "lines": [
+      "U-Bahn U5",
+      "S-Bahn Ring"
+    ],
+    "primaryLineKey": "ubahn_u5"
+  },
+  {
+    "slug": "hermannplatz-berlin",
+    "name": "Hermannplatz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.4871,
+    "lon": 13.4247,
+    "lines": [
+      "U-Bahn U7"
+    ],
+    "primaryLineKey": "ubahn_u7"
+  },
+  {
+    "slug": "kochstr-checkpoint-charlie-berlin",
+    "name": "Kochstr./Checkpoint Charlie",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5068,
+    "lon": 13.3907,
+    "lines": [
+      "U-Bahn U6"
+    ],
+    "primaryLineKey": "ubahn_u6"
+  },
+  {
+    "slug": "kottbusser-tor-berlin",
+    "name": "Kottbusser Tor",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.499,
+    "lon": 13.4182,
+    "lines": [
+      "U-Bahn U1",
+      "U-Bahn U8"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "kurfuerstendamm-berlin",
+    "name": "Kurfuerstendamm",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5041,
+    "lon": 13.3322,
+    "lines": [
+      "U-Bahn U1"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "lichtenberg-berlin",
+    "name": "Lichtenberg",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5114,
+    "lon": 13.4985,
+    "lines": [
+      "U-Bahn U5"
+    ],
+    "primaryLineKey": "ubahn_u5"
+  },
+  {
+    "slug": "mehringdamm-berlin",
+    "name": "Mehringdamm",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.4938,
+    "lon": 13.3886,
+    "lines": [
+      "U-Bahn U6",
+      "U-Bahn U7"
+    ],
+    "primaryLineKey": "ubahn_u6"
+  },
+  {
+    "slug": "moritzplatz-berlin",
+    "name": "Moritzplatz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5037,
+    "lon": 13.4107,
+    "lines": [
+      "U-Bahn U8"
+    ],
+    "primaryLineKey": "ubahn_u8"
+  },
+  {
+    "slug": "museumsinsel-berlin",
+    "name": "Museumsinsel",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5198,
+    "lon": 13.3967,
+    "lines": [
+      "U-Bahn U5"
+    ],
+    "primaryLineKey": "ubahn_u5"
+  },
+  {
+    "slug": "neukoelln-berlin",
+    "name": "Neukoelln",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.4812,
+    "lon": 13.4352,
+    "lines": [
+      "U-Bahn U7"
+    ],
+    "primaryLineKey": "ubahn_u7"
+  },
+  {
+    "slug": "nollendorfplatz-berlin",
+    "name": "Nollendorfplatz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.4995,
+    "lon": 13.3536,
+    "lines": [
+      "U-Bahn U1"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "ostbahnhof-berlin",
+    "name": "Ostbahnhof",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5107,
+    "lon": 13.4346,
+    "lines": [
+      "S-Bahn Ring"
+    ],
+    "primaryLineKey": "sbahn_ring"
+  },
+  {
+    "slug": "ostkreuz-berlin",
+    "name": "Ostkreuz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5028,
+    "lon": 13.4694,
+    "lines": [
+      "S-Bahn Ring"
+    ],
+    "primaryLineKey": "sbahn_ring"
+  },
+  {
+    "slug": "potsdamer-platz-berlin",
+    "name": "Potsdamer Platz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5096,
+    "lon": 13.3762,
+    "lines": [
+      "U-Bahn U2",
+      "S-Bahn S1"
+    ],
+    "primaryLineKey": "ubahn_u2"
+  },
+  {
+    "slug": "rosenthaler-platz-berlin",
+    "name": "Rosenthaler Platz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5299,
+    "lon": 13.4013,
+    "lines": [
+      "U-Bahn U8"
+    ],
+    "primaryLineKey": "ubahn_u8"
+  },
+  {
+    "slug": "suedkreuz-berlin",
+    "name": "Suedkreuz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.4753,
+    "lon": 13.3653,
+    "lines": [
+      "S-Bahn Ring"
+    ],
+    "primaryLineKey": "sbahn_ring"
+  },
+  {
+    "slug": "tempelhof-berlin",
+    "name": "Tempelhof",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.4706,
+    "lon": 13.3854,
+    "lines": [
+      "U-Bahn U6"
+    ],
+    "primaryLineKey": "ubahn_u6"
+  },
+  {
+    "slug": "unter-den-linden-berlin",
+    "name": "Unter den Linden",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.517,
+    "lon": 13.3887,
+    "lines": [
+      "U-Bahn U5"
+    ],
+    "primaryLineKey": "ubahn_u5"
+  },
+  {
+    "slug": "warschauer-str-berlin",
+    "name": "Warschauer Str.",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5057,
+    "lon": 13.449,
+    "lines": [
+      "U-Bahn U1",
+      "S-Bahn Ring"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "westkreuz-berlin",
+    "name": "Westkreuz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5013,
+    "lon": 13.2836,
+    "lines": [
+      "S-Bahn Ring"
+    ],
+    "primaryLineKey": "sbahn_ring"
+  },
+  {
+    "slug": "wittenbergplatz-berlin",
+    "name": "Wittenbergplatz",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5018,
+    "lon": 13.3426,
+    "lines": [
+      "U-Bahn U1",
+      "U-Bahn U2"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "zoologischer-garten-berlin",
+    "name": "Zoologischer Garten",
+    "city": "berlin",
+    "cityDisplay": "Berlin",
+    "country": "Germany",
+    "lat": 52.5069,
+    "lon": 13.3325,
+    "lines": [
+      "U-Bahn U2"
+    ],
+    "primaryLineKey": "ubahn_u2"
+  },
+  {
+    "slug": "abando-bilbao",
+    "name": "Abando",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.261,
+    "lon": -2.929,
+    "lines": [
+      "Metro Line 1",
+      "EuskoTran"
+    ],
+    "primaryLineKey": "bilbao_metro_1"
+  },
+  {
+    "slug": "arriaga-bilbao",
+    "name": "Arriaga",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.2595,
+    "lon": -2.926,
+    "lines": [
+      "EuskoTran"
+    ],
+    "primaryLineKey": "bilbao_tram"
+  },
+  {
+    "slug": "atxuri-bilbao",
+    "name": "Atxuri",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.26,
+    "lon": -2.919,
+    "lines": [
+      "EuskoTran"
+    ],
+    "primaryLineKey": "bilbao_tram"
+  },
+  {
+    "slug": "basauri-bilbao",
+    "name": "Basauri",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.2365,
+    "lon": -2.885,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "bilbao_metro_2"
+  },
+  {
+    "slug": "casco-viejo-bilbao",
+    "name": "Casco Viejo",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.2587,
+    "lon": -2.9224,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "bilbao_metro_1"
+  },
+  {
+    "slug": "guggenheim-bilbao",
+    "name": "Guggenheim",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.2678,
+    "lon": -2.934,
+    "lines": [
+      "EuskoTran"
+    ],
+    "primaryLineKey": "bilbao_tram"
+  },
+  {
+    "slug": "indautxu-bilbao",
+    "name": "Indautxu",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.2632,
+    "lon": -2.943,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "bilbao_metro_1"
+  },
+  {
+    "slug": "moyua-bilbao",
+    "name": "Moyúa",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.2622,
+    "lon": -2.9365,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "bilbao_metro_1"
+  },
+  {
+    "slug": "ribera-bilbao",
+    "name": "Ribera",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.259,
+    "lon": -2.923,
+    "lines": [
+      "EuskoTran"
+    ],
+    "primaryLineKey": "bilbao_tram"
+  },
+  {
+    "slug": "san-mames-bilbao",
+    "name": "San Mamés",
+    "city": "bilbao",
+    "cityDisplay": "Bilbao",
+    "country": "Spain",
+    "lat": 43.264,
+    "lon": -2.9495,
+    "lines": [
+      "Metro Line 1",
+      "EuskoTran"
+    ],
+    "primaryLineKey": "bilbao_metro_1"
+  },
+  {
+    "slug": "birmingham-international-birmingham",
+    "name": "Birmingham International",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.4508,
+    "lon": -1.726,
+    "lines": [
+      "Birmingham Mainline Stations"
+    ],
+    "primaryLineKey": "bham_mainline"
+  },
+  {
+    "slug": "birmingham-moor-street-birmingham",
+    "name": "Birmingham Moor Street",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.479,
+    "lon": -1.8926,
+    "lines": [
+      "Birmingham Mainline Stations"
+    ],
+    "primaryLineKey": "bham_mainline"
+  },
+  {
+    "slug": "birmingham-new-street-birmingham",
+    "name": "Birmingham New Street",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.4778,
+    "lon": -1.8998,
+    "lines": [
+      "Cross-City Line",
+      "Birmingham Mainline Stations"
+    ],
+    "primaryLineKey": "cross_city"
+  },
+  {
+    "slug": "birmingham-snow-hill-birmingham",
+    "name": "Birmingham Snow Hill",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.4835,
+    "lon": -1.8999,
+    "lines": [
+      "Birmingham Mainline Stations"
+    ],
+    "primaryLineKey": "bham_mainline"
+  },
+  {
+    "slug": "bull-street-birmingham",
+    "name": "Bull Street",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.483,
+    "lon": -1.895,
+    "lines": [
+      "West Midlands Metro"
+    ],
+    "primaryLineKey": "wm_metro"
+  },
+  {
+    "slug": "five-ways-birmingham",
+    "name": "Five Ways",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.472,
+    "lon": -1.9137,
+    "lines": [
+      "Cross-City Line"
+    ],
+    "primaryLineKey": "cross_city"
+  },
+  {
+    "slug": "grand-central-birmingham",
+    "name": "Grand Central",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.4787,
+    "lon": -1.8983,
+    "lines": [
+      "West Midlands Metro"
+    ],
+    "primaryLineKey": "wm_metro"
+  },
+  {
+    "slug": "jewellery-quarter-birmingham",
+    "name": "Jewellery Quarter",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.4891,
+    "lon": -1.9128,
+    "lines": [
+      "West Midlands Metro"
+    ],
+    "primaryLineKey": "wm_metro"
+  },
+  {
+    "slug": "snow-hill-birmingham",
+    "name": "Snow Hill",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.4835,
+    "lon": -1.8999,
+    "lines": [
+      "West Midlands Metro"
+    ],
+    "primaryLineKey": "wm_metro"
+  },
+  {
+    "slug": "university-birmingham",
+    "name": "University",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.4512,
+    "lon": -1.9381,
+    "lines": [
+      "Cross-City Line"
+    ],
+    "primaryLineKey": "cross_city"
+  },
+  {
+    "slug": "wolverhampton-st-george-s-birmingham",
+    "name": "Wolverhampton St George's",
+    "city": "birmingham",
+    "cityDisplay": "Birmingham",
+    "country": "United Kingdom",
+    "lat": 52.5876,
+    "lon": -2.1248,
+    "lines": [
+      "West Midlands Metro"
+    ],
+    "primaryLineKey": "wm_metro"
+  },
+  {
+    "slug": "chartrons-bordeaux",
+    "name": "Chartrons",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.851,
+    "lon": -0.57,
+    "lines": [
+      "Tram Line B"
+    ],
+    "primaryLineKey": "bordeaux_tram_b"
+  },
+  {
+    "slug": "gare-saint-jean-bordeaux",
+    "name": "Gare Saint-Jean",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.8256,
+    "lon": -0.5563,
+    "lines": [
+      "Tram Line B",
+      "Tram Line C"
+    ],
+    "primaryLineKey": "bordeaux_tram_b"
+  },
+  {
+    "slug": "hotel-de-ville-bordeaux",
+    "name": "Hotel de Ville",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.8381,
+    "lon": -0.5763,
+    "lines": [
+      "Tram Line A",
+      "Tram Line B"
+    ],
+    "primaryLineKey": "bordeaux_tram_a"
+  },
+  {
+    "slug": "musee-d-aquitaine-bordeaux",
+    "name": "Musee d'Aquitaine",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.8348,
+    "lon": -0.5743,
+    "lines": [
+      "Tram Line B"
+    ],
+    "primaryLineKey": "bordeaux_tram_b"
+  },
+  {
+    "slug": "place-de-la-bourse-bordeaux",
+    "name": "Place de la Bourse",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.8415,
+    "lon": -0.5685,
+    "lines": [
+      "Tram Line C"
+    ],
+    "primaryLineKey": "bordeaux_tram_c"
+  },
+  {
+    "slug": "place-du-palais-bordeaux",
+    "name": "Place du Palais",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.8391,
+    "lon": -0.5668,
+    "lines": [
+      "Tram Line A"
+    ],
+    "primaryLineKey": "bordeaux_tram_a"
+  },
+  {
+    "slug": "quinconces-bordeaux",
+    "name": "Quinconces",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.8438,
+    "lon": -0.5735,
+    "lines": [
+      "Tram Line A",
+      "Tram Line B",
+      "Tram Line C"
+    ],
+    "primaryLineKey": "bordeaux_tram_a"
+  },
+  {
+    "slug": "sainte-catherine-bordeaux",
+    "name": "Sainte-Catherine",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.8345,
+    "lon": -0.5728,
+    "lines": [
+      "Tram Line A"
+    ],
+    "primaryLineKey": "bordeaux_tram_a"
+  },
+  {
+    "slug": "stade-matmut-atlantique-bordeaux",
+    "name": "Stade Matmut-Atlantique",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.8979,
+    "lon": -0.5615,
+    "lines": [
+      "Tram Line C"
+    ],
+    "primaryLineKey": "bordeaux_tram_c"
+  },
+  {
+    "slug": "victoire-bordeaux",
+    "name": "Victoire",
+    "city": "bordeaux",
+    "cityDisplay": "Bordeaux",
+    "country": "France",
+    "lat": 44.8324,
+    "lon": -0.5715,
+    "lines": [
+      "Tram Line B"
+    ],
+    "primaryLineKey": "bordeaux_tram_b"
+  },
+  {
+    "slug": "brighton-brighton",
+    "name": "Brighton",
+    "city": "brighton",
+    "cityDisplay": "Brighton",
+    "country": "United Kingdom",
+    "lat": 50.8291,
+    "lon": -0.1413,
+    "lines": [
+      "Brighton Key Rail Stations"
+    ],
+    "primaryLineKey": "brighton_rail"
+  },
+  {
+    "slug": "hove-brighton",
+    "name": "Hove",
+    "city": "brighton",
+    "cityDisplay": "Brighton",
+    "country": "United Kingdom",
+    "lat": 50.8354,
+    "lon": -0.171,
+    "lines": [
+      "Brighton Key Rail Stations"
+    ],
+    "primaryLineKey": "brighton_rail"
+  },
+  {
+    "slug": "portslade-brighton",
+    "name": "Portslade",
+    "city": "brighton",
+    "cityDisplay": "Brighton",
+    "country": "United Kingdom",
+    "lat": 50.8394,
+    "lon": -0.207,
+    "lines": [
+      "Brighton Key Rail Stations"
+    ],
+    "primaryLineKey": "brighton_rail"
+  },
+  {
+    "slug": "bristol-parkway-bristol",
+    "name": "Bristol Parkway",
+    "city": "bristol",
+    "cityDisplay": "Bristol",
+    "country": "United Kingdom",
+    "lat": 51.5137,
+    "lon": -2.5429,
+    "lines": [
+      "Bristol Key Rail Stations"
+    ],
+    "primaryLineKey": "bristol_rail"
+  },
+  {
+    "slug": "bristol-temple-meads-bristol",
+    "name": "Bristol Temple Meads",
+    "city": "bristol",
+    "cityDisplay": "Bristol",
+    "country": "United Kingdom",
+    "lat": 51.449,
+    "lon": -2.5813,
+    "lines": [
+      "Bristol Key Rail Stations"
+    ],
+    "primaryLineKey": "bristol_rail"
+  },
+  {
+    "slug": "clifton-down-bristol",
+    "name": "Clifton Down",
+    "city": "bristol",
+    "cityDisplay": "Bristol",
+    "country": "United Kingdom",
+    "lat": 51.4646,
+    "lon": -2.614,
+    "lines": [
+      "Bristol Key Rail Stations"
+    ],
+    "primaryLineKey": "bristol_rail"
+  },
+  {
+    "slug": "cardiff-bay-cardiff",
+    "name": "Cardiff Bay",
+    "city": "cardiff",
+    "cityDisplay": "Cardiff",
+    "country": "United Kingdom",
+    "lat": 51.4653,
+    "lon": -3.1656,
+    "lines": [
+      "Cardiff Key Rail Stations"
+    ],
+    "primaryLineKey": "cardiff_rail"
+  },
+  {
+    "slug": "cardiff-central-cardiff",
+    "name": "Cardiff Central",
+    "city": "cardiff",
+    "cityDisplay": "Cardiff",
+    "country": "United Kingdom",
+    "lat": 51.4755,
+    "lon": -3.1783,
+    "lines": [
+      "Cardiff Key Rail Stations"
+    ],
+    "primaryLineKey": "cardiff_rail"
+  },
+  {
+    "slug": "cardiff-queen-street-cardiff",
+    "name": "Cardiff Queen Street",
+    "city": "cardiff",
+    "cityDisplay": "Cardiff",
+    "country": "United Kingdom",
+    "lat": 51.4823,
+    "lon": -3.1706,
+    "lines": [
+      "Cardiff Key Rail Stations"
+    ],
+    "primaryLineKey": "cardiff_rail"
+  },
+  {
+    "slug": "chiang-mai-airport-area-chiang-mai",
+    "name": "Chiang Mai Airport Area",
+    "city": "chiang_mai",
+    "cityDisplay": "Chiang Mai",
+    "country": "Thailand",
+    "lat": 18.7669,
+    "lon": 98.9625,
+    "lines": [
+      "Chiang Mai Key Areas"
+    ],
+    "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "chiang-mai-station-chiang-mai",
+    "name": "Chiang Mai Station",
+    "city": "chiang_mai",
+    "cityDisplay": "Chiang Mai",
+    "country": "Thailand",
+    "lat": 18.7546,
+    "lon": 98.9853,
+    "lines": [
+      "Chiang Mai Key Areas"
+    ],
+    "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "chiang-mai-university-area-chiang-mai",
+    "name": "Chiang Mai University Area",
+    "city": "chiang_mai",
+    "cityDisplay": "Chiang Mai",
+    "country": "Thailand",
+    "lat": 18.8025,
+    "lon": 98.9534,
+    "lines": [
+      "Chiang Mai Key Areas"
+    ],
+    "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "night-bazaar-chiang-mai",
+    "name": "Night Bazaar",
+    "city": "chiang_mai",
+    "cityDisplay": "Chiang Mai",
+    "country": "Thailand",
+    "lat": 18.7854,
+    "lon": 98.9979,
+    "lines": [
+      "Chiang Mai Key Areas"
+    ],
+    "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "nimman-nimmanhaemin-road-chiang-mai",
+    "name": "Nimman (Nimmanhaemin Road)",
+    "city": "chiang_mai",
+    "cityDisplay": "Chiang Mai",
+    "country": "Thailand",
+    "lat": 18.797,
+    "lon": 98.9682,
+    "lines": [
+      "Chiang Mai Key Areas"
+    ],
+    "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "old-city-chedi-luang-chiang-mai",
+    "name": "Old City (Chedi Luang)",
+    "city": "chiang_mai",
+    "cityDisplay": "Chiang Mai",
+    "country": "Thailand",
+    "lat": 18.7864,
+    "lon": 98.9862,
+    "lines": [
+      "Chiang Mai Key Areas"
+    ],
+    "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "old-city-tha-phae-gate-chiang-mai",
+    "name": "Old City (Tha Phae Gate)",
+    "city": "chiang_mai",
+    "cityDisplay": "Chiang Mai",
+    "country": "Thailand",
+    "lat": 18.7874,
+    "lon": 98.9934,
+    "lines": [
+      "Chiang Mai Key Areas"
+    ],
+    "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "riverside-chiang-mai",
+    "name": "Riverside",
+    "city": "chiang_mai",
+    "cityDisplay": "Chiang Mai",
+    "country": "Thailand",
+    "lat": 18.7838,
+    "lon": 99.0025,
+    "lines": [
+      "Chiang Mai Key Areas"
+    ],
+    "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "warorot-market-chiang-mai",
+    "name": "Warorot Market",
+    "city": "chiang_mai",
+    "cityDisplay": "Chiang Mai",
+    "country": "Thailand",
+    "lat": 18.7919,
+    "lon": 99.0011,
+    "lines": [
+      "Chiang Mai Key Areas"
+    ],
+    "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "breslauer-platz-hbf-cologne",
+    "name": "Breslauer Platz/Hbf",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.9452,
+    "lon": 6.9605,
+    "lines": [
+      "Stadtbahn Line 1"
+    ],
+    "primaryLineKey": "stadtbahn_1"
+  },
+  {
+    "slug": "deutz-messe-cologne",
+    "name": "Deutz/Messe",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.941,
+    "lon": 6.975,
+    "lines": [
+      "Stadtbahn Line 9"
+    ],
+    "primaryLineKey": "stadtbahn_9"
+  },
+  {
+    "slug": "heumarkt-cologne",
+    "name": "Heumarkt",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.9347,
+    "lon": 6.9607,
+    "lines": [
+      "Stadtbahn Line 1",
+      "Stadtbahn Line 9"
+    ],
+    "primaryLineKey": "stadtbahn_1"
+  },
+  {
+    "slug": "koeln-hbf-cologne",
+    "name": "Koeln Hbf",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.943,
+    "lon": 6.9585,
+    "lines": [
+      "S-Bahn Koeln"
+    ],
+    "primaryLineKey": "sbahn_cologne"
+  },
+  {
+    "slug": "koeln-hbf-dom-cologne",
+    "name": "Koeln Hbf/Dom",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.943,
+    "lon": 6.9585,
+    "lines": [
+      "Stadtbahn Line 1"
+    ],
+    "primaryLineKey": "stadtbahn_1"
+  },
+  {
+    "slug": "koeln-messe-deutz-cologne",
+    "name": "Koeln Messe/Deutz",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.941,
+    "lon": 6.975,
+    "lines": [
+      "S-Bahn Koeln"
+    ],
+    "primaryLineKey": "sbahn_cologne"
+  },
+  {
+    "slug": "koeln-ehrenfeld-cologne",
+    "name": "Koeln-Ehrenfeld",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.9457,
+    "lon": 6.9163,
+    "lines": [
+      "S-Bahn Koeln"
+    ],
+    "primaryLineKey": "sbahn_cologne"
+  },
+  {
+    "slug": "koeln-bonn-flughafen-cologne",
+    "name": "Koeln/Bonn Flughafen",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.8789,
+    "lon": 7.121,
+    "lines": [
+      "S-Bahn Koeln"
+    ],
+    "primaryLineKey": "sbahn_cologne"
+  },
+  {
+    "slug": "neumarkt-cologne",
+    "name": "Neumarkt",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.9353,
+    "lon": 6.9478,
+    "lines": [
+      "Stadtbahn Line 1",
+      "Stadtbahn Line 9"
+    ],
+    "primaryLineKey": "stadtbahn_1"
+  },
+  {
+    "slug": "rudolfplatz-cologne",
+    "name": "Rudolfplatz",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.9363,
+    "lon": 6.9369,
+    "lines": [
+      "Stadtbahn Line 1"
+    ],
+    "primaryLineKey": "stadtbahn_1"
+  },
+  {
+    "slug": "universitaetsstr-cologne",
+    "name": "Universitaetsstr.",
+    "city": "cologne",
+    "cityDisplay": "Cologne",
+    "country": "Germany",
+    "lat": 50.9266,
+    "lon": 6.9301,
+    "lines": [
+      "Stadtbahn Line 9"
+    ],
+    "primaryLineKey": "stadtbahn_9"
+  },
+  {
+    "slug": "bilk-s-dusseldorf",
+    "name": "Bilk S",
+    "city": "dusseldorf",
+    "cityDisplay": "Dusseldorf",
+    "country": "Germany",
+    "lat": 51.2099,
+    "lon": 6.7725,
+    "lines": [
+      "Stadtbahn Duesseldorf"
+    ],
+    "primaryLineKey": "ubahn_dusseldorf"
+  },
+  {
+    "slug": "duesseldorf-flughafen-dusseldorf",
+    "name": "Duesseldorf Flughafen",
+    "city": "dusseldorf",
+    "cityDisplay": "Dusseldorf",
+    "country": "Germany",
+    "lat": 51.2536,
+    "lon": 6.7668,
+    "lines": [
+      "Stadtbahn Duesseldorf"
+    ],
+    "primaryLineKey": "ubahn_dusseldorf"
+  },
+  {
+    "slug": "duesseldorf-hbf-dusseldorf",
+    "name": "Duesseldorf Hbf",
+    "city": "dusseldorf",
+    "cityDisplay": "Dusseldorf",
+    "country": "Germany",
+    "lat": 51.22,
+    "lon": 6.7942,
+    "lines": [
+      "Stadtbahn Duesseldorf"
+    ],
+    "primaryLineKey": "ubahn_dusseldorf"
+  },
+  {
+    "slug": "heinrich-heine-allee-dusseldorf",
+    "name": "Heinrich-Heine-Allee",
+    "city": "dusseldorf",
+    "cityDisplay": "Dusseldorf",
+    "country": "Germany",
+    "lat": 51.2261,
+    "lon": 6.7763,
+    "lines": [
+      "Stadtbahn Duesseldorf"
+    ],
+    "primaryLineKey": "ubahn_dusseldorf"
+  },
+  {
+    "slug": "schadowstr-dusseldorf",
+    "name": "Schadowstr.",
+    "city": "dusseldorf",
+    "cityDisplay": "Dusseldorf",
+    "country": "Germany",
+    "lat": 51.2288,
+    "lon": 6.7838,
+    "lines": [
+      "Stadtbahn Duesseldorf"
+    ],
+    "primaryLineKey": "ubahn_dusseldorf"
+  },
+  {
+    "slug": "steinstr-koenigsallee-dusseldorf",
+    "name": "Steinstr./Koenigsallee",
+    "city": "dusseldorf",
+    "cityDisplay": "Dusseldorf",
+    "country": "Germany",
+    "lat": 51.2196,
+    "lon": 6.7821,
+    "lines": [
+      "Stadtbahn Duesseldorf"
+    ],
+    "primaryLineKey": "ubahn_dusseldorf"
+  },
+  {
+    "slug": "edinburgh-airport-edinburgh",
+    "name": "Edinburgh Airport",
+    "city": "edinburgh",
+    "cityDisplay": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.95,
+    "lon": -3.3625,
+    "lines": [
+      "Edinburgh Tram"
+    ],
+    "primaryLineKey": "edinburgh_tram"
+  },
+  {
+    "slug": "edinburgh-park-edinburgh",
+    "name": "Edinburgh Park",
+    "city": "edinburgh",
+    "cityDisplay": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.9277,
+    "lon": -3.3077,
+    "lines": [
+      "Edinburgh Tram",
+      "ScotRail Edinburgh Commuter"
+    ],
+    "primaryLineKey": "edinburgh_tram"
+  },
+  {
+    "slug": "edinburgh-waverley-edinburgh",
+    "name": "Edinburgh Waverley",
+    "city": "edinburgh",
+    "cityDisplay": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.9521,
+    "lon": -3.1903,
+    "lines": [
+      "ScotRail Edinburgh Commuter"
+    ],
+    "primaryLineKey": "scotrail_edinburgh"
+  },
+  {
+    "slug": "haymarket-edinburgh",
+    "name": "Haymarket",
+    "city": "edinburgh",
+    "cityDisplay": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.9457,
+    "lon": -3.2185,
+    "lines": [
+      "Edinburgh Tram",
+      "ScotRail Edinburgh Commuter"
+    ],
+    "primaryLineKey": "edinburgh_tram"
+  },
+  {
+    "slug": "newhaven-edinburgh",
+    "name": "Newhaven",
+    "city": "edinburgh",
+    "cityDisplay": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.9777,
+    "lon": -3.1944,
+    "lines": [
+      "Edinburgh Tram"
+    ],
+    "primaryLineKey": "edinburgh_tram"
+  },
+  {
+    "slug": "princes-street-edinburgh",
+    "name": "Princes Street",
+    "city": "edinburgh",
+    "cityDisplay": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.9521,
+    "lon": -3.199,
+    "lines": [
+      "Edinburgh Tram"
+    ],
+    "primaryLineKey": "edinburgh_tram"
+  },
+  {
+    "slug": "st-andrew-square-edinburgh",
+    "name": "St Andrew Square",
+    "city": "edinburgh",
+    "cityDisplay": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.9538,
+    "lon": -3.1929,
+    "lines": [
+      "Edinburgh Tram"
+    ],
+    "primaryLineKey": "edinburgh_tram"
+  },
+  {
+    "slug": "york-place-edinburgh",
+    "name": "York Place",
+    "city": "edinburgh",
+    "cityDisplay": "Edinburgh",
+    "country": "United Kingdom",
+    "lat": 55.9558,
+    "lon": -3.188,
+    "lines": [
+      "Edinburgh Tram"
+    ],
+    "primaryLineKey": "edinburgh_tram"
+  },
+  {
+    "slug": "bockenheimer-warte-frankfurt",
+    "name": "Bockenheimer Warte",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.1183,
+    "lon": 8.6733,
+    "lines": [
+      "U-Bahn U4"
+    ],
+    "primaryLineKey": "ubahn_u4"
+  },
+  {
+    "slug": "dom-roemer-frankfurt",
+    "name": "Dom/Roemer",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.111,
+    "lon": 8.684,
+    "lines": [
+      "U-Bahn U4"
+    ],
+    "primaryLineKey": "ubahn_u4"
+  },
+  {
+    "slug": "festhalle-messe-frankfurt",
+    "name": "Festhalle/Messe",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.1121,
+    "lon": 8.6529,
+    "lines": [
+      "U-Bahn U4"
+    ],
+    "primaryLineKey": "ubahn_u4"
+  },
+  {
+    "slug": "frankfurt-flughafen-frankfurt",
+    "name": "Frankfurt Flughafen",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.0519,
+    "lon": 8.5706,
+    "lines": [
+      "S-Bahn Frankfurt"
+    ],
+    "primaryLineKey": "sbahn_frankfurt"
+  },
+  {
+    "slug": "frankfurt-sued-frankfurt",
+    "name": "Frankfurt Sued",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.0999,
+    "lon": 8.6867,
+    "lines": [
+      "S-Bahn Frankfurt"
+    ],
+    "primaryLineKey": "sbahn_frankfurt"
+  },
+  {
+    "slug": "hauptbahnhof-frankfurt",
+    "name": "Hauptbahnhof",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.1072,
+    "lon": 8.6637,
+    "lines": [
+      "U-Bahn U4",
+      "U-Bahn U5",
+      "S-Bahn Frankfurt"
+    ],
+    "primaryLineKey": "ubahn_u4"
+  },
+  {
+    "slug": "hauptwache-frankfurt",
+    "name": "Hauptwache",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.1142,
+    "lon": 8.6789,
+    "lines": [
+      "S-Bahn Frankfurt"
+    ],
+    "primaryLineKey": "sbahn_frankfurt"
+  },
+  {
+    "slug": "konstablerwache-frankfurt",
+    "name": "Konstablerwache",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.1142,
+    "lon": 8.6916,
+    "lines": [
+      "U-Bahn U4",
+      "U-Bahn U5",
+      "S-Bahn Frankfurt"
+    ],
+    "primaryLineKey": "ubahn_u4"
+  },
+  {
+    "slug": "taunusanlage-frankfurt",
+    "name": "Taunusanlage",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.1121,
+    "lon": 8.67,
+    "lines": [
+      "S-Bahn Frankfurt"
+    ],
+    "primaryLineKey": "sbahn_frankfurt"
+  },
+  {
+    "slug": "willy-brandt-platz-frankfurt",
+    "name": "Willy-Brandt-Platz",
+    "city": "frankfurt",
+    "cityDisplay": "Frankfurt",
+    "country": "Germany",
+    "lat": 50.1086,
+    "lon": 8.6732,
+    "lines": [
+      "U-Bahn U4"
+    ],
+    "primaryLineKey": "ubahn_u4"
+  },
+  {
+    "slug": "dazaifu-fukuoka",
+    "name": "Dazaifu",
+    "city": "fukuoka",
+    "cityDisplay": "Fukuoka",
+    "country": "Japan",
+    "lat": 33.512,
+    "lon": 130.5243,
+    "lines": [
+      "Nishitetsu Tenjin-Omuta Line"
+    ],
+    "primaryLineKey": "nishitetsu"
+  },
+  {
+    "slug": "fukuoka-airport-fukuoka",
+    "name": "Fukuoka Airport",
+    "city": "fukuoka",
+    "cityDisplay": "Fukuoka",
+    "country": "Japan",
+    "lat": 33.5901,
+    "lon": 130.4517,
+    "lines": [
+      "Fukuoka Subway Kuko Line"
+    ],
+    "primaryLineKey": "kuko"
+  },
+  {
+    "slug": "hakata-fukuoka",
+    "name": "Hakata",
+    "city": "fukuoka",
+    "cityDisplay": "Fukuoka",
+    "country": "Japan",
+    "lat": 33.5902,
+    "lon": 130.4206,
+    "lines": [
+      "Fukuoka Subway Kuko Line"
+    ],
+    "primaryLineKey": "kuko"
+  },
+  {
+    "slug": "nakasu-kawabata-fukuoka",
+    "name": "Nakasu-Kawabata",
+    "city": "fukuoka",
+    "cityDisplay": "Fukuoka",
+    "country": "Japan",
+    "lat": 33.5925,
+    "lon": 130.4073,
+    "lines": [
+      "Fukuoka Subway Kuko Line",
+      "Fukuoka Subway Hakozaki Line"
+    ],
+    "primaryLineKey": "kuko"
+  },
+  {
+    "slug": "nishitetsu-fukuoka-tenjin-fukuoka",
+    "name": "Nishitetsu-Fukuoka (Tenjin)",
+    "city": "fukuoka",
+    "cityDisplay": "Fukuoka",
+    "country": "Japan",
+    "lat": 33.5902,
+    "lon": 130.399,
+    "lines": [
+      "Nishitetsu Tenjin-Omuta Line"
+    ],
+    "primaryLineKey": "nishitetsu"
+  },
+  {
+    "slug": "tenjin-fukuoka",
+    "name": "Tenjin",
+    "city": "fukuoka",
+    "cityDisplay": "Fukuoka",
+    "country": "Japan",
+    "lat": 33.5919,
+    "lon": 130.3988,
+    "lines": [
+      "Fukuoka Subway Kuko Line"
+    ],
+    "primaryLineKey": "kuko"
+  },
+  {
+    "slug": "buchanan-street-glasgow",
+    "name": "Buchanan Street",
+    "city": "glasgow",
+    "cityDisplay": "Glasgow",
+    "country": "United Kingdom",
+    "lat": 55.8634,
+    "lon": -4.2518,
+    "lines": [
+      "Glasgow Subway"
+    ],
+    "primaryLineKey": "glasgow_subway"
+  },
+  {
+    "slug": "glasgow-central-glasgow",
+    "name": "Glasgow Central",
+    "city": "glasgow",
+    "cityDisplay": "Glasgow",
+    "country": "United Kingdom",
+    "lat": 55.8594,
+    "lon": -4.2584,
+    "lines": [
+      "ScotRail Glasgow Commuter"
+    ],
+    "primaryLineKey": "scotrail_glasgow"
+  },
+  {
+    "slug": "glasgow-queen-street-glasgow",
+    "name": "Glasgow Queen Street",
+    "city": "glasgow",
+    "cityDisplay": "Glasgow",
+    "country": "United Kingdom",
+    "lat": 55.8622,
+    "lon": -4.2511,
+    "lines": [
+      "ScotRail Glasgow Commuter"
+    ],
+    "primaryLineKey": "scotrail_glasgow"
+  },
+  {
+    "slug": "hillhead-glasgow",
+    "name": "Hillhead",
+    "city": "glasgow",
+    "cityDisplay": "Glasgow",
+    "country": "United Kingdom",
+    "lat": 55.8731,
+    "lon": -4.294,
+    "lines": [
+      "Glasgow Subway"
+    ],
+    "primaryLineKey": "glasgow_subway"
+  },
+  {
+    "slug": "kelvinbridge-glasgow",
+    "name": "Kelvinbridge",
+    "city": "glasgow",
+    "cityDisplay": "Glasgow",
+    "country": "United Kingdom",
+    "lat": 55.8722,
+    "lon": -4.2827,
+    "lines": [
+      "Glasgow Subway"
+    ],
+    "primaryLineKey": "glasgow_subway"
+  },
+  {
+    "slug": "partick-glasgow",
+    "name": "Partick",
+    "city": "glasgow",
+    "cityDisplay": "Glasgow",
+    "country": "United Kingdom",
+    "lat": 55.8698,
+    "lon": -4.3088,
+    "lines": [
+      "Glasgow Subway",
+      "ScotRail Glasgow Commuter"
+    ],
+    "primaryLineKey": "glasgow_subway"
+  },
+  {
+    "slug": "st-enoch-glasgow",
+    "name": "St Enoch",
+    "city": "glasgow",
+    "cityDisplay": "Glasgow",
+    "country": "United Kingdom",
+    "lat": 55.8567,
+    "lon": -4.2539,
+    "lines": [
+      "Glasgow Subway"
+    ],
+    "primaryLineKey": "glasgow_subway"
+  },
+  {
+    "slug": "altona-hamburg",
+    "name": "Altona",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5528,
+    "lon": 9.9355,
+    "lines": [
+      "S-Bahn Hamburg"
+    ],
+    "primaryLineKey": "sbahn_hamburg"
+  },
+  {
+    "slug": "barmbek-hamburg",
+    "name": "Barmbek",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5874,
+    "lon": 10.044,
+    "lines": [
+      "U-Bahn U3"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "baumwall-hamburg",
+    "name": "Baumwall",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5457,
+    "lon": 9.9823,
+    "lines": [
+      "U-Bahn U3"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "dammtor-hamburg",
+    "name": "Dammtor",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5607,
+    "lon": 9.9896,
+    "lines": [
+      "S-Bahn Hamburg"
+    ],
+    "primaryLineKey": "sbahn_hamburg"
+  },
+  {
+    "slug": "hauptbahnhof-hamburg",
+    "name": "Hauptbahnhof",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.553,
+    "lon": 10.0069,
+    "lines": [
+      "S-Bahn Hamburg"
+    ],
+    "primaryLineKey": "sbahn_hamburg"
+  },
+  {
+    "slug": "hauptbahnhof-nord-hamburg",
+    "name": "Hauptbahnhof Nord",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5536,
+    "lon": 10.0082,
+    "lines": [
+      "U-Bahn U3"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "hauptbahnhof-sued-hamburg",
+    "name": "Hauptbahnhof Sued",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.552,
+    "lon": 10.007,
+    "lines": [
+      "U-Bahn U1"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "jungfernstieg-hamburg",
+    "name": "Jungfernstieg",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.552,
+    "lon": 9.9933,
+    "lines": [
+      "U-Bahn U1",
+      "S-Bahn Hamburg"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "landungsbruecken-hamburg",
+    "name": "Landungsbruecken",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5456,
+    "lon": 9.9695,
+    "lines": [
+      "U-Bahn U3",
+      "S-Bahn Hamburg"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "moenckebergstr-hamburg",
+    "name": "Moenckebergstr.",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5515,
+    "lon": 10.0051,
+    "lines": [
+      "U-Bahn U3"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "rathaus-hamburg",
+    "name": "Rathaus",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.55,
+    "lon": 9.9926,
+    "lines": [
+      "U-Bahn U3"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "reeperbahn-hamburg",
+    "name": "Reeperbahn",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5498,
+    "lon": 9.9594,
+    "lines": [
+      "S-Bahn Hamburg"
+    ],
+    "primaryLineKey": "sbahn_hamburg"
+  },
+  {
+    "slug": "st-pauli-hamburg",
+    "name": "St. Pauli",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5524,
+    "lon": 9.9657,
+    "lines": [
+      "U-Bahn U3"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "stephansplatz-hamburg",
+    "name": "Stephansplatz",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.56,
+    "lon": 9.99,
+    "lines": [
+      "U-Bahn U1"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "sternschanze-hamburg",
+    "name": "Sternschanze",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.5635,
+    "lon": 9.9661,
+    "lines": [
+      "U-Bahn U3",
+      "S-Bahn Hamburg"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "wandsbek-markt-hamburg",
+    "name": "Wandsbek Markt",
+    "city": "hamburg",
+    "cityDisplay": "Hamburg",
+    "country": "Germany",
+    "lat": 53.572,
+    "lon": 10.0678,
+    "lines": [
+      "U-Bahn U1"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "genbaku-dome-mae-hiroshima",
+    "name": "Genbaku Dome-mae",
+    "city": "hiroshima",
+    "cityDisplay": "Hiroshima",
+    "country": "Japan",
+    "lat": 34.3957,
+    "lon": 132.4531,
+    "lines": [
+      "Hiroden Line 1 (Ujina)",
+      "Hiroden Line 2 (Miyajima)"
+    ],
+    "primaryLineKey": "hiroden_1"
+  },
+  {
+    "slug": "hatchobori-hiroshima",
+    "name": "Hatchobori",
+    "city": "hiroshima",
+    "cityDisplay": "Hiroshima",
+    "country": "Japan",
+    "lat": 34.3932,
+    "lon": 132.4633,
+    "lines": [
+      "Hiroden Line 1 (Ujina)",
+      "Hiroden Line 2 (Miyajima)"
+    ],
+    "primaryLineKey": "hiroden_1"
+  },
+  {
+    "slug": "hiroden-miyajimaguchi-hiroshima",
+    "name": "Hiroden-Miyajimaguchi",
+    "city": "hiroshima",
+    "cityDisplay": "Hiroshima",
+    "country": "Japan",
+    "lat": 34.353,
+    "lon": 132.3161,
+    "lines": [
+      "Hiroden Line 2 (Miyajima)"
+    ],
+    "primaryLineKey": "hiroden_2"
+  },
+  {
+    "slug": "hiroshima-hiroshima",
+    "name": "Hiroshima",
+    "city": "hiroshima",
+    "cityDisplay": "Hiroshima",
+    "country": "Japan",
+    "lat": 34.3977,
+    "lon": 132.4752,
+    "lines": [
+      "JR Sanyo Main Line"
+    ],
+    "primaryLineKey": "sanyo_hiroshima"
+  },
+  {
+    "slug": "hiroshima-station-hiroshima",
+    "name": "Hiroshima Station",
+    "city": "hiroshima",
+    "cityDisplay": "Hiroshima",
+    "country": "Japan",
+    "lat": 34.3977,
+    "lon": 132.4752,
+    "lines": [
+      "Hiroden Line 1 (Ujina)",
+      "Hiroden Line 2 (Miyajima)"
+    ],
+    "primaryLineKey": "hiroden_1"
+  },
+  {
+    "slug": "kamiyacho-hiroshima",
+    "name": "Kamiyacho",
+    "city": "hiroshima",
+    "cityDisplay": "Hiroshima",
+    "country": "Japan",
+    "lat": 34.3928,
+    "lon": 132.4567,
+    "lines": [
+      "Hiroden Line 1 (Ujina)"
+    ],
+    "primaryLineKey": "hiroden_1"
+  },
+  {
+    "slug": "miyajimaguchi-hiroshima",
+    "name": "Miyajimaguchi",
+    "city": "hiroshima",
+    "cityDisplay": "Hiroshima",
+    "country": "Japan",
+    "lat": 34.353,
+    "lon": 132.3161,
+    "lines": [
+      "JR Sanyo Main Line"
+    ],
+    "primaryLineKey": "sanyo_hiroshima"
+  },
+  {
+    "slug": "fukui-kanazawa",
+    "name": "Fukui",
+    "city": "kanazawa",
+    "cityDisplay": "Kanazawa",
+    "country": "Japan",
+    "lat": 36.0624,
+    "lon": 136.2227,
+    "lines": [
+      "JR Hokuriku Main Line"
+    ],
+    "primaryLineKey": "hokuriku"
+  },
+  {
+    "slug": "kagaonsen-kanazawa",
+    "name": "Kagaonsen",
+    "city": "kanazawa",
+    "cityDisplay": "Kanazawa",
+    "country": "Japan",
+    "lat": 36.3141,
+    "lon": 136.3635,
+    "lines": [
+      "JR Hokuriku Main Line"
+    ],
+    "primaryLineKey": "hokuriku"
+  },
+  {
+    "slug": "kanazawa-kanazawa",
+    "name": "Kanazawa",
+    "city": "kanazawa",
+    "cityDisplay": "Kanazawa",
+    "country": "Japan",
+    "lat": 36.578,
+    "lon": 136.6484,
+    "lines": [
+      "Hokuriku Railroad Ishikawa Line",
+      "JR Hokuriku Main Line"
+    ],
+    "primaryLineKey": "ishikawa"
+  },
+  {
+    "slug": "kobe-kobe",
+    "name": "Kobe",
+    "city": "kobe",
+    "cityDisplay": "Kobe",
+    "country": "Japan",
+    "lat": 34.6804,
+    "lon": 135.1784,
+    "lines": [
+      "JR Tokaido-Sanyo Line (Kobe)"
+    ],
+    "primaryLineKey": "tokaido_kobe"
+  },
+  {
+    "slug": "kobe-airport-kobe",
+    "name": "Kobe Airport",
+    "city": "kobe",
+    "cityDisplay": "Kobe",
+    "country": "Japan",
+    "lat": 34.6327,
+    "lon": 135.2237,
+    "lines": [
+      "Port Liner"
+    ],
+    "primaryLineKey": "port_liner"
+  },
+  {
+    "slug": "motomachi-kobe",
+    "name": "Motomachi",
+    "city": "kobe",
+    "cityDisplay": "Kobe",
+    "country": "Japan",
+    "lat": 34.6891,
+    "lon": 135.1877,
+    "lines": [
+      "JR Tokaido-Sanyo Line (Kobe)"
+    ],
+    "primaryLineKey": "tokaido_kobe"
+  },
+  {
+    "slug": "sannomiya-kobe",
+    "name": "Sannomiya",
+    "city": "kobe",
+    "cityDisplay": "Kobe",
+    "country": "Japan",
+    "lat": 34.695,
+    "lon": 135.197,
+    "lines": [
+      "Kobe Subway Seishin-Yamate Line",
+      "JR Tokaido-Sanyo Line (Kobe)",
+      "Port Liner"
+    ],
+    "primaryLineKey": "seishin_yamate"
+  },
+  {
+    "slug": "shin-kobe-kobe",
+    "name": "Shin-Kobe",
+    "city": "kobe",
+    "cityDisplay": "Kobe",
+    "country": "Japan",
+    "lat": 34.704,
+    "lon": 135.1978,
+    "lines": [
+      "Kobe Subway Seishin-Yamate Line",
+      "JR Tokaido-Sanyo Line (Kobe)"
+    ],
+    "primaryLineKey": "seishin_yamate"
+  },
+  {
+    "slug": "shin-nagata-kobe",
+    "name": "Shin-Nagata",
+    "city": "kobe",
+    "cityDisplay": "Kobe",
+    "country": "Japan",
+    "lat": 34.6571,
+    "lon": 135.1534,
+    "lines": [
+      "Kobe Subway Seishin-Yamate Line"
+    ],
+    "primaryLineKey": "seishin_yamate"
+  },
+  {
+    "slug": "ao-nang-krabi",
+    "name": "Ao Nang",
+    "city": "krabi",
+    "cityDisplay": "Krabi",
+    "country": "Thailand",
+    "lat": 8.0295,
+    "lon": 98.8268,
+    "lines": [
+      "Krabi Key Areas"
+    ],
+    "primaryLineKey": "krabi_areas"
+  },
+  {
+    "slug": "klong-muang-beach-krabi",
+    "name": "Klong Muang Beach",
+    "city": "krabi",
+    "cityDisplay": "Krabi",
+    "country": "Thailand",
+    "lat": 8.07,
+    "lon": 98.788,
+    "lines": [
+      "Krabi Key Areas"
+    ],
+    "primaryLineKey": "krabi_areas"
+  },
+  {
+    "slug": "krabi-town-krabi",
+    "name": "Krabi Town",
+    "city": "krabi",
+    "cityDisplay": "Krabi",
+    "country": "Thailand",
+    "lat": 8.0863,
+    "lon": 98.9063,
+    "lines": [
+      "Krabi Key Areas"
+    ],
+    "primaryLineKey": "krabi_areas"
+  },
+  {
+    "slug": "nopparat-thara-beach-krabi",
+    "name": "Nopparat Thara Beach",
+    "city": "krabi",
+    "cityDisplay": "Krabi",
+    "country": "Thailand",
+    "lat": 8.041,
+    "lon": 98.8182,
+    "lines": [
+      "Krabi Key Areas"
+    ],
+    "primaryLineKey": "krabi_areas"
+  },
+  {
+    "slug": "railay-beach-krabi",
+    "name": "Railay Beach",
+    "city": "krabi",
+    "cityDisplay": "Krabi",
+    "country": "Thailand",
+    "lat": 8.0103,
+    "lon": 98.8375,
+    "lines": [
+      "Krabi Key Areas"
+    ],
+    "primaryLineKey": "krabi_areas"
+  },
+  {
+    "slug": "demachiyanagi-kyoto",
+    "name": "Demachiyanagi",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.03,
+    "lon": 135.7718,
+    "lines": [
+      "Keihan Main Line"
+    ],
+    "primaryLineKey": "keihan_kyoto"
+  },
+  {
+    "slug": "fushimi-inari-kyoto",
+    "name": "Fushimi-Inari",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 34.9671,
+    "lon": 135.7727,
+    "lines": [
+      "Keihan Main Line"
+    ],
+    "primaryLineKey": "keihan_kyoto"
+  },
+  {
+    "slug": "gion-shijo-kyoto",
+    "name": "Gion-Shijo",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0036,
+    "lon": 135.7713,
+    "lines": [
+      "Keihan Main Line"
+    ],
+    "primaryLineKey": "keihan_kyoto"
+  },
+  {
+    "slug": "higashiyama-kyoto",
+    "name": "Higashiyama",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.009,
+    "lon": 135.78,
+    "lines": [
+      "Tozai Subway Line"
+    ],
+    "primaryLineKey": "tozai_kyoto"
+  },
+  {
+    "slug": "imadegawa-kyoto",
+    "name": "Imadegawa",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.03,
+    "lon": 135.759,
+    "lines": [
+      "Karasuma Subway Line"
+    ],
+    "primaryLineKey": "karasuma"
+  },
+  {
+    "slug": "karasuma-kyoto",
+    "name": "Karasuma",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0031,
+    "lon": 135.759,
+    "lines": [
+      "Hankyu Kyoto Line"
+    ],
+    "primaryLineKey": "hankyu_kyoto_line"
+  },
+  {
+    "slug": "karasuma-oike-kyoto",
+    "name": "Karasuma Oike",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0098,
+    "lon": 135.7592,
+    "lines": [
+      "Karasuma Subway Line",
+      "Tozai Subway Line"
+    ],
+    "primaryLineKey": "karasuma"
+  },
+  {
+    "slug": "kyoto-kyoto",
+    "name": "Kyoto",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 34.9858,
+    "lon": 135.7588,
+    "lines": [
+      "Karasuma Subway Line",
+      "JR Sagano/San-in Line"
+    ],
+    "primaryLineKey": "karasuma"
+  },
+  {
+    "slug": "kyoto-kawaramachi-kyoto",
+    "name": "Kyoto-Kawaramachi",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0038,
+    "lon": 135.7693,
+    "lines": [
+      "Hankyu Kyoto Line"
+    ],
+    "primaryLineKey": "hankyu_kyoto_line"
+  },
+  {
+    "slug": "nijo-kyoto",
+    "name": "Nijo",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0101,
+    "lon": 135.7432,
+    "lines": [
+      "Tozai Subway Line",
+      "JR Sagano/San-in Line"
+    ],
+    "primaryLineKey": "tozai_kyoto"
+  },
+  {
+    "slug": "saga-arashiyama-kyoto",
+    "name": "Saga-Arashiyama",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0194,
+    "lon": 135.6815,
+    "lines": [
+      "JR Sagano/San-in Line"
+    ],
+    "primaryLineKey": "sagano"
+  },
+  {
+    "slug": "sanjo-kyoto",
+    "name": "Sanjo",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.009,
+    "lon": 135.7714,
+    "lines": [
+      "Keihan Main Line"
+    ],
+    "primaryLineKey": "keihan_kyoto"
+  },
+  {
+    "slug": "sanjo-keihan-kyoto",
+    "name": "Sanjo Keihan",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.009,
+    "lon": 135.7714,
+    "lines": [
+      "Tozai Subway Line"
+    ],
+    "primaryLineKey": "tozai_kyoto"
+  },
+  {
+    "slug": "shijo-kyoto",
+    "name": "Shijo",
+    "city": "kyoto",
+    "cityDisplay": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0031,
+    "lon": 135.759,
+    "lines": [
+      "Karasuma Subway Line"
+    ],
+    "primaryLineKey": "karasuma"
+  },
+  {
+    "slug": "headingley-leeds",
+    "name": "Headingley",
+    "city": "leeds",
+    "cityDisplay": "Leeds",
+    "country": "United Kingdom",
+    "lat": 53.8193,
+    "lon": -1.5831,
+    "lines": [
+      "Leeds Key Rail Stations"
+    ],
+    "primaryLineKey": "leeds_rail"
+  },
+  {
+    "slug": "leeds-leeds",
+    "name": "Leeds",
+    "city": "leeds",
+    "cityDisplay": "Leeds",
+    "country": "United Kingdom",
+    "lat": 53.7955,
+    "lon": -1.5476,
+    "lines": [
+      "Leeds Key Rail Stations"
+    ],
+    "primaryLineKey": "leeds_rail"
+  },
+  {
+    "slug": "chester-liverpool",
+    "name": "Chester",
+    "city": "liverpool",
+    "cityDisplay": "Liverpool",
+    "country": "United Kingdom",
+    "lat": 53.1964,
+    "lon": -2.8794,
+    "lines": [
+      "Merseyrail Wirral Line"
+    ],
+    "primaryLineKey": "merseyrail_wirral"
+  },
+  {
+    "slug": "hamilton-square-liverpool",
+    "name": "Hamilton Square",
+    "city": "liverpool",
+    "cityDisplay": "Liverpool",
+    "country": "United Kingdom",
+    "lat": 53.3948,
+    "lon": -3.0221,
+    "lines": [
+      "Merseyrail Wirral Line"
+    ],
+    "primaryLineKey": "merseyrail_wirral"
+  },
+  {
+    "slug": "james-street-liverpool",
+    "name": "James Street",
+    "city": "liverpool",
+    "cityDisplay": "Liverpool",
+    "country": "United Kingdom",
+    "lat": 53.4055,
+    "lon": -2.9901,
+    "lines": [
+      "Merseyrail Wirral Line"
+    ],
+    "primaryLineKey": "merseyrail_wirral"
+  },
+  {
+    "slug": "lime-street-liverpool",
+    "name": "Lime Street",
+    "city": "liverpool",
+    "cityDisplay": "Liverpool",
+    "country": "United Kingdom",
+    "lat": 53.4075,
+    "lon": -2.9779,
+    "lines": [
+      "Merseyrail Northern Line"
+    ],
+    "primaryLineKey": "merseyrail_northern"
+  },
+  {
+    "slug": "liverpool-central-liverpool",
+    "name": "Liverpool Central",
+    "city": "liverpool",
+    "cityDisplay": "Liverpool",
+    "country": "United Kingdom",
+    "lat": 53.4044,
+    "lon": -2.9789,
+    "lines": [
+      "Merseyrail Northern Line",
+      "Merseyrail Wirral Line"
+    ],
+    "primaryLineKey": "merseyrail_northern"
+  },
+  {
+    "slug": "moorfields-liverpool",
+    "name": "Moorfields",
+    "city": "liverpool",
+    "cityDisplay": "Liverpool",
+    "country": "United Kingdom",
+    "lat": 53.409,
+    "lon": -2.9884,
+    "lines": [
+      "Merseyrail Northern Line"
+    ],
+    "primaryLineKey": "merseyrail_northern"
+  },
+  {
+    "slug": "southport-liverpool",
+    "name": "Southport",
+    "city": "liverpool",
+    "cityDisplay": "Liverpool",
+    "country": "United Kingdom",
+    "lat": 53.6472,
+    "lon": -3.0041,
+    "lines": [
+      "Merseyrail Northern Line"
+    ],
+    "primaryLineKey": "merseyrail_northern"
+  },
+  {
+    "slug": "angel-london",
+    "name": "Angel",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5322,
+    "lon": -0.1058,
+    "lines": [
+      "Northern Line"
+    ],
+    "primaryLineKey": "london_northern"
+  },
+  {
+    "slug": "baker-street-london",
+    "name": "Baker Street",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5226,
+    "lon": -0.1571,
+    "lines": [
+      "Jubilee Line",
+      "Bakerloo Line",
+      "Metropolitan Line",
+      "Hammersmith & City Line",
+      "Circle Line"
+    ],
+    "primaryLineKey": "london_jubilee"
+  },
+  {
+    "slug": "bank-london",
+    "name": "Bank",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5133,
+    "lon": -0.0886,
+    "lines": [
+      "Central Line",
+      "Northern Line",
+      "DLR"
+    ],
+    "primaryLineKey": "london_central"
+  },
+  {
+    "slug": "bond-street-london",
+    "name": "Bond Street",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5142,
+    "lon": -0.1494,
+    "lines": [
+      "Jubilee Line",
+      "Elizabeth Line"
+    ],
+    "primaryLineKey": "london_jubilee"
+  },
+  {
+    "slug": "brixton-london",
+    "name": "Brixton",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4627,
+    "lon": -0.1145,
+    "lines": [
+      "Victoria Line"
+    ],
+    "primaryLineKey": "london_victoria"
+  },
+  {
+    "slug": "camden-town-london",
+    "name": "Camden Town",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5392,
+    "lon": -0.1426,
+    "lines": [
+      "Northern Line"
+    ],
+    "primaryLineKey": "london_northern"
+  },
+  {
+    "slug": "canary-wharf-london",
+    "name": "Canary Wharf",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5032,
+    "lon": -0.0181,
+    "lines": [
+      "Jubilee Line",
+      "Elizabeth Line",
+      "DLR"
+    ],
+    "primaryLineKey": "london_jubilee"
+  },
+  {
+    "slug": "clapham-junction-london",
+    "name": "Clapham Junction",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4642,
+    "lon": -0.1704,
+    "lines": [
+      "London Overground"
+    ],
+    "primaryLineKey": "london_overground"
+  },
+  {
+    "slug": "covent-garden-london",
+    "name": "Covent Garden",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5129,
+    "lon": -0.1243,
+    "lines": [
+      "Piccadilly Line"
+    ],
+    "primaryLineKey": "london_piccadilly"
+  },
+  {
+    "slug": "cutty-sark-london",
+    "name": "Cutty Sark",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4827,
+    "lon": -0.0101,
+    "lines": [
+      "DLR"
+    ],
+    "primaryLineKey": "london_dlr"
+  },
+  {
+    "slug": "earl-s-court-london",
+    "name": "Earl's Court",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4914,
+    "lon": -0.1934,
+    "lines": [
+      "District Line"
+    ],
+    "primaryLineKey": "london_district"
+  },
+  {
+    "slug": "embankment-london",
+    "name": "Embankment",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lon": -0.1223,
+    "lines": [
+      "District Line"
+    ],
+    "primaryLineKey": "london_district"
+  },
+  {
+    "slug": "euston-london",
+    "name": "Euston",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5282,
+    "lon": -0.1337,
+    "lines": [
+      "Victoria Line"
+    ],
+    "primaryLineKey": "london_victoria"
+  },
+  {
+    "slug": "green-park-london",
+    "name": "Green Park",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5067,
+    "lon": -0.1428,
+    "lines": [
+      "Victoria Line",
+      "Piccadilly Line",
+      "Jubilee Line"
+    ],
+    "primaryLineKey": "london_victoria"
+  },
+  {
+    "slug": "greenwich-london",
+    "name": "Greenwich",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4781,
+    "lon": -0.0149,
+    "lines": [
+      "DLR"
+    ],
+    "primaryLineKey": "london_dlr"
+  },
+  {
+    "slug": "hammersmith-london",
+    "name": "Hammersmith",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4932,
+    "lon": -0.2249,
+    "lines": [
+      "Hammersmith & City Line"
+    ],
+    "primaryLineKey": "london_hammersmith"
+  },
+  {
+    "slug": "heathrow-terminal-4-london",
+    "name": "Heathrow Terminal 4",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.459,
+    "lon": -0.4478,
+    "lines": [
+      "Piccadilly Line",
+      "Elizabeth Line"
+    ],
+    "primaryLineKey": "london_piccadilly"
+  },
+  {
+    "slug": "heathrow-terminal-5-london",
+    "name": "Heathrow Terminal 5",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4723,
+    "lon": -0.4876,
+    "lines": [
+      "Piccadilly Line"
+    ],
+    "primaryLineKey": "london_piccadilly"
+  },
+  {
+    "slug": "heathrow-terminals-2-3-london",
+    "name": "Heathrow Terminals 2 & 3",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4713,
+    "lon": -0.4524,
+    "lines": [
+      "Piccadilly Line",
+      "Elizabeth Line"
+    ],
+    "primaryLineKey": "london_piccadilly"
+  },
+  {
+    "slug": "highbury-islington-london",
+    "name": "Highbury & Islington",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.546,
+    "lon": -0.104,
+    "lines": [
+      "London Overground"
+    ],
+    "primaryLineKey": "london_overground"
+  },
+  {
+    "slug": "holborn-london",
+    "name": "Holborn",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5174,
+    "lon": -0.1201,
+    "lines": [
+      "Central Line"
+    ],
+    "primaryLineKey": "london_central"
+  },
+  {
+    "slug": "king-s-cross-st-pancras-london",
+    "name": "King's Cross St Pancras",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5308,
+    "lon": -0.1238,
+    "lines": [
+      "Victoria Line",
+      "Piccadilly Line",
+      "Northern Line",
+      "Metropolitan Line",
+      "Hammersmith & City Line",
+      "Circle Line"
+    ],
+    "primaryLineKey": "london_victoria"
+  },
+  {
+    "slug": "leicester-square-london",
+    "name": "Leicester Square",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5113,
+    "lon": -0.1281,
+    "lines": [
+      "Piccadilly Line",
+      "Northern Line"
+    ],
+    "primaryLineKey": "london_piccadilly"
+  },
+  {
+    "slug": "liverpool-street-london",
+    "name": "Liverpool Street",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5178,
+    "lon": -0.0823,
+    "lines": [
+      "Central Line",
+      "Elizabeth Line",
+      "Metropolitan Line",
+      "Hammersmith & City Line",
+      "Circle Line"
+    ],
+    "primaryLineKey": "london_central"
+  },
+  {
+    "slug": "london-bridge-london",
+    "name": "London Bridge",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5052,
+    "lon": -0.0864,
+    "lines": [
+      "Northern Line",
+      "Jubilee Line"
+    ],
+    "primaryLineKey": "london_northern"
+  },
+  {
+    "slug": "london-city-airport-london",
+    "name": "London City Airport",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5033,
+    "lon": 0.0489,
+    "lines": [
+      "DLR"
+    ],
+    "primaryLineKey": "london_dlr"
+  },
+  {
+    "slug": "notting-hill-gate-london",
+    "name": "Notting Hill Gate",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5094,
+    "lon": -0.1967,
+    "lines": [
+      "Central Line"
+    ],
+    "primaryLineKey": "london_central"
+  },
+  {
+    "slug": "oxford-circus-london",
+    "name": "Oxford Circus",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5152,
+    "lon": -0.1418,
+    "lines": [
+      "Central Line",
+      "Victoria Line",
+      "Bakerloo Line"
+    ],
+    "primaryLineKey": "london_central"
+  },
+  {
+    "slug": "paddington-london",
+    "name": "Paddington",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5154,
+    "lon": -0.1755,
+    "lines": [
+      "Elizabeth Line",
+      "Bakerloo Line",
+      "Hammersmith & City Line",
+      "Circle Line"
+    ],
+    "primaryLineKey": "london_elizabeth"
+  },
+  {
+    "slug": "piccadilly-circus-london",
+    "name": "Piccadilly Circus",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.51,
+    "lon": -0.1337,
+    "lines": [
+      "Piccadilly Line",
+      "Bakerloo Line"
+    ],
+    "primaryLineKey": "london_piccadilly"
+  },
+  {
+    "slug": "shoreditch-high-street-london",
+    "name": "Shoreditch High Street",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5234,
+    "lon": -0.0755,
+    "lines": [
+      "London Overground"
+    ],
+    "primaryLineKey": "london_overground"
+  },
+  {
+    "slug": "south-kensington-london",
+    "name": "South Kensington",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4941,
+    "lon": -0.1738,
+    "lines": [
+      "Piccadilly Line",
+      "District Line"
+    ],
+    "primaryLineKey": "london_piccadilly"
+  },
+  {
+    "slug": "stratford-london",
+    "name": "Stratford",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5416,
+    "lon": -0.0033,
+    "lines": [
+      "Central Line",
+      "Jubilee Line",
+      "Elizabeth Line",
+      "London Overground"
+    ],
+    "primaryLineKey": "london_central"
+  },
+  {
+    "slug": "tottenham-court-road-london",
+    "name": "Tottenham Court Road",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5165,
+    "lon": -0.131,
+    "lines": [
+      "Central Line",
+      "Elizabeth Line"
+    ],
+    "primaryLineKey": "london_central"
+  },
+  {
+    "slug": "tower-gateway-london",
+    "name": "Tower Gateway",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5106,
+    "lon": -0.0743,
+    "lines": [
+      "DLR"
+    ],
+    "primaryLineKey": "london_dlr"
+  },
+  {
+    "slug": "tower-hill-london",
+    "name": "Tower Hill",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.51,
+    "lon": -0.0765,
+    "lines": [
+      "District Line",
+      "Circle Line"
+    ],
+    "primaryLineKey": "london_district"
+  },
+  {
+    "slug": "victoria-london",
+    "name": "Victoria",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.4965,
+    "lon": -0.1447,
+    "lines": [
+      "Victoria Line",
+      "District Line",
+      "Circle Line"
+    ],
+    "primaryLineKey": "london_victoria"
+  },
+  {
+    "slug": "waterloo-london",
+    "name": "Waterloo",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.5036,
+    "lon": -0.1143,
+    "lines": [
+      "Northern Line",
+      "Jubilee Line",
+      "Bakerloo Line"
+    ],
+    "primaryLineKey": "london_northern"
+  },
+  {
+    "slug": "westminster-london",
+    "name": "Westminster",
+    "city": "london",
+    "cityDisplay": "London",
+    "country": "United Kingdom",
+    "lat": 51.501,
+    "lon": -0.1254,
+    "lines": [
+      "Jubilee Line",
+      "District Line",
+      "Circle Line"
+    ],
+    "primaryLineKey": "london_jubilee"
+  },
+  {
+    "slug": "bellecour-lyon",
+    "name": "Bellecour",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7578,
+    "lon": 4.8323,
+    "lines": [
+      "Metro Line A",
+      "Metro Line D"
+    ],
+    "primaryLineKey": "lyon_a"
+  },
+  {
+    "slug": "charpennes-lyon",
+    "name": "Charpennes",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7702,
+    "lon": 4.8628,
+    "lines": [
+      "Metro Line B",
+      "Tram T1"
+    ],
+    "primaryLineKey": "lyon_b"
+  },
+  {
+    "slug": "cordeliers-lyon",
+    "name": "Cordeliers",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7637,
+    "lon": 4.8354,
+    "lines": [
+      "Metro Line A"
+    ],
+    "primaryLineKey": "lyon_a"
+  },
+  {
+    "slug": "croix-rousse-lyon",
+    "name": "Croix-Rousse",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7746,
+    "lon": 4.8319,
+    "lines": [
+      "Metro Line C"
+    ],
+    "primaryLineKey": "lyon_c"
+  },
+  {
+    "slug": "gare-de-vaise-lyon",
+    "name": "Gare de Vaise",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7806,
+    "lon": 4.8046,
+    "lines": [
+      "Metro Line D"
+    ],
+    "primaryLineKey": "lyon_d"
+  },
+  {
+    "slug": "gorge-de-loup-lyon",
+    "name": "Gorge de Loup",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7668,
+    "lon": 4.8059,
+    "lines": [
+      "Metro Line D"
+    ],
+    "primaryLineKey": "lyon_d"
+  },
+  {
+    "slug": "grange-blanche-lyon",
+    "name": "Grange Blanche",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7358,
+    "lon": 4.8784,
+    "lines": [
+      "Metro Line D"
+    ],
+    "primaryLineKey": "lyon_d"
+  },
+  {
+    "slug": "gratte-ciel-lyon",
+    "name": "Gratte-Ciel",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7674,
+    "lon": 4.8808,
+    "lines": [
+      "Metro Line A"
+    ],
+    "primaryLineKey": "lyon_a"
+  },
+  {
+    "slug": "hotel-de-ville-louis-pradel-lyon",
+    "name": "Hotel de Ville - Louis Pradel",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7677,
+    "lon": 4.8343,
+    "lines": [
+      "Metro Line A",
+      "Metro Line C"
+    ],
+    "primaryLineKey": "lyon_a"
+  },
+  {
+    "slug": "jean-mace-lyon",
+    "name": "Jean Mace",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7456,
+    "lon": 4.8425,
+    "lines": [
+      "Metro Line B"
+    ],
+    "primaryLineKey": "lyon_b"
+  },
+  {
+    "slug": "musee-des-confluences-lyon",
+    "name": "Musee des Confluences",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7327,
+    "lon": 4.8179,
+    "lines": [
+      "Tram T1"
+    ],
+    "primaryLineKey": "lyon_tram_t1"
+  },
+  {
+    "slug": "part-dieu-lyon",
+    "name": "Part-Dieu",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7608,
+    "lon": 4.8596,
+    "lines": [
+      "Metro Line B"
+    ],
+    "primaryLineKey": "lyon_b"
+  },
+  {
+    "slug": "part-dieu-servient-lyon",
+    "name": "Part-Dieu - Servient",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.759,
+    "lon": 4.8567,
+    "lines": [
+      "Tram T1"
+    ],
+    "primaryLineKey": "lyon_tram_t1"
+  },
+  {
+    "slug": "perrache-lyon",
+    "name": "Perrache",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7491,
+    "lon": 4.8265,
+    "lines": [
+      "Metro Line A",
+      "Tram T1"
+    ],
+    "primaryLineKey": "lyon_a"
+  },
+  {
+    "slug": "vaulx-en-velin-la-soie-lyon",
+    "name": "Vaulx-en-Velin - La Soie",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7605,
+    "lon": 4.9204,
+    "lines": [
+      "Metro Line A"
+    ],
+    "primaryLineKey": "lyon_a"
+  },
+  {
+    "slug": "vieux-lyon-cathedrale-saint-jean-lyon",
+    "name": "Vieux Lyon - Cathedrale Saint-Jean",
+    "city": "lyon",
+    "cityDisplay": "Lyon",
+    "country": "France",
+    "lat": 45.7622,
+    "lon": 4.8264,
+    "lines": [
+      "Metro Line D"
+    ],
+    "primaryLineKey": "lyon_d"
+  },
+  {
+    "slug": "aeropuerto-t1-t2-t3-madrid",
+    "name": "Aeropuerto T1-T2-T3",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.468,
+    "lon": -3.57,
+    "lines": [
+      "Metro Line 8"
+    ],
+    "primaryLineKey": "metro_8"
+  },
+  {
+    "slug": "aeropuerto-t4-madrid",
+    "name": "Aeropuerto T4",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.492,
+    "lon": -3.592,
+    "lines": [
+      "Metro Line 8"
+    ],
+    "primaryLineKey": "metro_8"
+  },
+  {
+    "slug": "alonso-martinez-madrid",
+    "name": "Alonso Martínez",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4268,
+    "lon": -3.696,
+    "lines": [
+      "Metro Line 10"
+    ],
+    "primaryLineKey": "metro_10"
+  },
+  {
+    "slug": "arguelles-madrid",
+    "name": "Argüelles",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4305,
+    "lon": -3.7165,
+    "lines": [
+      "Metro Line 3"
+    ],
+    "primaryLineKey": "metro_3"
+  },
+  {
+    "slug": "atocha-madrid",
+    "name": "Atocha",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4065,
+    "lon": -3.693,
+    "lines": [
+      "Cercanías Madrid"
+    ],
+    "primaryLineKey": "cercanias_madrid"
+  },
+  {
+    "slug": "atocha-renfe-madrid",
+    "name": "Atocha Renfe",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4065,
+    "lon": -3.693,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "avenida-de-america-madrid",
+    "name": "Avenida de América",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4395,
+    "lon": -3.677,
+    "lines": [
+      "Metro Line 6 (Circular)"
+    ],
+    "primaryLineKey": "metro_6"
+  },
+  {
+    "slug": "banco-de-espana-madrid",
+    "name": "Banco de España",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.42,
+    "lon": -3.693,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "callao-madrid",
+    "name": "Callao",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4199,
+    "lon": -3.7062,
+    "lines": [
+      "Metro Line 3",
+      "Metro Line 5"
+    ],
+    "primaryLineKey": "metro_3"
+  },
+  {
+    "slug": "chamartin-madrid",
+    "name": "Chamartín",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4722,
+    "lon": -3.6826,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 10",
+      "Cercanías Madrid"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "chueca-madrid",
+    "name": "Chueca",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4225,
+    "lon": -3.6975,
+    "lines": [
+      "Metro Line 5"
+    ],
+    "primaryLineKey": "metro_5"
+  },
+  {
+    "slug": "cuzco-madrid",
+    "name": "Cuzco",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.451,
+    "lon": -3.6885,
+    "lines": [
+      "Metro Line 10"
+    ],
+    "primaryLineKey": "metro_10"
+  },
+  {
+    "slug": "goya-madrid",
+    "name": "Goya",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.422,
+    "lon": -3.6785,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "gran-via-madrid",
+    "name": "Gran Vía",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.42,
+    "lon": -3.7015,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 5"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "la-latina-madrid",
+    "name": "La Latina",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.412,
+    "lon": -3.7098,
+    "lines": [
+      "Metro Line 5"
+    ],
+    "primaryLineKey": "metro_5"
+  },
+  {
+    "slug": "lavapies-madrid",
+    "name": "Lavapiés",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4093,
+    "lon": -3.701,
+    "lines": [
+      "Metro Line 3"
+    ],
+    "primaryLineKey": "metro_3"
+  },
+  {
+    "slug": "moncloa-madrid",
+    "name": "Moncloa",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4351,
+    "lon": -3.7193,
+    "lines": [
+      "Metro Line 3",
+      "Metro Line 6 (Circular)"
+    ],
+    "primaryLineKey": "metro_3"
+  },
+  {
+    "slug": "mendez-alvaro-madrid",
+    "name": "Méndez Álvaro",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.3978,
+    "lon": -3.686,
+    "lines": [
+      "Metro Line 6 (Circular)"
+    ],
+    "primaryLineKey": "metro_6"
+  },
+  {
+    "slug": "nuevos-ministerios-madrid",
+    "name": "Nuevos Ministerios",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.446,
+    "lon": -3.692,
+    "lines": [
+      "Metro Line 6 (Circular)",
+      "Metro Line 8",
+      "Metro Line 10",
+      "Cercanías Madrid"
+    ],
+    "primaryLineKey": "metro_6"
+  },
+  {
+    "slug": "plaza-de-castilla-madrid",
+    "name": "Plaza de Castilla",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4662,
+    "lon": -3.6888,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "plaza-de-espana-madrid",
+    "name": "Plaza de España",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4237,
+    "lon": -3.7123,
+    "lines": [
+      "Metro Line 3",
+      "Metro Line 10"
+    ],
+    "primaryLineKey": "metro_3"
+  },
+  {
+    "slug": "principe-pio-madrid",
+    "name": "Príncipe Pío",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.419,
+    "lon": -3.72,
+    "lines": [
+      "Metro Line 2",
+      "Metro Line 6 (Circular)",
+      "Cercanías Madrid"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "retiro-madrid",
+    "name": "Retiro",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4208,
+    "lon": -3.6844,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "santiago-bernabeu-madrid",
+    "name": "Santiago Bernabéu",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.453,
+    "lon": -3.69,
+    "lines": [
+      "Metro Line 10"
+    ],
+    "primaryLineKey": "metro_10"
+  },
+  {
+    "slug": "sevilla-madrid",
+    "name": "Sevilla",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4195,
+    "lon": -3.6973,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "sol-madrid",
+    "name": "Sol",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4169,
+    "lon": -3.7035,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 2",
+      "Metro Line 3",
+      "Cercanías Madrid"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "tribunal-madrid",
+    "name": "Tribunal",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4267,
+    "lon": -3.7008,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 10"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "opera-madrid",
+    "name": "Ópera",
+    "city": "madrid",
+    "cityDisplay": "Madrid",
+    "country": "Spain",
+    "lat": 40.4178,
+    "lon": -3.7083,
+    "lines": [
+      "Metro Line 2",
+      "Metro Line 5"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "atarazanas-malaga",
+    "name": "Atarazanas",
+    "city": "malaga",
+    "cityDisplay": "Malaga",
+    "country": "Spain",
+    "lat": 36.7168,
+    "lon": -4.4265,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "malaga_metro_1"
+  },
+  {
+    "slug": "el-perchel-malaga",
+    "name": "El Perchel",
+    "city": "malaga",
+    "cityDisplay": "Malaga",
+    "country": "Spain",
+    "lat": 36.7125,
+    "lon": -4.4315,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "malaga_metro_1"
+  },
+  {
+    "slug": "plaza-de-la-marina-malaga",
+    "name": "Plaza de la Marina",
+    "city": "malaga",
+    "cityDisplay": "Malaga",
+    "country": "Spain",
+    "lat": 36.7185,
+    "lon": -4.4215,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "malaga_metro_1"
+  },
+  {
+    "slug": "universidad-malaga",
+    "name": "Universidad",
+    "city": "malaga",
+    "cityDisplay": "Malaga",
+    "country": "Spain",
+    "lat": 36.715,
+    "lon": -4.474,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "malaga_metro_1"
+  },
+  {
+    "slug": "altrincham-manchester",
+    "name": "Altrincham",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.3874,
+    "lon": -2.3473,
+    "lines": [
+      "Metrolink Altrincham Line"
+    ],
+    "primaryLineKey": "metrolink_altrincham"
+  },
+  {
+    "slug": "ashton-under-lyne-manchester",
+    "name": "Ashton-under-Lyne",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4905,
+    "lon": -2.0985,
+    "lines": [
+      "Metrolink Ashton Line"
+    ],
+    "primaryLineKey": "metrolink_ashton"
+  },
+  {
+    "slug": "bury-manchester",
+    "name": "Bury",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.5906,
+    "lon": -2.2978,
+    "lines": [
+      "Metrolink Bury Line"
+    ],
+    "primaryLineKey": "metrolink_bury"
+  },
+  {
+    "slug": "deansgate-castlefield-manchester",
+    "name": "Deansgate-Castlefield",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.474,
+    "lon": -2.2509,
+    "lines": [
+      "Metrolink Altrincham Line"
+    ],
+    "primaryLineKey": "metrolink_altrincham"
+  },
+  {
+    "slug": "eccles-manchester",
+    "name": "Eccles",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4844,
+    "lon": -2.3344,
+    "lines": [
+      "Metrolink Eccles Line"
+    ],
+    "primaryLineKey": "metrolink_eccles"
+  },
+  {
+    "slug": "manchester-airport-manchester",
+    "name": "Manchester Airport",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.3654,
+    "lon": -2.2726,
+    "lines": [
+      "Metrolink Airport Line"
+    ],
+    "primaryLineKey": "metrolink_airport"
+  },
+  {
+    "slug": "market-street-manchester",
+    "name": "Market Street",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4821,
+    "lon": -2.2392,
+    "lines": [
+      "Metrolink Bury Line"
+    ],
+    "primaryLineKey": "metrolink_bury"
+  },
+  {
+    "slug": "mediacityuk-manchester",
+    "name": "MediaCityUK",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.472,
+    "lon": -2.2975,
+    "lines": [
+      "Metrolink Eccles Line"
+    ],
+    "primaryLineKey": "metrolink_eccles"
+  },
+  {
+    "slug": "old-trafford-manchester",
+    "name": "Old Trafford",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4561,
+    "lon": -2.2845,
+    "lines": [
+      "Metrolink Altrincham Line"
+    ],
+    "primaryLineKey": "metrolink_altrincham"
+  },
+  {
+    "slug": "piccadilly-manchester",
+    "name": "Piccadilly",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4774,
+    "lon": -2.2309,
+    "lines": [
+      "Metrolink Airport Line",
+      "Metrolink Ashton Line"
+    ],
+    "primaryLineKey": "metrolink_airport"
+  },
+  {
+    "slug": "piccadilly-gardens-manchester",
+    "name": "Piccadilly Gardens",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4804,
+    "lon": -2.2374,
+    "lines": [
+      "Metrolink Bury Line",
+      "Metrolink Altrincham Line",
+      "Metrolink Eccles Line"
+    ],
+    "primaryLineKey": "metrolink_bury"
+  },
+  {
+    "slug": "shudehill-manchester",
+    "name": "Shudehill",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4856,
+    "lon": -2.2393,
+    "lines": [
+      "Metrolink Bury Line"
+    ],
+    "primaryLineKey": "metrolink_bury"
+  },
+  {
+    "slug": "st-peter-s-square-manchester",
+    "name": "St Peter's Square",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4783,
+    "lon": -2.2431,
+    "lines": [
+      "Metrolink Altrincham Line",
+      "Metrolink Airport Line"
+    ],
+    "primaryLineKey": "metrolink_altrincham"
+  },
+  {
+    "slug": "victoria-manchester",
+    "name": "Victoria",
+    "city": "manchester",
+    "cityDisplay": "Manchester",
+    "country": "United Kingdom",
+    "lat": 53.4878,
+    "lon": -2.2415,
+    "lines": [
+      "Metrolink Bury Line"
+    ],
+    "primaryLineKey": "metrolink_bury"
+  },
+  {
+    "slug": "canebiere-garibaldi-marseille",
+    "name": "Canebiere - Garibaldi",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.2968,
+    "lon": 5.379,
+    "lines": [
+      "Tram Network"
+    ],
+    "primaryLineKey": "marseille_tram"
+  },
+  {
+    "slug": "castellane-marseille",
+    "name": "Castellane",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.2853,
+    "lon": 5.3843,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 2",
+      "Tram Network"
+    ],
+    "primaryLineKey": "marseille_m1"
+  },
+  {
+    "slug": "cinq-avenues-longchamp-marseille",
+    "name": "Cinq Avenues - Longchamp",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.3042,
+    "lon": 5.3891,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "marseille_m1"
+  },
+  {
+    "slug": "gare-saint-charles-marseille",
+    "name": "Gare Saint-Charles",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.3031,
+    "lon": 5.3806,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "marseille_m2"
+  },
+  {
+    "slug": "joliette-marseille",
+    "name": "Joliette",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.3044,
+    "lon": 5.3669,
+    "lines": [
+      "Metro Line 2",
+      "Tram Network"
+    ],
+    "primaryLineKey": "marseille_m2"
+  },
+  {
+    "slug": "la-timone-marseille",
+    "name": "La Timone",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.2928,
+    "lon": 5.396,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "marseille_m1"
+  },
+  {
+    "slug": "longchamp-marseille",
+    "name": "Longchamp",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.3042,
+    "lon": 5.3891,
+    "lines": [
+      "Tram Network"
+    ],
+    "primaryLineKey": "marseille_tram"
+  },
+  {
+    "slug": "notre-dame-du-mont-cours-julien-marseille",
+    "name": "Notre-Dame du Mont - Cours Julien",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.2929,
+    "lon": 5.3846,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "marseille_m2"
+  },
+  {
+    "slug": "reformes-canebiere-marseille",
+    "name": "Reformes - Canebiere",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.3002,
+    "lon": 5.3848,
+    "lines": [
+      "Metro Line 1",
+      "Tram Network"
+    ],
+    "primaryLineKey": "marseille_m1"
+  },
+  {
+    "slug": "rond-point-du-prado-marseille",
+    "name": "Rond-Point du Prado",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.2731,
+    "lon": 5.3876,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "marseille_m2"
+  },
+  {
+    "slug": "vieux-port-marseille",
+    "name": "Vieux-Port",
+    "city": "marseille",
+    "cityDisplay": "Marseille",
+    "country": "France",
+    "lat": 43.2963,
+    "lon": 5.3756,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "marseille_m1"
+  },
+  {
+    "slug": "froettmaning-munich",
+    "name": "Froettmaning",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.2196,
+    "lon": 11.6244,
+    "lines": [
+      "U-Bahn U6"
+    ],
+    "primaryLineKey": "ubahn_u6"
+  },
+  {
+    "slug": "garching-munich",
+    "name": "Garching",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.2489,
+    "lon": 11.6513,
+    "lines": [
+      "U-Bahn U6"
+    ],
+    "primaryLineKey": "ubahn_u6"
+  },
+  {
+    "slug": "hackerbruecke-munich",
+    "name": "Hackerbruecke",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1428,
+    "lon": 11.5481,
+    "lines": [
+      "S-Bahn Stammstrecke"
+    ],
+    "primaryLineKey": "sbahn_munich"
+  },
+  {
+    "slug": "harras-munich",
+    "name": "Harras",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1139,
+    "lon": 11.5397,
+    "lines": [
+      "U-Bahn U6"
+    ],
+    "primaryLineKey": "ubahn_u6"
+  },
+  {
+    "slug": "hauptbahnhof-munich",
+    "name": "Hauptbahnhof",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1403,
+    "lon": 11.5583,
+    "lines": [
+      "U-Bahn U1",
+      "U-Bahn U2",
+      "U-Bahn U4",
+      "U-Bahn U5",
+      "S-Bahn Stammstrecke"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "isartor-munich",
+    "name": "Isartor",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1336,
+    "lon": 11.5828,
+    "lines": [
+      "S-Bahn Stammstrecke"
+    ],
+    "primaryLineKey": "sbahn_munich"
+  },
+  {
+    "slug": "karlsplatz-stachus-munich",
+    "name": "Karlsplatz (Stachus)",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1399,
+    "lon": 11.566,
+    "lines": [
+      "U-Bahn U4",
+      "U-Bahn U5",
+      "S-Bahn Stammstrecke"
+    ],
+    "primaryLineKey": "ubahn_u4"
+  },
+  {
+    "slug": "koenigsplatz-munich",
+    "name": "Koenigsplatz",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1455,
+    "lon": 11.566,
+    "lines": [
+      "U-Bahn U2"
+    ],
+    "primaryLineKey": "ubahn_u2"
+  },
+  {
+    "slug": "marienplatz-munich",
+    "name": "Marienplatz",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1372,
+    "lon": 11.5755,
+    "lines": [
+      "U-Bahn U3",
+      "U-Bahn U6",
+      "S-Bahn Stammstrecke"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "max-weber-platz-munich",
+    "name": "Max-Weber-Platz",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1365,
+    "lon": 11.5983,
+    "lines": [
+      "U-Bahn U4"
+    ],
+    "primaryLineKey": "ubahn_u4"
+  },
+  {
+    "slug": "muenchner-freiheit-munich",
+    "name": "Muenchner Freiheit",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1618,
+    "lon": 11.5854,
+    "lines": [
+      "U-Bahn U3",
+      "U-Bahn U6"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "odeonsplatz-munich",
+    "name": "Odeonsplatz",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1427,
+    "lon": 11.5773,
+    "lines": [
+      "U-Bahn U3",
+      "U-Bahn U4",
+      "U-Bahn U5",
+      "U-Bahn U6"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "olympiazentrum-munich",
+    "name": "Olympiazentrum",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.18,
+    "lon": 11.5544,
+    "lines": [
+      "U-Bahn U3"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "ostbahnhof-munich",
+    "name": "Ostbahnhof",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1272,
+    "lon": 11.6049,
+    "lines": [
+      "U-Bahn U5",
+      "S-Bahn Stammstrecke"
+    ],
+    "primaryLineKey": "ubahn_u5"
+  },
+  {
+    "slug": "pasing-munich",
+    "name": "Pasing",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1503,
+    "lon": 11.4616,
+    "lines": [
+      "S-Bahn Stammstrecke"
+    ],
+    "primaryLineKey": "sbahn_munich"
+  },
+  {
+    "slug": "sendlinger-tor-munich",
+    "name": "Sendlinger Tor",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1341,
+    "lon": 11.5676,
+    "lines": [
+      "U-Bahn U1",
+      "U-Bahn U2",
+      "U-Bahn U3",
+      "U-Bahn U6"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "theresienwiese-munich",
+    "name": "Theresienwiese",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1323,
+    "lon": 11.5498,
+    "lines": [
+      "U-Bahn U4",
+      "U-Bahn U5"
+    ],
+    "primaryLineKey": "ubahn_u4"
+  },
+  {
+    "slug": "universitaet-munich",
+    "name": "Universitaet",
+    "city": "munich",
+    "cityDisplay": "Munich",
+    "country": "Germany",
+    "lat": 48.1501,
+    "lon": 11.5809,
+    "lines": [
+      "U-Bahn U3"
+    ],
+    "primaryLineKey": "ubahn_u3"
+  },
+  {
+    "slug": "fushimi-nagoya",
+    "name": "Fushimi",
+    "city": "nagoya",
+    "cityDisplay": "Nagoya",
+    "country": "Japan",
+    "lat": 35.1688,
+    "lon": 136.8972,
+    "lines": [
+      "Nagoya Subway Higashiyama Line"
+    ],
+    "primaryLineKey": "higashiyama"
+  },
+  {
+    "slug": "kanayama-nagoya",
+    "name": "Kanayama",
+    "city": "nagoya",
+    "cityDisplay": "Nagoya",
+    "country": "Japan",
+    "lat": 35.1449,
+    "lon": 136.9,
+    "lines": [
+      "Nagoya Subway Meijo Line",
+      "JR Chuo Line (Nagoya)"
+    ],
+    "primaryLineKey": "meijo"
+  },
+  {
+    "slug": "nagoya-nagoya",
+    "name": "Nagoya",
+    "city": "nagoya",
+    "cityDisplay": "Nagoya",
+    "country": "Japan",
+    "lat": 35.1709,
+    "lon": 136.8815,
+    "lines": [
+      "Nagoya Subway Higashiyama Line",
+      "Nagoya Subway Sakura-dori Line",
+      "JR Chuo Line (Nagoya)"
+    ],
+    "primaryLineKey": "higashiyama"
+  },
+  {
+    "slug": "nagoya-dome-mae-yada-nagoya",
+    "name": "Nagoya Dome-mae Yada",
+    "city": "nagoya",
+    "cityDisplay": "Nagoya",
+    "country": "Japan",
+    "lat": 35.1865,
+    "lon": 136.9445,
+    "lines": [
+      "Nagoya Subway Meijo Line"
+    ],
+    "primaryLineKey": "meijo"
+  },
+  {
+    "slug": "nagoya-ko-nagoya",
+    "name": "Nagoya-ko",
+    "city": "nagoya",
+    "cityDisplay": "Nagoya",
+    "country": "Japan",
+    "lat": 35.1023,
+    "lon": 136.8851,
+    "lines": [
+      "Nagoya Subway Meijo Line"
+    ],
+    "primaryLineKey": "meijo"
+  },
+  {
+    "slug": "sakae-nagoya",
+    "name": "Sakae",
+    "city": "nagoya",
+    "cityDisplay": "Nagoya",
+    "country": "Japan",
+    "lat": 35.1681,
+    "lon": 136.9064,
+    "lines": [
+      "Nagoya Subway Higashiyama Line",
+      "Nagoya Subway Meijo Line"
+    ],
+    "primaryLineKey": "higashiyama"
+  },
+  {
+    "slug": "inari-nara",
+    "name": "Inari",
+    "city": "nara",
+    "cityDisplay": "Nara",
+    "country": "Japan",
+    "lat": 34.967,
+    "lon": 135.7728,
+    "lines": [
+      "JR Nara Line"
+    ],
+    "primaryLineKey": "jr_nara"
+  },
+  {
+    "slug": "kintetsu-nara-nara",
+    "name": "Kintetsu-Nara",
+    "city": "nara",
+    "cityDisplay": "Nara",
+    "country": "Japan",
+    "lat": 34.6817,
+    "lon": 135.8265,
+    "lines": [
+      "Kintetsu Nara Line"
+    ],
+    "primaryLineKey": "kintetsu_nara"
+  },
+  {
+    "slug": "kyoto-nara",
+    "name": "Kyoto",
+    "city": "nara",
+    "cityDisplay": "Nara",
+    "country": "Japan",
+    "lat": 34.9858,
+    "lon": 135.7588,
+    "lines": [
+      "JR Nara Line"
+    ],
+    "primaryLineKey": "jr_nara"
+  },
+  {
+    "slug": "nara-nara",
+    "name": "Nara",
+    "city": "nara",
+    "cityDisplay": "Nara",
+    "country": "Japan",
+    "lat": 34.6806,
+    "lon": 135.8197,
+    "lines": [
+      "JR Nara Line"
+    ],
+    "primaryLineKey": "jr_nara"
+  },
+  {
+    "slug": "osaka-namba-nara",
+    "name": "Osaka-Namba",
+    "city": "nara",
+    "cityDisplay": "Nara",
+    "country": "Japan",
+    "lat": 34.6658,
+    "lon": 135.5013,
+    "lines": [
+      "Kintetsu Nara Line"
+    ],
+    "primaryLineKey": "kintetsu_nara"
+  },
+  {
+    "slug": "saidaiji-nara",
+    "name": "Saidaiji",
+    "city": "nara",
+    "cityDisplay": "Nara",
+    "country": "Japan",
+    "lat": 34.6928,
+    "lon": 135.7826,
+    "lines": [
+      "Kintetsu Nara Line"
+    ],
+    "primaryLineKey": "kintetsu_nara"
+  },
+  {
+    "slug": "uji-nara",
+    "name": "Uji",
+    "city": "nara",
+    "cityDisplay": "Nara",
+    "country": "Japan",
+    "lat": 34.8931,
+    "lon": 135.8069,
+    "lines": [
+      "JR Nara Line"
+    ],
+    "primaryLineKey": "jr_nara"
+  },
+  {
+    "slug": "central-station-newcastle",
+    "name": "Central Station",
+    "city": "newcastle",
+    "cityDisplay": "Newcastle",
+    "country": "United Kingdom",
+    "lat": 54.9688,
+    "lon": -1.617,
+    "lines": [
+      "Tyne & Wear Metro Green Line",
+      "Tyne & Wear Metro Yellow Line"
+    ],
+    "primaryLineKey": "tyne_wear_green"
+  },
+  {
+    "slug": "haymarket-newcastle",
+    "name": "Haymarket",
+    "city": "newcastle",
+    "cityDisplay": "Newcastle",
+    "country": "United Kingdom",
+    "lat": 54.9749,
+    "lon": -1.6168,
+    "lines": [
+      "Tyne & Wear Metro Green Line",
+      "Tyne & Wear Metro Yellow Line"
+    ],
+    "primaryLineKey": "tyne_wear_green"
+  },
+  {
+    "slug": "monument-newcastle",
+    "name": "Monument",
+    "city": "newcastle",
+    "cityDisplay": "Newcastle",
+    "country": "United Kingdom",
+    "lat": 54.969,
+    "lon": -1.6132,
+    "lines": [
+      "Tyne & Wear Metro Green Line",
+      "Tyne & Wear Metro Yellow Line"
+    ],
+    "primaryLineKey": "tyne_wear_green"
+  },
+  {
+    "slug": "newcastle-airport-newcastle",
+    "name": "Newcastle Airport",
+    "city": "newcastle",
+    "cityDisplay": "Newcastle",
+    "country": "United Kingdom",
+    "lat": 55.0372,
+    "lon": -1.7115,
+    "lines": [
+      "Tyne & Wear Metro Green Line"
+    ],
+    "primaryLineKey": "tyne_wear_green"
+  },
+  {
+    "slug": "south-shields-newcastle",
+    "name": "South Shields",
+    "city": "newcastle",
+    "cityDisplay": "Newcastle",
+    "country": "United Kingdom",
+    "lat": 54.9989,
+    "lon": -1.4327,
+    "lines": [
+      "Tyne & Wear Metro Green Line"
+    ],
+    "primaryLineKey": "tyne_wear_green"
+  },
+  {
+    "slug": "sunderland-newcastle",
+    "name": "Sunderland",
+    "city": "newcastle",
+    "cityDisplay": "Newcastle",
+    "country": "United Kingdom",
+    "lat": 54.9055,
+    "lon": -1.3819,
+    "lines": [
+      "Tyne & Wear Metro Yellow Line"
+    ],
+    "primaryLineKey": "tyne_wear_yellow"
+  },
+  {
+    "slug": "tynemouth-newcastle",
+    "name": "Tynemouth",
+    "city": "newcastle",
+    "cityDisplay": "Newcastle",
+    "country": "United Kingdom",
+    "lat": 55.0178,
+    "lon": -1.4255,
+    "lines": [
+      "Tyne & Wear Metro Green Line"
+    ],
+    "primaryLineKey": "tyne_wear_green"
+  },
+  {
+    "slug": "aeroport-terminal-1-nice",
+    "name": "Aeroport Terminal 1",
+    "city": "nice",
+    "cityDisplay": "Nice",
+    "country": "France",
+    "lat": 43.6619,
+    "lon": 7.2077,
+    "lines": [
+      "Tram Line 2"
+    ],
+    "primaryLineKey": "nice_tram_2"
+  },
+  {
+    "slug": "aeroport-terminal-2-nice",
+    "name": "Aeroport Terminal 2",
+    "city": "nice",
+    "cityDisplay": "Nice",
+    "country": "France",
+    "lat": 43.6596,
+    "lon": 7.202,
+    "lines": [
+      "Tram Line 2"
+    ],
+    "primaryLineKey": "nice_tram_2"
+  },
+  {
+    "slug": "cathedrale-vieille-ville-nice",
+    "name": "Cathedrale - Vieille Ville",
+    "city": "nice",
+    "cityDisplay": "Nice",
+    "country": "France",
+    "lat": 43.6984,
+    "lon": 7.2755,
+    "lines": [
+      "Tram Line 1"
+    ],
+    "primaryLineKey": "nice_tram_1"
+  },
+  {
+    "slug": "gare-thiers-nice",
+    "name": "Gare Thiers",
+    "city": "nice",
+    "cityDisplay": "Nice",
+    "country": "France",
+    "lat": 43.7053,
+    "lon": 7.262,
+    "lines": [
+      "Tram Line 1"
+    ],
+    "primaryLineKey": "nice_tram_1"
+  },
+  {
+    "slug": "garibaldi-nice",
+    "name": "Garibaldi",
+    "city": "nice",
+    "cityDisplay": "Nice",
+    "country": "France",
+    "lat": 43.7036,
+    "lon": 7.2758,
+    "lines": [
+      "Tram Line 1"
+    ],
+    "primaryLineKey": "nice_tram_1"
+  },
+  {
+    "slug": "jean-medecin-nice",
+    "name": "Jean Medecin",
+    "city": "nice",
+    "cityDisplay": "Nice",
+    "country": "France",
+    "lat": 43.7009,
+    "lon": 7.2668,
+    "lines": [
+      "Tram Line 1",
+      "Tram Line 2"
+    ],
+    "primaryLineKey": "nice_tram_1"
+  },
+  {
+    "slug": "liberation-nice",
+    "name": "Liberation",
+    "city": "nice",
+    "cityDisplay": "Nice",
+    "country": "France",
+    "lat": 43.707,
+    "lon": 7.2746,
+    "lines": [
+      "Tram Line 1"
+    ],
+    "primaryLineKey": "nice_tram_1"
+  },
+  {
+    "slug": "massena-nice",
+    "name": "Massena",
+    "city": "nice",
+    "cityDisplay": "Nice",
+    "country": "France",
+    "lat": 43.6972,
+    "lon": 7.27,
+    "lines": [
+      "Tram Line 1"
+    ],
+    "primaryLineKey": "nice_tram_1"
+  },
+  {
+    "slug": "port-lympia-nice",
+    "name": "Port Lympia",
+    "city": "nice",
+    "cityDisplay": "Nice",
+    "country": "France",
+    "lat": 43.6959,
+    "lon": 7.2842,
+    "lines": [
+      "Tram Line 2"
+    ],
+    "primaryLineKey": "nice_tram_2"
+  },
+  {
+    "slug": "lace-market-nottingham",
+    "name": "Lace Market",
+    "city": "nottingham",
+    "cityDisplay": "Nottingham",
+    "country": "United Kingdom",
+    "lat": 52.9519,
+    "lon": -1.1385,
+    "lines": [
+      "NET Tram"
+    ],
+    "primaryLineKey": "net_tram"
+  },
+  {
+    "slug": "nottingham-station-nottingham",
+    "name": "Nottingham Station",
+    "city": "nottingham",
+    "cityDisplay": "Nottingham",
+    "country": "United Kingdom",
+    "lat": 52.9474,
+    "lon": -1.1464,
+    "lines": [
+      "NET Tram"
+    ],
+    "primaryLineKey": "net_tram"
+  },
+  {
+    "slug": "old-market-square-nottingham",
+    "name": "Old Market Square",
+    "city": "nottingham",
+    "cityDisplay": "Nottingham",
+    "country": "United Kingdom",
+    "lat": 52.9536,
+    "lon": -1.1484,
+    "lines": [
+      "NET Tram"
+    ],
+    "primaryLineKey": "net_tram"
+  },
+  {
+    "slug": "royal-centre-nottingham",
+    "name": "Royal Centre",
+    "city": "nottingham",
+    "cityDisplay": "Nottingham",
+    "country": "United Kingdom",
+    "lat": 52.955,
+    "lon": -1.152,
+    "lines": [
+      "NET Tram"
+    ],
+    "primaryLineKey": "net_tram"
+  },
+  {
+    "slug": "flughafen-nuremberg",
+    "name": "Flughafen",
+    "city": "nuremberg",
+    "cityDisplay": "Nuremberg",
+    "country": "Germany",
+    "lat": 49.4949,
+    "lon": 11.077,
+    "lines": [
+      "U-Bahn U2"
+    ],
+    "primaryLineKey": "ubahn_u2"
+  },
+  {
+    "slug": "fuerth-hauptbahnhof-nuremberg",
+    "name": "Fuerth Hauptbahnhof",
+    "city": "nuremberg",
+    "cityDisplay": "Nuremberg",
+    "country": "Germany",
+    "lat": 49.4733,
+    "lon": 10.9895,
+    "lines": [
+      "U-Bahn U1"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "hauptbahnhof-nuremberg",
+    "name": "Hauptbahnhof",
+    "city": "nuremberg",
+    "cityDisplay": "Nuremberg",
+    "country": "Germany",
+    "lat": 49.4462,
+    "lon": 11.0824,
+    "lines": [
+      "U-Bahn U1",
+      "U-Bahn U2"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "lorenzkirche-nuremberg",
+    "name": "Lorenzkirche",
+    "city": "nuremberg",
+    "cityDisplay": "Nuremberg",
+    "country": "Germany",
+    "lat": 49.4512,
+    "lon": 11.0783,
+    "lines": [
+      "U-Bahn U1"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "opernhaus-nuremberg",
+    "name": "Opernhaus",
+    "city": "nuremberg",
+    "cityDisplay": "Nuremberg",
+    "country": "Germany",
+    "lat": 49.453,
+    "lon": 11.075,
+    "lines": [
+      "U-Bahn U2"
+    ],
+    "primaryLineKey": "ubahn_u2"
+  },
+  {
+    "slug": "plarrer-nuremberg",
+    "name": "Plärrer",
+    "city": "nuremberg",
+    "cityDisplay": "Nuremberg",
+    "country": "Germany",
+    "lat": 49.4492,
+    "lon": 11.0614,
+    "lines": [
+      "U-Bahn U1",
+      "U-Bahn U2"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "wei-er-turm-nuremberg",
+    "name": "Weißer Turm",
+    "city": "nuremberg",
+    "cityDisplay": "Nuremberg",
+    "country": "Germany",
+    "lat": 49.4486,
+    "lon": 11.0723,
+    "lines": [
+      "U-Bahn U1"
+    ],
+    "primaryLineKey": "ubahn_u1"
+  },
+  {
+    "slug": "higashi-umeda-osaka",
+    "name": "Higashi-Umeda",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.7042,
+    "lon": 135.5037,
+    "lines": [
+      "Osaka Metro Tanimachi Line"
+    ],
+    "primaryLineKey": "tanimachi"
+  },
+  {
+    "slug": "honmachi-osaka",
+    "name": "Honmachi",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.6838,
+    "lon": 135.5002,
+    "lines": [
+      "Osaka Metro Chuo Line",
+      "Osaka Metro Yotsubashi Line"
+    ],
+    "primaryLineKey": "chuo_osaka"
+  },
+  {
+    "slug": "kansai-airport-osaka",
+    "name": "Kansai Airport",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.4346,
+    "lon": 135.244,
+    "lines": [
+      "Nankai Main Line"
+    ],
+    "primaryLineKey": "nankai"
+  },
+  {
+    "slug": "namba-osaka",
+    "name": "Namba",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.6658,
+    "lon": 135.5013,
+    "lines": [
+      "Osaka Metro Midosuji Line",
+      "Osaka Metro Yotsubashi Line",
+      "Nankai Main Line"
+    ],
+    "primaryLineKey": "midosuji"
+  },
+  {
+    "slug": "namba-jr-osaka",
+    "name": "Namba (JR)",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.6653,
+    "lon": 135.4964,
+    "lines": [
+      "JR Osaka Loop Line"
+    ],
+    "primaryLineKey": "osaka_loop"
+  },
+  {
+    "slug": "osaka-osaka",
+    "name": "Osaka",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.7024,
+    "lon": 135.4959,
+    "lines": [
+      "JR Osaka Loop Line"
+    ],
+    "primaryLineKey": "osaka_loop"
+  },
+  {
+    "slug": "osaka-ko-osaka",
+    "name": "Osaka-ko",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.6696,
+    "lon": 135.4329,
+    "lines": [
+      "Osaka Metro Chuo Line"
+    ],
+    "primaryLineKey": "chuo_osaka"
+  },
+  {
+    "slug": "shin-imamiya-osaka",
+    "name": "Shin-Imamiya",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.6522,
+    "lon": 135.5012,
+    "lines": [
+      "JR Osaka Loop Line",
+      "Nankai Main Line"
+    ],
+    "primaryLineKey": "osaka_loop"
+  },
+  {
+    "slug": "shin-osaka-osaka",
+    "name": "Shin-Osaka",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.7336,
+    "lon": 135.5002,
+    "lines": [
+      "Osaka Metro Midosuji Line"
+    ],
+    "primaryLineKey": "midosuji"
+  },
+  {
+    "slug": "shinsaibashi-osaka",
+    "name": "Shinsaibashi",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.675,
+    "lon": 135.5007,
+    "lines": [
+      "Osaka Metro Midosuji Line",
+      "Osaka Metro Yotsubashi Line"
+    ],
+    "primaryLineKey": "midosuji"
+  },
+  {
+    "slug": "tanimachi-yonchome-osaka",
+    "name": "Tanimachi Yonchome",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.6816,
+    "lon": 135.5166,
+    "lines": [
+      "Osaka Metro Tanimachi Line"
+    ],
+    "primaryLineKey": "tanimachi"
+  },
+  {
+    "slug": "tenmabashi-osaka",
+    "name": "Tenmabashi",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.6924,
+    "lon": 135.518,
+    "lines": [
+      "Osaka Metro Tanimachi Line"
+    ],
+    "primaryLineKey": "tanimachi"
+  },
+  {
+    "slug": "tennoji-osaka",
+    "name": "Tennoji",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.6464,
+    "lon": 135.5148,
+    "lines": [
+      "Osaka Metro Midosuji Line",
+      "JR Osaka Loop Line",
+      "Osaka Metro Tanimachi Line"
+    ],
+    "primaryLineKey": "midosuji"
+  },
+  {
+    "slug": "umeda-osaka",
+    "name": "Umeda",
+    "city": "osaka",
+    "cityDisplay": "Osaka",
+    "country": "Japan",
+    "lat": 34.7046,
+    "lon": 135.4992,
+    "lines": [
+      "Osaka Metro Midosuji Line"
+    ],
+    "primaryLineKey": "midosuji"
+  },
+  {
+    "slug": "estacio-intermodal-palma-de-mallorca",
+    "name": "Estació Intermodal",
+    "city": "palma_de_mallorca",
+    "cityDisplay": "Palma de Mallorca",
+    "country": "Spain",
+    "lat": 39.575,
+    "lon": 2.654,
+    "lines": [
+      "Metro Line M1"
+    ],
+    "primaryLineKey": "palma_metro"
+  },
+  {
+    "slug": "uib-palma-de-mallorca",
+    "name": "UIB",
+    "city": "palma_de_mallorca",
+    "cityDisplay": "Palma de Mallorca",
+    "country": "Spain",
+    "lat": 39.638,
+    "lon": 2.648,
+    "lines": [
+      "Metro Line M1"
+    ],
+    "primaryLineKey": "palma_metro"
+  },
+  {
+    "slug": "aeroport-charles-de-gaulle-1-paris",
+    "name": "Aeroport Charles de Gaulle 1",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 49.0098,
+    "lon": 2.5614,
+    "lines": [
+      "RER B"
+    ],
+    "primaryLineKey": "rer_b"
+  },
+  {
+    "slug": "aeroport-charles-de-gaulle-2-tgv-paris",
+    "name": "Aeroport Charles de Gaulle 2 TGV",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 49.0047,
+    "lon": 2.5714,
+    "lines": [
+      "RER B"
+    ],
+    "primaryLineKey": "rer_b"
+  },
+  {
+    "slug": "aeroport-d-orly-paris",
+    "name": "Aeroport d'Orly",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.7262,
+    "lon": 2.3652,
+    "lines": [
+      "Metro Line 14"
+    ],
+    "primaryLineKey": "metro_14"
+  },
+  {
+    "slug": "anvers-paris",
+    "name": "Anvers",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8828,
+    "lon": 2.344,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "auber-paris",
+    "name": "Auber",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8727,
+    "lon": 2.3299,
+    "lines": [
+      "RER A"
+    ],
+    "primaryLineKey": "rer_a"
+  },
+  {
+    "slug": "bastille-paris",
+    "name": "Bastille",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8531,
+    "lon": 2.369,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "belleville-paris",
+    "name": "Belleville",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.872,
+    "lon": 2.3766,
+    "lines": [
+      "Metro Line 2",
+      "Metro Line 11"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "bercy-paris",
+    "name": "Bercy",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8402,
+    "lon": 2.3797,
+    "lines": [
+      "Metro Line 6",
+      "Metro Line 14"
+    ],
+    "primaryLineKey": "metro_6"
+  },
+  {
+    "slug": "bibliotheque-francois-mitterrand-paris",
+    "name": "Bibliotheque Francois Mitterrand",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8296,
+    "lon": 2.376,
+    "lines": [
+      "Metro Line 14",
+      "RER C"
+    ],
+    "primaryLineKey": "metro_14"
+  },
+  {
+    "slug": "bir-hakeim-paris",
+    "name": "Bir-Hakeim",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.854,
+    "lon": 2.2895,
+    "lines": [
+      "Metro Line 6"
+    ],
+    "primaryLineKey": "metro_6"
+  },
+  {
+    "slug": "blanche-paris",
+    "name": "Blanche",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8839,
+    "lon": 2.3328,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "champ-de-mars-tour-eiffel-paris",
+    "name": "Champ de Mars - Tour Eiffel",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8567,
+    "lon": 2.2897,
+    "lines": [
+      "RER C"
+    ],
+    "primaryLineKey": "rer_c"
+  },
+  {
+    "slug": "champs-elysees-clemenceau-paris",
+    "name": "Champs-Elysees - Clemenceau",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8676,
+    "lon": 2.314,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "charles-de-gaulle-etoile-paris",
+    "name": "Charles de Gaulle - Etoile",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8738,
+    "lon": 2.295,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 6",
+      "Metro Line 2",
+      "RER A"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "chatelet-paris",
+    "name": "Chatelet",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8584,
+    "lon": 2.3474,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 4",
+      "Metro Line 7",
+      "Metro Line 11",
+      "Metro Line 14"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "chatelet-les-halles-paris",
+    "name": "Chatelet - Les Halles",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8616,
+    "lon": 2.3467,
+    "lines": [
+      "RER A",
+      "RER B"
+    ],
+    "primaryLineKey": "rer_a"
+  },
+  {
+    "slug": "cite-paris",
+    "name": "Cite",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8554,
+    "lon": 2.3465,
+    "lines": [
+      "Metro Line 4"
+    ],
+    "primaryLineKey": "metro_4"
+  },
+  {
+    "slug": "concorde-paris",
+    "name": "Concorde",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8656,
+    "lon": 2.3211,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "denfert-rochereau-paris",
+    "name": "Denfert-Rochereau",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8338,
+    "lon": 2.3326,
+    "lines": [
+      "Metro Line 6",
+      "RER B"
+    ],
+    "primaryLineKey": "metro_6"
+  },
+  {
+    "slug": "franklin-d-roosevelt-paris",
+    "name": "Franklin D. Roosevelt",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8689,
+    "lon": 2.3097,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 9"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "gare-d-austerlitz-paris",
+    "name": "Gare d'Austerlitz",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8424,
+    "lon": 2.3649,
+    "lines": [
+      "RER C"
+    ],
+    "primaryLineKey": "rer_c"
+  },
+  {
+    "slug": "gare-de-lyon-paris",
+    "name": "Gare de Lyon",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8448,
+    "lon": 2.3735,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 14",
+      "RER A"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "gare-de-l-est-paris",
+    "name": "Gare de l'Est",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8763,
+    "lon": 2.3579,
+    "lines": [
+      "Metro Line 4",
+      "Metro Line 7"
+    ],
+    "primaryLineKey": "metro_4"
+  },
+  {
+    "slug": "gare-du-nord-paris",
+    "name": "Gare du Nord",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.88,
+    "lon": 2.3553,
+    "lines": [
+      "Metro Line 4",
+      "RER B"
+    ],
+    "primaryLineKey": "metro_4"
+  },
+  {
+    "slug": "havre-caumartin-paris",
+    "name": "Havre - Caumartin",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8736,
+    "lon": 2.3284,
+    "lines": [
+      "Metro Line 9"
+    ],
+    "primaryLineKey": "metro_9"
+  },
+  {
+    "slug": "hotel-de-ville-paris",
+    "name": "Hotel de Ville",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8574,
+    "lon": 2.3514,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 11"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "invalides-paris",
+    "name": "Invalides",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8611,
+    "lon": 2.3133,
+    "lines": [
+      "RER C"
+    ],
+    "primaryLineKey": "rer_c"
+  },
+  {
+    "slug": "la-defense-paris",
+    "name": "La Defense",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.892,
+    "lon": 2.2381,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "la-defense-grande-arche-paris",
+    "name": "La Defense - Grande Arche",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.892,
+    "lon": 2.2381,
+    "lines": [
+      "RER A"
+    ],
+    "primaryLineKey": "rer_a"
+  },
+  {
+    "slug": "les-halles-paris",
+    "name": "Les Halles",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8622,
+    "lon": 2.346,
+    "lines": [
+      "Metro Line 4"
+    ],
+    "primaryLineKey": "metro_4"
+  },
+  {
+    "slug": "louvre-rivoli-paris",
+    "name": "Louvre - Rivoli",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8607,
+    "lon": 2.341,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "luxembourg-paris",
+    "name": "Luxembourg",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8462,
+    "lon": 2.3399,
+    "lines": [
+      "RER B"
+    ],
+    "primaryLineKey": "rer_b"
+  },
+  {
+    "slug": "madeleine-paris",
+    "name": "Madeleine",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8699,
+    "lon": 2.3253,
+    "lines": [
+      "Metro Line 14"
+    ],
+    "primaryLineKey": "metro_14"
+  },
+  {
+    "slug": "marne-la-vallee-chessy-disneyland-paris",
+    "name": "Marne-la-Vallee - Chessy (Disneyland)",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8674,
+    "lon": 2.7828,
+    "lines": [
+      "RER A"
+    ],
+    "primaryLineKey": "rer_a"
+  },
+  {
+    "slug": "montparnasse-bienvenue-paris",
+    "name": "Montparnasse - Bienvenue",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8433,
+    "lon": 2.3241,
+    "lines": [
+      "Metro Line 4",
+      "Metro Line 6"
+    ],
+    "primaryLineKey": "metro_4"
+  },
+  {
+    "slug": "musee-d-orsay-paris",
+    "name": "Musee d'Orsay",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8605,
+    "lon": 2.3256,
+    "lines": [
+      "RER C"
+    ],
+    "primaryLineKey": "rer_c"
+  },
+  {
+    "slug": "nation-paris",
+    "name": "Nation",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8483,
+    "lon": 2.3959,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 6",
+      "Metro Line 2",
+      "Metro Line 9",
+      "RER A"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "opera-paris",
+    "name": "Opera",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8713,
+    "lon": 2.3317,
+    "lines": [
+      "Metro Line 7"
+    ],
+    "primaryLineKey": "metro_7"
+  },
+  {
+    "slug": "palais-royal-musee-du-louvre-paris",
+    "name": "Palais Royal - Musee du Louvre",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8622,
+    "lon": 2.3365,
+    "lines": [
+      "Metro Line 1",
+      "Metro Line 7"
+    ],
+    "primaryLineKey": "metro_1"
+  },
+  {
+    "slug": "pere-lachaise-paris",
+    "name": "Pere Lachaise",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8627,
+    "lon": 2.3867,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "pigalle-paris",
+    "name": "Pigalle",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8822,
+    "lon": 2.3374,
+    "lines": [
+      "Metro Line 2"
+    ],
+    "primaryLineKey": "metro_2"
+  },
+  {
+    "slug": "place-d-italie-paris",
+    "name": "Place d'Italie",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8311,
+    "lon": 2.3558,
+    "lines": [
+      "Metro Line 6",
+      "Metro Line 7"
+    ],
+    "primaryLineKey": "metro_6"
+  },
+  {
+    "slug": "republique-paris",
+    "name": "Republique",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8674,
+    "lon": 2.3635,
+    "lines": [
+      "Metro Line 9",
+      "Metro Line 11"
+    ],
+    "primaryLineKey": "metro_9"
+  },
+  {
+    "slug": "saint-germain-des-pres-paris",
+    "name": "Saint-Germain-des-Pres",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8534,
+    "lon": 2.3335,
+    "lines": [
+      "Metro Line 4"
+    ],
+    "primaryLineKey": "metro_4"
+  },
+  {
+    "slug": "saint-lazare-paris",
+    "name": "Saint-Lazare",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8759,
+    "lon": 2.3251,
+    "lines": [
+      "Metro Line 14"
+    ],
+    "primaryLineKey": "metro_14"
+  },
+  {
+    "slug": "saint-michel-paris",
+    "name": "Saint-Michel",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.8537,
+    "lon": 2.344,
+    "lines": [
+      "Metro Line 4"
+    ],
+    "primaryLineKey": "metro_4"
+  },
+  {
+    "slug": "saint-michel-notre-dame-paris",
+    "name": "Saint-Michel - Notre-Dame",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.853,
+    "lon": 2.3444,
+    "lines": [
+      "RER B",
+      "RER C"
+    ],
+    "primaryLineKey": "rer_b"
+  },
+  {
+    "slug": "trocadero-paris",
+    "name": "Trocadero",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.863,
+    "lon": 2.2868,
+    "lines": [
+      "Metro Line 6",
+      "Metro Line 9"
+    ],
+    "primaryLineKey": "metro_6"
+  },
+  {
+    "slug": "versailles-chateau-rive-gauche-paris",
+    "name": "Versailles - Chateau Rive Gauche",
+    "city": "paris",
+    "cityDisplay": "Paris",
+    "country": "France",
+    "lat": 48.799,
+    "lon": 2.129,
+    "lines": [
+      "RER C"
+    ],
+    "primaryLineKey": "rer_c"
+  },
+  {
+    "slug": "jomtien-beach-pattaya",
+    "name": "Jomtien Beach",
+    "city": "pattaya",
+    "cityDisplay": "Pattaya",
+    "country": "Thailand",
+    "lat": 12.8896,
+    "lon": 100.871,
+    "lines": [
+      "Pattaya Key Areas"
+    ],
+    "primaryLineKey": "pattaya_areas"
+  },
+  {
+    "slug": "naklua-pattaya",
+    "name": "Naklua",
+    "city": "pattaya",
+    "cityDisplay": "Pattaya",
+    "country": "Thailand",
+    "lat": 12.9582,
+    "lon": 100.8886,
+    "lines": [
+      "Pattaya Key Areas"
+    ],
+    "primaryLineKey": "pattaya_areas"
+  },
+  {
+    "slug": "north-pattaya-pattaya",
+    "name": "North Pattaya",
+    "city": "pattaya",
+    "cityDisplay": "Pattaya",
+    "country": "Thailand",
+    "lat": 12.953,
+    "lon": 100.883,
+    "lines": [
+      "Pattaya Key Areas"
+    ],
+    "primaryLineKey": "pattaya_areas"
+  },
+  {
+    "slug": "pattaya-central-beach-road-pattaya",
+    "name": "Pattaya Central (Beach Road)",
+    "city": "pattaya",
+    "cityDisplay": "Pattaya",
+    "country": "Thailand",
+    "lat": 12.9271,
+    "lon": 100.8771,
+    "lines": [
+      "Pattaya Key Areas"
+    ],
+    "primaryLineKey": "pattaya_areas"
+  },
+  {
+    "slug": "pattaya-second-road-pattaya",
+    "name": "Pattaya Second Road",
+    "city": "pattaya",
+    "cityDisplay": "Pattaya",
+    "country": "Thailand",
+    "lat": 12.9338,
+    "lon": 100.8828,
+    "lines": [
+      "Pattaya Key Areas"
+    ],
+    "primaryLineKey": "pattaya_areas"
+  },
+  {
+    "slug": "pattaya-walking-street-pattaya",
+    "name": "Pattaya Walking Street",
+    "city": "pattaya",
+    "cityDisplay": "Pattaya",
+    "country": "Thailand",
+    "lat": 12.9245,
+    "lon": 100.8726,
+    "lines": [
+      "Pattaya Key Areas"
+    ],
+    "primaryLineKey": "pattaya_areas"
+  },
+  {
+    "slug": "pratumnak-hill-pattaya",
+    "name": "Pratumnak Hill",
+    "city": "pattaya",
+    "cityDisplay": "Pattaya",
+    "country": "Thailand",
+    "lat": 12.9115,
+    "lon": 100.864,
+    "lines": [
+      "Pattaya Key Areas"
+    ],
+    "primaryLineKey": "pattaya_areas"
+  },
+  {
+    "slug": "south-pattaya-pattaya",
+    "name": "South Pattaya",
+    "city": "pattaya",
+    "cityDisplay": "Pattaya",
+    "country": "Thailand",
+    "lat": 12.915,
+    "lon": 100.8685,
+    "lines": [
+      "Pattaya Key Areas"
+    ],
+    "primaryLineKey": "pattaya_areas"
+  },
+  {
+    "slug": "terminal-21-pattaya-area-pattaya",
+    "name": "Terminal 21 Pattaya Area",
+    "city": "pattaya",
+    "cityDisplay": "Pattaya",
+    "country": "Thailand",
+    "lat": 12.947,
+    "lon": 100.886,
+    "lines": [
+      "Pattaya Key Areas"
+    ],
+    "primaryLineKey": "pattaya_areas"
+  },
+  {
+    "slug": "bang-tao-beach-phuket",
+    "name": "Bang Tao Beach",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.9962,
+    "lon": 98.2927,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "chalong-phuket",
+    "name": "Chalong",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.8268,
+    "lon": 98.3396,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "kamala-beach-phuket",
+    "name": "Kamala Beach",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.9521,
+    "lon": 98.281,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "karon-beach-phuket",
+    "name": "Karon Beach",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.844,
+    "lon": 98.2946,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "kata-beach-phuket",
+    "name": "Kata Beach",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.82,
+    "lon": 98.2983,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "nai-harn-beach-phuket",
+    "name": "Nai Harn Beach",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.7702,
+    "lon": 98.3042,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "old-phuket-town-phuket",
+    "name": "Old Phuket Town",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.8837,
+    "lon": 98.3868,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "patong-beach-phuket",
+    "name": "Patong Beach",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.8965,
+    "lon": 98.2961,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "phuket-town-phuket",
+    "name": "Phuket Town",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.8804,
+    "lon": 98.3923,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "rawai-phuket",
+    "name": "Rawai",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.7776,
+    "lon": 98.3257,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "surin-beach-phuket",
+    "name": "Surin Beach",
+    "city": "phuket",
+    "cityDisplay": "Phuket",
+    "country": "Thailand",
+    "lat": 7.9761,
+    "lon": 98.2779,
+    "lines": [
+      "Phuket Key Areas"
+    ],
+    "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "hosui-susukino-sapporo",
+    "name": "Hosui-Susukino",
+    "city": "sapporo",
+    "cityDisplay": "Sapporo",
+    "country": "Japan",
+    "lat": 43.0519,
+    "lon": 141.3584,
+    "lines": [
+      "Sapporo Subway Toho Line"
+    ],
+    "primaryLineKey": "toho"
+  },
+  {
+    "slug": "maruyama-koen-sapporo",
+    "name": "Maruyama-Koen",
+    "city": "sapporo",
+    "cityDisplay": "Sapporo",
+    "country": "Japan",
+    "lat": 43.0553,
+    "lon": 141.3221,
+    "lines": [
+      "Sapporo Subway Tozai Line"
+    ],
+    "primaryLineKey": "tozai_sapporo"
+  },
+  {
+    "slug": "odori-sapporo",
+    "name": "Odori",
+    "city": "sapporo",
+    "cityDisplay": "Sapporo",
+    "country": "Japan",
+    "lat": 43.0602,
+    "lon": 141.3546,
+    "lines": [
+      "Sapporo Subway Namboku Line",
+      "Sapporo Subway Tozai Line",
+      "Sapporo Subway Toho Line"
+    ],
+    "primaryLineKey": "namboku_sapporo"
+  },
+  {
+    "slug": "sapporo-sapporo",
+    "name": "Sapporo",
+    "city": "sapporo",
+    "cityDisplay": "Sapporo",
+    "country": "Japan",
+    "lat": 43.0687,
+    "lon": 141.3509,
+    "lines": [
+      "Sapporo Subway Namboku Line",
+      "Sapporo Subway Toho Line"
+    ],
+    "primaryLineKey": "namboku_sapporo"
+  },
+  {
+    "slug": "susukino-sapporo",
+    "name": "Susukino",
+    "city": "sapporo",
+    "cityDisplay": "Sapporo",
+    "country": "Japan",
+    "lat": 43.0546,
+    "lon": 141.3536,
+    "lines": [
+      "Sapporo Subway Namboku Line"
+    ],
+    "primaryLineKey": "namboku_sapporo"
+  },
+  {
+    "slug": "aoba-dori-sendai",
+    "name": "Aoba-dori",
+    "city": "sendai",
+    "cityDisplay": "Sendai",
+    "country": "Japan",
+    "lat": 38.2617,
+    "lon": 140.8744,
+    "lines": [
+      "Sendai Subway Tozai Line"
+    ],
+    "primaryLineKey": "tozai_sendai"
+  },
+  {
+    "slug": "hirose-dori-sendai",
+    "name": "Hirose-dori",
+    "city": "sendai",
+    "cityDisplay": "Sendai",
+    "country": "Japan",
+    "lat": 38.2618,
+    "lon": 140.8697,
+    "lines": [
+      "Sendai Subway Namboku Line"
+    ],
+    "primaryLineKey": "namboku_sendai"
+  },
+  {
+    "slug": "sendai-sendai",
+    "name": "Sendai",
+    "city": "sendai",
+    "cityDisplay": "Sendai",
+    "country": "Japan",
+    "lat": 38.2607,
+    "lon": 140.8822,
+    "lines": [
+      "Sendai Subway Namboku Line",
+      "Sendai Subway Tozai Line"
+    ],
+    "primaryLineKey": "namboku_sendai"
+  },
+  {
+    "slug": "archivo-de-indias-seville",
+    "name": "Archivo de Indias",
+    "city": "seville",
+    "cityDisplay": "Seville",
+    "country": "Spain",
+    "lat": 37.386,
+    "lon": -5.992,
+    "lines": [
+      "MetroCentro Tram"
+    ],
+    "primaryLineKey": "sevilla_tram"
+  },
+  {
+    "slug": "nervion-seville",
+    "name": "Nervión",
+    "city": "seville",
+    "cityDisplay": "Seville",
+    "country": "Spain",
+    "lat": 37.387,
+    "lon": -5.9705,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "sevilla_metro_1"
+  },
+  {
+    "slug": "plaza-nueva-seville",
+    "name": "Plaza Nueva",
+    "city": "seville",
+    "cityDisplay": "Seville",
+    "country": "Spain",
+    "lat": 37.3893,
+    "lon": -5.9968,
+    "lines": [
+      "MetroCentro Tram"
+    ],
+    "primaryLineKey": "sevilla_tram"
+  },
+  {
+    "slug": "prado-de-san-sebastian-seville",
+    "name": "Prado de San Sebastián",
+    "city": "seville",
+    "cityDisplay": "Seville",
+    "country": "Spain",
+    "lat": 37.3815,
+    "lon": -5.9875,
+    "lines": [
+      "Metro Line 1",
+      "MetroCentro Tram"
+    ],
+    "primaryLineKey": "sevilla_metro_1"
+  },
+  {
+    "slug": "puerta-de-jerez-seville",
+    "name": "Puerta de Jerez",
+    "city": "seville",
+    "cityDisplay": "Seville",
+    "country": "Spain",
+    "lat": 37.385,
+    "lon": -5.9965,
+    "lines": [
+      "Metro Line 1",
+      "MetroCentro Tram"
+    ],
+    "primaryLineKey": "sevilla_metro_1"
+  },
+  {
+    "slug": "san-bernardo-seville",
+    "name": "San Bernardo",
+    "city": "seville",
+    "cityDisplay": "Seville",
+    "country": "Spain",
+    "lat": 37.3795,
+    "lon": -5.9785,
+    "lines": [
+      "Metro Line 1"
+    ],
+    "primaryLineKey": "sevilla_metro_1"
+  },
+  {
+    "slug": "cathedral-sheffield",
+    "name": "Cathedral",
+    "city": "sheffield",
+    "cityDisplay": "Sheffield",
+    "country": "United Kingdom",
+    "lat": 53.3838,
+    "lon": -1.47,
+    "lines": [
+      "Sheffield Supertram"
+    ],
+    "primaryLineKey": "supertram"
+  },
+  {
+    "slug": "city-hall-sheffield",
+    "name": "City Hall",
+    "city": "sheffield",
+    "cityDisplay": "Sheffield",
+    "country": "United Kingdom",
+    "lat": 53.3798,
+    "lon": -1.4741,
+    "lines": [
+      "Sheffield Supertram"
+    ],
+    "primaryLineKey": "supertram"
+  },
+  {
+    "slug": "meadowhall-sheffield",
+    "name": "Meadowhall",
+    "city": "sheffield",
+    "cityDisplay": "Sheffield",
+    "country": "United Kingdom",
+    "lat": 53.4147,
+    "lon": -1.4118,
+    "lines": [
+      "Sheffield Supertram"
+    ],
+    "primaryLineKey": "supertram"
+  },
+  {
+    "slug": "sheffield-station-sheffield-hallam-university-sheffield",
+    "name": "Sheffield Station/Sheffield Hallam University",
+    "city": "sheffield",
+    "cityDisplay": "Sheffield",
+    "country": "United Kingdom",
+    "lat": 53.3789,
+    "lon": -1.4622,
+    "lines": [
+      "Sheffield Supertram"
+    ],
+    "primaryLineKey": "supertram"
+  },
+  {
+    "slug": "ancienne-synagogue-les-halles-strasbourg",
+    "name": "Ancienne Synagogue - Les Halles",
+    "city": "strasbourg",
+    "cityDisplay": "Strasbourg",
+    "country": "France",
+    "lat": 48.5867,
+    "lon": 7.752,
+    "lines": [
+      "Tram Line A"
+    ],
+    "primaryLineKey": "strasbourg_tram_a"
+  },
+  {
+    "slug": "gare-centrale-strasbourg",
+    "name": "Gare Centrale",
+    "city": "strasbourg",
+    "cityDisplay": "Strasbourg",
+    "country": "France",
+    "lat": 48.5854,
+    "lon": 7.7349,
+    "lines": [
+      "Tram Line A"
+    ],
+    "primaryLineKey": "strasbourg_tram_a"
+  },
+  {
+    "slug": "homme-de-fer-strasbourg",
+    "name": "Homme de Fer",
+    "city": "strasbourg",
+    "cityDisplay": "Strasbourg",
+    "country": "France",
+    "lat": 48.584,
+    "lon": 7.7467,
+    "lines": [
+      "Tram Line A",
+      "Tram Line D"
+    ],
+    "primaryLineKey": "strasbourg_tram_a"
+  },
+  {
+    "slug": "kehl-bahnhof-strasbourg",
+    "name": "Kehl Bahnhof",
+    "city": "strasbourg",
+    "cityDisplay": "Strasbourg",
+    "country": "France",
+    "lat": 48.5724,
+    "lon": 7.8022,
+    "lines": [
+      "Tram Line D"
+    ],
+    "primaryLineKey": "strasbourg_tram_d"
+  },
+  {
+    "slug": "langstross-grand-rue-strasbourg",
+    "name": "Langstross - Grand'Rue",
+    "city": "strasbourg",
+    "cityDisplay": "Strasbourg",
+    "country": "France",
+    "lat": 48.5808,
+    "lon": 7.7467,
+    "lines": [
+      "Tram Line A"
+    ],
+    "primaryLineKey": "strasbourg_tram_a"
+  },
+  {
+    "slug": "republique-strasbourg",
+    "name": "Republique",
+    "city": "strasbourg",
+    "cityDisplay": "Strasbourg",
+    "country": "France",
+    "lat": 48.5887,
+    "lon": 7.7502,
+    "lines": [
+      "Tram Line D"
+    ],
+    "primaryLineKey": "strasbourg_tram_d"
+  },
+  {
+    "slug": "bad-cannstatt-stuttgart",
+    "name": "Bad Cannstatt",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.8003,
+    "lon": 9.209,
+    "lines": [
+      "S-Bahn Stuttgart"
+    ],
+    "primaryLineKey": "sbahn_stuttgart"
+  },
+  {
+    "slug": "charlottenplatz-stuttgart",
+    "name": "Charlottenplatz",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.775,
+    "lon": 9.1821,
+    "lines": [
+      "Stadtbahn Stuttgart"
+    ],
+    "primaryLineKey": "stadtbahn_stuttgart"
+  },
+  {
+    "slug": "feuersee-stuttgart",
+    "name": "Feuersee",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.7746,
+    "lon": 9.1681,
+    "lines": [
+      "S-Bahn Stuttgart"
+    ],
+    "primaryLineKey": "sbahn_stuttgart"
+  },
+  {
+    "slug": "hauptbahnhof-arnulf-klett-platz-stuttgart",
+    "name": "Hauptbahnhof (Arnulf-Klett-Platz)",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.7845,
+    "lon": 9.1816,
+    "lines": [
+      "Stadtbahn Stuttgart"
+    ],
+    "primaryLineKey": "stadtbahn_stuttgart"
+  },
+  {
+    "slug": "marienplatz-stuttgart",
+    "name": "Marienplatz",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.7673,
+    "lon": 9.1723,
+    "lines": [
+      "Stadtbahn Stuttgart"
+    ],
+    "primaryLineKey": "stadtbahn_stuttgart"
+  },
+  {
+    "slug": "rathaus-stuttgart",
+    "name": "Rathaus",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.7789,
+    "lon": 9.1793,
+    "lines": [
+      "Stadtbahn Stuttgart"
+    ],
+    "primaryLineKey": "stadtbahn_stuttgart"
+  },
+  {
+    "slug": "schlossplatz-stuttgart",
+    "name": "Schlossplatz",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.7789,
+    "lon": 9.1774,
+    "lines": [
+      "Stadtbahn Stuttgart"
+    ],
+    "primaryLineKey": "stadtbahn_stuttgart"
+  },
+  {
+    "slug": "stadtmitte-stuttgart",
+    "name": "Stadtmitte",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.7773,
+    "lon": 9.1729,
+    "lines": [
+      "S-Bahn Stuttgart"
+    ],
+    "primaryLineKey": "sbahn_stuttgart"
+  },
+  {
+    "slug": "stuttgart-flughafen-messe-stuttgart",
+    "name": "Stuttgart Flughafen/Messe",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.6899,
+    "lon": 9.2219,
+    "lines": [
+      "S-Bahn Stuttgart"
+    ],
+    "primaryLineKey": "sbahn_stuttgart"
+  },
+  {
+    "slug": "stuttgart-hbf-stuttgart",
+    "name": "Stuttgart Hbf",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.7845,
+    "lon": 9.1816,
+    "lines": [
+      "S-Bahn Stuttgart"
+    ],
+    "primaryLineKey": "sbahn_stuttgart"
+  },
+  {
+    "slug": "vaihingen-stuttgart",
+    "name": "Vaihingen",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.743,
+    "lon": 9.1578,
+    "lines": [
+      "S-Bahn Stuttgart"
+    ],
+    "primaryLineKey": "sbahn_stuttgart"
+  },
+  {
+    "slug": "wilhelma-stuttgart",
+    "name": "Wilhelma",
+    "city": "stuttgart",
+    "cityDisplay": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.8048,
+    "lon": 9.2065,
+    "lines": [
+      "Stadtbahn Stuttgart"
+    ],
+    "primaryLineKey": "stadtbahn_stuttgart"
+  },
+  {
+    "slug": "akihabara-tokyo",
+    "name": "Akihabara",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6984,
+    "lon": 139.7731,
+    "lines": [
+      "JR Yamanote Line",
+      "Tokyo Metro Hibiya Line"
+    ],
+    "primaryLineKey": "yamanote"
+  },
+  {
+    "slug": "asakusa-tokyo",
+    "name": "Asakusa",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.7114,
+    "lon": 139.7981,
+    "lines": [
+      "Tokyo Metro Ginza Line",
+      "Toei Asakusa Line"
+    ],
+    "primaryLineKey": "ginza"
+  },
+  {
+    "slug": "azabu-juban-tokyo",
+    "name": "Azabu-Juban",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6543,
+    "lon": 139.7371,
+    "lines": [
+      "Tokyo Metro Namboku Line"
+    ],
+    "primaryLineKey": "namboku"
+  },
+  {
+    "slug": "ebisu-tokyo",
+    "name": "Ebisu",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6467,
+    "lon": 139.71,
+    "lines": [
+      "JR Yamanote Line"
+    ],
+    "primaryLineKey": "yamanote"
+  },
+  {
+    "slug": "ginza-tokyo",
+    "name": "Ginza",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6717,
+    "lon": 139.7637,
+    "lines": [
+      "Tokyo Metro Ginza Line",
+      "Tokyo Metro Marunouchi Line",
+      "Tokyo Metro Hibiya Line"
+    ],
+    "primaryLineKey": "ginza"
+  },
+  {
+    "slug": "haneda-airport-t1-t2-tokyo",
+    "name": "Haneda Airport T1/T2",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.5437,
+    "lon": 139.7675,
+    "lines": [
+      "Keikyu Main Line"
+    ],
+    "primaryLineKey": "keikyu"
+  },
+  {
+    "slug": "haneda-airport-t3-tokyo",
+    "name": "Haneda Airport T3",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.5494,
+    "lon": 139.7798,
+    "lines": [
+      "Keikyu Main Line"
+    ],
+    "primaryLineKey": "keikyu"
+  },
+  {
+    "slug": "harajuku-tokyo",
+    "name": "Harajuku",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6702,
+    "lon": 139.7027,
+    "lines": [
+      "JR Yamanote Line"
+    ],
+    "primaryLineKey": "yamanote"
+  },
+  {
+    "slug": "ikebukuro-tokyo",
+    "name": "Ikebukuro",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.7295,
+    "lon": 139.7109,
+    "lines": [
+      "JR Yamanote Line",
+      "Tokyo Metro Marunouchi Line",
+      "Tokyo Metro Fukutoshin Line",
+      "Tokyo Metro Yurakucho Line"
+    ],
+    "primaryLineKey": "yamanote"
+  },
+  {
+    "slug": "kichijoji-tokyo",
+    "name": "Kichijoji",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.7031,
+    "lon": 139.5795,
+    "lines": [
+      "JR Chuo Line (Rapid)"
+    ],
+    "primaryLineKey": "chuo_rapid"
+  },
+  {
+    "slug": "meguro-tokyo",
+    "name": "Meguro",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.634,
+    "lon": 139.7158,
+    "lines": [
+      "Tokyo Metro Namboku Line"
+    ],
+    "primaryLineKey": "namboku"
+  },
+  {
+    "slug": "meiji-jingumae-tokyo",
+    "name": "Meiji-Jingumae",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6698,
+    "lon": 139.7048,
+    "lines": [
+      "Tokyo Metro Chiyoda Line"
+    ],
+    "primaryLineKey": "chiyoda"
+  },
+  {
+    "slug": "nakano-tokyo",
+    "name": "Nakano",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.7054,
+    "lon": 139.6657,
+    "lines": [
+      "JR Chuo Line (Rapid)"
+    ],
+    "primaryLineKey": "chuo_rapid"
+  },
+  {
+    "slug": "nihombashi-tokyo",
+    "name": "Nihombashi",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6822,
+    "lon": 139.7743,
+    "lines": [
+      "Toei Asakusa Line",
+      "Tokyo Metro Tozai Line"
+    ],
+    "primaryLineKey": "asakusa"
+  },
+  {
+    "slug": "odaiba-kaihinkoen-tokyo",
+    "name": "Odaiba-Kaihinkoen",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6278,
+    "lon": 139.7754,
+    "lines": [
+      "Rinkai Line"
+    ],
+    "primaryLineKey": "rinkai"
+  },
+  {
+    "slug": "omotesando-tokyo",
+    "name": "Omotesando",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6654,
+    "lon": 139.7122,
+    "lines": [
+      "Tokyo Metro Ginza Line",
+      "Tokyo Metro Chiyoda Line",
+      "Tokyo Metro Hanzomon Line"
+    ],
+    "primaryLineKey": "ginza"
+  },
+  {
+    "slug": "oshiage-tokyo",
+    "name": "Oshiage",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.7109,
+    "lon": 139.8128,
+    "lines": [
+      "Toei Asakusa Line",
+      "Tokyo Metro Hanzomon Line"
+    ],
+    "primaryLineKey": "asakusa"
+  },
+  {
+    "slug": "otemachi-tokyo",
+    "name": "Otemachi",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6867,
+    "lon": 139.763,
+    "lines": [
+      "Tokyo Metro Tozai Line",
+      "Tokyo Metro Chiyoda Line",
+      "Tokyo Metro Hanzomon Line"
+    ],
+    "primaryLineKey": "tozai"
+  },
+  {
+    "slug": "roppongi-tokyo",
+    "name": "Roppongi",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6632,
+    "lon": 139.7312,
+    "lines": [
+      "Tokyo Metro Hibiya Line",
+      "Toei Oedo Line"
+    ],
+    "primaryLineKey": "hibiya"
+  },
+  {
+    "slug": "ryogoku-tokyo",
+    "name": "Ryogoku",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6968,
+    "lon": 139.793,
+    "lines": [
+      "Toei Oedo Line"
+    ],
+    "primaryLineKey": "oedo"
+  },
+  {
+    "slug": "shibuya-tokyo",
+    "name": "Shibuya",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.658,
+    "lon": 139.7016,
+    "lines": [
+      "JR Yamanote Line",
+      "Tokyo Metro Ginza Line",
+      "Tokyo Metro Hanzomon Line",
+      "Tokyo Metro Fukutoshin Line"
+    ],
+    "primaryLineKey": "yamanote"
+  },
+  {
+    "slug": "shimbashi-tokyo",
+    "name": "Shimbashi",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.666,
+    "lon": 139.7584,
+    "lines": [
+      "Toei Asakusa Line"
+    ],
+    "primaryLineKey": "asakusa"
+  },
+  {
+    "slug": "shinagawa-tokyo",
+    "name": "Shinagawa",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6285,
+    "lon": 139.7387,
+    "lines": [
+      "JR Yamanote Line",
+      "Keikyu Main Line"
+    ],
+    "primaryLineKey": "yamanote"
+  },
+  {
+    "slug": "shinjuku-tokyo",
+    "name": "Shinjuku",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6896,
+    "lon": 139.7006,
+    "lines": [
+      "JR Yamanote Line",
+      "Tokyo Metro Marunouchi Line",
+      "JR Chuo Line (Rapid)"
+    ],
+    "primaryLineKey": "yamanote"
+  },
+  {
+    "slug": "shinjuku-nishiguchi-tokyo",
+    "name": "Shinjuku-Nishiguchi",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6936,
+    "lon": 139.6975,
+    "lines": [
+      "Toei Oedo Line"
+    ],
+    "primaryLineKey": "oedo"
+  },
+  {
+    "slug": "shinjuku-sanchome-tokyo",
+    "name": "Shinjuku-Sanchome",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6885,
+    "lon": 139.7038,
+    "lines": [
+      "Tokyo Metro Fukutoshin Line"
+    ],
+    "primaryLineKey": "fukutoshin"
+  },
+  {
+    "slug": "tokyo-tokyo",
+    "name": "Tokyo",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6812,
+    "lon": 139.7671,
+    "lines": [
+      "JR Yamanote Line",
+      "Tokyo Metro Marunouchi Line",
+      "JR Chuo Line (Rapid)"
+    ],
+    "primaryLineKey": "yamanote"
+  },
+  {
+    "slug": "tokyo-teleport-tokyo",
+    "name": "Tokyo Teleport",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6266,
+    "lon": 139.7774,
+    "lines": [
+      "Rinkai Line"
+    ],
+    "primaryLineKey": "rinkai"
+  },
+  {
+    "slug": "toyosu-tokyo",
+    "name": "Toyosu",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6533,
+    "lon": 139.7964,
+    "lines": [
+      "Tokyo Metro Yurakucho Line"
+    ],
+    "primaryLineKey": "yurakucho"
+  },
+  {
+    "slug": "tsukiji-tokyo",
+    "name": "Tsukiji",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6676,
+    "lon": 139.7707,
+    "lines": [
+      "Tokyo Metro Hibiya Line"
+    ],
+    "primaryLineKey": "hibiya"
+  },
+  {
+    "slug": "tsukiji-shijo-tokyo",
+    "name": "Tsukiji-Shijo",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6657,
+    "lon": 139.769,
+    "lines": [
+      "Toei Oedo Line"
+    ],
+    "primaryLineKey": "oedo"
+  },
+  {
+    "slug": "ueno-tokyo",
+    "name": "Ueno",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.7141,
+    "lon": 139.7774,
+    "lines": [
+      "JR Yamanote Line",
+      "Tokyo Metro Ginza Line",
+      "Tokyo Metro Hibiya Line"
+    ],
+    "primaryLineKey": "yamanote"
+  },
+  {
+    "slug": "yurakucho-tokyo",
+    "name": "Yurakucho",
+    "city": "tokyo",
+    "cityDisplay": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6752,
+    "lon": 139.7629,
+    "lines": [
+      "Tokyo Metro Yurakucho Line"
+    ],
+    "primaryLineKey": "yurakucho"
+  },
+  {
+    "slug": "arenes-toulouse",
+    "name": "Arenes",
+    "city": "toulouse",
+    "cityDisplay": "Toulouse",
+    "country": "France",
+    "lat": 43.5887,
+    "lon": 1.4258,
+    "lines": [
+      "Metro Line A"
+    ],
+    "primaryLineKey": "toulouse_a"
+  },
+  {
+    "slug": "capitole-toulouse",
+    "name": "Capitole",
+    "city": "toulouse",
+    "cityDisplay": "Toulouse",
+    "country": "France",
+    "lat": 43.6045,
+    "lon": 1.4437,
+    "lines": [
+      "Metro Line A"
+    ],
+    "primaryLineKey": "toulouse_a"
+  },
+  {
+    "slug": "carmes-toulouse",
+    "name": "Carmes",
+    "city": "toulouse",
+    "cityDisplay": "Toulouse",
+    "country": "France",
+    "lat": 43.5979,
+    "lon": 1.4453,
+    "lines": [
+      "Metro Line B"
+    ],
+    "primaryLineKey": "toulouse_b"
+  },
+  {
+    "slug": "esquirol-toulouse",
+    "name": "Esquirol",
+    "city": "toulouse",
+    "cityDisplay": "Toulouse",
+    "country": "France",
+    "lat": 43.6005,
+    "lon": 1.4425,
+    "lines": [
+      "Metro Line A"
+    ],
+    "primaryLineKey": "toulouse_a"
+  },
+  {
+    "slug": "jean-jaures-toulouse",
+    "name": "Jean Jaures",
+    "city": "toulouse",
+    "cityDisplay": "Toulouse",
+    "country": "France",
+    "lat": 43.6065,
+    "lon": 1.45,
+    "lines": [
+      "Metro Line A",
+      "Metro Line B"
+    ],
+    "primaryLineKey": "toulouse_a"
+  },
+  {
+    "slug": "marengo-sncf-toulouse",
+    "name": "Marengo - SNCF",
+    "city": "toulouse",
+    "cityDisplay": "Toulouse",
+    "country": "France",
+    "lat": 43.611,
+    "lon": 1.4544,
+    "lines": [
+      "Metro Line A"
+    ],
+    "primaryLineKey": "toulouse_a"
+  },
+  {
+    "slug": "palais-de-justice-toulouse",
+    "name": "Palais de Justice",
+    "city": "toulouse",
+    "cityDisplay": "Toulouse",
+    "country": "France",
+    "lat": 43.6006,
+    "lon": 1.441,
+    "lines": [
+      "Metro Line B"
+    ],
+    "primaryLineKey": "toulouse_b"
+  },
+  {
+    "slug": "ramonville-toulouse",
+    "name": "Ramonville",
+    "city": "toulouse",
+    "cityDisplay": "Toulouse",
+    "country": "France",
+    "lat": 43.558,
+    "lon": 1.4738,
+    "lines": [
+      "Metro Line B"
+    ],
+    "primaryLineKey": "toulouse_b"
+  },
+  {
+    "slug": "aeroport-valencia",
+    "name": "Aeroport",
+    "city": "valencia",
+    "cityDisplay": "Valencia",
+    "country": "Spain",
+    "lat": 39.4905,
+    "lon": -0.4815,
+    "lines": [
+      "MetroValencia Line 3"
+    ],
+    "primaryLineKey": "metrovalencia_3"
+  },
+  {
+    "slug": "alameda-valencia",
+    "name": "Alameda",
+    "city": "valencia",
+    "cityDisplay": "Valencia",
+    "country": "Spain",
+    "lat": 39.476,
+    "lon": -0.363,
+    "lines": [
+      "MetroValencia Line 3",
+      "MetroValencia Line 5"
+    ],
+    "primaryLineKey": "metrovalencia_3"
+  },
+  {
+    "slug": "colon-valencia",
+    "name": "Colón",
+    "city": "valencia",
+    "cityDisplay": "Valencia",
+    "country": "Spain",
+    "lat": 39.47,
+    "lon": -0.369,
+    "lines": [
+      "MetroValencia Line 3",
+      "MetroValencia Line 5"
+    ],
+    "primaryLineKey": "metrovalencia_3"
+  },
+  {
+    "slug": "maritim-serreria-valencia",
+    "name": "Marítim - Serreria",
+    "city": "valencia",
+    "cityDisplay": "Valencia",
+    "country": "Spain",
+    "lat": 39.464,
+    "lon": -0.335,
+    "lines": [
+      "MetroValencia Line 5"
+    ],
+    "primaryLineKey": "metrovalencia_5"
+  },
+  {
+    "slug": "placa-d-espanya-valencia",
+    "name": "Plaça d'Espanya",
+    "city": "valencia",
+    "cityDisplay": "Valencia",
+    "country": "Spain",
+    "lat": 39.4683,
+    "lon": -0.3825,
+    "lines": [
+      "MetroValencia Line 1"
+    ],
+    "primaryLineKey": "metrovalencia_1"
+  },
+  {
+    "slug": "xativa-valencia",
+    "name": "Xàtiva",
+    "city": "valencia",
+    "cityDisplay": "Valencia",
+    "country": "Spain",
+    "lat": 39.4685,
+    "lon": -0.377,
+    "lines": [
+      "MetroValencia Line 3",
+      "MetroValencia Line 5"
+    ],
+    "primaryLineKey": "metrovalencia_3"
+  },
+  {
+    "slug": "angel-guimera-valencia",
+    "name": "Àngel Guimerà",
+    "city": "valencia",
+    "cityDisplay": "Valencia",
+    "country": "Spain",
+    "lat": 39.4715,
+    "lon": -0.3835,
+    "lines": [
+      "MetroValencia Line 1",
+      "MetroValencia Line 3",
+      "MetroValencia Line 5"
+    ],
+    "primaryLineKey": "metrovalencia_1"
+  },
+  {
+    "slug": "bashamichi-yokohama",
+    "name": "Bashamichi",
+    "city": "yokohama",
+    "cityDisplay": "Yokohama",
+    "country": "Japan",
+    "lat": 35.4496,
+    "lon": 139.6367,
+    "lines": [
+      "Minatomirai Line"
+    ],
+    "primaryLineKey": "minatomirai"
+  },
+  {
+    "slug": "kannai-yokohama",
+    "name": "Kannai",
+    "city": "yokohama",
+    "cityDisplay": "Yokohama",
+    "country": "Japan",
+    "lat": 35.4435,
+    "lon": 139.6369,
+    "lines": [
+      "Yokohama Subway Blue Line"
+    ],
+    "primaryLineKey": "blue_line"
+  },
+  {
+    "slug": "minatomirai-yokohama",
+    "name": "Minatomirai",
+    "city": "yokohama",
+    "cityDisplay": "Yokohama",
+    "country": "Japan",
+    "lat": 35.4577,
+    "lon": 139.6326,
+    "lines": [
+      "Minatomirai Line"
+    ],
+    "primaryLineKey": "minatomirai"
+  },
+  {
+    "slug": "motomachi-chukagai-yokohama",
+    "name": "Motomachi-Chukagai",
+    "city": "yokohama",
+    "cityDisplay": "Yokohama",
+    "country": "Japan",
+    "lat": 35.4425,
+    "lon": 139.6503,
+    "lines": [
+      "Minatomirai Line"
+    ],
+    "primaryLineKey": "minatomirai"
+  },
+  {
+    "slug": "musashi-kosugi-yokohama",
+    "name": "Musashi-Kosugi",
+    "city": "yokohama",
+    "cityDisplay": "Yokohama",
+    "country": "Japan",
+    "lat": 35.5769,
+    "lon": 139.6591,
+    "lines": [
+      "Tokyu Toyoko Line"
+    ],
+    "primaryLineKey": "toyoko"
+  },
+  {
+    "slug": "sakuragicho-yokohama",
+    "name": "Sakuragicho",
+    "city": "yokohama",
+    "cityDisplay": "Yokohama",
+    "country": "Japan",
+    "lat": 35.451,
+    "lon": 139.631,
+    "lines": [
+      "Yokohama Subway Blue Line"
+    ],
+    "primaryLineKey": "blue_line"
+  },
+  {
+    "slug": "shibuya-yokohama",
+    "name": "Shibuya",
+    "city": "yokohama",
+    "cityDisplay": "Yokohama",
+    "country": "Japan",
+    "lat": 35.658,
+    "lon": 139.7016,
+    "lines": [
+      "Tokyu Toyoko Line"
+    ],
+    "primaryLineKey": "toyoko"
+  },
+  {
+    "slug": "shin-yokohama-yokohama",
+    "name": "Shin-Yokohama",
+    "city": "yokohama",
+    "cityDisplay": "Yokohama",
+    "country": "Japan",
+    "lat": 35.5065,
+    "lon": 139.6177,
+    "lines": [
+      "Yokohama Subway Blue Line"
+    ],
+    "primaryLineKey": "blue_line"
+  },
+  {
+    "slug": "yokohama-yokohama",
+    "name": "Yokohama",
+    "city": "yokohama",
+    "cityDisplay": "Yokohama",
+    "country": "Japan",
+    "lat": 35.4659,
+    "lon": 139.6226,
+    "lines": [
+      "Yokohama Subway Blue Line",
+      "Tokyu Toyoko Line",
+      "Minatomirai Line"
+    ],
+    "primaryLineKey": "blue_line"
+  }
+]

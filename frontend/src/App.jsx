@@ -19,6 +19,7 @@ const GuidesIndexPage = lazy(() => import("./pages/GuidesIndexPage"));
 const GuidePage = lazy(() => import("./pages/GuidePage"));
 const TravelGuidePage = lazy(() => import("./pages/TravelGuidePage"));
 const TrainTimesPage = lazy(() => import("./pages/TrainTimesPage"));
+const StationLandingPage = lazy(() => import("./pages/StationLandingPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 import "./styles/variables.css";
 import "./styles/base.css";
@@ -109,6 +110,7 @@ function App() {
               <Route path="/guides/:slug" element={<GuidePage />} />
               <Route path="/travel-guide" element={<TravelGuidePage />} />
               <Route path="/train-times" element={<TrainTimesPage />} />
+              <Route path="/hotels-near/:slug" element={<StationLandingPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>
