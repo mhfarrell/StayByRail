@@ -145,6 +145,106 @@ export const transportPasses = [
     ],
     relatedGuides: ["paris"],
   },
+
+  {
+    slug: "eurail",
+    name: "Eurail Global Pass",
+    shortName: "Eurail",
+    country: "Europe",
+    countryCode: "EU",
+    metaTitle: "Is the Eurail Global Pass Worth It in 2026? | StayByRail",
+    metaDescription:
+      "A practical 2026 guide to the Eurail Global Pass for multi-country European rail trips. When it pays off, when single tickets beat it, and how the reservation system actually works.",
+    intro:
+      "The Eurail Global Pass is the classic option for interrailing across Europe, but it has always been a trickier product than the marketing suggests. This guide explains exactly what it covers, how the mandatory-reservation system affects your plans, which itineraries it still pays off for in 2026, and when you should just buy advance tickets instead.",
+    updatedAt: "2026-04",
+    sections: [
+      {
+        heading: "What the Eurail Global Pass is (and isn't)",
+        body: "The Eurail Global Pass gives unlimited train travel across 33 European countries (all EU members except Cyprus, plus the UK, Switzerland, Norway, and several Balkan nations) for a chosen number of days within a wider validity window. The most common products are 'X days within 1 month' (e.g. 7 days within a month, 15 days within two months) and continuous passes (15, 22, one month, two months).\n\nWhat it is not: a unified European rail ticket that lets you walk onto any train. Most high-speed services — TGV in France, Frecciarossa and Italo in Italy, AVE in Spain, ICE in Germany on some routes, Eurostar between London and the continent — require a compulsory seat reservation on top of the pass, at an additional cost of between €5 and €35 per journey. A pass and a last-minute high-speed reservation is often not possible; you may end up stuck with a slow regional alternative.\n\nThis distinction — 'pass + reservation' versus 'one ticket does it all' — is the single most important thing to understand before buying.",
+      },
+      {
+        heading: "2026 prices (adult, second class)",
+        body: "The 7-days-in-1-month Eurail Global Pass is around €380 in second class (€490 first class). The 15-days-in-two-months is around €570. A continuous one-month pass is around €680. Youth (12-27) discounts shave about 20-25 percent off every fare; senior (60+) discounts around 10 percent.\n\nCompare that against point-to-point advance fares. A TGV Inoui from Paris to Barcelona booked a month ahead is around €60. A Frecciarossa from Milan to Rome is around €40. A Deutsche Bahn Sparpreis from Berlin to Munich is around €30. Add them all up for a typical interrailing route — Paris, Barcelona, Rome, Munich, Berlin — and you're looking at €150-200 in advance fares. A 7-day Eurail pass would cost double.\n\nThe pass starts to win when (a) you want unplanned flexibility, (b) you're doing very long or multi-country days, (c) you're travelling in peak season when advance fares are gone, or (d) you're adding lots of regional trains where advance fares don't exist.",
+      },
+      {
+        heading: "The reservation problem in detail",
+        body: "The biggest headache with Eurail is mandatory reservations on high-speed and night services. TGV Inoui trains between France and the rest of Europe have a fixed quota of pass-holder seats that sells out, sometimes weeks in advance during summer. If you show up at Paris Gare de Lyon wanting to catch the next TGV to Lyon, you may find that the pass-holder quota is full and you have to wait for a train three hours later — even though plenty of full-fare seats are available.\n\nThe same applies to many Spanish AVE services, most Italian Frecciarossa departures, Thalys between Brussels and Amsterdam, and ICE Sprinter services in the Netherlands. Booking those reservations in advance via the Rail Planner app or direct with the operator usually works but adds €5 to €35 per journey to the nominal 'free with pass' price.\n\nSlow regional trains, most German IC services, Swiss trains, and essentially the entire UK rail network do not require reservations. If your itinerary avoids high-speed international services, the reservation problem disappears. If it doesn't, plan ahead.",
+      },
+      {
+        heading: "When Eurail still wins",
+        body: "There are three itinerary types where Eurail is still the right call:\n\n1. Multi-country loops with lots of legs. A route that hits Amsterdam, Berlin, Prague, Vienna, Budapest, Ljubljana, Venice, and back to Paris over 15 days is 10+ rail legs, most of which are not covered by cheap advance fares. A 15-day Eurail pass plus a few seat reservations wins against buying each ticket separately.\n\n2. Flexible plans where you don't know the dates. Pass-holders can make decisions the day before. Advance-ticket buyers are locked in a month out. For anyone whose ideal trip includes deciding each morning where to go, the pass buys a flexibility premium that raw cost comparisons miss.\n\n3. Scandinavia and the Balkans. These regions have less-developed advance-fare systems and walk-up train prices can be startlingly expensive. A Eurail pass smooths out the cost across multiple countries and avoids the need to buy local tickets in languages you don't read.",
+      },
+      {
+        heading: "When to skip it",
+        body: "Skip Eurail if your trip is two or three cities in Western Europe connected by high-speed rail and you can book three months ahead. Paris-Barcelona-Rome-Paris on advance TGV, AVE, and Frecciarossa fares will cost around €200 per person and take you exactly where you want to be on your chosen dates.\n\nAlso skip it if your trip is a round trip from one base city. Eurail pays off on linear multi-leg routes; if you're using one city as a hub for day trips, buying regional return tickets as you go is usually cheaper.\n\nAnd skip it for UK-focused trips. Most UK rail fares are significantly cheaper via Trainline or the operator's own site than the Eurail supplement would imply, and the UK has no mandatory reservations on most routes.",
+      },
+      {
+        heading: "How to buy and use it",
+        body: "Eurail passes are sold directly via eurail.com and also through resellers like Klook and RailEurope. Buy from the direct site for the best prices and clearest refund terms. The pass is delivered as a mobile pass in the Eurail Rail Planner app — no physical ticket.\n\nTo use it: open the Rail Planner app, activate the pass (you choose the start date), and add each journey to your 'trip' list in the app. On the train, the conductor scans a QR code from your phone. Reservations, where required, are added separately either via the app or via the specific operator's website.\n\nOne critical detail: you MUST add each journey to the app before boarding, not after. If a conductor finds you on board without the journey added, they can treat it as travelling without a valid ticket. The app works offline once the trip is added, but you need to remember to do it before getting on.",
+      },
+      {
+        heading: "The 2026 verdict",
+        body: "Eurail Global Pass is still the right product for long, multi-country, flexible European trips — especially for people who value the ability to change plans mid-trip. It is no longer a universal 'cheaper than buying tickets' solution for short or planned trips; advance fares have gotten significantly better across Western Europe and the compulsory-reservation system on high-speed services bites.\n\nBefore buying, write out your actual planned route, look up advance fares for every leg on the operator websites, add up the total, and compare that against the pass price plus the reservations you'll need. If the pass wins by €50 or more, or if flexibility is worth that much to you, buy it. If the advance tickets are clearly cheaper, buy them instead — and keep the pass idea in reserve for the next trip where the geometry is kinder.",
+      },
+    ],
+    externalLinks: [
+      { label: "Official Eurail site", url: "https://www.eurail.com/en" },
+      { label: "Seat61 Europe overview", url: "https://www.seat61.com/" },
+      { label: "Rail Europe", url: "https://www.raileurope.com/" },
+    ],
+    relatedGuides: ["paris", "berlin", "barcelona", "madrid", "munich"],
+  },
+
+  {
+    slug: "bts-rabbit-card",
+    name: "Bangkok BTS Rabbit Card",
+    shortName: "Rabbit Card",
+    country: "Thailand",
+    countryCode: "TH",
+    metaTitle: "Bangkok BTS Rabbit Card Guide for Tourists 2026 | StayByRail",
+    metaDescription:
+      "A practical 2026 guide to Bangkok's BTS Rabbit card and the separate MRT card. Which to buy for a short tourist trip, how the stored-value system works, and the cheaper alternatives most travellers overlook.",
+    intro:
+      "Bangkok's rail system is fast, clean, and easy to use — but the ticketing is split across two separate systems that do not share payment cards. This guide explains the BTS Rabbit card, the MRT card, the Airport Rail Link, and which combination actually makes sense for a first-time tourist visit of three to seven days.",
+    updatedAt: "2026-04",
+    sections: [
+      {
+        heading: "The basic Bangkok transit layout",
+        body: "Bangkok has two main rail networks: the BTS Skytrain (elevated, two lines — Sukhumvit light green and Silom dark green) and the MRT (underground, Blue Line loop plus the newer Purple Line heading north-west). They interchange at Asok/Sukhumvit, Sala Daeng/Si Lom, and Mo Chit/Chatuchak Park, but each transfer requires exiting one system and re-entering the other — and paying a fresh fare at each.\n\nThe Airport Rail Link is a separate operator again, connecting Suvarnabhumi Airport to Phaya Thai (on the BTS Sukhumvit line) in about 30 minutes. Like BTS and MRT, it uses its own ticketing.\n\nIn short: three rail systems, three separate ticketing schemes, no universal Oyster-card-style product covering all of them. This is the single biggest gotcha for first-time visitors and it's why understanding the Rabbit card (for BTS) vs the MRT card (for MRT) matters more than you'd expect.",
+      },
+      {
+        heading: "What the BTS Rabbit card actually is",
+        body: "The BTS Rabbit card is a stored-value contactless card used on the BTS Skytrain, plus some partner retailers and a growing number of buses. It's issued by the BTS operator, costs \u0e3f 100 (\u0e3f 50 non-refundable issuing fee + \u0e3f 50 refundable deposit), and must be topped up at ticket counters before use. Standard BTS fares range from \u0e3f 16 to \u0e3f 62 per single journey depending on distance.\n\nTourists often find the Rabbit card confusing because it does NOT work on the MRT underground. The two systems have separate operators with separate payment infrastructure, and for political/commercial reasons Thailand has never unified them despite years of promises to do so. Buying a Rabbit card and then trying to tap into an MRT station is the most common confused-tourist mistake in Bangkok.\n\nThe Rabbit card is worth buying if (a) you're in Bangkok for a week or more, (b) most of your travel is on the BTS Sukhumvit or Silom line, and (c) you want to avoid queuing for single-ride tokens at every journey. For shorter trips or MRT-heavy itineraries, single tokens are usually better.",
+      },
+      {
+        heading: "The MRT card (separate product)",
+        body: "The MRT underground uses its own stored-value card, confusingly called simply the 'MRT Card' or 'MRT Plus'. It works on the MRT Blue Line, Purple Line, and some affiliated buses, but does NOT work on the BTS Skytrain. It costs \u0e3f 180 (\u0e3f 30 non-refundable issuing fee + \u0e3f 50 deposit + \u0e3f 100 initial stored value), and can be refilled at any MRT station ticket machine or counter.\n\nMRT fares are comparable to BTS — around \u0e3f 16 to \u0e3f 42 per journey depending on distance. For an MRT-focused itinerary (Chinatown, Hua Lamphong, the temples accessible via Sanam Chai or Itsaraphap), the MRT card is the right pick. For a BTS-focused itinerary, skip it entirely and stick with Rabbit or tokens.",
+      },
+      {
+        heading: "The single-journey token alternative",
+        body: "Both systems sell single-journey tokens (plastic coin-shaped tokens for BTS, paper tickets for MRT) from vending machines at every station. Prices are identical to the stored-value card fares — there's no discount for using a card on either system. The only real advantage of cards is avoiding the queue at the token machine.\n\nFor a three-day tourist trip using the BTS and MRT maybe three to six times a day, tokens are perfectly fine. You'll spend maybe \u0e3f 150-250 a day on transport either way. The stored-value cards only start to save time (not money) after you've used them enough to make the \u0e3f 50-100 issuing fee worth it.",
+      },
+      {
+        heading: "Day passes and tourist-only products",
+        body: "The BTS sells a One Day Pass for \u0e3f 150, giving unlimited BTS Skytrain rides for one calendar day. This is worth buying if your day involves four or more BTS journeys — roughly any sightseeing day that covers more than two districts. It does not include the MRT, the Airport Rail Link, or any bus service.\n\nThe MRT does not sell a comparable day pass for tourists as of 2026. Single tokens or the stored-value card are your only options.\n\nThere are occasional 'Bangkok Tourist' bundled products sold at the airport and at tourist information desks that claim to cover both systems. Read the fine print: most of these are actually just a BTS Day Pass plus a small amount of MRT stored value, bundled at a significant markup. Rarely the right buy.",
+      },
+      {
+        heading: "Airport Rail Link: the cheap airport option",
+        body: "The Airport Rail Link (ARL) runs from Suvarnabhumi Airport to Phaya Thai station (where it connects to the BTS Sukhumvit line) in about 30 minutes. A single fare is around \u0e3f 45, making it by far the cheapest way to reach central Bangkok from SVB — taxis are \u0e3f 300-500 depending on traffic and time of day.\n\nThe ARL has its own ticket system (paper tickets or single-use tokens from vending machines). It does not accept Rabbit or MRT cards. For tourists arriving at SVB, the simplest flow is: buy a single ARL ticket at the airport machine, take it to Phaya Thai, walk 2 minutes to the BTS station, and buy a BTS token or Rabbit card there to continue. The entire journey from airport gate to a Sukhumvit hotel typically takes 45-55 minutes and costs around \u0e3f 60-90.\n\nDon Mueang airport is not served by the Airport Rail Link. The practical option is the SRT Red Line commuter train (added in recent years, around \u0e3f 30 to Bang Sue and \u0e3f 50 onwards), or a taxi at around \u0e3f 250-400.",
+      },
+      {
+        heading: "The 2026 verdict for short tourist trips",
+        body: "For a typical 3-7 day Bangkok trip, here is the pragmatic answer:\n\n\u2022 Skip buying a Rabbit card unless you're in Bangkok for 7+ days with a BTS-heavy itinerary. Single BTS tokens are fine for shorter trips.\n\n\u2022 Skip the MRT card unless your itinerary specifically centres on MRT-only destinations like Chinatown, Hua Lamphong, or the Wat Mangkon/Sanam Chai temple corridor.\n\n\u2022 Buy a BTS One Day Pass (\u0e3f 150) on days when you plan four or more BTS journeys. Buy single tokens otherwise.\n\n\u2022 For airport transfers, use the ARL from Suvarnabhumi (cheap and fast) or the SRT Red Line from Don Mueang (cheap and fine). Avoid the pre-paid 'airport tourist cards' sold at information desks.\n\nThe sole exception to this advice is if you're arriving with luggage during rush hour and want to avoid any queuing: in that case, buying a Rabbit card at the first BTS station you see and topping it up with \u0e3f 500 smooths the whole trip out for about \u0e3f 100 of convenience overhead. Not a bad deal if your time is worth more than your money.",
+      },
+    ],
+    externalLinks: [
+      { label: "BTS Skytrain official", url: "https://www.bts.co.th/eng/" },
+      { label: "MRT Bangkok", url: "https://www.bemplc.co.th/en" },
+      { label: "Airport Rail Link", url: "https://www.srtet.co.th/en/" },
+    ],
+    relatedGuides: ["bangkok"],
+  },
 ];
 
 export function getPass(slug) {
