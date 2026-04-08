@@ -64,7 +64,7 @@ Priority additions (highest search volume first):
 - [x] Nagoya (Japan — Shinkansen) — published April 2026.
 - [x] Yokohama (Japan) — published April 2026.
 - [x] Hiroshima (Japan — huge tourist demand) — published April 2026.
-- [ ] Chiang Mai (Thailand)
+- [x] Chiang Mai (Thailand) — published April 2026.
 - [ ] Phuket (Thailand)
 
 Template: use an existing guide as a shape, write 4-5 original sections per city. Each guide is ~1500 words.

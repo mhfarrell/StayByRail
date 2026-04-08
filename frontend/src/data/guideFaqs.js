@@ -489,6 +489,29 @@ export const guideFaqs = {
       a: "Three regional specialties. Miso-katsu (pork cutlet in a thick red miso sauce). Tebasaki (sweet-soy chicken wings — Sekai no Yamachan in Sakae is the famous chain). Hitsumabushi (grilled eel served over rice with three different ways to eat it — Atsuta Horaiken near the shrine is the definitive version, with a legendary queue). All three are genuinely different enough from standard Japanese food to make a trip worthwhile.",
     },
   ],
+
+  chiang_mai: [
+    {
+      q: "Should I take the overnight train or fly from Bangkok to Chiang Mai?",
+      a: "Take the overnight sleeper train if you have an open schedule. Train #9 departs Bangkok's Krung Thep Aphiwat station around 18:10 and arrives Chiang Mai around 07:15, saving you a hotel night and dropping you in the city ready to start the day. Second-class air-conditioned berths are around 950-1,050 baht and genuinely comfortable. Flying is faster on paper (70 minutes) but once you add the airport transfers at each end, the overnight train loses almost nothing and costs about the same.",
+    },
+    {
+      q: "Where should I stay in Chiang Mai?",
+      a: "The old city (the walled square ringed by the moat) is the best all-round base for a first visit — walking distance to the main temples, the Sunday Walking Street, and most restaurants. Nimman is the cooler, more modern alternative if you want cafés, bars, and a larger hotel with a pool. The Night Bazaar area east of the moat is the classic tourist nightlife district and has the big international brands with river views.",
+    },
+    {
+      q: "Does Chiang Mai have a metro or public transport?",
+      a: "No metro, no skytrain, no proper urban rail. The city uses red songthaew trucks as shared taxis — flag one down, tell the driver where you're going, agree a fare (usually 30-60 baht depending on distance), and ride in the back. Grab and Bolt also work for app-based rides. Walking is the main mode inside the old city itself, which is only 1.6 km square.",
+    },
+    {
+      q: "When is the burning season in Chiang Mai?",
+      a: "Roughly mid-February to mid-April, when farmers in the surrounding valleys burn crop residues and the mountain air traps the smoke over the city. Air quality can drop to hazardous levels (PM2.5 over 150) for days at a time. If you're sensitive to air pollution or have respiratory issues, avoid this window entirely. November to early February is the ideal weather window.",
+    },
+    {
+      q: "Can I visit elephant sanctuaries from Chiang Mai?",
+      a: "Yes, and this is one of the most popular reasons to visit. Elephant Nature Park is the most ethically respected sanctuary — avoid any operator that offers elephant riding, which is widely considered cruel. Book directly with the sanctuary rather than through your hotel, and pick a full-day option rather than half-day. Transport from Chiang Mai is included in the price.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {

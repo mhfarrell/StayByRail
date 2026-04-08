@@ -24,6 +24,7 @@ export const guidePriceBands = {
     valencia: "EUR",
     seville: "EUR",
     nagoya: "JPY",
+    chiang_mai: "THB",
     london: "GBP",
     birmingham: "GBP",
     manchester: "GBP",
@@ -163,6 +164,12 @@ export const guidePriceBands = {
       { area: "Sakae / downtown", budget: "¥ 7,000", mid: "¥ 12,000", premium: "¥ 24,000" },
       { area: "Kanayama", budget: "¥ 6,500", mid: "¥ 11,000", premium: "¥ 20,000" },
       { area: "Fushimi", budget: "¥ 7,000", mid: "¥ 11,500", premium: "¥ 22,000" },
+    ],
+    chiang_mai: [
+      { area: "Old City", budget: "฿ 900", mid: "฿ 1,800", premium: "฿ 4,200" },
+      { area: "Nimman", budget: "฿ 1,200", mid: "฿ 2,400", premium: "฿ 5,500" },
+      { area: "Night Bazaar / riverside", budget: "฿ 1,100", mid: "฿ 2,300", premium: "฿ 6,500+" },
+      { area: "Chiang Mai Station", budget: "฿ 700", mid: "฿ 1,300", premium: "฿ 2,800" },
     ],
   },
 };

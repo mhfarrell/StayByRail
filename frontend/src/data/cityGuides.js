@@ -1088,6 +1088,59 @@ export const cityGuides = [
     updatedAt: "2026-04",
     author: "Matt Farrell",
   },
+  {
+    slug: "chiang_mai",
+    city: "Chiang Mai",
+    country: "Thailand",
+    heroLine: "Northern Thailand's cultural capital, walkable within the moat and reached from Bangkok on an overnight sleeper train that's a destination in itself",
+    metaTitle: "Hotels Near Chiang Mai Key Areas — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels in Chiang Mai's Old City, Nimman, and Night Bazaar districts. How to reach the city from Bangkok by overnight train, and why no metro is a feature, not a bug.",
+    intro:
+      "Chiang Mai is Thailand's second city in cultural terms and a very different trip from Bangkok. The old walled city — a 1.6 kilometre square ringed by a moat and fragments of a 13th-century wall — is walkable end-to-end in twenty minutes and contains most of the important temples. There is no metro, no skytrain, and no rail network within the city itself. What Chiang Mai does have is one of Southeast Asia's great overnight sleeper trains from Bangkok, a cluster of distinctly different neighbourhoods that each work as a hotel base, and the best launchpad in Thailand for jungle treks, hill-tribe villages, and Doi Suthep's temple on the mountain above the city.",
+    sections: [
+      {
+        heading: "How to Reach Chiang Mai by Rail",
+        body: "The State Railway of Thailand runs overnight sleeper trains from Bangkok's Krung Thep Aphiwat (Bang Sue Central) station to Chiang Mai most evenings. The fastest is train #9, the express sleeper departing Bangkok around 18:10 and arriving Chiang Mai around 07:15 the next morning. Second-class air-conditioned berths are around 950-1,050 baht one-way and are genuinely comfortable — each berth curtains off, has a reading light and a small fan, and turns into a proper bed around 20:00. First-class private cabins for two are 1,500-2,000 baht per person. This is the train to take, and the single best way to arrive in northern Thailand.\n\nFlying from Bangkok takes 70 minutes and costs roughly the same on budget carriers (AirAsia, Thai Lion Air, Nok Air). But you'll lose 4 hours to the airport journey at each end and arrive tired. The overnight train saves you one hotel night and deposits you in the centre of Chiang Mai ready to start the day. For anyone with an open schedule, it's the right choice.\n\nChiang Mai Railway Station sits about 2.5 km east of the old city — a 10-minute songthaew ride or about 50 baht. Hotels directly around the station are mostly cheaper guesthouses; most travellers move into the old city for their actual base.",
+      },
+      {
+        heading: "The Old City: The Tourist Core",
+        body: "Chiang Mai's old city is the square formed by the 13th-century moat and wall, entered through surviving gates at Tha Phae in the east, Chang Phuak in the north, Suan Dok in the west, and Chiang Mai Gate in the south. Inside this square are more than 30 temples, including the three that matter most for visitors: Wat Phra Singh (the royal temple with the famous reclining Buddha), Wat Chedi Luang (the massive ruined chedi in the centre of the old town), and Wat Chiang Man (the oldest temple in Chiang Mai, founded in 1297).\n\nHotels in the old city cluster in three pockets: around Wat Phra Singh on the west side, around Tha Phae Gate on the east side (for access to the Sunday Walking Street market), and along Ratchadamnoen Road running through the middle. Most are small boutique properties in restored or rebuilt shophouses; prices are very reasonable by European standards (a decent boutique room for under €50 is easy to find, and genuine luxury properties sit around €120-200). The main trade-off is that the old city is walkable but has no rapid-transit option — if you want to reach Nimman or the Night Bazaar at the other end of town, you'll be taking a songthaew or a tuk-tuk.",
+      },
+      {
+        heading: "Nimman: Modern and Cooler",
+        body: "Nimmanhaemin Road ('Nimman' to everyone) is the modern, westernised part of Chiang Mai, stretching west from the old city moat up towards the foothills of Doi Suthep. It's Chiang Mai's Shibuya or Brooklyn — third-wave coffee shops, craft beer bars, Japanese restaurants, design boutiques, co-working spaces, and a younger local and expat crowd.\n\nHotels in Nimman run slightly more expensive than the old city and are typically larger, modern buildings with swimming pools — Art Mai Gallery, Le Meridien Chiang Mai (technically between the two areas), U Nimman, and smaller boutique properties on the small lanes (soi) off the main road. For a trip that's more about cafés, cocktail bars, and digital-nomad comfort than temple-hopping, Nimman is the right base. For a short trip focused on the classic Chiang Mai sights, the old city is more convenient.\n\nThe walking distance from Nimman to the Tha Phae Gate side of the old city is about 25-30 minutes, which is fine in cool weather but punishing at midday in April. Songthaew fares between the two are around 40 baht.",
+      },
+      {
+        heading: "The Night Bazaar and East of the Moat",
+        body: "Immediately east of the old city, across the Ping River, is the Night Bazaar district — Chiang Mai's original tourist nightlife quarter, centred on Chang Klan Road. The bazaar itself runs every evening and is a mix of markets, food courts, street bar clusters, and massage parlours. It's a rougher experience than Nimman and more 'traditional tourist Chiang Mai' than the old city.\n\nHotels here range from big international brands (Anantara, Shangri-La, Le Meridien, Dusit Princess) to mid-range chain properties and smaller guesthouses. Prices at the upper end are noticeably higher than Nimman or the old city, but you get Ping River views and a quieter interior atmosphere behind the busy Chang Klan frontage. For a short trip or a romantic stay with a river view, it's a strong pick. For a walking-first sightseeing trip, the old city is better.",
+      },
+      {
+        heading: "Day Trips and Practical Tips",
+        body: "**Doi Suthep and Wat Phra That** is the essential half-day trip: a 15 km drive up the mountain above Chiang Mai to one of Thailand's most important temples, with views over the entire city from the terrace. Songthaews from the Chang Phuak Gate area are around 50 baht one-way; private tours and Grab taxi are more but faster.\n\n**Elephant sanctuaries** in the mountains west of Chiang Mai (Elephant Nature Park is the most ethically respected; avoid any operator that offers riding) are the most famous day trip and are genuinely worth the cost. Book directly with the sanctuary rather than through hotels, and pick a full-day rather than half-day option. Transport is included.\n\n**Pai**, 3 hours north by minivan through 762 hairpin bends, is a backpacker favourite in the mountains. Spectacular scenery but the road is rough — Dramamine and an empty stomach strongly recommended.\n\n**Chiang Rai and the White Temple** is 3-4 hours north by bus or private driver. Best as an overnight rather than a day trip, but doable in a day for the determined.\n\nChiang Mai's weather has three distinct seasons. **November to February** is cool, dry, and the best time to visit. **March to May** is hot and features the annual 'burning season' of agricultural fires in the surrounding valleys, which can reduce air quality significantly — check PM2.5 forecasts before booking. **June to October** is the green rainy season, with afternoon thunderstorms but lush landscapes and low prices.",
+      },
+    ],
+    keyStations: [
+      { name: "Chiang Mai Station", reason: "Overnight sleeper train terminus from Bangkok, 2.5 km east of the old city" },
+      { name: "Old City (Chedi Luang)", reason: "StayByRail pick — heart of the historic walled city, walking access to Wat Phra Singh, Wat Chedi Luang, and the Sunday Walking Street" },
+      { name: "Tha Phae Gate", reason: "Eastern gate of the old city, entry point for the Sunday and Saturday Walking Street markets" },
+      { name: "Nimmanhaemin (Nimman)", reason: "Modern district of cafés, bars, and boutique hotels between the old city and Doi Suthep foothills" },
+      { name: "Night Bazaar", reason: "Tourist nightlife district east of the moat, big international hotels along the Ping River" },
+    ],
+    searchCity: "Chiang Mai",
+    links: [
+      { label: "State Railway of Thailand", url: "https://www.dticket.railway.co.th/", desc: "Book overnight sleeper trains from Bangkok" },
+      { label: "12Go Asia", url: "https://12go.asia/", desc: "Bus, train, and ferry bookings across Thailand" },
+      { label: "Tourism Authority of Thailand", url: "https://www.tourismthailand.org/", desc: "Official Thailand tourism info" },
+      { label: "Elephant Nature Park", url: "https://www.elephantnaturepark.org/", desc: "Ethical elephant sanctuary bookings" },
+    ],
+    wikipedia: "Chiang Mai",
+    lat: 18.7883,
+    lon: 98.9853,
+    countryCode: "TH",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
 ];
 
 export function getGuide(slug) {
