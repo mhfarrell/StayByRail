@@ -215,8 +215,8 @@ None of this is automatable. You need to do these — they need a real human voi
 
 Before re-applying to CJ, verify:
 
-- [ ] Site has **50+ indexable pages** (currently ~25, programmatic station pages close this instantly)
-- [ ] At least **5 journal articles** published with real dates showing consistent output
+- [x] Site has **50+ indexable pages** — sitemap currently contains 654 URLs (597 programmatic `/hotels-near/` station pages + 23 city guides + 8 journal articles + 5 itineraries + 5 transport passes + core pages).
+- [x] At least **5 journal articles** published with real dates showing consistent output — 8 articles now live at `/journal` (target exceeded).
 - [ ] **Google Analytics / Plausible** shows non-zero organic traffic for the past 4 weeks
 - [ ] **Lighthouse 90+** across the board on the top 3 pages
 - [ ] **Search Console** shows pages being indexed and some impressions
