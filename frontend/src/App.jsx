@@ -24,6 +24,8 @@ const AuthorPage = lazy(() => import("./pages/AuthorPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const PassesIndexPage = lazy(() => import("./pages/PassesIndexPage"));
 const PassPage = lazy(() => import("./pages/PassPage"));
+const JournalIndexPage = lazy(() => import("./pages/JournalIndexPage"));
+const JournalArticlePage = lazy(() => import("./pages/JournalArticlePage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 import "./styles/variables.css";
 import "./styles/base.css";
@@ -119,6 +121,8 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/passes" element={<PassesIndexPage />} />
               <Route path="/passes/:slug" element={<PassPage />} />
+              <Route path="/journal" element={<JournalIndexPage />} />
+              <Route path="/journal/:slug" element={<JournalArticlePage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>
