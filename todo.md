@@ -193,7 +193,7 @@ None of this is automatable. You need to do these — they need a real human voi
 ## P4 — Credibility & brand polish
 
 - [ ] **Real photography** — replace Wikipedia thumbnails in featured cards with curated Unsplash / Pexels shots (free, higher quality, consistent aspect ratio)
-- [ ] **Favicon upgrade** — current is the logo SVG; a proper multi-size favicon set (ico + png 16/32/192/512) looks more professional
+- [x] **Favicon upgrade** — multi-size set rendered from the existing `favicon.svg` using `resvg_py`: 16, 32, 48, 180, 192, 512 PNGs plus a multi-resolution `favicon.ico` (16/32/48). `index.html` now links the `.ico` (old browsers / Google SERPs), the `.svg` (modern browsers), 16/32 PNGs, and a 180px `apple-touch-icon` for iOS. Added `public/site.webmanifest` with 192/512 entries for Android home-screen installs and theme-colour matching the site background.
 - [x] **Contact page** with a real form (or at minimum a mailto:) — `/contact` live with ContactPage JSON-LD, mailto CTA, and clear sections on what enquiries are welcome vs which belong elsewhere.
 - [ ] **Privacy page audit** — make sure it accurately reflects the ad network + any cookies (CJ reviewers read this)
 - [ ] **Terms page audit** — same

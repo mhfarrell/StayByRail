@@ -32,9 +32,16 @@
     <!-- AI Search Optimization (LLMs, Perplexity, ChatGPT, etc.) -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
 
-    <!-- Favicon -->
+    <!-- Favicon — multi-size set. Modern browsers prefer the SVG; older
+         browsers and Google Search results fall back to favicon.ico, and
+         iOS uses the 180px apple-touch-icon. 192/512 are referenced from
+         site.webmanifest for Android home-screen installs. -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Leaflet CSS is bundled with the HotelMap lazy chunk (see HotelMap.jsx) so it only
          loads when the user actually reaches a page with a map. -->
