@@ -101,6 +101,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/journal/kyoto-without-a-car-temples-by-bus-subway</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/itineraries</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

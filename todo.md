@@ -33,7 +33,7 @@ Seed articles:
 - [x] "Bangkok BTS vs MRT: which line should you actually stay on" — published at `/journal/bangkok-bts-vs-mrt-where-to-stay`.
 - [x] "Hammersmith: the London hotel base nobody talks about" — published at `/journal/hammersmith-london-hotel-base-nobody-talks-about`.
 - [x] "How to use Navigo Découverte as a tourist in Paris" — **shipped as `/passes/navigo`** instead of a journal article.
-- [ ] "Kyoto without a car: every temple you can reach by bus + subway" — deep utility content
+- [x] "Kyoto without a car: every temple you can reach by bus + subway" — published at `/journal/kyoto-without-a-car-temples-by-bus-subway`.
 - [x] "Eurostar vs budget flight London→Paris: the honest breakdown" — published at `/journal/eurostar-vs-budget-flight-london-paris`.
 
 Cadence: **one new article every 10-14 days** between now and re-applying. Even 4-5 published articles + the scaffold = a noticeably active site.
