@@ -21,6 +21,7 @@ export const guidePriceBands = {
     hiroshima: "JPY",
     yokohama: "JPY",
     marseille: "EUR",
+    valencia: "EUR",
     london: "GBP",
     birmingham: "GBP",
     manchester: "GBP",
@@ -142,6 +143,12 @@ export const guidePriceBands = {
       { area: "Gare Saint-Charles", budget: "€ 70", mid: "€ 115", premium: "€ 180" },
       { area: "Castellane / Prado", budget: "€ 85", mid: "€ 140", premium: "€ 230" },
       { area: "Le Panier", budget: "€ 90", mid: "€ 150", premium: "€ 240" },
+    ],
+    valencia: [
+      { area: "Ciutat Vella (old town)", budget: "€ 70", mid: "€ 115", premium: "€ 200" },
+      { area: "Joaquín Sorolla / Ruzafa", budget: "€ 60", mid: "€ 100", premium: "€ 170" },
+      { area: "Barrio del Carmen", budget: "€ 75", mid: "€ 120", premium: "€ 210" },
+      { area: "Malvarrosa beach", budget: "€ 65", mid: "€ 110", premium: "€ 190" },
     ],
   },
 };

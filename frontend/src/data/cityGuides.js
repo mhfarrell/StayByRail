@@ -929,6 +929,59 @@ export const cityGuides = [
     updatedAt: "2026-04",
     author: "Matt Farrell",
   },
+  {
+    slug: "valencia",
+    city: "Valencia",
+    country: "Spain",
+    heroLine: "Spain's third-largest city with a compact metro, two-hour AVE link to Madrid, and the Turia riverbed park connecting it all",
+    metaTitle: "Hotels Near Valencia Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Valencia Nord, Joaquín Sorolla, and the MetroValencia network. Which neighbourhoods suit different travellers, and how the AVE from Madrid changed the city.",
+    intro:
+      "Valencia is Spain's third-largest city and arguably the most undervalued weekend destination in western Europe. The AVE from Madrid takes under two hours, hotel prices run 30-40 percent below Barcelona for comparable quality, the old town is genuinely walkable, and the city has its own airport, Mediterranean beach, and futuristic City of Arts and Sciences all within a short metro ride. The rail network is compact — five MetroValencia lines plus a handful of trams — but covers everything tourists want to reach.",
+    sections: [
+      {
+        heading: "The Two Main Stations: Nord and Joaquín Sorolla",
+        body: "Valencia has two main railway stations, separated by about 500 metres and with entirely different characters. Estació del Nord is the 1917 Art Nouveau terminus in the centre of the city, handling regional Cercanías commuter trains and some long-distance services. It's inside the city grid, directly opposite the bullring, and a five-minute walk from the Mercado Central and the old town. Hotels around Nord put you in the heart of the historic centre with walking access to almost everything a first-time visitor wants to see.\n\nValencia Joaquín Sorolla is the modern AVE high-speed terminus, opened in 2010 about 800 metres south of Nord. Almost all AVE services from Madrid, Barcelona, and Seville arrive here, and a free shuttle bus connects the two stations roughly every ten minutes. Sorolla sits in a newer neighbourhood with less character than Nord but more modern chain hotels at slightly lower prices. For a rail-heavy trip arriving by AVE, a Sorolla-area hotel is the more efficient choice; for sightseeing, walk the extra 10 minutes to stay near Nord instead.",
+      },
+      {
+        heading: "The Old Town and Ciutat Vella",
+        body: "Valencia's old town, Ciutat Vella, is one of the largest preserved historic centres in Spain. It stretches from the cathedral and the Mercado Central in the south to the Torres de Serranos in the north, and is bordered on its northern edge by the Turia — the former riverbed, now converted into a 9-kilometre linear park and the single best urban feature in the city.\n\nHotels in Ciutat Vella concentrate around three areas: the Plaza del Ayuntamiento (the main civic square, closest to Nord station), the Plaza de la Virgen (the cathedral square, quieter and more atmospheric), and the Barrio del Carmen (the old Moorish quarter, nightlife and narrow-street character, noisier at weekends). All three put you within a 15-minute walk of every major sight in the city centre, and none are more than two MetroValencia stops from the beach, the Oceanogràfic, or the AVE station.",
+      },
+      {
+        heading: "The MetroValencia Network",
+        body: "MetroValencia operates five metro lines plus four tram lines, running from the airport in the west to the beaches at El Cabañal in the east and out to the port and suburbs. The most useful lines for visitors are Line 3 (airport to Rafelbunyol, passing through the old town via Xàtiva and Alameda), Line 5 (Marítim-Serrería to Aeroport, connecting the beaches with the old town in under 25 minutes), and Line 1 (the long cross-city line that handles Nord station access via Plaça d'Espanya and Àngel Guimerà).\n\nThe airport connection matters: Valencia Airport is served directly by Metro Line 3 and Line 5 from the city centre in about 25 minutes for around €4.90 one-way. No shuttle bus, no taxi required. This is one of the best airport-to-city metro links in Spain and a strong argument for staying near an old-town metro stop.",
+      },
+      {
+        heading: "The City of Arts and Sciences and the Beach",
+        body: "Santiago Calatrava's Ciutat de les Arts i les Ciències is the postcard image of modern Valencia — a futuristic white complex of museum, opera house, IMAX cinema, and aquarium strung along the south-east of the old Turia riverbed. It's about 3 km south-east of the old town and is best reached by walking or cycling the Turia park itself. If you're not in a hurry, the 30-minute walk through the riverbed is one of the best free attractions in the city. Faster alternatives: bus 35 from the centre, or a 10-minute taxi.\n\nFurther east, the beaches at Playa de la Malvarrosa and El Cabañal are just 20 minutes from the old town by tram (Line 6 from Marítim-Serrería, which interchanges with Metro Line 5). This means you can comfortably stay in the old town and still reach the Mediterranean within half an hour, without a car. Hotels along the beachfront are cheaper than central old-town options but lose the walking access to the historic centre — a reasonable trade for a pure beach trip.",
+      },
+      {
+        heading: "Practical Tips for Valencia",
+        body: "The AVE from Madrid takes 1h 55 to Joaquín Sorolla, running roughly every hour. Advance tickets can drop to €20-30 one-way on Avlo (Renfe's low-cost high-speed brand) if booked a month ahead. Barcelona is 2h 30 to 3h by Euromed or AVE services. Seville is 4 hours via a change in Madrid. For a one-week Spain trip, Valencia pairs naturally with Madrid as a fly-in / train-back combination.\n\nValencia's food specialty is paella, and the city takes it seriously — paella originated in the rice fields just south of the city at L'Albufera and is considered a proper Sunday-lunch dish rather than something to eat on the beach. Visit the restaurants around El Palmar (the lake village in L'Albufera, reachable by bus) for the traditional version. Avoid anywhere in the Barrio del Carmen offering 'paella for two' at lunch — that's tourist-trap territory.\n\nLas Fallas (mid-March) is Valencia's signature festival and sees hotel prices quadruple for two weeks. If you're not specifically coming for Las Fallas, book around it. Summer is hot and busy; spring and autumn are perfect.",
+      },
+    ],
+    keyStations: [
+      { name: "València Nord", reason: "Historic central terminus, regional rail, one-minute walk to Plaza del Ayuntamiento and Mercado Central" },
+      { name: "Joaquín Sorolla", reason: "AVE high-speed terminus, modern chain hotels, free shuttle to Nord" },
+      { name: "Xàtiva", reason: "StayByRail pick — Metro lines 3/5 interchange directly opposite the Nord station, best all-round base for old-town hotels with airport-direct metro access" },
+      { name: "Colón", reason: "Central shopping district, Metro lines 3/5, upscale boutiques and mid-range hotels" },
+      { name: "Marítim - Serrería", reason: "Metro 5 + tram 6 interchange for the beaches at Malvarrosa and El Cabañal" },
+    ],
+    searchCity: "Valencia",
+    links: [
+      { label: "MetroValencia", url: "https://www.metrovalencia.es/en/", desc: "Official metro and tram planner" },
+      { label: "Renfe", url: "https://www.renfe.com/es/en", desc: "AVE high-speed and Cercanías bookings" },
+      { label: "Visit Valencia", url: "https://www.visitvalencia.com/en", desc: "Official Valencia tourism site" },
+      { label: "Ciutat Arts Sciences", url: "https://www.cac.es/en/home.html", desc: "City of Arts and Sciences tickets and info" },
+    ],
+    wikipedia: "Valencia",
+    lat: 39.4699,
+    lon: -0.3763,
+    countryCode: "ES",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
 ];
 
 export function getGuide(slug) {

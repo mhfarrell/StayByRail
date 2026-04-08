@@ -420,6 +420,29 @@ export const guideFaqs = {
       a: "Aix-en-Provence is 45 minutes by TER, Avignon is 35 minutes by TGV, Arles is 50 minutes, and Cassis is 25 minutes. Nice is 2h 30 by TGV — long but doable as a same-day return. A four-day Marseille trip with day trips to Cassis, Aix, and Arles is one of the strongest rail-based holidays you can do in the south of France.",
     },
   ],
+
+  valencia: [
+    {
+      q: "Should I stay near Nord or Joaquín Sorolla?",
+      a: "Nord for leisure trips — you're walking distance from the cathedral, the Mercado Central, and the whole of Ciutat Vella. Joaquín Sorolla for rail-heavy trips with an early AVE departure or a tight turnaround; the modern chain hotels there are slightly cheaper, and the free shuttle bus to Nord runs every ten minutes if you need to reach the old town in a hurry.",
+    },
+    {
+      q: "How fast is the AVE from Madrid to Valencia?",
+      a: "1h 55 on the fastest services, running roughly every hour. Advance tickets on Avlo (Renfe's budget high-speed brand) can drop to €20-30 one-way if booked a month or more ahead. That makes Valencia one of the best-value weekend destinations in Spain from Madrid.",
+    },
+    {
+      q: "Can I reach Valencia Airport by metro?",
+      a: "Yes. Metro Line 3 and Line 5 both run directly to the airport from the city centre in about 25 minutes for around €4.90 one-way. No shuttle bus needed, no taxi. Valencia has one of the best airport-to-city metro links in Spain.",
+    },
+    {
+      q: "How do I reach the beach from the old town?",
+      a: "Metro Line 5 to Marítim-Serrería, then change to Tram Line 6 to Malvarrosa — total journey about 20 minutes. Alternatively, rent a bike and cycle through the Turia riverbed park and along the seafront. It's flat, easy, and one of the best free attractions in the city.",
+    },
+    {
+      q: "When should I avoid booking Valencia?",
+      a: "Las Fallas, the mid-March festival, sees hotel prices roughly quadruple for the two-week run-up. If you're not specifically coming for Las Fallas, book around it — either early March or from the first week of April onwards. Summer is hot and crowded; spring and autumn are the sweet spot.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {
