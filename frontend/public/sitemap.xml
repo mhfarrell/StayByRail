@@ -126,6 +126,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/itineraries/kansai-5-days-kyoto-osaka-nara-himeji</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/passes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

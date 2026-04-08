@@ -114,7 +114,7 @@ These are strategic expansions that need backend station data added to `backend/
 
 - [x] "3 days in Tokyo using only the Yamanote Line" — published at `/itineraries/3-days-tokyo-yamanote-line`.
 - [x] "A weekend in Paris from Gare du Nord" — published at `/itineraries/paris-weekend-from-gare-du-nord`.
-- [ ] "Kansai in 5 days: Kyoto, Osaka, Nara, Himeji"
+- [x] "Kansai in 5 days: Kyoto, Osaka, Nara, Himeji" — published at `/itineraries/kansai-5-days-kyoto-osaka-nara-himeji`.
 - [x] "London in 48 hours from King's Cross" — published at `/itineraries/london-48-hours-from-kings-cross`.
 - [ ] "Backpacking Thailand by train: Bangkok to Chiang Mai"
 

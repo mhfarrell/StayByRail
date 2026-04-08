@@ -355,6 +355,218 @@ export const itineraries = [
     tips:
       "Use contactless debit, credit card, or Apple/Google Pay rather than buying a physical Oyster card for a two-day visit — the fares are identical and the daily cap applies automatically. See our /passes/oyster-card guide for the full rationale. The Tate Modern and Tate Britain both run a free shuttle boat between them every 40 minutes; it's a scenic alternative to the Tube. Avoid taxis in central London during rush hour — the Tube is almost always faster. King's Cross is on the Circle, Hammersmith & City, Metropolitan, Northern, Piccadilly, and Victoria lines, plus national rail and Eurostar, so any itinerary that ends back at King's Cross gives you unmatched onward flexibility.",
   },
+
+  {
+    slug: "kansai-5-days-kyoto-osaka-nara-himeji",
+    title: "Kansai in 5 days: Kyoto, Osaka, Nara, Himeji",
+    subtitle:
+      "One hotel base, five days, four cities. The most efficient way to see the heart of western Japan without wasting time on hotel changeovers.",
+    excerpt:
+      "Kansai — the region around Kyoto, Osaka, and Nara — is compact enough that you can stay in one hotel and do every day as a rail day trip. Here's the five-day plan that makes it work.",
+    duration: "5 days",
+    city: "Kyoto",
+    country: "Japan",
+    baseArea: "Near Kyoto Station or Shijo / Karasuma-Oike",
+    relatedCityGuide: "kyoto",
+    relatedPasses: ["jr-pass"],
+    updatedAt: "2026-04",
+    intro:
+      "Kansai is the historical heart of Japan. Within a 50-kilometre radius sit Kyoto (the old imperial capital with 1,600 temples), Osaka (Japan's food capital and second city), Nara (the older-than-Kyoto city with the famous deer park), and Himeji (home to Japan's most beautiful surviving castle). All four are connected by Japan's densest cluster of JR and private railway lines, which means you can base yourself in one hotel for all five nights and do each destination as a day trip without any of the usual 'packing up and moving' friction that plagues Japan itineraries.\n\nWe recommend basing in Kyoto — specifically near Kyoto Station or the Shijo/Karasuma-Oike area in central Kyoto — because Kyoto itself needs the most local time and Osaka is a 15-minute Shinkansen or 45-minute local from Kyoto Station. Osaka works as an alternative base if you want cheaper hotels and a more urban base, but you'll lose about 45 minutes of each day to the Kyoto commute on the days that matter most.",
+    days: [
+      {
+        day: 1,
+        title: "Eastern Kyoto: the Higashiyama temple corridor",
+        summary:
+          "Start with the most famous sights in Kyoto on foot. Kiyomizu-dera first thing, work your way north through the Higashiyama foothills, finish at Ginkaku-ji and the Philosopher's Path.",
+        stops: [
+          {
+            time: "08:00",
+            station: "Kyoto Station",
+            activity:
+              "Take bus 206 from Kyoto Station bus terminal to Gojo-zaka. Arrive at Kiyomizu-dera by 08:30 to beat the tour groups — the wooden stage over the valley and the Otowa Waterfall are both best in the soft morning light.",
+          },
+          {
+            time: "10:30",
+            station: "Kiyomizu-dera",
+            activity:
+              "Walk down Sannen-zaka and Ninen-zaka — two of the best-preserved Edo-period streets in Japan — through to Kodai-ji temple and its bamboo grove. Stop for green tea and wagashi at one of the teahouses.",
+          },
+          {
+            time: "13:00",
+            station: "Gion",
+            activity:
+              "Lunch in Gion. The narrow Hanami-koji Lane is the most photographed street in Japan for a reason; duck into one of the small tempura or obanzai restaurants for the least touristy food in the area.",
+          },
+          {
+            time: "15:00",
+            station: "Chion-in",
+            activity:
+              "Walk north to Chion-in (Japan's largest wooden temple gate), then Nanzen-ji (Zen garden and the Meiji-era red-brick aqueduct), and onto the Philosopher's Path — a 2 km canal-side walk lined with cherry trees.",
+          },
+          {
+            time: "17:00",
+            station: "Ginkaku-ji",
+            activity:
+              "End at Ginkaku-ji (the Silver Pavilion) just before closing. Bus 5 or 17 back to Kyoto Station takes about 35 minutes; it's slow but you've earned the rest.",
+          },
+        ],
+      },
+      {
+        day: 2,
+        title: "Arashiyama and the western temples",
+        summary:
+          "Bamboo grove and temples in the morning, Randen tram west, Kinkaku-ji and Ryoan-ji in the afternoon. One of the longer walking days — wear real shoes.",
+        stops: [
+          {
+            time: "08:30",
+            station: "Saga-Arashiyama",
+            activity:
+              "JR Sagano Line from Kyoto Station (15 minutes, free with JR Pass). Start at Tenryu-ji before the crowds — the garden is one of the best examples of Zen landscape design in Japan.",
+          },
+          {
+            time: "10:00",
+            station: "Saga-Arashiyama",
+            activity:
+              "Walk through the Arashiyama Bamboo Grove and up to Okochi Sanso Villa (the preserved home of a silent-film star with a famous hillside garden). Continue north to Jojakko-ji and Nison-in for the quieter temples most tour groups skip.",
+          },
+          {
+            time: "12:30",
+            station: "Saga-Arashiyama",
+            activity:
+              "Lunch along the Katsura River near Togetsukyo Bridge. The soba and tofu restaurants on the north bank are the better pick than the obvious tourist spots on the main drag.",
+          },
+          {
+            time: "14:00",
+            station: "Kitano-Hakubaicho",
+            activity:
+              "Take the Keifuku Randen tram east from Arashiyama to Kitano-Hakubaicho (30 minutes, scenic). Walk 15 minutes north to Kinkaku-ji — the Golden Pavilion — for the classic photograph.",
+          },
+          {
+            time: "16:00",
+            station: "Kinkaku-ji-michi",
+            activity:
+              "Bus 59 or a 20-minute walk to Ryoan-ji (the rock garden) and Ninna-ji (an imperial temple with a five-storey pagoda). Bus 50 back to Kyoto Station.",
+          },
+        ],
+      },
+      {
+        day: 3,
+        title: "Nara day trip and Fushimi Inari sunset",
+        summary:
+          "Half-day in Nara for the deer park and Todai-ji's Great Buddha, then back to Kyoto for Fushimi Inari at sunset.",
+        stops: [
+          {
+            time: "09:00",
+            station: "Nara",
+            activity:
+              "Kintetsu limited express from Kyoto to Kintetsu Nara (35 minutes, ¥760) — not covered by JR Pass but faster than the JR option. Kintetsu Nara drops you 5 minutes' walk from the deer park entrance.",
+          },
+          {
+            time: "10:00",
+            station: "Kintetsu Nara",
+            activity:
+              "Walk through Nara Park feeding the (polite but persistent) sika deer. Kofuku-ji's five-storey pagoda is the first major stop; continue east to Todai-ji.",
+          },
+          {
+            time: "11:30",
+            station: "Kintetsu Nara",
+            activity:
+              "Todai-ji temple — the Great Buddha Hall is one of the largest wooden buildings in the world and contains a 15-metre bronze Buddha that genuinely has to be seen in person to believe. The 'nostril pillar' behind the Buddha is a rite of passage for confident-sized visitors.",
+          },
+          {
+            time: "13:30",
+            station: "Kintetsu Nara",
+            activity:
+              "Lunch near Higashimuki Shotengai (the covered shopping arcade south-west of the station). Try kakinoha-zushi (persimmon-leaf-wrapped sushi), the local specialty.",
+          },
+          {
+            time: "16:00",
+            station: "Inari",
+            activity:
+              "Back to Kyoto on the Kintetsu, then JR Nara Line two stops to Inari station (5 minutes, ¥150). Fushimi Inari is directly opposite the station. Walk up the red torii gate tunnel to the Yotsutsuji viewpoint for sunset — about 45 minutes each way, and the light at the top of the path around 18:00 in most seasons is extraordinary.",
+          },
+        ],
+      },
+      {
+        day: 4,
+        title: "Osaka: street food, castle, and evening neon",
+        summary:
+          "A full day in Japan's food capital. Osaka Castle in the morning, Dotonbori for the afternoon, Shinsekai in the evening.",
+        stops: [
+          {
+            time: "09:00",
+            station: "Shin-Osaka",
+            activity:
+              "Shinkansen from Kyoto to Shin-Osaka (15 minutes, ¥1,420 or free with JR Pass), then Midosuji Line one stop to Umeda.",
+          },
+          {
+            time: "10:00",
+            station: "Tanimachi 4-chome",
+            activity:
+              "Osaka Castle — the current structure is a 1931 concrete reconstruction but the grounds, moat, and surrounding Nishinomaru Garden are beautiful and free. The castle museum inside is worth the ¥600 entry.",
+          },
+          {
+            time: "13:00",
+            station: "Namba",
+            activity:
+              "Lunch in Dotonbori. Eat standing up: takoyaki at Takoyaki Wanaka, kushikatsu at any of the places near the Glico Running Man sign, okonomiyaki at Mizuno. This is the point of Osaka.",
+          },
+          {
+            time: "15:00",
+            station: "Namba",
+            activity:
+              "Walk through Shinsaibashi-suji, Japan's longest covered shopping arcade, and onto Amerika-mura for the used-clothing and vintage shops. The Den-Den Town electronics district is a short walk further south if you want Osaka's version of Akihabara.",
+          },
+          {
+            time: "18:00",
+            station: "Dobutsuen-mae",
+            activity:
+              "Shinsekai — the retro neon district built in 1912 and preserved since. The Tsutenkaku Tower in the centre is Osaka's answer to the Eiffel Tower and was built the same year. Dinner at one of the kushikatsu places under the tower, then Midosuji Line back to Shin-Osaka and Shinkansen home to Kyoto (15 minutes).",
+          },
+        ],
+      },
+      {
+        day: 5,
+        title: "Himeji Castle day trip",
+        summary:
+          "The longest day trip but the best single castle in Japan. Shinkansen to Himeji, up the hill, back by evening.",
+        stops: [
+          {
+            time: "09:00",
+            station: "Kyoto Station",
+            activity:
+              "Sakura Shinkansen from Kyoto to Himeji (50 minutes each way, free with JR Pass — Nozomi is faster but not JR-Pass-eligible). Himeji Castle is a straight 15-minute walk from the north exit of the station.",
+          },
+          {
+            time: "10:30",
+            station: "Himeji",
+            activity:
+              "Himeji Castle — the 'White Heron Castle' is Japan's largest surviving feudal castle and the best-preserved example of traditional wooden castle architecture in the country. Walking the main keep takes about 90 minutes; expect to climb several steep wooden staircases in your socks.",
+          },
+          {
+            time: "13:00",
+            station: "Himeji",
+            activity:
+              "Lunch at one of the restaurants on Miyuki-dori (the covered shopping street between the castle and the station). Try Himeji oden, the local version of Japan's winter stew, served with ginger-soy dipping sauce.",
+          },
+          {
+            time: "14:30",
+            station: "Himeji",
+            activity:
+              "Koko-en garden, adjacent to the castle — a 1992 recreation of nine Edo-period gardens on the grounds of a former samurai residence. Quieter than the castle and included in the combined ticket.",
+          },
+          {
+            time: "17:00",
+            station: "Kyoto Station",
+            activity:
+              "Shinkansen back to Kyoto. Final night dinner in Pontocho or Kiyamachi — the narrow alleys along the Kamogawa river that are Kyoto's most atmospheric evening district and the right place to end a Kansai trip.",
+          },
+        ],
+      },
+    ],
+    tips:
+      "A 7-day JR Pass costs ¥50,000 in 2026 and covers every Shinkansen ride in this itinerary (minus Nozomi services) plus the JR Sagano Line to Arashiyama and the JR Nara Line to Fushimi Inari. Whether it pays off depends on whether you're using it for any other days — see our /passes/jr-pass guide for the detailed break-even maths. For the Kansai days alone, a Kansai Area Pass (5-day, ¥12,000) is typically cheaper than the JR Pass and covers Himeji and Nara within the region. The Kintetsu Line to Nara is the faster option but not covered by JR passes — budget ¥760 each way or switch to the slower JR route if you're already holding a pass. Kyoto Station's coin lockers fill up fast in peak season; use the hotel's luggage service rather than lugging things through Himeji or Osaka. All recommended restaurants get queues at 12:30-13:00 and 19:00-20:00 — shift your eating times 30 minutes either side to skip them.",
+  },
 ];
 
 export function getItinerary(slug) {
