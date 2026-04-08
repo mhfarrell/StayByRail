@@ -6,10 +6,39 @@ This file is organised by ROI. Start at the top.
 
 ---
 
+## What's left after the 2026-04-08 deploy
+
+The site is now at 31 city guides / 9 journal articles / 5 itineraries / 5 transport passes / 1 country explainer / 766 sitemap URLs covering 60 cities across 7 countries. The two big content categories — programmatic station landing pages and long-form city guides — are in good shape for the CJ re-application. **What's still open:**
+
+**P0 (highest ROI, mostly user actions):**
+- [ ] **Lighthouse audit** on the top 5 page templates and fix anything red. *(user action — `npx lighthouse <url> --view`)*
+- [ ] **Submit sitemap to Google Search Console + Bing Webmaster Tools.** Free, one-time, essential. *(user action)*
+- [ ] **Bundle-size regression** — main `index.js` chunk has grown from 308 KB to **538 KB** since the carousel landed (it's currently importing all 31 cityGuides + 9 journal articles + 8 itineraries eagerly via HomePage). The featured-guides carousel only needs the 10 curated cities; the rest could move to a lazy import. **Investigate before the next Lighthouse audit** — this will hurt the Performance score on `/`.
+
+**P1 (more content, code-only):**
+- [ ] **South Korea expansion** — 5 cities (Seoul/Busan/Incheon/Daegu/Daejeon), same shape as the China work. Backend stations + city guides + FAQs + `/countries/south-korea` explainer + hero photos.
+- [ ] **United States expansion** — 6 cities (NYC/DC/Chicago/Boston/SF/Philly), same shape. Deliberately limited to cities where rail is the genuinely practical hotel base.
+- [ ] **Continue journal cadence** — one new article every 10–14 days. Next due ~mid-April. Pick a fresh angle, not a re-tread of the seed list.
+- [ ] **More country explainers** — `/countries/japan`, `/countries/united-kingdom`, `/countries/france`, `/countries/germany`, `/countries/spain`, `/countries/thailand`. Infrastructure is built; each one is just a new entry in `frontend/src/data/countries.js` (~3,000 words) plus a sitemap line.
+
+**P3 (link building / traction — all user actions):**
+- [ ] All Reddit / Quora / forum / Fiverr / guest-post / social work in P3 below. None of this is automatable — it needs a human voice.
+
+**P4 (polish):**
+- [ ] **Real photography for the remaining 23 city guides** — Wikipedia fallback works fine but curated photos look better in card grids. Use `frontend/scripts/warm-hero-photos.py` after each batch to pre-warm the Wikimedia thumb cache.
+
+**Re-application checklist still open:**
+- [ ] Plausible / GA shows non-zero organic traffic for 4 weeks (depends on GSC submission)
+- [ ] Lighthouse 90+ on top 3 pages
+- [ ] Search Console shows pages being indexed and impressions
+- [ ] At least 3 external backlinks from non-spam sources
+
+---
+
 ## P0 — Do these first (highest ROI)
 
 - [x] **Programmatic `/hotels-near/:station` landing pages** — 597 station pages across 52 cities, each with unique H1/meta/canonical, BreadcrumbList + TrainStation + GeoCoordinates JSON-LD, live hotel preview from the API, nearby-stations grid for internal linking, and back-link to the parent city guide. Sitemap now contains 654 URLs in total. Generator lives at `frontend/scripts/gen-stations.py`.
-- [x] **Code-split the route bundle** — main JS dropped from 594 KB to 308 KB via `React.lazy` + `<Suspense>`. Each route is its own chunk; `SearchPage` (202 KB) and `HotelMap` (155 KB) only load when visited. HomePage stays eager as the LCP target.
+- [~] **Code-split the route bundle** — main JS dropped from 594 KB to 308 KB via `React.lazy` + `<Suspense>`. Each route is its own chunk; `SearchPage` (202 KB) and `HotelMap` (155 KB) only load when visited. HomePage stays eager as the LCP target. **REGRESSION 2026-04-08**: main `index.js` chunk has grown back up to **538 KB** after the carousel + China content landed (the carousel imports all 31 cityGuides + 9 journal articles eagerly through HomePage). Needs another pass — likely move journal/itineraries off the eager path entirely and only feed the carousel its 10 specific slugs.
 - [ ] **Lighthouse audit** on `/`, `/guides/tokyo`, `/search`, `/hotels-near/shinjuku-tokyo`, `/journal/london-zone-1-vs-zone-2-hotel-cost` — record current Performance / Accessibility / SEO / Best Practices scores, then fix the red items. Target: 90+ on all four. *(user action — run `npx lighthouse <url> --view` locally or from Chrome DevTools)*
 - [x] **"Last updated" dates + author byline on every guide** — every entry in `cityGuides.js` has `updatedAt` + `author` fields; `GuidePage` renders "Updated April 2026 · by Matt Farrell" beneath the hero.
 - [ ] **Submit sitemap to Google Search Console** — verify property, submit `https://staybyrail.co.uk/sitemap.xml`, check indexing coverage. Do the same for **Bing Webmaster Tools**. Free, one-time, essential. *(user action)*
@@ -241,4 +270,10 @@ Realistic timeline from "start P0" to "ready to re-apply": **6-10 weeks** of foc
 
 ---
 
-*Last updated: 2026-04-08 (late night) — **31 city guides, 9 journal articles, 5 itineraries, 5 transport passes, 1 country explainer (China), 8 curated hero photos, 766 sitemap URLs**. This session shipped: the full P2 performance block; all P1 structured additions (typical journey times for 120 key stations); every automatable P4 polish item (favicon set, privacy audit, terms audit, about page timeline + avatar); the full P5 monetisation-readiness skeleton (affiliate wrapper, footer disclosure, Plausible conversion-tracking stub); a homepage redesign with the 10-city featured-guides scroll carousel; a top-level **Journal** link in the navbar; a 9th journal article on Madrid Atocha vs Chamartín; and the **full China expansion** — 8 new city guides covering Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Xi'an, Hangzhou, and Hong Kong; 101 new programmatic station landing pages; 40 new FAQs; the new `/countries` infrastructure with the China explainer at `/countries/china`; 8 curated Wikimedia Commons hero photos; the Hong Kong guide rewritten under "China" (with a new "A Special City Within China" lead section explaining the SAR history, the One Country Two Systems framework, and the local Hong Konger identity); and the CoveragePage updated to show 60 cities across 7 countries with Hong Kong merged into the China card. Deployed live.*
+*Last updated: 2026-04-08 (deployed) — **31 city guides, 9 journal articles, 5 itineraries, 5 transport passes, 1 country explainer (China), 8 curated hero photos, 766 sitemap URLs across 60 cities and 7 countries**. This session shipped: the full P2 performance block; all P1 structured additions (typical journey times for 120 key stations); every automatable P4 polish item (favicon set, privacy audit, terms audit, about page timeline + avatar); the full P5 monetisation-readiness skeleton (affiliate wrapper, footer disclosure, Plausible conversion-tracking stub); a homepage redesign with the 10-city featured-guides scroll carousel; a top-level **Journal** link in the navbar; a 9th journal article on Madrid Atocha vs Chamartín; and the **full China expansion** — 8 new city guides covering Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Xi'an, Hangzhou, and Hong Kong; 101 new programmatic station landing pages; 40 new FAQs; the new `/countries` infrastructure with the China explainer at `/countries/china`; 8 curated Wikimedia Commons hero photos; the Hong Kong guide rewritten under "China" (with a new "A Special City Within China" lead section explaining the SAR history, the One Country Two Systems framework, and the local Hong Konger identity); and the CoveragePage updated to show 60 cities across 7 countries with Hong Kong merged into the China card.*
+
+*Deploy verified live at 2026-04-08:*
+- Frontend pushed to Cloudflare Pages (https://9b3f5c04.staybyrail.pages.dev → staybyrail.co.uk). Smoke tests: `/guides/beijing`, `/guides/hong_kong`, `/countries/china`, `/countries`, `/hotels-near/wangfujing-beijing`, `/sitemap.xml` all return HTTP 200.
+- Backend redeployed on Render. `/api/cities` returns all 60 cities including all 8 China entries.
+- All 8 Wikimedia hero photo URLs warmed via `python frontend/scripts/warm-hero-photos.py` → 8/8 OK on first attempt.
+- One known regression to follow up: the main JS chunk has grown from 308 KB to 538 KB. See "What's left after the deploy" at the top of this file.*
