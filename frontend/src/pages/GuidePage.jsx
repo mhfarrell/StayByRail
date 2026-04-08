@@ -103,6 +103,21 @@ function GuidePage() {
             {guide.city} Rail &amp; Hotel Guide
           </h2>
           <p className="guide-hero-line">{guide.heroLine}</p>
+          {(guide.updatedAt || guide.author) && (
+            <p className="guide-byline">
+              {guide.updatedAt && (
+                <>
+                  Updated{" "}
+                  {new Date(guide.updatedAt + "-01T00:00:00").toLocaleDateString("en-GB", {
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </>
+              )}
+              {guide.updatedAt && guide.author && " \u00B7 "}
+              {guide.author && <>by {guide.author}</>}
+            </p>
+          )}
         </div>
       </div>
       {weather && (

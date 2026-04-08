@@ -51,6 +51,8 @@ export const cityGuides = [
     lat: 35.6762,
     lon: 139.6503,
     countryCode: "JP",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "london",
@@ -100,6 +102,8 @@ export const cityGuides = [
     lat: 51.5074,
     lon: -0.1278,
     countryCode: "GB",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "paris",
@@ -148,6 +152,8 @@ export const cityGuides = [
     lat: 48.8566,
     lon: 2.3522,
     countryCode: "FR",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "osaka",
@@ -195,6 +201,8 @@ export const cityGuides = [
     lat: 34.6937,
     lon: 135.5023,
     countryCode: "JP",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "barcelona",
@@ -242,6 +250,8 @@ export const cityGuides = [
     lat: 41.3851,
     lon: 2.1734,
     countryCode: "ES",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "bangkok",
@@ -290,6 +300,8 @@ export const cityGuides = [
     lat: 13.7563,
     lon: 100.5018,
     countryCode: "TH",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "berlin",
@@ -337,6 +349,8 @@ export const cityGuides = [
     lat: 52.5200,
     lon: 13.4050,
     countryCode: "DE",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "kyoto",
@@ -388,6 +402,8 @@ export const cityGuides = [
     lat: 35.0116,
     lon: 135.7681,
     countryCode: "JP",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "madrid",
@@ -435,6 +451,8 @@ export const cityGuides = [
     lat: 40.4168,
     lon: -3.7038,
     countryCode: "ES",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "birmingham",
@@ -482,6 +500,8 @@ export const cityGuides = [
     lat: 52.4862,
     lon: -1.8904,
     countryCode: "GB",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
   {
     slug: "edinburgh",
@@ -533,6 +553,8 @@ export const cityGuides = [
     lat: 55.9533,
     lon: -3.1883,
     countryCode: "GB",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
   },
 ];
 

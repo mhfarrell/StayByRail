@@ -54,6 +54,14 @@
   margin-bottom: 0;
 }
 
+.guide-byline {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  letter-spacing: 0.02em;
+}
+
 /* ---- Weather pill ---- */
 .guide-weather-pill {
   display: flex;
