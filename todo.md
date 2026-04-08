@@ -204,7 +204,7 @@ None of this is automatable. You need to do these — they need a real human voi
 
 ## P5 — Monetisation readiness (for when CJ approves)
 
-- [ ] Hotel card "Book via Booking.com" button wired to the CJ affiliate tracking link
+- [x] Hotel card "Book via Booking.com" — secondary CTA relabelled from "Compare on Booking.com" to "Book via Booking.com" and routed through a new `frontend/src/utils/affiliate.js` helper. The helper wraps any Booking.com URL in the CJ deep-link format `https://www.anrdoezrs.net/click-PUB-ADV?url=...` when the three `VITE_AFFILIATE_NETWORK` / `VITE_CJ_PUBLISHER_ID` / `VITE_CJ_BOOKING_ADVERTISER_ID` env vars are set, and passes URLs through unchanged otherwise — so this is a no-op in the current build and becomes live the moment CJ approves and the IDs are added to the Cloudflare Pages environment. Both the primary (cheapest-site) CTA and the secondary Booking.com button are wrapped. Outbound affiliate links now carry `rel="noopener sponsored"` and `data-affiliate="booking"` for the conversion-tracking skeleton in the next item.
 - [x] Disclosure banner / footer line — `Footer.jsx` now renders a dashed-border disclosure paragraph above the copyright line on every page: "StayByRail may earn a small commission when you book a hotel through our outbound links, at no extra cost to you. Commission does not influence how results are ranked or displayed." Links through to the Privacy Policy where the full affiliate breakdown lives. Matches the language already on the Privacy and Terms pages.
 - [ ] Conversion tracking — at minimum Plausible or GA4 with affiliate click events
 - [ ] A/B test affiliate CTA copy once there's enough traffic

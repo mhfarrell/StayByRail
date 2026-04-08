@@ -1,3 +1,5 @@
+import { affiliateUrl, isAffiliateSite } from "../utils/affiliate";
+
 function HotelCard({ hotel, cardId, priceMode, checkIn, checkOut, adults, wishlist, onShortlist, isShortlisted, isCheapest, isGoodValue }) {
   const stars = hotel.hotel_class
     ? "★".repeat(hotel.hotel_class) + "☆".repeat(5 - hotel.hotel_class)
@@ -13,12 +15,21 @@ function HotelCard({ hotel, cardId, priceMode, checkIn, checkOut, adults, wishli
       ? `https://www.openstreetmap.org/?mlat=${gps.latitude}&mlon=${gps.longitude}#map=17/${gps.latitude}/${gps.longitude}`
       : null;
 
-  const cheapestLink = hotel.link || null;
+  const rawCheapestLink = hotel.link || null;
+  // Wrap every outbound booking URL through the affiliate helper. Until
+  // CJ approval lands, the helper returns the URL unchanged — so this is
+  // a no-op in the current build and becomes live the moment the
+  // VITE_CJ_* env vars are set on the Cloudflare Pages build.
+  const cheapestLink = affiliateUrl(rawCheapestLink);
+  const cheapestIsAffiliate = isAffiliateSite(rawCheapestLink);
 
   const cheapestSite = (() => {
-    if (!cheapestLink) return null;
+    // Resolve the display label from the raw (un-wrapped) URL — the CJ
+    // click-through URL points at anrdoezrs.net, which would otherwise
+    // show up as 'anrdoezrs.net' on the label.
+    if (!rawCheapestLink) return null;
     try {
-      const host = new URL(cheapestLink).hostname.replace("www.", "");
+      const host = new URL(rawCheapestLink).hostname.replace("www.", "");
       if (host.includes("booking.com")) return "Booking.com";
       if (host.includes("agoda")) return "Agoda";
       if (host.includes("expedia")) return "Expedia";
@@ -42,7 +53,8 @@ function HotelCard({ hotel, cardId, priceMode, checkIn, checkOut, adults, wishli
       no_rooms: "1",
       selected_currency: "GBP",
     });
-    return `https://www.booking.com/searchresults.html?${params.toString()}`;
+    const rawUrl = `https://www.booking.com/searchresults.html?${params.toString()}`;
+    return affiliateUrl(rawUrl);
   })();
 
   const isBookingCheapest = cheapestSite === "Booking.com";
@@ -99,8 +111,9 @@ function HotelCard({ hotel, cardId, priceMode, checkIn, checkOut, adults, wishli
             <a
               href={cheapestLink}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener sponsored"
               className="price-link"
+              data-affiliate={cheapestIsAffiliate ? "booking" : undefined}
             >
               {showPerNight ? (
                 <div className="price-per-night">
@@ -133,16 +146,19 @@ function HotelCard({ hotel, cardId, priceMode, checkIn, checkOut, adults, wishli
             </div>
           )}
 
-          {/* Secondary: Booking.com compare (if not already cheapest source) */}
+          {/* Secondary: Booking.com direct (only if the cheapest source
+              is elsewhere). Routed through the affiliate helper so it
+              earns commission once CJ approval lands. */}
           {!isBookingCheapest && (
             <a
               href={bookingLink}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener sponsored"
               className="booking-compare-btn"
+              data-affiliate="booking"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Compare on Booking.com
+              Book via Booking.com
             </a>
           )}
         </div>
