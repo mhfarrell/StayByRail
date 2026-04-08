@@ -8,7 +8,7 @@ This file is organised by ROI. Start at the top.
 
 ## P0 — Do these first (highest ROI)
 
-- [x] **Programmatic `/hotels-near/:station` landing pages** — 597 station pages across 52 cities, each with unique H1/meta/canonical, BreadcrumbList + TrainStation + GeoCoordinates JSON-LD, live hotel preview from the API, nearby-stations grid for internal linking, and back-link to the parent city guide. Sitemap regenerated with all 613 URLs. Generator lives at `frontend/scripts/gen-stations.py`.
+- [x] **Programmatic `/hotels-near/:station` landing pages** — 597 station pages across 52 cities, each with unique H1/meta/canonical, BreadcrumbList + TrainStation + GeoCoordinates JSON-LD, live hotel preview from the API, nearby-stations grid for internal linking, and back-link to the parent city guide. Sitemap now contains 654 URLs in total. Generator lives at `frontend/scripts/gen-stations.py`.
 - [x] **Code-split the route bundle** — main JS dropped from 594 KB to 308 KB via `React.lazy` + `<Suspense>`. Each route is its own chunk; `SearchPage` (202 KB) and `HotelMap` (155 KB) only load when visited. HomePage stays eager as the LCP target.
 - [ ] **Lighthouse audit** on `/`, `/guides/tokyo`, `/search`, `/hotels-near/shinjuku-tokyo`, `/journal/london-zone-1-vs-zone-2-hotel-cost` — record current Performance / Accessibility / SEO / Best Practices scores, then fix the red items. Target: 90+ on all four. *(user action — run `npx lighthouse <url> --view` locally or from Chrome DevTools)*
 - [x] **"Last updated" dates + author byline on every guide** — every entry in `cityGuides.js` has `updatedAt` + `author` fields; `GuidePage` renders "Updated April 2026 · by Matt Farrell" beneath the hero.
@@ -21,7 +21,7 @@ This file is organised by ROI. Start at the top.
 
 ### Journal / blog section at `/journal`
 
-The `/journal` scaffold is live with dedicated `JournalIndexPage` and `JournalArticlePage` components, Blog + BlogPosting JSON-LD, byline pointing at the author hub, and related-guide/related-pass sidebars. Seed articles are being published one by one.
+The `/journal` scaffold is live with dedicated `JournalIndexPage` and `JournalArticlePage` components, Blog + BlogPosting JSON-LD, byline pointing at the author hub, and related-guide/related-pass sidebars. **All seed articles below are shipped (8 journal posts + 2 that moved to `/passes`).** Keep the cadence going for anything new.
 
 Seed articles:
 
@@ -36,7 +36,7 @@ Seed articles:
 - [x] "Kyoto without a car: every temple you can reach by bus + subway" — published at `/journal/kyoto-without-a-car-temples-by-bus-subway`.
 - [x] "Eurostar vs budget flight London→Paris: the honest breakdown" — published at `/journal/eurostar-vs-budget-flight-london-paris`.
 
-Cadence: **one new article every 10-14 days** between now and re-applying. Even 4-5 published articles + the scaffold = a noticeably active site.
+Cadence: **one new article every 10-14 days** between now and re-applying. The original 4-5 target was hit and then some — 8 articles live as of April 2026. Next articles should cover fresh angles (not on the original seed list) to keep the publication dates moving.
 
 ### Transport pass explainer pages
 
@@ -50,7 +50,7 @@ High search volume, low competition, perfect for long-tail SEO. `/passes` index 
 
 ### Expand city guide coverage
 
-You have **11 full guides** but data for **52 cities**. Each new full guide = another indexable, linkable page.
+Started at 11 full guides. Now at **23 full guides** — every city on the original priority-additions list is shipped. Data still exists in the backend for ~52 cities, so there's room for more expansion whenever a specific city's search volume justifies it.
 
 Priority additions (highest search volume first):
 
@@ -120,7 +120,7 @@ These are strategic expansions that need backend station data added to `backend/
 
 ### Structured additions to existing guides
 
-- [x] Add a **"Neighbourhood at a glance"** price-band table to each guide (budget / mid / premium) — done for all 17 guides; data in `guidePriceBands.js`; dated with an "April 2026" timestamp so the numbers are visibly honest.
+- [x] Add a **"Neighbourhood at a glance"** price-band table to each guide (budget / mid / premium) — done for all 23 guides; data in `guidePriceBands.js`; dated with an "April 2026" timestamp so the numbers are visibly honest.
 - [ ] Add **typical journey times** to each key station (to airport, to main attraction, to other key stations)
 - [x] Add **FAQ schema** to each guide page (5 real Qs per city, feeds rich results) — covered earlier with the `guideFaqs.js` + FAQPage JSON-LD work.
 
@@ -133,7 +133,7 @@ These are strategic expansions that need backend station data added to `backend/
 - [x] **BreadcrumbList** schema on nested pages — live on `GuidePage`, `GuidesIndexPage`, and every `StationLandingPage`.
 - [x] **Article** schema on guides — `GuidePage` emits Article JSON-LD with `author` and `datePublished` / `dateModified` from `updatedAt`. Journal posts still TBD.
 - [x] **FAQPage** schema on each guide — 5 hand-written Qs per city live in `frontend/src/data/guideFaqs.js`, rendered as a collapsible accordion on each `GuidePage` and emitted as FAQPage JSON-LD.
-- [x] **TouristDestination** schema on city guides — `GuidePage` emits it with `geo` coords; `GuidesIndexPage` also emits a `CollectionPage` listing all 11 guides as TouristDestinations.
+- [x] **TouristDestination** schema on city guides — `GuidePage` emits it with `geo` coords; `GuidesIndexPage` also emits a `CollectionPage` listing all 23 guides as TouristDestinations.
 
 ### Internal linking
 
@@ -237,4 +237,4 @@ Realistic timeline from "start P0" to "ready to re-apply": **6-10 weeks** of foc
 
 ---
 
-*Last updated: 2026-04-08*
+*Last updated: 2026-04-08 — now 23 city guides, 8 journal articles, 5 itineraries, 5 transport passes, 654 sitemap URLs.*
