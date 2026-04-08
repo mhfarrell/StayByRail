@@ -876,6 +876,59 @@ export const cityGuides = [
     updatedAt: "2026-04",
     author: "Matt Farrell",
   },
+  {
+    slug: "marseille",
+    city: "Marseille",
+    country: "France",
+    heroLine: "Mediterranean France's largest city, with a two-line metro, three tram routes, and TGV access in three hours from Paris",
+    metaTitle: "Hotels Near Marseille Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Gare Saint-Charles, Vieux-Port, and Marseille's metro and tram network. Which neighbourhoods suit different travellers, and how to reach the Calanques without a car.",
+    intro:
+      "Marseille is France's second-largest city and the most important port on the Mediterranean. It's also one of the few major European cities where the historic centre sits directly on the water — the Vieux-Port (Old Port) is a working harbour ringed by restaurants and ferry terminals, and the whole city is built on the hills above it. The rail network is smaller than Paris or Lyon but genuinely useful: two metro lines, three tram routes, and Gare Saint-Charles as the TGV terminus put most of the city within a twenty-minute ride of any sensible hotel base.",
+    sections: [
+      {
+        heading: "Gare Saint-Charles: The Rail Gateway",
+        body: "Marseille Saint-Charles sits on a steep hillside above the city centre and is the TGV terminus for services from Paris (three hours on the fastest Nozomi, sorry, Inoui services), Lyon (1h 40), Nice (2h 30), and international trains to Geneva and Italy. The station's grand 19th-century staircase down to Boulevard d'Athènes is one of the most dramatic arrivals in any European city — and one of the most quickly forgotten, because most travellers rush past it.\n\nGare Saint-Charles also sits on metro Line 1 (the blue line) and Line 2 (red line), giving you a direct ride to every practical destination in the city: Vieux-Port in six minutes, Castellane in ten, La Joliette (cruise port and docks redevelopment) in three. Hotels directly around the station lean towards budget chains and older independents; the neighbourhood is functional but not especially pretty, which is why many travellers transit through rather than sleep there. Five minutes downhill, the Belsunce and Canebière areas offer more character at similar prices.",
+      },
+      {
+        heading: "The Vieux-Port and Panier: The Tourist Heart",
+        body: "The Vieux-Port is Marseille's main tourist anchor and the natural place for a first-time visitor to base themselves. Metro Line 1 stops at Vieux-Port directly, and the harbourside walk from the metro to either the town hall or the MuCEM museum is under ten minutes. Hotels in this strip — from the InterContinental Marseille in the restored Hôtel-Dieu hospital down to mid-range brands in 19th-century apartment buildings — offer the best combination of character and walking access in the city.\n\nImmediately north of the Vieux-Port sits Le Panier, Marseille's oldest surviving quarter and a UNESCO-associated neighbourhood of narrow streets, craft shops, and small restaurants. Hotels in Le Panier are mostly boutique B&Bs and guesthouses in restored buildings; prices are reasonable by central-Mediterranean standards and the atmosphere is genuinely unique. The trade-off is that many buildings are walk-ups with no lift, so check before booking if stairs are a concern.",
+      },
+      {
+        heading: "Castellane, Prado, and the Southern Districts",
+        body: "Castellane, at the intersection of metro lines 1 and 2 and the tram lines 2 and 3, is the busiest interchange in the city after Saint-Charles and the gateway to Marseille's southern districts. The area around Castellane is Marseille's 'proper Paris' — 19th-century Haussmann-style boulevards, upscale shops, and a different feel entirely from the harbour-front chaos of the Vieux-Port. Hotels here lean mid-range to upper, with several well-regarded boutique options and a Novotel right on Place Castellane.\n\nSouth of Castellane, the Prado district stretches towards the beaches at Plage du Prado and the Calanques entrance at Callelongue. Metro Line 2 runs to Rond-Point du Prado, Périer, and Sainte-Marguerite Dromel before terminating at Sainte-Marguerite. For a summer trip focused on beaches and seaside walks, a Prado hotel puts you within walking distance of the Mediterranean for a noticeable discount on Vieux-Port prices.",
+      },
+      {
+        heading: "Reaching the Calanques and Day Trips by Rail",
+        body: "The Calanques — the steep limestone inlets between Marseille and Cassis — are the most photographed thing about the region and the single most common day trip. There are two ways to reach them without a car. The first is the bus route 21-Jet, which runs from Castellane to the start of the walking trails at Luminy and Callelongue. The second, and more scenic, is the TER regional train from Marseille Saint-Charles to Cassis (around 25 minutes, about €8), followed by a walk or a small boat to the Calanque de Port-Miou and onwards to En-Vau and Morgiou. The train-to-Cassis approach gives you a classic Provençal harbour town as a base for your day and removes the parking headache that makes the Calanques stressful for drivers.\n\nOther rail day trips are excellent. Aix-en-Provence is 45 minutes away by TER, and Avignon is 35 minutes by TGV direct from Saint-Charles. Arles is 50 minutes by TER and makes a compelling day out for Roman antiquities and Van Gogh sites. Nice and the Côte d'Azur are 2h 30 by TGV — longer than most day-trippers want, but genuinely doable.",
+      },
+      {
+        heading: "Practical Tips for Marseille",
+        body: "Marseille-Provence Airport is 25 km from the city and connected by the navette (shuttle bus) to Saint-Charles station in around 25 minutes for €10 one-way. There is no direct rail link, which is a frequent surprise for first-time visitors expecting a Charles de Gaulle-style RER setup.\n\nMarseille's reputation for being 'edgier' than other French cities is partly accurate, particularly around Saint-Charles after dark and in a few pockets of the 1st, 2nd, and 3rd arrondissements. It's also overstated. The tourist corridors (Vieux-Port, Panier, Prado, Castellane) are as safe as any French city centre, and the Mediterranean atmosphere makes evening walks genuinely pleasant in summer. Standard urban common sense applies: don't flash valuables at Saint-Charles, don't walk alone in unfamiliar neighbourhoods after midnight. Outside that, it's a city to enjoy.",
+      },
+    ],
+    keyStations: [
+      { name: "Gare Saint-Charles", reason: "TGV terminus, two metro lines, main arrival point from Paris/Lyon" },
+      { name: "Vieux-Port", reason: "StayByRail pick — metro Line 1 direct to the old port and walking access to MuCEM, the Panier, and the harbourside hotels" },
+      { name: "Castellane", reason: "Metro 1/2 interchange, boulevard district, upper-mid hotels and nightlife" },
+      { name: "Joliette", reason: "Metro 2 + tram, cruise port and Docks redevelopment, modern hotels" },
+      { name: "Rond-Point du Prado", reason: "Southern district gateway, walking access to Plage du Prado and the Calanques bus route" },
+    ],
+    searchCity: "Marseille",
+    links: [
+      { label: "RTM", url: "https://www.rtm.fr/", desc: "Marseille metro, tram, and bus planner" },
+      { label: "SNCF Connect", url: "https://www.sncf-connect.com/en-en/", desc: "French rail bookings and timetables" },
+      { label: "Marseille Tourisme", url: "https://www.marseille-tourisme.com/en/", desc: "Official Marseille tourism site" },
+      { label: "Calanques National Park", url: "https://www.calanques-parcnational.fr/en", desc: "Official park info and trail conditions" },
+    ],
+    wikipedia: "Marseille",
+    lat: 43.2965,
+    lon: 5.3698,
+    countryCode: "FR",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
 ];
 
 export function getGuide(slug) {

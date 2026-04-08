@@ -20,6 +20,7 @@ export const guidePriceBands = {
     kyoto: "JPY",
     hiroshima: "JPY",
     yokohama: "JPY",
+    marseille: "EUR",
     london: "GBP",
     birmingham: "GBP",
     manchester: "GBP",
@@ -135,6 +136,12 @@ export const guidePriceBands = {
       { area: "Minato Mirai (waterfront)", budget: "¥ 10,000", mid: "¥ 17,000", premium: "¥ 40,000+" },
       { area: "Sakuragicho", budget: "¥ 7,000", mid: "¥ 12,000", premium: "¥ 22,000" },
       { area: "Motomachi-Chukagai", budget: "¥ 8,000", mid: "¥ 13,500", premium: "¥ 25,000" },
+    ],
+    marseille: [
+      { area: "Vieux-Port", budget: "€ 95", mid: "€ 155", premium: "€ 280+" },
+      { area: "Gare Saint-Charles", budget: "€ 70", mid: "€ 115", premium: "€ 180" },
+      { area: "Castellane / Prado", budget: "€ 85", mid: "€ 140", premium: "€ 230" },
+      { area: "Le Panier", budget: "€ 90", mid: "€ 150", premium: "€ 240" },
     ],
   },
 };

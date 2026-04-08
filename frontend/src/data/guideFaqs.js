@@ -397,6 +397,29 @@ export const guideFaqs = {
       a: "Yokohama has genuine attractions of its own: Japan's largest Chinatown, the Cup Noodles Museum, the Shin-Yokohama Ramen Museum, the Landmark Tower observation deck, Sankeien Garden, Red Brick Warehouse, and the Yamate hill with its 19th-century Western-style houses. Plan on one to two days dedicated to Yokohama if you're staying there for longer than a week.",
     },
   ],
+
+  marseille: [
+    {
+      q: "Should I stay near Gare Saint-Charles or the Vieux-Port?",
+      a: "Vieux-Port for almost any leisure trip. It's six minutes by metro from Saint-Charles, directly on the old harbour, and within walking distance of the MuCEM, the Panier, and most of the restaurants you'll actually want to eat at. Saint-Charles hotels are cheaper and more convenient if you have an early TGV or multiple day trips by rail, but the neighbourhood itself is functional rather than atmospheric.",
+    },
+    {
+      q: "How long is the TGV from Paris to Marseille?",
+      a: "Three hours flat on the fastest Inoui services, running roughly every hour. Advance tickets on Ouigo (SNCF's budget TGV brand) can drop to €25 one-way if booked a month or more ahead. At that price, Marseille becomes one of the best-value long-weekend destinations in France from Paris.",
+    },
+    {
+      q: "How do I reach the Calanques without a car?",
+      a: "Two ways. The TER regional train from Saint-Charles to Cassis (about 25 minutes, around €8) is the most scenic — you end up in a proper Provençal harbour town that's itself a good base for walks into the Calanque de Port-Miou and En-Vau. Alternatively, city bus route 21-Jet from Castellane runs to the walking trailheads at Luminy and Callelongue directly from Marseille.",
+    },
+    {
+      q: "Is Marseille safe for tourists?",
+      a: "Yes, with normal urban precautions. The main tourist corridors — Vieux-Port, Le Panier, Prado, and Castellane — are as safe as any French city. The area immediately around Gare Saint-Charles after dark is livelier and requires a bit more awareness, and a few pockets of the 1st, 2nd, and 3rd arrondissements are worth avoiding late at night. Don't flash valuables at the station and don't wander unfamiliar neighbourhoods after midnight. Outside that, Marseille is welcoming.",
+    },
+    {
+      q: "What day trips are possible by rail from Marseille?",
+      a: "Aix-en-Provence is 45 minutes by TER, Avignon is 35 minutes by TGV, Arles is 50 minutes, and Cassis is 25 minutes. Nice is 2h 30 by TGV — long but doable as a same-day return. A four-day Marseille trip with day trips to Cassis, Aix, and Arles is one of the strongest rail-based holidays you can do in the south of France.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {

@@ -58,7 +58,7 @@ Priority additions (highest search volume first):
 - [x] Munich (Germany — Oktoberfest traffic) — published April 2026.
 - [x] Hamburg (Germany) — published April 2026.
 - [x] Lyon (France — TGV hub) — published April 2026.
-- [ ] Marseille (France)
+- [x] Marseille (France) — published April 2026.
 - [ ] Valencia (Spain)
 - [ ] Seville (Spain)
 - [ ] Nagoya (Japan — Shinkansen)
