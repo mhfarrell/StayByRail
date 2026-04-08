@@ -4,6 +4,7 @@ import SearchForm from "../components/SearchForm";
 import Results from "../components/Results";
 import SourcesBanner from "../components/SourcesBanner";
 import ShortlistPanel from "../components/ShortlistPanel";
+import PageMeta from "../components/PageMeta";
 import { useShortlist } from "../hooks/useShortlist";
 
 const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
@@ -93,6 +94,10 @@ function SearchPage() {
 
   return (
     <>
+      <PageMeta
+        title="Search Hotels Near Train Stations — StayByRail"
+        description="Search hotels near train stations in 52 cities across 6 countries. Filter by line, walking distance, price, and guest count. Results sorted by distance to the platform."
+      />
       <SourcesBanner sources={sources} sourceCounts={results?.source_counts} />
 
       <SearchForm

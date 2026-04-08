@@ -151,7 +151,7 @@ These are strategic expansions that need backend station data added to `backend/
 ### Canonicals and meta
 
 - [x] Verify every page has a canonical URL pointing to itself — `PageMeta` now self-canonicalises every route by default and accepts an explicit `canonical` override for the programmatic station pages.
-- [ ] Check no two pages share the same `<title>`
+- [x] Check no two pages share the same `<title>` — audited all 56 static page titles (15 top-level + 23 city guides + 5 passes + 8 journal articles + 5 itineraries) and all 597 programmatic `/hotels-near/` station landing pages: zero duplicates. Found and fixed one real bug: `SearchPage` had no `PageMeta` at all, so `/search` inherited whatever title the previous page set in the DOM. Now has a distinct title and description.
 - [ ] Add `hreflang` tags if you ever ship in multiple languages (not now, but keep in mind)
 
 ---
