@@ -982,6 +982,59 @@ export const cityGuides = [
     updatedAt: "2026-04",
     author: "Matt Farrell",
   },
+  {
+    slug: "seville",
+    city: "Seville",
+    country: "Spain",
+    heroLine: "Andalusia's capital and the western AVE terminus — reachable from Madrid in 2h 30 and best explored on foot with a single-line metro for the outliers",
+    metaTitle: "Hotels Near Seville Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Santa Justa, Puerta de Jerez, and Seville's metro and tram network. How to base yourself for the cathedral, the Alcázar, and Triana without needing a car.",
+    intro:
+      "Seville is the capital of Andalusia and one of the most compact historic cities in Europe. Almost everything a visitor wants to reach — the cathedral, the Alcázar, Plaza de España, the bullring, Triana across the river — sits within a thirty-minute walk of a well-chosen central hotel. The rail network is small for a city its size: one metro line, one MetroCentro tram route through the old town, and Santa Justa as the AVE terminus. But that's exactly what Seville's centre needs, because the real transport mode here is walking.",
+    sections: [
+      {
+        heading: "Santa Justa and the AVE from Madrid",
+        body: "Santa Justa is Seville's main railway station and the western terminus of the original Madrid-Seville AVE line, which launched in 1992 and made Andalusia accessible from Madrid in under three hours for the first time. The fastest trains now cover Madrid to Seville in 2h 30; regional Avant and Intercity services take longer but serve smaller towns along the way. Santa Justa also handles long-distance services to Barcelona, Málaga, Granada, and Cádiz.\n\nThe station sits about 2 km north-east of the old town, outside comfortable walking distance for arriving travellers with luggage. Metro Line 1 doesn't reach Santa Justa directly, but Tussam buses, the C1 and C2 circular lines, and taxis all connect it to the centre in 10-15 minutes. Hotels around Santa Justa itself are mostly modern chain business properties — fine for transiting AVE passengers, indifferent for sightseeing. Most visitors are better off travelling the short distance to the old town to sleep.",
+      },
+      {
+        heading: "The Old Town: Santa Cruz, Arenal, and Alfalfa",
+        body: "The historic centre of Seville is roughly bounded by the Guadalquivir river to the west, the old city walls (now boulevards) to the north and east, and the area around the cathedral and Alcázar to the south. Within this footprint, three neighbourhoods stand out as hotel bases.\n\n**Santa Cruz** is the former Jewish quarter, tucked immediately east of the cathedral and the Alcázar. It's a maze of narrow whitewashed streets, orange trees, hidden patios, and genuinely atmospheric small plazas. Hotels here are mostly boutique properties in restored 16th- and 17th-century buildings; prices are higher than the city average but the walking access to the cathedral, the Alcázar, and the Archivo de Indias is unbeatable. This is the default pick for a first-time visitor on a romantic trip.\n\n**Arenal**, the riverside quarter west of the cathedral, contains the bullring, a cluster of flamenco venues, and some of the best tapas bars in Seville. Hotels here are mid-range to upscale, with the Hotel Alfonso XIII (the grande dame of Sevilla's hotel scene) sitting on the Arenal/Santa Cruz border. A short walk to the river gives you the best sunset views in the city.\n\n**Alfalfa** and the area around Plaza del Salvador, north of the cathedral, is a livelier, more local quarter with a younger food and bar scene. Hotels here are often cheaper than Santa Cruz equivalents and the evenings are less tourist-dominated. Good pick for a second Seville trip or for travellers who prioritise dinner over proximity to the monuments.",
+      },
+      {
+        heading: "The MetroCentro Tram and Metro Line 1",
+        body: "Seville's public transport is a metro (one line) and a tram (one line through the old town), both of which carry remarkably useful loads for their size.\n\nThe **MetroCentro tram** runs from Plaza Nueva through Avenida de la Constitución (past the cathedral) to Prado de San Sebastián. It's a 15-minute walk end-to-end, which explains why tourists rarely ride it, but on a hot day or with luggage it's a lifeline. Free for Seville tourist card holders and around €1.50 a ride otherwise.\n\n**Metro Line 1** runs from Ciudad Expo in the south-west, across the Guadalquivir, under the southern edge of the old town at Puerta de Jerez, and out to the eastern suburbs. It stops at Puerta de Jerez and Prado de San Sebastián, both walking distance of the main sights, and at San Bernardo (interchange with the Cercanías commuter rail) and Nervión (shopping mall and residential). For visitors, Line 1 is most useful if you're staying in Triana across the river and want a fast connection into the old town, or if you're visiting Isla Mágica or Itálica on the far edges of the city.\n\nSeville is opening additional metro lines in stages. Line 3 is expected to open its first segments in 2028 and will eventually connect the airport to the centre.",
+      },
+      {
+        heading: "Triana and Crossing the Guadalquivir",
+        body: "Triana, on the west bank of the Guadalquivir, is Seville's famous flamenco and ceramics quarter. It's a 10-minute walk across the Puente de Isabel II (the 'Triana bridge') from Arenal and feels meaningfully different from the old town on the east bank — more working-class, more authentic, less varnished. Hotels in Triana are cheaper and often quieter than equivalent old-town options, and the trade-off is only that you'll walk an extra 15 minutes to reach the cathedral.\n\nFor a trip specifically focused on flamenco, Triana is the right base: the neighbourhood has a number of genuine flamenco venues (as opposed to the tourist-oriented shows around the cathedral) and the Mercado de Triana for breakfast. For a general sightseeing trip, Santa Cruz or Arenal on the east bank is marginally more convenient but Triana is close enough to count as central.",
+      },
+      {
+        heading: "Practical Tips for Seville",
+        body: "Seville summers are brutal. June through September regularly see afternoon temperatures above 38°C, and the old town's narrow streets offer only partial shade. If you must visit in summer, plan mornings and evenings outdoors and midday in a museum or your hotel. Spring (March-May) and autumn (October-November) are the sweet spot for weather and crowds, with the caveat that Semana Santa (Holy Week) and the Feria de Abril immediately after see hotel prices triple.\n\nThe airport (SVQ) is about 10 km from the centre. There is no direct metro link yet; the EA airport bus runs every 20-30 minutes to Plaza de Armas and Santa Justa station for €4 one-way, taking 35-40 minutes. Taxis are a flat rate of around €22-25. For most travellers, the bus is fine and the metro extension remains years away.\n\nTapas in Seville is a ritual and a meal at the same time — locals typically go to three or four bars per evening rather than sitting down at one restaurant for an entire meal. The oldest bars (El Rinconcillo, founded 1670, in the Plaza del Salvador area) are worth a visit for the atmosphere as much as the food. Avoid places with menus in six languages on Avenida de la Constitución; walk five streets in any direction and prices halve while quality improves.",
+      },
+    ],
+    keyStations: [
+      { name: "Santa Justa", reason: "AVE terminus from Madrid, main arrival point for rail travellers" },
+      { name: "Puerta de Jerez", reason: "StayByRail pick — Metro Line 1 + MetroCentro tram interchange directly on the old-town boundary, closest rail stop to the cathedral and Alcázar" },
+      { name: "Prado de San Sebastián", reason: "Metro 1 + tram interchange, walking distance to Plaza de España and María Luisa Park" },
+      { name: "Plaza Nueva", reason: "MetroCentro tram terminus in the heart of the old town, beside the town hall" },
+      { name: "Archivo de Indias", reason: "Tram stop immediately outside the cathedral and Alcázar, best tourist-friendly central stop" },
+    ],
+    searchCity: "Seville",
+    links: [
+      { label: "Metro de Sevilla", url: "https://www.metro-sevilla.es/en/", desc: "Official metro planner" },
+      { label: "Tussam", url: "https://www.tussam.es/en", desc: "Seville buses and MetroCentro tram" },
+      { label: "Renfe", url: "https://www.renfe.com/es/en", desc: "AVE bookings from Madrid" },
+      { label: "Visit Seville", url: "https://www.visitasevilla.es/en/", desc: "Official Seville tourism site" },
+    ],
+    wikipedia: "Seville",
+    lat: 37.3891,
+    lon: -5.9845,
+    countryCode: "ES",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
 ];
 
 export function getGuide(slug) {

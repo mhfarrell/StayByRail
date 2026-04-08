@@ -443,6 +443,29 @@ export const guideFaqs = {
       a: "Las Fallas, the mid-March festival, sees hotel prices roughly quadruple for the two-week run-up. If you're not specifically coming for Las Fallas, book around it — either early March or from the first week of April onwards. Summer is hot and crowded; spring and autumn are the sweet spot.",
     },
   ],
+
+  seville: [
+    {
+      q: "Where should a first-time visitor stay in Seville?",
+      a: "Santa Cruz, the former Jewish quarter east of the cathedral, is the classic answer. It's the most atmospheric central neighbourhood and puts you within a five-minute walk of the cathedral, the Alcázar, and the Archivo de Indias. Hotels are mostly boutique properties in restored historic buildings; prices are higher than the city average but the walking access justifies it.",
+    },
+    {
+      q: "How fast is the AVE from Madrid to Seville?",
+      a: "2h 30 on the fastest services, running roughly every 90 minutes. Seville was the original AVE destination from Madrid when the high-speed line opened in 1992, and the route remains one of Spain's busiest. Advance tickets can drop to €30-40 one-way if booked a month or more ahead.",
+    },
+    {
+      q: "Is there a metro from Seville Airport to the city?",
+      a: "Not yet. Metro Line 3 is under construction and expected to open its first segments in 2028 or later. Until then, the airport bus EA runs every 20-30 minutes from Seville Airport to Santa Justa and Plaza de Armas for €4 one-way, taking 35-40 minutes. Taxis are a flat rate of around €22-25. For most travellers, the bus is fine.",
+    },
+    {
+      q: "Is Triana worth staying in?",
+      a: "For a flamenco-focused trip, absolutely. Triana has the city's most authentic flamenco venues (rather than the tourist shows around the cathedral), the Mercado de Triana for breakfast, and a more relaxed atmosphere than the old town. Hotels are cheaper. The trade-off is a 10-15 minute walk back across the Guadalquivir to reach the cathedral and Alcázar.",
+    },
+    {
+      q: "When should I avoid Seville?",
+      a: "Summers (June-September) are punishing — regular afternoon highs above 38°C, and the narrow old-town streets offer only partial shade. Semana Santa (Holy Week) and the Feria de Abril immediately after see hotel prices triple and availability vanish. Spring (March, early April, late April after the Feria) and autumn (October-November) are the sweet spot for weather and reasonable pricing.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {

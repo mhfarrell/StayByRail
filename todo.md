@@ -60,7 +60,7 @@ Priority additions (highest search volume first):
 - [x] Lyon (France — TGV hub) — published April 2026.
 - [x] Marseille (France) — published April 2026.
 - [x] Valencia (Spain) — published April 2026.
-- [ ] Seville (Spain)
+- [x] Seville (Spain) — published April 2026.
 - [ ] Nagoya (Japan — Shinkansen)
 - [x] Yokohama (Japan) — published April 2026.
 - [x] Hiroshima (Japan — huge tourist demand) — published April 2026.

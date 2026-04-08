@@ -22,6 +22,7 @@ export const guidePriceBands = {
     yokohama: "JPY",
     marseille: "EUR",
     valencia: "EUR",
+    seville: "EUR",
     london: "GBP",
     birmingham: "GBP",
     manchester: "GBP",
@@ -149,6 +150,12 @@ export const guidePriceBands = {
       { area: "Joaquín Sorolla / Ruzafa", budget: "€ 60", mid: "€ 100", premium: "€ 170" },
       { area: "Barrio del Carmen", budget: "€ 75", mid: "€ 120", premium: "€ 210" },
       { area: "Malvarrosa beach", budget: "€ 65", mid: "€ 110", premium: "€ 190" },
+    ],
+    seville: [
+      { area: "Santa Cruz (old town)", budget: "€ 85", mid: "€ 140", premium: "€ 260+" },
+      { area: "Arenal / riverside", budget: "€ 80", mid: "€ 135", premium: "€ 250+" },
+      { area: "Triana (west bank)", budget: "€ 65", mid: "€ 110", premium: "€ 180" },
+      { area: "Santa Justa station", budget: "€ 60", mid: "€ 95", premium: "€ 160" },
     ],
   },
 };
