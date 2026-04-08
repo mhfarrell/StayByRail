@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { cityGuides } from "../data/cityGuides";
-import { wikiThumbUrl } from "../utils/wikiImage";
 import { getCityHeroPhoto } from "../data/cityHeroPhotos";
 
 const countryFlag = {
@@ -29,8 +28,12 @@ function useGuideImages(guides) {
     guides.forEach((g) => {
       if (getCityHeroPhoto(g.slug)) return; // already seeded above
       if (!g.wikipedia) return;
-      // Grid thumbs are ~400px wide, 800px covers retina.
-      const cacheKey = `sbr_thumb4_${g.slug}`;
+      // Use the default thumbnail URL Wikipedia returns rather than
+      // rewriting it to 800px. The rewritten sizes trigger an
+      // on-demand render on Wikimedia's thumb server which is
+      // rate-limited (HTTP 429) when 20+ requests fire concurrently.
+      // The default size is always pre-cached.
+      const cacheKey = `sbr_thumb5_${g.slug}`;
       const cached = sessionStorage.getItem(cacheKey);
       if (cached) {
         setImages((prev) => ({ ...prev, [g.slug]: cached }));
@@ -41,7 +44,7 @@ function useGuideImages(guides) {
       )
         .then((r) => r.json())
         .then((data) => {
-          const url = wikiThumbUrl(data, 800);
+          const url = data.thumbnail?.source || "";
           if (url) {
             sessionStorage.setItem(cacheKey, url);
             setImages((prev) => ({ ...prev, [g.slug]: url }));
@@ -107,11 +110,18 @@ function GuidesIndexPage() {
       <div className="guides-grid">
         {cityGuides.map((g) => (
           <Link to={`/guides/${g.slug}`} key={g.slug} className="guide-card guide-card-img">
-            <div
-              className="guide-card-thumb"
-              style={images[g.slug] ? { backgroundImage: `url(${images[g.slug]})` } : undefined}
-            >
-              {!images[g.slug] && <span className="guide-card-flag-lg">{countryFlag[g.country] || ""}</span>}
+            <div className="guide-card-thumb">
+              {images[g.slug] ? (
+                <img
+                  src={images[g.slug]}
+                  alt={`${g.city} skyline`}
+                  loading="lazy"
+                  decoding="async"
+                  className="guide-card-thumb-img"
+                />
+              ) : (
+                <span className="guide-card-flag-lg">{countryFlag[g.country] || ""}</span>
+              )}
             </div>
             <div className="guide-card-body">
               <h3 className="guide-card-city">{g.city}</h3>

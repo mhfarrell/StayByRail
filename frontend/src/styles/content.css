@@ -446,7 +446,13 @@ a.content-city-card {
 
 /* Horizontal-scroll variant used on the homepage Featured City Guides
    carousel. Shows ~4 cards at a time on desktop, scrolls horizontally
-   to reveal the remaining cities in the curated set. */
+   to reveal the remaining cities in the curated set. Navigation is via
+   the dedicated .home-carousel-arrow buttons; the native scrollbar is
+   hidden because it would sit awkwardly under the card row. */
+.home-city-carousel {
+  position: relative;
+}
+
 .home-city-grid-scroll {
   display: flex;
   grid-template-columns: none;
@@ -454,33 +460,74 @@ a.content-city-card {
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  scroll-padding: 0.25rem;
-  padding: 0.5rem 0.25rem 1rem;
+  scroll-padding: 0.5rem;
+  padding: 0.5rem 0.25rem;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* old IE/Edge */
 }
 
 .home-city-grid-scroll::-webkit-scrollbar {
-  height: 8px;
-}
-
-.home-city-grid-scroll::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.home-city-grid-scroll::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 999px;
-}
-
-.home-city-grid-scroll::-webkit-scrollbar-thumb:hover {
-  background: var(--border-hover);
+  display: none;                  /* Chrome / Safari / Edge */
 }
 
 .home-city-grid-scroll > .home-city-card {
   flex: 0 0 min(82vw, 260px);
   scroll-snap-align: start;
+}
+
+/* ---- Left / right navigation arrows ---- */
+.home-carousel-arrow {
+  position: absolute;
+  top: 0.5rem;
+  /* Match the card column height. The cards fill the scroll container
+     minus its vertical padding (0.5rem top and bottom), so the arrows
+     span that same area. */
+  bottom: 0.5rem;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: rgba(15, 23, 42, 0.55);
+  color: #f1f5f9;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 5;
+  opacity: 0.75;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: opacity 0.2s ease, background 0.2s ease, transform 0.15s ease;
+}
+
+.home-carousel-arrow-left {
+  left: 0.25rem;
+}
+
+.home-carousel-arrow-right {
+  right: 0.25rem;
+}
+
+.home-carousel-arrow:hover {
+  opacity: 1;
+  background: rgba(15, 23, 42, 0.82);
+}
+
+.home-carousel-arrow:active {
+  transform: scale(0.96);
+}
+
+.home-carousel-arrow:focus-visible {
+  outline: none;
+  opacity: 1;
+  box-shadow: var(--focus-ring);
+}
+
+/* The native `hidden` attribute already hides these, but set display
+   explicitly too in case a browser resurrects them via some UA rule. */
+.home-carousel-arrow[hidden] {
+  display: none;
 }
 
 /* ---- "Browse more" card at the end of the scroll row ---- */
@@ -547,9 +594,17 @@ a.home-city-card {
   width: 100%;
   aspect-ratio: 16 / 10;
   background-color: var(--bg-hover);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   flex-shrink: 0;
+}
+
+.home-city-img-el {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .home-city-img::after {

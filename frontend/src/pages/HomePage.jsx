@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import { cityGuides } from "../data/cityGuides";
 import { journalArticles } from "../data/journal";
-import { wikiThumbUrl } from "../utils/wikiImage";
 import { getCityHeroPhoto } from "../data/cityHeroPhotos";
 
 // Featured cities for the homepage — pulled live from the guide data so the
@@ -41,9 +40,12 @@ function useCityImages(list) {
       // Curated photos were already seeded in useState above; skip the
       // Wikipedia fetch when one exists.
       if (getCityHeroPhoto(slug)) return;
-      // Homepage city cards are ~400px wide at desktop, narrower on mobile.
-      // 800px covers retina without fetching the Wikipedia originals.
-      const key = `sbr_home5_${city}`;
+      // Use the exact thumbnail URL the Wikipedia summary API returns,
+      // without rewriting it to a larger size. Rewritten sizes trigger
+      // an on-demand render on Wikimedia's thumb server which gets
+      // rate-limited (HTTP 429) when ten requests fire simultaneously
+      // at homepage mount. The default thumbnail is always pre-cached.
+      const key = `sbr_home6_${city}`;
       const cached = sessionStorage.getItem(key);
       if (cached) {
         setImages((prev) => ({ ...prev, [city]: cached }));
@@ -52,7 +54,7 @@ function useCityImages(list) {
       fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
         .then((r) => r.json())
         .then((data) => {
-          const url = wikiThumbUrl(data, 800);
+          const url = data.thumbnail?.source || "";
           if (url) {
             sessionStorage.setItem(key, url);
             setImages((prev) => ({ ...prev, [city]: url }));
@@ -74,6 +76,42 @@ const FEATURED_CAROUSEL = FEATURED.slice(0, 10);
 
 function HomePage() {
   const images = useCityImages(FEATURED_CAROUSEL);
+  const scrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const updateScrollBoundaries = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    // 4px fudge so tiny sub-pixel values at the ends still count as
+    // "at the edge" and hide the arrow.
+    setCanScrollLeft(el.scrollLeft > 4);
+    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
+  }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    updateScrollBoundaries();
+    el.addEventListener("scroll", updateScrollBoundaries, { passive: true });
+    window.addEventListener("resize", updateScrollBoundaries);
+    // Re-check once images load and potentially change the layout.
+    const recheck = setTimeout(updateScrollBoundaries, 400);
+    return () => {
+      el.removeEventListener("scroll", updateScrollBoundaries);
+      window.removeEventListener("resize", updateScrollBoundaries);
+      clearTimeout(recheck);
+    };
+  }, [updateScrollBoundaries]);
+
+  const scrollCarousel = (direction) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    // Scroll by ~80% of the visible width so the user gets a fresh
+    // page of cards but retains a little overlap for continuity.
+    const delta = Math.round(el.clientWidth * 0.8);
+    el.scrollBy({ left: direction * delta, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -117,49 +155,102 @@ function HomePage() {
           </p>
         </div>
 
-        <div
-          className="home-city-grid home-city-grid-scroll"
-          role="region"
-          aria-label="Featured city guides"
-        >
-          {FEATURED_CAROUSEL.map(({ slug, city, country, heroLine, stations, accent }) => (
-            <Link
-              to={`/guides/${slug}`}
-              className="home-city-card"
-              data-accent={accent}
-              key={slug}
+        <div className="home-city-carousel">
+          <button
+            type="button"
+            className="home-carousel-arrow home-carousel-arrow-left"
+            onClick={() => scrollCarousel(-1)}
+            aria-label="Scroll featured guides left"
+            hidden={!canScrollLeft}
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
             >
-              <div
-                className="home-city-img"
-                style={images[city] ? { backgroundImage: `url(${images[city]})` } : undefined}
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+
+          <div
+            className="home-city-grid home-city-grid-scroll"
+            role="region"
+            aria-label="Featured city guides"
+            ref={scrollRef}
+          >
+            {FEATURED_CAROUSEL.map(({ slug, city, country, heroLine, stations, accent }) => (
+              <Link
+                to={`/guides/${slug}`}
+                className="home-city-card"
+                data-accent={accent}
+                key={slug}
               >
-                <span className="home-city-country">{country}</span>
-              </div>
-              <div className="home-city-body">
-                <h3 className="home-city-name">{city}</h3>
-                <p className="home-city-line">{heroLine}</p>
-                <div className="home-city-foot">
-                  <span className="home-city-meta">
-                    {stations > 0 ? `${stations} key stations` : "Guide"}
-                  </span>
-                  <span className="home-city-cta">View guide →</span>
+                <div className="home-city-img">
+                  {images[city] && (
+                    <img
+                      src={images[city]}
+                      alt={`${city} skyline`}
+                      loading="lazy"
+                      decoding="async"
+                      className="home-city-img-el"
+                    />
+                  )}
+                  <span className="home-city-country">{country}</span>
                 </div>
+                <div className="home-city-body">
+                  <h3 className="home-city-name">{city}</h3>
+                  <p className="home-city-line">{heroLine}</p>
+                  <div className="home-city-foot">
+                    <span className="home-city-meta">
+                      {stations > 0 ? `${stations} key stations` : "Guide"}
+                    </span>
+                    <span className="home-city-cta">View guide →</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+            {/* Final card in the scroll row — escape hatch to the full
+                city-guides index for anyone who wants to see all 23. */}
+            <Link to="/guides" className="home-city-card home-city-more">
+              <div className="home-city-more-body">
+                <span className="home-city-more-kicker">Browse more</span>
+                <span className="home-city-more-title">All city guides</span>
+                <span className="home-city-more-sub">
+                  {cityGuides.length} cities across Japan, the UK, France,
+                  Germany, Spain, and Thailand.
+                </span>
+                <span className="home-city-cta">See all →</span>
               </div>
             </Link>
-          ))}
-          {/* Final card in the scroll row — escape hatch to the full
-              city-guides index for anyone who wants to see all 23. */}
-          <Link to="/guides" className="home-city-card home-city-more">
-            <div className="home-city-more-body">
-              <span className="home-city-more-kicker">Browse more</span>
-              <span className="home-city-more-title">All city guides</span>
-              <span className="home-city-more-sub">
-                {cityGuides.length} cities across Japan, the UK, France,
-                Germany, Spain, and Thailand.
-              </span>
-              <span className="home-city-cta">See all →</span>
-            </div>
-          </Link>
+          </div>
+
+          <button
+            type="button"
+            className="home-carousel-arrow home-carousel-arrow-right"
+            onClick={() => scrollCarousel(1)}
+            aria-label="Scroll featured guides right"
+            hidden={!canScrollRight}
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
         </div>
       </section>
 
