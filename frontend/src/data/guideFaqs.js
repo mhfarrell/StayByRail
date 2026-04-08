@@ -259,6 +259,144 @@ export const guideFaqs = {
       a: "Yes — the ScotRail express to Glasgow Queen Street takes about 50 minutes and runs every 15 minutes throughout the day. Many visitors base themselves in Edinburgh and day-trip to Glasgow rather than the other way round. Flexible tickets are cheap if you avoid the morning commuter window.",
     },
   ],
+
+  manchester: [
+    {
+      q: "Piccadilly or Victoria — which Manchester station should I stay near?",
+      a: "Piccadilly for most first-time visitors: it handles the London intercity service, has higher hotel density, and sits directly above a Metrolink stop connecting every tram line. Victoria is the right call if you're attending a concert or event at the Manchester Arena, which is directly attached to the station.",
+    },
+    {
+      q: "How long does the train from Manchester to London take?",
+      a: "The Avanti West Coast service from Manchester Piccadilly to London Euston takes about two hours fifteen minutes at its fastest. Advance tickets booked three months ahead are significantly cheaper than walk-up fares. The Chiltern service from Moor Street to Marylebone is slower at two hours but often half the price.",
+    },
+    {
+      q: "Is the Northern Quarter a good base?",
+      a: "Yes, for a weekend trip. The Northern Quarter has the highest density of independent bars, record shops, and restaurants in the city centre, and is a 10-minute walk from Piccadilly station. It gets busy and loud on weekend nights — light sleepers should check reviews for street-noise warnings before booking.",
+    },
+    {
+      q: "Does Manchester Airport have direct trains to the city?",
+      a: "Yes. The airport has a dedicated station served by frequent trains to Manchester Piccadilly (20 minutes) and onward to Oxford Road and some regional destinations. A Metrolink tram runs a parallel route that's slower but covers more city-centre stops. For most travellers, the train is the faster option.",
+    },
+    {
+      q: "When are Manchester hotels cheapest?",
+      a: "Mid-January to mid-March (excluding half-term), and early June (excluding Parklife festival weekend) typically see the lowest rates. Avoid any weekend with a Manchester United or Manchester City home match, and check Manchester Central's conference calendar before booking — large trade shows can double hotel prices citywide.",
+    },
+  ],
+
+  munich: [
+    {
+      q: "Is München Hauptbahnhof a safe area to stay in?",
+      a: "Generally yes, though the immediate area south of the station (around Schillerstraße and Goetheplatz) is older and less polished. Most travellers feel more comfortable north of the station or on the route between Hauptbahnhof and Karlsplatz. Major chain hotels in all directions from the station are fine; solo travellers sometimes prefer the Marienplatz end of the old town instead.",
+    },
+    {
+      q: "Should I stay near Marienplatz or near the Hauptbahnhof?",
+      a: "Marienplatz puts you at the geographic heart of the city, one minute from the Glockenspiel and the best sightseeing, but hotels charge a premium. Hauptbahnhof is better if you'll be doing day trips by train, is typically 20-30 percent cheaper for equivalent rooms, and is still only a 15-minute walk from Marienplatz. For a pure leisure trip, Marienplatz wins; for a rail-heavy trip, Hauptbahnhof is usually better.",
+    },
+    {
+      q: "How far in advance should I book for Oktoberfest?",
+      a: "By February at the latest. Hotel rates triple or quadruple during Oktoberfest (late September to first weekend of October) and the best-value properties within walking distance of Theresienwiese sell out first. If you can't book that far ahead, consider staying in the suburbs on an S-Bahn line and commuting in.",
+    },
+    {
+      q: "How do I get from Munich Airport to the city centre?",
+      a: "The S1 or S8 S-Bahn lines both run from the airport to Hauptbahnhof in about 40 minutes. They take different routes but arrive at the same time. A single ticket covering the airport zone is around €13.80 and valid for onward travel in the city for the day on the same validity window.",
+    },
+    {
+      q: "Is Munich a good base for day trips?",
+      a: "One of the best in Europe. Salzburg is under two hours by EuroCity, Nuremberg is 65 minutes, Regensburg 90 minutes, and the Neuschwanstein castle area (via Füssen) about two hours. Dachau, the concentration camp memorial, is 20 minutes by S-Bahn. Nearly everything interesting in southern Bavaria and Austria is reachable from Munich by lunchtime.",
+    },
+  ],
+
+  hamburg: [
+    {
+      q: "Which Hamburg station is best for first-time visitors?",
+      a: "Jungfernstieg is arguably the best choice for sightseeing: it's next to the Binnenalster lake, on four S-Bahn lines and three U-Bahn lines, and within walking distance of the town hall, the Chilehaus district, and the main shopping streets. Hauptbahnhof is busier and has more hotel options but the immediate area is less polished.",
+    },
+    {
+      q: "Is HafenCity worth staying in?",
+      a: "Yes, if you want a modern, waterfront experience and your trip revolves around the Elbphilharmonie, harbour tours, or the Speicherstadt warehouses. Hotels are newer and often have water views. The main drawback is it's slightly further from the main shopping and sightseeing streets, though the U4 line now provides fast access.",
+    },
+    {
+      q: "How close can I stay to the Reeperbahn without being kept awake?",
+      a: "The U3 station at Feldstraße, one stop north of Reeperbahn, puts you within 10 minutes' walk of the entertainment district but removes most of the street noise. Rooms facing side streets rather than the Reeperbahn itself also help. For light sleepers, Altona or Jungfernstieg plus a 15-minute U-Bahn ride is a better compromise.",
+    },
+    {
+      q: "How do I get from Hamburg Airport to the city centre?",
+      a: "The S1 S-Bahn runs directly from the airport to Hauptbahnhof in about 25 minutes. A day ticket in the HVV covers the airport trip plus all onward U-Bahn, S-Bahn, and harbour ferries, and is excellent value for anyone staying more than one day.",
+    },
+    {
+      q: "Do cruise ship dates affect Hamburg hotel prices?",
+      a: "Yes, noticeably. When multiple large cruise ships are in port simultaneously — which the Hamburg Cruise Center publishes on its calendar — central hotel prices can spike by 50 percent or more. Checking that calendar before booking is one of the easiest ways to save money in Hamburg.",
+    },
+  ],
+
+  lyon: [
+    {
+      q: "Should I stay near Part-Dieu or Perrache?",
+      a: "Part-Dieu is the right call for rail-heavy trips: nearly all TGV services use it, and you can reach the platform in under three minutes from most nearby hotels. Perrache is better for sightseeing, since it's already on the Presqu'île peninsula within walking distance of Place Bellecour and the old town.",
+    },
+    {
+      q: "How fast is the TGV from Lyon to Paris?",
+      a: "Two hours flat on the TGV Inoui or Ouigo services, running every 30 minutes at peak. Advance tickets booked a month or more ahead are often under €40 one-way, making Lyon one of the best-value rail day trips from Paris — or vice versa.",
+    },
+    {
+      q: "Is Vieux Lyon worth staying in?",
+      a: "It's atmospheric and romantic, but narrow streets fill with tourists during the day and restaurants stay busy until late. Hotels are mostly small boutique properties. For quieter nights with the same walking access, consider Bellecour or the Hôtel de Ville area on the Presqu'île — one minute by Metro to Vieux Lyon.",
+    },
+    {
+      q: "Which airport does Lyon have and how do I get there?",
+      a: "Lyon Saint-Exupéry. The Rhônexpress tram-train runs from Lyon Part-Dieu to the airport in about 25 minutes, every 15-30 minutes. Tickets are around €16 each way — more expensive than most European airport links but significantly faster than any alternative.",
+    },
+    {
+      q: "Can I do Alpine day trips from Lyon?",
+      a: "Yes. TGV to Annecy takes 1h 55 and TGV to Grenoble takes 1h 15 — both are easily same-day. Chamonix and the Mont Blanc area are further (around four hours each way) and realistically require an overnight. For lighter Alpine scenery without the long commute, the trains into the Chartreuse and Vercors regions are outstanding.",
+    },
+  ],
+
+  hiroshima: [
+    {
+      q: "Is one day enough for Hiroshima?",
+      a: "Technically yes — you can visit the Peace Memorial Museum, Park, and A-Bomb Dome in half a day and Miyajima in the afternoon. Realistically, two days lets you move at a pace that does the subject matter justice, and adds options like the castle, Shukkei-en garden, and the Mazda Museum. Most visitors regret cramming it into one day.",
+    },
+    {
+      q: "What's the best way to get from Hiroshima Station to the Peace Park?",
+      a: "Hiroden tram lines 2 or 6 from the station south exit to Genbaku Dome-mae, about 15 minutes and a flat fare of around ¥190. Walking takes about 30 minutes and is fine in good weather. Taxis work too but tend to be expensive for the short distance.",
+    },
+    {
+      q: "Should I stay overnight on Miyajima?",
+      a: "If you can afford it, yes. The island's atmosphere after the day-trippers leave is genuinely special — the torii gate at sunset and the shrine before sunrise are worth building a trip around. Hotels and ryokans on the island charge a premium but the experience is difficult to replicate as a day-tripper.",
+    },
+    {
+      q: "Is the JR Pass useful for getting to Hiroshima?",
+      a: "Only partially. JR Pass holders can't use the fastest Nozomi Shinkansen; you're limited to Hikari and Sakura services, which add about 20-30 minutes to Tokyo-Hiroshima. Sakura from Osaka to Hiroshima is 90 minutes and perfectly reasonable. For a single Tokyo round trip including Hiroshima, the pass maths are close; see our JR Pass guide for the full calculation.",
+    },
+    {
+      q: "What's the Hiroshima hotel price compared to Osaka and Kyoto?",
+      a: "Typically 20-30 percent cheaper for equivalent-quality rooms. Hiroshima is less affected by peak-season spikes than Kyoto or Osaka, which makes it particularly good value during cherry blossom season and autumn foliage weeks.",
+    },
+  ],
+
+  yokohama: [
+    {
+      q: "Is Yokohama a smart base for a Tokyo trip?",
+      a: "For most travellers, yes. A four-star Yokohama hotel typically costs what a three-star Tokyo hotel costs, and Shinjuku is 25 minutes away on a direct JR Shonan-Shinjuku Line train. The trade-off is the commute time; for trips of three nights or more, the savings almost always justify it.",
+    },
+    {
+      q: "How long is the train from Yokohama to Shinjuku?",
+      a: "25 minutes on the JR Shonan-Shinjuku Line, direct with no transfer. The Tokyu Toyoko Line to Shibuya is about 30 minutes. Both run frequently throughout the day. Single fares are around ¥900, so for trips where you make more than 2-3 round trips a day, it makes sense to buy a daily Tokyo-area pass.",
+    },
+    {
+      q: "Is Minato Mirai worth the extra cost?",
+      a: "For a short romantic trip or special-occasion stay, yes. Waterfront views of the harbour and Mount Fuji on clear days are hard to match elsewhere in the Tokyo area, and the area is genuinely pleasant to walk around. For longer or more budget-conscious trips, Sakuragicho station is one stop away and noticeably cheaper.",
+    },
+    {
+      q: "Can I reach Haneda Airport directly from Yokohama?",
+      a: "Yes — the Keikyu Line runs directly from Yokohama Station to Haneda Airport in about 30 minutes, no transfers. This is often faster than reaching Haneda from central Tokyo, and is one of the strongest reasons to choose Yokohama as a base for flights in or out of Haneda.",
+    },
+    {
+      q: "What should I see in Yokohama itself beyond using it as a Tokyo base?",
+      a: "Yokohama has genuine attractions of its own: Japan's largest Chinatown, the Cup Noodles Museum, the Shin-Yokohama Ramen Museum, the Landmark Tower observation deck, Sankeien Garden, Red Brick Warehouse, and the Yamate hill with its 19th-century Western-style houses. Plan on one to two days dedicated to Yokohama if you're staying there for longer than a week.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {

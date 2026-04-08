@@ -556,6 +556,326 @@ export const cityGuides = [
     updatedAt: "2026-04",
     author: "Matt Farrell",
   },
+  {
+    slug: "manchester",
+    city: "Manchester",
+    country: "United Kingdom",
+    heroLine: "Northern England's transport hub with two intercity stations and Britain's largest tram network",
+    metaTitle: "Hotels Near Manchester Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Manchester's Piccadilly, Victoria, and Oxford Road stations. Which Metrolink lines, neighbourhoods, and stations suit each type of traveller.",
+    intro:
+      "Manchester is Britain's second city for rail. Two major mainline stations — Piccadilly and Victoria — handle intercity trains to London, Liverpool, Leeds, Sheffield, and Scotland, while Oxford Road adds a third option for services across the Pennines. On top of that, Manchester runs Britain's largest light-rail network, the Metrolink, with eight lines radiating from the city centre. Which station you stay near determines how much of that network you can actually use.",
+    sections: [
+      {
+        heading: "Manchester Piccadilly: The Main Hub",
+        body: "Manchester Piccadilly is the city's largest and busiest station, handling Avanti West Coast services to London Euston in just over two hours, CrossCountry trains to Birmingham and the South Coast, TransPennine Express services to Leeds, York, and Newcastle, and Northern local trains. The station sits at the eastern edge of the city centre, directly above a Metrolink stop that connects to every line on the network.\n\nHotels within a ten-minute walk of Piccadilly range from budget chains on London Road to upscale options near Piccadilly Gardens. The area has improved significantly over the past decade, though the immediate streets east of the station are quieter at night than the Deansgate or Northern Quarter corridors. For most first-time visitors, Piccadilly is the right answer: it's close to the Northern Quarter, the Gay Village, and Chinatown, and every part of the city centre is within a twenty-minute walk.",
+      },
+      {
+        heading: "Victoria and Oxford Road: The Alternatives",
+        body: "Manchester Victoria sits on the northern edge of the city centre, above the Arndale shopping centre and next to the Manchester Arena. It handles Northern and TransPennine services to Leeds, Huddersfield, Bradford, and the East Midlands, plus all Metrolink lines except the airport service. For anyone attending a concert or event at the Arena, Victoria is the obvious base.\n\nOxford Road station, south of the centre, is smaller but serves the Corridor — the strip of universities, museums, and hospitals that runs from the city centre to Fallowfield. It handles local services only, but is within a short walk of the Palace Theatre, the Cornerhouse cinema, and the Manchester Museum. Students and academic visitors often prefer hotels in this area, which tends to be quieter and noticeably cheaper than the Piccadilly/Deansgate corridor.",
+      },
+      {
+        heading: "The Metrolink Tram Network",
+        body: "Manchester's Metrolink is the most extensive light-rail network in the UK outside London. Eight lines connect the city centre to Altrincham, East Didsbury, Manchester Airport, Ashton-under-Lyne, Bury, Oldham and Rochdale, Eccles and MediaCityUK, and the Trafford Centre. The central city-zone trams run every few minutes and form a loop through Piccadilly, Market Street, St Peter's Square, and Victoria.\n\nFor visitors, the most useful lines are the Airport line (about forty minutes from the city centre), the Eccles/MediaCityUK branch (for the BBC and ITV studios, Imperial War Museum North, and Lowry theatre), and the Altrincham line for easy access to Old Trafford cricket ground and the football stadium. A day ticket for the city centre plus one outer zone is excellent value and avoids single-journey fares adding up.",
+      },
+      {
+        heading: "Neighbourhoods and Hotel Strategy",
+        body: "The Northern Quarter, immediately north-east of Piccadilly Gardens, is where independent Manchester lives: vintage shops, live music venues, and some of the best coffee in the north of England. Boutique hotels have proliferated here and it's an excellent base for a weekend visit. Deansgate, running north-south through the western half of the centre, is more polished — think chain hotels, craft beer bars, and the Beetham Tower — and closer to Spinningfields and the business district.\n\nMediaCityUK in Salford Quays, thirty minutes by tram, offers newer hotels at noticeably lower prices. It suits anyone visiting the BBC, ITV, or the Imperial War Museum, and anyone who prefers a waterfront setting. For match-day visitors, hotels near Old Trafford (the cricket ground) are within walking distance of both Old Trafford Metrolink stop and the football stadium a mile away.",
+      },
+      {
+        heading: "Practical Tips for Manchester",
+        body: "Avoid booking hotels near the NEC or major convention dates without checking Manchester's conference calendar — the city hosts several large events at Manchester Central that can triple hotel prices on specific weekends. The Manchester United and Manchester City home-match schedule has the same effect.\n\nFor London day trips or return journeys, the Avanti West Coast Piccadilly-Euston service is the fastest option at around two hours fifteen minutes. Book advance tickets three months ahead for the best prices. For travel to the Lake District, the TransPennine Express to Oxenholme connects to the scenic Windermere branch and takes under two hours from Piccadilly.",
+      },
+    ],
+    keyStations: [
+      { name: "Manchester Piccadilly", reason: "Main intercity hub, London services, Metrolink interchange, most hotel choice" },
+      { name: "Manchester Victoria", reason: "Northern and Leeds services, Arena access, Arndale mall" },
+      { name: "Manchester Oxford Road", reason: "Universities corridor, theatres, quieter and cheaper hotels" },
+      { name: "Deansgate", reason: "StayByRail pick — tram, local rail, and walkable access to Spinningfields and the Northern Quarter at lower rates than Piccadilly Gardens" },
+      { name: "Manchester Airport", reason: "Airport transfers, direct trains to the city in twenty minutes" },
+    ],
+    searchCity: "Manchester",
+    links: [
+      { label: "Metrolink", url: "https://tfgm.com/public-transport/tram", desc: "Manchester tram network routes and fares" },
+      { label: "TfGM", url: "https://tfgm.com/", desc: "Transport for Greater Manchester journey planner" },
+      { label: "Confidentials Manchester", url: "https://confidentials.com/manchester", desc: "Restaurants, bars, and what's on" },
+      { label: "Creative Tourist", url: "https://www.creativetourist.com/", desc: "Independent culture guide for Manchester" },
+    ],
+    wikipedia: "Manchester",
+    lat: 53.4808,
+    lon: -2.2426,
+    countryCode: "GB",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "munich",
+    city: "Munich",
+    country: "Germany",
+    heroLine: "Bavaria's capital with Germany's second-busiest rail hub and a dense S-Bahn and U-Bahn network",
+    metaTitle: "Hotels Near Munich Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Munich's Hauptbahnhof, Ostbahnhof, and Marienplatz. Which U-Bahn and S-Bahn lines, neighbourhoods, and stations work best for sightseeing, Oktoberfest, and day trips.",
+    intro:
+      "Munich's rail network is the backbone of the city. München Hauptbahnhof is Germany's second-busiest station after Frankfurt, handling over 450,000 passengers a day across ICE high-speed, regional, S-Bahn, and U-Bahn services. Add the dense Marienplatz interchange at the city's geographic centre and you have a transport system that makes the right hotel choice both easier and more consequential than most European capitals.",
+    sections: [
+      {
+        heading: "München Hauptbahnhof: The Central Hub",
+        body: "München Hauptbahnhof is the starting point for every ICE service to Frankfurt, Berlin, Hamburg, and Vienna, every regional service into Bavaria, and the S-Bahn line to Munich Airport. It sits about a kilometre west of Marienplatz — close enough to walk to the old town in fifteen minutes, close enough to reach by U-Bahn in three. Hotels cluster densely around the station in every price band, from hostel dorms on Schillerstraße to five-star properties on Arnulfstraße.\n\nThe area immediately north of the station (Arnulfpark and the Augustenstraße corridor) has gentrified rapidly over the past decade and offers modern business hotels at good rates. The area immediately south of the station — around Schwanthalerstraße and the Goetheplatz — is older and more down-at-heel; hotels are cheap but reviews are mixed. For most visitors, north of the station or between the station and Karlsplatz is the safest base.",
+      },
+      {
+        heading: "Marienplatz and the Old Town",
+        body: "Marienplatz is Munich's central square and the home of the New Town Hall, the Glockenspiel, and the Frauenkirche. Underneath it sits one of Germany's busiest U-Bahn and S-Bahn interchanges, with four U-Bahn lines (U3, U6, and several others) and the entire S-Bahn Stammstrecke (main line) converging in a single station complex. Staying anywhere near Marienplatz puts you at the geographic heart of the city and within a ten-minute walk of the Hofgarten, Viktualienmarkt, and the English Garden's southern edge.\n\nHotels in the immediate old-town core charge a premium but earn it for a short leisure visit. For a slightly better value with equally good transport access, consider the area around Sendlinger Tor, Isartor, or Odeonsplatz — each is one U-Bahn stop from Marienplatz and often 20 to 30 percent cheaper for equivalent rooms.",
+      },
+      {
+        heading: "S-Bahn and U-Bahn: How to Read the Network",
+        body: "Munich's transport is split into two complementary networks. The U-Bahn (underground) runs within the city across eight lines (U1 through U8). The S-Bahn (commuter rail, blue livery) runs from Munich out to surrounding towns, passing through the city centre on the Stammstrecke — a single underground tunnel from Hauptbahnhof through Marienplatz to Ostbahnhof. All S-Bahn lines share this tunnel, which makes Marienplatz an unusually powerful transport junction.\n\nFor visitors, the practical rule is: U-Bahn for moving around within the city (museums, neighbourhoods, stadiums), S-Bahn for airport trips, day trips to Starnberg, Freising, or Dachau, and for reaching the Allianz Arena and the Olympic Park area. A day ticket (Tageskarte) covering the inner ring is excellent value and easily pays back with three or four journeys.",
+      },
+      {
+        heading: "Oktoberfest and Trade Fair Weeks",
+        body: "Oktoberfest runs from late September through the first weekend of October and triples hotel prices across the city. If you're visiting for the festival itself, book by February at the latest — the best-value properties near Theresienwiese (the festival grounds) sell out first. The U4/U5 stops at Theresienwiese and Schwanthalerhöhe are the closest to the beer tents.\n\nMunich also hosts several major trade fairs at Messe München, east of the city. BAUMA, IAA mobility, productronica, and ISPO can fill every hotel within thirty kilometres of the centre and push rates up 300 percent. Always check the Messe München calendar before booking any Munich hotel — if your dates coincide with a major fair, consider staying in the Munich suburbs or a neighbouring town and using the S-Bahn to commute in.",
+      },
+      {
+        heading: "Practical Tips and Day Trips",
+        body: "Munich Airport is a 40-minute ride from Hauptbahnhof on the S1 or S8 lines — either works, they take the same time via different routes. A single ticket covering all transport zones is around €13.80 and valid for any airport-to-city journey. The Lufthansa Express Bus is faster (45 minutes to the city centre) but more expensive.\n\nFor day trips, Salzburg is under two hours by ICE or EuroCity; Nuremberg is an hour and five minutes; Regensburg about 90 minutes; and the Neuschwanstein castle area (via Füssen) around two hours. Dachau, the concentration camp memorial, is 20 minutes by S-Bahn. Munich's location makes it one of the best rail bases in central Europe, second only to Vienna for sheer number of reachable destinations within three hours.",
+      },
+    ],
+    keyStations: [
+      { name: "München Hauptbahnhof", reason: "Main hub, ICE services, S-Bahn airport line, highest hotel density" },
+      { name: "Marienplatz", reason: "Geographic centre, old town, every S-Bahn line meets here" },
+      { name: "Karlsplatz (Stachus)", reason: "StayByRail pick — one stop from Marienplatz, slightly cheaper hotels, direct S-Bahn access to airport and suburbs" },
+      { name: "Ostbahnhof", reason: "Quieter eastern gateway, Werksviertel nightlife, regional trains" },
+      { name: "Theresienwiese", reason: "Oktoberfest grounds, Bavariapark, budget hotels" },
+      { name: "Sendlinger Tor", reason: "Old town edge, U1/U2/U3/U6 interchange, quieter than Marienplatz" },
+    ],
+    searchCity: "Munich",
+    links: [
+      { label: "MVV journey planner", url: "https://www.mvv-muenchen.de/en/", desc: "Munich's integrated transport planner and ticket info" },
+      { label: "Deutsche Bahn", url: "https://www.bahn.com/en", desc: "German intercity and ICE bookings" },
+      { label: "Munich Found", url: "https://www.munichfound.com/", desc: "English-language Munich guide and events" },
+      { label: "The Local Germany", url: "https://www.thelocal.de/", desc: "News and culture for Munich and Germany" },
+    ],
+    wikipedia: "Munich",
+    lat: 48.1351,
+    lon: 11.5820,
+    countryCode: "DE",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "hamburg",
+    city: "Hamburg",
+    country: "Germany",
+    heroLine: "Germany's largest port city connected by a comprehensive S-Bahn, U-Bahn, and regional rail network",
+    metaTitle: "Hotels Near Hamburg Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Hamburg's Hauptbahnhof, Dammtor, Altona, and HafenCity stations. Which U-Bahn and S-Bahn lines work for sightseeing, harbour tours, and the Reeperbahn.",
+    intro:
+      "Hamburg's rail system revolves around one of the busiest stations in Germany: Hamburg Hauptbahnhof, which handles over half a million passengers a day. A dense U-Bahn and S-Bahn network radiates from there across the Alster lakes, down to the harbour, out to the Reeperbahn, and up to the airport. For a city this spread out, picking the right station matters more than the listings tend to suggest.",
+    sections: [
+      {
+        heading: "Hamburg Hauptbahnhof: Every Train Runs Here",
+        body: "Hamburg Hauptbahnhof is the central station for ICE services to Berlin (roughly 90 minutes), Munich, Frankfurt, and Copenhagen, plus all regional trains to Bremen, Kiel, Lübeck, and the North Sea coast. Four S-Bahn lines and three U-Bahn lines converge on or near it, making it the most densely connected point in the entire network.\n\nHotels cluster thickly around the Hauptbahnhof in every price range — from hostels on Kirchenallee to premium options on the Glockengießerwall. The immediate area north of the station is busy, a little gritty, and feels less polished than Munich or Berlin equivalents. For most visitors, staying one or two U-Bahn stops away — Jungfernstieg, Rathaus, or St. Pauli — gives you the same connectivity in a nicer environment.",
+      },
+      {
+        heading: "Jungfernstieg, Rathaus, and the City Centre",
+        body: "Jungfernstieg is the next major station west of Hauptbahnhof, sitting on the edge of the Binnenalster lake. It handles all four S-Bahn lines and the U1, U2, and U4 U-Bahn lines. For a first-time visitor focused on sightseeing, this is arguably the best base in the city: you're within walking distance of the town hall, the Alster promenade, the Chilehaus heritage district, and the shopping streets of Neuer Wall and Mönckebergstraße.\n\nRathausmarkt and Mönckebergstraße hotels tend to be upmarket. A little east, around Mönckebergstraße or Speersort, you'll find mid-range chain options at better rates. The overall pattern is that hotels get progressively cheaper as you move away from the Binnenalster and towards the Hauptbahnhof, so choosing between 'city-centre premium' and 'Hauptbahnhof value' is the main trade-off.",
+      },
+      {
+        heading: "HafenCity, Speicherstadt, and the Harbour",
+        body: "HafenCity is Europe's largest inner-city redevelopment project: a new district built on old harbour basins east of the Speicherstadt warehouses. The Elbphilharmonie concert hall sits at its western edge, and the HafenCity Universität U4 stop (plus Überseequartier) provides direct U-Bahn access. Hotels here are modern, often waterside, and generally priced in line with the city centre.\n\nFor visitors whose trip revolves around harbour tours, the Fish Market (Fischmarkt), and the Elbphilharmonie, staying near Baumwall (U3) or Landungsbrücken (U3/S1/S3) puts you within a few minutes' walk of the waterfront. Landungsbrücken in particular is the main boarding point for Hafenrundfahrt harbour cruises and for the HADAG ferry services that count as part of the HVV transport network (covered by normal day tickets).",
+      },
+      {
+        heading: "St. Pauli and the Reeperbahn",
+        body: "The Reeperbahn, Hamburg's famous entertainment district, runs along the southern edge of St. Pauli. It is served by Reeperbahn station (S1, S2, S3) and St. Pauli station (U3), both of which are within ten minutes' walk of the street itself. Hotels here range from budget backpacker-friendly properties to upscale boutiques on the former Beatles-era streets. Noise is a genuine factor: weekend nights on the Reeperbahn can be loud into the early hours, so rooms facing side streets are usually a better bet.\n\nOn the other hand, the St. Pauli district away from the Reeperbahn — particularly the area north of the FC St. Pauli stadium — is a popular creative neighbourhood with independent cafés and bars. The U3 station at Feldstraße is a good quieter alternative that still puts you within walking distance of the Reeperbahn, Planten un Blomen park, and the Altonaer Park.",
+      },
+      {
+        heading: "Practical Tips for Hamburg",
+        body: "Hamburg Airport connects to the city by S1 in about 25 minutes to Hauptbahnhof. A day ticket in the HVV covers airport access, U-Bahn, S-Bahn, and harbour ferries, and is excellent value for anyone staying more than one day.\n\nBooking windows matter more in Hamburg than in many German cities because of cruise-ship turnover: when several large cruise ships are in port simultaneously, central hotel prices can spike. The Hamburg Cruise Center publishes a calendar — checking it against your dates can save serious money. Outside those weekends, Hamburg's hotel market is among the most forgiving of any German city, with good four-star rates often available 10 to 14 days ahead.",
+      },
+    ],
+    keyStations: [
+      { name: "Hamburg Hauptbahnhof", reason: "Main station, ICE hub, every S-Bahn and most U-Bahn lines, highest hotel density" },
+      { name: "Jungfernstieg", reason: "City centre interchange, Binnenalster lake, premium hotels with best sightseeing access" },
+      { name: "Landungsbrücken", reason: "StayByRail pick — harbour cruises, Elbphilharmonie walking distance, U3 and S1/S3 at the same station" },
+      { name: "Altona", reason: "Long-distance ICE stop, alternative to Hauptbahnhof, quieter residential area" },
+      { name: "Reeperbahn", reason: "Nightlife access, St. Pauli, budget hotels" },
+      { name: "Dammtor", reason: "Universität, Congress Centre, Planten un Blomen park" },
+    ],
+    searchCity: "Hamburg",
+    links: [
+      { label: "HVV", url: "https://www.hvv.de/en", desc: "Hamburg's integrated transport planner and ticket info" },
+      { label: "hamburg.com", url: "https://www.hamburg.com/", desc: "Official English-language Hamburg visitor guide" },
+      { label: "Deutsche Bahn", url: "https://www.bahn.com/en", desc: "German intercity and ICE bookings" },
+      { label: "The Local Germany", url: "https://www.thelocal.de/", desc: "News and culture across Germany" },
+    ],
+    wikipedia: "Hamburg",
+    lat: 53.5511,
+    lon: 9.9937,
+    countryCode: "DE",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "lyon",
+    city: "Lyon",
+    country: "France",
+    heroLine: "France's second-biggest rail hub, with two TGV stations, four Metro lines, and 45-minute access to the Alps",
+    metaTitle: "Hotels Near Lyon Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Lyon Part-Dieu and Perrache. Which Metro lines, neighbourhoods, and TGV connections work for sightseeing, Alpine day trips, and Beaujolais wine country.",
+    intro:
+      "Lyon sits at the crossroads of France's rail network and is the second-busiest TGV hub after Paris. Two main stations — Part-Dieu and Perrache — handle high-speed services to Paris (under two hours), Marseille (1h 40), and onward to Italy, Switzerland, and the French Alps. Add a compact Metro with four lines, two funiculars up to Fourvière, and a frequent tram network, and Lyon becomes one of the best rail bases in France for a week of travel.",
+    sections: [
+      {
+        heading: "Lyon Part-Dieu: The High-Speed Hub",
+        body: "Lyon Part-Dieu is France's largest station outside Paris and the gateway to almost every TGV service through Lyon. It sits at the centre of the business district of the same name, about three kilometres east of the old town. Avanti West Coast equivalents — the TGV Inoui and Ouigo services — leave from here to Paris, Marseille, Lille, Strasbourg, and Geneva, plus international services to Milan and Turin.\n\nThe Part-Dieu neighbourhood has traditionally been a business-focused area with modern chain hotels and a major shopping mall attached to the station. Recent redevelopment has added new residential buildings and better restaurants. For travellers whose trip centres on rail day trips, Part-Dieu's hotels offer unbeatable convenience — you can reach the platform in under three minutes from most of them. For pure sightseeing, it's further from the old town than you might like.",
+      },
+      {
+        heading: "Lyon Perrache: The Older Station",
+        body: "Perrache is the original central station, built in 1857 at the southern tip of the Presqu'île peninsula between the Saône and Rhône rivers. It handles some TGV services plus regional trains and is directly connected to the Metro A line, two tram lines, and numerous buses. Staying near Perrache puts you within a 15-minute walk of Place Bellecour (the city's main square) and the Vieux Lyon old town.\n\nFor a short leisure trip, Perrache's location is arguably better than Part-Dieu's: you're already on the Presqu'île, close to restaurants and bars, and walking distance from Bellecour. Hotels here lean older and often cheaper than Part-Dieu equivalents, with a few well-regarded boutique options in restored 19th-century buildings.",
+      },
+      {
+        heading: "Vieux Lyon and the Fourvière Hill",
+        body: "The UNESCO-listed Vieux Lyon district sits on the west bank of the Saône, at the foot of the Fourvière hill. The Metro D line runs directly to Vieux Lyon station, connecting the area to both Bellecour and Part-Dieu in under ten minutes. Two funiculars climb from Vieux Lyon up to Fourvière basilica and the Roman theatre, both included in the standard TCL transport ticket.\n\nStaying in Vieux Lyon itself is romantic but noisy — the narrow medieval streets fill up with tourists during the day and restaurants until late. Hotels are mostly small boutique properties. For a quieter alternative with similar walking access, consider the Presqu'île side around the Cordeliers or Hôtel de Ville Metro stops, where you're a five-minute walk across the Saône into the old town.",
+      },
+      {
+        heading: "Day Trips by Rail from Lyon",
+        body: "Lyon's position makes day trips by rail especially rewarding. The TGV to Paris (two hours flat) is cheaper than most Eurostar journeys and runs every thirty minutes at peak. Marseille is 1h 40 and ideal for a Mediterranean day out. Geneva is 1h 50 via TGV Lyria, putting Lake Geneva within reach.\n\nFor Alpine day trips, TGV to Annecy (1h 55) or Grenoble (1h 15) opens up the Chartreuse mountains and the foothills of the Alps. Beaujolais wine country is reachable by TER regional trains from Part-Dieu in under 40 minutes to Villefranche-sur-Saône, the gateway for tasting trips. Nearly everything interesting in south-east France is within two hours of Lyon by train.",
+      },
+      {
+        heading: "Practical Tips for Lyon",
+        body: "Lyon's airport, Saint-Exupéry, is about 25 minutes from Part-Dieu on the Rhônexpress tram-train service. Tickets are around €16 each way and run every 15-30 minutes. It's more expensive than most European airport links but significantly faster than any alternative.\n\nAvoid booking during the Fête des Lumières (early December) unless that's specifically what you're visiting for: hotel prices double, availability vanishes, and the city's population swells with millions of visitors over four nights. Outside that window, Lyon's hotels are among the best-value in France, particularly in the Part-Dieu corridor where business rates drop sharply at weekends.",
+      },
+    ],
+    keyStations: [
+      { name: "Lyon Part-Dieu", reason: "Main TGV hub, business district, highest hotel density, Metro B access" },
+      { name: "Lyon Perrache", reason: "Historic central station, Presqu'île peninsula, walkable to Bellecour and Vieux Lyon" },
+      { name: "Bellecour", reason: "StayByRail pick — Metro A and D interchange at Lyon's main square, between Perrache and Part-Dieu, best sightseeing access" },
+      { name: "Vieux Lyon", reason: "UNESCO old town, funicular to Fourvière, atmospheric but touristy" },
+      { name: "Hôtel de Ville", reason: "Presqu'île north, nightlife, Métro A/C interchange" },
+    ],
+    searchCity: "Lyon",
+    links: [
+      { label: "TCL", url: "https://www.tcl.fr/", desc: "Lyon Metro, tram, funicular, and bus planner" },
+      { label: "SNCF Connect", url: "https://www.sncf-connect.com/en-en/", desc: "French rail bookings and timetables" },
+      { label: "Only Lyon", url: "https://en.lyon-france.com/", desc: "Official Lyon tourism site" },
+      { label: "Rue89 Lyon", url: "https://rue89lyon.fr/", desc: "Local independent journalism" },
+    ],
+    wikipedia: "Lyon",
+    lat: 45.7640,
+    lon: 4.8357,
+    countryCode: "FR",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "hiroshima",
+    city: "Hiroshima",
+    country: "Japan",
+    heroLine: "Western Japan's Shinkansen terminus and the launchpad for the island of Miyajima",
+    metaTitle: "Hotels Near Hiroshima Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Hiroshima Station and along the Sanyo Shinkansen. Which tram lines, neighbourhoods, and connections make the best base for the Peace Memorial and Miyajima.",
+    intro:
+      "Hiroshima is one of Japan's most visited cities outside the Tokyo-Kyoto-Osaka corridor, and for good reason. The Peace Memorial Park and Museum draw nearly two million visitors a year, and the UNESCO-listed island of Miyajima is less than an hour away. Hiroshima Station sits at the eastern end of the city and is the terminus for most Sanyo Shinkansen services from Tokyo, Osaka, and Kyoto, making it the natural base for the entire trip.",
+    sections: [
+      {
+        heading: "Hiroshima Station: The Shinkansen Gateway",
+        body: "Hiroshima Station is the largest station in the Chugoku region and the main arrival point for visitors from Tokyo (about four hours by Nozomi Shinkansen, which JR Pass holders can't use, or around four hours fifteen on Hikari/Sakura services) and from Osaka (one hour twenty on Nozomi, 90 minutes on Sakura). The station has been comprehensively rebuilt over the past decade and now includes a large shopping mall, multiple restaurants, and a dedicated tram stop directly in front of the south entrance.\n\nHotels cluster thickly on both sides of the station. The north (Shinkansen) exit is quieter and has several modern business hotels at good rates, while the south (Hiroden tram) exit is closer to the city centre and has a denser hotel market. For most visitors, the south exit is the better choice — you can walk to the tram in under a minute and reach the Peace Park in about 15 minutes via tram lines 2 or 6.",
+      },
+      {
+        heading: "The Hiroden Tram Network",
+        body: "Hiroshima is one of the few Japanese cities where trams still run as a meaningful part of the transport network. The Hiroden (Hiroshima Electric Railway) operates seven lines from Hiroshima Station through the city centre to the waterfront, with additional routes out to the suburbs and one line all the way to the Miyajimaguchi ferry terminal. Fares are flat-rate within the city centre (around ¥190) regardless of distance.\n\nFor tourists, the most important tram routes are the ones running through the Peace Park. Lines 2 and 6 stop at Genbaku Dome-mae, directly in front of the A-Bomb Dome. Line 2 continues all the way to Miyajimaguchi for the Miyajima ferry (about 70 minutes, flat fare the entire way). The tram system is slower than most Japanese metros but covers every place visitors actually want to go, and a day pass is excellent value.",
+      },
+      {
+        heading: "Peace Memorial Park and the Best Hotel Bases",
+        body: "The Peace Memorial Park and Museum, the A-Bomb Dome, and the associated memorials sit on a small island formed by the Motoyasu and Honkawa rivers, about two kilometres west of Hiroshima Station. Hotels in the immediate vicinity range from Riverside chain properties to upscale options on Heiwa-odori (Peace Boulevard). For a trip centred on the Peace Park, staying here keeps most of your days on foot.\n\nThe Hatchobori area, one tram stop north of the Peace Park and immediately south of Hiroshima Castle, is Hiroshima's main shopping and nightlife district. It's roughly equidistant from the station, the Peace Park, and the castle. Hotels here are slightly more expensive than station-adjacent options but you get better evening atmosphere, more restaurant choice, and easy walking access to the Orizuru Tower and the Hondori covered shopping street.",
+      },
+      {
+        heading: "Day Trip to Miyajima",
+        body: "Miyajima, famous for its floating torii gate at Itsukushima Shrine, is an essential day trip from Hiroshima. The fastest route is the JR Sanyo Line from Hiroshima Station to Miyajimaguchi (around 25 minutes), followed by a 10-minute ferry to the island itself. The JR West ferry is covered by the JR Pass; the Matsudai Kisen ferry is cheaper but not covered by the pass.\n\nThe alternative is the Hiroden tram line 2 from Hiroshima Station directly to Miyajimaguchi — slower (about 70 minutes) but scenic and often more interesting for first-time visitors. If you're staying overnight on Miyajima itself (which is worth it for the sunset and early-morning experience), hotels on the island command a premium but the island's atmosphere after the day-trippers leave is genuinely special.",
+      },
+      {
+        heading: "Practical Tips for Hiroshima",
+        body: "Hiroshima is one of the most walkable large Japanese cities. The main attractions form a loose ring with Hiroshima Station at the eastern corner and the Peace Park at the western corner, roughly 3 km apart. For a one- or two-day visit, focusing on a compact hotel near the station or Hatchobori covers almost everything without needing to plan transport in detail.\n\nFor Shinkansen day trips, Hiroshima is about 40 minutes to Okayama, 80 minutes to Kyoto, and 90 minutes to Osaka. An Osaka-Hiroshima round trip is comfortably doable in a single day if you start early. Hotel prices in Hiroshima are typically 20-30 percent below Osaka and Kyoto equivalents, making it an excellent-value base for a western Japan leg.",
+      },
+    ],
+    keyStations: [
+      { name: "Hiroshima Station", reason: "Shinkansen terminus, tram interchange, main arrival point for almost all visitors" },
+      { name: "Genbaku Dome-mae", reason: "Peace Memorial Park tram stop, walking access to the A-Bomb Dome and Museum" },
+      { name: "Hatchobori", reason: "StayByRail pick — central shopping and nightlife, equidistant from station and Peace Park, best evening atmosphere" },
+      { name: "Kamiyacho-nishi / Kamiyacho-higashi", reason: "Central tram interchanges, hotels, and business district" },
+      { name: "Miyajimaguchi", reason: "Ferry terminus for Miyajima island day trips" },
+    ],
+    searchCity: "Hiroshima",
+    links: [
+      { label: "Hiroden", url: "https://www.hiroden.co.jp/en/", desc: "Hiroshima Electric Railway tram timetables and fares" },
+      { label: "Visit Hiroshima", url: "https://visithiroshima.net/", desc: "Official Hiroshima tourism guide" },
+      { label: "Japan-Guide Hiroshima", url: "https://www.japan-guide.com/e/e2160.html", desc: "Comprehensive Hiroshima travel planning" },
+      { label: "JR West", url: "https://www.jr-odekake.net/en/", desc: "JR West timetables and Shinkansen bookings" },
+    ],
+    wikipedia: "Hiroshima",
+    lat: 34.3853,
+    lon: 132.4553,
+    countryCode: "JP",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "yokohama",
+    city: "Yokohama",
+    country: "Japan",
+    heroLine: "Japan's second-largest city and Tokyo's coastal neighbour, 25 minutes from Shinjuku with cheaper hotels",
+    metaTitle: "Hotels Near Yokohama Train Stations — StayByRail Guide",
+    metaDescription:
+      "A guide to finding hotels near Yokohama Station, Minato Mirai, and Sakuragicho. Why Yokohama makes a smart Tokyo base, and which lines connect it to Shinjuku, Shibuya, and Tokyo Station.",
+    intro:
+      "Yokohama is Japan's second-largest city by population but it's often overlooked as a visitor destination. That's a mistake. Yokohama Station is 25 minutes from Shinjuku on the JR Shonan-Shinjuku Line and direct to Tokyo Station in 24 minutes on the JR Yokosuka Line, with hotels typically 15-30 percent cheaper than equivalent Tokyo options. For anyone willing to accept a half-hour commute, it's one of the smartest plays on the Tokyo accommodation market.",
+    sections: [
+      {
+        heading: "Yokohama Station: The Regional Hub",
+        body: "Yokohama Station is one of the most complicated stations in Japan, with six different rail operators sharing the complex: JR East (several lines), Tokyu Toyoko Line to Shibuya, Keikyu Line to Haneda Airport, Sotetsu Line to Ebina, Yokohama Municipal Subway, and the Minatomirai Line. It is the fifth-busiest station in Japan by passenger count.\n\nFor a visitor, the practical value is enormous: one hotel base gives you direct access to Shinjuku, Shibuya, Tokyo Station, Haneda Airport, and the Yokohama waterfront. Hotels within 10 minutes' walk of the West Exit (Nishi-guchi) cluster densely and tend to offer newer rooms than central Tokyo equivalents at noticeably lower prices. The East Exit is quieter and closer to the Bayside waterfront walk.",
+      },
+      {
+        heading: "Minato Mirai and the Waterfront",
+        body: "Minato Mirai 21 is Yokohama's modern waterfront district, a planned development on reclaimed land that contains the Landmark Tower, Cup Noodles Museum, Yokohama Cosmo World amusement park, and the Pacifico convention centre. The area is served by the Minatomirai Line, which connects through to the Tokyu Toyoko Line and then directly to Shibuya — meaning you can stay at a Minato Mirai hotel and reach Shibuya in 30 minutes on a single train.\n\nHotels here lean upscale and often sit on the waterfront with views of the harbour and Mount Fuji on clear days. The InterContinental, Nikko, and several other four- and five-star properties cluster around the Landmark Tower. For a romantic trip or a splurge, Minato Mirai is arguably the best hotel location in the greater Tokyo area for its price-to-view ratio.",
+      },
+      {
+        heading: "Chinatown, Motomachi, and Yamate",
+        body: "Yokohama is home to Japan's largest Chinatown, just a short walk from Ishikawacho station on the JR Negishi Line or Motomachi-Chukagai on the Minatomirai Line. The area is dense with restaurants, temples, and shops, and unlike some Chinatowns is genuinely a place where locals go to eat. Hotels near Motomachi-Chukagai are a good base for food-focused trips.\n\nImmediately south of Chinatown, the Motomachi shopping street and the Yamate hill offer a completely different atmosphere: 19th-century Western-style houses dating from when Yokohama was one of the first Japanese ports opened to foreign traders. Boutique hotels and B&Bs in restored buildings are a small but growing part of the market here.",
+      },
+      {
+        heading: "Yokohama as a Tokyo Base",
+        body: "The strongest case for Yokohama as a hotel base is financial. A four-star room near Yokohama Station typically costs what a three-star room costs in Shinjuku or Shibuya. Add 25-30 minutes of commuting each way, and for many travellers that trade-off is worth it.\n\nThe practical concerns: first, make sure your hotel is within walking distance of Yokohama Station or on a direct line to Shibuya (Tokyu Toyoko) or Shinagawa (Keikyu Line). A suburban Yokohama hotel that requires two transfers is a worse deal than a Tokyo hotel. Second, factor in the cost of the train tickets themselves — a return to Shinjuku is around ¥930, so staying in Yokohama saves money only if your nightly rate difference exceeds that. For trips of three nights or more, the maths almost always works.",
+      },
+      {
+        heading: "Practical Tips and Day Trips",
+        body: "Haneda Airport is reachable from Yokohama Station in about 30 minutes on the Keikyu Line — direct, no transfer, and often quicker than going from central Tokyo. This alone makes Yokohama attractive for trips that start or end at Haneda.\n\nFor day trips, Kamakura is 25 minutes south on the JR Yokosuka Line, making Yokohama one of the best bases for visiting the Great Buddha and Hase-dera. Yokohama is also well placed for trips to Enoshima, the Miura Peninsula, and even Hakone, which is about 90 minutes by train from Yokohama Station. The city itself has enough attractions — Cup Noodles Museum, Ramen Museum, Sankeien Garden, Red Brick Warehouse, Landmark Tower — to fill one or two days on its own.",
+      },
+    ],
+    keyStations: [
+      { name: "Yokohama Station", reason: "Regional mega-hub, six operators, direct to Shinjuku, Shibuya, Tokyo, and Haneda" },
+      { name: "Minatomirai", reason: "Waterfront district, Landmark Tower, best harbour views, direct Tokyu Toyoko to Shibuya" },
+      { name: "Motomachi-Chukagai", reason: "Chinatown, Yamate hill, Western heritage district" },
+      { name: "Sakuragicho", reason: "StayByRail pick — gateway to Minato Mirai with significantly cheaper hotels than the waterfront towers" },
+      { name: "Shin-Yokohama", reason: "Shinkansen stop, separate from main Yokohama Station, business hotels" },
+    ],
+    searchCity: "Yokohama",
+    links: [
+      { label: "Yokohama Visitors' Guide", url: "https://www.yokohamajapan.com/", desc: "Official Yokohama tourism site" },
+      { label: "JR East Yokohama", url: "https://www.jreast.co.jp/e/", desc: "JR East routes and timetables" },
+      { label: "Japan-Guide Yokohama", url: "https://www.japan-guide.com/e/e2158.html", desc: "Comprehensive Yokohama travel planning" },
+      { label: "Time Out Tokyo", url: "https://www.timeout.com/tokyo", desc: "Restaurants and events across greater Tokyo including Yokohama" },
+    ],
+    wikipedia: "Yokohama",
+    lat: 35.4437,
+    lon: 139.6380,
+    countryCode: "JP",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
 ];
 
 export function getGuide(slug) {
