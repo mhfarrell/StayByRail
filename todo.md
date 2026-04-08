@@ -31,7 +31,7 @@ Seed articles:
 - [x] "Shinkansen vs flying Tokyo→Osaka in 2026: cost, time, carbon" — published at `/journal/shinkansen-vs-flying-tokyo-osaka-2026`.
 - [x] "The quietest hotels near Gare du Nord" — published at `/journal/quietest-hotels-near-gare-du-nord`.
 - [x] "Bangkok BTS vs MRT: which line should you actually stay on" — published at `/journal/bangkok-bts-vs-mrt-where-to-stay`.
-- [ ] "Hammersmith: the London hotel base nobody talks about" — editor's pick expansion
+- [x] "Hammersmith: the London hotel base nobody talks about" — published at `/journal/hammersmith-london-hotel-base-nobody-talks-about`.
 - [x] "How to use Navigo Découverte as a tourist in Paris" — **shipped as `/passes/navigo`** instead of a journal article.
 - [ ] "Kyoto without a car: every temple you can reach by bus + subway" — deep utility content
 - [x] "Eurostar vs budget flight London→Paris: the honest breakdown" — published at `/journal/eurostar-vs-budget-flight-london-paris`.
