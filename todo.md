@@ -8,12 +8,12 @@ This file is organised by ROI. Start at the top.
 
 ## P0 — Do these first (highest ROI)
 
-- [ ] **Programmatic `/hotels-near/:station` landing pages** — turn existing station data into 300-500 indexable pages. Each page: unique H1 / meta / schema, live hotel results from the API, station line info, walking landmarks, internal links to related stations and the parent city guide. This alone can 10x the indexable footprint overnight. Pattern used by Trivago, Kayak, Skyscanner.
-- [ ] **Code-split the route bundle** — main JS is 594 KB unchunked. Use `React.lazy` + `<Suspense>` on `SearchPage`, `GuidePage`, `TravelGuidePage`, `TrainTimesPage`. Target LCP < 1.5s on 4G. Google ranks this.
+- [x] **Programmatic `/hotels-near/:station` landing pages** — 597 station pages across 52 cities, each with unique H1/meta/canonical, BreadcrumbList + TrainStation + GeoCoordinates JSON-LD, live hotel preview from the API, nearby-stations grid for internal linking, and back-link to the parent city guide. Sitemap regenerated with all 613 URLs. Generator lives at `frontend/scripts/gen-stations.py`.
+- [x] **Code-split the route bundle** — main JS dropped from 594 KB to 308 KB via `React.lazy` + `<Suspense>`. Each route is its own chunk; `SearchPage` (202 KB) and `HotelMap` (155 KB) only load when visited. HomePage stays eager as the LCP target.
 - [ ] **Lighthouse audit** on `/`, `/guides/tokyo`, `/search` — record current Performance / Accessibility / SEO / Best Practices scores, then fix the red items. Target: 90+ on all four.
-- [ ] **"Last updated" dates + author byline on every guide** — add `updatedAt` to `cityGuides.js`, render it as "Updated April 2026 · by Matt Farrell". Signals freshness and real authorship. Both CJ writing tips ("be disciplined — regular updates") and Google E-E-A-T care about this.
+- [x] **"Last updated" dates + author byline on every guide** — every entry in `cityGuides.js` has `updatedAt` + `author` fields; `GuidePage` renders "Updated April 2026 · by Matt Farrell" beneath the hero.
 - [ ] **Submit sitemap to Google Search Console** — verify property, submit `https://staybyrail.co.uk/sitemap.xml`, check indexing coverage. Do the same for **Bing Webmaster Tools**. Free, one-time, essential. *(user action)*
-- [ ] **Fix every internal 404** — audit all `<Link>`s and external `href`s across the codebase. Any broken link is a credibility signal to reviewers and crawlers.
+- [x] **Fix every internal 404** — audited every `<Link to>` and `<a href>` in `frontend/src`; all internal targets resolve. Fixed one latent SEO issue: Cloudflare Pages serves 404 routes with HTTP 200, so `NotFoundPage` now emits `noindex` and every page self-canonicalises via a new `canonical`/`noindex` prop on `PageMeta`.
 
 ---
 
@@ -91,10 +91,10 @@ Highly shareable, link magnets, real travel utility:
 
 ### Structured data
 
-- [ ] **BreadcrumbList** schema on all nested pages (already have breadcrumb UI, just add the JSON-LD)
-- [ ] **Article** schema on journal posts with `datePublished` / `dateModified` / `author`
-- [ ] **FAQPage** schema on each guide (pulled from the guide's own FAQs)
-- [ ] **TouristDestination** schema on city guides with `geo` coordinates
+- [x] **BreadcrumbList** schema on nested pages — live on `GuidePage`, `GuidesIndexPage`, and every `StationLandingPage`.
+- [x] **Article** schema on guides — `GuidePage` emits Article JSON-LD with `author` and `datePublished` / `dateModified` from `updatedAt`. Journal posts still TBD.
+- [ ] **FAQPage** schema on each guide (pulled from the guide's own FAQs — requires FAQ content per guide first)
+- [x] **TouristDestination** schema on city guides — `GuidePage` emits it with `geo` coords; `GuidesIndexPage` also emits a `CollectionPage` listing all 11 guides as TouristDestinations.
 
 ### Internal linking
 
@@ -104,14 +104,14 @@ Highly shareable, link magnets, real travel utility:
 
 ### Performance
 
-- [ ] **Code-split routes** (repeat of P0 item — critical)
+- [x] **Code-split routes** (repeat of P0 item — critical)
 - [ ] **Preload critical fonts**, lazy-load Leaflet until the user scrolls to the map
 - [ ] **Image sizing** — Wikipedia images come in as huge originals; resize through an image CDN or swap to Cloudinary / ImageKit
 - [ ] **Cache-Control headers** on Cloudflare Pages for static assets (should already be good, verify in DevTools)
 
 ### Canonicals and meta
 
-- [ ] Verify every page has a canonical URL pointing to itself
+- [x] Verify every page has a canonical URL pointing to itself — `PageMeta` now self-canonicalises every route by default and accepts an explicit `canonical` override for the programmatic station pages.
 - [ ] Check no two pages share the same `<title>`
 - [ ] Add `hreflang` tags if you ever ship in multiple languages (not now, but keep in mind)
 
@@ -198,4 +198,4 @@ Realistic timeline from "start P0" to "ready to re-apply": **6-10 weeks** of foc
 
 ---
 
-*Last updated: 2026-04-07*
+*Last updated: 2026-04-08*
