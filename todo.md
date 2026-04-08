@@ -35,8 +35,9 @@ Seed articles:
 - [x] "How to use Navigo Découverte as a tourist in Paris" — **shipped as `/passes/navigo`** instead of a journal article.
 - [x] "Kyoto without a car: every temple you can reach by bus + subway" — published at `/journal/kyoto-without-a-car-temples-by-bus-subway`.
 - [x] "Eurostar vs budget flight London→Paris: the honest breakdown" — published at `/journal/eurostar-vs-budget-flight-london-paris`.
+- [x] "Madrid Atocha vs Chamartín: which station should you actually stay near" — published at `/journal/madrid-atocha-vs-chamartin-where-to-stay`. Fresh angle (not on the original seed list) — Decision-guide format applied to a Spain-side rail topic to balance the existing UK/JP/FR/TH coverage.
 
-Cadence: **one new article every 10-14 days** between now and re-applying. The original 4-5 target was hit and then some — 8 articles live as of April 2026. Next articles should cover fresh angles (not on the original seed list) to keep the publication dates moving.
+Cadence: **one new article every 10-14 days** between now and re-applying. The original 4-5 target was hit and then some — **9 articles live as of April 2026**. Next articles should cover fresh angles (not on the original seed list) to keep the publication dates moving.
 
 ### Transport pass explainer pages
 
@@ -73,14 +74,16 @@ Template: use an existing guide as a shape, write 4-5 original sections per city
 
 These are strategic expansions that need backend station data added to `backend/staybyrail/stations.py` before any frontend guide work. Good rail coverage = strong fit for StayByRail; US coverage deliberately limited to cities where rail is the genuinely practical hotel base.
 
-**China** — world's largest high-speed rail network, huge domestic and inbound search volume, natural fit for this site. Target cities for station data + city guides + country explainer:
-- [ ] Beijing (Beijing Subway is enormous; CR High-Speed hub)
-- [ ] Shanghai (Metro + Maglev + 12 Shanghai-terminus high-speed lines)
-- [ ] Guangzhou (South China rail hub, high-speed to Hong Kong)
-- [ ] Shenzhen (mainland terminus for Hong Kong, Futian high-speed)
-- [ ] Chengdu (western China, Panda research, high-speed from Chongqing)
-- [ ] Xi'an (Terracotta Army, Shaanxi high-speed hub)
-- [ ] Hangzhou (tourism destination, G-series from Shanghai)
+**China (including Hong Kong SAR)** — world's largest high-speed rail network plus the world-class MTR. **All shipped April 2026.** 7 China mainland cities + Hong Kong, with backend station data, full city guides, FAQs, country explainer, curated hero photos, sitemap entries, CoveragePage card, and Footer popular-pages links. Hong Kong is now categorised under China (it is a Special Administrative Region with its own visa rules, currency, and rail system, but constitutionally part of the PRC). Total: 8 new city guides, 101 new programmatic station landing pages, 1 new country explainer page, 8 curated hero photos.
+- [x] Beijing — 6 lines, 26 popular stations (Subway 1/2/4/10, Airport Express, CR HSR), full guide + 5 FAQs + curated Wikimedia Commons hero photo (CBD skyline by N509FZ).
+- [x] Shanghai — 5 lines, 21 popular stations (Metro 1/2/10, Maglev, CR HSR), full guide + 5 FAQs + curated hero photo (Pudong panorama by King of Hearts).
+- [x] Guangzhou — 4 lines, 16 popular stations (Metro 1/2/3, CR HSR), full guide + 5 FAQs + curated hero photo (Canton Tower by Tim Wu).
+- [x] Shenzhen — 3 lines, 11 popular stations (Metro 1/4, CR HSR including Futian and Shenzhen North), full guide + 5 FAQs + curated hero photo (Futian commercial district by Charlie fong).
+- [x] Chengdu — 3 lines, 11 popular stations (Metro 1/2, CR HSR), full guide + 5 FAQs + curated hero photo (Chengdu skyline with snow-capped mountains by FISU).
+- [x] Xi'an — 3 lines, 8 popular stations (Metro 1/2, CR HSR), full guide + 5 FAQs + curated hero photo (city wall by Xiquinho Silva).
+- [x] Hangzhou — 3 lines, 6 popular stations (Metro 1/2, CR HSR), full guide + 5 FAQs + curated hero photo (Qianjiang New City by EditQ).
+- [x] Hong Kong — 6 lines, 23 popular stations covering MTR Island/Tsuen Wan/Kwun Tong/East Rail/Tung Chung-Airport Express plus the GSHKER high-speed terminus at West Kowloon. Full guide + 5 FAQs + curated hero photo (Skyline from the Peak by Simeon W). Guide opens with a "Special City Within China" section explaining the 1841-1997 colonial history, the 1984 Joint Declaration, the One Country Two Systems framework, the local Hong Konger identity, Cantonese language, and the practical implications (separate visa, currency, MTR, no Wikipedia/Google blocks).
+- [x] **`/countries/china` explainer** — 7-section long-form: CR Network in One Page, Train Types (G/D/C/Z/T/K), Booking on 12306, E-Tickets and Station Entry, Fares and Classes, Hong Kong as a Special Administrative Region, What to Pack and Practical Tips. Linked from every China and Hong Kong guide page.
 
 **South Korea** — Seoul Metro is one of the best in the world; KTX high-speed gives full peninsula coverage. Strong visitor demand from JP/CN/SE Asia. Target cities:
 - [ ] Seoul (Seoul Metropolitan Subway: 300+ stations across 23 lines)
@@ -104,7 +107,7 @@ These are strategic expansions that need backend station data added to `backend/
 2. Entries in `CITY_COUNTRIES` / `CITY_DISPLAY` / `CITY_COUNTRY` maps in both `backend/main.py` and `frontend/scripts/gen-stations.py`.
 3. Regenerate `frontend/src/data/stations.json` via the generator.
 4. One long-form city guide per covered city (~1500 words each) in `cityGuides.js` with 5 FAQs in `guideFaqs.js`.
-5. Optional: a **country explainer** page at `/countries/:slug` covering the national rail network, ticket types, typical fares, and when to use local vs national passes. This is the P1.5 layer between transport passes and city guides — hit it for each new country.
+5. ~~Optional~~: a **country explainer** page at `/countries/:slug` covering the national rail network, ticket types, typical fares, and when to use local vs national passes. This is the P1.5 layer between transport passes and city guides. **Infrastructure now built (April 2026)** — `/countries` index page, `/countries/:slug` route, `frontend/src/data/countries.js` data layer, `CountryPage.jsx` and `CountriesIndexPage.jsx` components, footer link, sitemap entries, and a discoverability link from each `GuidePage` to the matching country explainer. **First country shipped: `/countries/china`** covering CR High-Speed network, train type taxonomy (G/D/C/Z/T/K), 12306 booking, real-name e-tickets, station entry process, fares and classes, the Hong Kong SAR practicalities, and what to pack. Other countries should follow the same pattern.
 6. Expand `CoveragePage` and `Footer` popular-pages nav.
 7. Regenerate sitemap.
 
@@ -192,7 +195,7 @@ None of this is automatable. You need to do these — they need a real human voi
 
 ## P4 — Credibility & brand polish
 
-- [~] **Real photography** — scaffolded: new `frontend/src/data/cityHeroPhotos.js` accepts per-slug entries of `{src, credit, link, source}`. `useCityData`, `HomePage`, and `GuidesIndexPage` now prefer a curated photo when one exists for the slug and transparently fall back to the existing Wikipedia fetch otherwise. Populating the map is a paste job — the file is empty and the example entry in the header comment shows the format. Left open because picking 23 good photos requires human eyes on Unsplash / Pexels.
+- [~] **Real photography** — scaffolded: new `frontend/src/data/cityHeroPhotos.js` accepts per-slug entries of `{src, credit, link, source, license}`. `useCityData`, `HomePage`, and `GuidesIndexPage` now prefer a curated photo when one exists for the slug and transparently fall back to the existing Wikipedia fetch otherwise. **First batch shipped April 2026: 8 curated Wikimedia Commons photos for Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Xi'an, Hangzhou, and Hong Kong.** All licensed CC BY / CC BY-SA / CC BY 2.0/3.0/4.0 and properly credited. **Important constraint**: Wikimedia thumbnail widths above ~1280px return HTTP 429 from non-Wikipedia referers (anti-abuse rate-limit on on-demand thumbnail generation), so all curated entries cap at 1280px on the long edge. New `frontend/scripts/warm-hero-photos.py` script can be run after a deploy to pre-warm any new entries on Wikimedia's thumb cache so the first real visitor doesn't see a 429. Remaining 23 cities still need curated photos — they'll continue to use the Wikipedia fallback until populated.
 - [x] **Favicon upgrade** — multi-size set rendered from the existing `favicon.svg` using `resvg_py`: 16, 32, 48, 180, 192, 512 PNGs plus a multi-resolution `favicon.ico` (16/32/48). `index.html` now links the `.ico` (old browsers / Google SERPs), the `.svg` (modern browsers), 16/32 PNGs, and a 180px `apple-touch-icon` for iOS. Added `public/site.webmanifest` with 192/512 entries for Android home-screen installs and theme-colour matching the site background.
 - [x] **Contact page** with a real form (or at minimum a mailto:) — `/contact` live with ContactPage JSON-LD, mailto CTA, and clear sections on what enquiries are welcome vs which belong elsewhere.
 - [x] **Privacy page audit** — the old copy claimed StayByRail "does not collect or store personal information such as your name" but the `/api/tips` endpoint persists `{name, tip, ts}` to `backend/data/tips.json` whenever a user submits a city tip. Rewrote "What data we collect" to disclose this honestly, advise users to use a first name or nickname, and include a delete-on-request line. Also added: a note that sessionStorage caches city/weather/event data locally, an explicit "no first-party tracking cookies" line, disclosure of the Wikipedia / Open-Meteo / Ticketmaster / PredictHQ / Eventbrite fetches, an Affiliate relationships section explaining the forthcoming booking-site links, a mailto contact for deletion requests, and a date bump to April 2026.
@@ -216,8 +219,8 @@ None of this is automatable. You need to do these — they need a real human voi
 
 Before re-applying to CJ, verify:
 
-- [x] Site has **50+ indexable pages** — sitemap currently contains 654 URLs (597 programmatic `/hotels-near/` station pages + 23 city guides + 8 journal articles + 5 itineraries + 5 transport passes + core pages).
-- [x] At least **5 journal articles** published with real dates showing consistent output — 8 articles now live at `/journal` (target exceeded).
+- [x] Site has **50+ indexable pages** — sitemap currently contains 764 URLs (698 programmatic `/hotels-near/` station pages + 31 city guides + 9 journal articles + 5 itineraries + 5 transport passes + core pages).
+- [x] At least **5 journal articles** published with real dates showing consistent output — 9 articles now live at `/journal` (target exceeded).
 - [ ] **Google Analytics / Plausible** shows non-zero organic traffic for the past 4 weeks
 - [ ] **Lighthouse 90+** across the board on the top 3 pages
 - [ ] **Search Console** shows pages being indexed and some impressions
@@ -238,4 +241,4 @@ Realistic timeline from "start P0" to "ready to re-apply": **6-10 weeks** of foc
 
 ---
 
-*Last updated: 2026-04-08 (evening) — 23 city guides, 8 journal articles, 5 itineraries, 5 transport passes, 654 sitemap URLs. This session shipped the full P2 performance block, all P1 structured additions (typical journey times for 120 key stations), every automatable P4 polish item (favicon set, privacy audit, terms audit, about page timeline + avatar), and the full P5 monetisation-readiness skeleton (affiliate wrapper, footer disclosure, Plausible conversion-tracking stub). Homepage was also redesigned with a 10-city featured-guides scroll carousel. Deployed live.*
+*Last updated: 2026-04-08 (late night) — **31 city guides, 9 journal articles, 5 itineraries, 5 transport passes, 1 country explainer (China), 8 curated hero photos, 766 sitemap URLs**. This session shipped: the full P2 performance block; all P1 structured additions (typical journey times for 120 key stations); every automatable P4 polish item (favicon set, privacy audit, terms audit, about page timeline + avatar); the full P5 monetisation-readiness skeleton (affiliate wrapper, footer disclosure, Plausible conversion-tracking stub); a homepage redesign with the 10-city featured-guides scroll carousel; a top-level **Journal** link in the navbar; a 9th journal article on Madrid Atocha vs Chamartín; and the **full China expansion** — 8 new city guides covering Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Xi'an, Hangzhou, and Hong Kong; 101 new programmatic station landing pages; 40 new FAQs; the new `/countries` infrastructure with the China explainer at `/countries/china`; 8 curated Wikimedia Commons hero photos; the Hong Kong guide rewritten under "China" (with a new "A Special City Within China" lead section explaining the SAR history, the One Country Two Systems framework, and the local Hong Konger identity); and the CoveragePage updated to show 60 cities across 7 countries with Hong Kong merged into the China card. Deployed live.*

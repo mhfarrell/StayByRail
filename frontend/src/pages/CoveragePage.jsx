@@ -5,16 +5,17 @@ function CoveragePage() {
   return (
     <div className="page-content">
       <PageMeta
-        title="Coverage — StayByRail | 52 Cities, 6 Countries"
-        description="StayByRail covers 52 cities across Japan, the United Kingdom, France, Germany, Spain, and Thailand — including JR lines, London Underground, Paris Metro, and BTS Skytrain."
+        title="Coverage — StayByRail | 60 Cities, 7 Countries"
+        description="StayByRail covers 60 cities across Japan, the United Kingdom, France, Germany, Spain, Thailand, and China (including Hong Kong) — JR lines, the London Underground, Paris Metro, BTS Skytrain, Beijing Subway, Shanghai Metro, and Hong Kong MTR."
       />
       <h2 className="page-heading" style={{ textAlign: "center" }}>Our Coverage</h2>
       <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
-        StayByRail covers major rail and metro networks across six countries and
-        52 cities. Whether you are planning a Shinkansen trip through Japan, a
-        Eurostar connection through France, or a backpacking route through Thailand,
-        we have station-level hotel data to help you choose the right place to stay.
-        We are continually expanding — new cities and rail lines are added regularly.
+        StayByRail covers major rail and metro networks across seven countries and
+        60 cities. Whether you are planning a Shinkansen trip through Japan, a
+        Eurostar connection through France, a high-speed run from Beijing to
+        Hong Kong, or a backpacking route through Thailand, we have station-level
+        hotel data to help you choose the right place to stay. We are continually
+        expanding — new cities and rail lines are added regularly.
       </p>
 
       <div className="content-country-grid">
@@ -111,6 +112,27 @@ function CoveragePage() {
           <p className="content-country-text">
             <Link to="/guides/bangkok" className="about-link">Bangkok</Link>, Chiang Mai, Pattaya, Phuket, and Hat Yai. Covering BTS
             Skytrain, MRT, Airport Rail Link, and national rail stations.
+          </p>
+        </div>
+        <div className="content-country-card">
+          <div className="content-country-flag" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="2" y="4" width="28" height="24" rx="2" fill="#EE1C25"/>
+              <path d="M9 9l1 3h3l-2.4 1.8.9 3-2.5-1.9-2.5 1.9.9-3L5 12h3z" fill="#FFFF00"/>
+              <path d="M15 7l.4 1.2h1.2l-1 .7.4 1.2-1-.7-1 .7.4-1.2-1-.7h1.2z" fill="#FFFF00"/>
+              <path d="M18 11l.4 1.2h1.2l-1 .7.4 1.2-1-.7-1 .7.4-1.2-1-.7h1.2z" fill="#FFFF00"/>
+              <path d="M18 16l.4 1.2h1.2l-1 .7.4 1.2-1-.7-1 .7.4-1.2-1-.7h1.2z" fill="#FFFF00"/>
+              <path d="M15 19l.4 1.2h1.2l-1 .7.4 1.2-1-.7-1 .7.4-1.2-1-.7h1.2z" fill="#FFFF00"/>
+            </svg>
+          </div>
+          <h3 className="content-country-name">China</h3>
+          <p className="content-country-cities">8 cities (including Hong Kong SAR)</p>
+          <p className="content-country-text">
+            <Link to="/guides/beijing" className="about-link">Beijing</Link>, <Link to="/guides/shanghai" className="about-link">Shanghai</Link>, <Link to="/guides/guangzhou" className="about-link">Guangzhou</Link>, <Link to="/guides/shenzhen" className="about-link">Shenzhen</Link>, <Link to="/guides/chengdu" className="about-link">Chengdu</Link>, <Link to="/guides/xian" className="about-link">Xi'an</Link>, <Link to="/guides/hangzhou" className="about-link">Hangzhou</Link>, and <Link to="/guides/hong_kong" className="about-link">Hong Kong</Link>.
+            Covering the Beijing Subway, Shanghai Metro, Guangzhou Metro, the
+            Hong Kong MTR, and the world's longest high-speed rail network.
+            Hong Kong is a Special Administrative Region with its own visa rules
+            and currency — see the <Link to="/countries/china" className="about-link">China explainer</Link> for details.
           </p>
         </div>
       </div>

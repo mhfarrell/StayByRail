@@ -7,6 +7,9 @@ const POPULAR_GUIDES = [
   { slug: "barcelona", label: "Barcelona" },
   { slug: "bangkok", label: "Bangkok" },
   { slug: "kyoto", label: "Kyoto" },
+  { slug: "beijing", label: "Beijing" },
+  { slug: "shanghai", label: "Shanghai" },
+  { slug: "hong_kong", label: "Hong Kong" },
 ];
 
 function Footer() {
@@ -40,6 +43,7 @@ function Footer() {
             <Link to="/journal" className="footer-nav-link">Journal</Link>
             <Link to="/itineraries" className="footer-nav-link">Itineraries</Link>
             <Link to="/passes" className="footer-nav-link">Transport passes</Link>
+            <Link to="/countries" className="footer-nav-link">Country rail guides</Link>
             <Link to="/travel-guide" className="footer-nav-link">Best times to travel</Link>
             <Link to="/train-times" className="footer-nav-link">Train times</Link>
             <Link to="/faq" className="footer-nav-link">FAQ</Link>

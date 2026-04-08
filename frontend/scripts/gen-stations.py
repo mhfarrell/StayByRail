@@ -37,6 +37,10 @@ CITY_DISPLAY = {
     "palma_de_mallorca": "Palma de Mallorca",
     "bangkok": "Bangkok", "chiang_mai": "Chiang Mai", "phuket": "Phuket",
     "pattaya": "Pattaya", "krabi": "Krabi",
+    "beijing": "Beijing", "shanghai": "Shanghai", "guangzhou": "Guangzhou",
+    "shenzhen": "Shenzhen", "chengdu": "Chengdu", "xian": "Xi'an",
+    "hangzhou": "Hangzhou",
+    "hong_kong": "Hong Kong",
 }
 
 CITY_COUNTRY = {
@@ -52,6 +56,8 @@ CITY_COUNTRY = {
     **dict.fromkeys(["madrid", "barcelona", "valencia", "seville", "bilbao", "malaga",
                      "palma_de_mallorca"], "Spain"),
     **dict.fromkeys(["bangkok", "chiang_mai", "phuket", "pattaya", "krabi"], "Thailand"),
+    **dict.fromkeys(["beijing", "shanghai", "guangzhou", "shenzhen", "chengdu",
+                     "xian", "hangzhou", "hong_kong"], "China"),
 }
 
 

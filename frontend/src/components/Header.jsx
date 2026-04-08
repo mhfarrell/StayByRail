@@ -119,6 +119,15 @@ function Header({ theme, onToggleTheme }) {
             Guides
           </NavLink>
 
+          {/* Journal — top-level link */}
+          <NavLink
+            to="/journal"
+            className={({ isActive }) => `header-nav-btn${isActive ? " active" : ""}`}
+            onClick={closeAll}
+          >
+            Journal
+          </NavLink>
+
           {/* Travel — top-level link */}
           <NavLink
             to="/travel-guide"

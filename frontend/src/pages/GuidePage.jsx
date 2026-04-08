@@ -5,6 +5,7 @@ import { getGuide, cityGuides } from "../data/cityGuides";
 import { getFaqs } from "../data/guideFaqs";
 import { getPriceBands, guidePriceBands } from "../data/guidePriceBands";
 import { getJourneyTimes } from "../data/guideJourneyTimes";
+import { countries } from "../data/countries";
 import stationsData from "../data/stations.json";
 import { useCityData } from "../hooks/useCityData";
 
@@ -504,6 +505,33 @@ function GuidePage() {
                   <span className="guide-related-line">{g.heroLine}</span>
                 </Link>
               ))}
+            </div>
+          </div>
+        );
+      })()}
+
+      {/* Country rail explainer link, when one exists for this country */}
+      {(() => {
+        const country = countries.find(
+          (c) => c.name.toLowerCase() === guide.country.toLowerCase()
+        );
+        if (!country) return null;
+        return (
+          <div className="guide-related">
+            <h3 className="guide-section-heading">Train Travel in {country.name}</h3>
+            <div className="guide-related-grid">
+              <Link
+                to={`/countries/${country.slug}`}
+                className="guide-related-card"
+              >
+                <span className="guide-related-city">
+                  {country.name} rail explainer
+                </span>
+                <span className="guide-related-line">
+                  Train types, booking on 12306, e-tickets, fares, and the
+                  practical quirks every visitor should know before arriving.
+                </span>
+              </Link>
             </div>
           </div>
         );

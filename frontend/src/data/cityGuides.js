@@ -1195,6 +1195,413 @@ export const cityGuides = [
     updatedAt: "2026-04",
     author: "Matt Farrell",
   },
+  {
+    slug: "beijing",
+    city: "Beijing",
+    country: "China",
+    heroLine: "China's capital and the centrepiece of the world's longest high-speed rail network",
+    metaTitle: "Hotels Near Beijing Train Stations — StayByRail Guide",
+    metaDescription:
+      "An honest guide to staying near Beijing's subway and high-speed rail stations. Where to base for the Forbidden City, Great Wall day trips, and which of Beijing's four mainline stations matters for your trip.",
+    intro:
+      "Beijing has one of the world's busiest urban rail systems — 27 lines, 800+ stations, and around 10 million passengers a day. Four major railway stations fan out to every corner of the country: high-speed services reach Shanghai in 4 hours 18 minutes, Guangzhou in around 8 hours, Xi'an in 5, and Hong Kong's West Kowloon in just under 9. Choosing the right hotel base means knowing which subway line reaches the Forbidden City without two changes — and which of the four mainline stations your specific train actually departs from.",
+    sections: [
+      {
+        heading: "Beijing's Four Mainline Stations",
+        body: "Beijing has four major railway stations and the one your train uses depends on where you're going. **Beijing Railway Station**, the original Soviet-era terminal at the south-east corner of the old city walls, handles conventional and overnight services plus the high-speed Beijing–Tianjin line. **Beijing South** (Beijingnan), 5 km south of the centre, is the main high-speed terminal — Shanghai, Tianjin, Jinan, and the entire east-coast HSR network depart from here. **Beijing West** (Beijingxi) is the largest of the four and handles long-distance services to the south and west — Wuhan, Guangzhou, Xi'an, Chengdu, and the daily through-train to Hong Kong's Kowloon Station. **Beijing North** (Beijingbei) was rebuilt for the 2022 Winter Olympics and now handles the high-speed Beijing–Zhangjiakou line plus a few other northern services.\n\nThe four stations are 5–15 km apart and not interchangeable. Always check your specific train's departure station before you book a hotel; a hotel near Beijing South will not save you from a 06:30 departure from Beijing West.",
+      },
+      {
+        heading: "The Beijing Subway in Plain English",
+        body: "The Beijing Subway is huge but well-signposted in both Chinese and English. Lines are numbered, and the most useful for tourists are: **Line 1** (red), running east–west under Chang'an Avenue through Tiananmen, Wangfujing, Dongdan, and the Guomao CBD; **Line 2** (blue), the loop around the old Ming-era city walls, hitting Beijing Railway Station, Qianmen, the Yonghegong Lama Temple, and Xizhimen; **Line 4** (cyan), running north–south through Xidan, Beijing Zoo, Zhongguancun, and out to the Summer Palace; and **Line 10** (light blue), the outer loop covering the CBD, the Sanlitun nightlife area (alight at Tuanjiehu), and Guomao.\n\nA single ride costs ¥3–9 depending on distance, paid via the Yikatong stored-value card or — much easier for short visits — via Alipay or WeChat Pay's scan-to-pay. Both apps now offer English-language tourist versions that accept overseas Visa and Mastercard, a major change from the situation just a few years ago.",
+      },
+      {
+        heading: "Where Tourists Actually Want to Stay",
+        body: "Three areas dominate first-visit hotel choices. **Wangfujing and Dongdan** (Line 1) sit closest to the Forbidden City and Tiananmen Square — this is the cluster of luxury international brands (Peninsula, Waldorf Astoria, Mandarin Oriental Wangfujing) and a pedestrianised shopping street. Quiet after 22:00, predictable, the safest first-time choice. **Sanlitun** (Tuanjiehu on Line 10) is Beijing's expat-and-nightlife district — international restaurants, bars open late, the Taikoo Li shopping complex, and a row of mostly four-star international hotels. Almost no historic atmosphere, but the most reliable place to find a room with a Western-style breakfast and English-speaking staff. **The hutongs around Gulou Dajie and Yonghegong** (Line 2) put you in the historic alleyway neighbourhood near the Drum and Bell Towers, where boutique courtyard hotels (converted siheyuan) offer the most distinctive sense of place in the city. The food scene around the Lama Temple is the best in central Beijing.\n\nFor a first trip, pick Wangfujing. For a second, pick a hutong courtyard hotel.",
+      },
+      {
+        heading: "The Great Wall Day Trip",
+        body: "Every Beijing visitor wants to see the Great Wall, and the choice of hotel base matters less than the choice of wall section. **Mutianyu** (90 minutes from central Beijing) is the most-restored, least-crowded section, with a cable car up and a toboggan down — the easiest day trip and the right answer for most first-time visitors. **Badaling** (1 hour from Beijing North on the Beijing–Zhangjiakou high-speed line) is the closest and most accessible but also the most crowded; it gets coach groups by the thousand. **Jinshanling and Simatai** (2.5–3 hours each way) are the wilder, less-restored options for travellers willing to commit a full day.\n\nFor Badaling specifically, the new high-speed line from Beijing North makes the trip 30 minutes each way — a hotel near Beijing North or with easy access to Line 4 (interchange to Beijing North) is convenient. For Mutianyu, a private driver or organised day tour from any central hotel is the standard approach.",
+      },
+      {
+        heading: "Practical Tips for Beijing",
+        body: "**Visa-free transit**: as of 2024, citizens of 50+ countries (including UK, US, EU, Canada, Australia) can transit through Beijing visa-free for up to 144 hours if they hold an onward ticket to a third country. This is the easiest way to see Beijing for most Western travellers without going through the full visa process — see the Chinese embassy site in your country for the current eligibility list.\n\n**Payment**: Alipay and WeChat Pay are universal; cash is rarely accepted in cafes and convenience stores. Both apps' tourist versions accept overseas Visa/Mastercard for top-up.\n\n**Internet**: most major Western sites (Google, Gmail, Instagram, WhatsApp, X, Facebook) are blocked from inside China. Install a VPN before arrival or rely on Apple Maps, Bing, and Pleco (offline Chinese dictionary) during the trip. WeChat itself works fine and is the dominant messaging platform locally.\n\n**Language**: signage in central Beijing is bilingual but most taxi drivers and small-restaurant servers do not speak English. Save your hotel's address in Chinese characters before arrival.",
+      },
+    ],
+    keyStations: [
+      { name: "Wangfujing", reason: "Closest hotel cluster to the Forbidden City and Tiananmen, Line 1, premium international brands" },
+      { name: "Beijing South Railway Station", reason: "Main high-speed terminal for Shanghai and the east-coast HSR network — book here if you have an early HSR departure" },
+      { name: "Beijing Railway Station", reason: "Conventional and overnight services, Line 2 loop, walking distance to Qianmen" },
+      { name: "Tuanjiehu", reason: "StayByRail pick — Sanlitun nightlife and expat district, Line 10, four-star international hotel cluster with English-speaking staff" },
+      { name: "Yonghegong Lama Temple", reason: "Hutong-and-courtyard boutique hotel cluster, Lines 2 and 5, historic alleyway neighbourhood with the best local food" },
+      { name: "Beijing West Railway Station", reason: "Long-distance services to Wuhan, Guangzhou, Xi'an, and through-trains to Hong Kong" },
+    ],
+    searchCity: "Beijing",
+    links: [
+      { label: "China Railway 12306", url: "https://www.12306.cn/en/", desc: "Official China Railway booking site (English version)" },
+      { label: "Trip.com China Trains", url: "https://us.trip.com/trains/china/", desc: "English-language China train search and booking" },
+      { label: "Beijing Subway", url: "https://www.bjsubway.com/en/", desc: "Official Beijing Subway map and timetables" },
+      { label: "China Highlights Beijing", url: "https://www.chinahighlights.com/beijing/", desc: "Comprehensive English-language Beijing travel guide" },
+    ],
+    wikipedia: "Beijing",
+    lat: 39.9042,
+    lon: 116.4074,
+    countryCode: "CN",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "shanghai",
+    city: "Shanghai",
+    country: "China",
+    heroLine: "Asia's largest metro system and the centrepiece of east-coast high-speed rail",
+    metaTitle: "Hotels Near Shanghai Train Stations — StayByRail Guide",
+    metaDescription:
+      "Where to stay in Shanghai by station and metro line. The Bund vs Lujiazui vs Xintiandi, the two airports, the Maglev, and Hongqiao Railway Station — China's biggest by floor area.",
+    intro:
+      "Shanghai has the world's longest urban rail network — over 830 km across 20 lines — plus three mainline railway stations, two airports connected by metro, and the famous Maglev express to Pudong Airport. The single most important rail decision a Shanghai visitor makes is which side of the Huangpu River to base on, and that decision usually comes down to one metro line: Line 2, which runs east–west under the river and connects almost everything a tourist would want to reach.",
+    sections: [
+      {
+        heading: "Line 2: The Indispensable Line",
+        body: "Line 2 is the line. It runs from Pudong International Airport in the east, through Longyang Road (Maglev terminus), Century Park, Lujiazui (Pudong financial district), under the river to East Nanjing Road (the Bund), People's Square, West Nanjing Road (Jing'an Temple), Zhongshan Park, and out to Hongqiao Airport and Hongqiao Railway Station in the west. If you stay anywhere within five minutes of a Line 2 station, the entire central tourist core is one ride away with no transfers.\n\nLine 1 (red) runs north–south through People's Square, Huangpi South Road, and down to Xujiahui — useful for the southern shopping district and as a backup if Line 2 is crowded. Line 10 covers Yuyuan Garden, Xintiandi, and Jiaotong University — the boutique-and-historic cluster. Lines 7 and 12 fill in the Jing'an / former French Concession area.",
+      },
+      {
+        heading: "The Two Airports and Hongqiao Railway Station",
+        body: "Pudong International (PVG) is the main international gateway, 30 km east of the city. The famous Maglev to Longyang Road takes 8 minutes and tops 300 km/h, but Longyang Road sits 5 km from anywhere central — for most travellers, Metro Line 2 directly to People's Square (45–55 minutes) is more practical end-to-end, and a quarter the cost. Hongqiao Airport (SHA) is the smaller domestic airport in the west. **Hongqiao Railway Station** sits literally next door to Hongqiao Airport and is China's largest railway station by floor area — roughly the size of Heathrow Terminal 5 with platforms attached. Almost every long-distance HSR train from Shanghai (Beijing, Hangzhou, Nanjing, Suzhou, Hefei, Wuhan) departs from here.\n\nFor any trip that combines a Shanghai stay with an HSR onward journey, having one night near Hongqiao before or after the rest of the trip eliminates a 30-minute Metro ride with luggage on the morning of departure.",
+      },
+      {
+        heading: "The Bund vs Lujiazui vs Xintiandi",
+        body: "Three classic hotel zones, with very different characters.\n\n**The Bund** (Puxi side, around East Nanjing Road station) puts you in the colonial-era riverfront strip with the famous skyline view across the water. Hotels here range from grand historic icons (Peace Hotel, Waldorf Astoria, Peninsula) to a tier of well-located mid-range Chinese chains a few blocks back. The trade-off: you get the best evening views of Shanghai's skyline — and the densest concentration of tourists in the city.\n\n**Lujiazui** (Pudong side, Line 2 directly under the river from the Bund) is the skyscraper financial district. The premium hotels here — Park Hyatt at the Shanghai World Financial Center, Ritz-Carlton at Shanghai IFC, Grand Hyatt at the Jin Mao Tower — occupy the upper floors of the towers themselves and offer the kind of room-with-a-view that defines a luxury Shanghai trip. Quieter at night. The view from your room goes the other way: you look at the Bund, not from it.\n\n**Xintiandi** (Line 10) is the boutique-and-bars area built around restored shikumen housing in the former French Concession. Hotels are smaller, design-forward, and the streets are walkable in the way that the Bund and Lujiazui are not. The best base for a second Shanghai trip or for travellers who prioritise neighbourhood feel over landmark proximity.",
+      },
+      {
+        heading: "Practical Tips for Shanghai",
+        body: "**Visa-free transit**: Shanghai is part of the 240-hour Yangtze Delta visa-free transit zone introduced in 2024 — citizens of 50+ countries with onward tickets to a third country can stay up to 10 days without a visa. This is one of the most generous transit policies in Asia and has made short Shanghai breaks dramatically easier for Western travellers.\n\n**Payment, internet, language**: same as Beijing. Alipay and WeChat Pay tourist versions accept overseas cards. Western sites are blocked — bring a VPN. Signage is bilingual; spoken English is patchy.\n\n**Hongqiao Railway Station logistics**: the building is enormous and signage to specific platforms is dense. Allow 30 minutes from Metro arrival to your platform, especially if you don't read Chinese characters. Security checks for HSR departures are mandatory and add 5–10 minutes on top.\n\n**The Maglev**: worth doing once for the experience even if Line 2 is more practical end-to-end. The 8-minute trip costs ¥50 one-way (about £5.50), or ¥40 with a same-day flight ticket. It's the only commercial maglev train in the world.",
+      },
+    ],
+    keyStations: [
+      { name: "East Nanjing Road", reason: "The Bund and the colonial-era riverfront, walkable to historic luxury hotels, Lines 2 and 10" },
+      { name: "Lujiazui", reason: "Pudong financial district skyline, premium tower hotels, Line 2 direct under the river from the Bund" },
+      { name: "People's Square", reason: "Central interchange (Lines 1, 2, 8), shopping streets, Shanghai Museum, mid-range hotel cluster" },
+      { name: "Xintiandi", reason: "StayByRail pick — boutique restored shikumen district, walkable, quieter than the Bund without losing centrality" },
+      { name: "Hongqiao Railway Station", reason: "Main HSR terminal for Beijing, Hangzhou, Suzhou, Nanjing — adjacent to Hongqiao Airport" },
+      { name: "Jing'an Temple", reason: "West Nanjing Road, Line 2 direct, walkable cafes-galleries-and-boutiques district" },
+    ],
+    searchCity: "Shanghai",
+    links: [
+      { label: "China Railway 12306", url: "https://www.12306.cn/en/", desc: "Official China Railway booking site (English version)" },
+      { label: "Trip.com China Trains", url: "https://us.trip.com/trains/china/", desc: "English-language China train search and booking" },
+      { label: "Shanghai Metro", url: "http://service.shmetro.com/en/", desc: "Official Shanghai Metro map and journey planner" },
+      { label: "Smart Shanghai", url: "https://www.smartshanghai.com/", desc: "English-language listings and dining guide for Shanghai" },
+    ],
+    wikipedia: "Shanghai",
+    lat: 31.2304,
+    lon: 121.4737,
+    countryCode: "CN",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "guangzhou",
+    city: "Guangzhou",
+    country: "China",
+    heroLine: "South China's high-speed rail capital and the gateway to Hong Kong",
+    metaTitle: "Hotels Near Guangzhou Train Stations — StayByRail Guide",
+    metaDescription:
+      "Where to stay in Guangzhou by station and metro line. The three big stations (Guangzhou, Guangzhou South, Guangzhou East), the Pearl River, and where to base for Tianhe and Yuexiu.",
+    intro:
+      "Guangzhou is the third-largest city in mainland China and the high-speed rail hub for the entire south. Three major stations handle different traffic flows: Guangzhou Railway Station (the historic central terminal), Guangzhou South (the modern HSR mega-station for Wuhan, Beijing, and the high-speed line into Hong Kong), and Guangzhou East (cross-border services and intercity to Shenzhen). The Metro is now over 600 km long — already larger than the London Underground — and the right line choice gets you to the Pearl River, Canton Tower, or the Cantonese-food districts in 15 minutes flat.",
+    sections: [
+      {
+        heading: "Guangzhou's Three Big Stations",
+        body: "**Guangzhou Railway Station** (the historic 1974-built central terminal) sits in the north of Yuexiu district and handles a mix of conventional services, sleeper trains, and a few high-speed lines. It's the most central of the three but the busiest with Lunar New Year migrant traffic — the famous \"40 million people moving\" footage every February usually shows this station. **Guangzhou South** (Guangzhounan), 17 km south of the centre in Panyu district, is the main HSR terminal: Wuhan, Changsha, Beijing, Shanghai, Kunming, and crucially the Guangzhou–Shenzhen–Hong Kong Express Rail Link to Hong Kong West Kowloon all run from here. **Guangzhou East** (Guangzhoudong), in Tianhe district, is the historic cross-border terminal for the conventional through-trains to Hong Kong's Hung Hom — still in service though most travellers now use the high-speed link from Guangzhou South.\n\nFor most tourists the practical question is whether your specific HSR ticket departs from Guangzhou South (almost certainly yes) and how you'll reach it. Metro Line 2 connects the centre to Guangzhou South in about 30 minutes; allow 45 with the walk to your platform.",
+      },
+      {
+        heading: "The Metro and the Pearl River",
+        body: "Guangzhou's metro is now one of the world's largest. The most useful lines for tourists are: **Line 1**, the original east–west spine running through Chen Clan Academy (the city's best traditional Cantonese architecture museum), Gongyuanqian (interchange with Line 2 and the closest stop to Beijing Road pedestrian street), Tiyu Xilu (Tianhe shopping district interchange), and Guangzhou East Railway Station; **Line 2**, the north–south spine connecting Guangzhou Railway Station, Yuexiu Park, Sun Yat-sen Memorial Hall, Haizhu Square, and Guangzhou South; **Line 3**, the longest and busiest line, running from Tianhe and Zhujiang New Town (the modern CBD) past Canton Tower and out to Baiyun Airport.\n\nThe Pearl River is the natural axis of the city. Canton Tower (600 m, taller than the Eiffel and Empire State combined) sits on the south bank near Line 3's Canton Tower station, with the best views back towards Zhujiang New Town's skyline at sunset.",
+      },
+      {
+        heading: "Where to Base in Guangzhou",
+        body: "Three main hotel clusters work for different trip types.\n\n**Tianhe / Zhujiang New Town** (Lines 1, 3, APM) is the modern CBD with the highest concentration of international five-stars (Mandarin Oriental, Four Seasons in the IFC, Ritz-Carlton, Grand Hyatt). Skyline views, Western dining, English-speaking staff — the safest pick for a first-time China visitor on a corporate budget.\n\n**Yuexiu** (Line 2) is the historic centre with Beijing Road pedestrian shopping street, Yuexiu Park, the Sun Yat-sen Memorial Hall, and a tighter cluster of mid-range Chinese chains and boutique hotels. More authentic, less skyline-pretty, walking distance to most of central Guangzhou's heritage sites.\n\n**Liwan / Shamian Island** (Line 1 at Huangsha) is the colonial-era riverside cluster — Shamian was the foreign concession from 1859 to 1946 and now features tree-lined avenues, cafes, and a handful of historic hotels. The most distinctive base for a trip that emphasises the city's colonial history and Cantonese-food heritage rather than its modern skyline.",
+      },
+      {
+        heading: "Practical Tips for Guangzhou",
+        body: "**Visa-free transit**: Guangzhou is part of the 240-hour visa-free transit zone for citizens of 50+ countries with onward tickets to a third country. The same rules as Beijing and Shanghai apply.\n\n**Cantonese vs Mandarin**: Guangzhou is the historic Cantonese-speaking heartland but most signage and most under-30s also speak Mandarin. You don't need to learn Cantonese — Mandarin or English plus a translation app handles everything.\n\n**Weather**: Guangzhou is subtropical and hot. The best months for a comfortable trip are October–December and February–April. June–September is genuinely punishing (35°C+ with high humidity) and the autumn typhoon window means occasional days of disruption.\n\n**Onwards to Hong Kong**: the high-speed link from Guangzhou South to Hong Kong West Kowloon is 48 minutes for the express service. You clear both Chinese exit and Hong Kong entry immigration inside the West Kowloon station building under \"co-location\" rules. Bring your passport and the entry slip you'll need for Hong Kong.",
+      },
+    ],
+    keyStations: [
+      { name: "Tiyu Xilu", reason: "Tianhe CBD interchange (Lines 1 and 3), closest metro to the Zhujiang New Town five-star cluster" },
+      { name: "Zhujiang New Town", reason: "Skyline-view financial district, premium international hotels, Line 3 direct to Canton Tower" },
+      { name: "Guangzhou South Railway Station", reason: "Main HSR terminal — Beijing, Wuhan, Shanghai, and the high-speed link to Hong Kong" },
+      { name: "Gongyuanqian", reason: "Yuexiu district, Beijing Road pedestrian street, mid-range hotel cluster, Lines 1 and 2 interchange" },
+      { name: "Canton Tower", reason: "South-bank Pearl River views, walking distance to the tower itself, Line 3" },
+      { name: "Chen Clan Academy", reason: "Liwan district, traditional Cantonese architecture museum, Line 1, near Shamian Island" },
+    ],
+    searchCity: "Guangzhou",
+    links: [
+      { label: "China Railway 12306", url: "https://www.12306.cn/en/", desc: "Official China Railway booking site (English version)" },
+      { label: "Trip.com China Trains", url: "https://us.trip.com/trains/china/", desc: "English-language China train search and booking" },
+      { label: "Guangzhou Metro", url: "http://www.gzmtr.com/ymtr/", desc: "Official Guangzhou Metro map and timetables" },
+      { label: "Time Out Guangzhou", url: "https://www.timeoutshanghai.com/guangzhou/", desc: "Listings and dining for Guangzhou" },
+    ],
+    wikipedia: "Guangzhou",
+    lat: 23.1291,
+    lon: 113.2644,
+    countryCode: "CN",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "shenzhen",
+    city: "Shenzhen",
+    country: "China",
+    heroLine: "Mainland China's gateway to Hong Kong, with three border-crossing rail stations",
+    metaTitle: "Hotels Near Shenzhen Train Stations — StayByRail Guide",
+    metaDescription:
+      "Where to stay in Shenzhen by station. The three crossings to Hong Kong, the Futian / Shenzhen North / Luohu split, and which one is best for a same-day Hong Kong trip.",
+    intro:
+      "Shenzhen is the Special Economic Zone that turned a fishing village into a 17-million-person tech metropolis in 40 years. For most travellers it's the mainland-China gateway to Hong Kong: three different railway stations sit on three different border crossings, the metro is one of the cleanest and most modern in China, and an increasing number of visitors stay here as a much cheaper base for short Hong Kong trips. Knowing which station serves which crossing is the single most useful piece of Shenzhen knowledge.",
+    sections: [
+      {
+        heading: "The Three Crossings to Hong Kong",
+        body: "Shenzhen has three rail-served border crossings to Hong Kong, each at a different station and each with a different downstream destination on the Hong Kong side.\n\n**Luohu** (Lo Wu on the HK side) is the historic original crossing. Shenzhen Metro Line 1 ends at Luohu; you walk across the border building, clear immigration, and pick up the MTR East Rail Line at Lo Wu for the 40-minute ride to Hung Hom in Kowloon. This is the cheapest cross-border option but also the most basic — long queues at peak times, no real shopping, and a journey time that looks attractive on paper but stretches with the immigration wait.\n\n**Futian Checkpoint** (Lok Ma Chau on the HK side) is the modern crossing, opened in 2007 to relieve Luohu. Shenzhen Metro Line 4 ends here. The terminal is more spacious, queues are usually shorter, and you connect into MTR's East Rail Line at Lok Ma Chau for the same 40-minute ride to Hung Hom.\n\n**Futian Railway Station** is the high-speed station — different building, same Futian district. From here the Guangzhou–Shenzhen–Hong Kong Express Rail Link reaches Hong Kong West Kowloon in 14 minutes, with co-located immigration inside West Kowloon itself. This is by far the fastest cross-border option and the right answer for travellers who value time over fare savings.",
+      },
+      {
+        heading: "Shenzhen's Big Stations Beyond the Crossings",
+        body: "**Shenzhen North** (Shenzhennei) is the city's main HSR mega-station, 12 km north of Futian. Long-distance HSR services to Beijing, Shanghai, Wuhan, Changsha, and Guangzhou all use Shenzhen North. Connected to central Shenzhen by Metro Line 4 and the new Line 6. Hotels around Shenzhen North are mostly business chains catering to corporate travellers in for tech-industry meetings.\n\n**Shenzhen Railway Station** (also at Luohu) is the historic conventional terminal — overnight services and a few HSR routes. It shares the building with the Luohu border crossing and Luohu Commercial City (the famous fake-goods market on the mainland side).\n\n**Shenzhen East** (Buji) is a newer secondary station for some Guangzhou-Shenzhen intercity services — usually a backup, not a target.",
+      },
+      {
+        heading: "Where to Base in Shenzhen",
+        body: "Three main hotel clusters work for different trip purposes.\n\n**Futian / Civic Center** (Lines 1 and 4) is the modern administrative-and-CBD core, with international five-stars (Four Seasons, Ritz-Carlton, Grand Hyatt) and the convenience of being within a 10-minute Metro ride of both Futian Checkpoint and Futian Railway Station. The right base for any trip that involves a Hong Kong day trip or HSR onward travel — and it's also the most expensive cluster by some distance.\n\n**Luohu** (Line 1) is the older commercial centre, much cheaper, with mid-range Chinese chains. Window of the World, the historic theme park five stops west on Line 1, is a kitsch but useful day-out for first-time visitors. The downside: it's a busy, slightly worn district that feels its age.\n\n**Nanshan / OCT** (Line 1 west) is the tech-startup-and-shopping district near the Window of the World and Happy Valley theme parks. Quieter, more residential, closer to the airport. For travellers in town for tech meetings or for a family trip with the theme parks as the centrepiece, Nanshan is the right pick.",
+      },
+      {
+        heading: "Shenzhen as a Cheap Base for Hong Kong",
+        body: "An increasing number of travellers stay in Shenzhen specifically to keep the trip costs of a Hong Kong visit manageable. The maths is straightforward: a four-star hotel in Hong Kong's Tsim Sha Tsui costs HK$1,800–2,500 per night during peak season; the equivalent four-star in Futian costs RMB 600–900 (roughly HK$650–1,000), a 50–60 percent saving.\n\nThe trade-off is the daily border crossing. Futian Railway Station to Hong Kong West Kowloon by HSR is 14 minutes plus 20–30 minutes for immigration on each side; total round-trip overhead is around 1 hour 30 minutes per day. For a one-day Hong Kong visit this overhead is bigger than the saving. For a four-day trip with daily Hong Kong outings it pays off significantly.\n\nThe pre-requisites: a multi-entry mainland Chinese visa (or eligibility for visa-free transit), a passport, and the ability to handle two daily immigration queues. If those work for you, the Shenzhen base is one of Asia's best hotel arbitrages.",
+      },
+    ],
+    keyStations: [
+      { name: "Futian Checkpoint", reason: "StayByRail pick — modern cross-border terminal to Lok Ma Chau, Line 4, walking distance to the Futian CBD hotel cluster" },
+      { name: "Futian Railway Station", reason: "High-speed link to Hong Kong West Kowloon in 14 minutes, the fastest cross-border option" },
+      { name: "Shenzhen North Railway Station", reason: "Main long-distance HSR terminal — Beijing, Shanghai, Wuhan — Lines 4 and 6" },
+      { name: "Civic Center", reason: "Futian district administrative centre, premium international hotels, Lines 1 and 4 interchange" },
+      { name: "Luohu", reason: "Original Hong Kong border crossing (Lo Wu), historic Shenzhen Railway Station, Line 1 terminus, cheap mid-range hotels" },
+      { name: "Window of the World", reason: "Nanshan district hotel cluster, theme park, Line 1, close to the airport" },
+    ],
+    searchCity: "Shenzhen",
+    links: [
+      { label: "China Railway 12306", url: "https://www.12306.cn/en/", desc: "Official China Railway booking site (English version)" },
+      { label: "Trip.com China Trains", url: "https://us.trip.com/trains/china/", desc: "English-language China train search and booking" },
+      { label: "Shenzhen Metro", url: "http://www.szmc.net/", desc: "Official Shenzhen Metro map and journey planner" },
+      { label: "MTR Hong Kong", url: "https://www.mtr.com.hk/", desc: "Hong Kong MTR for cross-border journey planning" },
+    ],
+    wikipedia: "Shenzhen",
+    lat: 22.5431,
+    lon: 114.0579,
+    countryCode: "CN",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "chengdu",
+    city: "Chengdu",
+    country: "China",
+    heroLine: "Western China's high-speed gateway and the panda capital of the world",
+    metaTitle: "Hotels Near Chengdu Train Stations — StayByRail Guide",
+    metaDescription:
+      "Where to stay in Chengdu by station and metro line. Tianfu Square, Chunxi Road, and which station gets you closest to the Giant Panda Research Base.",
+    intro:
+      "Chengdu is the capital of Sichuan, the historic centre of one of China's most distinctive cuisines, and — for most international visitors — the only realistic place to see giant pandas at scale. It's also the largest city in western China and the high-speed rail gateway to Tibet, Yunnan, and the rest of the Sichuan basin. The Metro now has over a dozen lines, the centre is built around the Tianfu Square plaza, and three major railway stations split the long-distance traffic in different directions.",
+    sections: [
+      {
+        heading: "Chengdu's Three Railway Stations",
+        body: "**Chengdu East** (Chengdudong) is the main high-speed rail terminal and one of the largest stations in western China. Trains from Chengdu East reach Chongqing in 1 hour 13 minutes, Xi'an in 3 hours 30, Shanghai in around 11 hours, and Beijing in around 8. If you arrive in Chengdu by HSR from any other major Chinese city, you'll almost certainly arrive at Chengdu East. Connected to the centre by Metro Line 2.\n\n**Chengdu Railway Station** (the historic Chengdubei, north of the centre) handles conventional and sleeper services plus a few regional HSR routes. The Sichuan-Tibet sleeper train still leaves from here. Connected by Metro Line 1.\n\n**Chengdu South** (Chengdunan) handles a smaller share of HSR traffic mostly to nearby cities (Mianyang, Leshan, Emeishan). Useful if you're visiting the Leshan Giant Buddha or Mount Emei as a day trip.",
+      },
+      {
+        heading: "The Metro and Tianfu Square",
+        body: "**Tianfu Square** is the geographic and cultural heart of central Chengdu — a vast plaza framed by the Sichuan Science and Technology Museum and a 30-metre statue of Chairman Mao. Lines 1 and 2 intersect underneath the square, making it the most useful single station to anchor a Chengdu trip. Five minutes' walk east takes you to Chunxi Road, the city's pedestrianised shopping district and the IFS shopping mall (with the famous giant climbing panda sculpture on its roof).\n\nLine 1 (red, north–south) connects Chengdu Railway Station, Wenshu Monastery (one of the city's best-preserved Buddhist temples), Tianfu Square, and Chengdu South. Line 2 (orange, east–west) connects Renmin Park, Tianfu Square, Chunxi Road, Niuwangmiao, and Chengdu East Railway Station. For most tourist itineraries, these two lines cover everything you need.",
+      },
+      {
+        heading: "Where to Base for Pandas",
+        body: "The Chengdu Research Base of Giant Panda Breeding is 12 km north of central Chengdu in the Chenghua district. Two practical ways to reach it: by Metro to Panda Avenue station (Line 3, then a 10-minute taxi or bus to the entrance), or by direct taxi from any central hotel (around RMB 50–80 each way, 25–40 minutes depending on traffic). Most hotels and hostels can also book a half-day organised tour with hotel pickup, which is the most popular option for first-time visitors.\n\nThe pandas are most active in the early morning. Aim to be at the base entrance by 08:00 — by 11:00 the bears retreat into the shaded enclosures and you'll see far less. This morning-priority logic means a hotel near a Line 3 station, or at least with easy taxi access, makes the day significantly easier than the journey from Chengdu South or East.",
+      },
+      {
+        heading: "Where to Base Otherwise",
+        body: "Three main hotel clusters work in central Chengdu. **Tianfu Square / Chunxi Road** is the central business and shopping district — the highest concentration of international four- and five-stars (Niccolo, Ritz-Carlton, Temple House, Diaoyutai Boutique) and the closest base to the city's heritage sites. **Renmin Park / Kuanzhai Alley** is the historic and tea-house district just west of Tianfu Square — boutique hotels and the best traditional Sichuan tea-house experience. **Chengdu East Station area** is the predictable HSR transit option for travellers passing through with an early or late train; mostly business chains, less to do in the evenings.\n\nFor a first Chengdu trip, the Tianfu Square area is the strongest pick — central, dense with food, walking distance to most things you'd want to see in the city itself.",
+      },
+    ],
+    keyStations: [
+      { name: "Tianfu Square", reason: "Central plaza, Lines 1 and 2 interchange, walking distance to Chunxi Road and most central hotels" },
+      { name: "Chunxi Road", reason: "Pedestrianised shopping district, Line 2, mid-range and boutique hotels with easy walking access" },
+      { name: "Chengdu East Railway Station", reason: "Main HSR terminal — Chongqing, Xi'an, Shanghai, Beijing — Line 2" },
+      { name: "Wenshu Monastery", reason: "Best-preserved Buddhist temple in central Chengdu, Line 1, vegetarian temple cuisine cluster" },
+      { name: "Renmin Park", reason: "Historic park-and-tea-house district, Line 2, walking distance to Kuanzhai Alley" },
+      { name: "Chengdu Railway Station", reason: "Conventional services and Sichuan-Tibet sleeper, Line 1" },
+    ],
+    searchCity: "Chengdu",
+    links: [
+      { label: "China Railway 12306", url: "https://www.12306.cn/en/", desc: "Official China Railway booking site (English version)" },
+      { label: "Trip.com China Trains", url: "https://us.trip.com/trains/china/", desc: "English-language China train search and booking" },
+      { label: "Chengdu Panda Base", url: "https://www.panda.org.cn/english/", desc: "Official Chengdu Research Base of Giant Panda Breeding" },
+      { label: "China Highlights Chengdu", url: "https://www.chinahighlights.com/chengdu/", desc: "Comprehensive English-language Chengdu travel guide" },
+    ],
+    wikipedia: "Chengdu",
+    lat: 30.5728,
+    lon: 104.0668,
+    countryCode: "CN",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "xian",
+    city: "Xi'an",
+    country: "China",
+    heroLine: "The Silk Road's eastern terminus, the Terracotta Army's home, and a complete Ming-dynasty city wall",
+    metaTitle: "Hotels Near Xi'an Train Stations — StayByRail Guide",
+    metaDescription:
+      "Where to stay in Xi'an by station and metro line. The walled city centre, the two main railway stations, and which one gets you closest to the Terracotta Army shuttle.",
+    intro:
+      "Xi'an is one of the four ancient capitals of China and the historic eastern terminus of the Silk Road. For most international visitors it's the city of the Terracotta Army — but the city itself is unusual in China for keeping a complete 14 km Ming-era city wall around the historic centre, which makes the question of \"inside the wall or outside\" the most consequential hotel decision in Xi'an. The Metro is small (eight lines as of 2026), but Lines 1 and 2 between them frame the walled city perfectly and connect both railway stations.",
+    sections: [
+      {
+        heading: "Xi'an's Two Railway Stations",
+        body: "**Xi'an Railway Station** (the historic terminal, just outside the city walls on the north-east side) handles conventional and overnight services plus some regional trains. It's directly outside the Anyuanmen gate of the old city walls, which is the main reason it's still useful — walk out, cross the road, and you're in the historic centre. Most importantly, the public bus shuttles to the Terracotta Army (Tour Bus 5 / 游5) depart from a designated parking area immediately east of this station. For Terracotta Army logistics, no other station in Xi'an matters.\n\n**Xi'an North** (Xi'anbei) is the modern HSR mega-station 12 km north of the centre. Almost every long-distance HSR service uses Xi'an North: Beijing in 4 hours 30, Chengdu in 3 hours 30, Shanghai in around 6 hours, Lanzhou in 3 hours. Connected to the centre by Metro Line 2. Allow 30 minutes from a central Bell Tower hotel to a platform at Xi'an North, more if you don't read Chinese.",
+      },
+      {
+        heading: "Inside the Walls vs Outside",
+        body: "Xi'an's city walls enclose a square of historic centre roughly 3 km on each side, with the Bell Tower at the geometric centre and gates at each cardinal point. Hotels inside the walls give you walking access to the historic core — Bell Tower, Drum Tower, Muslim Quarter (one of the best food districts in China), the Big Mosque, and the South Gate (Yongningmen) where the city wall walks and bicycle rentals start. Hotels outside the walls — particularly to the south around the Big Wild Goose Pagoda — tend to be larger international five-stars with more amenities but require a 10–15 minute Metro ride to reach the historic core.\n\nFor a first Xi'an trip, base inside the walls. The Bell Tower / Beidajie area has the highest density of mid-range and boutique hotels and the shortest walks to the food and the wall itself. International luxury travellers may prefer the Big Wild Goose Pagoda district to the south, which has more space and fewer crowds at the price of a daily commute back to the centre.",
+      },
+      {
+        heading: "Reaching the Terracotta Army",
+        body: "The Terracotta Army (Bingmayong) is at Lintong, 35 km east of Xi'an. There are three practical ways to get there.\n\n**Tour Bus 5 (游5)** from outside Xi'an Railway Station's east parking lot is the cheapest and most authentic option. Buses leave when full from around 07:00 to 18:00, the journey takes about 1 hour, and the fare is RMB 7–9 each way. Buy your ticket on the bus. This is the classic \"do it yourself\" approach and works fine for travellers willing to navigate a Chinese-language ticketing experience.\n\n**Organised half-day or full-day tour from your hotel** is the easiest option: hotel pickup, English-speaking guide, fast-track entry, and a stop at the Huaqing Hot Springs on the way back. Most central Xi'an hotels can book this for RMB 250–500 per person.\n\n**Direct taxi or Didi** is the third option — RMB 200–300 each way depending on traffic.\n\nWhichever you pick, aim to arrive by 09:00. Pit 1 (the famous one) gets crowded by mid-morning and the photos are dramatically worse with 500 people pushing for the front row.",
+      },
+      {
+        heading: "Practical Tips for Xi'an",
+        body: "**Best season**: September–November and March–May are the best months. June–August is hot and crowded with domestic tourists; December–February is cold and dry but the historic sites are noticeably quieter and cheaper.\n\n**Climbing or cycling the wall**: rent a bike at the South Gate (Yongningmen) for around RMB 45 for 100 minutes — the full circuit of the wall is 14 km and takes a comfortable 90 minutes by bike. One of the most distinctive activities in any Chinese city.\n\n**Muslim Quarter food**: the streets immediately west of the Drum Tower (Beiyuanmen Muslim Street and the alleys around it) form one of the best night-food districts in China. Yangrou paomo (lamb soup with bread), roujiamo (Chinese hamburgers), and biangbiang noodles are the staples. Open until 23:00 most nights.\n\n**Visa-free transit**: Xi'an is part of the 240-hour visa-free transit zone for citizens of 50+ countries with onward tickets to a third country.",
+      },
+    ],
+    keyStations: [
+      { name: "Bell Tower", reason: "StayByRail pick — geographic centre of the walled city, Line 2, walking distance to the Drum Tower and Muslim Quarter food district" },
+      { name: "Yongningmen (South Gate)", reason: "Main wall-climb and bicycle rental point, Line 2, boutique courtyard hotels just inside the gate" },
+      { name: "Beidajie", reason: "North of the Bell Tower, mid-range hotel cluster, Lines 1 and 2 interchange" },
+      { name: "Xi'an Railway Station", reason: "Historic terminal, Tour Bus 5 to the Terracotta Army leaves from immediately outside" },
+      { name: "Xi'an North Railway Station", reason: "Main HSR mega-station — Beijing, Chengdu, Shanghai, Lanzhou — Line 2 from the centre" },
+      { name: "Xiaozhai", reason: "South of the walls, Big Wild Goose Pagoda district, larger international hotels" },
+    ],
+    searchCity: "Xi'an",
+    links: [
+      { label: "China Railway 12306", url: "https://www.12306.cn/en/", desc: "Official China Railway booking site (English version)" },
+      { label: "Trip.com China Trains", url: "https://us.trip.com/trains/china/", desc: "English-language China train search and booking" },
+      { label: "Xi'an Metro", url: "http://www.xianrail.com/", desc: "Official Xi'an Metro map and timetables" },
+      { label: "Travel China Guide Xi'an", url: "https://www.travelchinaguide.com/cityguides/xian.htm", desc: "English-language Xi'an travel guide" },
+    ],
+    wikipedia: "Xi'an",
+    lat: 34.3416,
+    lon: 108.9398,
+    countryCode: "CN",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "hangzhou",
+    city: "Hangzhou",
+    country: "China",
+    heroLine: "30 minutes from Shanghai by high-speed and built around the West Lake UNESCO site",
+    metaTitle: "Hotels Near Hangzhou Train Stations — StayByRail Guide",
+    metaDescription:
+      "Where to stay in Hangzhou by station and metro line. West Lake, Wulin Square, and Hangzhou East — the high-speed gateway 45 minutes from Shanghai.",
+    intro:
+      "Hangzhou is the capital of Zhejiang province and one of China's most-visited domestic destinations, built around the famous West Lake (Xi Hu) — a UNESCO World Heritage Site since 2011 and the inspiration for thousands of years of Chinese landscape painting. It is also Alibaba's home city, a tech hub of around 10 million people, and a 45-minute high-speed train from Shanghai. For most international visitors Hangzhou is a one- or two-day side trip from a Shanghai base, and the practical question is whether to stay near West Lake itself or near the Hangzhou East HSR station.",
+    sections: [
+      {
+        heading: "Hangzhou East and the High-Speed Link from Shanghai",
+        body: "**Hangzhou East Railway Station** (Hangzhoudong) is one of the largest HSR stations in China — a vast steel-and-glass cathedral handling around 1,000 trains a day. The Shanghai Hongqiao to Hangzhou East run takes 45 minutes on the express service and there are typically two or three trains an hour for most of the day. Tickets from RMB 73 (around £8). This frequency and price is what makes Hangzhou a viable Shanghai day trip in a way that no European destination at the same distance is.\n\nHangzhou East is connected to central Hangzhou by Metro Lines 1 and 4. Wulin Square (the city centre) is 15 minutes by Line 1; West Lake's Longxiangqiao stop is 18 minutes. Allow 30–45 minutes total from arriving at Hangzhou East to checking into a central hotel.\n\n**Hangzhou Railway Station** (Chengzhan, the historic central terminal south of West Lake) handles a few conventional services and is closer to West Lake walking-wise, but most modern HSR services use Hangzhou East instead.",
+      },
+      {
+        heading: "West Lake: Where to Stay",
+        body: "West Lake is the entire reason most visitors come to Hangzhou. The lake is roughly 3 km × 2 km, framed by hills on three sides and the city on the fourth (eastern) side. Hotels along the eastern shore — particularly the strip from Hubin Road north to Wulin Square — give you walking access to the lake's promenade, the famous Broken Bridge (Duan Qiao), and the main causeway to Lonely Island (Gushan).\n\n**Hubin Road / Longxiangqiao** is the densest cluster of high-end and mid-range hotels with direct lake access. The Four Seasons Hangzhou at West Lake, Amanfayun (in the hills behind the lake), and the historic Shangri-La are the standout luxury choices. Mid-range chains line the streets one or two blocks back from the lakefront.\n\n**Wulin Square**, 15 minutes' walk north of the lake, is the central commercial district with department stores, the Hangzhou Tower mall, and a tighter cluster of mid-range business hotels. Slightly less atmosphere than the lake itself, slightly cheaper, and still well-connected by Metro Line 1.\n\n**Xixi Wetlands and the Westernmost Suburbs** suit travellers in town for an Alibaba meeting at the company's Xixi headquarters or for a quieter retreat-style trip. Not for first-time tourists.",
+      },
+      {
+        heading: "What to See Around the Lake",
+        body: "The classic West Lake circuit takes a full day and follows the Bai Causeway from the eastern shore to Lonely Island, across Solitary Hill to the Su Causeway, and back round via the Leifeng Pagoda on the south side. Highlights along the way: the Broken Bridge (most photographed in the snow), Lou Wai Lou restaurant on Solitary Hill (the most famous traditional Hangzhou cuisine restaurant in China, dating from 1848), the Leifeng Pagoda with views back across the lake at sunset, and the Lingyin Temple complex in the western hills (one of the most important Buddhist temples in southeast China).\n\nThe lake is best done on foot or by bike. Bicycle rentals are widely available around the eastern shore for around RMB 20 per hour. Boat trips on the lake itself depart from several piers along the eastern shore for RMB 55–70.\n\nSecond day in Hangzhou, if you have one: the Longjing tea fields in the hills west of the lake, where the Dragon Well green tea grows. A taxi from a central hotel to the Longjing village is around RMB 50; a half-day organised tour is the easier option.",
+      },
+      {
+        heading: "Practical Tips for Hangzhou",
+        body: "**Best season**: April–May (after the cherry-blossom season but before the summer heat) and September–October are the best months. June–August is hot and humid; West Lake at 35°C is much less pleasant than West Lake at 22°C. December–February is cold and quiet — the Broken Bridge in snow is the classic Hangzhou photo and is genuinely worth the cold if you can get the right week.\n\n**As a Shanghai day trip**: take the first HSR from Hongqiao around 07:00, you'll be at the West Lake by 08:30. Walk the lake circuit, eat lunch at Lou Wai Lou, see the Lingyin Temple in the afternoon, take the 18:00 train back to Shanghai. Long but achievable. For a less rushed trip, stay one night near Hubin Road and return the next morning.\n\n**Visa-free transit**: Hangzhou is included in the 240-hour Yangtze Delta transit zone alongside Shanghai. Citizens of 50+ countries can stay up to 10 days without a visa if they have onward tickets to a third country.",
+      },
+    ],
+    keyStations: [
+      { name: "Longxiangqiao", reason: "StayByRail pick — closest metro to West Lake's eastern shore, walking distance to Hubin Road luxury and mid-range hotel cluster" },
+      { name: "Wulin Square", reason: "Central commercial district 15 minutes' walk north of the lake, Line 1, mid-range business hotel cluster" },
+      { name: "Hangzhou East Railway Station", reason: "Main HSR terminal — 45-minute Shanghai connection, Beijing, Shenzhen, Guangzhou — Lines 1 and 4" },
+      { name: "Hangzhou Railway Station (Chengzhan)", reason: "Historic central terminal south of West Lake, conventional services, Line 1" },
+      { name: "Fengqi Road", reason: "North of West Lake, Lines 1 and 2 interchange, mid-range hotels with walking distance to the lake" },
+    ],
+    searchCity: "Hangzhou",
+    links: [
+      { label: "China Railway 12306", url: "https://www.12306.cn/en/", desc: "Official China Railway booking site (English version)" },
+      { label: "Trip.com China Trains", url: "https://us.trip.com/trains/china/", desc: "English-language China train search and booking" },
+      { label: "Hangzhou Metro", url: "http://www.hzmetro.com/", desc: "Official Hangzhou Metro map and timetables" },
+      { label: "Travel China Guide Hangzhou", url: "https://www.travelchinaguide.com/cityguides/hangzhou.htm", desc: "English-language Hangzhou travel guide" },
+    ],
+    wikipedia: "Hangzhou",
+    lat: 30.2741,
+    lon: 120.1551,
+    countryCode: "CN",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "hong_kong",
+    city: "Hong Kong",
+    country: "China",
+    heroLine: "A Special Administrative Region of China with the world-class MTR network and one of Asia's most efficient airport links",
+    metaTitle: "Hotels Near Hong Kong MTR Stations — StayByRail Guide",
+    metaDescription:
+      "Where to stay in Hong Kong by MTR station. Central, Tsim Sha Tsui, Causeway Bay, the Airport Express, and the high-speed link to mainland China at West Kowloon.",
+    intro:
+      "Hong Kong has one of the most reliable, efficient, and tourist-friendly urban rail systems in the world. The MTR (Mass Transit Railway) carries over 5 million passengers a day across 11 lines, runs from roughly 06:00 to 01:00, has signs and announcements in English on every train and station, and reaches almost every neighbourhood a visitor would consider staying in. The Airport Express adds the world-class 24-minute connection from the airport to Central, and the high-speed link from West Kowloon to mainland China makes Hong Kong a viable base for short trips to Shenzhen, Guangzhou, and beyond. The single biggest hotel decision is which side of Victoria Harbour to base on: Hong Kong Island or Kowloon.",
+    sections: [
+      {
+        heading: "A Special City Within China",
+        body: "Hong Kong is part of China, but it is also unmistakably its own place — and that distinction shapes almost every practical detail of a visit. The city was a British colony from 1841 until 1 July 1997, when sovereignty was transferred to the People's Republic of China under the \"One Country, Two Systems\" framework. That framework, set out in the 1984 Sino-British Joint Declaration and the Basic Law that followed, guaranteed Hong Kong a separate legal system, a separate currency, separate immigration controls, and a high degree of autonomy in domestic affairs for at least 50 years from handover.\n\nIn day-to-day terms for a visitor, this means Hong Kong feels and functions as a different country from mainland China even though it is constitutionally part of the same one. You clear immigration when you arrive — even if you're flying in from Beijing or Shanghai. You spend Hong Kong dollars, not Chinese yuan. You ride the MTR, which is a completely separate system from the mainland's CR (China Railway) network. You can use Google, Gmail, WhatsApp, and Instagram normally, none of which work on the mainland side without a VPN. The legal system is common-law and English-language; mainland China's is civil-law and Mandarin. Driving is on the left, like the UK; the mainland drives on the right.\n\nLocally, the people of Hong Kong overwhelmingly identify as \"Hong Kongers\" (香港人, Heung Gong Yan in Cantonese) as their primary identity, distinct from \"Chinese\" or \"mainland Chinese\" — a finding consistent across decades of polling by the University of Hong Kong's Public Opinion Programme. The dominant local language is Cantonese, not Mandarin, and Hong Kongers are rightly proud of a distinct culinary, cinematic, and linguistic culture: Cantonese cinema, dim sum tradition, the famous neon-and-shophouse streetscape, the cha chaan teng (tea restaurant) culture, and a particular brand of dry, ironic local humour. English remains widely spoken — a colonial inheritance — and is one of the city's two official languages alongside Chinese.\n\nNone of this is a political claim. It's just the lived reality of a city that has been one of the world's great cosmopolitan crossroads for nearly two centuries and remains so today. As a visitor, the practical implication is simple: prepare for Hong Kong on its own terms, not as an extension of a mainland China trip.",
+      },
+      {
+        heading: "Hong Kong Island vs Kowloon",
+        body: "Victoria Harbour splits the central tourist area in two and the choice of side defines the trip.\n\n**Hong Kong Island** is the historic financial district, the original colonial centre, and the home of the famous skyline. Central, Admiralty, Sheung Wan, Wan Chai, and Causeway Bay are all on the Island Line and all walking-distance to each other. This is the side with the Star Ferry pier at Central, the Mid-Levels escalator (the world's longest outdoor covered escalator system, running up the steep slope behind Central), the Peak Tram, and most of the city's premium dining and finance hotels. Stay here if your trip is about the city itself — restaurants, bars, museums, the financial district atmosphere, and the harbour view from the right places.\n\n**Kowloon** is across the harbour to the north. Tsim Sha Tsui (TST) sits at the southern tip of the Kowloon peninsula and offers the best view of the Hong Kong Island skyline — the harbour-front Avenue of Stars promenade is the iconic photograph spot. North of TST, Mong Kok and Yau Ma Tei are denser, more chaotic, and the heart of street-market and night-market Hong Kong. Hotels here are typically 30–40 percent cheaper than equivalent Hong Kong Island options for the same star rating.\n\nFor a first trip, Hong Kong Island (around Central, Admiralty, or Wan Chai) is the safest pick if budget allows. For a second trip or for travellers prioritising value, TST in Kowloon delivers a more interesting neighbourhood for less money.",
+      },
+      {
+        heading: "The MTR Lines That Matter",
+        body: "**Island Line** runs along the north shore of Hong Kong Island from Kennedy Town in the west through Sheung Wan, Central, Admiralty, Wan Chai, Causeway Bay, North Point, Quarry Bay, and out to Chai Wan in the east. This is the spine of any Hong Kong Island trip.\n\n**Tsuen Wan Line** runs from Central, under the harbour to Tsim Sha Tsui, then up through Jordan, Yau Ma Tei, Mong Kok, and out to Tsuen Wan in the New Territories. The fastest cross-harbour route and the line that connects the two main hotel zones.\n\n**Tung Chung Line and Airport Express** share tracks for most of their route and connect Central (\"Hong Kong\" station) and Kowloon to the airport via Tung Chung. The Airport Express is the premium service: 24 minutes Hong Kong to airport, HK$115 one-way (around £11), with free station check-in for many airlines at Hong Kong and Kowloon stations the morning of your flight. The Tung Chung Line is the slower local service for around HK$20.\n\n**East Rail Line** has been extended through the harbour as of 2022 and now runs from Admiralty up through Hung Hom and the New Territories to the Hong Kong–Shenzhen border at Lo Wu and Lok Ma Chau. The cheapest cross-border route to mainland China.",
+      },
+      {
+        heading: "The High-Speed Link to Mainland China",
+        body: "**Hong Kong West Kowloon** is the southern terminus of the Guangzhou–Shenzhen–Hong Kong Express Rail Link, opened in 2018. It is a different building from any of the MTR stations, located in the West Kowloon Cultural District around 800 m west of TST. From West Kowloon, high-speed trains reach **Futian (Shenzhen) in 14 minutes**, **Shenzhen North in 23 minutes**, **Guangzhou South in 48 minutes**, and direct services run as far as Beijing (around 9 hours) and Shanghai (around 8 hours).\n\nThe critical thing to know about West Kowloon is that immigration is co-located inside the building under a special arrangement: you clear both Hong Kong exit and Chinese mainland entry inside West Kowloon before boarding, then disembark on the mainland side ready to walk straight out. No second immigration queue. This makes the high-speed link dramatically faster than the older crossings via Lo Wu or Lok Ma Chau, and is the right answer for anyone going to Guangzhou or Shenzhen for a day trip from Hong Kong.\n\nWest Kowloon is an 8-minute walk from Kowloon MTR station (Tung Chung Line and Airport Express) and a 12-minute walk from Tsim Sha Tsui East. A small handful of hotels in the immediate area cater specifically to travellers using the line.",
+      },
+      {
+        heading: "Practical Tips for Hong Kong",
+        body: "**Octopus Card vs contactless**: the Octopus stored-value card (HK$50 deposit, available at any MTR ticket office or 7-Eleven) is the traditional way to pay for the MTR, buses, trams, and most convenience stores. As of 2024, contactless Visa, Mastercard, Apple Pay, and Google Pay are accepted at all MTR fare gates and apply the same fares — so for a short trip, you don't need an Octopus at all.\n\n**Visa**: Hong Kong is visa-free for citizens of UK, US, EU, Canada, Australia, and most other Western countries for 90 days (or 180 days for UK passport holders). This is a different and much more generous system than mainland China.\n\n**Currency**: the Hong Kong dollar (HKD) is pegged to the US dollar at roughly 7.8:1. ATMs are universal; cards are accepted nearly everywhere.\n\n**Star Ferry**: the historic harbour ferry between Central and Tsim Sha Tsui is the cheapest tourist activity in Hong Kong (HK$5 lower deck) and one of the most iconic. Worth doing at least once even if you've already crossed the harbour by MTR.\n\n**Weather**: October–early December is the best season — clear skies, low humidity, comfortable temperatures. June–September is hot, humid, and the typhoon window. Winter (January–February) is cool and dry but the harbour view is often hazy.",
+      },
+    ],
+    keyStations: [
+      { name: "Central", reason: "Hong Kong Island business and shopping core, Island/Tsuen Wan/Airport Express/Tung Chung lines, Star Ferry pier, premium hotel cluster" },
+      { name: "Admiralty", reason: "Five-line interchange (Island, Tsuen Wan, South Island, East Rail), walking distance to Pacific Place mall and the Peak Tram lower terminus" },
+      { name: "Tsim Sha Tsui", reason: "StayByRail pick — Kowloon hotel cluster with the best harbour skyline view, 30 percent cheaper than Hong Kong Island for equivalent quality" },
+      { name: "Causeway Bay", reason: "Hong Kong Island shopping district, Times Square, dense restaurant scene, Island Line" },
+      { name: "Hong Kong West Kowloon", reason: "High-speed rail terminus to Shenzhen (14 minutes), Guangzhou (48 minutes), Beijing and Shanghai" },
+      { name: "Hong Kong International Airport", reason: "Airport Express in 24 minutes to Central, free in-town check-in at Hong Kong and Kowloon stations" },
+    ],
+    searchCity: "Hong Kong",
+    links: [
+      { label: "MTR Hong Kong", url: "https://www.mtr.com.hk/", desc: "Official MTR map, fares, and journey planner" },
+      { label: "Hong Kong Tourism Board", url: "https://www.discoverhongkong.com/", desc: "Official tourism information for Hong Kong" },
+      { label: "Time Out Hong Kong", url: "https://www.timeout.com/hong-kong", desc: "Listings, dining, and nightlife for Hong Kong" },
+      { label: "Klook Hong Kong", url: "https://www.klook.com/en-HK/", desc: "Activity and day-trip booking for Hong Kong" },
+    ],
+    wikipedia: "Hong_Kong",
+    lat: 22.3193,
+    lon: 114.1694,
+    countryCode: "HK",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
 ];
 
 export function getGuide(slug) {

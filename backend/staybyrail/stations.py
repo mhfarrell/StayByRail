@@ -12690,6 +12690,528 @@ LINES = {
                 }
             ]
         }
+    },
+    "beijing": {
+        "subway_line_1": {
+            "name": "Beijing Subway Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Pingguoyuan", "lat": 39.9265, "lon": 116.1779, "popular": False},
+                {"name": "Bajiao Amusement Park", "lat": 39.9081, "lon": 116.2226, "popular": False},
+                {"name": "Babaoshan", "lat": 39.9085, "lon": 116.2287, "popular": False},
+                {"name": "Yuquanlu", "lat": 39.9094, "lon": 116.2557, "popular": False},
+                {"name": "Wukesong", "lat": 39.9080, "lon": 116.2784, "popular": False},
+                {"name": "Wanshoulu", "lat": 39.9070, "lon": 116.2987, "popular": False},
+                {"name": "Gongzhufen", "lat": 39.9067, "lon": 116.3120, "popular": False},
+                {"name": "Military Museum", "lat": 39.9073, "lon": 116.3239, "popular": False},
+                {"name": "Muxidi", "lat": 39.9072, "lon": 116.3346, "popular": False},
+                {"name": "Nanlishilu", "lat": 39.9072, "lon": 116.3486, "popular": False},
+                {"name": "Fuxingmen", "lat": 39.9080, "lon": 116.3568, "popular": True},
+                {"name": "Xidan", "lat": 39.9078, "lon": 116.3744, "popular": True},
+                {"name": "Tiananmen West", "lat": 39.9074, "lon": 116.3855, "popular": True},
+                {"name": "Tiananmen East", "lat": 39.9074, "lon": 116.3997, "popular": True},
+                {"name": "Wangfujing", "lat": 39.9143, "lon": 116.4109, "popular": True},
+                {"name": "Dongdan", "lat": 39.9078, "lon": 116.4188, "popular": True},
+                {"name": "Jianguomen", "lat": 39.9080, "lon": 116.4346, "popular": True},
+                {"name": "Yong'anli", "lat": 39.9080, "lon": 116.4467, "popular": False},
+                {"name": "Guomao", "lat": 39.9088, "lon": 116.4596, "popular": True},
+                {"name": "Dawanglu", "lat": 39.9083, "lon": 116.4818, "popular": False},
+                {"name": "Sihui", "lat": 39.9083, "lon": 116.5104, "popular": False}
+            ]
+        },
+        "subway_line_2": {
+            "name": "Beijing Subway Line 2",
+            "popularity": 1,
+            "stations": [
+                {"name": "Xizhimen", "lat": 39.9412, "lon": 116.3550, "popular": True},
+                {"name": "Jishuitan", "lat": 39.9498, "lon": 116.3760, "popular": False},
+                {"name": "Gulou Dajie", "lat": 39.9494, "lon": 116.3895, "popular": True},
+                {"name": "Andingmen", "lat": 39.9486, "lon": 116.4090, "popular": False},
+                {"name": "Yonghegong Lama Temple", "lat": 39.9462, "lon": 116.4173, "popular": True},
+                {"name": "Dongzhimen", "lat": 39.9412, "lon": 116.4346, "popular": True},
+                {"name": "Dongsi Shitiao", "lat": 39.9344, "lon": 116.4346, "popular": False},
+                {"name": "Chaoyangmen", "lat": 39.9209, "lon": 116.4346, "popular": False},
+                {"name": "Jianguomen", "lat": 39.9080, "lon": 116.4346, "popular": True},
+                {"name": "Beijing Railway Station", "lat": 39.9026, "lon": 116.4275, "popular": True},
+                {"name": "Chongwenmen", "lat": 39.9019, "lon": 116.4150, "popular": False},
+                {"name": "Qianmen", "lat": 39.8993, "lon": 116.3974, "popular": True},
+                {"name": "Hepingmen", "lat": 39.8993, "lon": 116.3833, "popular": False},
+                {"name": "Xuanwumen", "lat": 39.8993, "lon": 116.3712, "popular": False},
+                {"name": "Changchunjie", "lat": 39.9080, "lon": 116.3640, "popular": False},
+                {"name": "Fuchengmen", "lat": 39.9210, "lon": 116.3577, "popular": False},
+                {"name": "Chegongzhuang", "lat": 39.9344, "lon": 116.3559, "popular": False}
+            ]
+        },
+        "subway_line_4": {
+            "name": "Beijing Subway Line 4",
+            "popularity": 2,
+            "stations": [
+                {"name": "Beijing South Railway Station", "lat": 39.8650, "lon": 116.3787, "popular": True},
+                {"name": "Taoranqiao", "lat": 39.8758, "lon": 116.3787, "popular": False},
+                {"name": "Caishikou", "lat": 39.8888, "lon": 116.3787, "popular": False},
+                {"name": "Lingjing Hutong", "lat": 39.9165, "lon": 116.3744, "popular": False},
+                {"name": "Xisi", "lat": 39.9275, "lon": 116.3744, "popular": False},
+                {"name": "Ping'anli", "lat": 39.9344, "lon": 116.3744, "popular": False},
+                {"name": "Xinjiekou", "lat": 39.9412, "lon": 116.3744, "popular": False},
+                {"name": "Beijing Zoo", "lat": 39.9412, "lon": 116.3367, "popular": True},
+                {"name": "National Library", "lat": 39.9491, "lon": 116.3206, "popular": False},
+                {"name": "Renmin University", "lat": 39.9712, "lon": 116.3206, "popular": False},
+                {"name": "Haidian Huangzhuang", "lat": 39.9786, "lon": 116.3206, "popular": False},
+                {"name": "Zhongguancun", "lat": 39.9839, "lon": 116.3206, "popular": True},
+                {"name": "Yuanmingyuan Park", "lat": 39.9961, "lon": 116.3206, "popular": True},
+                {"name": "Beigongmen", "lat": 40.0080, "lon": 116.2742, "popular": True}
+            ]
+        },
+        "subway_line_10": {
+            "name": "Beijing Subway Line 10",
+            "popularity": 2,
+            "stations": [
+                {"name": "Sanyuanqiao", "lat": 39.9613, "lon": 116.4583, "popular": False},
+                {"name": "Liangmaqiao", "lat": 39.9528, "lon": 116.4628, "popular": False},
+                {"name": "Tuanjiehu", "lat": 39.9344, "lon": 116.4567, "popular": True},
+                {"name": "Hujialou", "lat": 39.9244, "lon": 116.4575, "popular": False},
+                {"name": "Jintaixizhao", "lat": 39.9165, "lon": 116.4583, "popular": False},
+                {"name": "Shuangjing", "lat": 39.8954, "lon": 116.4596, "popular": False},
+                {"name": "Jinsong", "lat": 39.8826, "lon": 116.4596, "popular": False}
+            ]
+        },
+        "airport_express": {
+            "name": "Capital Airport Express",
+            "popularity": 3,
+            "stations": [
+                {"name": "Capital Airport Terminal 3", "lat": 40.0521, "lon": 116.6105, "popular": True},
+                {"name": "Capital Airport Terminal 2", "lat": 40.0717, "lon": 116.6024, "popular": False}
+            ]
+        },
+        "high_speed_rail": {
+            "name": "China Railway High-Speed",
+            "popularity": 1,
+            "stations": [
+                {"name": "Beijing Railway Station", "lat": 39.9026, "lon": 116.4275, "popular": True},
+                {"name": "Beijing South Railway Station", "lat": 39.8650, "lon": 116.3787, "popular": True},
+                {"name": "Beijing West Railway Station", "lat": 39.8945, "lon": 116.3220, "popular": True},
+                {"name": "Beijing North Railway Station", "lat": 39.9410, "lon": 116.3447, "popular": True}
+            ]
+        }
+    },
+    "shanghai": {
+        "metro_line_1": {
+            "name": "Shanghai Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Shanghai Railway Station", "lat": 31.2500, "lon": 121.4555, "popular": True},
+                {"name": "Hanzhong Road", "lat": 31.2440, "lon": 121.4595, "popular": False},
+                {"name": "Xinzha Road", "lat": 31.2384, "lon": 121.4647, "popular": False},
+                {"name": "People's Square", "lat": 31.2330, "lon": 121.4737, "popular": True},
+                {"name": "Huangpi South Road", "lat": 31.2257, "lon": 121.4720, "popular": False},
+                {"name": "Shaanxi South Road", "lat": 31.2202, "lon": 121.4544, "popular": False},
+                {"name": "Changshu Road", "lat": 31.2156, "lon": 121.4499, "popular": False},
+                {"name": "Hengshan Road", "lat": 31.2090, "lon": 121.4475, "popular": False},
+                {"name": "Xujiahui", "lat": 31.1944, "lon": 121.4364, "popular": True},
+                {"name": "Shanghai Indoor Stadium", "lat": 31.1791, "lon": 121.4364, "popular": False},
+                {"name": "Shanghai South Railway Station", "lat": 31.1551, "lon": 121.4309, "popular": True}
+            ]
+        },
+        "metro_line_2": {
+            "name": "Shanghai Metro Line 2",
+            "popularity": 1,
+            "stations": [
+                {"name": "Hongqiao Railway Station", "lat": 31.1947, "lon": 121.3201, "popular": True},
+                {"name": "Hongqiao Airport Terminal 2", "lat": 31.1979, "lon": 121.3363, "popular": True},
+                {"name": "Hongqiao Airport Terminal 1", "lat": 31.1969, "lon": 121.3417, "popular": False},
+                {"name": "Songhong Road", "lat": 31.2117, "lon": 121.3825, "popular": False},
+                {"name": "Beixinjing", "lat": 31.2154, "lon": 121.3955, "popular": False},
+                {"name": "Weining Road", "lat": 31.2178, "lon": 121.4055, "popular": False},
+                {"name": "Loushanguan Road", "lat": 31.2188, "lon": 121.4115, "popular": False},
+                {"name": "Zhongshan Park", "lat": 31.2200, "lon": 121.4150, "popular": True},
+                {"name": "Jiangsu Road", "lat": 31.2154, "lon": 121.4225, "popular": False},
+                {"name": "Jing'an Temple", "lat": 31.2240, "lon": 121.4452, "popular": True},
+                {"name": "West Nanjing Road", "lat": 31.2289, "lon": 121.4576, "popular": True},
+                {"name": "People's Square", "lat": 31.2330, "lon": 121.4737, "popular": True},
+                {"name": "East Nanjing Road", "lat": 31.2390, "lon": 121.4810, "popular": True},
+                {"name": "Lujiazui", "lat": 31.2370, "lon": 121.5050, "popular": True},
+                {"name": "Dongchang Road", "lat": 31.2330, "lon": 121.5145, "popular": False},
+                {"name": "Century Avenue", "lat": 31.2306, "lon": 121.5384, "popular": False},
+                {"name": "Shanghai Science & Technology Museum", "lat": 31.2197, "lon": 121.5402, "popular": False},
+                {"name": "Century Park", "lat": 31.2226, "lon": 121.5474, "popular": False},
+                {"name": "Longyang Road", "lat": 31.2090, "lon": 121.5577, "popular": True},
+                {"name": "Pudong International Airport", "lat": 31.1432, "lon": 121.8052, "popular": True}
+            ]
+        },
+        "metro_line_10": {
+            "name": "Shanghai Metro Line 10",
+            "popularity": 2,
+            "stations": [
+                {"name": "Yuyuan Garden", "lat": 31.2271, "lon": 121.4906, "popular": True},
+                {"name": "Laoximen", "lat": 31.2189, "lon": 121.4838, "popular": False},
+                {"name": "Xintiandi", "lat": 31.2206, "lon": 121.4773, "popular": True},
+                {"name": "South Shaanxi Road", "lat": 31.2202, "lon": 121.4544, "popular": False},
+                {"name": "Shanghai Library", "lat": 31.2089, "lon": 121.4519, "popular": False},
+                {"name": "Jiaotong University", "lat": 31.2002, "lon": 121.4381, "popular": False}
+            ]
+        },
+        "maglev": {
+            "name": "Shanghai Maglev",
+            "popularity": 3,
+            "stations": [
+                {"name": "Longyang Road", "lat": 31.2090, "lon": 121.5577, "popular": True},
+                {"name": "Pudong International Airport", "lat": 31.1432, "lon": 121.8052, "popular": True}
+            ]
+        },
+        "high_speed_rail": {
+            "name": "China Railway High-Speed",
+            "popularity": 1,
+            "stations": [
+                {"name": "Shanghai Hongqiao Railway Station", "lat": 31.1947, "lon": 121.3201, "popular": True},
+                {"name": "Shanghai Railway Station", "lat": 31.2500, "lon": 121.4555, "popular": True},
+                {"name": "Shanghai South Railway Station", "lat": 31.1551, "lon": 121.4309, "popular": True}
+            ]
+        }
+    },
+    "guangzhou": {
+        "metro_line_1": {
+            "name": "Guangzhou Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Xilang", "lat": 23.0942, "lon": 113.2086, "popular": False},
+                {"name": "Fangcun", "lat": 23.1023, "lon": 113.2358, "popular": False},
+                {"name": "Huangsha", "lat": 23.1129, "lon": 113.2429, "popular": False},
+                {"name": "Changshou Road", "lat": 23.1226, "lon": 113.2470, "popular": False},
+                {"name": "Chen Clan Academy", "lat": 23.1280, "lon": 113.2456, "popular": True},
+                {"name": "Ximenkou", "lat": 23.1268, "lon": 113.2540, "popular": False},
+                {"name": "Gongyuanqian", "lat": 23.1308, "lon": 113.2620, "popular": True},
+                {"name": "Peasant Movement Institute", "lat": 23.1303, "lon": 113.2697, "popular": False},
+                {"name": "Martyrs' Park", "lat": 23.1290, "lon": 113.2740, "popular": False},
+                {"name": "Dongshankou", "lat": 23.1297, "lon": 113.2860, "popular": False},
+                {"name": "Yangji", "lat": 23.1314, "lon": 113.3050, "popular": False},
+                {"name": "Tiyu Xilu", "lat": 23.1382, "lon": 113.3247, "popular": True},
+                {"name": "Tiyu Zhongxin", "lat": 23.1395, "lon": 113.3211, "popular": False},
+                {"name": "Guangzhou East Railway Station", "lat": 23.1518, "lon": 113.3242, "popular": True}
+            ]
+        },
+        "metro_line_2": {
+            "name": "Guangzhou Metro Line 2",
+            "popularity": 1,
+            "stations": [
+                {"name": "Guangzhou South Railway Station", "lat": 22.9892, "lon": 113.2693, "popular": True},
+                {"name": "Shibi", "lat": 23.0150, "lon": 113.2722, "popular": False},
+                {"name": "Nanpu", "lat": 23.0354, "lon": 113.2778, "popular": False},
+                {"name": "Luoxi", "lat": 23.0540, "lon": 113.2820, "popular": False},
+                {"name": "Sun Yat-sen University", "lat": 23.0972, "lon": 113.2952, "popular": False},
+                {"name": "Shiergong", "lat": 23.1107, "lon": 113.2730, "popular": False},
+                {"name": "Jiangnanxi", "lat": 23.0992, "lon": 113.2620, "popular": False},
+                {"name": "Haizhu Square", "lat": 23.1208, "lon": 113.2620, "popular": True},
+                {"name": "Sun Yat-sen Memorial Hall", "lat": 23.1305, "lon": 113.2625, "popular": True},
+                {"name": "Yuexiu Park", "lat": 23.1378, "lon": 113.2638, "popular": True},
+                {"name": "Guangzhou Railway Station", "lat": 23.1497, "lon": 113.2587, "popular": True}
+            ]
+        },
+        "metro_line_3": {
+            "name": "Guangzhou Metro Line 3",
+            "popularity": 2,
+            "stations": [
+                {"name": "Airport South", "lat": 23.3947, "lon": 113.3079, "popular": True},
+                {"name": "Airport North", "lat": 23.4070, "lon": 113.3084, "popular": False},
+                {"name": "Tianhe Coach Station", "lat": 23.1559, "lon": 113.3306, "popular": False},
+                {"name": "Linhe West", "lat": 23.1530, "lon": 113.3291, "popular": False},
+                {"name": "Tianhe Sports Center", "lat": 23.1395, "lon": 113.3211, "popular": True},
+                {"name": "Gangding", "lat": 23.1445, "lon": 113.3340, "popular": False},
+                {"name": "Zhujiang New Town", "lat": 23.1188, "lon": 113.3243, "popular": True},
+                {"name": "Canton Tower", "lat": 23.1090, "lon": 113.3193, "popular": True},
+                {"name": "Kecun", "lat": 23.0990, "lon": 113.3193, "popular": False}
+            ]
+        },
+        "high_speed_rail": {
+            "name": "China Railway High-Speed",
+            "popularity": 1,
+            "stations": [
+                {"name": "Guangzhou Railway Station", "lat": 23.1497, "lon": 113.2587, "popular": True},
+                {"name": "Guangzhou South Railway Station", "lat": 22.9892, "lon": 113.2693, "popular": True},
+                {"name": "Guangzhou East Railway Station", "lat": 23.1518, "lon": 113.3242, "popular": True},
+                {"name": "Guangzhou North Railway Station", "lat": 23.5667, "lon": 113.0444, "popular": False}
+            ]
+        }
+    },
+    "shenzhen": {
+        "metro_line_1": {
+            "name": "Shenzhen Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Luohu", "lat": 22.5328, "lon": 114.1175, "popular": True},
+                {"name": "Guomao", "lat": 22.5419, "lon": 114.1167, "popular": False},
+                {"name": "Laojie", "lat": 22.5487, "lon": 114.1124, "popular": True},
+                {"name": "Da Juyuan", "lat": 22.5475, "lon": 114.1066, "popular": False},
+                {"name": "Kexueguan", "lat": 22.5474, "lon": 114.1006, "popular": False},
+                {"name": "Huaqiang Road", "lat": 22.5439, "lon": 114.0851, "popular": True},
+                {"name": "Gangxia", "lat": 22.5378, "lon": 114.0662, "popular": False},
+                {"name": "Convention & Exhibition Center", "lat": 22.5352, "lon": 114.0598, "popular": False},
+                {"name": "Civic Center", "lat": 22.5495, "lon": 114.0562, "popular": True},
+                {"name": "Window of the World", "lat": 22.5388, "lon": 114.0297, "popular": True},
+                {"name": "Bao'an Center", "lat": 22.5598, "lon": 113.8839, "popular": False},
+                {"name": "Airport East", "lat": 22.6481, "lon": 113.8123, "popular": True}
+            ]
+        },
+        "metro_line_4": {
+            "name": "Shenzhen Metro Line 4",
+            "popularity": 2,
+            "stations": [
+                {"name": "Futian Checkpoint", "lat": 22.5103, "lon": 114.0628, "popular": True},
+                {"name": "Children's Palace", "lat": 22.5481, "lon": 114.0908, "popular": False},
+                {"name": "Lianhua Bei", "lat": 22.5570, "lon": 114.0570, "popular": False},
+                {"name": "Shenzhen North Railway Station", "lat": 22.6105, "lon": 114.0297, "popular": True}
+            ]
+        },
+        "high_speed_rail": {
+            "name": "China Railway High-Speed",
+            "popularity": 1,
+            "stations": [
+                {"name": "Shenzhen Railway Station", "lat": 22.5333, "lon": 114.1175, "popular": True},
+                {"name": "Shenzhen North Railway Station", "lat": 22.6105, "lon": 114.0297, "popular": True},
+                {"name": "Futian Railway Station", "lat": 22.5371, "lon": 114.0577, "popular": True},
+                {"name": "Shenzhen East Railway Station", "lat": 22.6101, "lon": 114.1245, "popular": False}
+            ]
+        }
+    },
+    "chengdu": {
+        "metro_line_1": {
+            "name": "Chengdu Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Chengdu North Railway Station", "lat": 30.7019, "lon": 104.0639, "popular": True},
+                {"name": "Wenshu Monastery", "lat": 30.6814, "lon": 104.0726, "popular": True},
+                {"name": "Tianfu Square", "lat": 30.6593, "lon": 104.0654, "popular": True},
+                {"name": "Jinjiang Hotel", "lat": 30.6493, "lon": 104.0686, "popular": False},
+                {"name": "Huaxiba", "lat": 30.6359, "lon": 104.0686, "popular": False},
+                {"name": "Nichengjie", "lat": 30.6238, "lon": 104.0698, "popular": False},
+                {"name": "Tongzilin", "lat": 30.6079, "lon": 104.0712, "popular": False},
+                {"name": "Chengdu South Railway Station", "lat": 30.6125, "lon": 104.0721, "popular": True}
+            ]
+        },
+        "metro_line_2": {
+            "name": "Chengdu Metro Line 2",
+            "popularity": 1,
+            "stations": [
+                {"name": "Xipu", "lat": 30.7530, "lon": 103.9700, "popular": False},
+                {"name": "Yipintianxia", "lat": 30.7150, "lon": 104.0070, "popular": False},
+                {"name": "Chadianzi Bus Terminal", "lat": 30.7050, "lon": 104.0250, "popular": False},
+                {"name": "Renmin Park", "lat": 30.6610, "lon": 104.0570, "popular": True},
+                {"name": "Tianfu Square", "lat": 30.6593, "lon": 104.0654, "popular": True},
+                {"name": "Chunxi Road", "lat": 30.6562, "lon": 104.0810, "popular": True},
+                {"name": "Niuwangmiao", "lat": 30.6479, "lon": 104.0951, "popular": False},
+                {"name": "Dongmen Bridge", "lat": 30.6553, "lon": 104.0949, "popular": False},
+                {"name": "Chengdu East Railway Station", "lat": 30.6307, "lon": 104.1417, "popular": True},
+                {"name": "Chengdu Administration Center", "lat": 30.6180, "lon": 104.1620, "popular": False}
+            ]
+        },
+        "high_speed_rail": {
+            "name": "China Railway High-Speed",
+            "popularity": 1,
+            "stations": [
+                {"name": "Chengdu East Railway Station", "lat": 30.6307, "lon": 104.1417, "popular": True},
+                {"name": "Chengdu Railway Station", "lat": 30.7019, "lon": 104.0639, "popular": True},
+                {"name": "Chengdu South Railway Station", "lat": 30.6125, "lon": 104.0721, "popular": True}
+            ]
+        }
+    },
+    "xian": {
+        "metro_line_1": {
+            "name": "Xi'an Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Houweizhai", "lat": 34.2630, "lon": 108.8330, "popular": False},
+                {"name": "Sajinqiao", "lat": 34.2640, "lon": 108.9220, "popular": False},
+                {"name": "Yuxiangmen", "lat": 34.2643, "lon": 108.9303, "popular": False},
+                {"name": "Wulukou", "lat": 34.2655, "lon": 108.9570, "popular": True},
+                {"name": "Chaoyangmen", "lat": 34.2656, "lon": 108.9747, "popular": False},
+                {"name": "Kangfu Road", "lat": 34.2670, "lon": 108.9845, "popular": False},
+                {"name": "Tonghuamen", "lat": 34.2682, "lon": 108.9990, "popular": False},
+                {"name": "Wanshou Road", "lat": 34.2680, "lon": 109.0150, "popular": False}
+            ]
+        },
+        "metro_line_2": {
+            "name": "Xi'an Metro Line 2",
+            "popularity": 1,
+            "stations": [
+                {"name": "Beikezhan (Xi'an North Railway Station)", "lat": 34.3786, "lon": 108.9396, "popular": True},
+                {"name": "Yuanjiacun", "lat": 34.3640, "lon": 108.9380, "popular": False},
+                {"name": "Xingzhengzhongxin", "lat": 34.3540, "lon": 108.9396, "popular": False},
+                {"name": "Fengchengwulu", "lat": 34.3380, "lon": 108.9420, "popular": False},
+                {"name": "Shitushuguan", "lat": 34.3260, "lon": 108.9430, "popular": False},
+                {"name": "Daminggong North", "lat": 34.3070, "lon": 108.9430, "popular": False},
+                {"name": "Longshouyuan", "lat": 34.2900, "lon": 108.9430, "popular": False},
+                {"name": "Anyuanmen", "lat": 34.2780, "lon": 108.9430, "popular": False},
+                {"name": "Beidajie", "lat": 34.2680, "lon": 108.9430, "popular": True},
+                {"name": "Bell Tower", "lat": 34.2588, "lon": 108.9430, "popular": True},
+                {"name": "Yongningmen (South Gate)", "lat": 34.2503, "lon": 108.9404, "popular": True},
+                {"name": "Tiyuchang", "lat": 34.2360, "lon": 108.9430, "popular": False},
+                {"name": "Xiaozhai", "lat": 34.2200, "lon": 108.9430, "popular": True},
+                {"name": "Weiyijie", "lat": 34.2080, "lon": 108.9430, "popular": False}
+            ]
+        },
+        "high_speed_rail": {
+            "name": "China Railway High-Speed",
+            "popularity": 1,
+            "stations": [
+                {"name": "Xi'an Railway Station", "lat": 34.2756, "lon": 108.9700, "popular": True},
+                {"name": "Xi'an North Railway Station", "lat": 34.3786, "lon": 108.9396, "popular": True}
+            ]
+        }
+    },
+    "hangzhou": {
+        "metro_line_1": {
+            "name": "Hangzhou Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Xianghu", "lat": 30.1735, "lon": 120.1900, "popular": False},
+                {"name": "Binkang Road", "lat": 30.1924, "lon": 120.2030, "popular": False},
+                {"name": "West Riverside", "lat": 30.2050, "lon": 120.2020, "popular": False},
+                {"name": "Jiangling Road", "lat": 30.2150, "lon": 120.2030, "popular": False},
+                {"name": "Jiangchen Road", "lat": 30.2300, "lon": 120.2030, "popular": False},
+                {"name": "Coloured Glass Factory", "lat": 30.2410, "lon": 120.2080, "popular": False},
+                {"name": "Wujiang Road", "lat": 30.2490, "lon": 120.1830, "popular": False},
+                {"name": "Dingan Road", "lat": 30.2530, "lon": 120.1700, "popular": False},
+                {"name": "Longxiangqiao", "lat": 30.2562, "lon": 120.1660, "popular": True},
+                {"name": "Fengqi Road", "lat": 30.2660, "lon": 120.1670, "popular": False},
+                {"name": "Wulin Square", "lat": 30.2741, "lon": 120.1689, "popular": True},
+                {"name": "Xixi", "lat": 30.2810, "lon": 120.1700, "popular": False},
+                {"name": "Daguan", "lat": 30.2890, "lon": 120.1750, "popular": False},
+                {"name": "Hangzhou Railway Station (Chengzhan)", "lat": 30.2410, "lon": 120.1830, "popular": True},
+                {"name": "Hangzhou East Railway Station", "lat": 30.2932, "lon": 120.2180, "popular": True}
+            ]
+        },
+        "metro_line_2": {
+            "name": "Hangzhou Metro Line 2",
+            "popularity": 2,
+            "stations": [
+                {"name": "Liangzhu", "lat": 30.4080, "lon": 120.0140, "popular": False},
+                {"name": "Gucui Road", "lat": 30.3030, "lon": 120.1290, "popular": False},
+                {"name": "Xueyuan Road", "lat": 30.2820, "lon": 120.1370, "popular": False},
+                {"name": "Fengqi Road", "lat": 30.2660, "lon": 120.1670, "popular": False},
+                {"name": "Qianjiang Road", "lat": 30.2570, "lon": 120.2070, "popular": False},
+                {"name": "Qianjiang Century City", "lat": 30.2400, "lon": 120.2370, "popular": False}
+            ]
+        },
+        "high_speed_rail": {
+            "name": "China Railway High-Speed",
+            "popularity": 1,
+            "stations": [
+                {"name": "Hangzhou East Railway Station", "lat": 30.2932, "lon": 120.2180, "popular": True},
+                {"name": "Hangzhou Railway Station", "lat": 30.2410, "lon": 120.1830, "popular": True},
+                {"name": "Hangzhou West Railway Station", "lat": 30.3068, "lon": 120.0270, "popular": False}
+            ]
+        }
+    },
+    "hong_kong": {
+        "mtr_island_line": {
+            "name": "MTR Island Line",
+            "popularity": 1,
+            "stations": [
+                {"name": "Kennedy Town", "lat": 22.2814, "lon": 114.1287, "popular": False},
+                {"name": "HKU", "lat": 22.2843, "lon": 114.1352, "popular": False},
+                {"name": "Sai Ying Pun", "lat": 22.2856, "lon": 114.1426, "popular": False},
+                {"name": "Sheung Wan", "lat": 22.2864, "lon": 114.1521, "popular": True},
+                {"name": "Central", "lat": 22.2818, "lon": 114.1582, "popular": True},
+                {"name": "Admiralty", "lat": 22.2789, "lon": 114.1645, "popular": True},
+                {"name": "Wan Chai", "lat": 22.2776, "lon": 114.1731, "popular": True},
+                {"name": "Causeway Bay", "lat": 22.2802, "lon": 114.1851, "popular": True},
+                {"name": "Tin Hau", "lat": 22.2823, "lon": 114.1918, "popular": False},
+                {"name": "Fortress Hill", "lat": 22.2876, "lon": 114.1936, "popular": False},
+                {"name": "North Point", "lat": 22.2911, "lon": 114.2007, "popular": False},
+                {"name": "Quarry Bay", "lat": 22.2879, "lon": 114.2098, "popular": False},
+                {"name": "Tai Koo", "lat": 22.2845, "lon": 114.2160, "popular": False},
+                {"name": "Sai Wan Ho", "lat": 22.2818, "lon": 114.2222, "popular": False},
+                {"name": "Shau Kei Wan", "lat": 22.2791, "lon": 114.2287, "popular": False},
+                {"name": "Heng Fa Chuen", "lat": 22.2768, "lon": 114.2402, "popular": False},
+                {"name": "Chai Wan", "lat": 22.2647, "lon": 114.2371, "popular": False}
+            ]
+        },
+        "mtr_tsuen_wan_line": {
+            "name": "MTR Tsuen Wan Line",
+            "popularity": 1,
+            "stations": [
+                {"name": "Central", "lat": 22.2818, "lon": 114.1582, "popular": True},
+                {"name": "Admiralty", "lat": 22.2789, "lon": 114.1645, "popular": True},
+                {"name": "Tsim Sha Tsui", "lat": 22.2976, "lon": 114.1722, "popular": True},
+                {"name": "Jordan", "lat": 22.3047, "lon": 114.1717, "popular": True},
+                {"name": "Yau Ma Tei", "lat": 22.3132, "lon": 114.1707, "popular": False},
+                {"name": "Mong Kok", "lat": 22.3193, "lon": 114.1693, "popular": True},
+                {"name": "Prince Edward", "lat": 22.3245, "lon": 114.1683, "popular": False},
+                {"name": "Sham Shui Po", "lat": 22.3306, "lon": 114.1622, "popular": False},
+                {"name": "Cheung Sha Wan", "lat": 22.3357, "lon": 114.1561, "popular": False},
+                {"name": "Lai Chi Kok", "lat": 22.3370, "lon": 114.1480, "popular": False},
+                {"name": "Mei Foo", "lat": 22.3375, "lon": 114.1378, "popular": False},
+                {"name": "Lai King", "lat": 22.3484, "lon": 114.1264, "popular": False},
+                {"name": "Kwai Fong", "lat": 22.3573, "lon": 114.1280, "popular": False},
+                {"name": "Kwai Hing", "lat": 22.3631, "lon": 114.1313, "popular": False},
+                {"name": "Tai Wo Hau", "lat": 22.3706, "lon": 114.1252, "popular": False},
+                {"name": "Tsuen Wan", "lat": 22.3737, "lon": 114.1175, "popular": False}
+            ]
+        },
+        "mtr_kwun_tong_line": {
+            "name": "MTR Kwun Tong Line",
+            "popularity": 2,
+            "stations": [
+                {"name": "Whampoa", "lat": 22.3052, "lon": 114.1898, "popular": False},
+                {"name": "Ho Man Tin", "lat": 22.3094, "lon": 114.1828, "popular": False},
+                {"name": "Yau Ma Tei", "lat": 22.3132, "lon": 114.1707, "popular": False},
+                {"name": "Mong Kok", "lat": 22.3193, "lon": 114.1693, "popular": True},
+                {"name": "Prince Edward", "lat": 22.3245, "lon": 114.1683, "popular": False},
+                {"name": "Shek Kip Mei", "lat": 22.3320, "lon": 114.1690, "popular": False},
+                {"name": "Kowloon Tong", "lat": 22.3372, "lon": 114.1762, "popular": True},
+                {"name": "Lok Fu", "lat": 22.3380, "lon": 114.1872, "popular": False},
+                {"name": "Wong Tai Sin", "lat": 22.3415, "lon": 114.1939, "popular": True},
+                {"name": "Diamond Hill", "lat": 22.3399, "lon": 114.2018, "popular": False},
+                {"name": "Choi Hung", "lat": 22.3349, "lon": 114.2089, "popular": False},
+                {"name": "Kowloon Bay", "lat": 22.3232, "lon": 114.2143, "popular": False},
+                {"name": "Ngau Tau Kok", "lat": 22.3155, "lon": 114.2191, "popular": False},
+                {"name": "Kwun Tong", "lat": 22.3122, "lon": 114.2263, "popular": False},
+                {"name": "Lam Tin", "lat": 22.3068, "lon": 114.2329, "popular": False},
+                {"name": "Yau Tong", "lat": 22.2978, "lon": 114.2370, "popular": False},
+                {"name": "Tiu Keng Leng", "lat": 22.3046, "lon": 114.2530, "popular": False}
+            ]
+        },
+        "mtr_tung_chung_airport": {
+            "name": "MTR Tung Chung & Airport Express",
+            "popularity": 1,
+            "stations": [
+                {"name": "Hong Kong", "lat": 22.2849, "lon": 114.1583, "popular": True},
+                {"name": "Kowloon", "lat": 22.3045, "lon": 114.1612, "popular": True},
+                {"name": "Olympic", "lat": 22.3179, "lon": 114.1602, "popular": False},
+                {"name": "Nam Cheong", "lat": 22.3266, "lon": 114.1538, "popular": False},
+                {"name": "Lai King", "lat": 22.3484, "lon": 114.1264, "popular": False},
+                {"name": "Tsing Yi", "lat": 22.3585, "lon": 114.1078, "popular": False},
+                {"name": "Sunny Bay", "lat": 22.3318, "lon": 114.0289, "popular": False},
+                {"name": "Tung Chung", "lat": 22.2891, "lon": 113.9418, "popular": True},
+                {"name": "AsiaWorld-Expo", "lat": 22.3215, "lon": 113.9417, "popular": False},
+                {"name": "Hong Kong International Airport", "lat": 22.3158, "lon": 113.9365, "popular": True}
+            ]
+        },
+        "mtr_east_rail": {
+            "name": "MTR East Rail Line",
+            "popularity": 2,
+            "stations": [
+                {"name": "Admiralty", "lat": 22.2789, "lon": 114.1645, "popular": True},
+                {"name": "Exhibition Centre", "lat": 22.2826, "lon": 114.1741, "popular": False},
+                {"name": "Hung Hom", "lat": 22.3032, "lon": 114.1817, "popular": True},
+                {"name": "Mong Kok East", "lat": 22.3217, "lon": 114.1729, "popular": False},
+                {"name": "Kowloon Tong", "lat": 22.3372, "lon": 114.1762, "popular": True},
+                {"name": "Tai Wai", "lat": 22.3727, "lon": 114.1786, "popular": False},
+                {"name": "Sha Tin", "lat": 22.3820, "lon": 114.1869, "popular": False},
+                {"name": "Fo Tan", "lat": 22.3954, "lon": 114.1981, "popular": False},
+                {"name": "University", "lat": 22.4138, "lon": 114.2102, "popular": False},
+                {"name": "Tai Po Market", "lat": 22.4448, "lon": 114.1701, "popular": False},
+                {"name": "Sheung Shui", "lat": 22.5012, "lon": 114.1281, "popular": False},
+                {"name": "Lo Wu", "lat": 22.5283, "lon": 114.1133, "popular": True},
+                {"name": "Lok Ma Chau", "lat": 22.5147, "lon": 114.0656, "popular": True}
+            ]
+        },
+        "high_speed_rail": {
+            "name": "Guangzhou-Shenzhen-Hong Kong Express Rail Link",
+            "popularity": 1,
+            "stations": [
+                {"name": "Hong Kong West Kowloon", "lat": 22.3043, "lon": 114.1665, "popular": True}
+            ]
+        }
     }
 }
 

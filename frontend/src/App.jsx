@@ -24,6 +24,8 @@ const AuthorPage = lazy(() => import("./pages/AuthorPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const PassesIndexPage = lazy(() => import("./pages/PassesIndexPage"));
 const PassPage = lazy(() => import("./pages/PassPage"));
+const CountriesIndexPage = lazy(() => import("./pages/CountriesIndexPage"));
+const CountryPage = lazy(() => import("./pages/CountryPage"));
 const JournalIndexPage = lazy(() => import("./pages/JournalIndexPage"));
 const JournalArticlePage = lazy(() => import("./pages/JournalArticlePage"));
 const ItinerariesIndexPage = lazy(() => import("./pages/ItinerariesIndexPage"));
@@ -123,6 +125,8 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/passes" element={<PassesIndexPage />} />
               <Route path="/passes/:slug" element={<PassPage />} />
+              <Route path="/countries" element={<CountriesIndexPage />} />
+              <Route path="/countries/:slug" element={<CountryPage />} />
               <Route path="/journal" element={<JournalIndexPage />} />
               <Route path="/journal/:slug" element={<JournalArticlePage />} />
               <Route path="/itineraries" element={<ItinerariesIndexPage />} />

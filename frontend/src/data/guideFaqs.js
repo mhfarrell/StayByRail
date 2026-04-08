@@ -535,6 +535,190 @@ export const guideFaqs = {
       a: "Worth visiting for one evening even if you don't stay there — the walk down Bangla Road is a genuine Thailand-tourism experience and there's some good street food. Worth staying there only if you specifically want to be in the middle of the nightlife. For every other type of trip (family, couples, luxury, quiet), stay somewhere else on the west coast and visit Patong on a Grab for one night if curious.",
     },
   ],
+
+  beijing: [
+    {
+      q: "Which Beijing station should I stay closest to as a tourist?",
+      a: "Wangfujing on Subway Line 1 is the safest first-time choice — walking distance to the Forbidden City, Tiananmen Square, and most of central Beijing's heritage sites, with a high concentration of international four- and five-star hotels. For a second trip or for travellers who want a more atmospheric base, the hutong courtyard hotels around the Yonghegong Lama Temple area (Lines 2 and 5) are a stronger pick.",
+    },
+    {
+      q: "Which of Beijing's four mainline railway stations does my train use?",
+      a: "It depends entirely on where you're going. Beijing South handles east-coast HSR (Shanghai, Tianjin, Jinan). Beijing West handles south and west long-distance services (Wuhan, Guangzhou, Xi'an, the through-train to Hong Kong). Beijing Railway Station handles conventional and overnight services plus a few HSR routes. Beijing North handles the high-speed line to Zhangjiakou. Always check the departure station printed on your ticket before booking a hotel — the four are 5–15 km apart and not interchangeable.",
+    },
+    {
+      q: "Can I visit Beijing without a Chinese visa?",
+      a: "For citizens of 50+ countries (including UK, US, EU, Canada, Australia), yes — the 144-hour visa-free transit policy lets you stay in Beijing for up to six days as long as you're booked onwards to a third country. You'll need to declare it on arrival at the airport and stick to the city limits. This is the easiest way to see Beijing for most Western travellers without going through the full visa process.",
+    },
+    {
+      q: "How do I pay for the Beijing Subway as a tourist?",
+      a: "Alipay or WeChat Pay tourist versions are now the easiest option — both apps accept overseas Visa and Mastercard for top-up since 2024 and you scan a QR code at every fare gate. The traditional Yikatong stored-value card still works and can be bought from any subway ticket office for a refundable deposit. A single ride is ¥3–9 depending on distance. Cash payment at machines is also possible but slower.",
+    },
+    {
+      q: "What's the best way to reach the Great Wall from Beijing?",
+      a: "For most first-time visitors, an organised half-day tour to Mutianyu from any central hotel is the easiest answer — Mutianyu is the most-restored, least-crowded section, with a cable car up and a toboggan down. For travellers who want the cheapest option, the new Beijing–Zhangjiakou high-speed line from Beijing North reaches Badaling in 30 minutes for around ¥30 each way; Badaling is more crowded but the easiest DIY option. Avoid the touts at the main railway stations claiming to sell Great Wall tours.",
+    },
+  ],
+
+  shanghai: [
+    {
+      q: "Which side of the Huangpu River should I stay on?",
+      a: "For a first Shanghai trip, the Puxi side near the Bund (East Nanjing Road station) gives you the best base — walking distance to the colonial-era riverfront, the Yuyuan Garden, and People's Square. The Pudong side (Lujiazui) is the right pick if you specifically want a tower hotel with a skyline view back across the river. Line 2 connects both sides directly so the choice is more about atmosphere than logistics.",
+    },
+    {
+      q: "Maglev or Metro Line 2 from Pudong Airport?",
+      a: "Metro Line 2 is more practical end-to-end for most travellers — it goes directly to People's Square in 45–55 minutes for around ¥8, no transfer needed. The Maglev is faster on its own segment (8 minutes to Longyang Road, hitting 300 km/h) but Longyang Road is 5 km from anywhere central, so you still need a Metro transfer afterwards. The Maglev is worth doing once for the experience; Line 2 is the right choice for actually getting to your hotel.",
+    },
+    {
+      q: "Which Shanghai station do high-speed trains use?",
+      a: "Almost all long-distance HSR services from Shanghai (Beijing, Hangzhou, Suzhou, Nanjing, Hefei, Wuhan) depart from Shanghai Hongqiao Railway Station in the west of the city. Hongqiao is China's biggest railway station by floor area and is connected to the centre by Metro Line 2 in around 40 minutes. The older Shanghai Railway Station and Shanghai South handle a smaller share of conventional and regional services.",
+    },
+    {
+      q: "How long can I stay in Shanghai without a visa?",
+      a: "Up to 240 hours (10 days) for citizens of 50+ countries with onward tickets to a third country, under the Yangtze Delta visa-free transit policy introduced in 2024. The same policy covers Hangzhou, Suzhou, and Nanjing, so you can move freely between them within the 10-day window. This is one of the most generous transit policies in Asia and has made short Shanghai breaks dramatically easier.",
+    },
+    {
+      q: "Is Shanghai a good day trip from Hong Kong?",
+      a: "By high-speed train it's around 8 hours each way, so no — not as a same-day round trip. As a 2–3 night side trip from a Hong Kong base, yes, and the through-train from Hong Kong West Kowloon to Shanghai Hongqiao avoids the Shenzhen border interchange. Most visitors who do both cities fly between them on a budget airline (around 2 hours, ¥600–1500), which is faster end-to-end than the train despite the airport overhead.",
+    },
+  ],
+
+  guangzhou: [
+    {
+      q: "Which Guangzhou station do high-speed trains use?",
+      a: "Almost all long-distance HSR services from Guangzhou — Beijing, Shanghai, Wuhan, Changsha, Kunming, and the high-speed link to Hong Kong West Kowloon — depart from Guangzhou South (Guangzhounan), 17 km south of the centre in Panyu district. Metro Line 2 connects the centre to Guangzhou South in around 30 minutes. The older Guangzhou Railway Station handles conventional services and a few HSR routes.",
+    },
+    {
+      q: "Where should I stay in Guangzhou for the first time?",
+      a: "The Tianhe / Zhujiang New Town district (Lines 1 and 3) is the modern CBD with the highest concentration of international five-star hotels and the best base for first-time business or leisure visitors. For a more historic alternative, the Yuexiu district around Beijing Road (Line 2) puts you close to the city's heritage sites and Cantonese-food districts at a lower price.",
+    },
+    {
+      q: "How fast is the high-speed train from Guangzhou to Hong Kong?",
+      a: "48 minutes on the express service from Guangzhou South to Hong Kong West Kowloon. Immigration is co-located inside West Kowloon — you clear both Chinese exit and Hong Kong entry inside the same building, so the journey is functionally door-to-door. Tickets from RMB 215 (around £24) one-way and there are 10–15 daily services in each direction.",
+    },
+    {
+      q: "Do I need to learn Cantonese for Guangzhou?",
+      a: "No. Cantonese is the historic local language and you'll hear it everywhere, but Mandarin is universally understood and most under-30s and all signage use Mandarin or English. A translation app handles everything else. Cantonese is much more useful in Hong Kong than in modern Guangzhou itself.",
+    },
+    {
+      q: "What's the best month to visit Guangzhou?",
+      a: "October–December and February–April are the best months — warm, dry, and comfortable. June–September is genuinely punishing (35°C+ with high humidity, frequent thunderstorms) and the autumn typhoon window means occasional days of disruption. Avoid Lunar New Year week (late January or February) when the city empties out and many small restaurants close.",
+    },
+  ],
+
+  shenzhen: [
+    {
+      q: "Is it cheaper to stay in Shenzhen and visit Hong Kong as a day trip?",
+      a: "Yes, significantly — a four-star hotel in Hong Kong's Tsim Sha Tsui costs HK$1,800–2,500 per night in peak season; the equivalent in Shenzhen's Futian district costs roughly RMB 600–900 (about HK$650–1,000), a 50–60 percent saving. The trade-off is the daily border crossing: 14 minutes on the high-speed train from Futian to Hong Kong West Kowloon, plus 20–30 minutes for immigration on each side. For a 4-day Hong Kong trip with daily outings, the Shenzhen base is one of Asia's best hotel arbitrages.",
+    },
+    {
+      q: "Which Shenzhen station do I use for the fastest crossing to Hong Kong?",
+      a: "Futian Railway Station (the high-speed station, not the metro Futian Checkpoint) — high-speed trains reach Hong Kong West Kowloon in 14 minutes with co-located immigration, so you only queue once. The older Luohu and Lok Ma Chau crossings are cheaper but slower (40 minutes plus the queues at both sides). For day trips to Hong Kong, the high-speed link is the right answer for almost everyone.",
+    },
+    {
+      q: "Do I need a multi-entry Chinese visa for the Shenzhen-Hong Kong shuttle?",
+      a: "If you're crossing back and forth daily, yes — every entry into mainland China counts as one entry on your visa. A standard 10-year US tourist visa allows multiple entries; a single-entry tourist visa does not. Some nationalities can use the 144- or 240-hour visa-free transit policy on each entry but the rules around \"transit\" can be tightened if you cross in and out repeatedly.",
+    },
+    {
+      q: "Where should I stay in Shenzhen for first-time visitors?",
+      a: "Futian district (Lines 1 and 4) is the modern administrative-and-CBD core and the right base for any trip that involves a Hong Kong day trip or HSR onward travel. Walking distance to Futian Checkpoint, Futian Railway Station, and the Civic Center area's international hotels. Luohu (Line 1) is cheaper but feels older and busier. Nanshan / OCT (Line 1 west) is quieter and closer to the airport.",
+    },
+    {
+      q: "Is Shenzhen worth visiting on its own merits?",
+      a: "Honestly, less than Beijing, Shanghai, or Guangzhou. Shenzhen is a remarkable economic story but it's a 40-year-old city without the historic depth of older Chinese destinations. For 2–3 days as a Hong Kong base, yes. As a standalone destination, only if you have a specific reason — Window of the World theme park, the Huaqiang electronics market, or business in the tech industry.",
+    },
+  ],
+
+  chengdu: [
+    {
+      q: "What's the best base in Chengdu for visiting the panda research base?",
+      a: "Any central hotel near Tianfu Square or Chunxi Road works fine — the Chengdu Research Base is 12 km north of the centre and most travellers reach it by taxi or organised tour rather than Metro. Aim to be at the entrance by 08:00 because the pandas retreat into shaded enclosures by mid-morning. A hotel with concierge tour-booking saves the language barrier.",
+    },
+    {
+      q: "Which Chengdu station do high-speed trains use?",
+      a: "Chengdu East Railway Station (Chengdudong) is the main HSR terminal and handles services to Chongqing (1h 13), Xi'an (3h 30), Shanghai (~11h), and Beijing (~8h). It's connected to Tianfu Square by Metro Line 2 in about 30 minutes. The older Chengdu Railway Station handles conventional and sleeper services. Chengdu South handles a smaller share of regional HSR routes.",
+    },
+    {
+      q: "Is Chengdu food really as spicy as people say?",
+      a: "Yes, and you should embrace it. Sichuan cuisine relies on the numbing-spicy combination of Sichuan peppercorns and chillies, and the most famous dishes — mapo tofu, kung pao chicken, hotpot, dan dan noodles — are all genuinely hot. Most restaurants in tourist areas can prepare \"micro-spicy\" or non-spicy versions on request, but the full-strength experience is the point of being in Chengdu.",
+    },
+    {
+      q: "How easy is it to do a day trip to the Leshan Giant Buddha or Mount Emei?",
+      a: "Very easy — both are HSR day trips from Chengdu South in around 1 hour each way. The Leshan Giant Buddha (the world's largest stone Buddha statue, 71 m tall) is the more accessible of the two and the right pick for a single day trip. Mount Emei is one of the four sacred Buddhist mountains of China and deserves at least an overnight stay if you want to see the summit at sunrise.",
+    },
+    {
+      q: "When's the best time to visit Chengdu?",
+      a: "March–June and September–November are the best months — mild temperatures and the panda base is most pleasant. Summer (July–August) is hot and humid with frequent rain. Winter (December–February) is cool and damp; Chengdu is famous for its overcast skies and the cloudy weather that makes the giant pandas comfortable but the sightseeing photos disappointing.",
+    },
+  ],
+
+  xian: [
+    {
+      q: "Should I stay inside or outside the Xi'an city walls?",
+      a: "For a first-time visit, inside the walls. The Bell Tower / Beidajie area has the highest density of mid-range and boutique hotels and the shortest walks to the Drum Tower, Muslim Quarter food district, and the wall itself. Hotels outside the walls (particularly the Big Wild Goose Pagoda district to the south) tend to be larger international five-stars but require a 10–15 minute Metro ride back to the historic core every time you go out.",
+    },
+    {
+      q: "What's the easiest way to reach the Terracotta Army?",
+      a: "Tour Bus 5 (游5) departs from outside Xi'an Railway Station's east parking lot for about RMB 7–9 each way and takes around 1 hour. This is the cheapest option for travellers willing to navigate a Chinese-language ticketing experience. For most international visitors, an organised half-day tour from your central hotel (RMB 250–500 with English-speaking guide and Huaqing Hot Springs stop) is the easier choice. Aim to arrive by 09:00 — Pit 1 is much less crowded in the morning.",
+    },
+    {
+      q: "Which Xi'an station do high-speed trains use?",
+      a: "Xi'an North (Xi'anbei) handles almost all long-distance HSR services — Beijing in 4h 30, Chengdu in 3h 30, Shanghai in around 6h, Lanzhou in around 3h. Connected to the centre by Metro Line 2 in about 25 minutes. The older Xi'an Railway Station handles conventional services and is the departure point for the Terracotta Army shuttle bus, so you may use both stations on the same trip.",
+    },
+    {
+      q: "Can I cycle the Xi'an city wall?",
+      a: "Yes — bike rental is available at the South Gate (Yongningmen) for around RMB 45 for 100 minutes, which is enough for the full 14 km circuit at a comfortable pace. This is one of the most distinctive activities in any Chinese city and well worth doing on a clear day. Tandem bikes are also available at slightly higher rates. Walking the full circuit takes around 4 hours and is harder work than it sounds.",
+    },
+    {
+      q: "Is Xi'an worth visiting beyond the Terracotta Army?",
+      a: "Yes, easily 2–3 days of content. The walled historic centre, the Muslim Quarter food district (one of the best night-food streets in China), the Big Wild Goose Pagoda, the Shaanxi History Museum, and the wall itself all justify time. Many visitors do a single day-and-night stop on the way between Beijing and Chengdu, but a 2–3 night stay is much more rewarding.",
+    },
+  ],
+
+  hangzhou: [
+    {
+      q: "How long does the high-speed train from Shanghai to Hangzhou take?",
+      a: "45 minutes on the express service from Shanghai Hongqiao to Hangzhou East. There are typically 2–3 trains an hour for most of the day and tickets start at around RMB 73 (£8). This frequency and price is what makes Hangzhou a viable Shanghai day trip in a way that no European destination at the same distance is.",
+    },
+    {
+      q: "Where should I stay in Hangzhou for West Lake access?",
+      a: "The Hubin Road / Longxiangqiao area on the eastern shore of West Lake is the densest cluster of high-end and mid-range hotels with direct lake walking access. The Four Seasons, Amanfayun, and the historic Shangri-La are the standout luxury choices here. For a slightly cheaper base 15 minutes' walk north of the lake, Wulin Square has a tighter cluster of mid-range business hotels with the same Metro Line 1 access.",
+    },
+    {
+      q: "Can I do Hangzhou as a day trip from Shanghai?",
+      a: "Yes — take the first HSR from Hongqiao around 07:00, arrive at West Lake by 08:30, walk the lake circuit, eat lunch at Lou Wai Lou, see the Lingyin Temple in the afternoon, and take a 17:30–18:30 train back to Shanghai. It's a long day but achievable. For a less rushed trip, stay one night near Hubin Road and return the next morning.",
+    },
+    {
+      q: "When is the best time to visit West Lake?",
+      a: "April–May and September–October are the best months — comfortable temperatures, clear skies, and the lake at its most photogenic. The Broken Bridge in snow (December–January) is the classic Hangzhou postcard image and is genuinely worth the cold if you can get the right week. Avoid June–August, when Hangzhou is hot, humid, and the lake is at its most uncomfortable.",
+    },
+    {
+      q: "What's the difference between Hangzhou East and Hangzhou Railway Station?",
+      a: "Hangzhou East (Hangzhoudong) is the modern HSR mega-station and is where almost all high-speed trains arrive. Hangzhou Railway Station (Chengzhan, the historic central terminal south of West Lake) handles a few conventional services and is closer to West Lake walking-wise. For HSR arrivals from Shanghai, you'll always be at Hangzhou East — connected to the centre by Metro Lines 1 and 4.",
+    },
+  ],
+
+  hong_kong: [
+    {
+      q: "Which side of Victoria Harbour should I stay on?",
+      a: "For a first Hong Kong trip with budget for premium hotels, Hong Kong Island (around Central, Admiralty, or Wan Chai on the Island Line) puts you in the financial-and-dining core. For a more interesting neighbourhood at lower cost, Tsim Sha Tsui in Kowloon offers the best skyline view back across the harbour and runs roughly 30 percent cheaper than equivalent-quality Hong Kong Island hotels.",
+    },
+    {
+      q: "How fast is the Airport Express to Central?",
+      a: "24 minutes from Hong Kong International Airport to the Hong Kong (Central) station, with departures every 10 minutes. Tickets are HK$115 one-way (around £11), or HK$205 return. Many airlines offer free in-town check-in at Hong Kong and Kowloon stations the morning of departure, which lets you drop your bags and travel light around the city until your flight. It's one of the best airport rail links in the world.",
+    },
+    {
+      q: "Do I need to buy an Octopus card or can I use contactless?",
+      a: "Since 2024, contactless Visa, Mastercard, Apple Pay, and Google Pay are accepted at every MTR fare gate and apply the same fares as Octopus. For a short trip (1–4 days), you don't need an Octopus card at all — just tap in and out with the card you already carry. The Octopus is still worth it for longer stays because it works for buses, trams, the Star Ferry, and most convenience stores.",
+    },
+    {
+      q: "How easy is the high-speed train from Hong Kong to mainland China?",
+      a: "Very easy. Hong Kong West Kowloon to Futian (Shenzhen) is 14 minutes; to Guangzhou South is 48 minutes; to Beijing or Shanghai around 8–9 hours. Immigration is co-located inside the West Kowloon building under a special arrangement — you clear both Hong Kong exit and Chinese mainland entry before boarding, then walk straight off the train on the mainland side. No second queue. The high-speed link is the right answer for any day trip from Hong Kong to Shenzhen or Guangzhou.",
+    },
+    {
+      q: "Do UK or US passport holders need a visa for Hong Kong?",
+      a: "No — Hong Kong is visa-free for UK passport holders for 180 days and for US, EU, Canadian, Australian, and most other Western nationalities for 90 days. This is a different and much more generous system than mainland China, which requires either a full visa or the 144/240-hour transit policy. You can fly into Hong Kong without any prior paperwork; you cannot do the same for Beijing or Shanghai.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {

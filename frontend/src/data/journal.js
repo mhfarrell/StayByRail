@@ -8,6 +8,54 @@
 
 export const journalArticles = [
   {
+    slug: "madrid-atocha-vs-chamartin-where-to-stay",
+    title: "Madrid Atocha vs Chamart\u00edn: which station should you actually stay near",
+    subtitle:
+      "Madrid has two long-distance stations that serve completely different parts of the city. The one you sleep near reshapes your trip in ways the AVE map never warns you about.",
+    excerpt:
+      "Most travel guides assume Madrid's only big station is Atocha. Then you book a Chamart\u00edn departure and discover the cab is half an hour across town. Here's the honest comparison.",
+    category: "Decision guide",
+    datePublished: "2026-04-08",
+    dateModified: "2026-04-08",
+    heroCityGuide: "madrid",
+    relatedPasses: [],
+    sections: [
+      {
+        heading: "The short answer",
+        body: "Atocha is the better default for almost every Madrid hotel choice: more central, more nightlife and museums within walking distance, more hotel competition at every price tier, and still on the high-speed network. Chamart\u00edn only wins as a base if you have an early-morning train that specifically departs from Chamart\u00edn, or if you're in town for business at one of the office towers around Plaza de Castilla.\n\nThe two stations are 18 minutes apart by Metro Line 1 (or 11-12 minutes by Cercan\u00edas if your timing lines up), but in hotel terms they sit in different cities. The neighbourhood difference matters more than any train schedule.",
+      },
+      {
+        heading: "What Atocha is and what it serves",
+        body: "Madrid Puerta de Atocha-Almudena Grandes \u2014 to give it its full post-2022 name \u2014 is the historic central station at the south end of the Paseo del Prado. The wrought-iron 19th-century train shed was reborn in the early 1990s as the famous tropical garden hall, complete with palms, turtles and pond fish; the actual platforms sit alongside in a modernist concrete extension built for the original Madrid-Sevilla AVE.\n\nAtocha is the headline AVE station for southern and eastern Spain. Renfe AVE and Avlo services to Sevilla, C\u00f3rdoba, M\u00e1laga, C\u00e1diz, Granada, Valencia, Alicante and Murcia all run from here. It's also the southern Cercan\u00edas hub \u2014 every C-line that serves the south-east of the metropolitan area passes through. Metro: the Estaci\u00f3n del Arte / Atocha Renfe interchange on Line 1, with a short underground walk between the metro hall and the platforms.\n\nWalkable from Atocha: the Reina Sof\u00eda (3 minutes), the Prado (8 minutes), Retiro park (5 minutes), Lavapi\u00e9s and Barrio de las Letras (10-15 minutes). This is the museum-and-tapas heart of Madrid.",
+      },
+      {
+        heading: "What Chamart\u00edn is and what it serves",
+        body: "Madrid Chamart\u00edn-Clara Campoamor sits at the north end of the city, behind the Cuatro Torres skyline and a kilometre from Plaza de Castilla. It is a much more utilitarian building than Atocha \u2014 a 1970s slab with no garden, no palms, and no tourists posing for photos. What it has instead is Spain's main long-distance rail link to the north.\n\nAVE and Alvia services to the Basque country (Bilbao, San Sebasti\u00e1n via the planned 'Y vasca'), Cantabria (Santander), Asturias (Oviedo, Gij\u00f3n), and Galicia (A Coru\u00f1a, Santiago, Vigo) almost all run from Chamart\u00edn. Conventional long-distance services towards the French border, the historic Trenhotel-style overnight services that used to run to Lisbon and Paris, and the surviving Intercity routes through Castilla y Le\u00f3n share the same departure boards. Many Iryo and Ouigo low-cost high-speed services use Chamart\u00edn for at least some of their daily slots.\n\nChamart\u00edn is on Metro Lines 1 and 10, plus Cercan\u00edas. The neighbourhood around it is glass office towers, embassy gardens, expensive residential apartment blocks, and \u2014 by Madrid standards \u2014 not very much going on after 21:00.",
+      },
+      {
+        heading: "Which trains leave from where (the surprising bit)",
+        body: "This is the section that catches travellers out. Renfe has been progressively rebalancing services between the two stations since 2022 to relieve Atocha congestion and prepare for the long-promised through-running tunnel. The split is no longer as clean as 'south from Atocha, north from Chamart\u00edn'.\n\nAs a rough rule, but always verify the actual ticket: services to Andaluc\u00eda (Sevilla, M\u00e1laga, C\u00f3rdoba, C\u00e1diz, Granada) and to Levante (Valencia, Alicante, Murcia) still run almost entirely from Atocha. Services to the north and north-west (Asturias, Galicia, Cantabria, Pa\u00eds Vasco) run almost entirely from Chamart\u00edn. AVE to Barcelona is genuinely split \u2014 some daily services depart from Atocha, others from Chamart\u00edn, and the same is true of the Iryo and Ouigo competitors on the same route.\n\nThe practical implication: when you book a Madrid hotel, look at your specific train's departure station before you confirm the hotel, not after. 'Madrid Puerta de Atocha' and 'Madrid Chamart\u00edn' read like trivial differences on a booking confirmation, but a hotel near the wrong one can add 40 minutes to a 06:30 departure morning.",
+      },
+      {
+        heading: "The two neighbourhoods, side by side",
+        body: "Atocha-area hotels sit inside the museum belt. Walk out of any of them and you're within five minutes of a major Spanish institution: the Prado, the Reina Sof\u00eda, the Thyssen, the Royal Botanical Garden. Within ten minutes you're in Lavapi\u00e9s for the cheapest tapas in central Madrid, or Barrio de las Letras for the slightly more polished version. Restaurants are open until midnight, bars are open until 02:00 or 03:00, and there is reliable foot traffic at every hour of the day. Some streets are loud at night; some pockets behind the Reina Sof\u00eda are surprisingly quiet.\n\nChamart\u00edn-area hotels sit inside the Madrid that Madrile\u00f1os live and work in but tourists rarely see. Wide avenues, glass towers, expensive supermarkets, three Michelin-starred restaurants tucked into business hotels, and almost nothing happening on the street after 22:00. The Bernab\u00e9u (Real Madrid's stadium) is a 10-minute walk from Plaza de Castilla, which matters for one specific kind of trip and not at all for any other. The Castellana boulevard runs straight south towards the city centre but you would not walk it \u2014 it's a 45-minute trudge along a multi-lane highway.\n\nIf you photograph your trip in any way \u2014 the meals, the streets, the squares \u2014 you will get more usable photographs out of three nights in Atocha than out of three nights in Chamart\u00edn. That's not a snobbish observation. It's the actual difference between a tourist neighbourhood and a business one.",
+      },
+      {
+        heading: "Connecting between the two",
+        body: "Metro Line 1 runs the full length of central Madrid and connects both stations directly. End-to-end Atocha Renfe to Chamart\u00edn is 18-20 minutes including the walk between platforms and the metro hall. It's the most reliable option at any hour and runs from roughly 06:00 to 01:30 daily.\n\nCercan\u00edas C-1, C-2, C-3, C-4, C-7, C-8 and C-10 all run between the two stations as well, taking 11-13 minutes once you're moving. They're typically faster than the metro \u2014 but Cercan\u00edas frequencies drop off in the early morning and late evening, and some of those lines stop running before midnight, so don't bet a 06:00 connection on them. If you have a connecting AVE ticket, the Combinado Cercan\u00edas code on the bottom of your reservation gives you a free Cercan\u00edas trip in either direction within the same day.\n\nTaxi between the two is 15-25 minutes depending on traffic and runs around \u20ac15-22. Useful with luggage, indefensible without.\n\nWhatever you use, build at least 30 minutes of slack into any inter-station transfer with bags. Both stations are large enough that the walk from a metro platform to a numbered AVE platform can take 8 minutes on its own, and Renfe security checks for AVE departures add another 5-10.",
+      },
+      {
+        heading: "The hotel pricing reality",
+        body: "Atocha-area hotels are priced like central Madrid hotels: \u20ac60-90 for budget chain rooms (Travelodge, B&B Hotels, ibis), \u20ac120-180 for mid-range (NH, Vincci, Catalonia), \u20ac280+ for the genuine luxury tier (Mandarin Oriental Ritz, Four Seasons Centro Canalejas). Hotel competition is fierce because every chain wants a Madrid-Centro flag.\n\nChamart\u00edn-area hotels are priced for corporate travel: a tighter band of \u20ac90-140 for business chains (AC by Marriott, NH Eurobuilding, Holiday Inn), with slightly less variation between weekday and weekend rates. The savings against equivalent-quality Atocha hotels are real but smaller than you'd guess \u2014 typically 10-20 percent at the mid-range tier, less at the luxury end. The luxury hotels around the Cuatro Torres are not cheap; they're priced for executives on expense accounts.\n\nThe Atocha premium, in other words, is much smaller than the comparable London Zone 1 / Zone 2 gap or the Paris central / outer-arrondissement gap. It almost never justifies basing a leisure trip in Chamart\u00edn purely on price. The savings are too small, and the evening experience is too different.",
+      },
+      {
+        heading: "The verdict",
+        body: "Default to an Atocha-area hotel for any Madrid trip whose main purpose is sightseeing, food, museums, nightlife, or simply walking around a beautiful old European capital. The hotel-to-attraction walks are short, the area is full of life, and you can be on a Chamart\u00edn-departing AVE in 25 minutes flat if your specific train happens to leave from there.\n\nThe only sound reasons to actively pick a Chamart\u00edn-area hotel as a leisure base are: your train into or out of Madrid genuinely leaves from Chamart\u00edn, the departure is before 07:00, and the idea of a rush-hour Cercan\u00edas with luggage is unappealing. Or: you specifically want a quiet residential business-district base with predictable chain hotels and modern fittings, and you're willing to take the metro into central Madrid every evening. Outside those, Atocha wins.\n\nThe broader rule, the one that applies to every European city with multiple long-distance stations: pick your hotel for the city, not for the station. Stations move trains; cities move trips. If you book the city right, the train will figure itself out.",
+      },
+    ],
+  },
+
+  {
     slug: "london-zone-1-vs-zone-2-hotel-cost",
     title: "London Zone 1 vs Zone 2: the real hotel cost difference",
     subtitle:

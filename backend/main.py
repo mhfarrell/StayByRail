@@ -74,6 +74,9 @@ CITY_COUNTRIES = {
     # Thailand
     "bangkok": "Thailand", "chiang_mai": "Thailand", "phuket": "Thailand",
     "pattaya": "Thailand", "krabi": "Thailand",
+    # China (including Hong Kong SAR)
+    "beijing": "China", "shanghai": "China", "guangzhou": "China", "shenzhen": "China",
+    "chengdu": "China", "xian": "China", "hangzhou": "China", "hong_kong": "China",
 }
 
 

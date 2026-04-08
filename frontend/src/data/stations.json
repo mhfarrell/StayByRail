@@ -804,6 +804,308 @@
     "primaryLineKey": "metro_l9"
   },
   {
+    "slug": "beigongmen-beijing",
+    "name": "Beigongmen",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 40.008,
+    "lon": 116.2742,
+    "lines": [
+      "Beijing Subway Line 4"
+    ],
+    "primaryLineKey": "subway_line_4"
+  },
+  {
+    "slug": "beijing-north-railway-station-beijing",
+    "name": "Beijing North Railway Station",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.941,
+    "lon": 116.3447,
+    "lines": [
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "beijing-railway-station-beijing",
+    "name": "Beijing Railway Station",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9026,
+    "lon": 116.4275,
+    "lines": [
+      "Beijing Subway Line 2",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "subway_line_2"
+  },
+  {
+    "slug": "beijing-south-railway-station-beijing",
+    "name": "Beijing South Railway Station",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.865,
+    "lon": 116.3787,
+    "lines": [
+      "Beijing Subway Line 4",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "subway_line_4"
+  },
+  {
+    "slug": "beijing-west-railway-station-beijing",
+    "name": "Beijing West Railway Station",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.8945,
+    "lon": 116.322,
+    "lines": [
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "beijing-zoo-beijing",
+    "name": "Beijing Zoo",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9412,
+    "lon": 116.3367,
+    "lines": [
+      "Beijing Subway Line 4"
+    ],
+    "primaryLineKey": "subway_line_4"
+  },
+  {
+    "slug": "capital-airport-terminal-3-beijing",
+    "name": "Capital Airport Terminal 3",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 40.0521,
+    "lon": 116.6105,
+    "lines": [
+      "Capital Airport Express"
+    ],
+    "primaryLineKey": "airport_express"
+  },
+  {
+    "slug": "dongdan-beijing",
+    "name": "Dongdan",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9078,
+    "lon": 116.4188,
+    "lines": [
+      "Beijing Subway Line 1"
+    ],
+    "primaryLineKey": "subway_line_1"
+  },
+  {
+    "slug": "dongzhimen-beijing",
+    "name": "Dongzhimen",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9412,
+    "lon": 116.4346,
+    "lines": [
+      "Beijing Subway Line 2"
+    ],
+    "primaryLineKey": "subway_line_2"
+  },
+  {
+    "slug": "fuxingmen-beijing",
+    "name": "Fuxingmen",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.908,
+    "lon": 116.3568,
+    "lines": [
+      "Beijing Subway Line 1"
+    ],
+    "primaryLineKey": "subway_line_1"
+  },
+  {
+    "slug": "gulou-dajie-beijing",
+    "name": "Gulou Dajie",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9494,
+    "lon": 116.3895,
+    "lines": [
+      "Beijing Subway Line 2"
+    ],
+    "primaryLineKey": "subway_line_2"
+  },
+  {
+    "slug": "guomao-beijing",
+    "name": "Guomao",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9088,
+    "lon": 116.4596,
+    "lines": [
+      "Beijing Subway Line 1"
+    ],
+    "primaryLineKey": "subway_line_1"
+  },
+  {
+    "slug": "jianguomen-beijing",
+    "name": "Jianguomen",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.908,
+    "lon": 116.4346,
+    "lines": [
+      "Beijing Subway Line 1",
+      "Beijing Subway Line 2"
+    ],
+    "primaryLineKey": "subway_line_1"
+  },
+  {
+    "slug": "qianmen-beijing",
+    "name": "Qianmen",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.8993,
+    "lon": 116.3974,
+    "lines": [
+      "Beijing Subway Line 2"
+    ],
+    "primaryLineKey": "subway_line_2"
+  },
+  {
+    "slug": "tiananmen-east-beijing",
+    "name": "Tiananmen East",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9074,
+    "lon": 116.3997,
+    "lines": [
+      "Beijing Subway Line 1"
+    ],
+    "primaryLineKey": "subway_line_1"
+  },
+  {
+    "slug": "tiananmen-west-beijing",
+    "name": "Tiananmen West",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9074,
+    "lon": 116.3855,
+    "lines": [
+      "Beijing Subway Line 1"
+    ],
+    "primaryLineKey": "subway_line_1"
+  },
+  {
+    "slug": "tuanjiehu-beijing",
+    "name": "Tuanjiehu",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9344,
+    "lon": 116.4567,
+    "lines": [
+      "Beijing Subway Line 10"
+    ],
+    "primaryLineKey": "subway_line_10"
+  },
+  {
+    "slug": "wangfujing-beijing",
+    "name": "Wangfujing",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9143,
+    "lon": 116.4109,
+    "lines": [
+      "Beijing Subway Line 1"
+    ],
+    "primaryLineKey": "subway_line_1"
+  },
+  {
+    "slug": "xidan-beijing",
+    "name": "Xidan",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9078,
+    "lon": 116.3744,
+    "lines": [
+      "Beijing Subway Line 1"
+    ],
+    "primaryLineKey": "subway_line_1"
+  },
+  {
+    "slug": "xizhimen-beijing",
+    "name": "Xizhimen",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9412,
+    "lon": 116.355,
+    "lines": [
+      "Beijing Subway Line 2"
+    ],
+    "primaryLineKey": "subway_line_2"
+  },
+  {
+    "slug": "yonghegong-lama-temple-beijing",
+    "name": "Yonghegong Lama Temple",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9462,
+    "lon": 116.4173,
+    "lines": [
+      "Beijing Subway Line 2"
+    ],
+    "primaryLineKey": "subway_line_2"
+  },
+  {
+    "slug": "yuanmingyuan-park-beijing",
+    "name": "Yuanmingyuan Park",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9961,
+    "lon": 116.3206,
+    "lines": [
+      "Beijing Subway Line 4"
+    ],
+    "primaryLineKey": "subway_line_4"
+  },
+  {
+    "slug": "zhongguancun-beijing",
+    "name": "Zhongguancun",
+    "city": "beijing",
+    "cityDisplay": "Beijing",
+    "country": "China",
+    "lat": 39.9839,
+    "lon": 116.3206,
+    "lines": [
+      "Beijing Subway Line 4"
+    ],
+    "primaryLineKey": "subway_line_4"
+  },
+  {
     "slug": "alexanderplatz-berlin",
     "name": "Alexanderplatz",
     "city": "berlin",
@@ -1746,6 +2048,113 @@
     "primaryLineKey": "cardiff_rail"
   },
   {
+    "slug": "chengdu-east-railway-station-chengdu",
+    "name": "Chengdu East Railway Station",
+    "city": "chengdu",
+    "cityDisplay": "Chengdu",
+    "country": "China",
+    "lat": 30.6307,
+    "lon": 104.1417,
+    "lines": [
+      "Chengdu Metro Line 2",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "chengdu-north-railway-station-chengdu",
+    "name": "Chengdu North Railway Station",
+    "city": "chengdu",
+    "cityDisplay": "Chengdu",
+    "country": "China",
+    "lat": 30.7019,
+    "lon": 104.0639,
+    "lines": [
+      "Chengdu Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "chengdu-railway-station-chengdu",
+    "name": "Chengdu Railway Station",
+    "city": "chengdu",
+    "cityDisplay": "Chengdu",
+    "country": "China",
+    "lat": 30.7019,
+    "lon": 104.0639,
+    "lines": [
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "chengdu-south-railway-station-chengdu",
+    "name": "Chengdu South Railway Station",
+    "city": "chengdu",
+    "cityDisplay": "Chengdu",
+    "country": "China",
+    "lat": 30.6125,
+    "lon": 104.0721,
+    "lines": [
+      "Chengdu Metro Line 1",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "chunxi-road-chengdu",
+    "name": "Chunxi Road",
+    "city": "chengdu",
+    "cityDisplay": "Chengdu",
+    "country": "China",
+    "lat": 30.6562,
+    "lon": 104.081,
+    "lines": [
+      "Chengdu Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "renmin-park-chengdu",
+    "name": "Renmin Park",
+    "city": "chengdu",
+    "cityDisplay": "Chengdu",
+    "country": "China",
+    "lat": 30.661,
+    "lon": 104.057,
+    "lines": [
+      "Chengdu Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "tianfu-square-chengdu",
+    "name": "Tianfu Square",
+    "city": "chengdu",
+    "cityDisplay": "Chengdu",
+    "country": "China",
+    "lat": 30.6593,
+    "lon": 104.0654,
+    "lines": [
+      "Chengdu Metro Line 1",
+      "Chengdu Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "wenshu-monastery-chengdu",
+    "name": "Wenshu Monastery",
+    "city": "chengdu",
+    "cityDisplay": "Chengdu",
+    "country": "China",
+    "lat": 30.6814,
+    "lon": 104.0726,
+    "lines": [
+      "Chengdu Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
     "slug": "chiang-mai-airport-area-chiang-mai",
     "name": "Chiang Mai Airport Area",
     "city": "chiang_mai",
@@ -2497,6 +2906,178 @@
     "primaryLineKey": "glasgow_subway"
   },
   {
+    "slug": "airport-south-guangzhou",
+    "name": "Airport South",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.3947,
+    "lon": 113.3079,
+    "lines": [
+      "Guangzhou Metro Line 3"
+    ],
+    "primaryLineKey": "metro_line_3"
+  },
+  {
+    "slug": "canton-tower-guangzhou",
+    "name": "Canton Tower",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.109,
+    "lon": 113.3193,
+    "lines": [
+      "Guangzhou Metro Line 3"
+    ],
+    "primaryLineKey": "metro_line_3"
+  },
+  {
+    "slug": "chen-clan-academy-guangzhou",
+    "name": "Chen Clan Academy",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.128,
+    "lon": 113.2456,
+    "lines": [
+      "Guangzhou Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "gongyuanqian-guangzhou",
+    "name": "Gongyuanqian",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.1308,
+    "lon": 113.262,
+    "lines": [
+      "Guangzhou Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "guangzhou-east-railway-station-guangzhou",
+    "name": "Guangzhou East Railway Station",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.1518,
+    "lon": 113.3242,
+    "lines": [
+      "Guangzhou Metro Line 1",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "guangzhou-railway-station-guangzhou",
+    "name": "Guangzhou Railway Station",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.1497,
+    "lon": 113.2587,
+    "lines": [
+      "Guangzhou Metro Line 2",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "guangzhou-south-railway-station-guangzhou",
+    "name": "Guangzhou South Railway Station",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 22.9892,
+    "lon": 113.2693,
+    "lines": [
+      "Guangzhou Metro Line 2",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "haizhu-square-guangzhou",
+    "name": "Haizhu Square",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.1208,
+    "lon": 113.262,
+    "lines": [
+      "Guangzhou Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "sun-yat-sen-memorial-hall-guangzhou",
+    "name": "Sun Yat-sen Memorial Hall",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.1305,
+    "lon": 113.2625,
+    "lines": [
+      "Guangzhou Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "tianhe-sports-center-guangzhou",
+    "name": "Tianhe Sports Center",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.1395,
+    "lon": 113.3211,
+    "lines": [
+      "Guangzhou Metro Line 3"
+    ],
+    "primaryLineKey": "metro_line_3"
+  },
+  {
+    "slug": "tiyu-xilu-guangzhou",
+    "name": "Tiyu Xilu",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.1382,
+    "lon": 113.3247,
+    "lines": [
+      "Guangzhou Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "yuexiu-park-guangzhou",
+    "name": "Yuexiu Park",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.1378,
+    "lon": 113.2638,
+    "lines": [
+      "Guangzhou Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "zhujiang-new-town-guangzhou",
+    "name": "Zhujiang New Town",
+    "city": "guangzhou",
+    "cityDisplay": "Guangzhou",
+    "country": "China",
+    "lat": 23.1188,
+    "lon": 113.3243,
+    "lines": [
+      "Guangzhou Metro Line 3"
+    ],
+    "primaryLineKey": "metro_line_3"
+  },
+  {
     "slug": "altona-hamburg",
     "name": "Altona",
     "city": "hamburg",
@@ -2708,6 +3289,72 @@
     "primaryLineKey": "ubahn_u1"
   },
   {
+    "slug": "hangzhou-east-railway-station-hangzhou",
+    "name": "Hangzhou East Railway Station",
+    "city": "hangzhou",
+    "cityDisplay": "Hangzhou",
+    "country": "China",
+    "lat": 30.2932,
+    "lon": 120.218,
+    "lines": [
+      "Hangzhou Metro Line 1",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "hangzhou-railway-station-hangzhou",
+    "name": "Hangzhou Railway Station",
+    "city": "hangzhou",
+    "cityDisplay": "Hangzhou",
+    "country": "China",
+    "lat": 30.241,
+    "lon": 120.183,
+    "lines": [
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "hangzhou-railway-station-chengzhan-hangzhou",
+    "name": "Hangzhou Railway Station (Chengzhan)",
+    "city": "hangzhou",
+    "cityDisplay": "Hangzhou",
+    "country": "China",
+    "lat": 30.241,
+    "lon": 120.183,
+    "lines": [
+      "Hangzhou Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "longxiangqiao-hangzhou",
+    "name": "Longxiangqiao",
+    "city": "hangzhou",
+    "cityDisplay": "Hangzhou",
+    "country": "China",
+    "lat": 30.2562,
+    "lon": 120.166,
+    "lines": [
+      "Hangzhou Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "wulin-square-hangzhou",
+    "name": "Wulin Square",
+    "city": "hangzhou",
+    "cityDisplay": "Hangzhou",
+    "country": "China",
+    "lat": 30.2741,
+    "lon": 120.1689,
+    "lines": [
+      "Hangzhou Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
     "slug": "genbaku-dome-mae-hiroshima",
     "name": "Genbaku Dome-mae",
     "city": "hiroshima",
@@ -2800,6 +3447,245 @@
       "JR Sanyo Main Line"
     ],
     "primaryLineKey": "sanyo_hiroshima"
+  },
+  {
+    "slug": "admiralty-hong-kong",
+    "name": "Admiralty",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.2789,
+    "lon": 114.1645,
+    "lines": [
+      "MTR Island Line",
+      "MTR Tsuen Wan Line",
+      "MTR East Rail Line"
+    ],
+    "primaryLineKey": "mtr_island_line"
+  },
+  {
+    "slug": "causeway-bay-hong-kong",
+    "name": "Causeway Bay",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.2802,
+    "lon": 114.1851,
+    "lines": [
+      "MTR Island Line"
+    ],
+    "primaryLineKey": "mtr_island_line"
+  },
+  {
+    "slug": "central-hong-kong",
+    "name": "Central",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.2818,
+    "lon": 114.1582,
+    "lines": [
+      "MTR Island Line",
+      "MTR Tsuen Wan Line"
+    ],
+    "primaryLineKey": "mtr_island_line"
+  },
+  {
+    "slug": "hong-kong-hong-kong",
+    "name": "Hong Kong",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.2849,
+    "lon": 114.1583,
+    "lines": [
+      "MTR Tung Chung & Airport Express"
+    ],
+    "primaryLineKey": "mtr_tung_chung_airport"
+  },
+  {
+    "slug": "hong-kong-international-airport-hong-kong",
+    "name": "Hong Kong International Airport",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.3158,
+    "lon": 113.9365,
+    "lines": [
+      "MTR Tung Chung & Airport Express"
+    ],
+    "primaryLineKey": "mtr_tung_chung_airport"
+  },
+  {
+    "slug": "hong-kong-west-kowloon-hong-kong",
+    "name": "Hong Kong West Kowloon",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.3043,
+    "lon": 114.1665,
+    "lines": [
+      "Guangzhou-Shenzhen-Hong Kong Express Rail Link"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "hung-hom-hong-kong",
+    "name": "Hung Hom",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.3032,
+    "lon": 114.1817,
+    "lines": [
+      "MTR East Rail Line"
+    ],
+    "primaryLineKey": "mtr_east_rail"
+  },
+  {
+    "slug": "jordan-hong-kong",
+    "name": "Jordan",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.3047,
+    "lon": 114.1717,
+    "lines": [
+      "MTR Tsuen Wan Line"
+    ],
+    "primaryLineKey": "mtr_tsuen_wan_line"
+  },
+  {
+    "slug": "kowloon-hong-kong",
+    "name": "Kowloon",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.3045,
+    "lon": 114.1612,
+    "lines": [
+      "MTR Tung Chung & Airport Express"
+    ],
+    "primaryLineKey": "mtr_tung_chung_airport"
+  },
+  {
+    "slug": "kowloon-tong-hong-kong",
+    "name": "Kowloon Tong",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.3372,
+    "lon": 114.1762,
+    "lines": [
+      "MTR Kwun Tong Line",
+      "MTR East Rail Line"
+    ],
+    "primaryLineKey": "mtr_kwun_tong_line"
+  },
+  {
+    "slug": "lo-wu-hong-kong",
+    "name": "Lo Wu",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.5283,
+    "lon": 114.1133,
+    "lines": [
+      "MTR East Rail Line"
+    ],
+    "primaryLineKey": "mtr_east_rail"
+  },
+  {
+    "slug": "lok-ma-chau-hong-kong",
+    "name": "Lok Ma Chau",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.5147,
+    "lon": 114.0656,
+    "lines": [
+      "MTR East Rail Line"
+    ],
+    "primaryLineKey": "mtr_east_rail"
+  },
+  {
+    "slug": "mong-kok-hong-kong",
+    "name": "Mong Kok",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.3193,
+    "lon": 114.1693,
+    "lines": [
+      "MTR Tsuen Wan Line",
+      "MTR Kwun Tong Line"
+    ],
+    "primaryLineKey": "mtr_tsuen_wan_line"
+  },
+  {
+    "slug": "sheung-wan-hong-kong",
+    "name": "Sheung Wan",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.2864,
+    "lon": 114.1521,
+    "lines": [
+      "MTR Island Line"
+    ],
+    "primaryLineKey": "mtr_island_line"
+  },
+  {
+    "slug": "tsim-sha-tsui-hong-kong",
+    "name": "Tsim Sha Tsui",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.2976,
+    "lon": 114.1722,
+    "lines": [
+      "MTR Tsuen Wan Line"
+    ],
+    "primaryLineKey": "mtr_tsuen_wan_line"
+  },
+  {
+    "slug": "tung-chung-hong-kong",
+    "name": "Tung Chung",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.2891,
+    "lon": 113.9418,
+    "lines": [
+      "MTR Tung Chung & Airport Express"
+    ],
+    "primaryLineKey": "mtr_tung_chung_airport"
+  },
+  {
+    "slug": "wan-chai-hong-kong",
+    "name": "Wan Chai",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.2776,
+    "lon": 114.1731,
+    "lines": [
+      "MTR Island Line"
+    ],
+    "primaryLineKey": "mtr_island_line"
+  },
+  {
+    "slug": "wong-tai-sin-hong-kong",
+    "name": "Wong Tai Sin",
+    "city": "hong_kong",
+    "cityDisplay": "Hong Kong",
+    "country": "China",
+    "lat": 22.3415,
+    "lon": 114.1939,
+    "lines": [
+      "MTR Kwun Tong Line"
+    ],
+    "primaryLineKey": "mtr_kwun_tong_line"
   },
   {
     "slug": "fukui-kanazawa",
@@ -6929,6 +7815,219 @@
     "primaryLineKey": "sevilla_metro_1"
   },
   {
+    "slug": "east-nanjing-road-shanghai",
+    "name": "East Nanjing Road",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.239,
+    "lon": 121.481,
+    "lines": [
+      "Shanghai Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "hongqiao-airport-terminal-2-shanghai",
+    "name": "Hongqiao Airport Terminal 2",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.1979,
+    "lon": 121.3363,
+    "lines": [
+      "Shanghai Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "hongqiao-railway-station-shanghai",
+    "name": "Hongqiao Railway Station",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.1947,
+    "lon": 121.3201,
+    "lines": [
+      "Shanghai Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "jing-an-temple-shanghai",
+    "name": "Jing'an Temple",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.224,
+    "lon": 121.4452,
+    "lines": [
+      "Shanghai Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "longyang-road-shanghai",
+    "name": "Longyang Road",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.209,
+    "lon": 121.5577,
+    "lines": [
+      "Shanghai Metro Line 2",
+      "Shanghai Maglev"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "lujiazui-shanghai",
+    "name": "Lujiazui",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.237,
+    "lon": 121.505,
+    "lines": [
+      "Shanghai Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "people-s-square-shanghai",
+    "name": "People's Square",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.233,
+    "lon": 121.4737,
+    "lines": [
+      "Shanghai Metro Line 1",
+      "Shanghai Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "pudong-international-airport-shanghai",
+    "name": "Pudong International Airport",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.1432,
+    "lon": 121.8052,
+    "lines": [
+      "Shanghai Metro Line 2",
+      "Shanghai Maglev"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "shanghai-hongqiao-railway-station-shanghai",
+    "name": "Shanghai Hongqiao Railway Station",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.1947,
+    "lon": 121.3201,
+    "lines": [
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "shanghai-railway-station-shanghai",
+    "name": "Shanghai Railway Station",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.25,
+    "lon": 121.4555,
+    "lines": [
+      "Shanghai Metro Line 1",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "shanghai-south-railway-station-shanghai",
+    "name": "Shanghai South Railway Station",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.1551,
+    "lon": 121.4309,
+    "lines": [
+      "Shanghai Metro Line 1",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "west-nanjing-road-shanghai",
+    "name": "West Nanjing Road",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.2289,
+    "lon": 121.4576,
+    "lines": [
+      "Shanghai Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "xintiandi-shanghai",
+    "name": "Xintiandi",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.2206,
+    "lon": 121.4773,
+    "lines": [
+      "Shanghai Metro Line 10"
+    ],
+    "primaryLineKey": "metro_line_10"
+  },
+  {
+    "slug": "xujiahui-shanghai",
+    "name": "Xujiahui",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.1944,
+    "lon": 121.4364,
+    "lines": [
+      "Shanghai Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "yuyuan-garden-shanghai",
+    "name": "Yuyuan Garden",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.2271,
+    "lon": 121.4906,
+    "lines": [
+      "Shanghai Metro Line 10"
+    ],
+    "primaryLineKey": "metro_line_10"
+  },
+  {
+    "slug": "zhongshan-park-shanghai",
+    "name": "Zhongshan Park",
+    "city": "shanghai",
+    "cityDisplay": "Shanghai",
+    "country": "China",
+    "lat": 31.22,
+    "lon": 121.415,
+    "lines": [
+      "Shanghai Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
     "slug": "cathedral-sheffield",
     "name": "Cathedral",
     "city": "sheffield",
@@ -6979,6 +8078,137 @@
       "Sheffield Supertram"
     ],
     "primaryLineKey": "supertram"
+  },
+  {
+    "slug": "airport-east-shenzhen",
+    "name": "Airport East",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.6481,
+    "lon": 113.8123,
+    "lines": [
+      "Shenzhen Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "civic-center-shenzhen",
+    "name": "Civic Center",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.5495,
+    "lon": 114.0562,
+    "lines": [
+      "Shenzhen Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "futian-checkpoint-shenzhen",
+    "name": "Futian Checkpoint",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.5103,
+    "lon": 114.0628,
+    "lines": [
+      "Shenzhen Metro Line 4"
+    ],
+    "primaryLineKey": "metro_line_4"
+  },
+  {
+    "slug": "futian-railway-station-shenzhen",
+    "name": "Futian Railway Station",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.5371,
+    "lon": 114.0577,
+    "lines": [
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "huaqiang-road-shenzhen",
+    "name": "Huaqiang Road",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.5439,
+    "lon": 114.0851,
+    "lines": [
+      "Shenzhen Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "laojie-shenzhen",
+    "name": "Laojie",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.5487,
+    "lon": 114.1124,
+    "lines": [
+      "Shenzhen Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "luohu-shenzhen",
+    "name": "Luohu",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.5328,
+    "lon": 114.1175,
+    "lines": [
+      "Shenzhen Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "shenzhen-north-railway-station-shenzhen",
+    "name": "Shenzhen North Railway Station",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.6105,
+    "lon": 114.0297,
+    "lines": [
+      "Shenzhen Metro Line 4",
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "metro_line_4"
+  },
+  {
+    "slug": "shenzhen-railway-station-shenzhen",
+    "name": "Shenzhen Railway Station",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.5333,
+    "lon": 114.1175,
+    "lines": [
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "window-of-the-world-shenzhen",
+    "name": "Window of the World",
+    "city": "shenzhen",
+    "cityDisplay": "Shenzhen",
+    "country": "China",
+    "lat": 22.5388,
+    "lon": 114.0297,
+    "lines": [
+      "Shenzhen Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
   },
   {
     "slug": "ancienne-synagogue-les-halles-strasbourg",
@@ -7868,6 +9098,110 @@
       "MetroValencia Line 5"
     ],
     "primaryLineKey": "metrovalencia_1"
+  },
+  {
+    "slug": "beidajie-xian",
+    "name": "Beidajie",
+    "city": "xian",
+    "cityDisplay": "Xi'an",
+    "country": "China",
+    "lat": 34.268,
+    "lon": 108.943,
+    "lines": [
+      "Xi'an Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "beikezhan-xi-an-north-railway-station-xian",
+    "name": "Beikezhan (Xi'an North Railway Station)",
+    "city": "xian",
+    "cityDisplay": "Xi'an",
+    "country": "China",
+    "lat": 34.3786,
+    "lon": 108.9396,
+    "lines": [
+      "Xi'an Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "bell-tower-xian",
+    "name": "Bell Tower",
+    "city": "xian",
+    "cityDisplay": "Xi'an",
+    "country": "China",
+    "lat": 34.2588,
+    "lon": 108.943,
+    "lines": [
+      "Xi'an Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "wulukou-xian",
+    "name": "Wulukou",
+    "city": "xian",
+    "cityDisplay": "Xi'an",
+    "country": "China",
+    "lat": 34.2655,
+    "lon": 108.957,
+    "lines": [
+      "Xi'an Metro Line 1"
+    ],
+    "primaryLineKey": "metro_line_1"
+  },
+  {
+    "slug": "xi-an-north-railway-station-xian",
+    "name": "Xi'an North Railway Station",
+    "city": "xian",
+    "cityDisplay": "Xi'an",
+    "country": "China",
+    "lat": 34.3786,
+    "lon": 108.9396,
+    "lines": [
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "xi-an-railway-station-xian",
+    "name": "Xi'an Railway Station",
+    "city": "xian",
+    "cityDisplay": "Xi'an",
+    "country": "China",
+    "lat": 34.2756,
+    "lon": 108.97,
+    "lines": [
+      "China Railway High-Speed"
+    ],
+    "primaryLineKey": "high_speed_rail"
+  },
+  {
+    "slug": "xiaozhai-xian",
+    "name": "Xiaozhai",
+    "city": "xian",
+    "cityDisplay": "Xi'an",
+    "country": "China",
+    "lat": 34.22,
+    "lon": 108.943,
+    "lines": [
+      "Xi'an Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
+  },
+  {
+    "slug": "yongningmen-south-gate-xian",
+    "name": "Yongningmen (South Gate)",
+    "city": "xian",
+    "cityDisplay": "Xi'an",
+    "country": "China",
+    "lat": 34.2503,
+    "lon": 108.9404,
+    "lines": [
+      "Xi'an Metro Line 2"
+    ],
+    "primaryLineKey": "metro_line_2"
   },
   {
     "slug": "bashamichi-yokohama",
