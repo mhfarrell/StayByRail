@@ -27,14 +27,14 @@ Seed articles:
 
 - [x] "Is the JR Pass still worth it in 2026?" — **shipped as `/passes/jr-pass`** instead of a journal article (same content scope, better categorised under transport passes).
 - [x] "London Zone 1 vs Zone 2: the real hotel cost difference" — published at `/journal/london-zone-1-vs-zone-2-hotel-cost`.
-- [ ] "Why Otsuka is Tokyo's most underrated hotel base" — expand your existing editor's pick into a full article
+- [x] "Why Otsuka is Tokyo's most underrated hotel base" — published at `/journal/why-otsuka-is-tokyos-most-underrated-hotel-base` as an editor's pick expansion.
 - [x] "Shinkansen vs flying Tokyo→Osaka in 2026: cost, time, carbon" — published at `/journal/shinkansen-vs-flying-tokyo-osaka-2026`.
 - [ ] "The quietest hotels near Gare du Nord" — practical traveller angle
 - [x] "Bangkok BTS vs MRT: which line should you actually stay on" — published at `/journal/bangkok-bts-vs-mrt-where-to-stay`.
 - [ ] "Hammersmith: the London hotel base nobody talks about" — editor's pick expansion
 - [x] "How to use Navigo Découverte as a tourist in Paris" — **shipped as `/passes/navigo`** instead of a journal article.
 - [ ] "Kyoto without a car: every temple you can reach by bus + subway" — deep utility content
-- [ ] "Eurostar vs budget flight London→Paris: the honest breakdown" — comparison
+- [x] "Eurostar vs budget flight London→Paris: the honest breakdown" — published at `/journal/eurostar-vs-budget-flight-london-paris`.
 
 Cadence: **one new article every 10-14 days** between now and re-applying. Even 4-5 published articles + the scaffold = a noticeably active site.
 
