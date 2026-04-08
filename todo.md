@@ -10,7 +10,7 @@ This file is organised by ROI. Start at the top.
 
 - [x] **Programmatic `/hotels-near/:station` landing pages** — 597 station pages across 52 cities, each with unique H1/meta/canonical, BreadcrumbList + TrainStation + GeoCoordinates JSON-LD, live hotel preview from the API, nearby-stations grid for internal linking, and back-link to the parent city guide. Sitemap regenerated with all 613 URLs. Generator lives at `frontend/scripts/gen-stations.py`.
 - [x] **Code-split the route bundle** — main JS dropped from 594 KB to 308 KB via `React.lazy` + `<Suspense>`. Each route is its own chunk; `SearchPage` (202 KB) and `HotelMap` (155 KB) only load when visited. HomePage stays eager as the LCP target.
-- [ ] **Lighthouse audit** on `/`, `/guides/tokyo`, `/search` — record current Performance / Accessibility / SEO / Best Practices scores, then fix the red items. Target: 90+ on all four.
+- [ ] **Lighthouse audit** on `/`, `/guides/tokyo`, `/search`, `/hotels-near/shinjuku-tokyo`, `/journal/london-zone-1-vs-zone-2-hotel-cost` — record current Performance / Accessibility / SEO / Best Practices scores, then fix the red items. Target: 90+ on all four. *(user action — run `npx lighthouse <url> --view` locally or from Chrome DevTools)*
 - [x] **"Last updated" dates + author byline on every guide** — every entry in `cityGuides.js` has `updatedAt` + `author` fields; `GuidePage` renders "Updated April 2026 · by Matt Farrell" beneath the hero.
 - [ ] **Submit sitemap to Google Search Console** — verify property, submit `https://staybyrail.co.uk/sitemap.xml`, check indexing coverage. Do the same for **Bing Webmaster Tools**. Free, one-time, essential. *(user action)*
 - [x] **Fix every internal 404** — audited every `<Link to>` and `<a href>` in `frontend/src`; all internal targets resolve. Fixed one latent SEO issue: Cloudflare Pages serves 404 routes with HTTP 200, so `NotFoundPage` now emits `noindex` and every page self-canonicalises via a new `canonical`/`noindex` prop on `PageMeta`.
@@ -21,18 +21,18 @@ This file is organised by ROI. Start at the top.
 
 ### Journal / blog section at `/journal`
 
-Add a long-form content section with 8-12 real articles, each 1000-2000 words, published dates, author byline. Target long-tail SEO + proves "regular updates".
+The `/journal` scaffold is live with dedicated `JournalIndexPage` and `JournalArticlePage` components, Blog + BlogPosting JSON-LD, byline pointing at the author hub, and related-guide/related-pass sidebars. Seed articles are being published one by one.
 
 Seed articles:
 
-- [ ] "Is the JR Pass still worth it in 2026?" — high search volume, opinion piece with data
-- [ ] "London Zone 1 vs Zone 2: the real hotel cost difference" — data-driven, pulls from your own search results
+- [x] "Is the JR Pass still worth it in 2026?" — **shipped as `/passes/jr-pass`** instead of a journal article (same content scope, better categorised under transport passes).
+- [x] "London Zone 1 vs Zone 2: the real hotel cost difference" — published at `/journal/london-zone-1-vs-zone-2-hotel-cost`.
 - [ ] "Why Otsuka is Tokyo's most underrated hotel base" — expand your existing editor's pick into a full article
-- [ ] "Shinkansen vs flying Tokyo→Osaka in 2026: cost, time, carbon" — comparison piece
+- [x] "Shinkansen vs flying Tokyo→Osaka in 2026: cost, time, carbon" — published at `/journal/shinkansen-vs-flying-tokyo-osaka-2026`.
 - [ ] "The quietest hotels near Gare du Nord" — practical traveller angle
-- [ ] "Bangkok BTS vs MRT: which line should you actually stay on" — beginner-facing decision guide
+- [x] "Bangkok BTS vs MRT: which line should you actually stay on" — published at `/journal/bangkok-bts-vs-mrt-where-to-stay`.
 - [ ] "Hammersmith: the London hotel base nobody talks about" — editor's pick expansion
-- [ ] "How to use Navigo Découverte as a tourist in Paris" — transport hack
+- [x] "How to use Navigo Découverte as a tourist in Paris" — **shipped as `/passes/navigo`** instead of a journal article.
 - [ ] "Kyoto without a car: every temple you can reach by bus + subway" — deep utility content
 - [ ] "Eurostar vs budget flight London→Paris: the honest breakdown" — comparison
 
@@ -40,11 +40,11 @@ Cadence: **one new article every 10-14 days** between now and re-applying. Even 
 
 ### Transport pass explainer pages
 
-High search volume, low competition, perfect for long-tail SEO:
+High search volume, low competition, perfect for long-tail SEO. `/passes` index page live, `PassPage` component renders any entry from `frontend/src/data/transportPasses.js`:
 
-- [ ] `/passes/jr-pass` — Japan Rail Pass, what it includes, activation, 2026 price changes
-- [ ] `/passes/oyster-card` — London Oyster vs contactless, Zone caps, Heathrow Express
-- [ ] `/passes/navigo` — Paris Navigo Découverte weekly pass
+- [x] `/passes/jr-pass` — Japan Rail Pass after the 2023 hike, break-even maths, regional alternatives.
+- [x] `/passes/oyster-card` — Oyster vs contactless, zone caps, Heathrow Express.
+- [x] `/passes/navigo` — Navigo Découverte weekly pass with the Monday-to-Sunday gotcha.
 - [ ] `/passes/eurail` — Eurail Global Pass for multi-country trips
 - [ ] `/passes/bts-rabbit-card` — Bangkok BTS Rabbit card / MRT card
 
@@ -93,14 +93,14 @@ Highly shareable, link magnets, real travel utility:
 
 - [x] **BreadcrumbList** schema on nested pages — live on `GuidePage`, `GuidesIndexPage`, and every `StationLandingPage`.
 - [x] **Article** schema on guides — `GuidePage` emits Article JSON-LD with `author` and `datePublished` / `dateModified` from `updatedAt`. Journal posts still TBD.
-- [ ] **FAQPage** schema on each guide (pulled from the guide's own FAQs — requires FAQ content per guide first)
+- [x] **FAQPage** schema on each guide — 5 hand-written Qs per city live in `frontend/src/data/guideFaqs.js`, rendered as a collapsible accordion on each `GuidePage` and emitted as FAQPage JSON-LD.
 - [x] **TouristDestination** schema on city guides — `GuidePage` emits it with `geo` coords; `GuidesIndexPage` also emits a `CollectionPage` listing all 11 guides as TouristDestinations.
 
 ### Internal linking
 
-- [ ] **Every guide should link to 5+ other pages** — related cities, nearby stations, relevant journal articles, transport passes
-- [ ] **Cross-link stations**: on `/hotels-near/shinjuku-tokyo`, link to `shibuya-tokyo`, `tokyo-station-tokyo`, the Tokyo guide, and the Yamanote Line article
-- [ ] **Footer "popular pages" block** with the top 6-8 guides/journal articles
+- [x] **Every guide should link to 5+ other pages** — every `GuidePage` now links to: related country guides (up to 4), all indexed stations in that city (the station-chip grid), key-station hotels-near landing pages, the author hub, relevant journal articles via the Footer, and transport passes. Typically 15+ internal links per guide.
+- [x] **Cross-link stations**: every `StationLandingPage` links to the 8 nearest stations in the same city (by haversine distance) plus the parent city guide. Every `GuidePage` keyStation entry deep-links to its own landing page.
+- [x] **Footer "popular pages" block** — three-column footer nav (popular guides + StayByRail meta + resources) renders on every page.
 
 ### Performance
 
@@ -155,11 +155,11 @@ None of this is automatable. You need to do these — they need a real human voi
 
 - [ ] **Real photography** — replace Wikipedia thumbnails in featured cards with curated Unsplash / Pexels shots (free, higher quality, consistent aspect ratio)
 - [ ] **Favicon upgrade** — current is the logo SVG; a proper multi-size favicon set (ico + png 16/32/192/512) looks more professional
-- [ ] **Contact page** with a real form (or at minimum a mailto:) — affiliate reviewers check this
+- [x] **Contact page** with a real form (or at minimum a mailto:) — `/contact` live with ContactPage JSON-LD, mailto CTA, and clear sections on what enquiries are welcome vs which belong elsewhere.
 - [ ] **Privacy page audit** — make sure it accurately reflects the ad network + any cookies (CJ reviewers read this)
 - [ ] **Terms page audit** — same
 - [ ] **About page**: add a photo of you, a timestamp of when you built the project, and which professional profiles you're active on (you already have GitHub + LinkedIn which is good)
-- [ ] **Author page at `/authors/matt-farrell`** — a single byline page that every guide and journal article links to. Builds E-E-A-T signal for Google.
+- [x] **Author page at `/authors/matt-farrell`** — live with Person JSON-LD (jobTitle, description, sameAs links to GitHub/LinkedIn, worksFor). Every guide byline, every journal article byline, and the About page all link to it.
 
 ---
 
