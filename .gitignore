@@ -18,3 +18,8 @@ frontend/public/icons.svg
 .wrangler/
 .claude/
 test-results/
+# CLAUDE.md contains the Render deploy hook (a webhook URL with an
+# embedded secret key). Keep it local-only so the key never enters
+# git history. The previous key was rotated 2026-04-09 after a leak
+# audit; the file was untracked at the same time.
+CLAUDE.md
