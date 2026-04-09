@@ -8,6 +8,112 @@
 
 export const journalArticles = [
   {
+    slug: "ten-days-in-japan-january-2025",
+    title: "Ten days in Japan: Tokyo, castles, and a close-up of Mount Fuji",
+    subtitle:
+      "Notes and photos from a January 2025 trip. Tokyo's a planet of its own, Osaka Castle hits different at night, and Himeji's gardens deserve the detour.",
+    excerpt:
+      "A week and a bit in Japan in the last stretch of January 2025. teamLab eggs, the Odaiba Gundam, a day of sumo, Osaka Castle after dark, Himeji, and a morning staring at Mount Fuji.",
+    category: "Travel diary",
+    datePublished: "2025-01-29",
+    dateModified: "2026-04-09",
+    // Backdated to the trip date (January 2025) but actually published
+    // to the site in April 2026. Pinned so the journal index shows it
+    // first regardless of the date-DESC sort.
+    pinned: true,
+    heroCityGuide: "tokyo",
+    relatedPasses: [],
+    heroImage: {
+      src: "/journal/japan-jan-2025/teamlab-eggs.jpg",
+      alt: "Reflective egg-shaped sculptures on a bed of moss at teamLab Planets in Tokyo",
+      caption:
+        "The outdoor egg field at teamLab Planets, Toyosu. Phone camera on a slow shutter, no filter.",
+    },
+    sections: [
+      {
+        heading: "Before we start",
+        body: "Right, I'll keep this short because I want to talk about the good stuff next. I went to Japan for ten days in the back half of January 2025. Not a lot of pre-planning, a rough list of places I'd always wanted to see, and a JR Pass I bought from the UK the week before flying. If you've been on the fence about a January Japan trip: go. The weather was freezing most days, the crowds were thin in all the best places, and every second thing I walked past turned out better than the tourist board photos.\n\nThis is not really a guide. It's more a collection of notes and pictures from the places that stuck with me. Tokyo, Osaka, Himeji, and a morning staring at Mount Fuji from a high viewpoint. Everything else got cut for space.",
+      },
+      {
+        heading: "Tokyo is its own planet",
+        body: "Tokyo is a place you can't really prepare for. The scale of it is something you only start to understand after about three days in. You'll be walking down a side street in some district you picked on a map because you'd heard the coffee was good, and you'll realise the side street is itself the size of a small European town. There are seven floors of restaurants stacked on top of each other in every block. There are ramen shops where you order at a vending machine on the wall. The whole city just hums.\n\nThe food is the first thing everyone tells you about and they're right, but not in the way I expected. I assumed 'food in Tokyo' meant booking into the fancy places and waiting for a Michelin star to land in my lap. What I actually did was eat in convenience stores, in standing-bar noodle shops, in the corner of a tiny izakaya where the chef grilled skewers on a binchotan grill about a metre from my face. All of it was the best thing I ate that week. The 7-Eleven egg sandwich (yeah, really) is genuinely as good as everyone says.\n\nThe people surprised me most. I'd been warned that Tokyo is a place where strangers keep to themselves and you shouldn't expect conversation. That's technically true but it misses the bigger thing: when you do need help, the person you ask will drop whatever they're doing and walk you to where you need to go. I got lost looking for a shrine near Asakusa and a guy from a coffee shop came out onto the street with me to point at a specific corner three blocks away. He didn't know me, didn't want anything, just wanted to make sure I got there.\n\nAnd the onsens. I went to one in Hakone on a day trip and another inside a hotel in Tokyo. I'd only ever heard of them as 'hot spring bath' which is technically correct but misses the point. The point is that you spend about forty minutes doing almost nothing and you come out feeling like you've had a week's sleep. They're the best thing Japan has invented, and that includes the train network, which is saying something.",
+        image: {
+          src: "/journal/japan-jan-2025/tokyo-shrine.jpg",
+          alt: "A small Tokyo shrine with a red torii gate and paper shide streamers hanging from a straw rope",
+          caption:
+            "A neighbourhood shrine in central Tokyo. Places like this are tucked in between the office buildings everywhere.",
+          position: "after",
+        },
+      },
+      {
+        heading: "teamLab and the Unicorn Gundam at Odaiba",
+        body: "teamLab was the thing I went to Tokyo specifically for. I'd seen photos of the reflective egg room for years and kept telling myself I'd get there one day. I ended up at teamLab Planets on the first morning of the trip, still jet lagged and running on airport coffee, which turns out to be the ideal mental state for it. You take your shoes off at the door, roll your trouser legs up past your knees, and then wade through a room of waist-deep water with a thousand projected koi swimming around your shins.\n\nThe egg field is a real thing. It sits in an outdoor section of the Planets site and you walk between these giant reflective ovoids on soft moss ground. The photo at the top of this post is from that room, taken with my phone on a slow shutter. It looks nothing like it does in person. In person the eggs sort of pulse with colour depending on who's standing near which one, and which ones have been nudged (they move when you touch them, very slightly). I stayed there for about an hour after I'd already been through the rest of the installation. I was the only person in the room for long stretches, which I don't think happens very often.\n\nThen Odaiba itself. I wasn't actually going to cross over to Odaiba that day, but I kept hearing people mention the Unicorn Gundam statue and finally thought fine, I'll go. It is a full-scale RX-0 Unicorn Gundam. It is 19.7 metres tall. It is parked on the plaza in front of the DiverCity mall. At specific times it does a little transformation sequence where panels shift and the armour changes from 'destroy mode' back to the regular unicorn form. I sat on a bench and watched it happen twice. I am not even a huge Gundam person but the thing is very cool. It's one of those 'right, Japan just has this' moments that stop feeling weird about four days into the trip.",
+        image: {
+          src: "/journal/japan-jan-2025/odaiba-gundam.jpg",
+          alt: "The life-size Unicorn Gundam RX-0 statue standing outside the DiverCity mall in Odaiba, Tokyo",
+          caption:
+            "The Unicorn Gundam RX-0 at DiverCity, Odaiba. 19.7 metres tall. The human at the bottom gives you the scale.",
+          position: "after",
+        },
+      },
+      {
+        heading: "A morning at the sumo",
+        body: "If you happen to be in Tokyo when a sumo tournament is on, book a ticket and go. January has one of the six tournaments a year (Hatsu Basho) and I got in for the back of the upper tier on the second-to-last day. About twenty quid. The venue is the Ryogoku Kokugikan and it is enormous from the outside, then weirdly cosy once you're inside and sat down.\n\nThe format is fun. You arrive in the late morning and the junior bouts are already going. Nobody's paying any attention yet, so you can walk right up to the edge of the seating area, about five metres from the ring, and watch two teenagers try to pick each other up by the belt. Over the course of the afternoon the tier of wrestler steps up, and by about 4pm the top division (makuuchi) is fighting. The crowd gets a lot louder. People throw their seat cushions in the air when an upset happens, which is technically banned but nobody stops them. A single bout lasts about eight seconds and there's a full minute of ceremony around each one: salt thrown on the dohyo, the referee in his wooden-lacquered robe shouting at nobody in particular.\n\nYou come out of a full day of sumo feeling like you understand some small part of a culture that's been working on this one thing for four hundred years. Tea, beer, and proper bento boxes are all sold inside. I had all three.",
+        image: {
+          src: "/journal/japan-jan-2025/sumo-match.jpg",
+          alt: "Two sumo wrestlers fighting on the dohyo at the Ryogoku Kokugikan in Tokyo",
+          caption:
+            "A top-division bout at Ryogoku Kokugikan, January 2025 tournament. Shot from the upper tier, phone zoom.",
+          position: "after",
+        },
+      },
+      {
+        heading: "Osaka Castle after dark",
+        body: "Osaka Castle is worth seeing. Osaka Castle at night is worth the trip.\n\nI did the standard daytime visit first, which is what everyone does. The main keep is huge and bright white with a jade-green tile roof. The interior is now a history museum (be honest about this one: the whole thing was last properly reconstructed in the 1930s and the inside is very museum-ified). The views from the top floor are decent. You can easily spend two hours inside and around the outer walls.\n\nBut the thing is, you should come back at night.\n\nI came back around 6pm on a clear cold evening and the castle was lit up from the ground, against a sky that was still holding onto the last of the blue. The building turns out to be exactly the colour a castle should be when you imagine a castle in a fairy tale, and the lighting designers in Osaka have obviously been thinking about this for a while. There are no crowds. There are no queues. The approach from the east along the stone walkway is lit with low lanterns along the ground pointing at the keep, and I walked it completely alone. I took the photo below on that walk. It's my favourite photo from the whole trip and I don't think it's close.\n\nIf you only have one evening in Osaka, this is what I'd do with it. Skip the second dinner in Dotonbori. You'll find something to eat later, the city is made of food.",
+        image: {
+          src: "/journal/japan-jan-2025/osaka-castle-night.jpg",
+          alt: "Osaka Castle lit up at night with a stone walkway leading toward it",
+          caption:
+            "Osaka Castle from the east approach walkway, around 6.30pm. No people, no queues, best hour to go.",
+          position: "after",
+        },
+      },
+      {
+        heading: "Himeji, the white heron castle",
+        body: "Himeji is a short Shinkansen hop from Osaka. About half an hour on the Nozomi. Honestly, if you're going to be in Osaka at all, you should go. Himeji Castle is the single most complete feudal-era castle in Japan, and, unlike Osaka, it was never burnt down and never replaced with a concrete replica. It's the original. Built in the early 1600s and still standing exactly where it was.\n\nThe name 'white heron' makes sense the second you see it. The whole keep is whitewashed, and the upper tiers sort of fan out like wings. You approach it up a long path from the main gate and the scale of the place keeps changing as you get closer: it looks small from the gate, normal-sized from the first courtyard, and completely enormous once you're at the stone base. I got the photo below from the south courtyard with the sky about as blue as it got all week.\n\nThe interior is the more interesting bit. Unlike a lot of Japanese castles where the 'inside' is just empty tatami floors, Himeji has kept a lot of the original defensive architecture: loopholes for archers, murder-holes above the entry gate where defenders could drop things on attackers coming through, a sequence of switchback paths and fake doors designed to funnel enemies into kill zones. There's a moment where you turn a corner and realise the path you just walked was specifically engineered as a trap, and that same path has been there for four hundred years. It's unsettling in a way I wasn't expecting a castle to be.\n\nYou climb up to the top keep through a narrow wooden staircase and at the top there's a small shrine to the castle's protective spirit. The view out across the city of Himeji is good. The real view is actually back down though, across the rooftops of the lower keeps. Stand there for a bit before you come down.",
+        image: {
+          src: "/journal/japan-jan-2025/himeji-castle.jpg",
+          alt: "Himeji Castle photographed from below with its white walls and multi-tiered roof against a blue sky",
+          caption:
+            "Himeji Castle from the south courtyard. The whitewash and the fan of the upper tiers is why they call it Shirasagi-jo, the white heron castle.",
+          position: "after",
+        },
+      },
+      {
+        heading: "Kokoen, the garden behind the castle",
+        body: "Right next to Himeji Castle, sharing the same entrance complex, there's a Japanese landscape garden called Kokoen that most people skip. Don't. It's a nine-hectare walled garden that was only finished in 1992 (it was built for the 400th anniversary of the city) but it's designed in a very old style and it contains some of the best individual garden scenes I've seen anywhere.\n\nThere are nine separate gardens inside, each with its own theme. A tea-ceremony garden. A bamboo grove. A waterfall garden (the photo below is from that one). A flatwater pond garden with enormous resident koi. You can wander between them on stepping-stone paths and hardly see another person, most days. I was there in the middle of January with the maple leaves all off the trees and there was still something worth looking at every few metres.\n\nThe waterfall garden is the one I kept coming back to. The rocks are arranged very specifically to make the water sound louder than it should at the upper ledge, then softer as it drops. There's a tea house that sells matcha and a little wagashi sweet with it for about 600 yen, and if you're lucky enough to go in winter like I did, you'll sit in a heated tatami room looking out at a pond that was built to be looked at. I sat there for about forty minutes. Best 600 yen of the trip.\n\nIf you visit Himeji Castle and you skip Kokoen, you're doing a short day out. If you do both, you're doing a proper one.",
+        image: {
+          src: "/journal/japan-jan-2025/himeji-garden.jpg",
+          alt: "A stepped stone waterfall running through a Japanese landscape garden at Kokoen in Himeji",
+          caption:
+            "The waterfall garden at Kokoen, right next to Himeji Castle. Go. The tea house is worth the detour on its own.",
+          position: "after",
+        },
+      },
+      {
+        heading: "Mount Fuji, up close",
+        body: "I left Mount Fuji for the end of the trip. I took a morning bus from Tokyo out to the Kawaguchiko area, which is the main lake district on the north side of the mountain. The bus takes a bit over two hours and drops you at the station. From there you can either walk the lake, take the cable car up to a viewpoint on the opposite ridge, or bus around to the Fuji Subaru Line station on the mountain itself.\n\nThe one thing everyone wants to know is: do you actually see the mountain? The answer depends entirely on the weather. On a cloudy winter day you might get nothing at all and there are whole weeks in summer where it's hidden behind haze. I got very lucky. The sky was clear and cold all day, and Mount Fuji just sat there, enormous and perfectly conical, like a cardboard cutout pinned to the horizon, except it was unmistakably real.\n\nThe photo below is the best shot I got. It's a close crop from a high viewpoint above Kawaguchiko. The snow line had just stopped moving for the season and the whole summit cone was completely white. You can make out the individual ridges running down the sides. I stood there for about fifteen minutes just looking at it, and then walked down for a late lunch at one of the soba shops near the station.\n\nNothing I can say about Mount Fuji is going to beat the photo. It's the same mountain everyone photographs, from the same angle every tourist uses, and I still felt like I'd never seen anything like it in my life. That's kind of Japan's whole move.",
+        image: {
+          src: "/journal/japan-jan-2025/mt-fuji.jpg",
+          alt: "Close crop of Mount Fuji's snow-capped summit seen from a high viewpoint near Kawaguchiko",
+          caption:
+            "Mount Fuji from a viewpoint above Kawaguchiko. Clear winter sky, peak snow. The photo doesn't quite do it justice but nothing does.",
+          position: "after",
+        },
+      },
+    ],
+  },
+  {
     slug: "madrid-atocha-vs-chamartin-where-to-stay",
     title: "Madrid Atocha vs Chamart\u00edn: which station should you actually stay near",
     subtitle:

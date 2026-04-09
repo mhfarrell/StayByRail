@@ -107,8 +107,8 @@ const REGIONS = [
     img: "https://images.pexels.com/photos/1682748/pexels-photo-1682748.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
     city: "Bangkok", lat: 13.7563, lon: 100.5018,
     best: "Nov\u2013Feb", avoid: "Mar\u2013May (extreme heat)",
-    peak: "Cool season (25\u201330\u00B0C): low humidity, clear skies, perfect for temples and islands. Peak tourist season \u2014 book Phuket and Chiang Mai ahead.",
-    off: "Wet season (June\u2013October): short heavy downpours then sunshine. Prices drop 30\u201350%. Songkran (13\u201315 April) is unforgettable \u2014 a nationwide water fight.",
+    peak: "Cool season (25\u201330\u00B0C): low humidity, clear skies, perfect for temples and islands. Peak tourist season, book Phuket and Chiang Mai ahead.",
+    off: "Wet season (June\u2013October): short heavy downpours then sunshine. Prices drop 30\u201350%. Songkran (13\u201315 April) is unforgettable, a nationwide water fight.",
     transport: "Bangkok's BTS Skytrain and MRT metro beat the city's legendary traffic. The Airport Rail Link connects Suvarnabhumi to the centre in 30 minutes. Long-distance State Railway trains reach Chiang Mai (overnight sleeper), the southern beaches, and the northeast. Grab is the go-to app for last-mile rides.",
     tip: "Rabbit card for BTS, tokens for MRT (separate systems). Overnight sleeper Bangkok\u2013Chiang Mai saves a hotel night. Grab beats tuk-tuk prices.",
     guides: [{ slug: "bangkok", city: "Bangkok" }],
@@ -117,6 +117,48 @@ const REGIONS = [
       { label: "Klook Thailand", url: "https://www.klook.com/thailand/" },
       { label: "Mark Wiens", url: "https://migrationology.com/bangkok/" },
       { label: "Grab", url: "https://www.grab.com/th/en/" },
+    ],
+  },
+  {
+    country: "China", flag: "\u{1F1E8}\u{1F1F3}",
+    img: "https://images.pexels.com/photos/2846217/pexels-photo-2846217.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
+    city: "Beijing", lat: 39.9042, lon: 116.4074,
+    best: "Apr\u2013May & Sep\u2013Oct", avoid: "Lunar New Year crush & Jul\u2013Aug heat",
+    peak: "Spring and autumn are the ideal windows: mild temperatures, clear skies, and the best air quality for Beijing and Shanghai. Autumn colour in the Fragrant Hills around mid-November is genuinely worth the trip. Lunar New Year (late Jan to mid-Feb) sees the whole country on the move at once, expect sold-out trains and packed everything.",
+    off: "Winter outside the holiday weeks is cold but dry and dramatically cheaper, Harbin's ice festival in January is a reason to brave it. Summer (Jul\u2013Aug) is hot, humid, and the rainy season, tolerable if you stick to Hong Kong and the south.",
+    transport: "China runs the world's longest high-speed rail network, 45,000 km of dedicated track. A G-train from Beijing to Shanghai takes 4h 18m and costs around RMB 553 in second class. Book on 12306 (official, English version) or Trip.com for a friendlier UI. Every ticket is real-name linked to your passport and station entry is passport-scanned at the gate. Alipay and WeChat Pay both now accept foreign cards, so daily spending is simple. Hong Kong sits inside the same rail map via the GSHKER high-speed link from West Kowloon (14 minutes to Shenzhen, 48 to Guangzhou) but has its own visa, currency and MTR.",
+    tip: "12306 for direct booking, Trip.com for the smoother experience. 144-hour visa-free transit covers most major cities for UK/US/EU passports. Avoid the Jan\u2013Feb Lunar New Year travel window if you possibly can.",
+    guides: [
+      { slug: "beijing", city: "Beijing" },
+      { slug: "shanghai", city: "Shanghai" },
+      { slug: "hong_kong", city: "Hong Kong" },
+    ],
+    resources: [
+      { label: "12306 (English)", url: "https://www.12306.cn/en/" },
+      { label: "Trip.com China Trains", url: "https://us.trip.com/trains/china/" },
+      { label: "MTR Hong Kong", url: "https://www.mtr.com.hk/" },
+      { label: "China Highlights", url: "https://www.chinahighlights.com/" },
+    ],
+  },
+  {
+    country: "South Korea", flag: "\u{1F1F0}\u{1F1F7}",
+    img: "https://images.pexels.com/photos/237211/pexels-photo-237211.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
+    city: "Seoul", lat: 37.5665, lon: 126.9780,
+    best: "Late Mar\u2013Apr & Sep\u2013Oct", avoid: "Jul\u2013Aug monsoon & Lunar New Year",
+    peak: "Cherry blossom peaks in early April in Seoul (a week or so later in Busan) and the whole country turns up for it. Late September through early November is equally good: clear skies, cool mornings, autumn colour in the mountains around Seoraksan and Naejangsan. Korean Thanksgiving (Chuseok) in late September empties Seoul but fills every train south.",
+    off: "Winter is cold and very dry but clear, and hotel prices drop noticeably. July and August are hot, humid and monsoon-heavy, you will get caught in a downpour at some point. Lunar New Year (late Jan to mid-Feb) has the same sold-out-everything problem as China and Japan.",
+    transport: "Korail's KTX high-speed network is the backbone: Seoul to Busan in 2h 15m for about \u20A959,000 (\u00A334). SR's SRT is a slightly cheaper alternative from the Suseo station in Gangnam. Booking is via Korail Talk (app, English, takes foreign Visa and Mastercard) or Trip.com with a small markup. The Seoul Metropolitan Subway is one of the biggest and most reliable urban rail systems in the world, trains every 2\u20134 minutes, 23 lines, signage bilingual everywhere. T-money is the universal transit card, buy one at any convenience store for \u20A94,000 and use it for subway, bus, taxi and vending machines nationwide. AREX from Incheon Airport to Seoul Station runs in 43 minutes on the Express for \u20A911,000.",
+    tip: "K-ETA exemption is currently active for UK/US/EU/CA/AU through 2025 but check before flying. Korail Talk for KTX, T-money for everything else. AREX All-Stop is actually faster than the Express if you're staying in Hongdae.",
+    guides: [
+      { slug: "seoul", city: "Seoul" },
+      { slug: "busan", city: "Busan" },
+      { slug: "incheon", city: "Incheon" },
+    ],
+    resources: [
+      { label: "Korail (English)", url: "https://www.letskorail.com/" },
+      { label: "Visit Korea", url: "https://english.visitkorea.or.kr/" },
+      { label: "K-ETA", url: "https://www.k-eta.go.kr/" },
+      { label: "Seoul Metro", url: "https://www.seoulmetro.co.kr/en/" },
     ],
   },
 ];
@@ -155,12 +197,12 @@ function TravelGuidePage() {
     <div className="page-content">
       <PageMeta
         title="Best Times to Travel — StayByRail"
-        description="When to visit Japan, the UK, France, Germany, Spain, and Thailand. Live weather, seasonal advice, transport guides, and budget tips."
+        description="When to visit Japan, the UK, France, Germany, Spain, Thailand, China, and South Korea. Live weather, seasonal advice, transport guides, and budget tips."
       />
       <h2 className="page-heading" style={{ textAlign: "center" }}>Best Times to Travel</h2>
       <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
         The right timing means better weather, thinner crowds, and lower prices.
-        Here's when to go — and when to think twice — for every region we cover.
+        Here's when to go, and when to think twice, for every region we cover.
       </p>
 
       <div className="tg-list">

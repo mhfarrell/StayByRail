@@ -100,7 +100,7 @@ function JournalArticlePage() {
   });
 
   return (
-    <div className="page-content">
+    <div className="page-content journal-page">
       <PageMeta
         title={`${article.title} | StayByRail Journal`}
         description={article.excerpt || article.subtitle || article.title}
@@ -108,42 +108,99 @@ function JournalArticlePage() {
         schema={schema}
       />
 
-      <p className="guide-breadcrumb" style={{ textAlign: "center" }}>
-        <Link to="/" className="about-link">Home</Link>
-        {" \u203A "}
-        <Link to="/journal" className="about-link">Journal</Link>
-        {" \u203A "}
-        {article.category || "Article"}
-      </p>
-
-      <h1 className="page-heading" style={{ textAlign: "center" }}>
-        {article.title}
-      </h1>
-      {article.subtitle && (
-        <p className="guide-hero-line" style={{ textAlign: "center" }}>
-          {article.subtitle}
+      <article className="journal-article">
+        <p className="journal-breadcrumb">
+          <Link to="/" className="about-link">Home</Link>
+          {" \u203A "}
+          <Link to="/journal" className="about-link">Journal</Link>
         </p>
-      )}
-      <p className="guide-byline" style={{ textAlign: "center" }}>
-        {formattedDate}
-        {" \u00B7 by "}
-        <Link to="/authors/matt-farrell" className="about-link">
-          {AUTHOR}
-        </Link>
-      </p>
 
-      <div className="about-sections" style={{ maxWidth: 720, margin: "2rem auto 0" }}>
-        {article.sections.map((s) => (
-          <div className="about-block" key={s.heading}>
-            <h2 className="about-block-heading">{s.heading}</h2>
-            {s.body.split("\n\n").map((para, i) => (
-              <p className="about-block-text" key={i}>
-                {para}
-              </p>
-            ))}
-          </div>
-        ))}
-      </div>
+        {article.category && (
+          <span className="journal-category-kicker">{article.category}</span>
+        )}
+
+        <h1 className="journal-title">{article.title}</h1>
+
+        {article.subtitle && (
+          <p className="journal-dek">{article.subtitle}</p>
+        )}
+
+        <p className="journal-byline">
+          By{" "}
+          <Link to="/authors/matt-farrell" className="journal-byline-link">
+            {AUTHOR}
+          </Link>
+          <span className="journal-byline-sep" aria-hidden="true">
+            {"\u00B7"}
+          </span>
+          <time dateTime={article.datePublished}>{formattedDate}</time>
+        </p>
+
+        {article.heroImage && (
+          <figure className="journal-hero-figure">
+            <img
+              src={article.heroImage.src}
+              alt={article.heroImage.alt}
+              className="journal-hero-image"
+              loading="eager"
+              decoding="async"
+            />
+            {article.heroImage.caption && (
+              <figcaption className="journal-image-caption">
+                {article.heroImage.caption}
+              </figcaption>
+            )}
+          </figure>
+        )}
+
+        <div className="journal-body">
+          {article.sections.map((s, sectionIndex) => (
+            <section
+              className={`journal-section${sectionIndex === 0 ? " journal-first-section" : ""}`}
+              key={s.heading}
+            >
+              <h2 className="journal-section-heading">{s.heading}</h2>
+              {s.image && s.image.position !== "after" && (
+                <figure className="journal-inline-figure">
+                  <img
+                    src={s.image.src}
+                    alt={s.image.alt}
+                    className="journal-inline-image"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  {s.image.caption && (
+                    <figcaption className="journal-image-caption">
+                      {s.image.caption}
+                    </figcaption>
+                  )}
+                </figure>
+              )}
+              {s.body.split("\n\n").map((para, i) => (
+                <p className="journal-paragraph" key={i}>
+                  {para}
+                </p>
+              ))}
+              {s.image && s.image.position === "after" && (
+                <figure className="journal-inline-figure">
+                  <img
+                    src={s.image.src}
+                    alt={s.image.alt}
+                    className="journal-inline-image"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  {s.image.caption && (
+                    <figcaption className="journal-image-caption">
+                      {s.image.caption}
+                    </figcaption>
+                  )}
+                </figure>
+              )}
+            </section>
+          ))}
+        </div>
+      </article>
 
       {(relatedGuide || relatedPasses.length > 0) && (
         <div className="guide-resources">

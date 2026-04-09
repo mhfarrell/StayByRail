@@ -14,10 +14,12 @@
 //   - featuredCities: the exact 10 cards shown in the homepage carousel. Edit
 //     this list (or reorder it) to change the homepage curation. The slugs
 //     must exist in cityGuides.js.
-//   - featuredJournalArticles: metadata for every journal article. HomePage
-//     sorts by datePublished and shows the top 3. When shipping a new article
-//     to journal.js, mirror its slug/title/subtitle/category/datePublished
-//     here. Keep fields in sync.
+//   - featuredJournalArticles: curated order of journal articles for the
+//     homepage "Latest from the journal" strip. HomePage shows the first 3
+//     in list order (NOT sorted by datePublished) so the editor can pin a
+//     travel diary or evergreen piece above the latest dated post. When
+//     shipping a new article to journal.js, decide where to slot it here
+//     and mirror its slug/title/subtitle/category/datePublished fields.
 //   - totalCityGuides: the number printed on the "Browse more" card. Bump it
 //     when adding a new city guide.
 
@@ -117,6 +119,14 @@ export const featuredCities = [
 ];
 
 export const featuredJournalArticles = [
+  {
+    slug: "ten-days-in-japan-january-2025",
+    title: "Ten days in Japan: Tokyo, castles, and a close-up of Mount Fuji",
+    subtitle:
+      "Notes and photos from a January 2025 trip. Tokyo's a planet of its own, Osaka Castle hits different at night, and Himeji's gardens deserve the detour.",
+    category: "Travel diary",
+    datePublished: "2025-01-29",
+  },
   {
     slug: "madrid-atocha-vs-chamartin-where-to-stay",
     title: "Madrid Atocha vs Chamart\u00edn: which station should you actually stay near",

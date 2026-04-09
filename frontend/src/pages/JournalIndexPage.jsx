@@ -4,9 +4,13 @@ import { journalArticles } from "../data/journal";
 
 function JournalIndexPage() {
   const canonical = "https://staybyrail.co.uk/journal";
-  const sorted = [...journalArticles].sort((a, b) =>
-    b.datePublished.localeCompare(a.datePublished)
-  );
+  // Pinned articles (backdated travel diaries etc.) come first in their
+  // original array order, then everything else sorted by datePublished DESC.
+  const pinned = journalArticles.filter((a) => a.pinned);
+  const rest = journalArticles
+    .filter((a) => !a.pinned)
+    .sort((a, b) => b.datePublished.localeCompare(a.datePublished));
+  const sorted = [...pinned, ...rest];
 
   const schema = {
     "@context": "https://schema.org",

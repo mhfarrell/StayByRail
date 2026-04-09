@@ -432,6 +432,198 @@ a.guide-station-name-link:hover {
   margin-top: 0.25rem;
 }
 
+/* ---- Journal article page (redesigned) ---- */
+.journal-page {
+  padding-top: 0.5rem;
+}
+
+.journal-article {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.journal-breadcrumb {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  margin: 0 0 1.75rem;
+}
+
+.journal-category-kicker {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: var(--accent-amber, #f59e0b);
+  padding: 0.4rem 0.85rem;
+  border: 1.5px solid var(--accent-amber, #f59e0b);
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+}
+
+.journal-title {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--text-heading, var(--text-primary));
+  letter-spacing: -0.015em;
+  margin: 0 0 1rem;
+  max-width: 16ch;
+}
+
+.journal-dek {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.5;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 1.5rem;
+  max-width: 48ch;
+}
+
+.journal-byline {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
+  margin: 0 0 2rem;
+}
+
+.journal-byline-link {
+  color: var(--text-heading, var(--text-primary));
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.journal-byline-link:hover {
+  color: var(--accent-amber, #f59e0b);
+  border-bottom-color: var(--accent-amber, #f59e0b);
+}
+
+.journal-byline-sep {
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+/* ---- Journal hero image ---- */
+.journal-hero-figure {
+  margin: 0 -2rem 2.5rem;
+}
+
+@media (max-width: 860px) {
+  .journal-hero-figure {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
+
+.journal-hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* ---- Journal body (the reading area) ---- */
+.journal-body {
+  font-family: Georgia, "Iowan Old Style", "Hoefler Text", "Palatino Linotype",
+               "Book Antiqua", serif;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--text-primary);
+}
+
+.journal-section {
+  margin-bottom: 2.75rem;
+}
+
+.journal-section:not(:first-child) {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.journal-section-heading {
+  font-family: var(--font-ui, system-ui, -apple-system, sans-serif);
+  font-size: clamp(1.35rem, 2.4vw, 1.6rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text-heading, var(--text-primary));
+  letter-spacing: -0.01em;
+  margin: 0 0 1.15rem;
+}
+
+.journal-paragraph {
+  margin: 0 0 1.1rem;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.journal-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Drop cap on the very first paragraph of the very first section */
+.journal-first-section .journal-paragraph:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-ui, system-ui, -apple-system, sans-serif);
+  font-size: 4.2rem;
+  line-height: 0.85;
+  font-weight: 800;
+  padding: 0.35rem 0.55rem 0 0;
+  margin-top: 0.4rem;
+  color: var(--accent-amber, #f59e0b);
+}
+
+/* ---- Inline figures ---- */
+.journal-inline-figure {
+  margin: 0 -1rem 1.6rem;
+}
+
+@media (min-width: 860px) {
+  .journal-inline-figure {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+}
+
+.journal-inline-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.journal-image-caption {
+  display: block;
+  margin-top: 0.55rem;
+  padding: 0 0.5rem;
+  font-family: var(--font-ui, system-ui, -apple-system, sans-serif);
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Hide the old page-heading / guide-hero-line / guide-byline on journal
+   pages where we now use the bespoke journal-* classes. */
+.journal-page .page-heading,
+.journal-page .guide-hero-line,
+.journal-page .guide-byline {
+  display: none;
+}
+
 /* ---- Guide FAQ accordion ---- */
 .guide-faq-list {
   display: flex;

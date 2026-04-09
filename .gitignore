@@ -23,3 +23,6 @@ test-results/
 # git history. The previous key was rotated 2026-04-09 after a leak
 # audit; the file was untracked at the same time.
 CLAUDE.md
+# Raw source photos (ZIPs from phone exports etc). The resized
+# web-ready copies go in frontend/public/journal/ and are tracked.
+Assets/

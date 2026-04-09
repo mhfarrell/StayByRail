@@ -291,10 +291,7 @@ function HomePage() {
             </Link>
           </div>
           <div className="home-journal-grid">
-            {[...featuredJournalArticles]
-              .sort((a, b) => b.datePublished.localeCompare(a.datePublished))
-              .slice(0, 3)
-              .map((a) => (
+            {featuredJournalArticles.slice(0, 3).map((a) => (
                 <Link
                   key={a.slug}
                   to={`/journal/${a.slug}`}
