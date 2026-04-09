@@ -1,6 +1,9 @@
 /* ============================================================
    variables.css — Theme tokens + reset
-   StayByRail brand theme (dark default, light opt-in)
+   StayByRail brand theme. Default is light (with system preference
+   honored for explicit dark). Light mode uses deliberately darker
+   borders, muted text, and shadows so cards separate cleanly from
+   the background and copy stays legible. Dark mode stays as it was.
    ============================================================ */
 
 :root,
@@ -43,38 +46,50 @@
 }
 
 [data-theme="light"] {
-  --bg-primary: #f8fafc;
+  /* Slightly off-white page background so pure-white cards have something
+     to sit against. Pure #fff on #fff is what makes a light theme feel
+     like an afterthought. */
+  --bg-primary: #eef2f7;
   --bg-card: #ffffff;
   --bg-input: #f1f5f9;
   --bg-hover: #e2e8f0;
-  --border: #cbd5e1;
+  /* Borders were far too close to the background before. These are dark
+     enough to actually define card edges without being heavy. */
+  --border: #94a3b8;
   --border-hover: #2563eb;
   --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  /* Darkened from #475569 so body secondary text is properly readable. */
+  --text-secondary: #334155;
+  /* Darkened from #94a3b8, which was washing out captions, dates, and
+     footer copy against the near-white background. */
+  --text-muted: #64748b;
   --text-heading: #0f172a;
   --accent-blue: #2563eb;
   --accent-green: #16a34a;
-  --accent-orange: #d97706;
+  /* Slightly deeper amber for better contrast on white. */
+  --accent-orange: #b45309;
   --accent-red: #dc2626;
-  --accent-yellow: #ca8a04;
+  --accent-yellow: #a16207;
   --green-bg: #dcfce7;
   --green-border: #16a34a;
   --red-bg: #fef2f2;
   --red-border: #dc2626;
   --yellow-bg: #fef9c3;
   --yellow-border: #ca8a04;
-  --tag-bg: #e2e8f0;
+  --tag-bg: #cbd5e1;
   --amenity-bg: #dbeafe;
   --amenity-color: #1d4ed8;
   --btn-green: #16a34a;
   --btn-green-hover: #22c55e;
-  --stars-color: #d97706;
+  --stars-color: #b45309;
   --ad-bg: #ffffff;
-  --ad-border: #e2e8f0;
-  --ad-text: #cbd5e1;
-  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
-  --focus-ring: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  --ad-border: #cbd5e1;
+  /* Was #cbd5e1, which was basically white on white. Now legible. */
+  --ad-text: #94a3b8;
+  /* Stronger, warmer shadow so cards lift off the background. */
+  --card-shadow: 0 1px 2px rgba(15, 23, 42, 0.06),
+                 0 4px 12px rgba(15, 23, 42, 0.08);
+  --focus-ring: 0 0 0 3px rgba(37, 99, 235, 0.25);
 }
 
 /* ---- Reset ---- */

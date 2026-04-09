@@ -6,8 +6,8 @@
 
     <!-- Primary SEO -->
     <title>StayByRail - Find Hotels Near Train Stations</title>
-    <meta name="description" content="Find affordable hotels within walking distance of train stations across Europe and Asia. Search by train line in 52 cities including London, Paris, Berlin, Tokyo, Barcelona and more. Compare prices from Booking.com, Agoda, Expedia and other sites." />
-    <meta name="keywords" content="hotels near train station, London hotels, Paris hotels, Tokyo hotels, Berlin hotels, Barcelona hotels, Madrid hotels, hotel near metro, hotel near tube station, hotel finder, StayByRail, hotels near rail, budget hotels Europe, budget hotels Japan, Bangkok hotels, Thailand hotels" />
+    <meta name="description" content="Find affordable hotels within walking distance of train stations across Europe and Asia. Search by train line in 65 cities including London, Paris, Berlin, Tokyo, Seoul, Beijing, Barcelona and more. Compare prices from Booking.com, Agoda, Expedia and other sites." />
+    <meta name="keywords" content="hotels near train station, London hotels, Paris hotels, Tokyo hotels, Seoul hotels, Beijing hotels, Berlin hotels, Barcelona hotels, Madrid hotels, hotel near metro, hotel near tube station, hotel finder, StayByRail, hotels near rail, budget hotels Europe, budget hotels Japan, Bangkok hotels, Thailand hotels" />
     <meta name="author" content="StayByRail" />
     <link rel="canonical" href="https://staybyrail.co.uk" />
 
@@ -15,22 +15,45 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://staybyrail.co.uk" />
     <meta property="og:title" content="StayByRail - Hotels Near Train Stations" />
-    <meta property="og:description" content="The easiest way to find hotels near train lines. 52 cities across 6 countries. Filter by amenities, walk distance, and price. Compare across Booking.com, Agoda, Expedia and more." />
+    <meta property="og:description" content="The easiest way to find hotels near train lines. 65 cities across 8 countries. Filter by amenities, walk distance, and price. Compare across Booking.com, Agoda, Expedia and more." />
     <meta property="og:image" content="https://staybyrail.co.uk/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="StayByRail — Hotels Near Train Stations. 52 cities, 6 countries." />
+    <meta property="og:image:alt" content="StayByRail. Hotels Near Train Stations. 65 cities, 8 countries." />
     <meta property="og:site_name" content="StayByRail" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="StayByRail - Hotels Near Train Stations" />
-    <meta name="twitter:description" content="Find affordable hotels within walking distance of train stations across Europe and Asia. 52 cities, 169 train lines. Compare prices from multiple booking sites." />
+    <meta name="twitter:description" content="Find affordable hotels within walking distance of train stations across Europe and Asia. 65 cities, 8 countries, 747 programmatic station landing pages. Compare prices from multiple booking sites." />
     <meta name="twitter:image" content="https://staybyrail.co.uk/og-image.png" />
-    <meta name="twitter:image:alt" content="StayByRail — Hotels Near Train Stations. 52 cities, 6 countries." />
+    <meta name="twitter:image:alt" content="StayByRail. Hotels Near Train Stations. 65 cities, 8 countries." />
 
     <!-- AI Search Optimization (LLMs, Perplexity, ChatGPT, etc.) -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+    <!-- Theme resolution inline script. Runs before React mounts so
+         light-mode users don't see a dark flash on first paint. The
+         actual useTheme() hook in App.jsx uses the same logic; this
+         just pre-applies the result so the CSS picks it up immediately. -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("staybyrail_theme");
+          var theme;
+          if (saved === "light" || saved === "dark") {
+            theme = saved;
+          } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            theme = "dark";
+          } else {
+            theme = "light";
+          }
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
 
     <!-- Favicon — multi-size set. Modern browsers prefer the SVG; older
          browsers and Google Search results fall back to favicon.ico, and

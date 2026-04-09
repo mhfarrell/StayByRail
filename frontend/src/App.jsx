@@ -46,32 +46,58 @@ import "./styles/pages.css";
 import "./styles/shortlist.css";
 import "./styles/guides.css";
 
-function useTheme() {
-  const [theme, setTheme] = useState(() => {
-    const saved = localStorage.getItem("staybyrail_theme");
-    if (saved) return saved;
-    return window.matchMedia("(prefers-color-scheme: light)").matches
-      ? "light"
-      : "dark";
-  });
+// Theme resolution order:
+//   1. If the user has previously picked a theme manually, use that.
+//   2. Otherwise if the user's OS has an explicit "prefers dark" signal,
+//      respect it.
+//   3. Otherwise default to light (the house style).
+// localStorage is only written when the user explicitly toggles, so the
+// "follow system" behavior keeps working across visits for people who
+// haven't made a choice.
+const THEME_KEY = "staybyrail_theme";
 
+function resolveInitialTheme() {
+  if (typeof window === "undefined") return "light";
+  const saved = localStorage.getItem(THEME_KEY);
+  if (saved === "light" || saved === "dark") return saved;
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) return "dark";
+  return "light";
+}
+
+function useTheme() {
+  const [theme, setTheme] = useState(resolveInitialTheme);
+  const [userPicked, setUserPicked] = useState(
+    () => typeof window !== "undefined" && !!localStorage.getItem(THEME_KEY)
+  );
+
+  // Reflect the current theme onto the <html> element for CSS variables.
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("staybyrail_theme", theme);
   }, [theme]);
 
+  // Only persist a manual pick. A system-derived default should not stick
+  // to localStorage — otherwise the user never gets to drift with their OS.
   useEffect(() => {
-    const mq = window.matchMedia("(prefers-color-scheme: light)");
+    if (userPicked) localStorage.setItem(THEME_KEY, theme);
+  }, [theme, userPicked]);
+
+  // If the user hasn't picked a theme and their OS preference changes,
+  // follow it.
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
     const handler = (e) => {
-      if (!localStorage.getItem("staybyrail_theme")) {
-        setTheme(e.matches ? "light" : "dark");
+      if (!localStorage.getItem(THEME_KEY)) {
+        setTheme(e.matches ? "dark" : "light");
       }
     };
     mq.addEventListener("change", handler);
     return () => mq.removeEventListener("change", handler);
   }, []);
 
-  const toggle = () => setTheme((t) => (t === "dark" ? "light" : "dark"));
+  const toggle = () => {
+    setUserPicked(true);
+    setTheme((t) => (t === "dark" ? "light" : "dark"));
+  };
   return { theme, toggle };
 }
 
