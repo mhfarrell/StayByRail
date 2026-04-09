@@ -528,8 +528,6 @@ a.guide-station-name-link:hover {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 560px;
-  object-fit: cover;
   border-radius: 14px;
 }
 
@@ -584,23 +582,25 @@ a.guide-station-name-link:hover {
 }
 
 /* ---- Inline figures ---- */
+/* Portrait photos in a travel diary look better constrained to a
+   narrower column than the body text, so nothing dominates the screen
+   and the full vertical frame (mountain summits, castle tops, the
+   Gundam's head) stays visible. Landscape images get a little extra
+   width because they scan more naturally wide. We honor natural aspect
+   ratio instead of object-fit cropping. */
 .journal-inline-figure {
-  margin: 0 -1rem 1.6rem;
+  margin: 1.25rem auto 1.6rem;
+  max-width: 560px;
 }
 
-@media (min-width: 860px) {
-  .journal-inline-figure {
-    margin-left: -2rem;
-    margin-right: -2rem;
-  }
+.journal-inline-figure--wide {
+  max-width: 100%;
 }
 
 .journal-inline-image {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 520px;
-  object-fit: cover;
   border-radius: 12px;
 }
 

@@ -120,8 +120,8 @@ export const featuredCities = [
 
 export const featuredJournalArticles = [
   {
-    slug: "ten-days-in-japan-january-2025",
-    title: "Ten days in Japan: Tokyo, castles, and a close-up of Mount Fuji",
+    slug: "sixteen-days-in-japan-january-2025",
+    title: "Sixteen days in Japan: Tokyo, castles, and a close-up of Mount Fuji",
     subtitle:
       "Notes and photos from a January 2025 trip. Tokyo's a planet of its own, Osaka Castle hits different at night, and Himeji's gardens deserve the detour.",
     category: "Travel diary",

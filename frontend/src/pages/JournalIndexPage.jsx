@@ -107,7 +107,9 @@ function JournalIndexPage() {
               <p className="journal-card-subtitle">{a.subtitle}</p>
             )}
             {a.excerpt && <p className="journal-card-excerpt">{a.excerpt}</p>}
-            <span className="journal-card-read">Read article \u2192</span>
+            <span className="journal-card-read">
+              Read article {"\u2192"}
+            </span>
           </Link>
         ))}
       </div>

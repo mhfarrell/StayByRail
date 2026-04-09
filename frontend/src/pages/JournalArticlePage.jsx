@@ -161,7 +161,7 @@ function JournalArticlePage() {
             >
               <h2 className="journal-section-heading">{s.heading}</h2>
               {s.image && s.image.position !== "after" && (
-                <figure className="journal-inline-figure">
+                <figure className={`journal-inline-figure${s.image.wide ? " journal-inline-figure--wide" : ""}`}>
                   <img
                     src={s.image.src}
                     alt={s.image.alt}
@@ -182,7 +182,7 @@ function JournalArticlePage() {
                 </p>
               ))}
               {s.image && s.image.position === "after" && (
-                <figure className="journal-inline-figure">
+                <figure className={`journal-inline-figure${s.image.wide ? " journal-inline-figure--wide" : ""}`}>
                   <img
                     src={s.image.src}
                     alt={s.image.alt}
