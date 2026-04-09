@@ -5,17 +5,18 @@ function CoveragePage() {
   return (
     <div className="page-content">
       <PageMeta
-        title="Coverage — StayByRail | 60 Cities, 7 Countries"
-        description="StayByRail covers 60 cities across Japan, the United Kingdom, France, Germany, Spain, Thailand, and China (including Hong Kong) — JR lines, the London Underground, Paris Metro, BTS Skytrain, Beijing Subway, Shanghai Metro, and Hong Kong MTR."
+        title="Coverage — StayByRail | 65 Cities, 8 Countries"
+        description="StayByRail covers 65 cities across Japan, the United Kingdom, France, Germany, Spain, Thailand, China (including Hong Kong), and South Korea — JR lines, the London Underground, Paris Metro, BTS Skytrain, Beijing Subway, Seoul Metropolitan Subway, and the KTX high-speed network."
       />
       <h2 className="page-heading" style={{ textAlign: "center" }}>Our Coverage</h2>
       <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
-        StayByRail covers major rail and metro networks across seven countries and
-        60 cities. Whether you are planning a Shinkansen trip through Japan, a
+        StayByRail covers major rail and metro networks across eight countries and
+        65 cities. Whether you are planning a Shinkansen trip through Japan, a
         Eurostar connection through France, a high-speed run from Beijing to
-        Hong Kong, or a backpacking route through Thailand, we have station-level
-        hotel data to help you choose the right place to stay. We are continually
-        expanding — new cities and rail lines are added regularly.
+        Hong Kong, a KTX ride from Seoul to Busan, or a backpacking route through
+        Thailand, we have station-level hotel data to help you choose the right
+        place to stay. We are continually expanding — new cities and rail lines
+        are added regularly.
       </p>
 
       <div className="content-country-grid">
@@ -133,6 +134,27 @@ function CoveragePage() {
             Hong Kong MTR, and the world's longest high-speed rail network.
             Hong Kong is a Special Administrative Region with its own visa rules
             and currency — see the <Link to="/countries/china" className="about-link">China explainer</Link> for details.
+          </p>
+        </div>
+        <div className="content-country-card">
+          <div className="content-country-flag" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="2" y="4" width="28" height="24" rx="2" fill="#fff" stroke="currentColor" strokeWidth="1"/>
+              <circle cx="16" cy="16" r="5" fill="none" stroke="#c60c30" strokeWidth="1.3"/>
+              <path d="M11 16a5 5 0 0 1 10 0" fill="#c60c30"/>
+              <path d="M11 16a5 5 0 0 0 10 0" fill="#003478"/>
+              <circle cx="13.3" cy="16" r="1.7" fill="#c60c30"/>
+              <circle cx="18.7" cy="16" r="1.7" fill="#003478"/>
+            </svg>
+          </div>
+          <h3 className="content-country-name">South Korea</h3>
+          <p className="content-country-cities">5 cities</p>
+          <p className="content-country-text">
+            <Link to="/guides/seoul" className="about-link">Seoul</Link>, <Link to="/guides/busan" className="about-link">Busan</Link>, <Link to="/guides/incheon" className="about-link">Incheon</Link>, <Link to="/guides/daegu" className="about-link">Daegu</Link>, and <Link to="/guides/daejeon" className="about-link">Daejeon</Link>.
+            Covering the Seoul Metropolitan Subway, Busan Metro, AREX airport
+            express, and the KTX high-speed network from Seoul to Busan in
+            2h 15m. See the <Link to="/countries/south-korea" className="about-link">South Korea explainer</Link> for
+            booking tips, T-money cards, and K-ETA entry details.
           </p>
         </div>
       </div>

@@ -1602,6 +1602,270 @@ export const cityGuides = [
     updatedAt: "2026-04",
     author: "Matt Farrell",
   },
+  {
+    slug: "seoul",
+    city: "Seoul",
+    country: "South Korea",
+    heroLine: "One of the world's best urban rail systems and the launchpad for KTX high-speed services across Korea",
+    metaTitle: "Hotels Near Seoul Subway Stations — StayByRail Guide",
+    metaDescription:
+      "An honest guide to staying near Seoul's subway and KTX stations. Where to base for Gyeongbokgung, Myeongdong, Hongdae and Gangnam — and which line actually connects them.",
+    intro:
+      "Seoul has one of the largest and most reliable urban rail networks on the planet — 23 lines, around 780 stations across the wider metropolitan area, trains every 2–4 minutes from early morning to past midnight, and fares that cap out at around ₩1,500 for most in-city trips. The scale is easy to underestimate: four different districts — Gangbuk's historic heart around Gyeongbokgung, Myeongdong's shopping core, Hongdae's student nightlife west of the Han River, and Gangnam's polished commercial towers south of the river — are all distinct cities in their own right, and the subway line you pick decides which of them is a 10-minute walk from the hotel lobby.",
+    sections: [
+      {
+        heading: "Line 2: Seoul's Circular Backbone",
+        body: "Line 2 (green on the map) is the single line to understand first. It's a huge loop that circles the city's core and touches almost every district a visitor cares about: **City Hall** and **Euljiro 1-ga** for the historic downtown, **Hongik University** for Hongdae's student nightlife and indie music scene, **Sinchon** and **Ewha Womans University** for the university belt, **Gangnam** for the southern business/shopping spine, **Samseong** for the COEX complex, and **Jamsil** for Lotte World and the Olympic park. Stay anywhere on Line 2 and the rest of Seoul is two to ten stops away without changing trains.\n\nFor a first-time visitor, the single best choice on Line 2 is usually between City Hall / Euljiro (walking distance to the palaces and the old city) or Hongdae (younger, cheaper, more nightlife). Avoid hotels far from any Line 2 stop unless you're specifically basing around another major line.",
+      },
+      {
+        heading: "Gangbuk vs Gangnam: The River Changes Everything",
+        body: "Seoul is cut in half by the Han River, and the two halves feel like different cities. **Gangbuk** (north of the river) contains almost all of Seoul's historic sites — the Joseon-era palaces, the hanok village at Bukchon, Insadong, the fortress walls, the traditional markets. Its hotel clusters are around Myeongdong (Line 4), Euljiro / City Hall (Lines 1, 2), Jongno (Line 1, Line 3), and Hongdae (Line 2, AREX). This is where first-time visitors should stay.\n\n**Gangnam** (south of the river) is the post-1980s commercial Seoul — glass towers, luxury shopping at Apgujeong and Cheongdam, the COEX convention complex, the most expensive restaurants, and a nightlife scene that skews polished and cocktail-led rather than student-beer. Gangnam hotels are newer and often cheaper than their Gangbuk equivalents of the same brand (less land scarcity), but you're a 20-30 minute subway ride from the palaces. Pick Gangnam for a business trip, an Apgujeong shopping weekend, or a return visit where you already know the north side. Pick Gangbuk for a standard sightseeing trip.",
+      },
+      {
+        heading: "Where Tourists Actually Want to Stay",
+        body: "Four clusters dominate first-visit hotel choices. **Myeongdong** (Line 4, or Euljiro 1-ga on Line 2 five minutes' walk away) is the most popular single area — central, walking distance to the palaces and Namsan Tower, dense with mid-range and upmarket hotels, and crammed with the street-food carts and cosmetics shops every first-time visitor ends up browsing. It's loud until late and quieter before 10am. **Insadong / Anguk** (Line 3) is the more atmospheric alternative: boutique hotels and hanok-style guesthouses in the traditional craft district, five minutes from Gyeongbokgung and the Bukchon hanok village, with the best tea houses and antique shops in the city. **Hongdae** (Line 2 / AREX) is the student and indie-music district, the cheapest of the four, with the best casual nightlife and a direct AREX link to Incheon Airport — practical for travellers arriving late or leaving early. **Gangnam** (Line 2, around Gangnam or Sinnonhyeon) is the polished commercial option, for travellers who want newer rooms, mall shopping, and a business-district base.\n\nFor a first Seoul trip, Myeongdong is the safest default. For a second trip, Insadong. For the cheapest comfortable stay with the best nightlife, Hongdae.",
+      },
+      {
+        heading: "KTX, SRT and the Airport Express",
+        body: "**Seoul Station** (Line 1 and Line 4 interchange, plus AREX) is the main long-distance hub. All KTX high-speed services to Busan, Daegu, Gwangju and Mokpo depart from here — Seoul to Busan is 2 hours 15 minutes on the fastest KTX. If you're combining a Seoul trip with KTX day trips or an onward journey to another Korean city, staying within a 10-minute walk of Seoul Station is the practical choice. **Yongsan** (Line 1) is the secondary KTX station, handling the Honam line services to the south-west (Gwangju, Mokpo) and a few Gyeongbu-line trains.\n\n**SRT** (Suseo High-Speed Railway) is Korea's second high-speed operator, running from Suseo station in southern Seoul to Busan and Mokpo on slightly different lines than KTX. It's cheaper than KTX by 10 percent, has newer rolling stock, and uses the Suseo terminus in Gangnam — convenient if you're already staying south of the river, inconvenient from anywhere else in the city. Most visitors book KTX unless specifically staying near Gangnam.\n\n**AREX** (Airport Railroad Express) connects Incheon International Airport to Seoul Station in 43 minutes on the All-Stop service or 51 minutes on the Express. It runs roughly every 10 minutes and is dramatically faster than the limousine bus. Hongdae (Hongik University station) is also on the AREX line — a useful hotel choice if you arrive late or leave early.",
+      },
+      {
+        heading: "Practical Tips for Seoul",
+        body: "**T-money card** is the universal transit pass — buy one at any subway station vending machine or at any convenience store (CU, GS25, 7-Eleven) for ₩4,000 and top it up as you go. Works on subway, bus, taxi, and most convenience-store purchases. As of 2024, contactless overseas Visa and Mastercard also work at subway gates but the fares are slightly higher — T-money is still worth the two minutes to buy.\n\n**Kakao T** is the local taxi app (the Korean equivalent of Uber, which does not operate here). Download it on arrival and link it to a foreign card — taxi fares are very reasonable (₩3,800 starting, ~₩1,000 per km after) and it's the fastest way home from nightlife districts after the subway closes at 00:30.\n\n**Language**: signage is bilingual Korean/English at every subway station, all mainline rail stations, most major tourist sites, and most restaurants in Myeongdong / Hongdae / Gangnam. Older parts of Jongno and the traditional markets are Korean-only — Google Translate's camera mode and Papago (the local equivalent, better for Korean) are both reliable.\n\n**Visa**: visa-free for citizens of the UK (90 days), US (90 days), EU (90 days), Canada, Australia, and most Western countries. Since 2021, an electronic travel authorisation (K-ETA) has been required for visa-free entry — apply online at least 72 hours before arrival at k-eta.go.kr. As of 2024, several nationalities including UK and EU are temporarily exempt from K-ETA through to the end of 2025; check the official site before travelling.\n\n**Best time to visit**: April (cherry blossom), late September to early November (autumn foliage, clear skies, 15-22°C). July–August is hot, humid and monsoon-prone. January–February is cold and dry but clear.",
+      },
+    ],
+    keyStations: [
+      { name: "Myeongdong", reason: "Most popular single tourist base, Line 4, walking distance to palaces and Namsan Tower, dense mid-range and upmarket hotel cluster" },
+      { name: "Seoul Station", reason: "Main KTX terminus, Lines 1 and 4, plus AREX to Incheon Airport — book here if you have KTX day trips or a tight airport transfer" },
+      { name: "Hongik University", reason: "StayByRail pick — Hongdae nightlife, Line 2 and AREX, cheapest of the four main clusters and the most direct airport link" },
+      { name: "Anguk", reason: "Insadong and Bukchon hanok village, Line 3, boutique guesthouses and traditional craft district, five minutes from Gyeongbokgung" },
+      { name: "Gangnam", reason: "Southern business and shopping district, Line 2, newer hotels at slightly lower prices than Gangbuk equivalents" },
+      { name: "Incheon International Airport Terminal 1", reason: "Main international gateway, AREX Express in 43 minutes to Seoul Station, transit hotels for layovers" },
+    ],
+    searchCity: "Seoul",
+    links: [
+      { label: "Korail", url: "https://www.letskorail.com/", desc: "Official Korean rail booking for KTX and conventional services" },
+      { label: "SR (SRT)", url: "https://etk.srail.kr/", desc: "Official SRT high-speed rail booking" },
+      { label: "Seoul Subway Map", url: "https://www.seoulmetro.co.kr/en/", desc: "Official Seoul Metro map and journey planner" },
+      { label: "Visit Seoul", url: "https://english.visitseoul.net/", desc: "Official tourism site for Seoul" },
+    ],
+    wikipedia: "Seoul",
+    lat: 37.5665,
+    lon: 126.9780,
+    countryCode: "KR",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "busan",
+    city: "Busan",
+    country: "South Korea",
+    heroLine: "Korea's coastal second city — the southern KTX terminus, a four-line metro, and the country's best urban beach",
+    metaTitle: "Hotels Near Busan Metro Stations — StayByRail Guide",
+    metaDescription:
+      "An honest guide to staying near Busan's metro and KTX stations. Where to base for Haeundae Beach, Nampo-dong, Seomyeon and the KTX — and which line connects them.",
+    intro:
+      "Busan is the end of Korea's main high-speed rail line and the country's second-largest city, wrapped around a mountainous coastline on Korea's south-east tip. The KTX from Seoul takes 2 hours 15 minutes on the fastest services, arriving at Busan Station in the middle of the old port district. Four metro lines stitch together the city's main neighbourhoods: the old centre around Nampo-dong, the downtown at Seomyeon, the hot-springs district at Dongnae, and the beach strip at Haeundae 15 km east. Choosing a hotel in Busan is more about which neighbourhood you want to be in than which station — the distances are bigger than Seoul, so the wrong side of town adds a real 45-minute commute to every plan.",
+    sections: [
+      {
+        heading: "Busan's Three Hotel Districts",
+        body: "Busan splits cleanly into three main bases, each served by a different part of the metro system. **Haeundae** (Line 2, eastern end) is the beach resort district — Korea's most famous urban beach, a 1.5-km crescent of white sand backed by a line of high-rise hotels and the Park Hyatt, Signiel, Paradise and Westin clusters. It's also the best restaurant strip in the city and the base for the nightly summer fireworks at Gwangalli. Haeundae is the most expensive base, the most touristy, and the right choice if beach-and-skyline is the whole point of your trip.\n\n**Nampo** (Line 1, western core) is the old port district — the Jagalchi fish market, the BIFF Square cinema plaza, the Yongdusan park funicular, and the walking alleys of Gwangbok-dong. This is where Busan feels most like a working port city rather than a tourist resort. Hotels here are cheaper, more business-class than beach-resort, and the base has the best street food in the city. Ten minutes' walk gets you to Nampo, Jagalchi, and Toseong (the gateway to Gamcheon Culture Village).\n\n**Seomyeon** (Lines 1 and 2 interchange) is downtown Busan — the commercial and nightlife core, dense with department stores, karaoke bars, and late-night restaurants. It's the most central option for moving between Nampo and Haeundae without being at either extreme, and it has the widest range of mid-priced business hotels in the city.",
+      },
+      {
+        heading: "Busan Station and the KTX",
+        body: "**Busan Station** (Line 1, southern end) is the city's KTX terminus and the arrival point for every train from Seoul, Daegu and Daejeon. It's also at the northern edge of the Nampo-dong district — a 5-minute walk or one metro stop from the Jagalchi fish market and the old city. Staying within walking distance of Busan Station makes sense if you're only in Busan for one or two nights, if you're using Busan as the base for KTX day trips to Daegu or Gyeongju, or if you have an early KTX departure back to Seoul.\n\nFor longer Busan stays, the hotel cluster near Busan Station is less exciting than Nampo, Seomyeon or Haeundae — it's a transit area rather than a destination. The three-star business chains (Toyoko Inn, Arban, City Hotel) are well-priced and clean but the streets empty out at night.\n\nBusan Station is also the international ferry port to Fukuoka, Japan — the overnight Camellia Line ferry and the daytime Kobee/Beetle hydrofoils all depart from the adjacent Busan Port International Terminal. The walk between the KTX station and the ferry terminal is about 15 minutes; taxis are a better bet with luggage.",
+      },
+      {
+        heading: "Getting Around: The Four Metro Lines",
+        body: "**Line 1** (orange) runs north–south through the old city, connecting Nopo (the intercity bus terminal) through Dongnae and Seomyeon down to Busan Station, Nampo and Jagalchi. This is the backbone line and the one most tourists will use most.\n\n**Line 2** (green) runs east–west, starting at the Yangsan satellite city, passing through Seomyeon (interchange with Line 1), crossing under the city to Gwangan (views of Gwangalli Beach and the Diamond Bridge), and terminating at Jangsan beyond Haeundae. This is the line to Haeundae Beach — a 40-minute end-to-end trip from Nampo to Haeundae, which is long enough to make the hotel-district choice consequential.\n\n**Line 3** (brown) runs north from Suyeong (interchange with Line 2) through Yeonsan to the Daejeo area in the north-west. It's less tourist-relevant but useful for reaching the hot-springs and Beomeosa temple area.\n\n**Line 4** (blue, rubber-tyred) is a short 12-km line north-east of the city, mostly residential.\n\nA single-ride ticket is ₩1,400–1,700 depending on distance; a T-money card (bought at any convenience store, ₩4,000 blank) gives a 100-won discount per trip and works across metro, bus, and taxis. Trains run every 4–8 minutes from 05:00 to 00:30.",
+      },
+      {
+        heading: "Beyond the Metro: Gamcheon, Oryukdo and Day Trips",
+        body: "Several of Busan's biggest attractions aren't directly on the metro and need a bus or short taxi from the nearest station. **Gamcheon Culture Village** — the hillside village of pastel-painted houses, often called Busan's Santorini — is a ₩3,000 taxi or bus 2 from Toseong station on Line 1. Allow half a day.\n\n**Oryukdo Skywalk** and the coastal trail at Igidae are a bus ride from Kyungsung/Pukyong University or a taxi from Haeundae.\n\n**Gyeongju** — the ancient Silla-dynasty capital, packed with tombs, temples and UNESCO sites — is a 30-minute KTX from Busan Station to Singyeongju (then a 15-minute city bus to central Gyeongju). It's the best day trip in the country and the strongest argument for staying near Busan Station if you only have one Busan base.\n\n**Taejongdae** and the Yeongdo lighthouse are a 30-minute bus from Nampo, then a tourist train around the coastal cliffs. Allow a half day for the round trip.",
+      },
+      {
+        heading: "Practical Tips for Busan",
+        body: "**Best time to visit**: late May to June and September to October are the ideal windows — warm enough for the beach, clear skies, and low humidity. July to August is peak beach season but crowded and hot. Winters are mild by Korean standards (5–10°C) and the beach is empty but the restaurants and fish markets are still excellent.\n\n**From Seoul**: KTX is the default — 2h 15m to 2h 40m, around ₩59,000 (~£34) one-way in economy, 10–15 departures a day. SRT from Suseo in southern Seoul is 10 percent cheaper but only useful if you're already based in Gangnam. Budget flights (Jeju Air, T'way, Jin Air) from Gimpo to Busan Gimhae are similarly priced door-to-door once you add the airport transfers — the train is still the easier option for most visitors.\n\n**From Japan**: the overnight Camellia Line ferry from Fukuoka's Hakata port is the slow, cheap option (~12 hours, around ¥10,000 one-way). The daytime JR Kyushu Beetle / Kobee hydrofoils are the fast option (~3 hours, around ¥13,000). Both arrive at Busan Port International Terminal, 15 minutes from Busan Station. A valid onward or return ticket is required for visa-free entry to Korea.\n\n**Beaches**: the four main beaches are Haeundae (the big famous one), Gwangalli (the bridge view, better for nightlife), Songjeong (quieter surf beach, one subway stop past Haeundae), and Songdo (close to Nampo with the overhead cable car). For most visitors, Haeundae is the beach you want if you're basing here, Gwangalli is the beach you visit in the evening.",
+      },
+    ],
+    keyStations: [
+      { name: "Haeundae", reason: "Korea's most famous urban beach, Line 2, luxury hotel cluster with the Park Hyatt, Westin, Signiel, and Paradise within walking distance of the sand" },
+      { name: "Busan Station", reason: "KTX terminus for Seoul, Daegu and Daejeon, Line 1, and the ferry port to Fukuoka — best base for a short stay or KTX day trips" },
+      { name: "Nampo", reason: "StayByRail pick — old port district, Line 1, walking distance to Jagalchi fish market, BIFF Square, and Gamcheon Culture Village with the cheapest mid-range hotels in central Busan" },
+      { name: "Seomyeon", reason: "Downtown Busan, Lines 1 and 2 interchange, the commercial and nightlife core with the widest mid-range hotel selection" },
+      { name: "Jagalchi", reason: "Korea's largest seafood market, Line 1, ten minutes from Busan Station and the BIFF Square cinema plaza" },
+    ],
+    searchCity: "Busan",
+    links: [
+      { label: "Korail KTX", url: "https://www.letskorail.com/", desc: "Official KTX booking site" },
+      { label: "Busan Metro", url: "https://www.humetro.busan.kr/english/", desc: "Official Busan Metro map and timetables" },
+      { label: "Visit Busan", url: "https://www.visitbusan.net/en/", desc: "Official tourism site for Busan" },
+      { label: "Camellia Line Ferry", url: "https://www.camellia-line.co.jp/english/", desc: "Overnight ferry between Busan and Fukuoka" },
+    ],
+    wikipedia: "Busan",
+    lat: 35.1796,
+    lon: 129.0756,
+    countryCode: "KR",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "incheon",
+    city: "Incheon",
+    country: "South Korea",
+    heroLine: "Korea's main international gateway — the airport, the original treaty port, and the Songdo International Business District",
+    metaTitle: "Hotels Near Incheon Airport and Metro Stations — StayByRail Guide",
+    metaDescription:
+      "An honest guide to staying in Incheon — where to base for an Incheon Airport layover, and which metro stations make sense for Chinatown or the Songdo business district.",
+    intro:
+      "Incheon is the point of arrival for most people visiting Korea — Incheon International Airport (ICN) is Asia's 7th-busiest and the country's main international gateway, 50 km west of central Seoul and connected by the fast AREX train in 43 minutes. For most visitors, Incheon is a transit point rather than a destination, and the practical question is usually \"do I overnight near the airport for an early departure, or do I stay in Seoul and commute?\". For a smaller number of travellers — those with long layovers, those visiting the Chinatown and Open Port area, or those here for business in the Songdo International Business District — staying in Incheon itself makes sense.",
+    sections: [
+      {
+        heading: "The Layover Hotel Question",
+        body: "For travellers with an early-morning departure from Incheon, a hotel near the airport can save an hour of commute at 5am — the AREX runs from ~05:20 but not all hotels have an easy connection to the Seoul side at that time. The two main airport hotel clusters are **Terminal 1 / Airport area** (two airside transit hotels, three to four landside four-star options at the Grand Hyatt Incheon, Paradise City, and Nest Hotel) and **Unseo station** (one AREX stop east of the airport, the largest cluster of mid-range and budget chain hotels, with free hotel shuttles to and from both terminals). The Grand Hyatt Incheon is the highest-end option, physically closest to Terminal 1, and the easiest for a short layover. Unseo is the best-value option and the right choice for most travellers staying a single night before an early flight.\n\nFor layovers of 12+ hours: the visa-free transit policy for most Western passports allows you to leave the airport and take AREX into Seoul, which is almost always a better use of the time than a transit hotel. Seoul Station is 43 minutes each way on AREX Express, so a 12-hour layover gives you 8–9 hours in Seoul including luggage drop and transit. For layovers under 8 hours, a Terminal 1 or Unseo hotel is the better answer.",
+      },
+      {
+        heading: "Chinatown and the Open Port Area",
+        body: "Central Incheon — around Incheon Station on the Suin-Bundang line, not the airport — is a completely different place than most AREX-using visitors ever see. **Incheon Chinatown** is Korea's only officially-designated Chinatown, dating from the 1884 treaty that opened Incheon as a port to foreign trade. It's compact, colourful, walkable, and the place where **jjajangmyeon** (the Korean-Chinese black bean noodle dish) was invented — the Jjajangmyeon Museum is a block off the main street. The neighbouring **Open Port Cultural District** preserves the Japanese and Western colonial-era buildings from the 1880s–1910s, the oldest concentration of foreign-influenced architecture in Korea.\n\nStaying near Incheon Station (one hour from central Seoul on Line 1 / Suin-Bundang, or two AREX changes) makes sense for a day focused on Chinatown, the fish market at Yeonan Pier, and Wolmido Island's retro amusement park and harbour views. For most visitors, this is a day trip from Seoul rather than an overnight stay.",
+      },
+      {
+        heading: "Songdo International Business District",
+        body: "**Songdo** (Central Park station on Incheon Line 1) is Korea's ambitious greenfield smart city, built on reclaimed land south of the airport. The Central Park is genuinely impressive — a 1.5-km artificial canal with kayaks, landscape gardens, and the dramatic G-Tower and Northeast Asia Trade Tower skyline around it. The main draw for overnight visitors is the Songdo Convensia convention centre and the several upmarket business hotels (Oakwood, Orakai, Park Hyatt formerly) clustered around it.\n\nSongdo is a reasonable base if you're here for a conference at Convensia, if you're interested in the smart-city architecture and the Jack Nicklaus Golf Club, or if you specifically want a quiet new-build waterfront hotel experience. For general Korea sightseeing, it's the wrong choice — you're two transfers and 90+ minutes from central Seoul.",
+      },
+      {
+        heading: "The AREX in Detail",
+        body: "**AREX** (Airport Railroad Express) is the rail link between Incheon International Airport and Seoul Station, and it's the central fact of any Incheon stay. Two services share the same track:\n\n**Express** (non-stop, ₩11,000 one-way, 43 minutes Terminal 1 to Seoul Station, runs roughly every 40 minutes): reserved seats, luggage racks, a direct non-stop run. The right choice if you're commuting with luggage and want a guaranteed seat.\n\n**All-Stop Commuter** (₩4,750 one-way, 58 minutes Terminal 1 to Seoul Station, runs every 6–12 minutes): unreserved standing and seated, stops at 10 intermediate stations including Gimpo Airport and Hongik University (Hongdae). Cheaper, more frequent, and usefully stops at Hongik University — so if you're staying in Hongdae, the All-Stop is faster end-to-end than the Express.\n\nBoth services run from ~05:20 to ~midnight from Terminal 1. A T-money card works on the All-Stop; Express tickets are bought separately at a dedicated counter or machine. Incheon Airport Terminal 2 is three minutes further down the line — the same Express runs all the way through.\n\nAvoid the Airport Limousine Bus unless you're specifically staying at a hotel on its route — the bus is comparable in cost to Express but nearly twice as slow in Seoul traffic.",
+      },
+      {
+        heading: "Practical Tips for Incheon",
+        body: "**The airport itself**: Incheon has been rated the world's best airport for passenger experience multiple years running and is genuinely pleasant to transit. Free showers, sleeping pods (paid), a free cultural museum, a Korean traditional culture centre, and the transit hotel are all inside the secure area. Terminal 1 handles most non-Korean airlines; Terminal 2 is the Korean Air / SkyTeam terminal. A free inter-terminal shuttle bus connects the two in 5 minutes, or the AREX runs between them.\n\n**K-ETA**: Korea's electronic travel authorisation is required for visa-free visitors from most Western countries, including the short layovers that leave the airport. Apply at least 72 hours before arrival at k-eta.go.kr. As of 2024, several countries including the UK, US, and EU members are temporarily exempt from K-ETA — check before travelling.\n\n**For Seoul commuters**: the shortest hotel-to-check-in time from central Seoul is roughly 90 minutes if you're based in Myeongdong or Jongno, 75 minutes from Hongdae (one All-Stop AREX stop), and 60 minutes from a hotel directly next to Seoul Station. Pad these figures by 20 minutes for an international departure.\n\n**Eating at the airport**: the 4th floor food courts in both terminals have the widest Korean food selection and are a much better experience than the sit-down restaurants on the departures level. Allow an hour if you specifically want a proper bibimbap or Korean BBQ meal before flying out.",
+      },
+    ],
+    keyStations: [
+      { name: "Incheon International Airport Terminal 1", reason: "Main international gateway, AREX terminus, and the main airport hotel cluster including the Grand Hyatt Incheon, Paradise City, and Nest Hotel" },
+      { name: "Incheon International Airport Terminal 2", reason: "Korean Air and SkyTeam terminal, AREX stop, quieter than Terminal 1 and with its own transit hotel" },
+      { name: "Unseo", reason: "StayByRail pick — one AREX stop from Terminal 1 with the best-value mid-range hotel cluster, free shuttles to both terminals, and a 10-minute airport transfer for early flights" },
+      { name: "Incheon Station", reason: "Incheon Chinatown and the Open Port colonial district, Line 1 / Suin-Bundang line, best base for a Chinatown day trip from Seoul" },
+      { name: "Central Park", reason: "Songdo International Business District, Incheon Line 1, base for the Convensia convention centre and the smart-city waterfront hotels" },
+    ],
+    searchCity: "Incheon",
+    links: [
+      { label: "Incheon Airport", url: "https://www.airport.kr/ap/en/index.do", desc: "Official Incheon International Airport website" },
+      { label: "AREX", url: "https://www.arex.or.kr/main.do?lang=eng", desc: "Airport Railroad Express schedules and tickets" },
+      { label: "K-ETA", url: "https://www.k-eta.go.kr/", desc: "Official Korean electronic travel authorisation" },
+      { label: "Incheon Tourism", url: "https://itour.incheon.go.kr/EN/", desc: "Official tourism information for Incheon" },
+    ],
+    wikipedia: "Incheon",
+    lat: 37.4563,
+    lon: 126.7052,
+    countryCode: "KR",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "daegu",
+    city: "Daegu",
+    country: "South Korea",
+    heroLine: "Korea's fourth-largest city and the KTX halfway point between Seoul and Busan, with a three-line metro and the best traditional markets in the south",
+    metaTitle: "Hotels Near Daegu Metro Stations — StayByRail Guide",
+    metaDescription:
+      "An honest guide to staying near Daegu's metro and KTX stations. Where to base for the old city, Seomun Market, East Daegu KTX — and why this is one of the best-value Korean stops.",
+    intro:
+      "Daegu is roughly halfway between Seoul and Busan on the Gyeongbu Line, which makes it the natural overnight stop on any multi-city Korean rail trip. It's also Korea's fourth-largest city by population and has a personality that's distinct from both ends of the line — less polished than Seoul, less coastal than Busan, with a strong traditional-market and street-food culture, some of the best textile history in Asia, and a price level that runs 20–30 percent cheaper than Seoul for equivalent-quality hotels. The city has three metro lines including a scenic elevated monorail (Line 3), one KTX terminus (East Daegu / Dongdaegu), and a compact downtown that's walkable once you've reached it.",
+    sections: [
+      {
+        heading: "East Daegu Station and the KTX",
+        body: "**East Daegu Station** (Dongdaegu, Line 1) is the only KTX stop in the city and the arrival point for essentially every Seoul–Busan train. Seoul to East Daegu is 1 hour 40 minutes on the fastest KTX; East Daegu to Busan is a further 40 minutes. This makes Daegu the easiest place to break a Seoul–Busan trip into two halves with a single mid-trip overnight, and it's the argument for visiting the city at all for many travellers.\n\nThe area around East Daegu Station is built for transit: a cluster of business hotels (Interburgo, Novotel Ambassador, Toyoko Inn), a big intercity bus terminal, and a shopping mall/food court complex attached directly to the station concourse. It's not an atmospheric area, but it's convenient — five minutes on Line 1 gets you to Banwoldang and the downtown, 15 minutes to Jungangno and the old city core.\n\nFor a single-night stopover between Seoul and Busan, staying at an East Daegu business hotel is the frictionless choice. For a 2–3 night stay where you actually want to explore the city, pick a hotel near Banwoldang or Jungangno instead.",
+      },
+      {
+        heading: "Banwoldang and Jungangno: Downtown Daegu",
+        body: "**Banwoldang** (Lines 1 and 2 interchange) is the geographic centre of Daegu's downtown — the main commercial intersection, dense with department stores, the city hall, and the north edge of the traditional market district. **Jungangno** (Line 1, one stop north) sits at the heart of the old downtown, walking distance to Seomun Market and the pedestrianised shopping street that runs through the old heart of the city. For most visitors who want a real Daegu base, the 10-block area between Jungangno and Banwoldang is the right answer.\n\nHotel options here skew business-class and mid-range — clean, well-priced, and a 20-30 percent discount on the equivalent Seoul room. Notable clusters: the Novotel Ambassador Daegu near Banwoldang, the Eldis Regent near Jungangno, and a line of Korean business chains (Toyoko Inn Daegu Dongseongno, Ramada Encore Daegu) on the main shopping streets.\n\n**Seomun Market** — a 10-minute walk from Banwoldang — is Korea's largest traditional market by stall count and one of the best street-food destinations in the country. The night market (Friday to Sunday evenings, 19:00–00:00) is the main event: grilled meat on sticks, Daegu-style noodles, flat dumplings, and the famous 'nappakmandu' all on one strip. Schedule at least one dinner here on any Daegu visit.",
+      },
+      {
+        heading: "The Three Metro Lines",
+        body: "**Line 1** (red) runs east–west across the city and is the line most tourists will actually use — it connects East Daegu (KTX) at the eastern end through Banwoldang and Jungangno in the city centre, out to Anjirang and the Seobu bus terminal in the west. Most major hotels, the main shopping district, and the KTX station are all on this line.\n\n**Line 2** (green) runs east–west on a different axis, connecting Banwoldang through the Duryu Park area to the Kyungpook National University and the Dusan neighbourhoods. Most useful for visitors is the stop at Kyungpook National University — Daegu's main university, with a student nightlife strip and cheap restaurants — and the Keimyung University area for the Daegu Arts Centre.\n\n**Line 3** (yellow, monorail) is the scenic line — an elevated rubber-tyred monorail running north–south, with views over the city from the raised track. It's useful for reaching the Bukbu bus terminal and Apsan Park in the south, but less essential for central sightseeing. Worth riding once for the view even if you don't need to travel.\n\nA single-ride ticket is ₩1,400; T-money cards work across all three lines, buses, and taxis. Trains run every 4–8 minutes from 05:30 to 00:00.",
+      },
+      {
+        heading: "Day Trips from Daegu",
+        body: "Daegu's geographic position makes it an unusually strong base for day trips. **Gyeongju** — the UNESCO-listed Silla-dynasty capital with the best concentration of tombs, temples and historical sites in Korea — is 20 minutes on the KTX from East Daegu to Singyeongju, then a 15-minute city bus. This is one of the strongest arguments for an overnight in Daegu en route between Seoul and Busan.\n\n**Andong** — the Hahoe folk village (UNESCO), the Confucian academies, and the dosanseoweon institute — is a 90-minute KTX from East Daegu on the new line opened in 2021. Andong's mask dance and traditional Korean folk performances are the best in the country.\n\n**Haeinsa Temple** — the 13th-century temple housing the Tripitaka Koreana, 81,258 wood-block Buddhist scriptures and another UNESCO site — is 90 minutes by bus from Daegu's Seobu bus terminal. Full-day trip.\n\n**Palgongsan Mountain** and the Gatbawi stone Buddha are an hour's city bus ride from central Daegu — half-day trip, worthwhile in autumn for the foliage.",
+      },
+      {
+        heading: "Practical Tips for Daegu",
+        body: "**Best time to visit**: April to early May (cherry blossoms at Duryu Park and E-World), late September to early November (autumn foliage in the surrounding mountains, clear skies, 15-20°C). July–August is hot and humid; Daegu holds the record for Korea's highest temperatures most summers. Winter (December–February) is cold and dry but clear, and the city is noticeably quieter.\n\n**Food**: Daegu is known for 10 signature dishes the city promotes as \"Daegu 10 Flavors\". The key ones to try: **jjim galbi** (spicy braised short ribs) — the Dongin-dong street is the traditional cluster; **napjak mandu** (flat dumplings) — Seomun Market; **mumumori guk** (spicy fish soup) — any of the old-town restaurants; and **makchang** (grilled beef intestines) — a Daegu speciality that's nearly impossible to find this style anywhere else in Korea. Ask your hotel for recommendations — every Daegu hotel keeps a local food map.\n\n**From Seoul**: KTX from Seoul Station to East Daegu is ₩43,500 (~£25) one-way in economy, 1h 40m, 15+ departures a day. SRT from Suseo is 10 percent cheaper to Dongdaegu and runs from the same platform direction but fewer departures. For a Seoul → Daegu → Busan trip, book the full Seoul–Busan ticket with an extended layover at East Daegu and save the single-leg booking fee.\n\n**Airport**: Daegu has a small international airport (TAE) with limited direct flights (mainly regional Chinese and Japanese cities). For most international visitors, flying into Incheon and taking the KTX to Daegu is the practical option.",
+      },
+    ],
+    keyStations: [
+      { name: "East Daegu", reason: "Only KTX stop in the city, Line 1, business hotel cluster, main intercity bus terminal — the natural base for a single-night Seoul–Busan stopover" },
+      { name: "Banwoldang", reason: "StayByRail pick — Lines 1 and 2 interchange at the heart of downtown, walking distance to Seomun Market and Jungangno, with the widest mid-range hotel selection" },
+      { name: "Jungangno", reason: "Old-downtown shopping core, Line 1, pedestrianised old city, best base for Seomun Market and the traditional food strip" },
+      { name: "Daegu Station", reason: "Conventional-rail station, Line 1, mid-range business hotels, cheaper than East Daegu's KTX cluster" },
+      { name: "Kyungpook National University", reason: "Line 2, the university district and student nightlife strip, the cheapest eating and drinking in the city" },
+    ],
+    searchCity: "Daegu",
+    links: [
+      { label: "Korail KTX", url: "https://www.letskorail.com/", desc: "Official KTX booking for Seoul and Busan services" },
+      { label: "Daegu Metro", url: "https://www.dtro.or.kr/eng/", desc: "Official Daegu Metro map and timetables" },
+      { label: "Visit Daegu", url: "https://english.daegu.go.kr/", desc: "Official tourism site for Daegu" },
+    ],
+    wikipedia: "Daegu",
+    lat: 35.8714,
+    lon: 128.6014,
+    countryCode: "KR",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
+  {
+    slug: "daejeon",
+    city: "Daejeon",
+    country: "South Korea",
+    heroLine: "Korea's central rail junction and science capital — the KTX gateway to the south-west, an hour from Seoul and two from Busan",
+    metaTitle: "Hotels Near Daejeon Train Stations — StayByRail Guide",
+    metaDescription:
+      "An honest guide to staying near Daejeon's KTX stations and Line 1 metro. Where to base for a Seoul commute, a Gyeongbu–Honam line transfer, or Korea's research and science city.",
+    intro:
+      "Daejeon is Korea's fifth-largest city and the only point where the country's two main high-speed rail lines — the Gyeongbu (Seoul–Busan) and the Honam (Seoul–Gwangju/Mokpo) — actually split. That junction function is the main practical reason most travellers end up here, either as a 15-minute transfer stop or as an overnight between longer hops. The city itself is less famous than Seoul, Busan or Daegu, but it has one of the best hot-springs districts in Korea (Yuseong), the country's main research-and-science centre, and a compact downtown with a strong rice-cake and kalguksu noodle culture that's largely unknown outside Korea.",
+    sections: [
+      {
+        heading: "Daejeon's Two KTX Stations",
+        body: "Daejeon has two KTX stations, 8 km apart, and the choice between them matters less than it does in cities with multiple stations but is still worth understanding. **Daejeon Station** (Line 1, central) is the main KTX stop and handles essentially all Gyeongbu Line services — every Seoul→Busan KTX (and SRT) calls here, and every service stops in both directions. It's directly on Metro Line 1 and walking distance to the city's central hotel and restaurant cluster. For 95 percent of visitors this is the station to use.\n\n**Seo-Daejeon** (West Daejeon, not on the metro) is 8 km south-west of central Daejeon and handles Honam Line services — the trains heading to Gwangju, Iksan, Mokpo, and the south-west coast. Not every Honam train stops here (some skip it and connect from Daejeon Station), but enough do that you should check the specific train before booking a hotel.\n\nFor pure transfers (no overnight), Daejeon Station is vastly preferable — the timetable allows tight turnarounds between Gyeongbu and Honam services by simply staying on the platform rather than changing stations. For an overnight, Daejeon Station is almost always the right choice; Seo-Daejeon is only worth it if you have a specific early-morning Honam departure from there.",
+      },
+      {
+        heading: "Downtown, Yuseong, and Government Complex",
+        body: "Daejeon has three distinct hotel clusters, each served by Line 1. **Downtown Daejeon** (Daejeon Station / Jungangno area) is the old commercial core, walking distance from the KTX, with mid-range business hotels and the traditional market district. The most central option for a one-night stop and the best for walkability to restaurants and night markets.\n\n**Yuseong** (Yuseong Spa / Gung-dong on Line 1) is the hot-springs district — 15 minutes west of downtown by metro — and Daejeon's most atmospheric hotel area. The hot-springs water is naturally radon-free alkaline, traditionally served in public bath houses (₩10,000–15,000 entrance), and most hotels in the area either have their own onsen-style spa or partner with a nearby bath house. Calmest, most rural-feeling base in the city, and the best choice for a relaxed overnight that doesn't need walking-distance access to the KTX.\n\n**Government Complex** (one stop west of Yuseong on Line 1) is the modern business district around the federal government offices relocated from Seoul in the 2010s. Several three and four-star business hotels cluster here (Hotel ICC, Lotte City, Leonardo), and it's the natural choice if you're here on business at the Daedeok Science Park or KAIST university. Quieter than downtown, slightly further from the KTX, but well-connected on Line 1.",
+      },
+      {
+        heading: "Line 1 — The Only Metro Line",
+        body: "Daejeon has a single metro line running east–west across the city. It's 24 km end-to-end, 22 stations, and connects essentially everything a visitor needs: Panam (east), past Daejeon Station in the centre, through the Jungangno old downtown, out to the Government Complex, Yuseong Spa, and terminating at Banseok in the west. Trains run every 5–10 minutes from 05:30 to 00:00, fares are a flat ₩1,400, and T-money cards work.\n\nA second and third line have been under planning for over a decade — a rubber-tyred Line 2 running in a loop was approved in 2024 and is scheduled to open around 2028; a monorail Line 3 remains in planning. For now, anything off Line 1 is a city bus or taxi, and central Daejeon is compact enough that taxis between downtown and Yuseong run around ₩8,000.",
+      },
+      {
+        heading: "What Daejeon Is Actually Known For",
+        body: "Daejeon is Korea's government-designated science city — home to KAIST (Korea Advanced Institute of Science and Technology, often called Korea's MIT), the Daedeok Innopolis research cluster with 30+ national labs, and the historic Daejeon Expo 93 site. For travellers, the most interesting legacy is the **Expo Science Park** north of Yuseong, with the rebuilt Expo tower, the Daejeon Museum of Art, and the Hanbit Tower observatory.\n\nThe city's food scene is built around two things: **Yuseong hot-springs water soybean paste stews** (most Yuseong hotels have a restaurant serving the style) and **Daejeon-style kalguksu** (knife-cut wheat noodles in a clear anchovy-kelp broth, different from the heavier Seoul version). The best kalguksu restaurants are in the old town near Daejeon Station — ask the hotel concierge for \"Daejeon-style kalguksu restaurant\" and you'll get a reliable recommendation.\n\n**Day trips**: Gongju (the Baekje-era capital and UNESCO royal tombs) is 45 minutes by bus and one of Korea's most underrated historical sites. Buyeo (another Baekje capital, more UNESCO tombs and the Gungnamji pond) is 90 minutes by bus. Both are full-day trips and more interesting than anything in central Daejeon itself.",
+      },
+      {
+        heading: "Practical Tips for Daejeon",
+        body: "**Best time to visit**: late April to early May (cherry blossoms), late September to early November (autumn foliage). Daejeon is inland and has the most moderate climate of Korea's major cities — summers are hot but less humid than the coastal cities, winters are cold but less severe than Seoul.\n\n**From Seoul**: KTX from Seoul Station to Daejeon Station is ₩23,700 (~£14) one-way in economy, 57 minutes, 40+ departures a day — this is the highest-frequency intercity rail link in Korea and makes Daejeon an easy day trip from Seoul. SRT from Suseo is similar.\n\n**Junction planning**: if you're going from Seoul to Gwangju and want a short break, Daejeon is the natural stop because you transfer between the Gyeongbu and Honam lines here anyway. A 4-hour layover at Daejeon Station with lunch downtown adds nothing to your total travel time and turns a grind into a meal.\n\n**Hot-springs etiquette**: the Yuseong hot springs are single-sex bath houses in the traditional Korean style. No swimsuits — everyone bathes nude. Shower first at the low shower stations, then enter the pools. Tattoos are generally tolerated in the tourist-facing hotel spas but small or discreet ones are safer if in doubt. Bring your own toothbrush and razor; towels are usually included in the entrance fee or available for a small extra charge.",
+      },
+    ],
+    keyStations: [
+      { name: "Daejeon Station", reason: "Main KTX and SRT station, Line 1, central to the downtown hotel cluster — the station to use for 95 percent of visitors" },
+      { name: "Yuseong Spa", reason: "StayByRail pick — hot-springs district, Line 1, Korea's most atmospheric onsen-style base with hot-springs hotels 15 minutes from the KTX" },
+      { name: "Government Complex", reason: "Modern business district, Line 1, newer three and four-star hotels with the best value in Daejeon" },
+      { name: "Jungangno", reason: "Old downtown, Line 1, walking distance from Daejeon Station and the central traditional-market district" },
+      { name: "Seo-Daejeon", reason: "Secondary KTX station for Honam Line services to Gwangju and Mokpo — only worth it for a specific early Honam departure" },
+    ],
+    searchCity: "Daejeon",
+    links: [
+      { label: "Korail KTX", url: "https://www.letskorail.com/", desc: "Official KTX booking site" },
+      { label: "Daejeon Metro", url: "https://www.djet.co.kr/eng/", desc: "Official Daejeon Metro map and timetables" },
+      { label: "Visit Daejeon", url: "https://www.daejeon.go.kr/english/", desc: "Official city tourism site for Daejeon" },
+    ],
+    wikipedia: "Daejeon",
+    lat: 36.3504,
+    lon: 127.3845,
+    countryCode: "KR",
+    updatedAt: "2026-04",
+    author: "Matt Farrell",
+  },
 ];
 
 export function getGuide(slug) {

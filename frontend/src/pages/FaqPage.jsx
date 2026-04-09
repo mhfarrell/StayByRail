@@ -24,7 +24,7 @@ function FaqPage() {
               "name": "Which cities and countries are covered?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "StayByRail currently covers 52 cities across six countries: Japan (12 cities including Tokyo, Osaka, and Kyoto), the United Kingdom (13 cities including London, Manchester, and Edinburgh), France (7 cities including Paris and Lyon), Germany (8 cities including Berlin and Munich), Spain (7 cities including Madrid and Barcelona), and Thailand (5 cities including Bangkok)."
+                "text": "StayByRail currently covers 65 cities across eight countries: Japan (12 cities including Tokyo, Osaka, and Kyoto), the United Kingdom (13 cities including London, Manchester, and Edinburgh), France (7 cities including Paris and Lyon), Germany (8 cities including Berlin and Munich), Spain (7 cities including Madrid and Barcelona), Thailand (5 cities including Bangkok), China (8 cities including Beijing, Shanghai, and Hong Kong), and South Korea (5 cities including Seoul and Busan)."
               }
             },
             {
@@ -75,7 +75,7 @@ function FaqPage() {
           <h3 className="content-faq-question">Which cities and countries are covered?</h3>
           <p className="content-faq-answer">
             StayByRail currently covers{" "}
-            <Link to="/coverage" className="about-link">52 cities across six countries</Link>: Japan (12
+            <Link to="/coverage" className="about-link">65 cities across eight countries</Link>: Japan (12
             cities including <Link to="/guides/tokyo" className="about-link">Tokyo</Link>,{" "}
             <Link to="/guides/osaka" className="about-link">Osaka</Link>,{" "}
             <Link to="/guides/kyoto" className="about-link">Kyoto</Link>, and Hiroshima), the United Kingdom
@@ -86,8 +86,15 @@ function FaqPage() {
             Munich, and Hamburg), Spain (7 cities including{" "}
             <Link to="/guides/madrid" className="about-link">Madrid</Link>,{" "}
             <Link to="/guides/barcelona" className="about-link">Barcelona</Link>, and
-            Seville), and Thailand (5 cities including{" "}
-            <Link to="/guides/bangkok" className="about-link">Bangkok</Link> and Chiang Mai). We are
+            Seville), Thailand (5 cities including{" "}
+            <Link to="/guides/bangkok" className="about-link">Bangkok</Link> and Chiang Mai),
+            China (8 cities including{" "}
+            <Link to="/guides/beijing" className="about-link">Beijing</Link>,{" "}
+            <Link to="/guides/shanghai" className="about-link">Shanghai</Link>, and{" "}
+            <Link to="/guides/hong_kong" className="about-link">Hong Kong</Link>), and
+            South Korea (5 cities including{" "}
+            <Link to="/guides/seoul" className="about-link">Seoul</Link> and{" "}
+            <Link to="/guides/busan" className="about-link">Busan</Link>). We are
             actively expanding to additional countries and cities.
           </p>
         </div>

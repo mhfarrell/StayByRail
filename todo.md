@@ -6,26 +6,26 @@ This file is organised by ROI. Start at the top.
 
 ---
 
-## What's left after the 2026-04-08 deploy
+## What's left after the 2026-04-09 deploy
 
-The site is now at 31 city guides / 9 journal articles / 5 itineraries / 5 transport passes / 1 country explainer / 766 sitemap URLs covering 60 cities across 7 countries. The two big content categories — programmatic station landing pages and long-form city guides — are in good shape for the CJ re-application. **What's still open:**
+The site is now at **36 city guides / 9 journal articles / 5 itineraries / 5 transport passes / 2 country explainers / 821 sitemap URLs covering 65 cities across 8 countries**. The 2026-04-09 session shipped (1) the bundle-size fix that dropped the main JS chunk from 538 KB back to 267 KB, and (2) the full **South Korea expansion** — 5 new city guides (Seoul, Busan, Incheon, Daegu, Daejeon), 49 new programmatic station pages, 25 new FAQs, the `/countries/south-korea` explainer, a new CoveragePage card, Seoul added to the footer popular-guides nav, and every stale "52 cities / 6 countries" / "60 cities / 7 countries" copy across HomePage, AboutPage, FaqPage, HowItWorksPage, SearchPage and CoveragePage updated to **65 cities / 8 countries**. The two big content categories — programmatic station landing pages and long-form city guides — are in good shape for the CJ re-application. **What's still open:**
 
 **P0 (highest ROI, mostly user actions):**
 - [ ] **Lighthouse audit** on the top 5 page templates and fix anything red. *(user action — `npx lighthouse <url> --view`)*
 - [ ] **Submit sitemap to Google Search Console + Bing Webmaster Tools.** Free, one-time, essential. *(user action)*
-- [ ] **Bundle-size regression** — main `index.js` chunk has grown from 308 KB to **538 KB** since the carousel landed (it's currently importing all 31 cityGuides + 9 journal articles + 8 itineraries eagerly via HomePage). The featured-guides carousel only needs the 10 curated cities; the rest could move to a lazy import. **Investigate before the next Lighthouse audit** — this will hurt the Performance score on `/`.
+- [x] **Bundle-size regression fixed (2026-04-09)** — main `index.js` chunk is now **267 KB** (down from 538 KB, and even smaller than the pre-regression 308 KB baseline). Fix: HomePage no longer imports `cityGuides.js` or `journal.js` — a new `frontend/src/data/homepageFeatured.js` file holds just the metadata the carousel and the "latest from the journal" strip need (10 featured city entries + 9 journal-article metadata rows + a `totalCityGuides` constant). Vite now splits `cityGuides.js` into its own 202 KB shared chunk (only loads on guide/itinerary/station/country/author/pass/journal-article routes) and `journal.js` into a 74 KB chunk (only loads on `/journal` routes). No visual change to the homepage — the left/right carousel renders exactly as before.
 
 **P1 (more content, code-only):**
-- [ ] **South Korea expansion** — 5 cities (Seoul/Busan/Incheon/Daegu/Daejeon), same shape as the China work. Backend stations + city guides + FAQs + `/countries/south-korea` explainer + hero photos.
+- [x] **South Korea expansion (2026-04-09)** — 5 cities shipped (Seoul/Busan/Incheon/Daegu/Daejeon). Backend station data for Seoul Lines 1/2/3/4/6 + AREX + KTX, Busan Lines 1/2/3 + KTX, Incheon Line 1 + Suin-Bundang + AREX, Daegu Lines 1/2/3 + KTX, Daejeon Line 1 + KTX. 49 new programmatic station landing pages, 5 full city guides (~1,500 words each with 5 sections and 5–6 key stations), 25 new FAQs, the `/countries/south-korea` explainer covering KTX vs SRT, Korail Talk booking, T-money, the Seoul Metropolitan Subway, Incheon Airport AREX, and K-ETA entry. CoveragePage card, Footer popular-pages entry, sitemap entries, and the homepage `totalCityGuides` bump all landed. Curated hero photos still outstanding (Wikipedia fallback works fine in the meantime).
 - [ ] **United States expansion** — 6 cities (NYC/DC/Chicago/Boston/SF/Philly), same shape. Deliberately limited to cities where rail is the genuinely practical hotel base.
 - [ ] **Continue journal cadence** — one new article every 10–14 days. Next due ~mid-April. Pick a fresh angle, not a re-tread of the seed list.
-- [ ] **More country explainers** — `/countries/japan`, `/countries/united-kingdom`, `/countries/france`, `/countries/germany`, `/countries/spain`, `/countries/thailand`. Infrastructure is built; each one is just a new entry in `frontend/src/data/countries.js` (~3,000 words) plus a sitemap line.
+- [ ] **More country explainers** — `/countries/japan`, `/countries/united-kingdom`, `/countries/france`, `/countries/germany`, `/countries/spain`, `/countries/thailand`. Infrastructure is built; each one is just a new entry in `frontend/src/data/countries.js` (~3,000 words) plus a sitemap line. Two countries now shipped: China and South Korea.
 
 **P3 (link building / traction — all user actions):**
 - [ ] All Reddit / Quora / forum / Fiverr / guest-post / social work in P3 below. None of this is automatable — it needs a human voice.
 
 **P4 (polish):**
-- [ ] **Real photography for the remaining 23 city guides** — Wikipedia fallback works fine but curated photos look better in card grids. Use `frontend/scripts/warm-hero-photos.py` after each batch to pre-warm the Wikimedia thumb cache.
+- [ ] **Real photography for the remaining 28 city guides** — 23 pre-existing + 5 new South Korean cities. Wikipedia fallback works fine but curated photos look better in card grids. Use `frontend/scripts/warm-hero-photos.py` after each batch to pre-warm the Wikimedia thumb cache.
 
 **Re-application checklist still open:**
 - [ ] Plausible / GA shows non-zero organic traffic for 4 weeks (depends on GSC submission)
@@ -38,7 +38,7 @@ The site is now at 31 city guides / 9 journal articles / 5 itineraries / 5 trans
 ## P0 — Do these first (highest ROI)
 
 - [x] **Programmatic `/hotels-near/:station` landing pages** — 597 station pages across 52 cities, each with unique H1/meta/canonical, BreadcrumbList + TrainStation + GeoCoordinates JSON-LD, live hotel preview from the API, nearby-stations grid for internal linking, and back-link to the parent city guide. Sitemap now contains 654 URLs in total. Generator lives at `frontend/scripts/gen-stations.py`.
-- [~] **Code-split the route bundle** — main JS dropped from 594 KB to 308 KB via `React.lazy` + `<Suspense>`. Each route is its own chunk; `SearchPage` (202 KB) and `HotelMap` (155 KB) only load when visited. HomePage stays eager as the LCP target. **REGRESSION 2026-04-08**: main `index.js` chunk has grown back up to **538 KB** after the carousel + China content landed (the carousel imports all 31 cityGuides + 9 journal articles eagerly through HomePage). Needs another pass — likely move journal/itineraries off the eager path entirely and only feed the carousel its 10 specific slugs.
+- [x] **Code-split the route bundle** — main JS is now **267 KB** (down from the original 594 KB → post-lazy-split 308 KB → regressed 538 KB → now 267 KB after the 2026-04-09 homepage-metadata split). Each route is its own chunk; `SearchPage` (203 KB), `HotelMap` (155 KB), `cityGuides` (202 KB shared), and `journal` (74 KB shared) all only load when their respective routes are visited. HomePage stays eager as the LCP target and now imports only a tiny `homepageFeatured.js` metadata file instead of the full guide/article prose.
 - [ ] **Lighthouse audit** on `/`, `/guides/tokyo`, `/search`, `/hotels-near/shinjuku-tokyo`, `/journal/london-zone-1-vs-zone-2-hotel-cost` — record current Performance / Accessibility / SEO / Best Practices scores, then fix the red items. Target: 90+ on all four. *(user action — run `npx lighthouse <url> --view` locally or from Chrome DevTools)*
 - [x] **"Last updated" dates + author byline on every guide** — every entry in `cityGuides.js` has `updatedAt` + `author` fields; `GuidePage` renders "Updated April 2026 · by Matt Farrell" beneath the hero.
 - [ ] **Submit sitemap to Google Search Console** — verify property, submit `https://staybyrail.co.uk/sitemap.xml`, check indexing coverage. Do the same for **Bing Webmaster Tools**. Free, one-time, essential. *(user action)*

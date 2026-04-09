@@ -77,6 +77,9 @@ CITY_COUNTRIES = {
     # China (including Hong Kong SAR)
     "beijing": "China", "shanghai": "China", "guangzhou": "China", "shenzhen": "China",
     "chengdu": "China", "xian": "China", "hangzhou": "China", "hong_kong": "China",
+    # South Korea
+    "seoul": "South Korea", "busan": "South Korea", "incheon": "South Korea",
+    "daegu": "South Korea", "daejeon": "South Korea",
 }
 
 

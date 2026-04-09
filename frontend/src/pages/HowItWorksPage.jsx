@@ -11,12 +11,12 @@ function HowItWorksPage() {
           "@context": "https://schema.org",
           "@type": "HowTo",
           "name": "How to find hotels near train stations with StayByRail",
-          "description": "Find and compare hotels within walking distance of train and metro stations across 52 cities.",
+          "description": "Find and compare hotels within walking distance of train and metro stations across 65 cities.",
           "step": [
             {
               "@type": "HowToStep",
               "name": "Choose Your City and Rail Line",
-              "text": "Select from 52 cities across Japan, the United Kingdom, France, Germany, Spain, and Thailand. Pick a specific train or metro line and station to search around."
+              "text": "Select from 65 cities across Japan, the United Kingdom, France, Germany, Spain, Thailand, China, and South Korea. Pick a specific train or metro line and station to search around."
             },
             {
               "@type": "HowToStep",
@@ -49,9 +49,9 @@ function HowItWorksPage() {
           </div>
           <h3 className="content-step-title">1. Choose Your City and Line</h3>
           <p className="content-step-text">
-            Select from 52 cities across Japan, the United Kingdom, France, Germany,
-            Spain, and Thailand. Pick a specific train or metro line and station to
-            search around.
+            Select from 65 cities across Japan, the United Kingdom, France, Germany,
+            Spain, Thailand, China, and South Korea. Pick a specific train or metro
+            line and station to search around.
           </p>
         </div>
         <div className="content-step-card">

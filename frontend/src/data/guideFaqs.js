@@ -719,6 +719,121 @@ export const guideFaqs = {
       a: "No — Hong Kong is visa-free for UK passport holders for 180 days and for US, EU, Canadian, Australian, and most other Western nationalities for 90 days. This is a different and much more generous system than mainland China, which requires either a full visa or the 144/240-hour transit policy. You can fly into Hong Kong without any prior paperwork; you cannot do the same for Beijing or Shanghai.",
     },
   ],
+
+  seoul: [
+    {
+      q: "Which Seoul neighbourhood is best for first-time visitors?",
+      a: "Myeongdong on Line 4 is the safest first choice — central, walking distance to the palaces and Namsan Tower, dense with mid-range and upmarket hotels, and crammed with the street food and cosmetics shops every first-time visitor ends up browsing. For a more atmospheric alternative, Insadong and Anguk (Line 3) put you in the traditional craft district next to Gyeongbokgung and the Bukchon hanok village. For the cheapest comfortable base with the best nightlife and a direct AREX link, Hongdae (Hongik University on Line 2 and AREX).",
+    },
+    {
+      q: "How do I get from Incheon Airport to central Seoul?",
+      a: "AREX (Airport Railroad Express) is the default answer. The non-stop Express runs from Incheon International Airport Terminal 1 to Seoul Station in 43 minutes for ₩11,000, departing every 40 minutes. The All-Stop Commuter is slower (58 minutes, 10 stops) but cheaper (₩4,750) and more frequent (every 6–12 minutes). If you're staying in Hongdae, the All-Stop is faster end-to-end because it stops at Hongik University. Avoid the Airport Limousine Bus unless your hotel is specifically on its route.",
+    },
+    {
+      q: "Do I need a K-ETA to visit Seoul?",
+      a: "For most Western passports, technically yes — the K-ETA (Korea Electronic Travel Authorisation) is required for visa-free entry and should be applied for at least 72 hours before arrival at k-eta.go.kr (₩10,000, valid two years). However, as of 2024 several countries including the UK, US, most EU members, Canada and Australia are temporarily exempt through the end of 2025 — check the official site before travelling. Regardless, a return or onward ticket is still required at the border.",
+    },
+    {
+      q: "KTX or SRT from Seoul to Busan?",
+      a: "KTX from Seoul Station is the default — 2 hours 15 minutes on the fastest trains, ₩59,000 (~£34) economy, 10–15 departures a day, and the easiest to reach from any central Seoul hotel. SRT from Suseo station in southern Seoul is 10 percent cheaper and has newer rolling stock, but Suseo is only convenient if you're already staying in Gangnam — the subway transfer from central Seoul to Suseo eats the savings. Book KTX unless you're specifically based in the south of the city.",
+    },
+    {
+      q: "How does T-money work and do I need one?",
+      a: "T-money is Korea's universal transit card — ₩4,000 blank at any convenience store (CU, GS25, 7-Eleven), topped up with cash or a foreign Visa at the same counter or at subway vending machines. It works on every subway, bus, taxi, and most convenience-store purchases, and gives a ₩100 discount per trip vs paying per-ride. Contactless overseas Visa and Mastercard also work at subway gates since 2024 but at a slightly higher flat fare. For a trip longer than one or two days, T-money is worth the two minutes to buy.",
+    },
+  ],
+
+  busan: [
+    {
+      q: "Which Busan neighbourhood should I stay in?",
+      a: "Haeundae (Line 2) is the beach resort district and the right choice if beach-and-skyline is the whole point of your trip — the Park Hyatt, Signiel, Paradise and Westin are all here. Nampo (Line 1) is the old port district with Jagalchi fish market and Gamcheon Culture Village, cheaper and more atmospheric. Seomyeon (Lines 1 and 2) is downtown with the widest mid-range hotel selection and the best balance if you want to split time between the beach and the old city. For a single-night stopover between Seoul and Busan, stay near Busan Station (Line 1) for the KTX convenience.",
+    },
+    {
+      q: "How long is the KTX from Seoul to Busan?",
+      a: "2 hours 15 minutes on the fastest KTX services, up to 2 hours 40 minutes on the slower ones that stop at more intermediate stations. Economy class is ₩59,000 (~£34) one-way, with 10–15 departures a day in each direction. Tickets can be booked up to one month in advance on Korail's English site (letskorail.com) or via Trip.com for a small markup. For a same-day round trip Seoul–Busan is tight but possible; for any real visit, overnight.",
+    },
+    {
+      q: "Is Haeundae Beach worth staying at, or is it a tourist trap?",
+      a: "It's genuinely worth it if you like urban beaches and want the hotel-to-sand walk to be under five minutes. The beach itself is 1.5 km of clean white sand, the restaurant strip behind it is one of the best in Busan, and the neighbouring Gwangalli (10 minutes by bus or taxi) has the Diamond Bridge view that's the city's main photography shot. Avoid July and August if crowds bother you — it's genuinely packed. May, June, September and October are ideal.",
+    },
+    {
+      q: "Can I take the ferry from Busan to Japan?",
+      a: "Yes, and it's one of the best ways to combine a Korea–Japan trip. The overnight Camellia Line ferry (Busan Port to Hakata Port in Fukuoka, ~12 hours, around ¥10,000/₩100,000 one-way) is the slow cheap option with sleeping berths. The daytime JR Kyushu Beetle / Miraejet Kobee hydrofoils (~3 hours, around ¥13,000/₩130,000) are the fast option. Both arrive at Busan Port International Terminal, 15 minutes' walk from Busan Station. A valid onward or return ticket is required for visa-free entry in both directions.",
+    },
+    {
+      q: "Is Gyeongju a good day trip from Busan?",
+      a: "Yes — and Gyeongju is probably the strongest day-trip argument for staying in Busan at all. The UNESCO-listed Silla-dynasty capital (temples, tombs, Bulguksa, Seokguram) is 30 minutes on the KTX from Busan Station to Singyeongju, then a 15-minute city bus. Leave Busan at 09:00, spend 6 hours in Gyeongju, back by 18:00. Alternatively, spend a night in Gyeongju in a traditional hanok guesthouse and return the next day — more atmospheric but adds a hotel change.",
+    },
+  ],
+
+  incheon: [
+    {
+      q: "Is it better to stay in Incheon near the airport, or in Seoul?",
+      a: "For a layover of 8+ hours, commute to Seoul — the AREX Express is 43 minutes to Seoul Station and the experience of even half a day in central Seoul beats any transit hotel. For a layover under 8 hours or an early-morning departure before the AREX starts running (first train ~05:20), stay near Incheon Airport. The best value is Unseo station (one AREX stop east of the airport) with mid-range chain hotels and free shuttles; the most premium is the Grand Hyatt Incheon, physically closest to Terminal 1.",
+    },
+    {
+      q: "How do I get from Incheon Airport Terminal 2 to Terminal 1?",
+      a: "A free inter-terminal shuttle bus runs every 5 minutes from each terminal's arrivals level and takes about 5 minutes to complete the loop. The AREX also stops at both terminals on its way into Seoul — there's no extra charge to ride between them. Terminal 2 is the Korean Air / SkyTeam terminal; Terminal 1 handles most other international airlines. Most visitors won't need to switch terminals unless their outbound flight is on a different alliance.",
+    },
+    {
+      q: "Is Incheon Chinatown worth visiting?",
+      a: "Yes, but as a day trip from Seoul rather than an overnight. Incheon Chinatown is Korea's only officially-designated Chinatown, dating from the 1884 treaty port, and it's where jjajangmyeon (the Korean-Chinese black bean noodle dish) was invented — the Jjajangmyeon Museum is worth 30 minutes, and the surrounding Open Port Cultural District preserves the Japanese and Western colonial architecture from the 1880s–1910s. From Seoul it's an hour on Line 1 / Suin-Bundang to Incheon Station. Half a day is enough for the whole area including Wolmido Island.",
+    },
+    {
+      q: "Does the Incheon Airport transit hotel work for visa-free layovers?",
+      a: "Yes — there are two airside transit hotels, one in each terminal, both airside (inside the secure zone) and bookable by the hour or by the night. No visa or K-ETA is required to use them because you never pass through immigration. The Grand Hyatt Incheon, Paradise City, Nest Hotel, and the Unseo-area chains are all landside and require you to clear immigration to check in — which for most Western passports means a K-ETA (if one is currently required) or an exemption, and a re-entry at check-out.",
+    },
+    {
+      q: "Is Songdo worth staying in?",
+      a: "Only for specific reasons — the Convensia convention centre, the Jack Nicklaus Golf Club, or the smart-city architecture interest. Songdo is Korea's ambitious greenfield new city built on reclaimed land, with impressive Central Park canals, skyline photography, and several upmarket business hotels around the Convensia convention centre. For general Korea sightseeing it's the wrong choice — you're two transfers and 90+ minutes from central Seoul, and 45 minutes from Incheon Airport. For a business trip tied to Convensia, it's ideal.",
+    },
+  ],
+
+  daegu: [
+    {
+      q: "Is Daegu worth an overnight on a Seoul–Busan trip?",
+      a: "Yes, if you're already doing both Seoul and Busan on one trip. Daegu is roughly halfway on the Gyeongbu Line (1h 40m from Seoul, 40m from Busan), the hotels run 20–30 percent cheaper than equivalent Seoul rooms, and the Seomun Market night market is one of the best street-food experiences in Korea. It's also the strongest base for a day trip to Gyeongju (20 minutes on KTX from East Daegu to Singyeongju), which is probably the most important historical site in the country. A single-night stopover is the sweet spot.",
+    },
+    {
+      q: "Which Daegu station should I book near?",
+      a: "East Daegu (Dongdaegu) on Line 1 is the KTX terminus — the only station where Seoul–Busan high-speed services stop — so stay there if you arrive on a KTX and want walking distance from the platform to the hotel. For a proper visit, Banwoldang (Lines 1 and 2 interchange) or Jungangno (Line 1) put you in the heart of downtown, walking distance to Seomun Market and the old city. The five-minute subway ride from East Daegu to Banwoldang is negligible — pick based on neighbourhood preference, not KTX proximity.",
+    },
+    {
+      q: "What's Seomun Market and is the night market really the main reason to visit?",
+      a: "Seomun Market is Korea's largest traditional market by stall count — 4,000+ vendors across several multi-storey blocks — and it anchors the old-downtown district 10 minutes on foot from Banwoldang station. The night market (Fridays to Sundays, 19:00–00:00) is the main event: grilled meat on sticks, Daegu-style napjak mandu (flat dumplings), traditional Korean sweets, and the signature makchang grilled beef intestines that are a Daegu speciality. Yes — for most visitors, the night market is the single strongest reason to overnight here.",
+    },
+    {
+      q: "How do I get to Gyeongju from Daegu?",
+      a: "KTX from East Daegu to Singyeongju station is 20 minutes (₩8,400, 1–2 trains per hour), followed by a 15-minute city bus (bus 700) from Singyeongju to the Gyeongju historic core. End-to-end about an hour. You can also take the intercity bus from Daegu's Dongbu Bus Terminal (1h 15m, ₩6,000), which drops you closer to central Gyeongju but is less frequent. For a day trip, the KTX is the practical answer — leave Daegu at 09:00, spend 6 hours in Gyeongju, back in Daegu by 17:00 for dinner at Seomun.",
+    },
+    {
+      q: "Is Daegu cheaper than Seoul for a similar hotel?",
+      a: "Yes — noticeably so. A clean three-star business hotel in central Daegu runs ₩70,000–100,000 a night (£40–60) compared to ₩120,000–180,000 for the same class in central Seoul. The gap is sharper at the four-star tier: the Novotel Ambassador Daegu is typically 30–35 percent cheaper than the equivalent Novotel in Seoul on the same dates. The trade-off is a less internationalised experience (English-language signage thins out beyond the main shopping streets) but for travellers comfortable with basic Korean phrases, Daegu is one of the best-value Korean stops.",
+    },
+  ],
+
+  daejeon: [
+    {
+      q: "Is Daejeon worth visiting or is it just a transfer station?",
+      a: "For most tourists, Daejeon is primarily a rail junction — Korea's Gyeongbu and Honam high-speed lines physically split here, so if you're going Seoul→Gwangju you'll transfer at Daejeon anyway. As a destination, it's less famous than Seoul, Busan or Gyeongju, but it has one of the best hot-springs districts in Korea (Yuseong) and the country's main science and research centre. The strongest case for an overnight is when you're breaking a Seoul→Mokpo or Seoul→Gwangju trip in half, or when you want the Yuseong hot-springs experience without the Seoul crowds.",
+    },
+    {
+      q: "Daejeon Station or Seo-Daejeon for my hotel?",
+      a: "Daejeon Station, almost always. It handles essentially all Gyeongbu Line services (every Seoul→Busan KTX and SRT stops here), sits directly on Metro Line 1, and is walking distance to the downtown hotel and restaurant cluster. Seo-Daejeon is 8 km south-west, not on the metro, and only handles some Honam Line services to Gwangju and Mokpo. The only reason to stay near Seo-Daejeon is if you have a specific early-morning Honam departure from there — otherwise Daejeon Station wins on every axis.",
+    },
+    {
+      q: "Are the Yuseong hot springs worth the detour?",
+      a: "Yes if you enjoy Korean bath-house culture or Japanese-style onsen, no if you're expecting rural mountain views. Yuseong's hot-springs water is naturally radon-free alkaline, traditionally served in public bath houses (₩10,000–15,000 entrance, single-sex nude bathing in the Korean style), and most hotels in the district have either their own onsen-style spa or a partnership with a neighbouring bath house. It's 15 minutes west of Daejeon Station on Metro Line 1. For travellers who can't fit a visit to Beppu or Hakone on the Japan side, Yuseong is Korea's most atmospheric hot-springs base.",
+    },
+    {
+      q: "How long is the KTX from Seoul to Daejeon?",
+      a: "57 minutes on the fastest KTX services from Seoul Station to Daejeon Station, with 40+ departures a day — the highest-frequency intercity rail link in Korea. Tickets are ₩23,700 (~£14) one-way in economy. SRT from Suseo is similar in time and slightly cheaper. The frequency makes Daejeon an easy day trip from Seoul — leave at 09:00, spend 7 hours in Daejeon or nearby Gongju, back in Seoul by 18:00.",
+    },
+    {
+      q: "What's actually worth seeing in Daejeon?",
+      a: "The Yuseong hot-springs district for the bath-house experience. The Expo Science Park for the rebuilt 1993 Expo tower and the Daejeon Museum of Art. The Seomun Market area (not related to Daegu's market of the same name) for Daejeon-style kalguksu — the clear-broth knife-cut noodle dish the city is known for. And two day-trip options that are better than anything in Daejeon itself: Gongju (the Baekje-era capital and UNESCO royal tombs, 45 minutes by bus) and Buyeo (another Baekje capital with more UNESCO sites, 90 minutes by bus). Both are full-day trips.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {

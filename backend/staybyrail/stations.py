@@ -13212,6 +13212,204 @@ LINES = {
                 {"name": "Hong Kong West Kowloon", "lat": 22.3043, "lon": 114.1665, "popular": True}
             ]
         }
+    },
+    "seoul": {
+        "line_1": {
+            "name": "Seoul Subway Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Seoul Station", "lat": 37.5547, "lon": 126.9707, "popular": True},
+                {"name": "Jonggak", "lat": 37.5702, "lon": 126.9830, "popular": True},
+                {"name": "Jongno 3-ga", "lat": 37.5715, "lon": 126.9923, "popular": True},
+                {"name": "Dongdaemun", "lat": 37.5714, "lon": 127.0093, "popular": True},
+                {"name": "Cheongnyangni", "lat": 37.5804, "lon": 127.0466, "popular": False}
+            ]
+        },
+        "line_2": {
+            "name": "Seoul Subway Line 2",
+            "popularity": 1,
+            "stations": [
+                {"name": "City Hall", "lat": 37.5645, "lon": 126.9774, "popular": True},
+                {"name": "Euljiro 1-ga", "lat": 37.5664, "lon": 126.9829, "popular": False},
+                {"name": "Dongdaemun History & Culture Park", "lat": 37.5652, "lon": 127.0076, "popular": True},
+                {"name": "Hongik University", "lat": 37.5569, "lon": 126.9237, "popular": True},
+                {"name": "Sinchon", "lat": 37.5552, "lon": 126.9366, "popular": True},
+                {"name": "Ewha Womans University", "lat": 37.5568, "lon": 126.9461, "popular": False},
+                {"name": "Gangnam", "lat": 37.4979, "lon": 127.0276, "popular": True},
+                {"name": "Samseong", "lat": 37.5087, "lon": 127.0634, "popular": True},
+                {"name": "Jamsil", "lat": 37.5132, "lon": 127.1000, "popular": True}
+            ]
+        },
+        "line_3": {
+            "name": "Seoul Subway Line 3",
+            "popularity": 2,
+            "stations": [
+                {"name": "Gyeongbokgung", "lat": 37.5756, "lon": 126.9738, "popular": True},
+                {"name": "Anguk", "lat": 37.5764, "lon": 126.9859, "popular": True},
+                {"name": "Apgujeong", "lat": 37.5271, "lon": 127.0289, "popular": True},
+                {"name": "Express Bus Terminal", "lat": 37.5044, "lon": 127.0044, "popular": True}
+            ]
+        },
+        "line_4": {
+            "name": "Seoul Subway Line 4",
+            "popularity": 2,
+            "stations": [
+                {"name": "Myeongdong", "lat": 37.5609, "lon": 126.9860, "popular": True},
+                {"name": "Hoehyeon", "lat": 37.5583, "lon": 126.9782, "popular": False},
+                {"name": "Chungmuro", "lat": 37.5609, "lon": 126.9942, "popular": False}
+            ]
+        },
+        "line_6": {
+            "name": "Seoul Subway Line 6",
+            "popularity": 3,
+            "stations": [
+                {"name": "Itaewon", "lat": 37.5345, "lon": 126.9944, "popular": True},
+                {"name": "Noksapyeong", "lat": 37.5342, "lon": 126.9820, "popular": False},
+                {"name": "Hapjeong", "lat": 37.5495, "lon": 126.9148, "popular": True}
+            ]
+        },
+        "airport_railroad": {
+            "name": "Airport Railroad (AREX)",
+            "popularity": 2,
+            "stations": [
+                {"name": "Incheon International Airport Terminal 1", "lat": 37.4481, "lon": 126.4492, "popular": True},
+                {"name": "Incheon International Airport Terminal 2", "lat": 37.4603, "lon": 126.4407, "popular": True},
+                {"name": "Gimpo Airport", "lat": 37.5629, "lon": 126.8013, "popular": True}
+            ]
+        },
+        "ktx": {
+            "name": "KTX High-Speed Rail",
+            "popularity": 1,
+            "stations": [
+                {"name": "Seoul Station", "lat": 37.5547, "lon": 126.9707, "popular": True},
+                {"name": "Yongsan", "lat": 37.5299, "lon": 126.9651, "popular": True}
+            ]
+        }
+    },
+    "busan": {
+        "line_1": {
+            "name": "Busan Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Busan Station", "lat": 35.1158, "lon": 129.0430, "popular": True},
+                {"name": "Jungang", "lat": 35.1037, "lon": 129.0370, "popular": False},
+                {"name": "Nampo", "lat": 35.0990, "lon": 129.0295, "popular": True},
+                {"name": "Jagalchi", "lat": 35.0966, "lon": 129.0308, "popular": True},
+                {"name": "Toseong", "lat": 35.1008, "lon": 129.0252, "popular": False},
+                {"name": "Seomyeon", "lat": 35.1577, "lon": 129.0597, "popular": True},
+                {"name": "Dongnae", "lat": 35.2057, "lon": 129.0773, "popular": True}
+            ]
+        },
+        "line_2": {
+            "name": "Busan Metro Line 2",
+            "popularity": 1,
+            "stations": [
+                {"name": "Haeundae", "lat": 35.1631, "lon": 129.1636, "popular": True},
+                {"name": "Centum City", "lat": 35.1694, "lon": 129.1306, "popular": True},
+                {"name": "Gwangan", "lat": 35.1527, "lon": 129.1182, "popular": True},
+                {"name": "Busan National University", "lat": 35.2313, "lon": 129.0874, "popular": True}
+            ]
+        },
+        "line_3": {
+            "name": "Busan Metro Line 3",
+            "popularity": 2,
+            "stations": [
+                {"name": "Suyeong", "lat": 35.1653, "lon": 129.1160, "popular": False},
+                {"name": "Minam", "lat": 35.2036, "lon": 129.0803, "popular": False}
+            ]
+        },
+        "ktx": {
+            "name": "KTX High-Speed Rail",
+            "popularity": 1,
+            "stations": [
+                {"name": "Busan Station", "lat": 35.1158, "lon": 129.0430, "popular": True}
+            ]
+        }
+    },
+    "incheon": {
+        "incheon_line_1": {
+            "name": "Incheon Subway Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Incheon City Hall", "lat": 37.4563, "lon": 126.7052, "popular": True},
+                {"name": "Central Park", "lat": 37.3979, "lon": 126.6395, "popular": True},
+                {"name": "International Business District", "lat": 37.3927, "lon": 126.6372, "popular": True},
+                {"name": "Technopark", "lat": 37.4049, "lon": 126.6506, "popular": False}
+            ]
+        },
+        "suin_line": {
+            "name": "Suin-Bundang Line",
+            "popularity": 2,
+            "stations": [
+                {"name": "Incheon Station", "lat": 37.4739, "lon": 126.6216, "popular": True}
+            ]
+        },
+        "airport_railroad": {
+            "name": "Airport Railroad (AREX)",
+            "popularity": 1,
+            "stations": [
+                {"name": "Incheon International Airport Terminal 1", "lat": 37.4481, "lon": 126.4492, "popular": True},
+                {"name": "Incheon International Airport Terminal 2", "lat": 37.4603, "lon": 126.4407, "popular": True},
+                {"name": "Unseo", "lat": 37.4889, "lon": 126.4883, "popular": True}
+            ]
+        }
+    },
+    "daegu": {
+        "line_1": {
+            "name": "Daegu Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Daegu Station", "lat": 35.8784, "lon": 128.5988, "popular": True},
+                {"name": "Jungangno", "lat": 35.8703, "lon": 128.5932, "popular": True},
+                {"name": "Banwoldang", "lat": 35.8673, "lon": 128.5937, "popular": True},
+                {"name": "East Daegu", "lat": 35.8794, "lon": 128.6282, "popular": True}
+            ]
+        },
+        "line_2": {
+            "name": "Daegu Metro Line 2",
+            "popularity": 2,
+            "stations": [
+                {"name": "Kyungpook National University", "lat": 35.8878, "lon": 128.6124, "popular": True},
+                {"name": "Dusan", "lat": 35.8554, "lon": 128.6142, "popular": False},
+                {"name": "Gyeongdae Hospital", "lat": 35.8893, "lon": 128.6108, "popular": False}
+            ]
+        },
+        "line_3": {
+            "name": "Daegu Metro Line 3",
+            "popularity": 3,
+            "stations": [
+                {"name": "Chilseong Market", "lat": 35.8816, "lon": 128.5988, "popular": False},
+                {"name": "Daegu Bukbu Terminal", "lat": 35.9005, "lon": 128.5779, "popular": False}
+            ]
+        },
+        "ktx": {
+            "name": "KTX High-Speed Rail",
+            "popularity": 1,
+            "stations": [
+                {"name": "East Daegu", "lat": 35.8794, "lon": 128.6282, "popular": True}
+            ]
+        }
+    },
+    "daejeon": {
+        "line_1": {
+            "name": "Daejeon Metro Line 1",
+            "popularity": 1,
+            "stations": [
+                {"name": "Daejeon Station", "lat": 36.3320, "lon": 127.4343, "popular": True},
+                {"name": "Jungangno", "lat": 36.3276, "lon": 127.4265, "popular": True},
+                {"name": "Daejeon City Hall", "lat": 36.3505, "lon": 127.3845, "popular": True},
+                {"name": "Government Complex", "lat": 36.3617, "lon": 127.3852, "popular": True},
+                {"name": "Yuseong Spa", "lat": 36.3558, "lon": 127.3449, "popular": True}
+            ]
+        },
+        "ktx": {
+            "name": "KTX High-Speed Rail",
+            "popularity": 1,
+            "stations": [
+                {"name": "Daejeon Station", "lat": 36.3320, "lon": 127.4343, "popular": True},
+                {"name": "Seo-Daejeon", "lat": 36.3020, "lon": 127.4290, "popular": True}
+            ]
+        }
     }
 }
 

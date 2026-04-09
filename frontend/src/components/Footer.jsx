@@ -10,6 +10,7 @@ const POPULAR_GUIDES = [
   { slug: "beijing", label: "Beijing" },
   { slug: "shanghai", label: "Shanghai" },
   { slug: "hong_kong", label: "Hong Kong" },
+  { slug: "seoul", label: "Seoul" },
 ];
 
 function Footer() {

@@ -41,6 +41,8 @@ CITY_DISPLAY = {
     "shenzhen": "Shenzhen", "chengdu": "Chengdu", "xian": "Xi'an",
     "hangzhou": "Hangzhou",
     "hong_kong": "Hong Kong",
+    "seoul": "Seoul", "busan": "Busan", "incheon": "Incheon",
+    "daegu": "Daegu", "daejeon": "Daejeon",
 }
 
 CITY_COUNTRY = {
@@ -58,6 +60,8 @@ CITY_COUNTRY = {
     **dict.fromkeys(["bangkok", "chiang_mai", "phuket", "pattaya", "krabi"], "Thailand"),
     **dict.fromkeys(["beijing", "shanghai", "guangzhou", "shenzhen", "chengdu",
                      "xian", "hangzhou", "hong_kong"], "China"),
+    **dict.fromkeys(["seoul", "busan", "incheon", "daegu", "daejeon"],
+                    "South Korea"),
 }
 
 

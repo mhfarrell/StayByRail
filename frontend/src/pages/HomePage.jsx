@@ -1,26 +1,28 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
-import { cityGuides } from "../data/cityGuides";
-import { journalArticles } from "../data/journal";
+import {
+  featuredCities,
+  featuredJournalArticles,
+  totalCityGuides,
+} from "../data/homepageFeatured";
 import { getCityHeroPhoto } from "../data/cityHeroPhotos";
 
-// Featured cities for the homepage — pulled live from the guide data so the
-// headlines and meta stay in sync with the guide pages themselves.
-const FEATURED_ACCENTS = {
-  tokyo: "red", london: "blue", paris: "purple", berlin: "green",
-  barcelona: "orange", bangkok: "teal", osaka: "red", kyoto: "purple",
-  madrid: "blue", edinburgh: "green", birmingham: "orange",
-};
-
-const FEATURED = cityGuides.map((g) => ({
-  slug: g.slug,
-  city: g.city,
-  country: g.country,
-  heroLine: g.heroLine,
-  stations: g.keyStations?.length || 0,
-  accent: FEATURED_ACCENTS[g.slug] || "blue",
-  wiki: g.wikipedia || g.city,
+// HomePage is the LCP target and is the only eager route in App.jsx, so every
+// module it imports lands in the main JS bundle. The full cityGuides.js and
+// journal.js modules (~290 KB combined) used to be imported here purely to
+// pull out slugs/titles/blurbs for the carousel and the "latest from the
+// journal" strip. That content now lives in homepageFeatured.js — a tiny
+// metadata-only file — so the full guide and article prose stays in its own
+// lazy chunks and only loads when the user visits a guide/journal route.
+const FEATURED = featuredCities.map((c) => ({
+  slug: c.slug,
+  city: c.city,
+  country: c.country,
+  heroLine: c.heroLine,
+  stations: c.keyStationCount,
+  accent: c.accent,
+  wiki: c.wikipedia || c.city,
 }));
 
 function useCityImages(list) {
@@ -69,10 +71,10 @@ function useCityImages(list) {
 
 // Cards shown in the horizontal-scroll carousel on the homepage. ~4 are
 // visible at a time on desktop; the rest are reached by swiping /
-// scrolling right. We only put 10 cards in here so the carousel stays
-// curated — the full list is one tap away on the "Browse more" card at
-// the end of the scroll row.
-const FEATURED_CAROUSEL = FEATURED.slice(0, 10);
+// scrolling right. The carousel is curated to 10 cards — the full list
+// is one tap away on the "Browse more" card at the end of the scroll
+// row.
+const FEATURED_CAROUSEL = FEATURED;
 
 function HomePage() {
   const images = useCityImages(FEATURED_CAROUSEL);
@@ -117,13 +119,13 @@ function HomePage() {
     <>
       <PageMeta
         title="StayByRail — Find Hotels Near Train Stations"
-        description="Compare hotels near train and metro stations across 52 cities in 6 countries. Real-time prices from Google Hotels, Booking.com, and TripAdvisor."
+        description="Compare hotels near train and metro stations across 65 cities in 8 countries. Real-time prices from Google Hotels, Booking.com, and TripAdvisor."
         schema={{
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "StayByRail",
           "url": "https://staybyrail.co.uk",
-          "description": "Find hotels near train and metro stations. Compare prices from Google Hotels, Booking.com, and TripAdvisor across 52 cities in 6 countries.",
+          "description": "Find hotels near train and metro stations. Compare prices from Google Hotels, Booking.com, and TripAdvisor across 65 cities in 8 countries.",
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
@@ -140,7 +142,7 @@ function HomePage() {
         <h2 className="hero-title">Find hotels near train stations</h2>
         <p className="hero-subtitle">
           Compare prices from Google Hotels, Booking.com, and TripAdvisor across{" "}
-          <Link to="/coverage" className="hero-subtitle-link">52 cities in 6 countries</Link> — sorted by walking distance to the platform.
+          <Link to="/coverage" className="hero-subtitle-link">65 cities in 8 countries</Link> — sorted by walking distance to the platform.
         </p>
         <Link to="/search" className="hero-cta">Search Hotels</Link>
       </section>
@@ -222,8 +224,8 @@ function HomePage() {
                 <span className="home-city-more-kicker">Browse more</span>
                 <span className="home-city-more-title">All city guides</span>
                 <span className="home-city-more-sub">
-                  {cityGuides.length} cities across Japan, the UK, France,
-                  Germany, Spain, and Thailand.
+                  {totalCityGuides} cities across Japan, China, the UK,
+                  France, Germany, Spain, and Thailand.
                 </span>
                 <span className="home-city-cta">See all →</span>
               </div>
@@ -280,7 +282,7 @@ function HomePage() {
       </section>
 
       {/* ---- Latest from the journal ---- */}
-      {journalArticles.length > 0 && (
+      {featuredJournalArticles.length > 0 && (
         <section className="home-journal">
           <div className="home-journal-head">
             <h2 className="home-journal-title">Latest from the journal</h2>
@@ -289,7 +291,7 @@ function HomePage() {
             </Link>
           </div>
           <div className="home-journal-grid">
-            {[...journalArticles]
+            {[...featuredJournalArticles]
               .sort((a, b) => b.datePublished.localeCompare(a.datePublished))
               .slice(0, 3)
               .map((a) => (
