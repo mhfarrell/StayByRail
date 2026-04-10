@@ -24,7 +24,7 @@ function FaqPage() {
               "name": "Which cities and countries are covered?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "StayByRail currently covers 65 cities across eight countries: Japan (12 cities including Tokyo, Osaka, and Kyoto), the United Kingdom (13 cities including London, Manchester, and Edinburgh), France (7 cities including Paris and Lyon), Germany (8 cities including Berlin and Munich), Spain (7 cities including Madrid and Barcelona), Thailand (5 cities including Bangkok), China (8 cities including Beijing, Shanghai, and Hong Kong), and South Korea (5 cities including Seoul and Busan)."
+                "text": "StayByRail currently covers 71 cities across nine countries: Japan (12 cities including Tokyo, Osaka, and Kyoto), the United Kingdom (13 cities including London, Manchester, and Edinburgh), France (7 cities including Paris and Lyon), Germany (8 cities including Berlin and Munich), Spain (7 cities including Madrid and Barcelona), Thailand (5 cities including Bangkok), China (8 cities including Beijing, Shanghai, and Hong Kong), South Korea (5 cities including Seoul and Busan), and the United States (6 cities including New York, Washington DC, and Chicago)."
               }
             },
             {
@@ -75,7 +75,7 @@ function FaqPage() {
           <h3 className="content-faq-question">Which cities and countries are covered?</h3>
           <p className="content-faq-answer">
             StayByRail currently covers{" "}
-            <Link to="/coverage" className="about-link">65 cities across eight countries</Link>: Japan (12
+            <Link to="/coverage" className="about-link">71 cities across nine countries</Link>: Japan (12
             cities including <Link to="/guides/tokyo" className="about-link">Tokyo</Link>,{" "}
             <Link to="/guides/osaka" className="about-link">Osaka</Link>,{" "}
             <Link to="/guides/kyoto" className="about-link">Kyoto</Link>, and Hiroshima), the United Kingdom
@@ -91,10 +91,14 @@ function FaqPage() {
             China (8 cities including{" "}
             <Link to="/guides/beijing" className="about-link">Beijing</Link>,{" "}
             <Link to="/guides/shanghai" className="about-link">Shanghai</Link>, and{" "}
-            <Link to="/guides/hong_kong" className="about-link">Hong Kong</Link>), and
+            <Link to="/guides/hong_kong" className="about-link">Hong Kong</Link>),
             South Korea (5 cities including{" "}
             <Link to="/guides/seoul" className="about-link">Seoul</Link> and{" "}
-            <Link to="/guides/busan" className="about-link">Busan</Link>). We are
+            <Link to="/guides/busan" className="about-link">Busan</Link>), and
+            the United States (6 cities including{" "}
+            <Link to="/guides/new_york" className="about-link">New York</Link>,{" "}
+            <Link to="/guides/washington_dc" className="about-link">Washington DC</Link>, and{" "}
+            <Link to="/guides/chicago" className="about-link">Chicago</Link>). We are
             actively expanding to additional countries and cities.
           </p>
         </div>

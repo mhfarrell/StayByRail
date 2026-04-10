@@ -119,13 +119,13 @@ function HomePage() {
     <>
       <PageMeta
         title="StayByRail — Find Hotels Near Train Stations"
-        description="Compare hotels near train and metro stations across 65 cities in 8 countries. Real-time prices from Google Hotels, Booking.com, and TripAdvisor."
+        description="Compare hotels near train and metro stations across 71 cities in 9 countries. Real-time prices from Google Hotels, Booking.com, and TripAdvisor."
         schema={{
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "StayByRail",
           "url": "https://staybyrail.co.uk",
-          "description": "Find hotels near train and metro stations. Compare prices from Google Hotels, Booking.com, and TripAdvisor across 65 cities in 8 countries.",
+          "description": "Find hotels near train and metro stations. Compare prices from Google Hotels, Booking.com, and TripAdvisor across 71 cities in 9 countries.",
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
@@ -142,7 +142,7 @@ function HomePage() {
         <h2 className="hero-title">Find hotels near train stations</h2>
         <p className="hero-subtitle">
           Compare prices from Google Hotels, Booking.com, and TripAdvisor across{" "}
-          <Link to="/coverage" className="hero-subtitle-link">65 cities in 8 countries</Link> — sorted by walking distance to the platform.
+          <Link to="/coverage" className="hero-subtitle-link">71 cities in 9 countries</Link> — sorted by walking distance to the platform.
         </p>
         <Link to="/search" className="hero-cta">Search Hotels</Link>
       </section>

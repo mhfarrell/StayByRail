@@ -103,7 +103,7 @@ function SearchPage() {
     <>
       <PageMeta
         title="Search Hotels Near Train Stations — StayByRail"
-        description="Search hotels near train stations in 65 cities across 8 countries. Filter by line, walking distance, price, and guest count. Results sorted by distance to the platform."
+        description="Search hotels near train stations in 71 cities across 9 countries. Filter by line, walking distance, price, and guest count. Results sorted by distance to the platform."
       />
       <SourcesBanner sources={sources} sourceCounts={results?.source_counts} />
 

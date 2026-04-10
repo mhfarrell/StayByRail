@@ -6,7 +6,7 @@ function AboutPage() {
     <div className="page-content">
       <PageMeta
         title="About StayByRail — Hotels Near Train Stations"
-        description="StayByRail helps travellers find hotels within walking distance of major train and metro stations across 65 cities in 8 countries. Built by Matt Farrell."
+        description="StayByRail helps travellers find hotels within walking distance of major train and metro stations across 71 cities in 9 countries. Built by Matt Farrell."
       />
       <h2 className="page-heading">About StayByRail</h2>
       <p className="page-intro">
@@ -38,16 +38,18 @@ function AboutPage() {
         <div className="about-block">
           <h3 className="about-block-heading">Coverage</h3>
           <p className="about-block-text">
-            We currently cover <strong>65 cities across 8 countries</strong> —
+            We currently cover <strong>71 cities across 9 countries</strong> —
             Japan, the United Kingdom, France, Germany, Spain, Thailand, China
-            (including Hong Kong), and South Korea. From the Shinkansen network
+            (including Hong Kong), South Korea, and the United States. From the Shinkansen network
             in <Link to="/guides/tokyo" className="about-link">Japan</Link> to
             the <Link to="/guides/london" className="about-link">London Underground</Link>,
             the <Link to="/guides/paris" className="about-link">Paris Metro</Link> to{" "}
             <Link to="/guides/bangkok" className="about-link">Bangkok's BTS Skytrain</Link>,
-            the Chinese high-speed rail network, and the{" "}
+            the Chinese high-speed rail network, the{" "}
             <Link to="/guides/seoul" className="about-link">Seoul Metropolitan Subway</Link>
-            {" "}and KTX, StayByRail covers the most widely travelled rail
+            {" "}and KTX, and <Link to="/guides/new_york" className="about-link">New York's MTA Subway</Link> to{" "}
+            <Link to="/guides/washington_dc" className="about-link">Washington DC's Metro</Link>,
+            StayByRail covers the most widely travelled rail
             networks in the world. New cities and lines are added regularly as
             data sources become available.
           </p>
@@ -127,7 +129,7 @@ function AboutPage() {
             since — new city guides, journal articles, itineraries, and
             transport pass explainers are added on a regular cadence, and
             the station coverage now stands at <strong>747 programmatic
-            landing pages</strong> across 65 cities.
+            landing pages</strong> across 71 cities.
           </p>
           <p className="about-block-text">
             The code is open source on{" "}

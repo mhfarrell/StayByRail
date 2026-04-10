@@ -161,6 +161,23 @@ const REGIONS = [
       { label: "Seoul Metro", url: "https://www.seoulmetro.co.kr/en/" },
     ],
   },
+  {
+    country: "United States", flag: "\u{1F1FA}\u{1F1F8}",
+    img: "https://images.pexels.com/photos/802024/pexels-photo-802024.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop",
+    city: "New York", lat: 40.7128, lon: -74.0060,
+    best: "Apr\u2013Jun & Sep\u2013Nov", avoid: "Thanksgiving week (late Nov), Christmas\u2013New Year",
+    peak: "Summer (June\u2013August) is peak tourist season across all six cities. New York and Washington DC are busiest and most expensive. Book 2\u20133 months ahead for summer stays. Autumn foliage in New England (Boston) and spring cherry blossoms in DC draw large crowds.",
+    off: "January\u2013March offers the lowest hotel prices in every US city except San Francisco (which stays mild year-round). Chicago and Boston are cold but museums and transit run normally. Philadelphia is an excellent winter value \u2014 half the price of New York with comparable attractions.",
+    transport: "The US has no national rail pass equivalent to a Eurail. Amtrak's Northeast Corridor (Boston\u2013NYC\u2013Philly\u2013DC) is the only route where train beats plane. City transit varies: NYC runs 24/7 subway, DC Metro covers the tourist core, Chicago's L connects the Loop to both airports, Boston's T is compact but effective, BART links San Francisco to Oakland and SFO, and SEPTA connects Philadelphia to 30th Street Station and the airport.",
+    tip: "Use contactless payment (OMNY in NYC, tap-to-pay in DC/Chicago/SF). The NEC is best booked 2\u20134 weeks ahead for value fares. Avoid driving in NYC, SF, and central DC.",
+    guides: [{ slug: "new_york", city: "New York" }, { slug: "washington_dc", city: "Washington DC" }, { slug: "chicago", city: "Chicago" }, { slug: "boston", city: "Boston" }, { slug: "san_francisco", city: "San Francisco" }, { slug: "philadelphia", city: "Philadelphia" }],
+    resources: [
+      { label: "Amtrak", url: "https://www.amtrak.com/" },
+      { label: "MTA (NYC)", url: "https://new.mta.info/" },
+      { label: "WMATA (DC)", url: "https://www.wmata.com/" },
+      { label: "BART (SF)", url: "https://www.bart.gov/" },
+    ],
+  },
 ];
 
 function useWeather(regions) {

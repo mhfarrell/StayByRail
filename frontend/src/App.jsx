@@ -1,5 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AdUnit from "./components/AdUnit";
@@ -54,6 +54,12 @@ import "./styles/guides.css";
 // localStorage is only written when the user explicitly toggles, so the
 // "follow system" behavior keeps working across visits for people who
 // haven't made a choice.
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
+
 const THEME_KEY = "staybyrail_theme";
 
 function resolveInitialTheme() {
@@ -119,6 +125,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header theme={theme} onToggleTheme={toggleTheme} />
 
       <div className="page-wrapper">
