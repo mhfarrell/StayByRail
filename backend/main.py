@@ -80,6 +80,9 @@ CITY_COUNTRIES = {
     # South Korea
     "seoul": "South Korea", "busan": "South Korea", "incheon": "South Korea",
     "daegu": "South Korea", "daejeon": "South Korea",
+    # United States
+    "new_york": "United States", "washington_dc": "United States", "chicago": "United States",
+    "boston": "United States", "san_francisco": "United States", "philadelphia": "United States",
 }
 
 

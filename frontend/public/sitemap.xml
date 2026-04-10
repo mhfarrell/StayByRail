@@ -121,6 +121,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/guides/boston</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/guides/busan</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -134,6 +140,12 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/guides/chiang_mai</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/guides/chicago</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -241,6 +253,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/guides/new_york</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/guides/osaka</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -253,7 +271,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/guides/philadelphia</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/guides/phuket</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/guides/san_francisco</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -295,6 +325,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/guides/washington_dc</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/guides/xian</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -314,6 +350,12 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/countries/south-korea</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/countries/united-states</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -439,7 +481,57 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/14th-st-7th-ave-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/14th-st-8th-ave-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/16th-st-mission-san-francisco</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/30th-street-station-philadelphia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/34th-st-hudson-yards-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/34th-st-penn-station-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/47-50-sts-rockefeller-center-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/59th-st-columbus-circle-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/5th-street-independence-hall-philadelphia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/abando-bilbao</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/adams-wabash-chicago</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -495,6 +587,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/aeropuerto-t4-madrid</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/airport-boston</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -584,6 +681,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/archives-navy-memorial-penn-quarter-washington-dc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/archivo-de-indias-seville</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -629,6 +731,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/atlantic-ave-barclays-center-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/atocha-madrid</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -655,6 +762,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/azabu-juban-tokyo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/back-bay-boston</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -734,6 +846,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/bedford-ave-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/beidajie-xian</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -785,6 +902,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/belleville-paris</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/belmont-chicago</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -879,6 +1001,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/brooklyn-bridge-city-hall-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/buchanan-street-glasgow</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -910,6 +1037,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/camden-town-london</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/canal-st-new-york</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -965,6 +1097,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/castellane-marseille</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/castro-san-francisco</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1104,6 +1241,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/chicago-chicago</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/chicago-union-station-chicago</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/chit-lom-bangkok</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1124,12 +1271,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/church-duboce-san-francisco</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/cinq-avenues-longchamp-marseille</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/cite-paris</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/city-hall-philadelphia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1154,7 +1311,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/civic-center-un-plaza-san-francisco</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/clapham-junction-london</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/clark-lake-chicago</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1174,6 +1341,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/copley-boston</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/cordeliers-lyon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1185,6 +1357,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/croix-rousse-lyon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/crystal-city-washington-dc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1249,6 +1426,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/division-chicago</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/dom-roemer-frankfurt</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1279,6 +1461,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/downtown-berkeley-san-francisco</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/downtown-crossing-boston</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/drassanes-barcelona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1290,6 +1482,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/duesseldorf-hbf-dusseldorf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/dupont-circle-washington-dc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1349,6 +1546,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/embarcadero-san-francisco</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/espanya-barcelona</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1395,6 +1597,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/flughafen-nuremberg</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/foggy-bottom-gwu-washington-dc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1454,6 +1661,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/fullerton-chicago</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/fulton-st-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/fushimi-inari-kyoto</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1475,6 +1692,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/fuxingmen-beijing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/gallery-place-chinatown-washington-dc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1604,7 +1826,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/grand-central-42nd-st-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/grand-central-birmingham</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/grand-central-terminal-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/grand-chicago</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1749,6 +1986,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/harvard-boston</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/hatchobori-hiroshima</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1839,6 +2081,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/herald-square-34th-st-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/hermannplatz-berlin</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1885,6 +2132,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/hiroshima-station-hiroshima</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/hoboken-terminal-new-york</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1955,6 +2207,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/hove-brighton</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/howard-beach-jfk-airport-new-york</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2049,6 +2306,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/jackson-chicago</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/jagalchi-busan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2080,6 +2342,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/jean-medecin-nice</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/jefferson-station-philadelphia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2209,6 +2476,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/kenmore-boston</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/kichijoji-tokyo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2320,6 +2592,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/kyungpook-national-university-daegu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/l-enfant-plaza-washington-dc</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2574,6 +2851,21 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/merchandise-mart-chicago</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/metro-center-washington-dc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/midway-chicago</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/minatomirai-yokohama</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2600,6 +2892,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/mong-kok-hong-kong</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/montgomery-street-san-francisco</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2809,6 +3106,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/north-station-boston</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/notre-dame-du-mont-cours-julien-marseille</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2825,6 +3127,16 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/nuevos-ministerios-madrid</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/o-hare-chicago</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/oakland-12th-st-city-center-san-francisco</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2964,6 +3276,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/park-street-boston</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/part-dieu-lyon</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3009,6 +3326,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/penn-station-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/people-s-square-shanghai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3025,6 +3347,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/phaya-thai-bangkok</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/philadelphia-international-airport-philadelphia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -3130,6 +3457,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/potsdamer-platz-berlin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/powell-street-san-francisco</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -3259,6 +3591,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/ronald-reagan-washington-national-airport-washington-dc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/rond-point-du-prado-marseille</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3360,6 +3697,16 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/san-bernardo-seville</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/san-francisco-4th-king-san-francisco</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/san-francisco-international-airport-san-francisco</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -3579,6 +3926,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/smithsonian-washington-dc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/snow-hill-birmingham</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3600,6 +3952,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/south-shields-newcastle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/south-station-boston</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -3665,6 +4022,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/stuttgart-hbf-stuttgart</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/suburban-station-philadelphia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -3774,6 +4136,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/times-square-42nd-st-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/tiyu-xilu-guangzhou</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3869,6 +4236,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://staybyrail.co.uk/hotels-near/union-square-14th-st-new-york</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/union-station-washington-dc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://staybyrail.co.uk/hotels-near/universidad-malaga</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3890,6 +4267,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/university-birmingham</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/university-city-philadelphia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -3955,6 +4337,11 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/vieux-port-marseille</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/walnut-locust-philadelphia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -4045,6 +4432,16 @@
   </url>
   <url>
     <loc>https://staybyrail.co.uk/hotels-near/wongwian-yai-bangkok</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/woodley-park-zoo-adams-morgan-washington-dc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://staybyrail.co.uk/hotels-near/world-trade-center-new-york</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

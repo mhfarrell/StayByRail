@@ -5,18 +5,18 @@ function CoveragePage() {
   return (
     <div className="page-content">
       <PageMeta
-        title="Coverage — StayByRail | 65 Cities, 8 Countries"
-        description="StayByRail covers 65 cities across Japan, the United Kingdom, France, Germany, Spain, Thailand, China (including Hong Kong), and South Korea — JR lines, the London Underground, Paris Metro, BTS Skytrain, Beijing Subway, Seoul Metropolitan Subway, and the KTX high-speed network."
+        title="Coverage — StayByRail | 71 Cities, 9 Countries"
+        description="StayByRail covers 71 cities across Japan, the United Kingdom, France, Germany, Spain, Thailand, China (including Hong Kong), South Korea, and the United States — JR lines, the London Underground, Paris Metro, BTS Skytrain, Beijing Subway, Seoul Metropolitan Subway, the KTX high-speed network, and Amtrak's Northeast Corridor."
       />
       <h2 className="page-heading" style={{ textAlign: "center" }}>Our Coverage</h2>
       <p className="page-intro" style={{ textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
-        StayByRail covers major rail and metro networks across eight countries and
-        65 cities. Whether you are planning a Shinkansen trip through Japan, a
+        StayByRail covers major rail and metro networks across nine countries and
+        71 cities. Whether you are planning a Shinkansen trip through Japan, a
         Eurostar connection through France, a high-speed run from Beijing to
-        Hong Kong, a KTX ride from Seoul to Busan, or a backpacking route through
-        Thailand, we have station-level hotel data to help you choose the right
-        place to stay. We are continually expanding — new cities and rail lines
-        are added regularly.
+        Hong Kong, a KTX ride from Seoul to Busan, an Amtrak journey along the
+        US Northeast Corridor, or a backpacking route through Thailand, we have
+        station-level hotel data to help you choose the right place to stay. We
+        are continually expanding — new cities and rail lines are added regularly.
       </p>
 
       <div className="content-country-grid">
@@ -155,6 +155,28 @@ function CoveragePage() {
             express, and the KTX high-speed network from Seoul to Busan in
             2h 15m. See the <Link to="/countries/south-korea" className="about-link">South Korea explainer</Link> for
             booking tips, T-money cards, and K-ETA entry details.
+          </p>
+        </div>
+        <div className="content-country-card">
+          <div className="content-country-flag" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="2" y="4" width="28" height="24" rx="2" fill="#fff" stroke="currentColor" strokeWidth="1"/>
+              <rect x="2" y="4" width="28" height="2" fill="#B22234"/>
+              <rect x="2" y="8" width="28" height="2" fill="#B22234"/>
+              <rect x="2" y="12" width="28" height="2" fill="#B22234"/>
+              <rect x="2" y="16" width="28" height="2" fill="#B22234"/>
+              <rect x="2" y="20" width="28" height="2" fill="#B22234"/>
+              <rect x="2" y="24" width="28" height="2" fill="#B22234"/>
+              <rect x="2" y="4" width="12" height="14" fill="#3C3B6E"/>
+            </svg>
+          </div>
+          <h3 className="content-country-name">United States</h3>
+          <p className="content-country-cities">6 cities</p>
+          <p className="content-country-text">
+            <Link to="/guides/new_york" className="about-link">New York</Link>, <Link to="/guides/washington_dc" className="about-link">Washington DC</Link>, <Link to="/guides/chicago" className="about-link">Chicago</Link>, <Link to="/guides/boston" className="about-link">Boston</Link>, <Link to="/guides/san_francisco" className="about-link">San Francisco</Link>, and <Link to="/guides/philadelphia" className="about-link">Philadelphia</Link>.
+            Covering Amtrak's Northeast Corridor, MTA Subway, WMATA Metro, CTA L,
+            MBTA T, BART, and SEPTA. See the <Link to="/countries/united-states" className="about-link">United States explainer</Link> for
+            tips on Amtrak booking, transit passes, and getting between cities by rail.
           </p>
         </div>
       </div>

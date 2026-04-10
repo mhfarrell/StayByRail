@@ -43,6 +43,9 @@ CITY_DISPLAY = {
     "hong_kong": "Hong Kong",
     "seoul": "Seoul", "busan": "Busan", "incheon": "Incheon",
     "daegu": "Daegu", "daejeon": "Daejeon",
+    "new_york": "New York", "washington_dc": "Washington DC",
+    "chicago": "Chicago", "boston": "Boston",
+    "san_francisco": "San Francisco", "philadelphia": "Philadelphia",
 }
 
 CITY_COUNTRY = {
@@ -62,6 +65,8 @@ CITY_COUNTRY = {
                      "xian", "hangzhou", "hong_kong"], "China"),
     **dict.fromkeys(["seoul", "busan", "incheon", "daegu", "daejeon"],
                     "South Korea"),
+    **dict.fromkeys(["new_york", "washington_dc", "chicago", "boston",
+                     "san_francisco", "philadelphia"], "United States"),
 }
 
 

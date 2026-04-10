@@ -23,7 +23,7 @@
 //   - totalCityGuides: the number printed on the "Browse more" card. Bump it
 //     when adding a new city guide.
 
-export const totalCityGuides = 36;
+export const totalCityGuides = 42;
 
 export const featuredCities = [
   {
@@ -52,6 +52,15 @@ export const featuredCities = [
     keyStationCount: 5,
     wikipedia: "Paris",
     accent: "purple",
+  },
+  {
+    slug: "new_york",
+    city: "New York",
+    country: "United States",
+    heroLine: "Amtrak's Northeast Corridor hub with 472 subway stations",
+    keyStationCount: 6,
+    wikipedia: "New York City",
+    accent: "blue",
   },
   {
     slug: "osaka",
@@ -106,15 +115,6 @@ export const featuredCities = [
     keyStationCount: 5,
     wikipedia: "Madrid",
     accent: "blue",
-  },
-  {
-    slug: "birmingham",
-    city: "Birmingham",
-    country: "United Kingdom",
-    heroLine: "The UK's second city, transformed by rail and tram investment",
-    keyStationCount: 5,
-    wikipedia: "Birmingham",
-    accent: "orange",
   },
 ];
 

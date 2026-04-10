@@ -38,6 +38,12 @@ export const guidePriceBands = {
     barcelona: "EUR",
     madrid: "EUR",
     bangkok: "THB",
+    new_york: "USD",
+    washington_dc: "USD",
+    chicago: "USD",
+    boston: "USD",
+    san_francisco: "USD",
+    philadelphia: "USD",
   },
   bands: {
     tokyo: [
@@ -177,6 +183,36 @@ export const guidePriceBands = {
       { area: "Kata / Karon Beach", budget: "฿ 1,400", mid: "฿ 3,200", premium: "฿ 9,000+" },
       { area: "Old Phuket Town", budget: "฿ 900", mid: "฿ 1,900", premium: "฿ 4,500" },
       { area: "Surin / Bang Tao", budget: "฿ 2,000", mid: "฿ 5,500", premium: "฿ 18,000+" },
+    ],
+    new_york: [
+      { area: "Midtown (Penn Station / Times Square)", budget: "$ 180", mid: "$ 300", premium: "$ 550+" },
+      { area: "Lower Manhattan (FiDi / WTC)", budget: "$ 150", mid: "$ 260", premium: "$ 480+" },
+      { area: "Brooklyn (Downtown / Williamsburg)", budget: "$ 120", mid: "$ 220", premium: "$ 400" },
+    ],
+    washington_dc: [
+      { area: "Penn Quarter / Gallery Place", budget: "$ 150", mid: "$ 250", premium: "$ 450+" },
+      { area: "Dupont Circle / Foggy Bottom", budget: "$ 140", mid: "$ 240", premium: "$ 420+" },
+      { area: "Crystal City / National Landing", budget: "$ 110", mid: "$ 190", premium: "$ 320" },
+    ],
+    chicago: [
+      { area: "The Loop / Magnificent Mile", budget: "$ 130", mid: "$ 220", premium: "$ 400+" },
+      { area: "River North / Streeterville", budget: "$ 140", mid: "$ 250", premium: "$ 450+" },
+      { area: "Lincoln Park / Lakeview", budget: "$ 100", mid: "$ 180", premium: "$ 320" },
+    ],
+    boston: [
+      { area: "Back Bay / Copley", budget: "$ 160", mid: "$ 280", premium: "$ 500+" },
+      { area: "Downtown / Financial District", budget: "$ 140", mid: "$ 240", premium: "$ 430+" },
+      { area: "Cambridge (Harvard / Kendall)", budget: "$ 130", mid: "$ 220", premium: "$ 380" },
+    ],
+    san_francisco: [
+      { area: "Union Square / SoMa (Powell / Montgomery)", budget: "$ 160", mid: "$ 280", premium: "$ 500+" },
+      { area: "Mission District (16th St)", budget: "$ 120", mid: "$ 210", premium: "$ 360" },
+      { area: "Downtown Oakland (12th St BART)", budget: "$ 100", mid: "$ 180", premium: "$ 300" },
+    ],
+    philadelphia: [
+      { area: "Center City / Rittenhouse", budget: "$ 120", mid: "$ 200", premium: "$ 380+" },
+      { area: "Old City / Society Hill", budget: "$ 110", mid: "$ 190", premium: "$ 350+" },
+      { area: "University City (30th St)", budget: "$ 90", mid: "$ 160", premium: "$ 280" },
     ],
   },
 };

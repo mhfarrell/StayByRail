@@ -834,6 +834,144 @@ export const guideFaqs = {
       a: "The Yuseong hot-springs district for the bath-house experience. The Expo Science Park for the rebuilt 1993 Expo tower and the Daejeon Museum of Art. The Seomun Market area (not related to Daegu's market of the same name) for Daejeon-style kalguksu — the clear-broth knife-cut noodle dish the city is known for. And two day-trip options that are better than anything in Daejeon itself: Gongju (the Baekje-era capital and UNESCO royal tombs, 45 minutes by bus) and Buyeo (another Baekje capital with more UNESCO sites, 90 minutes by bus). Both are full-day trips.",
     },
   ],
+
+  new_york: [
+    {
+      q: "Which NYC station should I stay near for Amtrak to DC or Boston?",
+      a: "Penn Station is the only Amtrak stop in Manhattan and the hub for Northeast Corridor services to Washington DC (3h 30 on Acela) and Boston (3h 40). Hotels within a few blocks of Penn Station — in Midtown West around 31st–34th Streets — give you a walk-on commute to the platform. If you're only using the subway and not Amtrak, Grand Central or Union Square are better-located tourist bases.",
+    },
+    {
+      q: "How do I get from JFK, Newark, or LaGuardia to Manhattan by train?",
+      a: "From JFK, take the AirTrain to Jamaica Station then the LIRR to Penn Station (about 55 minutes total, ~$16). From Newark, NJ Transit or the AirTrain to Newark Penn then PATH or NJ Transit to Manhattan (about 45 minutes, ~$15). LaGuardia has no rail link — the M60 bus to the N/W subway at Astoria Blvd is the cheapest option, or take a taxi to the nearest subway station.",
+    },
+    {
+      q: "Is Midtown or Downtown Manhattan better as a tourist base?",
+      a: "Midtown puts you walking distance from Times Square, Central Park, the Empire State Building, and Broadway, with direct access to Penn Station and Grand Central. Downtown (FiDi / Tribeca) is quieter, closer to the Statue of Liberty ferry and the Brooklyn Bridge, and hotel rates run 15–20 percent lower. Most first-time visitors prefer Midtown for convenience; repeat visitors often prefer Downtown for the calmer atmosphere.",
+    },
+    {
+      q: "Do I need a MetroCard or can I use contactless payment on the subway?",
+      a: "OMNY tap-to-pay is now accepted at every subway turnstile and on every bus in New York. You can tap any contactless credit card, debit card, Apple Pay, or Google Pay — and you're automatically capped at $34 for the week, equivalent to a 7-day unlimited MetroCard. There is no reason to buy a MetroCard unless your card doesn't support contactless.",
+    },
+    {
+      q: "Is staying in Brooklyn worth it for Manhattan sightseeing?",
+      a: "Yes, particularly Downtown Brooklyn or Williamsburg. Atlantic Avenue–Barclays Center has nine subway lines and express service to Midtown in about 20 minutes. Williamsburg is one L train stop from Manhattan's 14th Street. Brooklyn hotels typically run 20–30 percent cheaper than equivalent Manhattan rooms, and the borough has its own strong restaurant and nightlife scene.",
+    },
+  ],
+
+  washington_dc: [
+    {
+      q: "Is Union Station the best base for sightseeing in DC?",
+      a: "Union Station is excellent for rail travellers — it's the Amtrak hub for the Northeast Corridor and a Red Line Metro stop. It's a 10-minute walk south to the National Mall and Capitol. For pure sightseeing without Amtrak plans, Penn Quarter or Metro Center are more centrally positioned between the Mall, the White House, and the dining districts.",
+    },
+    {
+      q: "How do I get from Dulles Airport to downtown DC by rail?",
+      a: "The Silver Line Metro extension now runs directly from Dulles Airport (Washington Dulles International Airport station) to downtown DC. The ride to Metro Center takes about 55–60 minutes and costs around $6. This replaced the old bus-only connection and makes Dulles a much more practical airport for rail-oriented travellers.",
+    },
+    {
+      q: "Dupont Circle vs Penn Quarter: which neighbourhood is better for a hotel?",
+      a: "Penn Quarter is the better base for museum-heavy trips — the National Mall, Smithsonian museums, and National Gallery are all within walking distance, and Gallery Place has dining and nightlife. Dupont Circle is the pick for evenings out — more bars, restaurants, and an Embassy Row atmosphere. Both are on the Red Line and only two stops apart, so you can't go badly wrong with either.",
+    },
+    {
+      q: "Do I need a car in Washington DC?",
+      a: "No. The Metro covers every major tourist area — the Mall, Georgetown (via a short walk from Foggy Bottom), Arlington National Cemetery, and the Smithsonian museums. Parking is expensive and stressful, and most of the best sightseeing is concentrated in a walkable core. A car is only useful if you're day-tripping to Shenandoah or Annapolis.",
+    },
+    {
+      q: "How does the SmarTrip card work?",
+      a: "SmarTrip is DC's reloadable contactless transit card, valid on Metro, Metrobus, and regional services like the Circulator. Fares are distance-based on the Metro (typically $2–6 per ride) and flat on buses. You can buy one at any Metro station vending machine for $2. Apple Pay and Google Pay also work at Metro gates, but SmarTrip is still needed for bus transfers and fare discounts.",
+    },
+  ],
+
+  chicago: [
+    {
+      q: "Which CTA L line should I stay near?",
+      a: "The Red Line is the tourist spine — it runs from Howard on the north side through the Loop, connecting Wrigley Field, Magnificent Mile, downtown, and Chinatown. The Blue Line is essential if you're flying into O'Hare (it runs 24/7 from the airport to downtown). Staying near a Red Line stop gives you the best all-round access to both sightseeing and nightlife.",
+    },
+    {
+      q: "How do I get from O'Hare to downtown by train?",
+      a: "The CTA Blue Line runs 24/7 from O'Hare directly to the Loop. The ride takes about 45 minutes and costs $5. No reservation needed — just tap your contactless card or Ventra pass at the turnstile. This is cheaper and often faster than a taxi during rush hour.",
+    },
+    {
+      q: "Is Chicago's Union Station useful for Amtrak travellers?",
+      a: "Yes — Chicago Union Station is the busiest Amtrak hub in the country outside the Northeast Corridor. It serves long-distance routes to Milwaukee (90 minutes on the Hiawatha), Detroit, St. Louis, and the cross-country trains like the Empire Builder and California Zephyr. It's in the West Loop, an 8-minute walk from the Clark/Lake L station.",
+    },
+    {
+      q: "Loop hotels vs River North: what's the difference?",
+      a: "The Loop is Chicago's business and theatre district — more corporate hotels, closer to Millennium Park and the Art Institute, quieter after 8 PM on weeknights. River North is the dining-and-nightlife district with trendier restaurants and bars, plus easy access to the Magnificent Mile. River North hotels tend to run slightly more expensive but offer a livelier evening atmosphere.",
+    },
+    {
+      q: "How does the Ventra card work?",
+      a: "Ventra is Chicago's transit payment system for CTA trains, CTA buses, and Pace suburban buses. You can buy a disposable Ventra ticket at any L station, but contactless credit cards and Apple/Google Pay also work at every turnstile. For longer stays, a Ventra card with an unlimited pass (1-day, 3-day, or 7-day) is the best value. Metra commuter rail uses a separate fare system.",
+    },
+  ],
+
+  boston: [
+    {
+      q: "South Station vs Back Bay: which Amtrak stop should I stay near?",
+      a: "South Station is the main terminal for Amtrak Northeast Corridor services and sits on the Red Line, giving you direct subway access to Cambridge, Downtown Crossing, and Park Street. Back Bay station is the secondary Amtrak stop and is better if you want to stay in the Copley Square / Newbury Street area. Both serve the same Acela and Regional trains — Back Bay is simply one stop earlier.",
+    },
+    {
+      q: "How do I get from Logan Airport to downtown Boston?",
+      a: "Take the free Massport shuttle bus from any terminal to the Airport Blue Line station, then ride the Blue Line inbound to Government Center or Aquarium. The whole trip takes about 20 minutes and costs one subway fare ($2.40 with CharlieCard). Water taxis from the airport dock to Long Wharf are faster but more expensive (~$15).",
+    },
+    {
+      q: "Is the Green Line useful or should I avoid it?",
+      a: "The Green Line is slow (it's a surface trolley for much of its route) but it's the only rail line serving Back Bay, Copley, Fenway Park, and the Museum of Fine Arts. Don't rely on it for long cross-city trips, but it's perfectly fine for short hops in the Back Bay–Fenway–Brookline corridor. The B, C, D, and E branches all share the same downtown tunnel.",
+    },
+    {
+      q: "Do I need a CharlieCard for the T?",
+      a: "Contactless credit cards and mobile wallets are now accepted on all MBTA subway and bus services, so a CharlieCard isn't strictly necessary. However, a CharlieCard gives a lower per-ride fare ($2.40 vs $2.90 for single-ride tickets), so it's worth picking one up at Downtown Crossing or Back Bay if you'll ride more than a few times.",
+    },
+    {
+      q: "Can I do a day trip to Salem or Plymouth by commuter rail?",
+      a: "Yes. Salem is about 30 minutes on the Newburyport/Rockport commuter rail line from North Station — ideal for the Witch Museum and Peabody Essex Museum. Plymouth is about 60 minutes on the Kingston/Plymouth line from South Station. Both are easy half-day or full-day outings with no car needed.",
+    },
+  ],
+
+  san_francisco: [
+    {
+      q: "Should I stay in San Francisco or Oakland?",
+      a: "San Francisco is the better base for first-time visitors — you'll be walking distance to Union Square, Fisherman's Wharf, and the cable cars. Oakland is worth considering for budget travellers or repeat visitors; Downtown Oakland is only 12 minutes from downtown SF on BART, and hotel rates are typically 30–40 percent lower. Jack London Square and the Oakland food scene are strong draws in their own right.",
+    },
+    {
+      q: "How do I get from SFO to downtown San Francisco by BART?",
+      a: "BART runs directly from SFO International Airport to downtown San Francisco. The ride to Powell Street station takes about 30 minutes and costs around $10. Trains run every 15–20 minutes on weekdays. Follow signs from baggage claim to the BART station inside the international terminal.",
+    },
+    {
+      q: "Is Muni Metro useful for tourists?",
+      a: "Yes, particularly the historic F-line streetcar, which runs above ground along Market Street to Fisherman's Wharf — it's both a transit line and a sightseeing experience. The underground Muni Metro lines serve the Castro, Sunset, and other residential neighbourhoods. For the core tourist triangle (Union Square, Chinatown, Fisherman's Wharf), the cable cars and F-line are the most useful surface routes.",
+    },
+    {
+      q: "Can I use BART to get to Berkeley and Silicon Valley?",
+      a: "BART reaches Berkeley easily — Downtown Berkeley station is about 25 minutes from Powell Street. For Silicon Valley, BART doesn't go south of Millbrae; you'll need to transfer to Caltrain at Millbrae for destinations like Palo Alto, Mountain View, and San Jose. The Caltrain transfer adds 30–45 minutes depending on your destination.",
+    },
+    {
+      q: "What's the difference between BART, Muni, and Caltrain?",
+      a: "BART is the regional heavy-rail system connecting San Francisco, Oakland, Berkeley, and the East Bay suburbs, plus SFO airport. Muni is San Francisco's city transit network — buses, light rail (Metro), cable cars, and the F-line streetcar. Caltrain is the commuter rail running south from San Francisco down the peninsula to San Jose. Each has its own fare system, though Clipper cards work on all three.",
+    },
+  ],
+
+  philadelphia: [
+    {
+      q: "30th Street Station vs Center City: where should I stay?",
+      a: "30th Street Station is Philadelphia's grand Amtrak hub and the best pick if you're arriving or departing on the Northeast Corridor. It's in University City, a 10-minute walk from Penn's campus, with easy transit into Center City. For walking access to Independence Hall, Reading Terminal Market, and the restaurant scene, a Center City hotel near Rittenhouse Square or Old City is more practical for day-to-day sightseeing.",
+    },
+    {
+      q: "How fast is Amtrak from Philadelphia to New York or DC?",
+      a: "Acela reaches New York Penn Station in about 75 minutes and Washington Union Station in about 1 hour 45 minutes. The cheaper Northeast Regional takes roughly 90 minutes to NYC and 2 hours to DC. With departures every 30–60 minutes in both directions, Philadelphia is one of the best-connected cities on the corridor.",
+    },
+    {
+      q: "Do I need SEPTA or can I walk everything in Philadelphia?",
+      a: "Philadelphia's historic core from Rittenhouse Square to Old City is compact and very walkable — about a 25-minute walk end to end. SEPTA's Broad Street Line (BSL, north–south) and Market-Frankford Line (MFL, east–west) are useful for saving time or reaching Penn's Landing, the stadiums, or the airport, but most tourists can cover the main sights on foot.",
+    },
+    {
+      q: "How do I get from Philadelphia Airport to downtown?",
+      a: "The SEPTA Airport Line runs from all airport terminals to 30th Street Station, Suburban Station, and Jefferson Station in Center City. The ride takes about 25 minutes and costs around $7. Trains run every 30 minutes. This is cheaper and usually faster than a rideshare during rush hour.",
+    },
+    {
+      q: "Is Philadelphia worth a stop on the Northeast Corridor?",
+      a: "Absolutely. Philadelphia has 2–3 full days of genuine sightseeing — Independence Hall, the Liberty Bell, the Philadelphia Museum of Art, Reading Terminal Market, and one of the strongest restaurant scenes on the East Coast. Hotel rates are meaningfully cheaper than New York or DC, making it an excellent value stop between the two.",
+    },
+  ],
 };
 
 export function getFaqs(slug) {

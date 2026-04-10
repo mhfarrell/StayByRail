@@ -1931,6 +1931,124 @@
     "primaryLineKey": "bordeaux_tram_b"
   },
   {
+    "slug": "airport-boston",
+    "name": "Airport",
+    "city": "boston",
+    "cityDisplay": "Boston",
+    "country": "United States",
+    "lat": 42.3743,
+    "lon": -71.0303,
+    "lines": [
+      "MBTA Blue Line"
+    ],
+    "primaryLineKey": "mbta_blue"
+  },
+  {
+    "slug": "back-bay-boston",
+    "name": "Back Bay",
+    "city": "boston",
+    "cityDisplay": "Boston",
+    "country": "United States",
+    "lat": 42.3475,
+    "lon": -71.0758,
+    "lines": [
+      "MBTA Orange Line"
+    ],
+    "primaryLineKey": "mbta_orange"
+  },
+  {
+    "slug": "copley-boston",
+    "name": "Copley",
+    "city": "boston",
+    "cityDisplay": "Boston",
+    "country": "United States",
+    "lat": 42.3504,
+    "lon": -71.0771,
+    "lines": [
+      "MBTA Green Line"
+    ],
+    "primaryLineKey": "mbta_green"
+  },
+  {
+    "slug": "downtown-crossing-boston",
+    "name": "Downtown Crossing",
+    "city": "boston",
+    "cityDisplay": "Boston",
+    "country": "United States",
+    "lat": 42.3554,
+    "lon": -71.0605,
+    "lines": [
+      "MBTA Red Line"
+    ],
+    "primaryLineKey": "mbta_red"
+  },
+  {
+    "slug": "harvard-boston",
+    "name": "Harvard",
+    "city": "boston",
+    "cityDisplay": "Boston",
+    "country": "United States",
+    "lat": 42.3735,
+    "lon": -71.1189,
+    "lines": [
+      "MBTA Red Line"
+    ],
+    "primaryLineKey": "mbta_red"
+  },
+  {
+    "slug": "kenmore-boston",
+    "name": "Kenmore",
+    "city": "boston",
+    "cityDisplay": "Boston",
+    "country": "United States",
+    "lat": 42.3488,
+    "lon": -71.0959,
+    "lines": [
+      "MBTA Green Line"
+    ],
+    "primaryLineKey": "mbta_green"
+  },
+  {
+    "slug": "north-station-boston",
+    "name": "North Station",
+    "city": "boston",
+    "cityDisplay": "Boston",
+    "country": "United States",
+    "lat": 42.3657,
+    "lon": -71.0621,
+    "lines": [
+      "MBTA Orange Line"
+    ],
+    "primaryLineKey": "mbta_orange"
+  },
+  {
+    "slug": "park-street-boston",
+    "name": "Park Street",
+    "city": "boston",
+    "cityDisplay": "Boston",
+    "country": "United States",
+    "lat": 42.3564,
+    "lon": -71.0624,
+    "lines": [
+      "MBTA Red Line"
+    ],
+    "primaryLineKey": "mbta_red"
+  },
+  {
+    "slug": "south-station-boston",
+    "name": "South Station",
+    "city": "boston",
+    "cityDisplay": "Boston",
+    "country": "United States",
+    "lat": 42.3523,
+    "lon": -71.0553,
+    "lines": [
+      "MBTA Red Line",
+      "Amtrak / MBTA Commuter Rail"
+    ],
+    "primaryLineKey": "mbta_red"
+  },
+  {
     "slug": "brighton-brighton",
     "name": "Brighton",
     "city": "brighton",
@@ -2388,6 +2506,162 @@
       "Chiang Mai Key Areas"
     ],
     "primaryLineKey": "chiangmai_rail"
+  },
+  {
+    "slug": "adams-wabash-chicago",
+    "name": "Adams/Wabash",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.8796,
+    "lon": -87.626,
+    "lines": [
+      "CTA Green Line"
+    ],
+    "primaryLineKey": "cta_green"
+  },
+  {
+    "slug": "belmont-chicago",
+    "name": "Belmont",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.9398,
+    "lon": -87.653,
+    "lines": [
+      "CTA Red Line"
+    ],
+    "primaryLineKey": "cta_red"
+  },
+  {
+    "slug": "chicago-chicago",
+    "name": "Chicago",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.8966,
+    "lon": -87.6287,
+    "lines": [
+      "CTA Red Line"
+    ],
+    "primaryLineKey": "cta_red"
+  },
+  {
+    "slug": "chicago-union-station-chicago",
+    "name": "Chicago Union Station",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.8786,
+    "lon": -87.6402,
+    "lines": [
+      "Amtrak (Union Station)"
+    ],
+    "primaryLineKey": "amtrak"
+  },
+  {
+    "slug": "clark-lake-chicago",
+    "name": "Clark/Lake",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.8858,
+    "lon": -87.6316,
+    "lines": [
+      "CTA Blue Line"
+    ],
+    "primaryLineKey": "cta_blue"
+  },
+  {
+    "slug": "division-chicago",
+    "name": "Division",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.9033,
+    "lon": -87.6664,
+    "lines": [
+      "CTA Blue Line"
+    ],
+    "primaryLineKey": "cta_blue"
+  },
+  {
+    "slug": "fullerton-chicago",
+    "name": "Fullerton",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.9256,
+    "lon": -87.653,
+    "lines": [
+      "CTA Red Line"
+    ],
+    "primaryLineKey": "cta_red"
+  },
+  {
+    "slug": "grand-chicago",
+    "name": "Grand",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.8917,
+    "lon": -87.6287,
+    "lines": [
+      "CTA Red Line"
+    ],
+    "primaryLineKey": "cta_red"
+  },
+  {
+    "slug": "jackson-chicago",
+    "name": "Jackson",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.8781,
+    "lon": -87.6275,
+    "lines": [
+      "CTA Red Line"
+    ],
+    "primaryLineKey": "cta_red"
+  },
+  {
+    "slug": "merchandise-mart-chicago",
+    "name": "Merchandise Mart",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.8884,
+    "lon": -87.634,
+    "lines": [
+      "CTA Brown Line"
+    ],
+    "primaryLineKey": "cta_brown"
+  },
+  {
+    "slug": "midway-chicago",
+    "name": "Midway",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.7866,
+    "lon": -87.7378,
+    "lines": [
+      "CTA Orange Line"
+    ],
+    "primaryLineKey": "cta_orange"
+  },
+  {
+    "slug": "o-hare-chicago",
+    "name": "O'Hare",
+    "city": "chicago",
+    "cityDisplay": "Chicago",
+    "country": "United States",
+    "lat": 41.9768,
+    "lon": -87.9037,
+    "lines": [
+      "CTA Blue Line"
+    ],
+    "primaryLineKey": "cta_blue"
   },
   {
     "slug": "breslauer-platz-hbf-cologne",
@@ -6484,6 +6758,267 @@
     "primaryLineKey": "jr_nara"
   },
   {
+    "slug": "14th-st-7th-ave-new-york",
+    "name": "14th St-7th Ave",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.737,
+    "lon": -73.9993,
+    "lines": [
+      "MTA Subway 1/2/3 (7th Ave / Broadway)"
+    ],
+    "primaryLineKey": "subway_123"
+  },
+  {
+    "slug": "14th-st-8th-ave-new-york",
+    "name": "14th St-8th Ave",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7401,
+    "lon": -74.0018,
+    "lines": [
+      "MTA Subway A/C/E (8th Ave)"
+    ],
+    "primaryLineKey": "subway_ace"
+  },
+  {
+    "slug": "34th-st-hudson-yards-new-york",
+    "name": "34th St-Hudson Yards",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7554,
+    "lon": -74.0021,
+    "lines": [
+      "MTA Subway 7 (Flushing)"
+    ],
+    "primaryLineKey": "subway_7"
+  },
+  {
+    "slug": "34th-st-penn-station-new-york",
+    "name": "34th St-Penn Station",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7523,
+    "lon": -73.9937,
+    "lines": [
+      "MTA Subway A/C/E (8th Ave)"
+    ],
+    "primaryLineKey": "subway_ace"
+  },
+  {
+    "slug": "47-50-sts-rockefeller-center-new-york",
+    "name": "47-50 Sts-Rockefeller Center",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7588,
+    "lon": -73.9813,
+    "lines": [
+      "MTA Subway B/D/F/M (6th Ave)"
+    ],
+    "primaryLineKey": "subway_bdfm"
+  },
+  {
+    "slug": "59th-st-columbus-circle-new-york",
+    "name": "59th St-Columbus Circle",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7681,
+    "lon": -73.9819,
+    "lines": [
+      "MTA Subway 1/2/3 (7th Ave / Broadway)"
+    ],
+    "primaryLineKey": "subway_123"
+  },
+  {
+    "slug": "atlantic-ave-barclays-center-new-york",
+    "name": "Atlantic Ave-Barclays Center",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.6862,
+    "lon": -73.9787,
+    "lines": [
+      "MTA Subway 4/5/6 (Lexington Ave)"
+    ],
+    "primaryLineKey": "subway_456"
+  },
+  {
+    "slug": "bedford-ave-new-york",
+    "name": "Bedford Ave",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7153,
+    "lon": -73.9569,
+    "lines": [
+      "MTA Subway L (14th St-Canarsie)"
+    ],
+    "primaryLineKey": "subway_l"
+  },
+  {
+    "slug": "brooklyn-bridge-city-hall-new-york",
+    "name": "Brooklyn Bridge-City Hall",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7131,
+    "lon": -74.003,
+    "lines": [
+      "MTA Subway 4/5/6 (Lexington Ave)"
+    ],
+    "primaryLineKey": "subway_456"
+  },
+  {
+    "slug": "canal-st-new-york",
+    "name": "Canal St",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7207,
+    "lon": -74.0007,
+    "lines": [
+      "MTA Subway A/C/E (8th Ave)"
+    ],
+    "primaryLineKey": "subway_ace"
+  },
+  {
+    "slug": "fulton-st-new-york",
+    "name": "Fulton St",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7102,
+    "lon": -74.0066,
+    "lines": [
+      "MTA Subway 4/5/6 (Lexington Ave)"
+    ],
+    "primaryLineKey": "subway_456"
+  },
+  {
+    "slug": "grand-central-terminal-new-york",
+    "name": "Grand Central Terminal",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7527,
+    "lon": -73.9772,
+    "lines": [
+      "Metro-North Railroad"
+    ],
+    "primaryLineKey": "metro_north"
+  },
+  {
+    "slug": "grand-central-42nd-st-new-york",
+    "name": "Grand Central-42nd St",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7527,
+    "lon": -73.9772,
+    "lines": [
+      "MTA Subway 4/5/6 (Lexington Ave)"
+    ],
+    "primaryLineKey": "subway_456"
+  },
+  {
+    "slug": "herald-square-34th-st-new-york",
+    "name": "Herald Square-34th St",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7484,
+    "lon": -73.9878,
+    "lines": [
+      "MTA Subway N/Q/R/W (Broadway)"
+    ],
+    "primaryLineKey": "subway_nqrw"
+  },
+  {
+    "slug": "hoboken-terminal-new-york",
+    "name": "Hoboken Terminal",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7355,
+    "lon": -74.0297,
+    "lines": [
+      "PATH (NY-NJ)"
+    ],
+    "primaryLineKey": "path"
+  },
+  {
+    "slug": "howard-beach-jfk-airport-new-york",
+    "name": "Howard Beach-JFK Airport",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.6607,
+    "lon": -73.8302,
+    "lines": [
+      "MTA Subway A/C/E (8th Ave)"
+    ],
+    "primaryLineKey": "subway_ace"
+  },
+  {
+    "slug": "penn-station-new-york",
+    "name": "Penn Station",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7506,
+    "lon": -73.9935,
+    "lines": [
+      "MTA Subway 1/2/3 (7th Ave / Broadway)",
+      "Amtrak Northeast Corridor"
+    ],
+    "primaryLineKey": "subway_123"
+  },
+  {
+    "slug": "times-square-42nd-st-new-york",
+    "name": "Times Square-42nd St",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.758,
+    "lon": -73.9855,
+    "lines": [
+      "MTA Subway 1/2/3 (7th Ave / Broadway)"
+    ],
+    "primaryLineKey": "subway_123"
+  },
+  {
+    "slug": "union-square-14th-st-new-york",
+    "name": "Union Square-14th St",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7359,
+    "lon": -73.9911,
+    "lines": [
+      "MTA Subway 4/5/6 (Lexington Ave)"
+    ],
+    "primaryLineKey": "subway_456"
+  },
+  {
+    "slug": "world-trade-center-new-york",
+    "name": "World Trade Center",
+    "city": "new_york",
+    "cityDisplay": "New York",
+    "country": "United States",
+    "lat": 40.7127,
+    "lon": -74.0099,
+    "lines": [
+      "MTA Subway A/C/E (8th Ave)"
+    ],
+    "primaryLineKey": "subway_ace"
+  },
+  {
     "slug": "central-station-newcastle",
     "name": "Central Station",
     "city": "newcastle",
@@ -7838,6 +8373,111 @@
     "primaryLineKey": "pattaya_areas"
   },
   {
+    "slug": "30th-street-station-philadelphia",
+    "name": "30th Street Station",
+    "city": "philadelphia",
+    "cityDisplay": "Philadelphia",
+    "country": "United States",
+    "lat": 39.9566,
+    "lon": -75.1819,
+    "lines": [
+      "SEPTA Regional Rail",
+      "Amtrak (30th Street Station)"
+    ],
+    "primaryLineKey": "septa_regional"
+  },
+  {
+    "slug": "5th-street-independence-hall-philadelphia",
+    "name": "5th Street-Independence Hall",
+    "city": "philadelphia",
+    "cityDisplay": "Philadelphia",
+    "country": "United States",
+    "lat": 39.9525,
+    "lon": -75.1502,
+    "lines": [
+      "SEPTA Market-Frankford Line"
+    ],
+    "primaryLineKey": "septa_mfl"
+  },
+  {
+    "slug": "city-hall-philadelphia",
+    "name": "City Hall",
+    "city": "philadelphia",
+    "cityDisplay": "Philadelphia",
+    "country": "United States",
+    "lat": 39.9524,
+    "lon": -75.1636,
+    "lines": [
+      "SEPTA Broad Street Line"
+    ],
+    "primaryLineKey": "septa_bsl"
+  },
+  {
+    "slug": "jefferson-station-philadelphia",
+    "name": "Jefferson Station",
+    "city": "philadelphia",
+    "cityDisplay": "Philadelphia",
+    "country": "United States",
+    "lat": 39.9525,
+    "lon": -75.158,
+    "lines": [
+      "SEPTA Market-Frankford Line"
+    ],
+    "primaryLineKey": "septa_mfl"
+  },
+  {
+    "slug": "philadelphia-international-airport-philadelphia",
+    "name": "Philadelphia International Airport",
+    "city": "philadelphia",
+    "cityDisplay": "Philadelphia",
+    "country": "United States",
+    "lat": 39.8729,
+    "lon": -75.2437,
+    "lines": [
+      "SEPTA Regional Rail"
+    ],
+    "primaryLineKey": "septa_regional"
+  },
+  {
+    "slug": "suburban-station-philadelphia",
+    "name": "Suburban Station",
+    "city": "philadelphia",
+    "cityDisplay": "Philadelphia",
+    "country": "United States",
+    "lat": 39.9538,
+    "lon": -75.1679,
+    "lines": [
+      "SEPTA Regional Rail"
+    ],
+    "primaryLineKey": "septa_regional"
+  },
+  {
+    "slug": "university-city-philadelphia",
+    "name": "University City",
+    "city": "philadelphia",
+    "cityDisplay": "Philadelphia",
+    "country": "United States",
+    "lat": 39.9486,
+    "lon": -75.1908,
+    "lines": [
+      "SEPTA Regional Rail"
+    ],
+    "primaryLineKey": "septa_regional"
+  },
+  {
+    "slug": "walnut-locust-philadelphia",
+    "name": "Walnut-Locust",
+    "city": "philadelphia",
+    "cityDisplay": "Philadelphia",
+    "country": "United States",
+    "lat": 39.9483,
+    "lon": -75.1636,
+    "lines": [
+      "SEPTA Broad Street Line"
+    ],
+    "primaryLineKey": "septa_bsl"
+  },
+  {
     "slug": "bang-tao-beach-phuket",
     "name": "Bang Tao Beach",
     "city": "phuket",
@@ -7979,6 +8619,149 @@
       "Phuket Key Areas"
     ],
     "primaryLineKey": "phuket_areas"
+  },
+  {
+    "slug": "16th-st-mission-san-francisco",
+    "name": "16th St Mission",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.765,
+    "lon": -122.4197,
+    "lines": [
+      "BART (Bay Area Rapid Transit)"
+    ],
+    "primaryLineKey": "bart"
+  },
+  {
+    "slug": "castro-san-francisco",
+    "name": "Castro",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.7625,
+    "lon": -122.4351,
+    "lines": [
+      "Muni Metro"
+    ],
+    "primaryLineKey": "muni_metro"
+  },
+  {
+    "slug": "church-duboce-san-francisco",
+    "name": "Church/Duboce",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.7676,
+    "lon": -122.429,
+    "lines": [
+      "Muni Metro"
+    ],
+    "primaryLineKey": "muni_metro"
+  },
+  {
+    "slug": "civic-center-un-plaza-san-francisco",
+    "name": "Civic Center/UN Plaza",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.7796,
+    "lon": -122.4138,
+    "lines": [
+      "BART (Bay Area Rapid Transit)"
+    ],
+    "primaryLineKey": "bart"
+  },
+  {
+    "slug": "downtown-berkeley-san-francisco",
+    "name": "Downtown Berkeley",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.87,
+    "lon": -122.2682,
+    "lines": [
+      "BART (Bay Area Rapid Transit)"
+    ],
+    "primaryLineKey": "bart"
+  },
+  {
+    "slug": "embarcadero-san-francisco",
+    "name": "Embarcadero",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.7929,
+    "lon": -122.3969,
+    "lines": [
+      "BART (Bay Area Rapid Transit)"
+    ],
+    "primaryLineKey": "bart"
+  },
+  {
+    "slug": "montgomery-street-san-francisco",
+    "name": "Montgomery Street",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.7893,
+    "lon": -122.4017,
+    "lines": [
+      "BART (Bay Area Rapid Transit)"
+    ],
+    "primaryLineKey": "bart"
+  },
+  {
+    "slug": "oakland-12th-st-city-center-san-francisco",
+    "name": "Oakland 12th St/City Center",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.8032,
+    "lon": -122.2715,
+    "lines": [
+      "BART (Bay Area Rapid Transit)"
+    ],
+    "primaryLineKey": "bart"
+  },
+  {
+    "slug": "powell-street-san-francisco",
+    "name": "Powell Street",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.7844,
+    "lon": -122.408,
+    "lines": [
+      "BART (Bay Area Rapid Transit)"
+    ],
+    "primaryLineKey": "bart"
+  },
+  {
+    "slug": "san-francisco-4th-king-san-francisco",
+    "name": "San Francisco (4th & King)",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.7764,
+    "lon": -122.3941,
+    "lines": [
+      "Caltrain"
+    ],
+    "primaryLineKey": "caltrain"
+  },
+  {
+    "slug": "san-francisco-international-airport-san-francisco",
+    "name": "San Francisco International Airport",
+    "city": "san_francisco",
+    "cityDisplay": "San Francisco",
+    "country": "United States",
+    "lat": 37.6161,
+    "lon": -122.392,
+    "lines": [
+      "BART (Bay Area Rapid Transit)"
+    ],
+    "primaryLineKey": "bart"
   },
   {
     "slug": "hosui-susukino-sapporo",
@@ -9739,6 +10522,150 @@
       "MetroValencia Line 5"
     ],
     "primaryLineKey": "metrovalencia_1"
+  },
+  {
+    "slug": "archives-navy-memorial-penn-quarter-washington-dc",
+    "name": "Archives-Navy Memorial-Penn Quarter",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.8938,
+    "lon": -77.022,
+    "lines": [
+      "WMATA Metro Green/Yellow Lines"
+    ],
+    "primaryLineKey": "metro_green_yellow"
+  },
+  {
+    "slug": "crystal-city-washington-dc",
+    "name": "Crystal City",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.8576,
+    "lon": -77.0506,
+    "lines": [
+      "WMATA Metro Blue/Orange/Silver Lines"
+    ],
+    "primaryLineKey": "metro_blue_orange_silver"
+  },
+  {
+    "slug": "dupont-circle-washington-dc",
+    "name": "Dupont Circle",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.9096,
+    "lon": -77.0434,
+    "lines": [
+      "WMATA Metro Red Line"
+    ],
+    "primaryLineKey": "metro_red"
+  },
+  {
+    "slug": "foggy-bottom-gwu-washington-dc",
+    "name": "Foggy Bottom-GWU",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.9007,
+    "lon": -77.0502,
+    "lines": [
+      "WMATA Metro Blue/Orange/Silver Lines"
+    ],
+    "primaryLineKey": "metro_blue_orange_silver"
+  },
+  {
+    "slug": "gallery-place-chinatown-washington-dc",
+    "name": "Gallery Place-Chinatown",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.8983,
+    "lon": -77.0219,
+    "lines": [
+      "WMATA Metro Red Line"
+    ],
+    "primaryLineKey": "metro_red"
+  },
+  {
+    "slug": "l-enfant-plaza-washington-dc",
+    "name": "L'Enfant Plaza",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.8849,
+    "lon": -77.0219,
+    "lines": [
+      "WMATA Metro Blue/Orange/Silver Lines"
+    ],
+    "primaryLineKey": "metro_blue_orange_silver"
+  },
+  {
+    "slug": "metro-center-washington-dc",
+    "name": "Metro Center",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.8983,
+    "lon": -77.0281,
+    "lines": [
+      "WMATA Metro Red Line"
+    ],
+    "primaryLineKey": "metro_red"
+  },
+  {
+    "slug": "ronald-reagan-washington-national-airport-washington-dc",
+    "name": "Ronald Reagan Washington National Airport",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.8531,
+    "lon": -77.044,
+    "lines": [
+      "WMATA Metro Blue/Orange/Silver Lines"
+    ],
+    "primaryLineKey": "metro_blue_orange_silver"
+  },
+  {
+    "slug": "smithsonian-washington-dc",
+    "name": "Smithsonian",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.888,
+    "lon": -77.028,
+    "lines": [
+      "WMATA Metro Blue/Orange/Silver Lines"
+    ],
+    "primaryLineKey": "metro_blue_orange_silver"
+  },
+  {
+    "slug": "union-station-washington-dc",
+    "name": "Union Station",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.8973,
+    "lon": -77.0063,
+    "lines": [
+      "WMATA Metro Red Line",
+      "Amtrak (Union Station)"
+    ],
+    "primaryLineKey": "metro_red"
+  },
+  {
+    "slug": "woodley-park-zoo-adams-morgan-washington-dc",
+    "name": "Woodley Park-Zoo/Adams Morgan",
+    "city": "washington_dc",
+    "cityDisplay": "Washington DC",
+    "country": "United States",
+    "lat": 38.9251,
+    "lon": -77.0524,
+    "lines": [
+      "WMATA Metro Red Line"
+    ],
+    "primaryLineKey": "metro_red"
   },
   {
     "slug": "beidajie-xian",

@@ -685,6 +685,184 @@ export const guideJourneyTimes = {
         { to: "Patong", minutes: 25, via: "taxi" },
       ],
     },
+
+    new_york: {
+      "Penn Station": [
+        { to: "JFK Airport", minutes: 55, via: "LIRR to Jamaica + AirTrain" },
+        { to: "Times Square", minutes: 3, via: "walk" },
+        { to: "Grand Central-42nd St", minutes: 10, via: "Subway 7 from Hudson Yards" },
+      ],
+      "Grand Central-42nd St": [
+        { to: "JFK Airport", minutes: 60, via: "Subway to Jamaica + AirTrain" },
+        { to: "Central Park", minutes: 5, via: "walk north" },
+        { to: "Penn Station", minutes: 10, via: "Subway S + walk" },
+      ],
+      "Times Square-42nd St": [
+        { to: "JFK Airport", minutes: 60, via: "Subway E to Jamaica + AirTrain" },
+        { to: "Central Park", minutes: 10, via: "walk north" },
+        { to: "Brooklyn Bridge-City Hall", minutes: 18, via: "Subway 4/5 express" },
+      ],
+      "Union Square-14th St": [
+        { to: "JFK Airport", minutes: 55, via: "Subway to Jamaica + AirTrain" },
+        { to: "Empire State Building", minutes: 10, via: "Subway 6 to 33rd St" },
+        { to: "World Trade Center", minutes: 15, via: "Subway L to 8th Ave + A/C/E" },
+      ],
+      "Fulton St": [
+        { to: "JFK Airport", minutes: 50, via: "Subway A to Howard Beach + AirTrain" },
+        { to: "Statue of Liberty ferry", minutes: 10, via: "walk to Battery Park" },
+        { to: "Penn Station", minutes: 15, via: "Subway 4/5 to 34th St" },
+      ],
+      "Atlantic Ave-Barclays Center": [
+        { to: "JFK Airport", minutes: 45, via: "LIRR to Jamaica + AirTrain" },
+        { to: "Brooklyn Bridge", minutes: 10, via: "walk via Fulton Mall" },
+        { to: "Penn Station", minutes: 20, via: "Subway 2/3 express" },
+      ],
+    },
+
+    washington_dc: {
+      "Union Station": [
+        { to: "Reagan National Airport", minutes: 15, via: "Metro Red to Gallery Place + Yellow" },
+        { to: "National Mall", minutes: 10, via: "walk south" },
+        { to: "Dupont Circle", minutes: 8, via: "Metro Red Line" },
+      ],
+      "Metro Center": [
+        { to: "Reagan National Airport", minutes: 12, via: "Metro Blue/Yellow" },
+        { to: "White House", minutes: 5, via: "walk" },
+        { to: "Union Station", minutes: 5, via: "Metro Red Line" },
+      ],
+      "Dupont Circle": [
+        { to: "Reagan National Airport", minutes: 18, via: "Metro Red to Metro Center + Blue" },
+        { to: "National Mall", minutes: 15, via: "walk south" },
+        { to: "Gallery Place-Chinatown", minutes: 6, via: "Metro Red Line" },
+      ],
+      "Foggy Bottom-GWU": [
+        { to: "Reagan National Airport", minutes: 10, via: "Metro Blue/Silver" },
+        { to: "Lincoln Memorial", minutes: 8, via: "walk" },
+        { to: "Metro Center", minutes: 3, via: "Metro Orange/Blue/Silver" },
+      ],
+      "Gallery Place-Chinatown": [
+        { to: "Reagan National Airport", minutes: 15, via: "Metro Yellow/Green to L'Enfant + switch" },
+        { to: "National Mall", minutes: 8, via: "walk south" },
+        { to: "Union Station", minutes: 3, via: "Metro Red Line" },
+      ],
+    },
+
+    chicago: {
+      "Clark/Lake": [
+        { to: "O'Hare Airport", minutes: 45, via: "CTA Blue Line" },
+        { to: "Millennium Park", minutes: 5, via: "walk" },
+        { to: "Chicago Union Station", minutes: 8, via: "walk west" },
+      ],
+      "Chicago": [
+        { to: "O'Hare Airport", minutes: 40, via: "CTA Red to Blue at Jackson" },
+        { to: "Magnificent Mile", minutes: 5, via: "walk east" },
+        { to: "Fullerton", minutes: 12, via: "CTA Red Line" },
+      ],
+      "Fullerton": [
+        { to: "O'Hare Airport", minutes: 45, via: "CTA Red to Blue at Belmont or Jackson" },
+        { to: "Lincoln Park Zoo", minutes: 8, via: "walk" },
+        { to: "Clark/Lake", minutes: 12, via: "CTA Red/Brown to Loop" },
+      ],
+      "Chicago Union Station": [
+        { to: "O'Hare Airport", minutes: 50, via: "walk to Clark/Lake + CTA Blue Line" },
+        { to: "Willis Tower", minutes: 5, via: "walk" },
+        { to: "Clark/Lake", minutes: 8, via: "walk east" },
+      ],
+      "Belmont": [
+        { to: "O'Hare Airport", minutes: 40, via: "CTA Red to Blue at Belmont" },
+        { to: "Wrigley Field", minutes: 5, via: "CTA Red to Addison" },
+        { to: "Clark/Lake", minutes: 15, via: "CTA Brown Line to Loop" },
+      ],
+    },
+
+    boston: {
+      "South Station": [
+        { to: "Logan Airport", minutes: 20, via: "Red Line to Downtown Crossing + walk to Blue Line Airport" },
+        { to: "Boston Common", minutes: 5, via: "Red Line to Park Street" },
+        { to: "Back Bay", minutes: 8, via: "Commuter Rail or Orange Line" },
+      ],
+      "Park Street": [
+        { to: "Logan Airport", minutes: 20, via: "Green to Government Center + Blue Line" },
+        { to: "Boston Common", minutes: 1, via: "walk" },
+        { to: "Harvard", minutes: 12, via: "Red Line" },
+      ],
+      "Back Bay": [
+        { to: "Logan Airport", minutes: 25, via: "Orange Line to State + Blue Line" },
+        { to: "Copley Square", minutes: 5, via: "walk" },
+        { to: "South Station", minutes: 8, via: "Orange or Commuter Rail" },
+      ],
+      "Copley": [
+        { to: "Logan Airport", minutes: 25, via: "Green to Park + Red to South + Silver Line" },
+        { to: "Boston Public Library", minutes: 1, via: "walk" },
+        { to: "Park Street", minutes: 5, via: "Green Line" },
+      ],
+      "North Station": [
+        { to: "Logan Airport", minutes: 15, via: "Green/Orange to Government Center/State + Blue" },
+        { to: "Freedom Trail start", minutes: 8, via: "walk south" },
+        { to: "South Station", minutes: 10, via: "Orange Line to Downtown Crossing + Red" },
+      ],
+      "Harvard": [
+        { to: "Logan Airport", minutes: 30, via: "Red to Park + Green to Gov Center + Blue" },
+        { to: "Harvard Yard", minutes: 2, via: "walk" },
+        { to: "Park Street", minutes: 12, via: "Red Line" },
+      ],
+    },
+
+    san_francisco: {
+      "Powell Street": [
+        { to: "SFO Airport", minutes: 30, via: "BART direct" },
+        { to: "Union Square", minutes: 2, via: "walk" },
+        { to: "Embarcadero", minutes: 4, via: "BART" },
+      ],
+      "Embarcadero": [
+        { to: "SFO Airport", minutes: 33, via: "BART direct" },
+        { to: "Ferry Building", minutes: 1, via: "walk" },
+        { to: "Powell Street", minutes: 4, via: "BART" },
+      ],
+      "Montgomery Street": [
+        { to: "SFO Airport", minutes: 31, via: "BART direct" },
+        { to: "Financial District", minutes: 1, via: "walk" },
+        { to: "16th St Mission", minutes: 8, via: "BART" },
+      ],
+      "16th St Mission": [
+        { to: "SFO Airport", minutes: 25, via: "BART direct" },
+        { to: "Mission Dolores Park", minutes: 8, via: "walk" },
+        { to: "Powell Street", minutes: 8, via: "BART" },
+      ],
+      "Oakland 12th St/City Center": [
+        { to: "SFO Airport", minutes: 45, via: "BART direct" },
+        { to: "Jack London Square", minutes: 10, via: "walk" },
+        { to: "Powell Street", minutes: 12, via: "BART" },
+      ],
+    },
+
+    philadelphia: {
+      "30th Street Station": [
+        { to: "Philadelphia Airport", minutes: 25, via: "SEPTA Airport Line" },
+        { to: "Philadelphia Museum of Art", minutes: 10, via: "walk" },
+        { to: "City Hall", minutes: 8, via: "MFL or trolley" },
+      ],
+      "City Hall": [
+        { to: "Philadelphia Airport", minutes: 30, via: "BSL to Walnut-Locust + walk to SEPTA Airport Line" },
+        { to: "Reading Terminal Market", minutes: 3, via: "walk east" },
+        { to: "5th Street-Independence Hall", minutes: 5, via: "MFL" },
+      ],
+      "Suburban Station": [
+        { to: "Philadelphia Airport", minutes: 25, via: "SEPTA Airport Line" },
+        { to: "Rittenhouse Square", minutes: 5, via: "walk" },
+        { to: "30th Street Station", minutes: 5, via: "Regional Rail" },
+      ],
+      "5th Street-Independence Hall": [
+        { to: "Philadelphia Airport", minutes: 35, via: "MFL to 30th St + SEPTA Airport Line" },
+        { to: "Independence Hall", minutes: 2, via: "walk" },
+        { to: "City Hall", minutes: 5, via: "MFL" },
+      ],
+      "University City": [
+        { to: "Philadelphia Airport", minutes: 20, via: "SEPTA Airport Line" },
+        { to: "Penn campus", minutes: 3, via: "walk" },
+        { to: "30th Street Station", minutes: 5, via: "walk" },
+      ],
+    },
   },
 };
 

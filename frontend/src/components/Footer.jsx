@@ -11,6 +11,7 @@ const POPULAR_GUIDES = [
   { slug: "shanghai", label: "Shanghai" },
   { slug: "hong_kong", label: "Hong Kong" },
   { slug: "seoul", label: "Seoul" },
+  { slug: "new_york", label: "New York" },
 ];
 
 function Footer() {

@@ -13410,6 +13410,408 @@ LINES = {
                 {"name": "Seo-Daejeon", "lat": 36.3020, "lon": 127.4290, "popular": True}
             ]
         }
+    },
+    "new_york": {
+        "subway_123": {
+            "name": "MTA Subway 1/2/3 (7th Ave / Broadway)",
+            "popularity": 1,
+            "stations": [
+                {"name": "Penn Station", "lat": 40.7506, "lon": -73.9935, "popular": True},
+                {"name": "Times Square-42nd St", "lat": 40.7580, "lon": -73.9855, "popular": True},
+                {"name": "14th St-7th Ave", "lat": 40.7370, "lon": -73.9993, "popular": True},
+                {"name": "Christopher St-Sheridan Sq", "lat": 40.7334, "lon": -74.0027, "popular": False},
+                {"name": "Chambers St", "lat": 40.7153, "lon": -74.0093, "popular": False},
+                {"name": "72nd St", "lat": 40.7787, "lon": -73.9816, "popular": False},
+                {"name": "59th St-Columbus Circle", "lat": 40.7681, "lon": -73.9819, "popular": True},
+                {"name": "96th St", "lat": 40.7935, "lon": -73.9722, "popular": False},
+                {"name": "125th St", "lat": 40.8041, "lon": -73.9375, "popular": False}
+            ]
+        },
+        "subway_456": {
+            "name": "MTA Subway 4/5/6 (Lexington Ave)",
+            "popularity": 1,
+            "stations": [
+                {"name": "Grand Central-42nd St", "lat": 40.7527, "lon": -73.9772, "popular": True},
+                {"name": "Union Square-14th St", "lat": 40.7359, "lon": -73.9911, "popular": True},
+                {"name": "Brooklyn Bridge-City Hall", "lat": 40.7131, "lon": -74.0030, "popular": True},
+                {"name": "86th St", "lat": 40.7797, "lon": -73.9554, "popular": False},
+                {"name": "Fulton St", "lat": 40.7102, "lon": -74.0066, "popular": True},
+                {"name": "Atlantic Ave-Barclays Center", "lat": 40.6862, "lon": -73.9787, "popular": True},
+                {"name": "Wall St", "lat": 40.7074, "lon": -74.0113, "popular": False}
+            ]
+        },
+        "subway_ace": {
+            "name": "MTA Subway A/C/E (8th Ave)",
+            "popularity": 2,
+            "stations": [
+                {"name": "34th St-Penn Station", "lat": 40.7523, "lon": -73.9937, "popular": True},
+                {"name": "World Trade Center", "lat": 40.7127, "lon": -74.0099, "popular": True},
+                {"name": "14th St-8th Ave", "lat": 40.7401, "lon": -74.0018, "popular": True},
+                {"name": "Canal St", "lat": 40.7207, "lon": -74.0007, "popular": True},
+                {"name": "Jay St-MetroTech", "lat": 40.6922, "lon": -73.9872, "popular": False},
+                {"name": "High St-Brooklyn Bridge", "lat": 40.6994, "lon": -73.9908, "popular": False},
+                {"name": "Howard Beach-JFK Airport", "lat": 40.6607, "lon": -73.8302, "popular": True}
+            ]
+        },
+        "subway_nqrw": {
+            "name": "MTA Subway N/Q/R/W (Broadway)",
+            "popularity": 2,
+            "stations": [
+                {"name": "Herald Square-34th St", "lat": 40.7484, "lon": -73.9878, "popular": True},
+                {"name": "Canal St", "lat": 40.7191, "lon": -74.0000, "popular": False},
+                {"name": "Prince St", "lat": 40.7243, "lon": -73.9978, "popular": False},
+                {"name": "8th St-NYU", "lat": 40.7306, "lon": -73.9928, "popular": False},
+                {"name": "DeKalb Ave", "lat": 40.6907, "lon": -73.9818, "popular": False}
+            ]
+        },
+        "subway_7": {
+            "name": "MTA Subway 7 (Flushing)",
+            "popularity": 2,
+            "stations": [
+                {"name": "34th St-Hudson Yards", "lat": 40.7554, "lon": -74.0021, "popular": True},
+                {"name": "Flushing-Main St", "lat": 40.7596, "lon": -73.8300, "popular": False},
+                {"name": "Court Sq", "lat": 40.7469, "lon": -73.9439, "popular": False}
+            ]
+        },
+        "subway_bdfm": {
+            "name": "MTA Subway B/D/F/M (6th Ave)",
+            "popularity": 2,
+            "stations": [
+                {"name": "42nd St-Bryant Park", "lat": 40.7544, "lon": -73.9845, "popular": False},
+                {"name": "47-50 Sts-Rockefeller Center", "lat": 40.7588, "lon": -73.9813, "popular": True},
+                {"name": "West 4th St-Washington Sq", "lat": 40.7323, "lon": -74.0003, "popular": False},
+                {"name": "Coney Island-Stillwell Ave", "lat": 40.5771, "lon": -73.9812, "popular": False}
+            ]
+        },
+        "subway_l": {
+            "name": "MTA Subway L (14th St-Canarsie)",
+            "popularity": 3,
+            "stations": [
+                {"name": "Bedford Ave", "lat": 40.7153, "lon": -73.9569, "popular": True},
+                {"name": "1st Ave", "lat": 40.7307, "lon": -73.9817, "popular": False},
+                {"name": "3rd Ave", "lat": 40.7329, "lon": -73.9862, "popular": False}
+            ]
+        },
+        "amtrak_nec": {
+            "name": "Amtrak Northeast Corridor",
+            "popularity": 1,
+            "stations": [
+                {"name": "Penn Station", "lat": 40.7506, "lon": -73.9935, "popular": True},
+                {"name": "Secaucus Junction", "lat": 40.7614, "lon": -74.0755, "popular": False}
+            ]
+        },
+        "metro_north": {
+            "name": "Metro-North Railroad",
+            "popularity": 2,
+            "stations": [
+                {"name": "Grand Central Terminal", "lat": 40.7527, "lon": -73.9772, "popular": True}
+            ]
+        },
+        "lirr": {
+            "name": "Long Island Rail Road",
+            "popularity": 3,
+            "stations": [
+                {"name": "Penn Station", "lat": 40.7506, "lon": -73.9935, "popular": False},
+                {"name": "Jamaica", "lat": 40.7000, "lon": -73.8079, "popular": False},
+                {"name": "Atlantic Terminal", "lat": 40.6862, "lon": -73.9787, "popular": False}
+            ]
+        },
+        "path": {
+            "name": "PATH (NY-NJ)",
+            "popularity": 3,
+            "stations": [
+                {"name": "World Trade Center", "lat": 40.7127, "lon": -74.0099, "popular": False},
+                {"name": "Hoboken Terminal", "lat": 40.7355, "lon": -74.0297, "popular": True},
+                {"name": "Newark Penn Station", "lat": 40.7345, "lon": -74.1644, "popular": False}
+            ]
+        }
+    },
+    "washington_dc": {
+        "metro_red": {
+            "name": "WMATA Metro Red Line",
+            "popularity": 1,
+            "stations": [
+                {"name": "Union Station", "lat": 38.8973, "lon": -77.0063, "popular": True},
+                {"name": "Metro Center", "lat": 38.8983, "lon": -77.0281, "popular": True},
+                {"name": "Gallery Place-Chinatown", "lat": 38.8983, "lon": -77.0219, "popular": True},
+                {"name": "Dupont Circle", "lat": 38.9096, "lon": -77.0434, "popular": True},
+                {"name": "Farragut North", "lat": 38.9032, "lon": -77.0397, "popular": False},
+                {"name": "Woodley Park-Zoo/Adams Morgan", "lat": 38.9251, "lon": -77.0524, "popular": True},
+                {"name": "Judiciary Square", "lat": 38.8967, "lon": -77.0168, "popular": False},
+                {"name": "Bethesda", "lat": 38.9844, "lon": -77.0942, "popular": False},
+                {"name": "Tenleytown-AU", "lat": 38.9488, "lon": -77.0795, "popular": False}
+            ]
+        },
+        "metro_blue_orange_silver": {
+            "name": "WMATA Metro Blue/Orange/Silver Lines",
+            "popularity": 1,
+            "stations": [
+                {"name": "Metro Center", "lat": 38.8983, "lon": -77.0281, "popular": False},
+                {"name": "Foggy Bottom-GWU", "lat": 38.9007, "lon": -77.0502, "popular": True},
+                {"name": "Smithsonian", "lat": 38.8880, "lon": -77.0280, "popular": True},
+                {"name": "L'Enfant Plaza", "lat": 38.8849, "lon": -77.0219, "popular": True},
+                {"name": "Capitol South", "lat": 38.8850, "lon": -77.0050, "popular": False},
+                {"name": "Rosslyn", "lat": 38.8959, "lon": -77.0714, "popular": False},
+                {"name": "Crystal City", "lat": 38.8576, "lon": -77.0506, "popular": True},
+                {"name": "Ronald Reagan Washington National Airport", "lat": 38.8531, "lon": -77.0440, "popular": True},
+                {"name": "Farragut West", "lat": 38.9015, "lon": -77.0393, "popular": False},
+                {"name": "King Street-Old Town", "lat": 38.8065, "lon": -77.0612, "popular": False}
+            ]
+        },
+        "metro_green_yellow": {
+            "name": "WMATA Metro Green/Yellow Lines",
+            "popularity": 2,
+            "stations": [
+                {"name": "Gallery Place-Chinatown", "lat": 38.8983, "lon": -77.0219, "popular": False},
+                {"name": "Archives-Navy Memorial-Penn Quarter", "lat": 38.8938, "lon": -77.0220, "popular": True},
+                {"name": "L'Enfant Plaza", "lat": 38.8849, "lon": -77.0219, "popular": False},
+                {"name": "U Street", "lat": 38.9170, "lon": -77.0281, "popular": False},
+                {"name": "Columbia Heights", "lat": 38.9283, "lon": -77.0326, "popular": False}
+            ]
+        },
+        "amtrak": {
+            "name": "Amtrak (Union Station)",
+            "popularity": 1,
+            "stations": [
+                {"name": "Union Station", "lat": 38.8973, "lon": -77.0063, "popular": True}
+            ]
+        }
+    },
+    "chicago": {
+        "cta_red": {
+            "name": "CTA Red Line",
+            "popularity": 1,
+            "stations": [
+                {"name": "Grand", "lat": 41.8917, "lon": -87.6287, "popular": True},
+                {"name": "Chicago", "lat": 41.8966, "lon": -87.6287, "popular": True},
+                {"name": "Clark/Division", "lat": 41.9037, "lon": -87.6316, "popular": False},
+                {"name": "Fullerton", "lat": 41.9256, "lon": -87.6530, "popular": True},
+                {"name": "Belmont", "lat": 41.9398, "lon": -87.6530, "popular": True},
+                {"name": "Addison", "lat": 41.9474, "lon": -87.6535, "popular": False},
+                {"name": "Howard", "lat": 41.9721, "lon": -87.6727, "popular": False},
+                {"name": "Jackson", "lat": 41.8781, "lon": -87.6275, "popular": True},
+                {"name": "Roosevelt", "lat": 41.8674, "lon": -87.6270, "popular": False},
+                {"name": "95th/Dan Ryan", "lat": 41.7223, "lon": -87.6241, "popular": False}
+            ]
+        },
+        "cta_blue": {
+            "name": "CTA Blue Line",
+            "popularity": 1,
+            "stations": [
+                {"name": "O'Hare", "lat": 41.9768, "lon": -87.9037, "popular": True},
+                {"name": "Clark/Lake", "lat": 41.8858, "lon": -87.6316, "popular": True},
+                {"name": "Jackson", "lat": 41.8781, "lon": -87.6276, "popular": False},
+                {"name": "Division", "lat": 41.9033, "lon": -87.6664, "popular": True},
+                {"name": "Logan Square", "lat": 41.9297, "lon": -87.7081, "popular": False},
+                {"name": "Damen", "lat": 41.9094, "lon": -87.6772, "popular": False}
+            ]
+        },
+        "cta_brown": {
+            "name": "CTA Brown Line",
+            "popularity": 2,
+            "stations": [
+                {"name": "Merchandise Mart", "lat": 41.8884, "lon": -87.6340, "popular": True},
+                {"name": "Sedgwick", "lat": 41.9104, "lon": -87.6396, "popular": False},
+                {"name": "Armitage", "lat": 41.9182, "lon": -87.6530, "popular": False},
+                {"name": "Southport", "lat": 41.9439, "lon": -87.6638, "popular": False}
+            ]
+        },
+        "cta_green": {
+            "name": "CTA Green Line",
+            "popularity": 3,
+            "stations": [
+                {"name": "Adams/Wabash", "lat": 41.8796, "lon": -87.6260, "popular": True},
+                {"name": "Roosevelt", "lat": 41.8674, "lon": -87.6270, "popular": False},
+                {"name": "35th-Bronzeville-IIT", "lat": 41.8313, "lon": -87.6256, "popular": False}
+            ]
+        },
+        "cta_orange": {
+            "name": "CTA Orange Line",
+            "popularity": 2,
+            "stations": [
+                {"name": "Midway", "lat": 41.7866, "lon": -87.7378, "popular": True},
+                {"name": "Harold Washington Library-State/Van Buren", "lat": 41.8768, "lon": -87.6288, "popular": False}
+            ]
+        },
+        "cta_purple": {
+            "name": "CTA Purple Line (Evanston Express)",
+            "popularity": 3,
+            "stations": [
+                {"name": "Davis", "lat": 42.0471, "lon": -87.6836, "popular": False}
+            ]
+        },
+        "cta_pink": {
+            "name": "CTA Pink Line",
+            "popularity": 3,
+            "stations": [
+                {"name": "18th", "lat": 41.8577, "lon": -87.6697, "popular": False}
+            ]
+        },
+        "amtrak": {
+            "name": "Amtrak (Union Station)",
+            "popularity": 1,
+            "stations": [
+                {"name": "Chicago Union Station", "lat": 41.8786, "lon": -87.6402, "popular": True}
+            ]
+        },
+        "metra": {
+            "name": "Metra Commuter Rail",
+            "popularity": 3,
+            "stations": [
+                {"name": "Millennium Station", "lat": 41.8845, "lon": -87.6243, "popular": False},
+                {"name": "Ogilvie Transportation Center", "lat": 41.8831, "lon": -87.6404, "popular": False}
+            ]
+        }
+    },
+    "boston": {
+        "mbta_red": {
+            "name": "MBTA Red Line",
+            "popularity": 1,
+            "stations": [
+                {"name": "South Station", "lat": 42.3523, "lon": -71.0553, "popular": True},
+                {"name": "Park Street", "lat": 42.3564, "lon": -71.0624, "popular": True},
+                {"name": "Downtown Crossing", "lat": 42.3554, "lon": -71.0605, "popular": True},
+                {"name": "Harvard", "lat": 42.3735, "lon": -71.1189, "popular": True},
+                {"name": "Kendall/MIT", "lat": 42.3625, "lon": -71.0862, "popular": False},
+                {"name": "Charles/MGH", "lat": 42.3613, "lon": -71.0704, "popular": False},
+                {"name": "JFK/UMass", "lat": 42.3207, "lon": -71.0524, "popular": False},
+                {"name": "Andrew", "lat": 42.3302, "lon": -71.0576, "popular": False}
+            ]
+        },
+        "mbta_green": {
+            "name": "MBTA Green Line",
+            "popularity": 1,
+            "stations": [
+                {"name": "Park Street", "lat": 42.3564, "lon": -71.0624, "popular": False},
+                {"name": "Boylston", "lat": 42.3526, "lon": -71.0649, "popular": False},
+                {"name": "Copley", "lat": 42.3504, "lon": -71.0771, "popular": True},
+                {"name": "Kenmore", "lat": 42.3488, "lon": -71.0959, "popular": True},
+                {"name": "Government Center", "lat": 42.3594, "lon": -71.0595, "popular": False},
+                {"name": "Hynes Convention Center", "lat": 42.3476, "lon": -71.0871, "popular": False}
+            ]
+        },
+        "mbta_orange": {
+            "name": "MBTA Orange Line",
+            "popularity": 2,
+            "stations": [
+                {"name": "North Station", "lat": 42.3657, "lon": -71.0621, "popular": True},
+                {"name": "Back Bay", "lat": 42.3475, "lon": -71.0758, "popular": True},
+                {"name": "Downtown Crossing", "lat": 42.3554, "lon": -71.0605, "popular": False},
+                {"name": "Haymarket", "lat": 42.3629, "lon": -71.0580, "popular": False},
+                {"name": "State", "lat": 42.3587, "lon": -71.0578, "popular": False},
+                {"name": "Chinatown", "lat": 42.3524, "lon": -71.0624, "popular": False}
+            ]
+        },
+        "mbta_blue": {
+            "name": "MBTA Blue Line",
+            "popularity": 3,
+            "stations": [
+                {"name": "Airport", "lat": 42.3743, "lon": -71.0303, "popular": True},
+                {"name": "Aquarium", "lat": 42.3596, "lon": -71.0516, "popular": False},
+                {"name": "State", "lat": 42.3587, "lon": -71.0578, "popular": False},
+                {"name": "Government Center", "lat": 42.3594, "lon": -71.0595, "popular": False}
+            ]
+        },
+        "amtrak": {
+            "name": "Amtrak / MBTA Commuter Rail",
+            "popularity": 1,
+            "stations": [
+                {"name": "South Station", "lat": 42.3523, "lon": -71.0553, "popular": True},
+                {"name": "North Station", "lat": 42.3657, "lon": -71.0621, "popular": False},
+                {"name": "Back Bay", "lat": 42.3475, "lon": -71.0758, "popular": False}
+            ]
+        }
+    },
+    "san_francisco": {
+        "bart": {
+            "name": "BART (Bay Area Rapid Transit)",
+            "popularity": 1,
+            "stations": [
+                {"name": "Powell Street", "lat": 37.7844, "lon": -122.4080, "popular": True},
+                {"name": "Montgomery Street", "lat": 37.7893, "lon": -122.4017, "popular": True},
+                {"name": "Embarcadero", "lat": 37.7929, "lon": -122.3969, "popular": True},
+                {"name": "Civic Center/UN Plaza", "lat": 37.7796, "lon": -122.4138, "popular": True},
+                {"name": "16th St Mission", "lat": 37.7650, "lon": -122.4197, "popular": True},
+                {"name": "24th St Mission", "lat": 37.7523, "lon": -122.4185, "popular": False},
+                {"name": "San Francisco International Airport", "lat": 37.6161, "lon": -122.3920, "popular": True},
+                {"name": "Oakland 12th St/City Center", "lat": 37.8032, "lon": -122.2715, "popular": True},
+                {"name": "Oakland Coliseum", "lat": 37.7543, "lon": -122.1970, "popular": False},
+                {"name": "Downtown Berkeley", "lat": 37.8700, "lon": -122.2682, "popular": True},
+                {"name": "MacArthur", "lat": 37.8283, "lon": -122.2674, "popular": False},
+                {"name": "Millbrae", "lat": 37.5995, "lon": -122.3867, "popular": False},
+                {"name": "19th St Oakland", "lat": 37.8086, "lon": -122.2690, "popular": False},
+                {"name": "Balboa Park", "lat": 37.7218, "lon": -122.4474, "popular": False}
+            ]
+        },
+        "muni_metro": {
+            "name": "Muni Metro",
+            "popularity": 2,
+            "stations": [
+                {"name": "Church/Duboce", "lat": 37.7676, "lon": -122.4290, "popular": True},
+                {"name": "Van Ness", "lat": 37.7753, "lon": -122.4195, "popular": False},
+                {"name": "West Portal", "lat": 37.7408, "lon": -122.4650, "popular": False},
+                {"name": "Castro", "lat": 37.7625, "lon": -122.4351, "popular": True},
+                {"name": "Embarcadero", "lat": 37.7929, "lon": -122.3969, "popular": False},
+                {"name": "Forest Hill", "lat": 37.7484, "lon": -122.4589, "popular": False}
+            ]
+        },
+        "caltrain": {
+            "name": "Caltrain",
+            "popularity": 2,
+            "stations": [
+                {"name": "San Francisco (4th & King)", "lat": 37.7764, "lon": -122.3941, "popular": True},
+                {"name": "Palo Alto", "lat": 37.4437, "lon": -122.1647, "popular": False},
+                {"name": "San Jose Diridon", "lat": 37.3297, "lon": -121.9018, "popular": False},
+                {"name": "Millbrae", "lat": 37.5995, "lon": -122.3867, "popular": False}
+            ]
+        }
+    },
+    "philadelphia": {
+        "septa_bsl": {
+            "name": "SEPTA Broad Street Line",
+            "popularity": 1,
+            "stations": [
+                {"name": "City Hall", "lat": 39.9524, "lon": -75.1636, "popular": True},
+                {"name": "Walnut-Locust", "lat": 39.9483, "lon": -75.1636, "popular": True},
+                {"name": "Spring Garden", "lat": 39.9615, "lon": -75.1636, "popular": False},
+                {"name": "Temple University", "lat": 39.9814, "lon": -75.1494, "popular": False},
+                {"name": "Erie", "lat": 39.9909, "lon": -75.1560, "popular": False},
+                {"name": "AT&T Station (stadiums)", "lat": 39.9065, "lon": -75.1691, "popular": False},
+                {"name": "Fern Rock TC", "lat": 40.0382, "lon": -75.1481, "popular": False}
+            ]
+        },
+        "septa_mfl": {
+            "name": "SEPTA Market-Frankford Line",
+            "popularity": 1,
+            "stations": [
+                {"name": "City Hall", "lat": 39.9524, "lon": -75.1636, "popular": False},
+                {"name": "5th Street-Independence Hall", "lat": 39.9525, "lon": -75.1502, "popular": True},
+                {"name": "2nd Street", "lat": 39.9525, "lon": -75.1410, "popular": False},
+                {"name": "15th Street", "lat": 39.9525, "lon": -75.1657, "popular": False},
+                {"name": "30th Street", "lat": 39.9566, "lon": -75.1819, "popular": False},
+                {"name": "Frankford TC", "lat": 40.0234, "lon": -75.0766, "popular": False},
+                {"name": "Jefferson Station", "lat": 39.9525, "lon": -75.1580, "popular": True}
+            ]
+        },
+        "septa_regional": {
+            "name": "SEPTA Regional Rail",
+            "popularity": 2,
+            "stations": [
+                {"name": "30th Street Station", "lat": 39.9566, "lon": -75.1819, "popular": True},
+                {"name": "Suburban Station", "lat": 39.9538, "lon": -75.1679, "popular": True},
+                {"name": "Jefferson Station", "lat": 39.9525, "lon": -75.1580, "popular": False},
+                {"name": "University City", "lat": 39.9486, "lon": -75.1908, "popular": True},
+                {"name": "Philadelphia International Airport", "lat": 39.8729, "lon": -75.2437, "popular": True},
+                {"name": "Temple University", "lat": 39.9814, "lon": -75.1494, "popular": False}
+            ]
+        },
+        "amtrak": {
+            "name": "Amtrak (30th Street Station)",
+            "popularity": 1,
+            "stations": [
+                {"name": "30th Street Station", "lat": 39.9566, "lon": -75.1819, "popular": True}
+            ]
+        }
     }
 }
 

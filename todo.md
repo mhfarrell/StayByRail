@@ -8,7 +8,7 @@ This file is organised by ROI. Start at the top.
 
 ## What's left after the 2026-04-10 deploy
 
-The site is now at **36 city guides / 10 journal articles / 5 itineraries / 5 transport passes / 2 country explainers / 822 sitemap URLs (63 with lastmod) covering 65 cities across 8 countries**. The 2026-04-09/10 sessions shipped: bundle-size fix (267 KB main chunk), full South Korea expansion (5 cities), Japan travel diary journal article with personal photos, journal article page magazine redesign, light theme as default with improved contrast, AdSense verification meta tag, sitemap `<lastmod>` enrichment via `gen-sitemap.py`, and IndexNow push script for Bing/Yandex/Seznam recrawl.
+The site is now at **42 city guides / 10 journal articles / 5 itineraries / 5 transport passes / 3 country explainers / 900 sitemap URLs (70 with lastmod) covering 71 cities across 9 countries**. The 2026-04-09/10 sessions shipped: bundle-size fix (267 KB main chunk), full South Korea expansion (5 cities), Japan travel diary journal article with personal photos, journal article page magazine redesign, light theme as default with improved contrast, AdSense verification meta tag, sitemap `<lastmod>` enrichment via `gen-sitemap.py`, and IndexNow push script for Bing/Yandex/Seznam recrawl.
 
 ---
 
@@ -29,7 +29,7 @@ These all require a human with a browser, accounts, or a real voice:
 
 ### Things that can be done programmatically (Claude can do these)
 
-- [ ] **United States expansion** — 6 cities (NYC/DC/Chicago/Boston/SF/Philly). Backend station data, city guides, FAQs, country explainer, sitemap entries. Same shape as China/South Korea expansions.
+- [x] **United States expansion** — 6 cities (NYC/DC/Chicago/Boston/SF/Philly). Backend station data, city guides, FAQs, price bands, journey times, country explainer, CoveragePage, sitemap entries. Shipped 2026-04-10.
 - [ ] **More country explainers** — `/countries/japan`, `/countries/united-kingdom`, `/countries/france`, `/countries/germany`, `/countries/spain`, `/countries/thailand`. Infrastructure is built; each is a new entry in `countries.js` (~3,000 words) + sitemap regen. Two countries shipped so far: China and South Korea.
 - [ ] **Real photography for remaining 28 city guides** — find and attribute Wikimedia Commons photos, add to `cityHeroPhotos.js`, run `warm-hero-photos.py`. Wikipedia fallback works fine in the meantime.
 - [ ] **More journal articles** — Claude can draft these but they're better with your personal voice and real experience. Hybrid approach: you outline, Claude writes, you edit.
@@ -143,13 +143,13 @@ These are strategic expansions that need backend station data added to `backend/
 - [x] Daegu (Lines 1/2/3 + KTX)
 - [x] Daejeon (Line 1 + KTX)
 
-**United States** — rail is only the right hotel basis in a few cities; limit coverage to those. Amtrak intercity + urban heavy-rail/subway:
-- [ ] New York City (MTA Subway, Grand Central, Penn Station, LIRR, NJ Transit)
-- [ ] Washington DC (Metro, Union Station — true rail-first city)
-- [ ] Chicago (CTA L, Union Station — Amtrak long-distance hub)
-- [ ] Boston (MBTA T, South Station, North Station)
-- [ ] San Francisco / Oakland (BART, Caltrain, Muni Metro)
-- [ ] Philadelphia (SEPTA, 30th Street Station)
+**United States** — **All shipped 2026-04-10.** 6 cities with full backend station data, city guides, FAQs, price bands, journey times, `/countries/united-states` explainer, CoveragePage card, Footer links, homepage carousel. 71 popular stations across MTA Subway, WMATA Metro, CTA L, MBTA T, BART, Muni Metro, Caltrain, SEPTA, and Amtrak NEC. Total: 6 new city guides, 71 new programmatic station landing pages, 1 new country explainer page, 900 sitemap URLs.
+- [x] New York City (MTA Subway, Grand Central, Penn Station, LIRR, NJ Transit)
+- [x] Washington DC (Metro, Union Station — true rail-first city)
+- [x] Chicago (CTA L, Union Station — Amtrak long-distance hub)
+- [x] Boston (MBTA T, South Station, North Station)
+- [x] San Francisco / Oakland (BART, Caltrain, Muni Metro)
+- [x] Philadelphia (SEPTA, 30th Street Station)
 
 **Deliberately excluded from US scope**: LA, Miami, Seattle, Dallas, Houston, Phoenix, Atlanta. Rail in those cities exists but isn't dense enough to be the natural hotel-siting axis for tourists — covering them would dilute the site's positioning.
 
@@ -292,7 +292,7 @@ Realistic timeline from "start P0" to "ready to re-apply": **6-10 weeks** of foc
 
 ---
 
-*Last updated: 2026-04-10 (deployed) — **36 city guides, 10 journal articles, 5 itineraries, 5 transport passes, 2 country explainers, 8 curated hero photos, 822 sitemap URLs (63 with lastmod) across 65 cities and 8 countries**.*
+*Last updated: 2026-04-10 — **42 city guides, 10 journal articles, 5 itineraries, 5 transport passes, 3 country explainers, 8 curated hero photos, 900 sitemap URLs (70 with lastmod) across 71 cities and 9 countries**.*
 
 *Deploy history:*
 - **2026-04-10**: Frontend https://780d963b.staybyrail.pages.dev → staybyrail.co.uk. Backend dep-d7cfa1navr4c73ed9qag on Render. Shipped: sitemap lastmod enrichment, IndexNow push (822 URLs to Bing/Yandex/Seznam), AdSense verification, light theme default + contrast fix, Japan journal article + magazine redesign, South Korea expansion (5 cities), bundle-size fix (267 KB).
