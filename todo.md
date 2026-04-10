@@ -6,32 +6,54 @@ This file is organised by ROI. Start at the top.
 
 ---
 
-## What's left after the 2026-04-09 deploy
+## What's left after the 2026-04-10 deploy
 
-The site is now at **36 city guides / 9 journal articles / 5 itineraries / 5 transport passes / 2 country explainers / 821 sitemap URLs covering 65 cities across 8 countries**. The 2026-04-09 session shipped (1) the bundle-size fix that dropped the main JS chunk from 538 KB back to 267 KB, and (2) the full **South Korea expansion** — 5 new city guides (Seoul, Busan, Incheon, Daegu, Daejeon), 49 new programmatic station pages, 25 new FAQs, the `/countries/south-korea` explainer, a new CoveragePage card, Seoul added to the footer popular-guides nav, and every stale "52 cities / 6 countries" / "60 cities / 7 countries" copy across HomePage, AboutPage, FaqPage, HowItWorksPage, SearchPage and CoveragePage updated to **65 cities / 8 countries**. The two big content categories — programmatic station landing pages and long-form city guides — are in good shape for the CJ re-application. **What's still open:**
+The site is now at **36 city guides / 10 journal articles / 5 itineraries / 5 transport passes / 2 country explainers / 822 sitemap URLs (63 with lastmod) covering 65 cities across 8 countries**. The 2026-04-09/10 sessions shipped: bundle-size fix (267 KB main chunk), full South Korea expansion (5 cities), Japan travel diary journal article with personal photos, journal article page magazine redesign, light theme as default with improved contrast, AdSense verification meta tag, sitemap `<lastmod>` enrichment via `gen-sitemap.py`, and IndexNow push script for Bing/Yandex/Seznam recrawl.
 
-**P0 (highest ROI, mostly user actions):**
-- [ ] **Lighthouse audit** on the top 5 page templates and fix anything red. *(user action — `npx lighthouse <url> --view`)*
-- [ ] **Submit sitemap to Google Search Console + Bing Webmaster Tools.** Free, one-time, essential. *(user action)*
-- [x] **Bundle-size regression fixed (2026-04-09)** — main `index.js` chunk is now **267 KB** (down from 538 KB, and even smaller than the pre-regression 308 KB baseline). Fix: HomePage no longer imports `cityGuides.js` or `journal.js` — a new `frontend/src/data/homepageFeatured.js` file holds just the metadata the carousel and the "latest from the journal" strip need (10 featured city entries + 9 journal-article metadata rows + a `totalCityGuides` constant). Vite now splits `cityGuides.js` into its own 202 KB shared chunk (only loads on guide/itinerary/station/country/author/pass/journal-article routes) and `journal.js` into a 74 KB chunk (only loads on `/journal` routes). No visual change to the homepage — the left/right carousel renders exactly as before.
+---
 
-**P1 (more content, code-only):**
-- [x] **South Korea expansion (2026-04-09)** — 5 cities shipped (Seoul/Busan/Incheon/Daegu/Daejeon). Backend station data for Seoul Lines 1/2/3/4/6 + AREX + KTX, Busan Lines 1/2/3 + KTX, Incheon Line 1 + Suin-Bundang + AREX, Daegu Lines 1/2/3 + KTX, Daejeon Line 1 + KTX. 49 new programmatic station landing pages, 5 full city guides (~1,500 words each with 5 sections and 5–6 key stations), 25 new FAQs, the `/countries/south-korea` explainer covering KTX vs SRT, Korail Talk booking, T-money, the Seoul Metropolitan Subway, Incheon Airport AREX, and K-ETA entry. CoveragePage card, Footer popular-pages entry, sitemap entries, and the homepage `totalCityGuides` bump all landed. Curated hero photos still outstanding (Wikipedia fallback works fine in the meantime).
-- [ ] **United States expansion** — 6 cities (NYC/DC/Chicago/Boston/SF/Philly), same shape. Deliberately limited to cities where rail is the genuinely practical hotel base.
-- [ ] **Continue journal cadence** — one new article every 10–14 days. Next due ~mid-April. Pick a fresh angle, not a re-tread of the seed list.
-- [ ] **More country explainers** — `/countries/japan`, `/countries/united-kingdom`, `/countries/france`, `/countries/germany`, `/countries/spain`, `/countries/thailand`. Infrastructure is built; each one is just a new entry in `frontend/src/data/countries.js` (~3,000 words) plus a sitemap line. Two countries now shipped: China and South Korea.
+### Things only YOU (Matt) can do — not automatable
 
-**P3 (link building / traction — all user actions):**
-- [ ] All Reddit / Quora / forum / Fiverr / guest-post / social work in P3 below. None of this is automatable — it needs a human voice.
+These all require a human with a browser, accounts, or a real voice:
 
-**P4 (polish):**
-- [ ] **Real photography for the remaining 28 city guides** — 23 pre-existing + 5 new South Korean cities. Wikipedia fallback works fine but curated photos look better in card grids. Use `frontend/scripts/warm-hero-photos.py` after each batch to pre-warm the Wikimedia thumb cache.
+- [ ] **Google Search Console** — verify site ownership, submit `https://staybyrail.co.uk/sitemap.xml`, then do URL Inspection > Request Indexing on your top 10 pages (homepage, /guides/tokyo, /journal/sixteen-days-in-japan-january-2025, /search, /guides/seoul, etc). Check back weekly for indexing coverage and Core Web Vitals.
+- [ ] **Bing Webmaster Tools** — same: verify, submit sitemap. IndexNow already pushed 822 URLs so Bing should be fast.
+- [ ] **Enable Cloudflare Crawler Hints** — Cloudflare dashboard > Speed > Optimization > toggle "Crawler Hints" on. This sends IndexNow pings automatically on every deploy so you don't need to run the script manually.
+- [ ] **Lighthouse audit** — run `npx lighthouse https://staybyrail.co.uk --view` (and the same for /guides/tokyo, /search, /hotels-near/shinjuku-tokyo, /journal/sixteen-days-in-japan-january-2025). Fix anything red. Target: 90+ on all four scores.
+- [ ] **Plausible / GA setup** — install analytics so you can prove non-zero organic traffic for 4+ weeks before re-applying to CJ. The `VITE_PLAUSIBLE_DOMAIN` env var is already wired up — just sign up, set the var, and rebuild.
+- [ ] **Link building** — Reddit (r/JapanTravel, r/travel, r/london), Quora, Lonely Planet forums. Genuine helpful answers with a link only when it's the best answer. Need at least 3 external backlinks from non-spam sources.
+- [ ] **Social** — Instagram station photos, X/Twitter thread per journal article, Pinterest pins for each guide. All manual.
+- [ ] **Medium / Substack cross-posts** — republish journal articles with `rel=canonical` back to staybyrail.co.uk for extra reach.
+- [ ] **Guest posts / blogger outreach** — email 10 travel bloggers per month, offer reciprocal links or guest posts.
+- [ ] **Continue journal cadence** — one new article every 10-14 days. Next due ~2026-04-24. Write from personal experience when possible (like the Japan diary). Fresh angles only, no re-treads.
 
-**Re-application checklist still open:**
-- [ ] Plausible / GA shows non-zero organic traffic for 4 weeks (depends on GSC submission)
+### Things that can be done programmatically (Claude can do these)
+
+- [ ] **United States expansion** — 6 cities (NYC/DC/Chicago/Boston/SF/Philly). Backend station data, city guides, FAQs, country explainer, sitemap entries. Same shape as China/South Korea expansions.
+- [ ] **More country explainers** — `/countries/japan`, `/countries/united-kingdom`, `/countries/france`, `/countries/germany`, `/countries/spain`, `/countries/thailand`. Infrastructure is built; each is a new entry in `countries.js` (~3,000 words) + sitemap regen. Two countries shipped so far: China and South Korea.
+- [ ] **Real photography for remaining 28 city guides** — find and attribute Wikimedia Commons photos, add to `cityHeroPhotos.js`, run `warm-hero-photos.py`. Wikipedia fallback works fine in the meantime.
+- [ ] **More journal articles** — Claude can draft these but they're better with your personal voice and real experience. Hybrid approach: you outline, Claude writes, you edit.
+- [ ] **Lighthouse fixes** — once you run the audit and share the report, Claude can fix the code issues (image sizing, unused CSS, accessibility attributes, etc).
+- [ ] **Deploy wrapper script** — a one-command `deploy.sh` that runs gen-sitemap > build with env vars > wrangler deploy > indexnow-push. Saves remembering the sequence.
+
+### Re-application checklist (CJ / Booking.com)
+
+- [ ] Plausible/GA shows non-zero organic traffic for 4+ weeks *(depends on GSC submission)*
 - [ ] Lighthouse 90+ on top 3 pages
-- [ ] Search Console shows pages being indexed and impressions
+- [ ] Search Console shows pages indexed and impressions appearing
 - [ ] At least 3 external backlinks from non-spam sources
+- [ ] All CJ feedback bullets answered with "here's what we changed" evidence
+
+### Already shipped (2026-04-09/10)
+
+- [x] Bundle-size regression fixed — main chunk 267 KB (was 538 KB)
+- [x] South Korea expansion — 5 cities, 49 station pages, 25 FAQs, country explainer
+- [x] Japan travel diary journal article with personal photos + magazine redesign
+- [x] Light theme default + contrast improvements
+- [x] AdSense verification meta tag + ads.txt
+- [x] Sitemap `<lastmod>` tags via `gen-sitemap.py` (822 URLs, 63 with lastmod)
+- [x] IndexNow push script — 822 URLs pushed to Bing/Yandex/Seznam
+- [x] IndexNow key file hosted at `/8eeiO1yJ2pk0zg04PXZvZ2Zgovdll8ID.txt`
 
 ---
 
@@ -114,12 +136,12 @@ These are strategic expansions that need backend station data added to `backend/
 - [x] Hong Kong — 6 lines, 23 popular stations covering MTR Island/Tsuen Wan/Kwun Tong/East Rail/Tung Chung-Airport Express plus the GSHKER high-speed terminus at West Kowloon. Full guide + 5 FAQs + curated hero photo (Skyline from the Peak by Simeon W). Guide opens with a "Special City Within China" section explaining the 1841-1997 colonial history, the 1984 Joint Declaration, the One Country Two Systems framework, the local Hong Konger identity, Cantonese language, and the practical implications (separate visa, currency, MTR, no Wikipedia/Google blocks).
 - [x] **`/countries/china` explainer** — 7-section long-form: CR Network in One Page, Train Types (G/D/C/Z/T/K), Booking on 12306, E-Tickets and Station Entry, Fares and Classes, Hong Kong as a Special Administrative Region, What to Pack and Practical Tips. Linked from every China and Hong Kong guide page.
 
-**South Korea** — Seoul Metro is one of the best in the world; KTX high-speed gives full peninsula coverage. Strong visitor demand from JP/CN/SE Asia. Target cities:
-- [ ] Seoul (Seoul Metropolitan Subway: 300+ stations across 23 lines)
-- [ ] Busan (Busan Metro + KTX terminus)
-- [ ] Incheon (Airport + AREX express)
-- [ ] Daegu
-- [ ] Daejeon
+**South Korea** — **All shipped 2026-04-09.** Seoul Metro is one of the best in the world; KTX high-speed gives full peninsula coverage. 5 cities, 49 station pages, 25 FAQs, `/countries/south-korea` explainer.
+- [x] Seoul (Lines 1/2/3/4/6 + AREX + KTX)
+- [x] Busan (Lines 1/2/3 + KTX)
+- [x] Incheon (Line 1 + Suin-Bundang + AREX)
+- [x] Daegu (Lines 1/2/3 + KTX)
+- [x] Daejeon (Line 1 + KTX)
 
 **United States** — rail is only the right hotel basis in a few cities; limit coverage to those. Amtrak intercity + urban heavy-rail/subway:
 - [ ] New York City (MTA Subway, Grand Central, Penn Station, LIRR, NJ Transit)
@@ -270,10 +292,8 @@ Realistic timeline from "start P0" to "ready to re-apply": **6-10 weeks** of foc
 
 ---
 
-*Last updated: 2026-04-08 (deployed) — **31 city guides, 9 journal articles, 5 itineraries, 5 transport passes, 1 country explainer (China), 8 curated hero photos, 766 sitemap URLs across 60 cities and 7 countries**. This session shipped: the full P2 performance block; all P1 structured additions (typical journey times for 120 key stations); every automatable P4 polish item (favicon set, privacy audit, terms audit, about page timeline + avatar); the full P5 monetisation-readiness skeleton (affiliate wrapper, footer disclosure, Plausible conversion-tracking stub); a homepage redesign with the 10-city featured-guides scroll carousel; a top-level **Journal** link in the navbar; a 9th journal article on Madrid Atocha vs Chamartín; and the **full China expansion** — 8 new city guides covering Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Xi'an, Hangzhou, and Hong Kong; 101 new programmatic station landing pages; 40 new FAQs; the new `/countries` infrastructure with the China explainer at `/countries/china`; 8 curated Wikimedia Commons hero photos; the Hong Kong guide rewritten under "China" (with a new "A Special City Within China" lead section explaining the SAR history, the One Country Two Systems framework, and the local Hong Konger identity); and the CoveragePage updated to show 60 cities across 7 countries with Hong Kong merged into the China card.*
+*Last updated: 2026-04-10 (deployed) — **36 city guides, 10 journal articles, 5 itineraries, 5 transport passes, 2 country explainers, 8 curated hero photos, 822 sitemap URLs (63 with lastmod) across 65 cities and 8 countries**.*
 
-*Deploy verified live at 2026-04-08:*
-- Frontend pushed to Cloudflare Pages (https://9b3f5c04.staybyrail.pages.dev → staybyrail.co.uk). Smoke tests: `/guides/beijing`, `/guides/hong_kong`, `/countries/china`, `/countries`, `/hotels-near/wangfujing-beijing`, `/sitemap.xml` all return HTTP 200.
-- Backend redeployed on Render. `/api/cities` returns all 60 cities including all 8 China entries.
-- All 8 Wikimedia hero photo URLs warmed via `python frontend/scripts/warm-hero-photos.py` → 8/8 OK on first attempt.
-- One known regression to follow up: the main JS chunk has grown from 308 KB to 538 KB. See "What's left after the deploy" at the top of this file.*
+*Deploy history:*
+- **2026-04-10**: Frontend https://780d963b.staybyrail.pages.dev → staybyrail.co.uk. Backend dep-d7cfa1navr4c73ed9qag on Render. Shipped: sitemap lastmod enrichment, IndexNow push (822 URLs to Bing/Yandex/Seznam), AdSense verification, light theme default + contrast fix, Japan journal article + magazine redesign, South Korea expansion (5 cities), bundle-size fix (267 KB).
+- **2026-04-08**: Full China expansion (8 cities, 101 station pages), P2 performance block, P4 polish, P5 monetisation skeleton, homepage carousel redesign, journal navbar link, Madrid Atocha article.
