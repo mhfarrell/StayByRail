@@ -5,6 +5,20 @@ const API = import.meta.env.VITE_API_URL || "http://localhost:4850/api";
 const SERP_KEY = "staybyrail_serpapi_key";
 const RAPID_KEY = "staybyrail_rapidapi_key";
 
+const NAV_BASE =
+  "inline-flex items-center gap-1.5 px-3 py-2 min-h-10 rounded-md text-sm font-medium text-[var(--color-on-dark-muted)] no-underline " +
+  "transition-colors duration-100 [touch-action:manipulation] select-none " +
+  "hover:bg-white/10 hover:text-white " +
+  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
+const NAV_ACTIVE =
+  "!text-white !bg-white/10";
+const NAV_PRIMARY =
+  "inline-flex items-center gap-1.5 px-4 py-2 min-h-10 rounded-md text-sm no-underline font-semibold " +
+  "bg-[var(--color-accent)] text-[var(--color-accent-ink)] " +
+  "transition-colors duration-100 [touch-action:manipulation] " +
+  "hover:bg-[var(--color-accent-lift)] " +
+  "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent-lift)]";
+
 function Header({ theme, onToggleTheme }) {
   const [showAbout, setShowAbout] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
@@ -76,269 +90,348 @@ function Header({ theme, onToggleTheme }) {
   const hasRapidKey = rapidSaved && rapidKey.length > 0;
 
   return (
-    <header className="site-header">
-      <div className="header-inner">
-        <Link to="/" className="header-brand" onClick={closeAll}>
-          <svg className="site-logo" viewBox="0 0 40 44" width="36" height="40" aria-hidden="true">
-            <path d="M4 16 L20 6 L36 16" fill="none" stroke="#2563eb" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round"/>
-            <rect x="6" y="16" width="28" height="12" rx="2" fill="#2563eb"/>
-            <rect x="9" y="18" width="7" height="5" rx="1.5" fill="#0ea5e9"/>
-            <rect x="18" y="20" width="12" height="8" rx="1" fill="#0ea5e9" opacity="0.45"/>
-            <rect x="7" y="28" width="2.5" height="3.5" rx="0.5" fill="#2563eb"/>
-            <rect x="30.5" y="28" width="2.5" height="3.5" rx="0.5" fill="#2563eb"/>
-            <line x1="1" y1="36" x2="39" y2="36" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round"/>
-            <line x1="1" y1="40.5" x2="39" y2="40.5" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round"/>
-            {[5,11,17,23,29,35].map(x => <line key={x} x1={x} y1="34.5" x2={x} y2="42" stroke="#f59e0b" strokeWidth="1.3" strokeLinecap="round"/>)}
-          </svg>
-          <div className="header-text">
-            <span className="brand-name">
-              <span className="brand-stay">Stay</span>
-              <span className="brand-by">By</span>
-              <span className="brand-rail">Rail</span>
+    <>
+      <a href="#main" className="skip-to-main">Skip to main content</a>
+      <header className="sticky top-0 z-[100] bg-[var(--color-surface-dark)] border-b border-black/30 shadow-sm">
+        <div className="flex items-center justify-between gap-3 max-w-[1280px] mx-auto px-4 h-14 sm:px-6 sm:h-16 lg:px-8">
+          <Link
+            to="/"
+            onClick={closeAll}
+            className="flex items-center gap-2.5 no-underline shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] rounded"
+          >
+            <svg viewBox="0 0 40 40" className="shrink-0 w-8 h-8 sm:w-9 sm:h-9" aria-hidden="true">
+              <circle cx="20" cy="20" r="19" fill="var(--color-primary)" />
+              <rect x="11" y="13" width="18" height="14" rx="3" fill="#FFFFFF" />
+              <rect x="13" y="15" width="6" height="4" rx="1" fill="var(--color-primary)" />
+              <rect x="21" y="15" width="6" height="4" rx="1" fill="var(--color-primary)" opacity="0.45" />
+              <circle cx="15" cy="25" r="1.4" fill="var(--color-primary)" />
+              <circle cx="25" cy="25" r="1.4" fill="var(--color-primary)" />
+              <rect x="10" y="29.5" width="20" height="1.4" rx="0.7" fill="#FFFFFF" opacity="0.9" />
+            </svg>
+            <span className="font-extrabold text-lg sm:text-xl tracking-tight leading-none text-white">
+              Stay<span className="text-[var(--color-primary)]">By</span>Rail
             </span>
-            <p className="subtitle">Find hotels near train stations</p>
-          </div>
-        </Link>
+          </Link>
 
-        <nav className="header-nav">
-          {/* Search link */}
-          <NavLink
-            to="/search"
-            className={({ isActive }) => `header-nav-btn${isActive ? " active" : ""}`}
-            onClick={closeAll}
-          >
-            Search
-          </NavLink>
-
-          {/* Guides — top-level link */}
-          <NavLink
-            to="/guides"
-            className={({ isActive }) => `header-nav-btn${isActive ? " active" : ""}`}
-            onClick={closeAll}
-          >
-            Guides
-          </NavLink>
-
-          {/* Journal — top-level link */}
-          <NavLink
-            to="/journal"
-            className={({ isActive }) => `header-nav-btn${isActive ? " active" : ""}`}
-            onClick={closeAll}
-          >
-            Journal
-          </NavLink>
-
-          {/* Travel — top-level link */}
-          <NavLink
-            to="/travel-guide"
-            className={({ isActive }) => `header-nav-btn${isActive ? " active" : ""}`}
-            onClick={closeAll}
-          >
-            Travel
-          </NavLink>
-
-          {/* About dropdown (simplified) */}
-          <div className="header-dropdown" ref={aboutRef}>
-            <button
-              className={`header-nav-btn${showAbout ? " active" : ""}`}
-              onClick={() => { setShowAbout(!showAbout); setShowSettings(false); }}
+          <nav className="flex items-center gap-0.5 sm:gap-1 relative z-[200]">
+            <NavLink
+              to="/guides"
+              className={({ isActive }) => `${NAV_BASE} hidden sm:inline-flex${isActive ? ` ${NAV_ACTIVE}` : ""}`}
+              onClick={closeAll}
             >
-              More
-              <svg width="10" height="10" viewBox="0 0 10 6" fill="none" aria-hidden="true" style={{ marginLeft: 2 }}>
-                <path d={showAbout ? "M1 5l4-4 4 4" : "M1 1l4 4 4-4"} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
-            {showAbout && (
-              <div className="dropdown-panel dropdown-about">
-                <button className="dropdown-close" onClick={closeAll} aria-label="Close">&times;</button>
-                <nav className="dropdown-nav">
-                  <Link to="/about" className="dropdown-nav-link" onClick={closeAll}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                    About
-                  </Link>
-                  <Link to="/how-it-works" className="dropdown-nav-link" onClick={closeAll}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                    How It Works
-                  </Link>
-                  <Link to="/train-times" className="dropdown-nav-link" onClick={closeAll}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    Train Times
-                  </Link>
-                  <Link to="/coverage" className="dropdown-nav-link" onClick={closeAll}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                    Coverage
-                  </Link>
-                  <Link to="/faq" className="dropdown-nav-link" onClick={closeAll}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                    FAQ
-                  </Link>
-                </nav>
-              </div>
-            )}
-          </div>
-
-          {/* Settings dropdown */}
-          <div className="header-dropdown" ref={settingsRef}>
-            <button
-              className="header-nav-btn"
-              onClick={() => { const opening = !showSettings; setShowSettings(opening); setShowAbout(false); if (opening && !keyStatusLoaded.current) { keyStatusLoaded.current = true; checkKeyStatus(); } }}
-              aria-label="Settings"
-              title="Settings"
+              Guides
+            </NavLink>
+            <NavLink
+              to="/journal"
+              className={({ isActive }) => `${NAV_BASE} hidden sm:inline-flex${isActive ? ` ${NAV_ACTIVE}` : ""}`}
+              onClick={closeAll}
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="3"/>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-              </svg>
-              {(hasSerpKey || hasRapidKey) && <span className="header-key-dot" />}
-            </button>
-            {showSettings && (
-              <div className="dropdown-panel dropdown-settings">
-                <button className="dropdown-close" onClick={closeAll} aria-label="Close">&times;</button>
-                {/* Theme */}
-                <div className="dropdown-row">
-                  <span className="dropdown-label">Theme</span>
-                  <div className="toggle-group">
-                    <button className={`toggle-btn ${theme === "dark" ? "active" : ""}`} onClick={() => theme !== "dark" && onToggleTheme()}>Dark</button>
-                    <button className={`toggle-btn ${theme === "light" ? "active" : ""}`} onClick={() => theme !== "light" && onToggleTheme()}>Light</button>
-                  </div>
-                </div>
+              Journal
+            </NavLink>
+            <NavLink
+              to="/travel-guide"
+              className={({ isActive }) => `${NAV_BASE} hidden md:inline-flex${isActive ? ` ${NAV_ACTIVE}` : ""}`}
+              onClick={closeAll}
+            >
+              Travel
+            </NavLink>
 
-                {/* Server key status */}
-                <div className="dropdown-row">
-                  <span className="dropdown-label">Server Key Status</span>
-                  {checkingKeys ? (
-                    <span className="key-checking">Checking...</span>
-                  ) : keyStatus ? (
-                    <div className="key-status-grid">
-                      <KeyStatusRow
-                        label="SerpAPI (Google Hotels)"
-                        status={keyStatus.serpapi}
-                      />
-                      <KeyStatusRow
-                        label="RapidAPI (Booking + TripAdvisor)"
-                        status={keyStatus.rapidapi}
-                      />
+            {/* More dropdown */}
+            <div className="relative" ref={aboutRef}>
+              <button
+                type="button"
+                className={`${NAV_BASE}${showAbout ? ` ${NAV_ACTIVE}` : ""}`}
+                onClick={() => { setShowAbout(!showAbout); setShowSettings(false); }}
+              >
+                More
+                <svg width="10" height="10" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                  <path d={showAbout ? "M1 5l4-4 4 4" : "M1 1l4 4 4-4"} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+              {showAbout && (
+                <DropdownPanel width="w-[240px]" onClose={closeAll}>
+                  <nav className="flex flex-col gap-0.5">
+                    {[
+                      { to: "/guides", label: "Guides", mobileOnly: true },
+                      { to: "/journal", label: "Journal", mobileOnly: true },
+                      { to: "/travel-guide", label: "Travel", mobileOnly: true },
+                      { to: "/about", label: "About" },
+                      { to: "/how-it-works", label: "How it works" },
+                      { to: "/train-times", label: "Train times" },
+                      { to: "/coverage", label: "Coverage" },
+                      { to: "/faq", label: "FAQ" },
+                    ].map((item) => (
+                      <Link
+                        key={item.to}
+                        to={item.to}
+                        onClick={closeAll}
+                        className={`${item.mobileOnly ? "sm:hidden " : ""}flex items-center gap-2 px-3 py-2.5 min-h-11 rounded-md text-sm font-medium text-[var(--color-ink)] no-underline transition-colors hover:bg-[var(--color-surface)] hover:text-[var(--color-primary)]`}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </nav>
+                </DropdownPanel>
+              )}
+            </div>
+
+            {/* Settings dropdown */}
+            <div className="relative" ref={settingsRef}>
+              <button
+                type="button"
+                className={`${NAV_BASE} relative`}
+                onClick={() => {
+                  const opening = !showSettings;
+                  setShowSettings(opening);
+                  setShowAbout(false);
+                  if (opening && !keyStatusLoaded.current) {
+                    keyStatusLoaded.current = true;
+                    checkKeyStatus();
+                  }
+                }}
+                aria-label="Settings"
+                title="Settings"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+                {(hasSerpKey || hasRapidKey) && (
+                  <span
+                    className="absolute top-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-[var(--color-success)]"
+                    aria-hidden="true"
+                  />
+                )}
+              </button>
+              {showSettings && (
+                <DropdownPanel width="w-[340px]" onClose={closeAll}>
+                  <SettingsRow label="Theme">
+                    <div className="inline-flex bg-[var(--color-surface)] border border-[var(--color-hairline)] rounded-md overflow-hidden">
+                      <button
+                        className={`px-3.5 py-1.5 min-h-[34px] text-xs font-semibold transition-colors ${theme === "dark" ? "bg-[var(--color-primary)] text-white" : "text-[var(--color-ink-muted)] hover:bg-[var(--color-surface-2)]"}`}
+                        onClick={() => theme !== "dark" && onToggleTheme()}
+                      >Dark</button>
+                      <button
+                        className={`px-3.5 py-1.5 min-h-[34px] text-xs font-semibold transition-colors ${theme === "light" ? "bg-[var(--color-primary)] text-white" : "text-[var(--color-ink-muted)] hover:bg-[var(--color-surface-2)]"}`}
+                        onClick={() => theme !== "light" && onToggleTheme()}
+                      >Light</button>
                     </div>
-                  ) : (
-                    <span className="key-hint">Open settings to check status</span>
-                  )}
-                  <button className="key-btn key-refresh" onClick={checkKeyStatus} disabled={checkingKeys} style={{ marginTop: "0.4rem" }}>
-                    Refresh Status
-                  </button>
-                </div>
+                  </SettingsRow>
 
-                {/* SerpAPI key */}
-                <div className="dropdown-row">
-                  <span className="dropdown-label">
-                    SerpAPI Key (optional)
-                    {hasSerpKey && <span className="key-status key-active">Saved</span>}
-                  </span>
-                  <div className="key-input-row">
-                    <input
-                      type="password"
-                      className="key-input"
+                  <SettingsRow label="Server Key Status">
+                    {checkingKeys ? (
+                      <span className="text-xs text-[var(--color-ink-subtle)] italic">Checking...</span>
+                    ) : keyStatus ? (
+                      <div className="flex flex-col gap-1.5">
+                        <KeyStatusRow label="SerpAPI (Google Hotels)" status={keyStatus.serpapi} />
+                        <KeyStatusRow label="RapidAPI (Booking + TripAdvisor)" status={keyStatus.rapidapi} />
+                      </div>
+                    ) : (
+                      <span className="text-xs text-[var(--color-ink-subtle)]">Open settings to check status</span>
+                    )}
+                    <button
+                      className="mt-1.5 px-2.5 py-1 min-h-[34px] bg-[var(--color-surface)] text-[var(--color-ink-muted)] text-xs border border-[var(--color-hairline)] rounded-md font-semibold hover:bg-[var(--color-surface-2)] disabled:opacity-40"
+                      onClick={checkKeyStatus}
+                      disabled={checkingKeys}
+                    >
+                      Refresh Status
+                    </button>
+                  </SettingsRow>
+
+                  <SettingsRow
+                    label={<>SerpAPI Key (optional){hasSerpKey && <KeySavedBadge />}</>}
+                  >
+                    <KeyInputRow
                       value={serpKey}
-                      onChange={(e) => { setSerpKey(e.target.value); setSerpSaved(false); }}
+                      onChange={(v) => { setSerpKey(v); setSerpSaved(false); }}
+                      saved={serpSaved}
+                      hasKey={hasSerpKey}
+                      onSave={() => saveKey("serp")}
+                      onClear={() => clearKey("serp")}
                       placeholder="Paste SerpAPI key..."
-                      spellCheck={false}
                     />
-                    <button className="key-btn key-save" onClick={() => saveKey("serp")} disabled={!serpKey.trim() || serpSaved}>
-                      {serpSaved ? "Saved" : "Save"}
-                    </button>
-                    {hasSerpKey && <button className="key-btn key-clear" onClick={() => clearKey("serp")}>Clear</button>}
-                  </div>
-                  <span className="key-hint">
-                    Google Hotels search. <a href="https://serpapi.com" target="_blank" rel="noopener noreferrer">Get free key</a> (100/mo)
-                  </span>
-                </div>
+                    <KeyHint>
+                      Google Hotels search.{" "}
+                      <a className="text-[var(--color-primary-lift)] no-underline hover:underline" href="https://serpapi.com" target="_blank" rel="noopener noreferrer">Get free key</a> (100/mo)
+                    </KeyHint>
+                  </SettingsRow>
 
-                {/* RapidAPI key */}
-                <div className="dropdown-row">
-                  <span className="dropdown-label">
-                    RapidAPI Key (optional)
-                    {hasRapidKey && <span className="key-status key-active">Saved</span>}
-                  </span>
-                  <div className="key-input-row">
-                    <input
-                      type="password"
-                      className="key-input"
+                  <SettingsRow
+                    label={<>RapidAPI Key (optional){hasRapidKey && <KeySavedBadge />}</>}
+                  >
+                    <KeyInputRow
                       value={rapidKey}
-                      onChange={(e) => { setRapidKey(e.target.value); setRapidSaved(false); }}
+                      onChange={(v) => { setRapidKey(v); setRapidSaved(false); }}
+                      saved={rapidSaved}
+                      hasKey={hasRapidKey}
+                      onSave={() => saveKey("rapid")}
+                      onClear={() => clearKey("rapid")}
                       placeholder="Paste RapidAPI key..."
-                      spellCheck={false}
                     />
-                    <button className="key-btn key-save" onClick={() => saveKey("rapid")} disabled={!rapidKey.trim() || rapidSaved}>
-                      {rapidSaved ? "Saved" : "Save"}
-                    </button>
-                    {hasRapidKey && <button className="key-btn key-clear" onClick={() => clearKey("rapid")}>Clear</button>}
-                  </div>
-                  <span className="key-hint">
-                    Booking.com + TripAdvisor. <a href="https://rapidapi.com" target="_blank" rel="noopener noreferrer">Get free key</a> (500/mo)
-                  </span>
-                </div>
+                    <KeyHint>
+                      Booking.com + TripAdvisor.{" "}
+                      <a className="text-[var(--color-primary-lift)] no-underline hover:underline" href="https://rapidapi.com" target="_blank" rel="noopener noreferrer">Get free key</a> (500/mo)
+                    </KeyHint>
+                  </SettingsRow>
 
-                {message && <div className="dropdown-msg">{message}</div>}
+                  {message && (
+                    <div className="mt-2 px-2.5 py-1.5 bg-[var(--color-success-soft)] border border-[var(--color-success)]/30 text-[var(--color-success)] rounded-md text-xs">
+                      {message}
+                    </div>
+                  )}
+                  <p className="mt-2 text-[0.72rem] text-[var(--color-ink-subtle)] leading-relaxed">
+                    Keys stay in your browser only — never sent to our servers.
+                  </p>
+                </DropdownPanel>
+              )}
+            </div>
 
-                <p className="dropdown-text dropdown-text-muted" style={{ marginTop: "0.5rem", fontSize: "0.72rem" }}>
-                  Keys stay in your browser only — never sent to our servers.
-                </p>
-              </div>
-            )}
-          </div>
+            <Link
+              to="/search"
+              className={NAV_PRIMARY}
+              onClick={closeAll}
+            >
+              Search
+            </Link>
+          </nav>
+        </div>
+        {(showAbout || showSettings) && (
+          <div
+            className="fixed inset-0 z-[150] bg-black/20"
+            onClick={closeAll}
+            aria-hidden="true"
+          />
+        )}
+      </header>
+    </>
+  );
+}
 
-        </nav>
-      </div>
-      {(showAbout || showSettings) && (
-        <div className="dropdown-backdrop" onClick={closeAll} />
+function DropdownPanel({ width, onClose, children }) {
+  return (
+    <div
+      className={`absolute top-[calc(100%+0.5rem)] right-0 z-[200] ${width} max-w-[92vw]
+        bg-[var(--color-canvas)] border border-[var(--color-hairline)] rounded-lg
+        shadow-[var(--shadow-popover)]
+        p-3 pt-10`}
+    >
+      <button
+        type="button"
+        className="absolute top-2 right-2 w-8 h-8 inline-flex items-center justify-center rounded-md bg-transparent border border-[var(--color-hairline)] text-[var(--color-ink-muted)] text-base leading-none hover:bg-[var(--color-surface)] hover:text-[var(--color-ink)]"
+        onClick={onClose}
+        aria-label="Close"
+      >
+        &times;
+      </button>
+      {children}
+    </div>
+  );
+}
+
+function SettingsRow({ label, children }) {
+  return (
+    <div className="py-2.5 border-b border-[var(--color-hairline)] last:border-b-0">
+      <span className="flex items-center gap-2 text-[0.7rem] text-[var(--color-ink-subtle)] font-semibold uppercase tracking-wider mb-1.5">
+        {label}
+      </span>
+      {children}
+    </div>
+  );
+}
+
+function KeyInputRow({ value, onChange, saved, hasKey, onSave, onClear, placeholder }) {
+  return (
+    <div className="flex gap-1.5 flex-wrap">
+      <input
+        type="password"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder={placeholder}
+        spellCheck={false}
+        className="flex-1 min-w-0 min-h-10 bg-[var(--color-surface)] border border-[var(--color-hairline)] rounded-md text-[var(--color-ink)] px-2.5 py-1.5 text-sm font-mono focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/20"
+      />
+      <button
+        className="px-3 py-1.5 min-h-10 rounded-md bg-[var(--color-primary)] text-white text-xs font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[var(--color-primary-lift)]"
+        onClick={onSave}
+        disabled={!value.trim() || saved}
+      >
+        {saved ? "Saved" : "Save"}
+      </button>
+      {hasKey && (
+        <button
+          className="px-3 py-1.5 min-h-10 rounded-md bg-[var(--color-error-soft)] text-[var(--color-error)] border border-[var(--color-error)]/30 text-xs font-semibold hover:bg-[var(--color-error)]/15"
+          onClick={onClear}
+        >
+          Clear
+        </button>
       )}
-    </header>
+    </div>
+  );
+}
+
+function KeyHint({ children }) {
+  return (
+    <span className="block mt-1 text-[0.7rem] text-[var(--color-ink-subtle)]">{children}</span>
+  );
+}
+
+function KeySavedBadge() {
+  return (
+    <span className="text-[0.65rem] px-1.5 py-0.5 rounded normal-case tracking-normal font-semibold bg-[var(--color-success-soft)] text-[var(--color-success)] border border-[var(--color-success)]/30">
+      Saved
+    </span>
   );
 }
 
 function KeyStatusRow({ label, status }) {
+  const row = "flex items-center gap-2 text-xs px-2 py-1.5 bg-[var(--color-surface)] rounded-md";
+  const dot = "w-2 h-2 rounded-full shrink-0";
+  const labelCls = "flex-1 text-[var(--color-ink-muted)] font-medium text-xs";
+  const valCls = "text-[0.72rem] font-semibold whitespace-nowrap";
+
   if (!status.configured) {
     return (
-      <div className="key-status-row">
-        <span className="key-dot key-dot-off" />
-        <span className="key-status-label">{label}</span>
-        <span className="key-status-value key-status-off">No key</span>
+      <div className={row}>
+        <span className={`${dot} bg-[var(--color-hairline-strong)]`} />
+        <span className={labelCls}>{label}</span>
+        <span className={`${valCls} text-[var(--color-ink-subtle)]`}>No key</span>
       </div>
     );
   }
   if (status.valid === false) {
     return (
-      <div className="key-status-row">
-        <span className="key-dot key-dot-error" />
-        <span className="key-status-label">{label}</span>
-        <span className="key-status-value key-status-error">{status.error || "Invalid"}</span>
+      <div className={row}>
+        <span className={`${dot} bg-[var(--color-error)]`} />
+        <span className={labelCls}>{label}</span>
+        <span className={`${valCls} text-[var(--color-error)]`}>{status.error || "Invalid"}</span>
       </div>
     );
   }
   if (status.rate_limited) {
     return (
-      <div className="key-status-row">
-        <span className="key-dot key-dot-warn" />
-        <span className="key-status-label">{label}</span>
-        <span className="key-status-value key-status-warn">Rate limited</span>
+      <div className={row}>
+        <span className={`${dot} bg-[var(--color-warning)]`} />
+        <span className={labelCls}>{label}</span>
+        <span className={`${valCls} text-[var(--color-warning)]`}>Rate limited</span>
       </div>
     );
   }
   if (status.valid) {
     return (
-      <div className="key-status-row">
-        <span className="key-dot key-dot-ok" />
-        <span className="key-status-label">{label}</span>
-        <span className="key-status-value key-status-ok">
+      <div className={row}>
+        <span className={`${dot} bg-[var(--color-success)]`} />
+        <span className={labelCls}>{label}</span>
+        <span className={`${valCls} text-[var(--color-success)]`}>
           {status.remaining != null ? `${status.remaining} searches left` : "Active"}
         </span>
       </div>
     );
   }
   return (
-    <div className="key-status-row">
-      <span className="key-dot key-dot-off" />
-      <span className="key-status-label">{label}</span>
-      <span className="key-status-value key-status-off">{status.error || "Unknown"}</span>
+    <div className={row}>
+      <span className={`${dot} bg-[var(--color-hairline-strong)]`} />
+      <span className={labelCls}>{label}</span>
+      <span className={`${valCls} text-[var(--color-ink-subtle)]`}>{status.error || "Unknown"}</span>
     </div>
   );
 }

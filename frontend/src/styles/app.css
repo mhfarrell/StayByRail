@@ -1,0 +1,224 @@
+/* StayByRail — single source of truth for design tokens and base styles.
+ *
+ * Brand (2026-04 rebrand, iteration 2):
+ *   - Header uses a deep charcoal `surface-dark` so it pops hard against
+ *     the white body — fixes the "lacks contrast" problem from iteration 1.
+ *   - Primary accent: crimson-rose #E11D48 — bold, modern, clearly not
+ *     Booking-navy and clearly not the old navy+amber. Used for brand
+ *     highlights and CTA buttons.
+ *   - Canvas: white. Ink: slate. Inter everywhere.
+ *
+ * Rail nods limited to:
+ *   - small coloured line-bullet dots next to line references
+ *   - the <LineSchematic> component on line/guide pages
+ *   - IBM Plex Mono for numeric price/time values
+ */
+
+@import "tailwindcss";
+@import "./fonts.css";
+
+@theme {
+  /* -- Palette (light) ---------------------------------------------------- */
+  --color-canvas: #FFFFFF;
+  --color-surface: #F8FAFC;
+  --color-surface-2: #F1F5F9;
+  --color-hairline: #E5E7EB;
+  --color-hairline-strong: #D1D5DB;
+
+  --color-ink: #0F172A;
+  --color-ink-muted: #334155;
+  --color-ink-subtle: #64748B;
+  --color-ink-inverse: #FFFFFF;
+
+  /* Dark surface used by the header and hero banner. Gives the white body
+     something to sit against — the #1 visual fix from feedback iter 1. */
+  --color-surface-dark: #111827;
+  --color-surface-dark-2: #1F2937;
+  --color-on-dark: #F9FAFB;
+  --color-on-dark-muted: #D1D5DB;
+  --color-on-dark-subtle: #9CA3AF;
+
+  --color-primary: #E11D48;        /* Crimson-rose brand accent */
+  --color-primary-lift: #F43F5E;
+  --color-primary-soft: #FFF1F2;
+  --color-primary-ink: #FFFFFF;
+
+  /* Accent defaults to primary — single-colour system (Airbnb-style) is
+     cleaner than juggling primary + separate CTA colour. */
+  --color-accent: #E11D48;
+  --color-accent-lift: #F43F5E;
+  --color-accent-soft: #FFF1F2;
+  --color-accent-ink: #FFFFFF;
+
+  --color-success: #059669;
+  --color-success-soft: #ECFDF5;
+  --color-warning: #D97706;
+  --color-warning-soft: #FFFBEB;
+  --color-error: #DC2626;
+  --color-error-soft: #FEF2F2;
+
+  --color-star: #F59E0B;
+
+  /* -- Typography --------------------------------------------------------- */
+  /* Inter everywhere. IBM Plex Mono retained only for tabular numerics
+     (prices, times) — functional, not stylistic. */
+  --font-display: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+
+  /* -- Radii -------------------------------------------------------------- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 999px;
+
+  /* -- Shadows ------------------------------------------------------------ */
+  --shadow-xs: 0 1px 2px rgb(15 23 42 / 0.04);
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 4px 12px rgb(15 23 42 / 0.06);
+  --shadow-float: 0 4px 12px rgb(15 23 42 / 0.08), 0 12px 32px rgb(15 23 42 / 0.10);
+  --shadow-popover: 0 10px 30px rgb(15 23 42 / 0.15);
+
+  /* -- Motion ------------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration-fast: 120ms;
+  --duration: 200ms;
+
+  /* -- Line colours (official agency palettes; used by line-bullet + schematic) */
+
+  /* London — TfL */
+  --line-tfl-central:       #E32017;
+  --line-tfl-jubilee:       #A0A5A9;
+  --line-tfl-piccadilly:    #003688;
+  --line-tfl-bakerloo:      #B36305;
+  --line-tfl-northern:      #000000;
+  --line-tfl-victoria:      #0098D4;
+  --line-tfl-district:      #00782A;
+  --line-tfl-circle:        #FFD300;
+  --line-tfl-hammersmith:   #F3A9BB;
+  --line-tfl-metropolitan:  #9B0056;
+  --line-tfl-waterloo-city: #95CDBA;
+  --line-tfl-elizabeth:     #6950A1;
+  --line-tfl-dlr:           #00A4A7;
+  --line-tfl-overground:    #EE7C0E;
+
+  /* Tokyo — JR East */
+  --line-jr-yamanote:       #9ACD32;
+  --line-jr-chuo:           #F15A22;
+  --line-jr-keihin-tohoku:  #00B2E5;
+  --line-jr-sobu:           #FFD400;
+  --line-jr-saikyo:         #2E8B57;
+
+  /* Tokyo Metro */
+  --line-tokyo-metro-ginza:      #FF9500;
+  --line-tokyo-metro-marunouchi: #F62E36;
+  --line-tokyo-metro-hibiya:     #B5B5AC;
+  --line-tokyo-metro-tozai:      #009BBF;
+  --line-tokyo-metro-chiyoda:    #00BB85;
+
+  /* Paris */
+  --line-paris-metro-1:   #FFCD00;
+  --line-paris-metro-2:   #003CA6;
+  --line-paris-metro-4:   #CF009E;
+  --line-paris-rer-a:     #E2231A;
+  --line-paris-rer-b:     #427DBD;
+  --line-paris-rer-c:     #FCCF00;
+
+  /* New York */
+  --line-nyc-123:     #EE352E;
+  --line-nyc-acel:    #0039A6;
+  --line-nyc-bdfm:    #FF6319;
+  --line-nyc-nqrw:    #FCCC0A;
+  --line-nyc-7:       #B933AD;
+
+  /* High-speed rail */
+  --line-shinkansen-tokaido: #0B318F;
+  --line-shinkansen-tohoku:  #00B261;
+  --line-ktx:                #0086C3;
+}
+
+@layer base {
+  html[data-theme="dark"] {
+    --color-canvas: #0B1220;
+    --color-surface: #111827;
+    --color-surface-2: #1F2937;
+    --color-hairline: #2D3748;
+    --color-hairline-strong: #4B5563;
+    --color-ink: #F9FAFB;
+    --color-ink-muted: #D1D5DB;
+    --color-ink-subtle: #9CA3AF;
+    --color-ink-inverse: #0F172A;
+    --color-primary: #F43F5E;
+    --color-primary-lift: #FB7185;
+    --color-primary-soft: #4C0519;
+    --color-accent: #F43F5E;
+    --color-accent-lift: #FB7185;
+  }
+
+  html {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body { line-height: 1.5; }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  .skip-to-main {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .skip-to-main:focus {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 0.875rem;
+    background: var(--color-primary);
+    color: var(--color-primary-ink);
+    font-weight: 600;
+    border-radius: var(--radius);
+    z-index: 1000;
+  }
+}
+
+/* -- Utilities ----------------------------------------------------------- */
+
+@utility line-bullet {
+  display: inline-block;
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 999px;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+@utility tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}

@@ -1,0 +1,12 @@
+/* StayByRail — font loading
+ *
+ * Fonts are loaded via <link rel="stylesheet"> in index.html with
+ * preconnect hints to fonts.gstatic.com (better LCP than an @import
+ * here, which is also disallowed by CSS spec after the Tailwind import).
+ *
+ * This file is kept as the conventional landing spot for future
+ * @font-face rules if/when we self-host the three families:
+ *   - Zilla Slab   (display / headings)
+ *   - Inter        (body / UI)
+ *   - IBM Plex Mono (data / times / prices)
+ */

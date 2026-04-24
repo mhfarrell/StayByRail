@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StayByRail — Design Preview</title>
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+
+    <style>
+      :root {
+        --color-canvas: #FFFFFF;
+        --color-surface: #F8FAFC;
+        --color-surface-2: #F1F5F9;
+        --color-hairline: #E5E7EB;
+        --color-hairline-strong: #D1D5DB;
+        --color-surface-dark: #111827;
+        --color-surface-dark-2: #1F2937;
+        --color-on-dark: #F9FAFB;
+        --color-on-dark-muted: #D1D5DB;
+        --color-ink: #0F172A;
+        --color-ink-muted: #334155;
+        --color-ink-subtle: #64748B;
+        --color-primary: #E11D48;
+        --color-primary-lift: #F43F5E;
+        --color-primary-soft: #FFF1F2;
+        --color-accent: #E11D48;
+        --color-accent-lift: #F43F5E;
+        --color-accent-ink: #FFFFFF;
+        --color-success: #059669;
+        --color-warning: #D97706;
+        --color-error: #DC2626;
+        --color-star: #F59E0B;
+
+        --font-body: "Inter", system-ui, -apple-system, sans-serif;
+        --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+
+        --radius-sm: 6px;
+        --radius: 8px;
+        --radius-lg: 12px;
+        --radius-xl: 16px;
+        --radius-pill: 999px;
+        --shadow-xs: 0 1px 2px rgb(15 23 42 / 0.04);
+        --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 4px 12px rgb(15 23 42 / 0.06);
+        --shadow-float: 0 4px 12px rgb(15 23 42 / 0.08), 0 12px 32px rgb(15 23 42 / 0.10);
+
+        --line-tfl-central:    #E32017;
+        --line-tfl-piccadilly: #003688;
+        --line-tfl-victoria:   #0098D4;
+        --line-tfl-elizabeth:  #6950A1;
+        --line-jr-yamanote:    #9ACD32;
+        --line-paris-rer-a:    #E2231A;
+        --line-nyc-acel:       #0039A6;
+        --line-shinkansen-tokaido: #0B318F;
+      }
+
+      * { box-sizing: border-box; }
+      html { background: var(--color-canvas); color: var(--color-ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+      body { margin: 0; }
+      .tabular { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+      a { color: var(--color-primary); }
+
+      .shell { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+
+      .preview-header {
+        padding-bottom: 1.75rem;
+        border-bottom: 1px solid var(--color-hairline);
+        margin-bottom: 3rem;
+      }
+      .preview-title {
+        font-weight: 800; font-size: 2.5rem; letter-spacing: -0.02em;
+        line-height: 1.1; color: var(--color-ink); margin: 0 0 0.5rem;
+      }
+      .preview-lede { font-size: 1.125rem; color: var(--color-ink-muted); margin: 0; max-width: 60ch; }
+
+      section { margin-top: 3.5rem; }
+
+      .section-title {
+        font-weight: 700; font-size: 1.5rem; color: var(--color-ink);
+        margin: 0 0 0.5rem; letter-spacing: -0.01em;
+      }
+      .section-lede { color: var(--color-ink-muted); max-width: 60ch; margin: 0 0 1.5rem; }
+
+      /* Swatches */
+      .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+      .swatch {
+        border: 1px solid var(--color-hairline); border-radius: var(--radius-lg);
+        overflow: hidden; background: #fff; box-shadow: var(--shadow-xs);
+      }
+      .swatch-block { height: 110px; display: flex; align-items: flex-end; padding: 0.75rem 0.875rem; }
+      .swatch-block-label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.02em; }
+      .swatch-meta { padding: 0.75rem 0.875rem; border-top: 1px solid var(--color-hairline); display: flex; flex-direction: column; gap: 0.1rem; }
+      .swatch-role { font-weight: 600; font-size: 0.95rem; color: var(--color-ink); }
+      .swatch-hex { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-ink-subtle); }
+      .swatch-ratio { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-ink-subtle); margin-top: 0.25rem; }
+      .ratio-ok { color: var(--color-success); }
+      .ratio-warn { color: var(--color-warning); }
+
+      /* Typography */
+      .type-specimen { display: flex; flex-direction: column; gap: 1.1rem; background: #fff; border: 1px solid var(--color-hairline); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-xs); }
+      .type-row { display: grid; grid-template-columns: 160px 1fr; gap: 1rem; align-items: baseline; padding-bottom: 1rem; border-bottom: 1px solid var(--color-hairline); }
+      .type-row:last-child { border-bottom: none; padding-bottom: 0; }
+      .type-meta { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-ink-subtle); letter-spacing: 0.03em; }
+      .t-head { font-weight: 800; color: var(--color-ink); letter-spacing: -0.02em; line-height: 1.1; }
+      .t-body { color: var(--color-ink); }
+      .t-mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--color-ink); }
+
+      /* Booking-style hero mock */
+      .hero {
+        border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--color-hairline); box-shadow: var(--shadow-card);
+      }
+      .hero-banner {
+        background: linear-gradient(135deg, var(--color-surface-dark) 0%, var(--color-surface-dark-2) 55%, #2A1626 100%);
+        color: #fff; padding: 3rem 2rem 5rem; position: relative; overflow: hidden;
+      }
+      .hero-banner::before {
+        content: ""; position: absolute; right: -120px; top: -120px; width: 400px; height: 400px;
+        border-radius: 50%; background: var(--color-primary); filter: blur(80px); opacity: 0.22;
+      }
+      .hero-h {
+        font-weight: 800; font-size: 2.5rem; letter-spacing: -0.02em; line-height: 1.05;
+        margin: 0 0 0.75rem; max-width: 22ch; position: relative;
+      }
+      .hero-p { color: rgba(255,255,255,0.82); margin: 0; max-width: 48ch; font-size: 1rem; position: relative; }
+      .search-card {
+        background: #fff; border: 1px solid var(--color-hairline); border-radius: var(--radius-lg);
+        padding: 0.75rem; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr auto; gap: 0;
+        margin: -2.5rem 1.5rem 1.5rem; box-shadow: var(--shadow-float); position: relative; z-index: 2;
+      }
+      .sf { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.55rem 0.85rem; border-right: 1px solid var(--color-hairline); }
+      .sf:last-of-type { border-right: none; }
+      .sf-lab { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-ink-subtle); font-weight: 600; }
+      .sf-val { color: var(--color-ink); font-size: 0.9rem; font-weight: 500; min-height: 26px; display: flex; align-items: center; }
+      .sf-cta {
+        display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+        background: var(--color-accent); color: #FFFFFF;
+        padding: 0 1.5rem; font-weight: 600; font-size: 0.9rem; border-radius: var(--radius);
+        border: 0; cursor: pointer;
+      }
+      .sf-cta:hover { background: var(--color-accent-lift); }
+
+      /* City card */
+      .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+      .city-card { border: 1px solid var(--color-hairline); border-radius: var(--radius-lg); overflow: hidden; background: #fff; box-shadow: var(--shadow-xs); transition: box-shadow .2s; }
+      .city-card:hover { box-shadow: var(--shadow-card); }
+      .city-photo { aspect-ratio: 4/3; position: relative; background: linear-gradient(135deg, #64748B, #334155); }
+      .city-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.7)); }
+      .city-overlay { position: absolute; left: 1rem; bottom: 0.9rem; color: #fff; z-index: 1; }
+      .city-overlay-name { font-weight: 800; font-size: 1.1rem; line-height: 1.1; }
+      .city-overlay-country { font-size: 0.75rem; opacity: 0.9; }
+      .city-foot { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1rem; font-size: 0.78rem; color: var(--color-ink-muted); }
+      .city-foot .view { color: var(--color-primary); font-weight: 600; }
+
+      /* Hotel card */
+      .hotel-card { display: grid; grid-template-columns: 180px 1fr auto; gap: 1.25rem; padding: 1rem; background: #fff; border: 1px solid var(--color-hairline); border-radius: var(--radius-lg); align-items: center; }
+      .hotel-thumb { aspect-ratio: 4/3; border-radius: var(--radius); background: linear-gradient(135deg, #94A3B8, #475569); }
+      .hotel-meta h4 { font-weight: 700; font-size: 1.1rem; margin: 0 0 0.25rem; color: var(--color-ink); }
+      .hotel-meta .tags { display: flex; gap: 0.4rem; flex-wrap: wrap; font-size: 0.8rem; color: var(--color-ink-muted); margin: 0.4rem 0 0; }
+      .chip { display: inline-flex; align-items: center; gap: 0.3rem; border: 1px solid var(--color-hairline); border-radius: var(--radius); padding: 0.15rem 0.55rem; font-size: 0.75rem; color: var(--color-ink); background: #fff; }
+      .stars { color: var(--color-star); font-size: 0.9rem; letter-spacing: 0.04em; }
+      .line-bullet { display: inline-block; width: 0.625em; height: 0.625em; border-radius: 999px; margin-right: 0.4em; vertical-align: middle; flex-shrink: 0; }
+      .price-stack { display: flex; flex-direction: column; align-items: flex-end; gap: 0.1rem; }
+      .price-num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 1.4rem; font-weight: 600; color: var(--color-ink); }
+      .price-sub { font-size: 0.75rem; color: var(--color-ink-subtle); }
+      .price-cta { margin-top: 0.5rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.25rem; padding: 0.5rem 1rem; border-radius: var(--radius); background: var(--color-primary); color: #fff; font-weight: 600; font-size: 0.85rem; text-decoration: none; }
+      .price-cta:hover { background: var(--color-primary-lift); }
+
+      /* States */
+      .states { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; }
+      .state { display: flex; align-items: center; gap: 0.5rem; padding: 0.65rem 0.85rem; border-radius: var(--radius); font-size: 0.85rem; background: #fff; border: 1px solid var(--color-hairline); }
+      .state-dot { width: 10px; height: 10px; border-radius: 999px; flex-shrink: 0; }
+      .state.success { color: var(--color-success); }
+      .state.success .state-dot { background: var(--color-success); }
+      .state.warn    { color: var(--color-warning); }
+      .state.warn    .state-dot { background: var(--color-warning); }
+      .state.error   { color: var(--color-error); }
+      .state.error   .state-dot { background: var(--color-error); }
+
+      /* Ad slot mocks */
+      .ad { width: 100%; max-width: 728px; height: 90px; border: 1px dashed var(--color-hairline-strong); border-radius: var(--radius); background: repeating-linear-gradient(-45deg, var(--color-surface) 0 10px, var(--color-canvas) 10px 20px); position: relative; display: flex; align-items: center; justify-content: center; color: var(--color-ink-subtle); font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; }
+      .ad-sponsored { position: absolute; top: 8px; left: 8px; background: var(--color-surface); color: var(--color-ink-subtle); border: 1px solid var(--color-hairline); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.1rem 0.45rem; border-radius: 4px; }
+      .ad-rail { width: 160px; height: 320px; border: 1px dashed var(--color-hairline-strong); border-radius: var(--radius); background: repeating-linear-gradient(-45deg, var(--color-surface) 0 10px, var(--color-canvas) 10px 20px); position: relative; display: flex; align-items: center; justify-content: center; color: var(--color-ink-subtle); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; }
+
+      /* Line schematic mock */
+      .schem { background: #fff; border: 1px solid var(--color-hairline); border-radius: var(--radius-lg); padding: 1.75rem 1.5rem 1.25rem; box-shadow: var(--shadow-xs); overflow-x: auto; }
+      .schem h4 { margin: 0 0 1rem; display: flex; align-items: center; gap: 0.5rem; font-weight: 700; font-size: 1rem; color: var(--color-ink); }
+      .schem-rail { position: relative; min-width: 720px; margin: 0.5rem 0 1.75rem; }
+      .schem-rail::before { content: ""; position: absolute; left: 0; right: 0; top: 16px; height: 6px; background: var(--line-jr-yamanote); border-radius: 3px; }
+      .schem-stops { position: relative; display: flex; justify-content: space-between; list-style: none; margin: 0; padding: 0; }
+      .schem-stops li { display: flex; flex-direction: column; align-items: center; min-width: 80px; gap: 0.35rem; }
+      .schem-dot { width: 16px; height: 16px; border-radius: 999px; background: #fff; border: 4px solid var(--line-jr-yamanote); margin-top: 10px; position: relative; z-index: 1; }
+      .schem-dot.junction { border-color: var(--color-primary); }
+      .schem-lab { font-weight: 600; font-size: 0.78rem; color: var(--color-ink); text-align: center; }
+      .schem-count { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-ink-subtle); }
+
+      /* CVD */
+      .cvd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+      .cvd-tile { border: 1px solid var(--color-hairline); border-radius: var(--radius-lg); overflow: hidden; background: #fff; }
+      .cvd-lab { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-ink-subtle); padding: 0.6rem 0.85rem; background: var(--color-surface); border-bottom: 1px solid var(--color-hairline); letter-spacing: 0.06em; text-transform: uppercase; }
+      .cvd-inner { padding: 1.1rem; display: flex; flex-direction: column; gap: 0.65rem; background: #fff; }
+      .mini { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-ink); }
+      .mini .box { width: 22px; height: 22px; border-radius: 4px; border: 1px solid rgb(0 0 0 / 0.1); }
+      .cvd-deutan   .cvd-inner { filter: url(#deuteranopia); }
+      .cvd-protan   .cvd-inner { filter: url(#protanopia); }
+      .cvd-tritan   .cvd-inner { filter: url(#tritanopia); }
+      .cvd-achroma  .cvd-inner { filter: grayscale(1); }
+    </style>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position:absolute;">
+      <defs>
+        <filter id="deuteranopia"><feColorMatrix type="matrix" values="0.367 0.861 -0.228 0 0 0.280 0.673 0.047 0 0 -0.012 0.043 0.969 0 0 0 0 0 1 0"/></filter>
+        <filter id="protanopia"><feColorMatrix type="matrix" values="0.152 1.053 -0.205 0 0 0.115 0.786 0.099 0 0 -0.004 -0.048 1.052 0 0 0 0 0 1 0"/></filter>
+        <filter id="tritanopia"><feColorMatrix type="matrix" values="1.255 -0.077 -0.178 0 0 -0.078 0.931 0.148 0 0 0.005 0.691 0.304 0 0 0 0 0 1 0"/></filter>
+      </defs>
+    </svg>
+
+    <div class="shell">
+      <header class="preview-header">
+        <h1 class="preview-title">StayByRail — Design Preview</h1>
+        <p class="preview-lede">
+          Full rebrand, iteration 2: deep charcoal header/hero for instant contrast, crimson-rose brand accent (#E11D48) for CTAs and highlights, clean white canvas, Inter everywhere. Rail nods stay limited to coloured line dots + the schematic component on line/guide pages.
+        </p>
+      </header>
+
+      <section>
+        <h2 class="section-title">Palette</h2>
+        <p class="section-lede">WCAG contrast on canvas (#FFFFFF). Target ≥ 4.5:1 body / ≥ 3:1 large.</p>
+        <div class="swatch-grid">
+          <div class="swatch"><div class="swatch-block" style="background:#FFFFFF;border-bottom:1px solid var(--color-hairline);"><span class="swatch-block-label" style="color:var(--color-ink-subtle)">canvas</span></div><div class="swatch-meta"><span class="swatch-role">Canvas</span><span class="swatch-hex">#FFFFFF</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#F8FAFC;border-bottom:1px solid var(--color-hairline);"><span class="swatch-block-label" style="color:var(--color-ink-subtle)">surface</span></div><div class="swatch-meta"><span class="swatch-role">Surface</span><span class="swatch-hex">#F8FAFC</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#0F172A;"><span class="swatch-block-label" style="color:#fff">ink</span></div><div class="swatch-meta"><span class="swatch-role">Ink</span><span class="swatch-hex">#0F172A</span><span class="swatch-ratio ratio-ok">19.3:1 · AAA</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#475569;"><span class="swatch-block-label" style="color:#fff">ink-muted</span></div><div class="swatch-meta"><span class="swatch-role">Ink Muted</span><span class="swatch-hex">#475569</span><span class="swatch-ratio ratio-ok">7.5:1 · AAA</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#111827;"><span class="swatch-block-label" style="color:#fff">surface-dark</span></div><div class="swatch-meta"><span class="swatch-role">Dark (header/hero)</span><span class="swatch-hex">#111827</span><span class="swatch-ratio ratio-ok">17.4:1 · AAA</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#E11D48;"><span class="swatch-block-label" style="color:#fff">primary</span></div><div class="swatch-meta"><span class="swatch-role">Crimson (brand)</span><span class="swatch-hex">#E11D48</span><span class="swatch-ratio ratio-ok">4.8:1 · AA</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#F43F5E;"><span class="swatch-block-label" style="color:#fff">primary-lift</span></div><div class="swatch-meta"><span class="swatch-role">Crimson (hover)</span><span class="swatch-hex">#F43F5E</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#FFF1F2;border-bottom:1px solid var(--color-hairline);"><span class="swatch-block-label" style="color:#881337">primary-soft</span></div><div class="swatch-meta"><span class="swatch-role">Crimson (tint bg)</span><span class="swatch-hex">#FFF1F2</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#059669;"><span class="swatch-block-label" style="color:#fff">success</span></div><div class="swatch-meta"><span class="swatch-role">Success</span><span class="swatch-hex">#059669</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#D97706;"><span class="swatch-block-label" style="color:#fff">warning</span></div><div class="swatch-meta"><span class="swatch-role">Warning</span><span class="swatch-hex">#D97706</span></div></div>
+          <div class="swatch"><div class="swatch-block" style="background:#DC2626;"><span class="swatch-block-label" style="color:#fff">error</span></div><div class="swatch-meta"><span class="swatch-role">Error</span><span class="swatch-hex">#DC2626</span></div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">State signals</h2>
+        <div class="states">
+          <div class="state success"><span class="state-dot"></span><strong>✓ Saved</strong>&nbsp;·&nbsp;Shortlist updated</div>
+          <div class="state warn"><span class="state-dot"></span><strong>△ Check</strong>&nbsp;·&nbsp;Dates overlap peak season</div>
+          <div class="state error"><span class="state-dot"></span><strong>⊘ Can't</strong>&nbsp;·&nbsp;Check-in must precede check-out</div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Typography</h2>
+        <div class="type-specimen">
+          <div class="type-row"><div class="type-meta">Inter 800 · 60</div><div class="t-head" style="font-size:3.75rem">Hotels near train stations.</div></div>
+          <div class="type-row"><div class="type-meta">Inter 800 · 36</div><div class="t-head" style="font-size:2.25rem">Trending destinations</div></div>
+          <div class="type-row"><div class="type-meta">Inter 700 · 24</div><div class="t-head" style="font-size:1.5rem;font-weight:700">How it works</div></div>
+          <div class="type-row"><div class="type-meta">Inter 500 · 18</div><div class="t-body" style="font-size:1.125rem;font-weight:500">Compare live prices from Google Hotels, Booking.com, and TripAdvisor.</div></div>
+          <div class="type-row"><div class="type-meta">Inter 400 · 16</div><div class="t-body">Every hotel is sorted by walking distance to the nearest platform across 71 cities in 9 countries — from the Yamanote Line in Tokyo to the RER A in Paris.</div></div>
+          <div class="type-row"><div class="type-meta">IBM Plex Mono 600 · 24</div><div class="t-mono" style="font-size:1.5rem;font-weight:600">£128 / night</div></div>
+          <div class="type-row"><div class="type-meta">IBM Plex Mono 400 · 12</div><div class="t-mono" style="font-size:0.75rem;color:var(--color-ink-subtle);text-transform:uppercase;letter-spacing:.08em">Updated 2 days ago · GBP</div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Hero + search</h2>
+        <div class="hero">
+          <div class="hero-banner">
+            <h3 class="hero-h">Hotels near train stations in 71 cities.</h3>
+            <p class="hero-p">Compare live prices. Every hotel sorted by walking distance to the platform.</p>
+          </div>
+          <div class="search-card">
+            <div class="sf"><span class="sf-lab">Where</span><span class="sf-val">London, Central Line</span></div>
+            <div class="sf"><span class="sf-lab">Check-in</span><span class="sf-val">Fri 26 Apr</span></div>
+            <div class="sf"><span class="sf-lab">Check-out</span><span class="sf-val">Sun 28 Apr</span></div>
+            <div class="sf"><span class="sf-lab">Guests</span><span class="sf-val">2 guests</span></div>
+            <button class="sf-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Search
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">City cards</h2>
+        <div class="card-grid">
+          <div class="city-card">
+            <div class="city-photo"><div class="city-overlay"><div class="city-overlay-name">Tokyo</div><div class="city-overlay-country">Japan</div></div></div>
+            <div class="city-foot"><span>6 key stations</span><span class="view">View &rarr;</span></div>
+          </div>
+          <div class="city-card">
+            <div class="city-photo" style="background:linear-gradient(135deg,#475569,#1E293B);"><div class="city-overlay"><div class="city-overlay-name">London</div><div class="city-overlay-country">United Kingdom</div></div></div>
+            <div class="city-foot"><span>6 key stations</span><span class="view">View &rarr;</span></div>
+          </div>
+          <div class="city-card">
+            <div class="city-photo" style="background:linear-gradient(135deg,#64748B,#334155);"><div class="city-overlay"><div class="city-overlay-name">Paris</div><div class="city-overlay-country">France</div></div></div>
+            <div class="city-foot"><span>5 key stations</span><span class="view">View &rarr;</span></div>
+          </div>
+          <div class="city-card">
+            <div class="city-photo" style="background:linear-gradient(135deg,#94A3B8,#475569);"><div class="city-overlay"><div class="city-overlay-name">New York</div><div class="city-overlay-country">United States</div></div></div>
+            <div class="city-foot"><span>6 key stations</span><span class="view">View &rarr;</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Hotel card</h2>
+        <div class="hotel-card">
+          <div class="hotel-thumb"></div>
+          <div class="hotel-meta">
+            <h4>Hotel Gracery Shinjuku</h4>
+            <div style="display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;font-size:.85rem;color:var(--color-ink-muted)">
+              <span class="stars">★★★★☆</span>
+              <span>·</span>
+              <span><span class="line-bullet" style="background:var(--line-jr-yamanote)"></span>JR Yamanote</span>
+              <span>· Shinjuku · 4 min walk</span>
+            </div>
+            <div class="tags">
+              <span class="chip">Free Wi-Fi</span>
+              <span class="chip">Free cancellation</span>
+              <span class="chip">Fridge</span>
+              <span class="chip">Couples · 8.9</span>
+            </div>
+          </div>
+          <div class="price-stack">
+            <span class="price-num">£128</span>
+            <span class="price-sub">per night · 2 nights</span>
+            <a class="price-cta">View deal &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Line schematic (guide / line pages only)</h2>
+        <p class="section-lede">The one place a heavier rail motif shows up. Real JR Yamanote green; junction stops ringed in brand crimson.</p>
+        <div class="schem">
+          <h4><span class="line-bullet" style="background:var(--line-jr-yamanote)"></span>JR Yamanote Line · 29 stops</h4>
+          <div class="schem-rail">
+            <ul class="schem-stops">
+              <li><span class="schem-dot"></span><span class="schem-lab">Shinjuku</span><span class="schem-count">84 hotels</span></li>
+              <li><span class="schem-dot junction"></span><span class="schem-lab">Shibuya</span><span class="schem-count">62 hotels</span></li>
+              <li><span class="schem-dot"></span><span class="schem-lab">Ebisu</span><span class="schem-count">18 hotels</span></li>
+              <li><span class="schem-dot junction"></span><span class="schem-lab">Shinagawa</span><span class="schem-count">41 hotels</span></li>
+              <li><span class="schem-dot"></span><span class="schem-lab">Tokyo</span><span class="schem-count">56 hotels</span></li>
+              <li><span class="schem-dot junction"></span><span class="schem-lab">Ueno</span><span class="schem-count">34 hotels</span></li>
+              <li><span class="schem-dot"></span><span class="schem-lab">Ikebukuro</span><span class="schem-count">47 hotels</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Line bullets (inline)</h2>
+        <p class="section-lede">The subtle rail nod that's safe to use anywhere.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.5rem .75rem;font-size:.9rem">
+          <span><span class="line-bullet" style="background:var(--line-tfl-central)"></span>Central Line</span>
+          <span><span class="line-bullet" style="background:var(--line-tfl-piccadilly)"></span>Piccadilly Line</span>
+          <span><span class="line-bullet" style="background:var(--line-tfl-victoria)"></span>Victoria Line</span>
+          <span><span class="line-bullet" style="background:var(--line-tfl-elizabeth)"></span>Elizabeth Line</span>
+          <span><span class="line-bullet" style="background:var(--line-jr-yamanote)"></span>JR Yamanote</span>
+          <span><span class="line-bullet" style="background:var(--line-paris-rer-a)"></span>RER A</span>
+          <span><span class="line-bullet" style="background:var(--line-nyc-acel)"></span>NYC A/C/E</span>
+          <span><span class="line-bullet" style="background:var(--line-shinkansen-tokaido)"></span>Shinkansen Tōkaidō</span>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Ad slots</h2>
+        <p class="section-lede">Dashed hairline, subtle "Sponsored" label, fixed dimensions to prevent CLS.</p>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;align-items:flex-start">
+          <div class="ad-rail"><span class="ad-sponsored">Sponsored</span>160×320</div>
+          <div class="ad"><span class="ad-sponsored">Sponsored</span>728×90 · bottom banner</div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">CVD simulation</h2>
+        <p class="section-lede">Teal + orange + red against a white canvas stays legible under all common colour-vision deficiencies.</p>
+        <div class="cvd-grid">
+          <div class="cvd-tile cvd-deutan"><div class="cvd-lab">Deuteranopia</div><div class="cvd-inner">
+            <div class="mini"><span class="box" style="background:#111827"></span>Dark surface</div>
+            <div class="mini"><span class="box" style="background:#E11D48"></span>Crimson brand</div>
+            <div class="mini"><span class="box" style="background:#059669"></span>Success</div>
+            <div class="mini"><span class="box" style="background:#DC2626"></span>Error</div>
+            <div class="mini"><span class="box" style="background:#E32017"></span>Central Line</div>
+            <div class="mini"><span class="box" style="background:#9ACD32"></span>Yamanote</div>
+          </div></div>
+          <div class="cvd-tile cvd-protan"><div class="cvd-lab">Protanopia</div><div class="cvd-inner">
+            <div class="mini"><span class="box" style="background:#111827"></span>Dark surface</div>
+            <div class="mini"><span class="box" style="background:#E11D48"></span>Crimson brand</div>
+            <div class="mini"><span class="box" style="background:#059669"></span>Success</div>
+            <div class="mini"><span class="box" style="background:#DC2626"></span>Error</div>
+            <div class="mini"><span class="box" style="background:#E32017"></span>Central Line</div>
+            <div class="mini"><span class="box" style="background:#9ACD32"></span>Yamanote</div>
+          </div></div>
+          <div class="cvd-tile cvd-tritan"><div class="cvd-lab">Tritanopia</div><div class="cvd-inner">
+            <div class="mini"><span class="box" style="background:#111827"></span>Dark surface</div>
+            <div class="mini"><span class="box" style="background:#E11D48"></span>Crimson brand</div>
+            <div class="mini"><span class="box" style="background:#059669"></span>Success</div>
+            <div class="mini"><span class="box" style="background:#DC2626"></span>Error</div>
+            <div class="mini"><span class="box" style="background:#E32017"></span>Central Line</div>
+            <div class="mini"><span class="box" style="background:#9ACD32"></span>Yamanote</div>
+          </div></div>
+          <div class="cvd-tile cvd-achroma"><div class="cvd-lab">Achromatopsia</div><div class="cvd-inner">
+            <div class="mini"><span class="box" style="background:#111827"></span>Dark surface</div>
+            <div class="mini"><span class="box" style="background:#E11D48"></span>Crimson brand</div>
+            <div class="mini"><span class="box" style="background:#059669"></span>Success</div>
+            <div class="mini"><span class="box" style="background:#DC2626"></span>Error</div>
+            <div class="mini"><span class="box" style="background:#E32017"></span>Central Line</div>
+            <div class="mini"><span class="box" style="background:#9ACD32"></span>Yamanote</div>
+          </div></div>
+        </div>
+      </section>
+
+      <footer style="margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--color-hairline);color:var(--color-ink-subtle);font-size:.875rem">
+        Preview is noindex / nofollow. Tokens live in <code style="font-family:var(--font-mono)">frontend/src/styles/app.css</code>.
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,34 +1,19 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PageMeta from "../components/PageMeta";
 import {
   featuredCities,
   featuredJournalArticles,
   totalCityGuides,
 } from "../data/homepageFeatured";
+import { flagshipLines } from "../data/lines";
 import { getCityHeroPhoto } from "../data/cityHeroPhotos";
 
-// HomePage is the LCP target and is the only eager route in App.jsx, so every
-// module it imports lands in the main JS bundle. The full cityGuides.js and
-// journal.js modules (~290 KB combined) used to be imported here purely to
-// pull out slugs/titles/blurbs for the carousel and the "latest from the
-// journal" strip. That content now lives in homepageFeatured.js — a tiny
-// metadata-only file — so the full guide and article prose stays in its own
-// lazy chunks and only loads when the user visits a guide/journal route.
-const FEATURED = featuredCities.map((c) => ({
-  slug: c.slug,
-  city: c.city,
-  country: c.country,
-  heroLine: c.heroLine,
-  stations: c.keyStationCount,
-  accent: c.accent,
-  wiki: c.wikipedia || c.city,
-}));
+// HomePage is the LCP target and the only eager route in App.jsx. Keep
+// imports metadata-only so guide/journal prose stays in its lazy chunks.
 
 function useCityImages(list) {
   const [images, setImages] = useState(() => {
-    // Seed state synchronously with any curated photos so the cards
-    // paint with real imagery on first render.
     const seed = {};
     for (const { slug, city } of list) {
       const curated = getCityHeroPhoto(slug);
@@ -38,21 +23,15 @@ function useCityImages(list) {
   });
 
   useEffect(() => {
-    list.forEach(({ slug, city, wiki }) => {
-      // Curated photos were already seeded in useState above; skip the
-      // Wikipedia fetch when one exists.
+    list.forEach(({ slug, city, wikipedia }) => {
       if (getCityHeroPhoto(slug)) return;
-      // Use the exact thumbnail URL the Wikipedia summary API returns,
-      // without rewriting it to a larger size. Rewritten sizes trigger
-      // an on-demand render on Wikimedia's thumb server which gets
-      // rate-limited (HTTP 429) when ten requests fire simultaneously
-      // at homepage mount. The default thumbnail is always pre-cached.
-      const key = `sbr_home6_${city}`;
+      const key = `sbr_home8_${city}`;
       const cached = sessionStorage.getItem(key);
       if (cached) {
         setImages((prev) => ({ ...prev, [city]: cached }));
         return;
       }
+      const wiki = wikipedia || city;
       fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wiki)}`)
         .then((r) => r.json())
         .then((data) => {
@@ -69,56 +48,69 @@ function useCityImages(list) {
   return images;
 }
 
-// Cards shown in the horizontal-scroll carousel on the homepage. ~4 are
-// visible at a time on desktop; the rest are reached by swiping /
-// scrolling right. The carousel is curated to 10 cards — the full list
-// is one tap away on the "Browse more" card at the end of the scroll
-// row.
-const FEATURED_CAROUSEL = FEATURED;
-
-function HomePage() {
-  const images = useCityImages(FEATURED_CAROUSEL);
+function useCarouselScroll() {
   const scrollRef = useRef(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
+  const [canLeft, setCanLeft] = useState(false);
+  const [canRight, setCanRight] = useState(false);
 
-  const updateScrollBoundaries = useCallback(() => {
+  const update = useCallback(() => {
     const el = scrollRef.current;
     if (!el) return;
-    // 4px fudge so tiny sub-pixel values at the ends still count as
-    // "at the edge" and hide the arrow.
-    setCanScrollLeft(el.scrollLeft > 4);
-    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
+    setCanLeft(el.scrollLeft > 4);
+    setCanRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 4);
   }, []);
 
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
-    updateScrollBoundaries();
-    el.addEventListener("scroll", updateScrollBoundaries, { passive: true });
-    window.addEventListener("resize", updateScrollBoundaries);
-    // Re-check once images load and potentially change the layout.
-    const recheck = setTimeout(updateScrollBoundaries, 400);
+    update();
+    el.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    const recheck = setTimeout(update, 400);
     return () => {
-      el.removeEventListener("scroll", updateScrollBoundaries);
-      window.removeEventListener("resize", updateScrollBoundaries);
+      el.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
       clearTimeout(recheck);
     };
-  }, [updateScrollBoundaries]);
+  }, [update]);
 
-  const scrollCarousel = (direction) => {
+  const scroll = (direction) => {
     const el = scrollRef.current;
     if (!el) return;
-    // Scroll by ~80% of the visible width so the user gets a fresh
-    // page of cards but retains a little overlap for continuity.
-    const delta = Math.round(el.clientWidth * 0.8);
-    el.scrollBy({ left: direction * delta, behavior: "smooth" });
+    el.scrollBy({ left: direction * Math.round(el.clientWidth * 0.8), behavior: "smooth" });
+  };
+
+  return { scrollRef, canLeft, canRight, scroll };
+}
+
+function HomePage() {
+  const cityImages = useCityImages(featuredCities);
+  const citiesScroll = useCarouselScroll();
+  const linesScroll = useCarouselScroll();
+  const navigate = useNavigate();
+
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const tomorrowIso = new Date(Date.now() + 86400000).toISOString().slice(0, 10);
+
+  const [destination, setDestination] = useState("");
+  const [checkIn, setCheckIn] = useState(todayIso);
+  const [checkOut, setCheckOut] = useState(tomorrowIso);
+  const [guests, setGuests] = useState(2);
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const params = new URLSearchParams();
+    if (destination) params.set("q", destination);
+    if (checkIn) params.set("check_in", checkIn);
+    if (checkOut) params.set("check_out", checkOut);
+    if (guests) params.set("adults", String(guests));
+    navigate(`/search${params.toString() ? `?${params}` : ""}`);
   };
 
   return (
     <>
       <PageMeta
-        title="StayByRail — Find Hotels Near Train Stations"
+        title="StayByRail — Hotels near train stations"
         description="Compare hotels near train and metro stations across 71 cities in 9 countries. Real-time prices from Google Hotels, Booking.com, and TripAdvisor."
         schema={{
           "@context": "https://schema.org",
@@ -130,204 +122,361 @@ function HomePage() {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://staybyrail.co.uk/search?city={city}&check_in={check_in}&check_out={check_out}"
+              "urlTemplate": "https://staybyrail.co.uk/search?q={city}&check_in={check_in}&check_out={check_out}",
             },
-            "query-input": "required name=city"
-          }
+            "query-input": "required name=city",
+          },
         }}
       />
 
-      {/* ---- Hero ---- */}
-      <section className="page-hero">
-        <h2 className="hero-title">Find hotels near train stations</h2>
-        <p className="hero-subtitle">
-          Compare prices from Google Hotels, Booking.com, and TripAdvisor across{" "}
-          <Link to="/coverage" className="hero-subtitle-link">71 cities in 9 countries</Link> — sorted by walking distance to the platform.
-        </p>
-        <Link to="/search" className="hero-cta">Search Hotels</Link>
-      </section>
-
-      {/* ---- Popular Destinations — the featured module ---- */}
-      <section className="home-destinations">
-        <div className="home-destinations-head">
-          <h2 className="home-destinations-title">Featured City Guides</h2>
-          <p className="home-destinations-sub">
-            Hand-picked stations, neighbourhood notes, and travel tips for the
-            routes our team knows best.
-          </p>
+      {/* ---------- Hero with search ---------- */}
+      <section className="relative">
+        <div
+          className="relative overflow-hidden"
+          style={{
+            background:
+              "linear-gradient(135deg, var(--color-surface-dark) 0%, var(--color-surface-dark-2) 55%, #2A1626 100%)",
+          }}
+        >
+          {/* Subtle rose glow for brand warmth — no pattern, just a soft halo */}
+          <div
+            className="pointer-events-none absolute -right-32 -top-32 w-[520px] h-[520px] rounded-full blur-3xl opacity-25"
+            style={{ background: "var(--color-primary)" }}
+            aria-hidden="true"
+          />
+          <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 pt-14 sm:pt-20 pb-28 sm:pb-32 text-white">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs sm:text-sm font-medium text-white/90 mb-5">
+              <span className="line-bullet" style={{ background: "var(--color-primary)" }} aria-hidden="true" />
+              71 cities · 9 countries · hotel search built for rail travellers
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05] max-w-3xl">
+              Hotels near train stations,<br className="hidden sm:block" />
+              sorted by walk time.
+            </h1>
+            <p className="mt-5 text-base sm:text-lg text-white/80 max-w-2xl leading-relaxed">
+              Compare live prices from Google Hotels, Booking.com, and TripAdvisor.
+              Every result ranked by how long it takes to reach the platform — not just distance on a map.
+            </p>
+          </div>
         </div>
 
-        <div className="home-city-carousel">
-          <button
-            type="button"
-            className="home-carousel-arrow home-carousel-arrow-left"
-            onClick={() => scrollCarousel(-1)}
-            aria-label="Scroll featured guides left"
-            hidden={!canScrollLeft}
+        {/* Search card — overlaps the hero bottom */}
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 -mt-20 sm:-mt-20 relative z-10">
+          <form
+            onSubmit={onSubmit}
+            className="bg-white rounded-2xl shadow-[0_20px_50px_rgba(15,23,42,0.25)] border border-[var(--color-hairline)] p-3 sm:p-3 grid gap-2 sm:gap-0 sm:grid-cols-[2fr_1fr_1fr_1fr_auto]"
+            aria-label="Search hotels"
           >
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
-              <polyline points="15 18 9 12 15 6" />
-            </svg>
-          </button>
-
-          <div
-            className="home-city-grid home-city-grid-scroll"
-            role="region"
-            aria-label="Featured city guides"
-            ref={scrollRef}
-          >
-            {FEATURED_CAROUSEL.map(({ slug, city, country, heroLine, stations, accent }) => (
-              <Link
-                to={`/guides/${slug}`}
-                className="home-city-card"
-                data-accent={accent}
-                key={slug}
+            <SearchField label="Where" className="sm:border-r sm:border-[var(--color-hairline)]">
+              <input
+                type="text"
+                value={destination}
+                onChange={(e) => setDestination(e.target.value)}
+                placeholder="City, station, or line"
+                className="w-full bg-transparent outline-none text-[var(--color-ink)] placeholder:text-[var(--color-ink-subtle)] text-sm font-medium min-h-[38px]"
+              />
+            </SearchField>
+            <SearchField label="Check-in" className="sm:border-r sm:border-[var(--color-hairline)]">
+              <input
+                type="date"
+                value={checkIn}
+                onChange={(e) => setCheckIn(e.target.value)}
+                min={todayIso}
+                className="w-full bg-transparent outline-none text-[var(--color-ink)] text-sm font-medium min-h-[38px] [color-scheme:light]"
+              />
+            </SearchField>
+            <SearchField label="Check-out" className="sm:border-r sm:border-[var(--color-hairline)]">
+              <input
+                type="date"
+                value={checkOut}
+                onChange={(e) => setCheckOut(e.target.value)}
+                min={checkIn || todayIso}
+                className="w-full bg-transparent outline-none text-[var(--color-ink)] text-sm font-medium min-h-[38px] [color-scheme:light]"
+              />
+            </SearchField>
+            <SearchField label="Guests" className="sm:border-r sm:border-[var(--color-hairline)]">
+              <select
+                value={guests}
+                onChange={(e) => setGuests(Number(e.target.value))}
+                className="w-full bg-transparent outline-none text-[var(--color-ink)] text-sm font-medium min-h-[38px]"
               >
-                <div className="home-city-img">
-                  {images[city] && (
-                    <img
-                      src={images[city]}
-                      alt={`${city} skyline`}
-                      loading="lazy"
-                      decoding="async"
-                      className="home-city-img-el"
-                    />
-                  )}
-                  <span className="home-city-country">{country}</span>
+                {[1, 2, 3, 4, 5, 6].map((n) => (
+                  <option key={n} value={n}>{n} {n === 1 ? "guest" : "guests"}</option>
+                ))}
+              </select>
+            </SearchField>
+            <button
+              type="submit"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-[var(--color-accent)] text-[var(--color-accent-ink)] font-semibold text-sm hover:bg-[var(--color-accent-lift)] transition-colors min-h-[48px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              Search
+            </button>
+          </form>
+        </div>
+      </section>
+
+      {/* ---------- Trending cities ---------- */}
+      <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20">
+        <div className="flex items-end justify-between flex-wrap gap-3 mb-5">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-ink)] leading-tight m-0">
+              Trending destinations
+            </h2>
+            <p className="text-[var(--color-ink-muted)] mt-1 text-sm sm:text-base">
+              Travellers are searching for these cities most.
+            </p>
+          </div>
+          <Link
+            to="/guides"
+            className="text-sm font-semibold text-[var(--color-primary)] hover:text-[var(--color-primary-lift)]"
+          >
+            See all {totalCityGuides} cities &rarr;
+          </Link>
+        </div>
+
+        <Carousel {...citiesScroll} label="Trending destinations">
+          {featuredCities.map(({ slug, city, country, keyStationCount }) => (
+            <Link
+              key={slug}
+              to={`/guides/${slug}`}
+              className="group snap-start shrink-0 w-[260px] sm:w-[300px] rounded-xl overflow-hidden border border-[var(--color-hairline)] bg-white shadow-[var(--shadow-xs)] transition-shadow hover:shadow-[var(--shadow-card)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] no-underline"
+            >
+              <div className="relative aspect-[4/3] bg-[var(--color-surface-2)] overflow-hidden">
+                {cityImages[city] && (
+                  <img
+                    src={cityImages[city]}
+                    alt={`${city} skyline`}
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                )}
+                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/70 via-black/20 to-transparent" aria-hidden="true" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div className="text-white font-bold text-lg leading-tight">{city}</div>
+                  <div className="text-white/90 text-xs mt-0.5">{country}</div>
                 </div>
-                <div className="home-city-body">
-                  <h3 className="home-city-name">{city}</h3>
-                  <p className="home-city-line">{heroLine}</p>
-                  <div className="home-city-foot">
-                    <span className="home-city-meta">
-                      {stations > 0 ? `${stations} key stations` : "Guide"}
-                    </span>
-                    <span className="home-city-cta">View guide →</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-            {/* Final card in the scroll row — escape hatch to the full
-                city-guides index for anyone who wants to see all 23. */}
-            <Link to="/guides" className="home-city-card home-city-more">
-              <div className="home-city-more-body">
-                <span className="home-city-more-kicker">Browse more</span>
-                <span className="home-city-more-title">All city guides</span>
-                <span className="home-city-more-sub">
-                  {totalCityGuides} cities across Japan, China, the UK,
-                  France, Germany, Spain, and Thailand.
+              </div>
+              <div className="flex items-center justify-between px-4 py-3 text-xs text-[var(--color-ink-muted)]">
+                <span>{keyStationCount > 0 ? `${keyStationCount} key stations` : "City guide"}</span>
+                <span className="text-[var(--color-primary)] font-semibold group-hover:text-[var(--color-primary-lift)]">
+                  View &rarr;
                 </span>
-                <span className="home-city-cta">See all →</span>
               </div>
             </Link>
-          </div>
-
-          <button
-            type="button"
-            className="home-carousel-arrow home-carousel-arrow-right"
-            onClick={() => scrollCarousel(1)}
-            aria-label="Scroll featured guides right"
-            hidden={!canScrollRight}
+          ))}
+          <Link
+            to="/guides"
+            className="group snap-start shrink-0 w-[240px] sm:w-[280px] flex flex-col justify-center items-center gap-2 text-center rounded-xl border-2 border-dashed border-[var(--color-hairline-strong)] bg-[var(--color-surface)] p-6 no-underline text-[var(--color-ink)] hover:bg-[var(--color-surface-2)] hover:border-[var(--color-primary)] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
           >
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
+            <span className="text-xs uppercase tracking-wider text-[var(--color-ink-subtle)] font-semibold">Browse more</span>
+            <span className="text-lg font-bold text-[var(--color-ink)]">All {totalCityGuides} cities</span>
+            <span className="text-xs text-[var(--color-ink-muted)] max-w-[22ch]">
+              9 countries: Japan, UK, France, Germany, Spain, Thailand, China, South Korea, US
+            </span>
+            <span className="text-sm font-semibold text-[var(--color-primary)]">See all &rarr;</span>
+          </Link>
+        </Carousel>
+      </section>
+
+      {/* ---------- Browse by line (subtle rail nod) ---------- */}
+      <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20">
+        <div className="flex items-end justify-between flex-wrap gap-3 mb-5">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-ink)] leading-tight m-0">
+              Browse by line
+            </h2>
+            <p className="text-[var(--color-ink-muted)] mt-1 text-sm sm:text-base">
+              Stay anywhere on an entire rail line — only StayByRail lets you search this way.
+            </p>
+          </div>
+        </div>
+
+        <Carousel {...linesScroll} label="Browse by line">
+          {flagshipLines.map((line) => (
+            <Link
+              key={line.slug}
+              to={`/guides/${line.city.toLowerCase().replace(/\s+/g, "_").replace(/·/g, "").replace(/_+/g, "_")}`}
+              className="group snap-start shrink-0 w-[240px] sm:w-[260px] rounded-xl overflow-hidden border border-[var(--color-hairline)] bg-white shadow-[var(--shadow-xs)] transition-shadow hover:shadow-[var(--shadow-card)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] no-underline p-5"
             >
-              <polyline points="9 18 15 12 9 6" />
-            </svg>
-          </button>
-        </div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="line-bullet" style={{ background: line.colorHex }} aria-hidden="true" />
+                <span className="text-xs uppercase tracking-wider text-[var(--color-ink-subtle)] font-semibold truncate">
+                  {line.city}
+                </span>
+              </div>
+              <h3 className="text-lg font-bold text-[var(--color-ink)] leading-tight mb-1 group-hover:text-[var(--color-primary)]">
+                {line.name}
+              </h3>
+              <p className="text-xs text-[var(--color-ink-subtle)] mb-3">
+                {line.operator} · {line.stopCount} stops
+              </p>
+              <p className="text-sm text-[var(--color-ink-muted)] leading-relaxed line-clamp-3">
+                {line.blurb}
+              </p>
+              <span className="mt-4 inline-block text-sm font-semibold text-[var(--color-primary)] group-hover:text-[var(--color-primary-lift)]">
+                View line &rarr;
+              </span>
+            </Link>
+          ))}
+        </Carousel>
       </section>
 
-      {/* ---- Compact how-it-works strip ---- */}
-      <section className="home-how">
-        <div className="home-how-item">
-          <span className="home-how-num">1</span>
-          <div>
-            <h3 className="home-how-title">Pick a station</h3>
-            <p className="home-how-text">Choose a city and train or metro line to search around.</p>
-          </div>
-        </div>
-        <div className="home-how-item">
-          <span className="home-how-num">2</span>
-          <div>
-            <h3 className="home-how-title">Compare live prices</h3>
-            <p className="home-how-text">Real-time rates from Google Hotels, Booking.com, and TripAdvisor.</p>
-          </div>
-        </div>
-        <div className="home-how-item">
-          <span className="home-how-num">3</span>
-          <div>
-            <h3 className="home-how-title">Book direct</h3>
-            <p className="home-how-text">Sorted by walking distance. Book through whichever platform you trust.</p>
-          </div>
-        </div>
+      {/* ---------- How it works ---------- */}
+      <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20 py-12 bg-[var(--color-surface)] rounded-2xl">
+        <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-ink)] leading-tight mb-8 px-4">
+          How it works
+        </h2>
+        <ol className="grid gap-5 sm:grid-cols-3 list-none p-0 m-0 px-4">
+          {[
+            { n: "01", title: "Search a city, station, or line", text: "Type where you want to stay. We handle city names, station names, and whole rail lines." },
+            { n: "02", title: "Compare across every site", text: "Real-time prices from Google Hotels, Booking.com, TripAdvisor, and more. One search, every source." },
+            { n: "03", title: "Book direct, walk to the platform", text: "Every result shows walking time to the nearest station. Book through whichever site gives the best price." },
+          ].map((step) => (
+            <li key={step.n} className="bg-white border border-[var(--color-hairline)] rounded-lg p-5 shadow-[var(--shadow-xs)]">
+              <span className="tabular text-sm text-[var(--color-primary)] font-semibold block mb-3">
+                {step.n}
+              </span>
+              <h3 className="text-base font-bold text-[var(--color-ink)] mb-1.5">
+                {step.title}
+              </h3>
+              <p className="text-[var(--color-ink-muted)] text-sm leading-relaxed m-0">
+                {step.text}
+              </p>
+            </li>
+          ))}
+        </ol>
       </section>
 
-      {/* ---- Latest from the journal ---- */}
+      {/* ---------- Journal ---------- */}
       {featuredJournalArticles.length > 0 && (
-        <section className="home-journal">
-          <div className="home-journal-head">
-            <h2 className="home-journal-title">Latest from the journal</h2>
-            <Link to="/journal" className="home-journal-all">
+        <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20">
+          <div className="flex items-end justify-between flex-wrap gap-3 mb-5">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[var(--color-ink)] leading-tight m-0">
+              From the journal
+            </h2>
+            <Link
+              to="/journal"
+              className="text-sm font-semibold text-[var(--color-primary)] hover:text-[var(--color-primary-lift)]"
+            >
               All articles &rarr;
             </Link>
           </div>
-          <div className="home-journal-grid">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {featuredJournalArticles.slice(0, 3).map((a) => (
-                <Link
-                  key={a.slug}
-                  to={`/journal/${a.slug}`}
-                  className="home-journal-card"
-                >
-                  {a.category && (
-                    <span className="home-journal-tag">{a.category}</span>
-                  )}
-                  <h3 className="home-journal-card-title">{a.title}</h3>
-                  {a.subtitle && (
-                    <p className="home-journal-card-sub">{a.subtitle}</p>
-                  )}
-                  <span className="home-journal-card-date">
-                    {new Date(a.datePublished + "T00:00:00").toLocaleDateString("en-GB", {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    })}
+              <Link
+                key={a.slug}
+                to={`/journal/${a.slug}`}
+                className="group flex flex-col gap-2 bg-white border border-[var(--color-hairline)] rounded-xl p-6 shadow-[var(--shadow-xs)] no-underline text-[var(--color-ink)] transition-all hover:shadow-[var(--shadow-card)] hover:border-[var(--color-primary)]/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
+              >
+                {a.category && (
+                  <span className="text-xs uppercase tracking-wider text-[var(--color-primary)] font-semibold">
+                    {a.category}
                   </span>
-                </Link>
-              ))}
+                )}
+                <h3 className="text-lg font-bold text-[var(--color-ink)] leading-tight m-0 group-hover:text-[var(--color-primary)]">
+                  {a.title}
+                </h3>
+                {a.subtitle && (
+                  <p className="text-[var(--color-ink-muted)] text-sm leading-relaxed m-0">
+                    {a.subtitle}
+                  </p>
+                )}
+                <time
+                  dateTime={a.datePublished}
+                  className="tabular text-xs text-[var(--color-ink-subtle)] mt-auto pt-2"
+                >
+                  {new Date(a.datePublished + "T00:00:00").toLocaleDateString("en-GB", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </time>
+              </Link>
+            ))}
           </div>
         </section>
       )}
 
-      {/* ---- Explore more strip ---- */}
-      <nav className="home-explore" aria-label="More StayByRail pages">
-        <Link to="/travel-guide" className="home-explore-link">Best times to travel</Link>
-        <Link to="/itineraries" className="home-explore-link">Itineraries</Link>
-        <Link to="/passes" className="home-explore-link">Transport passes</Link>
-        <Link to="/coverage" className="home-explore-link">Coverage map</Link>
-        <Link to="/train-times" className="home-explore-link">Train times</Link>
-        <Link to="/how-it-works" className="home-explore-link">How it works</Link>
-        <Link to="/faq" className="home-explore-link">FAQ</Link>
-      </nav>
+      {/* ---------- Explore more ---------- */}
+      <section className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20 mb-16">
+        <h2 className="text-base font-semibold text-[var(--color-ink)] mb-4">Explore more</h2>
+        <nav aria-label="More StayByRail pages" className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          {[
+            { to: "/travel-guide", label: "Best times to travel" },
+            { to: "/itineraries", label: "Itineraries" },
+            { to: "/passes", label: "Transport passes" },
+            { to: "/countries", label: "Country rail guides" },
+            { to: "/coverage", label: "Coverage map" },
+            { to: "/train-times", label: "Live train times" },
+            { to: "/how-it-works", label: "How it works" },
+            { to: "/faq", label: "FAQ" },
+          ].map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="text-[var(--color-ink-muted)] no-underline hover:text-[var(--color-primary)] hover:underline"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </section>
     </>
+  );
+}
+
+function SearchField({ label, className = "", children }) {
+  return (
+    <label className={`flex flex-col gap-0.5 px-3 py-2 rounded-md hover:bg-[var(--color-surface)] transition-colors ${className}`}>
+      <span className="text-[0.68rem] uppercase tracking-wider text-[var(--color-ink-subtle)] font-semibold">
+        {label}
+      </span>
+      {children}
+    </label>
+  );
+}
+
+function Carousel({ scrollRef, canLeft, canRight, scroll, children, label }) {
+  return (
+    <div className="relative">
+      {canLeft && (
+        <button
+          type="button"
+          onClick={() => scroll(-1)}
+          aria-label={`Scroll ${label} left`}
+          className="hidden sm:inline-flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-white border border-[var(--color-hairline)] text-[var(--color-ink)] shadow-[var(--shadow-float)] hover:bg-[var(--color-surface)]"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+      )}
+      <div
+        role="region"
+        aria-label={label}
+        ref={scrollRef}
+        className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 sm:-mx-0 sm:px-0 snap-x [scrollbar-width:thin]"
+      >
+        {children}
+      </div>
+      {canRight && (
+        <button
+          type="button"
+          onClick={() => scroll(1)}
+          aria-label={`Scroll ${label} right`}
+          className="hidden sm:inline-flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-white border border-[var(--color-hairline)] text-[var(--color-ink)] shadow-[var(--shadow-float)] hover:bg-[var(--color-surface)]"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+      )}
+    </div>
   );
 }
 

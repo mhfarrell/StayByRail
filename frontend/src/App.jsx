@@ -34,8 +34,6 @@ const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 import "./styles/variables.css";
 import "./styles/base.css";
 import "./styles/layout.css";
-import "./styles/header.css";
-import "./styles/footer.css";
 import "./styles/search-form.css";
 import "./styles/results.css";
 import "./styles/hotel-card.css";
@@ -138,7 +136,7 @@ function App() {
           </div>
         </aside>
 
-        <main className="app">
+        <main className="app" id="main">
           <Suspense fallback={<div className="route-loading"><div className="spinner" /></div>}>
             <Routes>
               <Route path="/" element={<HomePage />} />

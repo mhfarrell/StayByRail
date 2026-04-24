@@ -76,6 +76,13 @@
     <!-- Leaflet CSS is bundled with the HotelMap lazy chunk (see HotelMap.jsx) so it only
          loads when the user actually reaches a page with a map. -->
 
+    <!-- Fonts — Inter (everywhere) + IBM Plex Mono (prices/times only).
+         Preconnect hints let the browser open the TLS connection to Google
+         Fonts in parallel with HTML parsing, shaving ~100-300ms off LCP. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+
     <!-- Structured Data (JSON-LD) for AI and Search Engines -->
     <script type="application/ld+json">
     {

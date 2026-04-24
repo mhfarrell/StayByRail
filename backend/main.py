@@ -26,6 +26,11 @@ app.add_middleware(
 )
 
 
+@app.get("/health")
+def health():
+    return {"ok": True}
+
+
 class SettingsPayload(BaseModel):
     serpapi_key: str
 
